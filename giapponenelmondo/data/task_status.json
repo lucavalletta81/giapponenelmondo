@@ -1,0 +1,69 @@
+{
+  "last_updated": "2026-05-27T00:35:59Z",
+  "tasks": [
+    {
+      "id": "yt_ingest",
+      "name": "YouTube Ingestion",
+      "schedule": "Ogni 12h",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "rd_ingest",
+      "name": "Reddit Ingestion",
+      "schedule": "Ogni 6h",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "embed",
+      "name": "Embedding",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "cluster",
+      "name": "Clustering",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "score",
+      "name": "Scoring",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "report",
+      "name": "Report generazione",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "csv_gnm",
+      "name": "CSV Update GnM",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "csv_pt",
+      "name": "CSV Update Plot Twister",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    }
+  ]
+}

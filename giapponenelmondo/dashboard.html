@@ -24,26 +24,36 @@
       </div>
 
       <nav class="sidebar-nav">
-        <button class="sidebar-item active" onclick="showFeed('all')">
+        <button class="sidebar-item active" data-panel="feed" onclick="showFeed('all', this)">
           <span class="sidebar-icon">📰</span> Tutte le notizie
         </button>
-        <button class="sidebar-item" onclick="showFeed('japan')">
+        <button class="sidebar-item" data-panel="feed" onclick="showFeed('japan', this)">
           <span class="sidebar-icon">🇯🇵</span> Giappone news
         </button>
-        <button class="sidebar-item" onclick="showFeed('trends')">
+        <button class="sidebar-item" data-panel="feed" onclick="showFeed('trends', this)">
           <span class="sidebar-icon">📈</span> Trend & cultura
         </button>
-        <button class="sidebar-item" onclick="showFeed('tech')">
+        <button class="sidebar-item" data-panel="feed" onclick="showFeed('tech', this)">
           <span class="sidebar-icon">💻</span> Tecnologia
         </button>
-        <button class="sidebar-item" onclick="showFeed('world')">
+        <button class="sidebar-item" data-panel="feed" onclick="showFeed('world', this)">
           <span class="sidebar-icon">🌍</span> Mondo
+        </button>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+
+      <nav class="sidebar-nav">
+        <button class="sidebar-item" data-panel="trend-report" onclick="showPanel('trend-report', this)">
+          <span class="sidebar-icon">📊</span> Trend Report
+        </button>
+        <button class="sidebar-item" data-panel="task-monitor" onclick="showPanel('task-monitor', this)">
+          <span class="sidebar-icon">⚙️</span> Task Monitor
         </button>
       </nav>
 
       <div class="sidebar-section">
         <p class="sidebar-label">Link rapidi</p>
-        <!-- ISTRUZIONI: aggiungi i tuoi link preferiti qui -->
         <div class="quick-links" id="quickLinks">
           <a href="https://youtube.com/studio" target="_blank" rel="noopener" class="quick-link">
             <span>▶</span> YouTube Studio
@@ -79,29 +89,43 @@
 
       <header class="dash-header">
         <div>
-          <h1 class="dash-title">La tua rassegna stampa</h1>
+          <h1 class="dash-title" id="panelTitle">La tua rassegna stampa</h1>
           <p class="dash-subtitle" id="dashDate"></p>
         </div>
-        <button class="btn-refresh" onclick="loadAllFeeds()" title="Aggiorna">
+        <button class="btn-refresh" id="btnRefresh" onclick="refreshCurrent()" title="Aggiorna">
           <span id="refreshIcon">↻</span> Aggiorna
         </button>
       </header>
 
-      <!-- LOADING STATE -->
-      <div class="loading-state" id="loadingState">
-        <div class="spinner"></div>
-        <p>Carico le notizie…</p>
+      <!-- ── FEED PANEL ── -->
+      <div id="panel-feed" class="panel-wrap">
+        <div class="loading-state" id="loadingState">
+          <div class="spinner"></div>
+          <p>Carico le notizie…</p>
+        </div>
+        <div class="error-state hidden" id="errorState">
+          <p>⚠️ Impossibile caricare i feed. Controlla la connessione.</p>
+          <button onclick="loadAllFeeds()" class="btn-secondary">Riprova</button>
+        </div>
+        <div class="feed-grid hidden" id="feedGrid"></div>
       </div>
 
-      <!-- ERROR STATE -->
-      <div class="error-state hidden" id="errorState">
-        <p>⚠️ Impossibile caricare i feed. Controlla la connessione.</p>
-        <button onclick="loadAllFeeds()" class="btn-secondary">Riprova</button>
+      <!-- ── TREND REPORT PANEL ── -->
+      <div id="panel-trend-report" class="panel-wrap hidden">
+        <div class="loading-state" id="trendLoading">
+          <div class="spinner"></div>
+          <p>Carico il report…</p>
+        </div>
+        <div class="panel-content hidden" id="trendContent"></div>
       </div>
 
-      <!-- FEED GRID -->
-      <div class="feed-grid hidden" id="feedGrid">
-        <!-- Gli articoli vengono iniettati da dashboard.js -->
+      <!-- ── TASK MONITOR PANEL ── -->
+      <div id="panel-task-monitor" class="panel-wrap hidden">
+        <div class="loading-state" id="taskLoading">
+          <div class="spinner"></div>
+          <p>Carico lo stato…</p>
+        </div>
+        <div class="panel-content hidden" id="taskContent"></div>
       </div>
 
     </main>
