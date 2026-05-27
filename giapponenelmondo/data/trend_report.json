@@ -18,7 +18,10 @@
           "giapponesi"
         ],
         "item_count": 9,
-        "total_views": 19764,
+        "total_views": 22783,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
         "last_seen": "2026-05-27",
         "sentinel_clusters": [
@@ -34,6 +37,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.784,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+              "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 8274,
+              "likes": 403,
+              "duration_secs": 2333
+            },
+            {
+              "title": "THE BOYS È LA CURA AI SUPEREROI DEL CINEMA #theboys",
+              "url": "https://www.youtube.com/watch?v=8sUd0kWV8ZM",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 4453,
+              "likes": 80,
+              "duration_secs": 33
+            },
+            {
+              "title": "TORNANO I CAVALIERI DELLO ZODIACO E TI SPIEGO COSA DIRE PER SEMBRARE CHE SAI TUTTO",
+              "url": "https://www.youtube.com/watch?v=LXY1r7k_lW0",
+              "source": "Caverna di Platone",
+              "date": "2026-05-23",
+              "views": 3057,
+              "likes": 165,
+              "duration_secs": 1584
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
@@ -42,7 +76,6 @@
             "date": "2026-05-21",
             "views": 8274,
             "likes": 403,
-            "comments": 129,
             "duration_secs": 2333
           },
           {
@@ -52,7 +85,6 @@
             "date": "2026-05-21",
             "views": 4453,
             "likes": 80,
-            "comments": 4,
             "duration_secs": 33
           },
           {
@@ -62,28 +94,7 @@
             "date": "2026-05-23",
             "views": 3057,
             "likes": 165,
-            "comments": 60,
             "duration_secs": 1584
-          },
-          {
-            "title": "COFANETTO DI BERSERK 70€ + NARUTO COLOR 30€ + CITY HUNTER...",
-            "url": "https://www.youtube.com/watch?v=rJYqiDjRjCY",
-            "source": "Caverna di Platone",
-            "date": "2026-05-26",
-            "views": 2317,
-            "likes": 119,
-            "comments": 17,
-            "duration_secs": 2231
-          },
-          {
-            "title": "VINLAND SAGA ULTIMO VOLUME FRANCIA VS ITALIA",
-            "url": "https://www.youtube.com/watch?v=VM7kvfEW6xc",
-            "source": "Caverna di Platone",
-            "date": "2026-05-22",
-            "views": 1663,
-            "likes": 109,
-            "comments": 31,
-            "duration_secs": 1287
           }
         ]
       },
@@ -100,6 +111,9 @@
         ],
         "item_count": 3,
         "total_views": 22688,
+        "velocity": 0.333,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-20",
         "last_seen": "2026-05-23",
         "sentinel_clusters": [
@@ -115,6 +129,37 @@
         },
         "affinity_best_tipo": "casual",
         "affinity_best_score": 0.828,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Il Giappone non vuole più stranieri? - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=VhL5O31qQoQ",
+              "source": "Vivi Giappone",
+              "date": "2026-05-23",
+              "views": 14557,
+              "likes": 1068,
+              "duration_secs": 701
+            },
+            {
+              "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+              "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+              "source": "Tommaso In Giappone",
+              "date": "2026-05-22",
+              "views": 7783,
+              "likes": 829,
+              "duration_secs": 845
+            },
+            {
+              "title": "Quanto ho pagato la benzina in Giappone ? INCREDIBILE",
+              "url": "https://www.youtube.com/watch?v=twpoUyr0u-I",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-20",
+              "views": 348,
+              "likes": 49,
+              "duration_secs": 688
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "Il Giappone non vuole più stranieri? - Vivi Giappone",
@@ -123,7 +168,6 @@
             "date": "2026-05-23",
             "views": 14557,
             "likes": 1068,
-            "comments": 521,
             "duration_secs": 701
           },
           {
@@ -133,7 +177,6 @@
             "date": "2026-05-22",
             "views": 7783,
             "likes": 829,
-            "comments": 66,
             "duration_secs": 845
           },
           {
@@ -143,7 +186,6 @@
             "date": "2026-05-20",
             "views": 348,
             "likes": 49,
-            "comments": 8,
             "duration_secs": 688
           }
         ]
@@ -160,7 +202,10 @@
           "calze non"
         ],
         "item_count": 6,
-        "total_views": 230286,
+        "total_views": 242544,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-20",
         "last_seen": "2026-05-26",
         "sentinel_clusters": [
@@ -176,6 +221,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.626,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "The Boys 5X08: Un finale DELUDENTISSIMO",
+              "url": "https://www.youtube.com/watch?v=BbzlA89LWjg",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-20",
+              "views": 121594,
+              "likes": 6876,
+              "duration_secs": 2480
+            },
+            {
+              "title": "Vought Rising Trailer: Mi sento preso in giro da The Boys",
+              "url": "https://www.youtube.com/watch?v=NYECQKuEvdI",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-23",
+              "views": 50201,
+              "likes": 2153,
+              "duration_secs": 617
+            },
+            {
+              "title": "MovieBlog- 1084: Recensione The Mandalorian e Grogu",
+              "url": "https://www.youtube.com/watch?v=Iy9UQZ0SnTo",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-21",
+              "views": 25323,
+              "likes": 1162,
+              "duration_secs": 2420
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "The Boys 5X08: Un finale DELUDENTISSIMO",
@@ -184,7 +260,6 @@
             "date": "2026-05-20",
             "views": 121594,
             "likes": 6876,
-            "comments": 2179,
             "duration_secs": 2480
           },
           {
@@ -194,7 +269,6 @@
             "date": "2026-05-23",
             "views": 50201,
             "likes": 2153,
-            "comments": 356,
             "duration_secs": 617
           },
           {
@@ -204,28 +278,7 @@
             "date": "2026-05-21",
             "views": 25323,
             "likes": 1162,
-            "comments": 253,
             "duration_secs": 2420
-          },
-          {
-            "title": "Il Declino di Star Wars: Serve il Riformismo",
-            "url": "https://www.youtube.com/watch?v=EQGh1DsF-yY",
-            "source": "Victorlaszlo88",
-            "date": "2026-05-25",
-            "views": 20805,
-            "likes": 1232,
-            "comments": 488,
-            "duration_secs": 1500
-          },
-          {
-            "title": "Euphoria 3x06: Si gira in tondo ma apprezzo",
-            "url": "https://www.youtube.com/watch?v=YNzj7f7mGnQ",
-            "source": "Victorlaszlo88",
-            "date": "2026-05-23",
-            "views": 12363,
-            "likes": 755,
-            "comments": 63,
-            "duration_secs": 1796
           }
         ]
       }
@@ -245,7 +298,10 @@
           "giapponesi"
         ],
         "item_count": 9,
-        "total_views": 19764,
+        "total_views": 22783,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
         "last_seen": "2026-05-27",
         "sentinel_clusters": [
@@ -261,6 +317,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.784,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+              "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 8274,
+              "likes": 403,
+              "duration_secs": 2333
+            },
+            {
+              "title": "THE BOYS È LA CURA AI SUPEREROI DEL CINEMA #theboys",
+              "url": "https://www.youtube.com/watch?v=8sUd0kWV8ZM",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 4453,
+              "likes": 80,
+              "duration_secs": 33
+            },
+            {
+              "title": "TORNANO I CAVALIERI DELLO ZODIACO E TI SPIEGO COSA DIRE PER SEMBRARE CHE SAI TUTTO",
+              "url": "https://www.youtube.com/watch?v=LXY1r7k_lW0",
+              "source": "Caverna di Platone",
+              "date": "2026-05-23",
+              "views": 3057,
+              "likes": 165,
+              "duration_secs": 1584
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
@@ -269,7 +356,6 @@
             "date": "2026-05-21",
             "views": 8274,
             "likes": 403,
-            "comments": 129,
             "duration_secs": 2333
           },
           {
@@ -279,7 +365,6 @@
             "date": "2026-05-21",
             "views": 4453,
             "likes": 80,
-            "comments": 4,
             "duration_secs": 33
           },
           {
@@ -289,28 +374,7 @@
             "date": "2026-05-23",
             "views": 3057,
             "likes": 165,
-            "comments": 60,
             "duration_secs": 1584
-          },
-          {
-            "title": "COFANETTO DI BERSERK 70€ + NARUTO COLOR 30€ + CITY HUNTER...",
-            "url": "https://www.youtube.com/watch?v=rJYqiDjRjCY",
-            "source": "Caverna di Platone",
-            "date": "2026-05-26",
-            "views": 2317,
-            "likes": 119,
-            "comments": 17,
-            "duration_secs": 2231
-          },
-          {
-            "title": "VINLAND SAGA ULTIMO VOLUME FRANCIA VS ITALIA",
-            "url": "https://www.youtube.com/watch?v=VM7kvfEW6xc",
-            "source": "Caverna di Platone",
-            "date": "2026-05-22",
-            "views": 1663,
-            "likes": 109,
-            "comments": 31,
-            "duration_secs": 1287
           }
         ]
       },
@@ -327,6 +391,9 @@
         ],
         "item_count": 3,
         "total_views": 22688,
+        "velocity": 0.333,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-20",
         "last_seen": "2026-05-23",
         "sentinel_clusters": [
@@ -342,6 +409,37 @@
         },
         "affinity_best_tipo": "casual",
         "affinity_best_score": 0.828,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Il Giappone non vuole più stranieri? - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=VhL5O31qQoQ",
+              "source": "Vivi Giappone",
+              "date": "2026-05-23",
+              "views": 14557,
+              "likes": 1068,
+              "duration_secs": 701
+            },
+            {
+              "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+              "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+              "source": "Tommaso In Giappone",
+              "date": "2026-05-22",
+              "views": 7783,
+              "likes": 829,
+              "duration_secs": 845
+            },
+            {
+              "title": "Quanto ho pagato la benzina in Giappone ? INCREDIBILE",
+              "url": "https://www.youtube.com/watch?v=twpoUyr0u-I",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-20",
+              "views": 348,
+              "likes": 49,
+              "duration_secs": 688
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "Il Giappone non vuole più stranieri? - Vivi Giappone",
@@ -350,7 +448,6 @@
             "date": "2026-05-23",
             "views": 14557,
             "likes": 1068,
-            "comments": 521,
             "duration_secs": 701
           },
           {
@@ -360,7 +457,6 @@
             "date": "2026-05-22",
             "views": 7783,
             "likes": 829,
-            "comments": 66,
             "duration_secs": 845
           },
           {
@@ -370,7 +466,6 @@
             "date": "2026-05-20",
             "views": 348,
             "likes": 49,
-            "comments": 8,
             "duration_secs": 688
           }
         ]
@@ -389,7 +484,10 @@
           "giapponesi"
         ],
         "item_count": 9,
-        "total_views": 19764,
+        "total_views": 22783,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
         "last_seen": "2026-05-27",
         "sentinel_clusters": [
@@ -405,6 +503,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.784,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+              "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 8274,
+              "likes": 403,
+              "duration_secs": 2333
+            },
+            {
+              "title": "THE BOYS È LA CURA AI SUPEREROI DEL CINEMA #theboys",
+              "url": "https://www.youtube.com/watch?v=8sUd0kWV8ZM",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 4453,
+              "likes": 80,
+              "duration_secs": 33
+            },
+            {
+              "title": "TORNANO I CAVALIERI DELLO ZODIACO E TI SPIEGO COSA DIRE PER SEMBRARE CHE SAI TUTTO",
+              "url": "https://www.youtube.com/watch?v=LXY1r7k_lW0",
+              "source": "Caverna di Platone",
+              "date": "2026-05-23",
+              "views": 3057,
+              "likes": 165,
+              "duration_secs": 1584
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
@@ -413,7 +542,6 @@
             "date": "2026-05-21",
             "views": 8274,
             "likes": 403,
-            "comments": 129,
             "duration_secs": 2333
           },
           {
@@ -423,7 +551,6 @@
             "date": "2026-05-21",
             "views": 4453,
             "likes": 80,
-            "comments": 4,
             "duration_secs": 33
           },
           {
@@ -433,28 +560,7 @@
             "date": "2026-05-23",
             "views": 3057,
             "likes": 165,
-            "comments": 60,
             "duration_secs": 1584
-          },
-          {
-            "title": "COFANETTO DI BERSERK 70€ + NARUTO COLOR 30€ + CITY HUNTER...",
-            "url": "https://www.youtube.com/watch?v=rJYqiDjRjCY",
-            "source": "Caverna di Platone",
-            "date": "2026-05-26",
-            "views": 2317,
-            "likes": 119,
-            "comments": 17,
-            "duration_secs": 2231
-          },
-          {
-            "title": "VINLAND SAGA ULTIMO VOLUME FRANCIA VS ITALIA",
-            "url": "https://www.youtube.com/watch?v=VM7kvfEW6xc",
-            "source": "Caverna di Platone",
-            "date": "2026-05-22",
-            "views": 1663,
-            "likes": 109,
-            "comments": 31,
-            "duration_secs": 1287
           }
         ]
       }
@@ -473,6 +579,9 @@
         ],
         "item_count": 4,
         "total_views": 103640,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
         "last_seen": "2026-05-26",
         "sentinel_clusters": [
@@ -488,6 +597,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.615,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "【注意】その行動、絵が下手になります",
+              "url": "https://www.youtube.com/watch?v=sRGNl4L3BtM",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-23",
+              "views": 49983,
+              "likes": 2484,
+              "duration_secs": 1259
+            },
+            {
+              "title": "成長の段階でえ『いいね』を気にするの禁止！！",
+              "url": "https://www.youtube.com/watch?v=32y_rsQ-mac",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-24",
+              "views": 19493,
+              "likes": 1329,
+              "duration_secs": 67
+            },
+            {
+              "title": "【質問】筆圧、線の強弱のメリットは何ですか...！？",
+              "url": "https://www.youtube.com/watch?v=XAALgr9EOeg",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-21",
+              "views": 18761,
+              "likes": 890,
+              "duration_secs": 867
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "【注意】その行動、絵が下手になります",
@@ -496,7 +636,6 @@
             "date": "2026-05-23",
             "views": 49983,
             "likes": 2484,
-            "comments": 78,
             "duration_secs": 1259
           },
           {
@@ -506,7 +645,6 @@
             "date": "2026-05-24",
             "views": 19493,
             "likes": 1329,
-            "comments": 5,
             "duration_secs": 67
           },
           {
@@ -516,18 +654,7 @@
             "date": "2026-05-21",
             "views": 18761,
             "likes": 890,
-            "comments": 41,
             "duration_secs": 867
-          },
-          {
-            "title": "厚塗りをするときのコツ...！！",
-            "url": "https://www.youtube.com/watch?v=8UHjtd5AQtc",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-05-26",
-            "views": 15403,
-            "likes": 600,
-            "comments": 5,
-            "duration_secs": 54
           }
         ]
       },
@@ -544,6 +671,9 @@
         ],
         "item_count": 4,
         "total_views": 31558,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-22",
         "last_seen": "2026-05-27",
         "sentinel_clusters": [
@@ -559,6 +689,37 @@
         },
         "affinity_best_tipo": "casual",
         "affinity_best_score": 0.609,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+              "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+              "source": "Sora The Troll",
+              "date": "2026-05-25",
+              "views": 13002,
+              "likes": 564,
+              "duration_secs": 13028
+            },
+            {
+              "title": "TOKYO SHIBUYA FOREINGERS ARE GOING WILD Because Of Forza Horizon 6 LOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=MzctlQF-tbM",
+              "source": "Sora The Troll",
+              "date": "2026-05-22",
+              "views": 12219,
+              "likes": 563,
+              "duration_secs": 12321
+            },
+            {
+              "title": "Japanese people hate FOREIGNERS Now because of piracy LOLOLOLOLOLOLOLOLOOLLOOLLOOLLOLOLOLOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=f4UkVqZGGa8",
+              "source": "Sora The Troll",
+              "date": "2026-05-27",
+              "views": 6337,
+              "likes": 386,
+              "duration_secs": 7134
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
@@ -567,7 +728,6 @@
             "date": "2026-05-25",
             "views": 13002,
             "likes": 564,
-            "comments": 23,
             "duration_secs": 13028
           },
           {
@@ -577,7 +737,6 @@
             "date": "2026-05-22",
             "views": 12219,
             "likes": 563,
-            "comments": 20,
             "duration_secs": 12321
           },
           {
@@ -587,18 +746,7 @@
             "date": "2026-05-27",
             "views": 6337,
             "likes": 386,
-            "comments": 44,
             "duration_secs": 7134
-          },
-          {
-            "title": "Got Invited To THE ILLEGAL JAPANESE CAR GANG MEET UP, FORZA HORIZON 6 but in REAL LIFE LOLOLOLOLOLOL",
-            "url": "https://www.youtube.com/watch?v=tYewVsDQvik",
-            "source": "Sora The Troll",
-            "date": "2026-05-27",
-            "views": 0,
-            "likes": 5,
-            "comments": 0,
-            "duration_secs": 0
           }
         ]
       },
@@ -615,6 +763,9 @@
         ],
         "item_count": 3,
         "total_views": 44129,
+        "velocity": 0.5,
+        "novelty": 1.0,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
         "last_seen": "2026-05-22",
         "sentinel_clusters": [
@@ -630,6 +781,37 @@
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.66,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "How Japan Treated This Japanese American VTuber LOLOL",
+              "url": "https://www.youtube.com/watch?v=g7KDuItdZZg",
+              "source": "Sora The Troll",
+              "date": "2026-05-22",
+              "views": 21930,
+              "likes": 2905,
+              "duration_secs": 121
+            },
+            {
+              "title": "Making This Japanese VTuber Say \"CRINGE\" LOL",
+              "url": "https://www.youtube.com/watch?v=J2WQTTBGN-Y",
+              "source": "Sora The Troll",
+              "date": "2026-05-21",
+              "views": 15379,
+              "likes": 651,
+              "duration_secs": 31
+            },
+            {
+              "title": "How Japan Treated This Japanese American VTuber LOLOL",
+              "url": "https://www.youtube.com/watch?v=YtGAJ6rxysM",
+              "source": "Sora The Troll",
+              "date": "2026-05-22",
+              "views": 6820,
+              "likes": 694,
+              "duration_secs": 97
+            }
+          ]
+        },
         "top_items": [
           {
             "title": "How Japan Treated This Japanese American VTuber LOLOL",
@@ -638,7 +820,6 @@
             "date": "2026-05-22",
             "views": 21930,
             "likes": 2905,
-            "comments": 45,
             "duration_secs": 121
           },
           {
@@ -648,7 +829,6 @@
             "date": "2026-05-21",
             "views": 15379,
             "likes": 651,
-            "comments": 13,
             "duration_secs": 31
           },
           {
@@ -658,7 +838,6 @@
             "date": "2026-05-22",
             "views": 6820,
             "likes": 694,
-            "comments": 19,
             "duration_secs": 97
           }
         ]
