@@ -1,53 +1,66 @@
 {
-  "last_updated": "2026-05-27T00:35:59Z",
+  "last_updated": "2026-05-27T11:52:02Z",
   "tasks": [
     {
       "id": "yt_ingest",
       "name": "YouTube Ingestion",
       "schedule": "Ogni 12h",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:51:24Z",
+      "status": "ok",
+      "metrics": {
+        "inserted": 69,
+        "skipped": 0
+      }
     },
     {
       "id": "rd_ingest",
       "name": "Reddit Ingestion",
       "schedule": "Ogni 6h",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:51:24Z",
+      "status": "disabled",
+      "metrics": {
+        "inserted": 0
+      }
     },
     {
       "id": "embed",
       "name": "Embedding",
       "schedule": "Lunedì 11:00",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:51:59Z",
+      "status": "ok",
+      "metrics": {
+        "items_processed": 69
+      }
     },
     {
       "id": "cluster",
       "name": "Clustering",
       "schedule": "Lunedì 11:00",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:52:02Z",
+      "status": "ok",
+      "metrics": {
+        "clusters_found": 6
+      }
     },
     {
       "id": "score",
       "name": "Scoring",
       "schedule": "Lunedì 11:00",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:52:02Z",
+      "status": "ok",
+      "metrics": {
+        "top_score": 1.1685
+      }
     },
     {
       "id": "report",
       "name": "Report generazione",
       "schedule": "Lunedì 11:00",
-      "last_run": null,
-      "status": "mai_eseguito",
-      "metrics": {}
+      "last_run": "2026-05-27T11:52:02Z",
+      "status": "ok",
+      "metrics": {
+        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-05-27.md"
+      }
     },
     {
       "id": "csv_gnm",
