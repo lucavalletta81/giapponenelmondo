@@ -567,13 +567,78 @@
   color: var(--gray-500);
 }
 
-/* ===== CLUSTER ITEMS — metriche video ===== */
+/* ===== CLUSTER SCORE BADGE ===== */
+.cluster-score-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--black);
+  padding: 3px 9px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+/* ===== METRICS GRID ===== */
+.cluster-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 6px;
+}
+.cm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gray-100);
+  border-radius: 6px;
+  padding: 8px 12px;
+  min-width: 56px;
+  gap: 2px;
+}
+.cm-val {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1;
+}
+.cm-lbl {
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+}
+
+/* ===== LANGUAGE SECTIONS ===== */
+.lang-section {
+  margin-top: 12px;
+  border-top: 1px solid var(--gray-100);
+  padding-top: 8px;
+}
+.lang-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.lang-count {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--gray-400);
+}
+
+/* ===== CLUSTER ITEMS ===== */
 .cluster-item {
   display: grid;
   grid-template-columns: 100px 1fr auto;
   align-items: center;
   gap: 8px;
-  padding: 7px 8px;
+  padding: 6px 6px;
   border-radius: 5px;
   font-size: 0.8rem;
   color: var(--gray-700);
@@ -582,7 +647,7 @@
 }
 .cluster-item:hover { background: var(--gray-100); color: var(--black); }
 .cluster-item-source {
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 600;
   color: var(--accent);
   text-transform: uppercase;
@@ -602,11 +667,6 @@
   gap: 6px;
   flex-shrink: 0;
 }
-.vm {
-  font-size: 0.7rem;
-  color: var(--gray-400);
-  white-space: nowrap;
-}
-.vm-views { color: var(--gray-500); }
-.vm-likes { color: #f87171; }
-.vm-dur   { color: var(--gray-400); }
+.vm           { font-size: 0.7rem; color: var(--gray-400); white-space: nowrap; }
+.vm-views     { color: var(--gray-600); }
+.vm-dur       { color: var(--gray-400); }
