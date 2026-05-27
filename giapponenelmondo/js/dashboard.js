@@ -17,6 +17,7 @@ const RSS_API = 'https://api.rss2json.com/v1/api.json';
 let allArticles = [];
 let currentFilter = 'all';
 let currentPanel = 'feed';
+let trendChart = null;
 
 // ================================================================
 // NAVIGATION
@@ -71,6 +72,25 @@ function setDate() {
   el.textContent = new Date().toLocaleDateString('it-IT', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
   });
+}
+
+// ================================================================
+// FORMATTERS
+// ================================================================
+function formatN(n) {
+  if (!n || n === 0) return '—';
+  if (n >= 1000000) return (n / 1000000).toFixed(1).replace('.0', '') + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(0) + 'K';
+  return n.toLocaleString('it-IT');
+}
+
+function formatDur(secs) {
+  if (!secs) return '';
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  if (h > 0) return `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  return `${m}:${String(s).padStart(2,'0')}`;
 }
 
 // ================================================================
@@ -157,6 +177,8 @@ async function loadTrendReport(force = false) {
 
   loading.classList.remove('hidden');
   content.classList.add('hidden');
+  if (trendChart) { trendChart.destroy(); trendChart = null; }
+
   try {
     const res = await fetch('data/trend_report.json?t=' + Date.now());
     if (!res.ok) throw new Error('not found');
@@ -168,27 +190,90 @@ async function loadTrendReport(force = false) {
 }
 
 const SECTION_LABELS = {
-  emergenti:   { emoji: '🔥', label: 'Emergenti caldi' },
-  crescita:    { emoji: '📈', label: 'In crescita costante' },
-  cross_source:{ emoji: '🌊', label: 'Cross-source' },
-  affinita:    { emoji: '🎯', label: 'Alta affinità con il canale' },
-  anomalie:    { emoji: '⚠️', label: 'Anomalie' },
-  altri:       { emoji: '📌', label: 'Altri trend' },
+  emergenti:    { emoji: '🔥', label: 'Emergenti caldi',         color: '#f59e0b' },
+  crescita:     { emoji: '📈', label: 'In crescita costante',    color: '#22c55e' },
+  cross_source: { emoji: '🌊', label: 'Cross-source',            color: '#3b82f6' },
+  affinita:     { emoji: '🎯', label: 'Alta affinità col canale',color: '#8b5cf6' },
+  anomalie:     { emoji: '⚠️', label: 'Anomalie',                color: '#ef4444' },
+  altri:        { emoji: '📌', label: 'Altri trend',             color: '#9ca3af' },
 };
+
+function getAllClusters(data) {
+  const seen = new Set();
+  const all = [];
+  const order = ['emergenti', 'crescita', 'cross_source', 'affinita', 'anomalie', 'altri'];
+  order.forEach(key => {
+    (data.sections[key] || []).forEach(cl => {
+      const id = (cl.keywords || []).join(',') || cl.label;
+      if (!seen.has(id)) { seen.add(id); all.push({ ...cl, _section: key }); }
+    });
+  });
+  return all.sort((a, b) => (b.score || 0) - (a.score || 0));
+}
+
+function renderChart(data) {
+  const canvas = document.getElementById('clustersChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  if (trendChart) { trendChart.destroy(); trendChart = null; }
+
+  const all = getAllClusters(data).slice(0, 10);
+  if (!all.length) { canvas.closest('.chart-wrap').style.display = 'none'; return; }
+
+  trendChart = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: all.map(c => (c.keywords || []).slice(0, 3).join(', ') || `Cluster ${c.label}`),
+      datasets: [{
+        data: all.map(c => c.score ? Math.round(c.score * 100) / 100 : 0),
+        backgroundColor: all.map(c => (SECTION_LABELS[c._section] || SECTION_LABELS.altri).color + 'cc'),
+        borderColor:     all.map(c => (SECTION_LABELS[c._section] || SECTION_LABELS.altri).color),
+        borderWidth: 1,
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` Score: ${ctx.raw}  ·  ${formatN(all[ctx.dataIndex].total_views)} views`
+          }
+        }
+      },
+      scales: {
+        x: { min: 0, max: 1, grid: { color: '#f3f4f6' }, ticks: { font: { size: 11 }, color: '#9ca3af' } },
+        y: { grid: { display: false }, ticks: { font: { size: 11 }, color: '#374151' } }
+      }
+    }
+  });
+}
 
 function renderTrendReport(data) {
   const loading = document.getElementById('trendLoading');
   const content = document.getElementById('trendContent');
   loading.classList.add('hidden');
 
-  const sections = data.sections || {};
+  const sections    = data.sections || {};
   const totalClusters = data.total_clusters || 0;
+  const totalVideos = data.total_videos || 0;
   const generatedAt = data.generated_at || '—';
+  const dateStart   = data.date_range_start || '';
+  const dateEnd     = data.date_range_end || '';
+  const dateRange   = dateStart && dateEnd ? `${dateStart} → ${dateEnd}` : '';
 
   let html = `
-    <div class="report-header">
-      <span class="report-meta">${totalClusters} cluster analizzati · generato il ${generatedAt}</span>
-    </div>`;
+    <div class="report-summary">
+      <div class="summary-stat"><span class="summary-num">${totalClusters}</span><span class="summary-lbl">cluster</span></div>
+      <div class="summary-divider"></div>
+      <div class="summary-stat"><span class="summary-num">${totalVideos}</span><span class="summary-lbl">video analizzati</span></div>
+      ${dateRange ? `<div class="summary-divider"></div><div class="summary-stat"><span class="summary-num" style="font-size:0.82rem">${dateRange}</span><span class="summary-lbl">finestra temporale</span></div>` : ''}
+      <div class="summary-divider"></div>
+      <div class="summary-stat"><span class="summary-num" style="font-size:0.82rem">${generatedAt}</span><span class="summary-lbl">generato il</span></div>
+    </div>
+    <div class="chart-wrap"><canvas id="clustersChart"></canvas></div>`;
 
   const order = ['emergenti', 'crescita', 'cross_source', 'affinita', 'anomalie', 'altri'];
   order.forEach(key => {
@@ -202,32 +287,48 @@ function renderTrendReport(data) {
 
   content.innerHTML = html;
   content.classList.remove('hidden');
+  renderChart(data);
 }
 
 function renderCluster(cl, showAffinity) {
-  const kw = (cl.keywords || []).join(', ') || '—';
-  const mover = cl.has_mover ? '<span class="tag tag-mover">⚡ mover</span>' : '';
-  const langs = (cl.languages || []).map(l => `<span class="tag">${l}</span>`).join('');
-  const sources = (cl.sentinel_clusters || []).map(s => `<span class="tag">${s}</span>`).join('');
+  const kw     = (cl.keywords || []).join(', ') || '—';
+  const score  = cl.score != null ? cl.score.toFixed(2) : '—';
+  const pct    = cl.score != null ? Math.round(cl.score * 100) : 0;
+  const mover  = cl.has_mover ? '<span class="tag tag-mover">⚡ mover</span>' : '';
+  const langs  = (cl.languages || []).map(l => `<span class="tag">${l}</span>`).join('');
+  const sources= (cl.sentinel_clusters || []).map(s => `<span class="tag">${s}</span>`).join('');
+  const totalViews = cl.total_views ? formatN(cl.total_views) : null;
 
   const affLine = showAffinity && cl.affinity_best_tipo !== '—'
     ? `<div class="cluster-affinity">🎯 Affinità <strong>${cl.affinity_best_tipo}</strong>: ${cl.affinity_best_score}</div>` : '';
 
-  const items = (cl.top_items || []).map(it =>
-    `<a href="${it.url}" target="_blank" rel="noopener" class="cluster-item">
+  const items = (cl.top_items || []).map(it => {
+    const dur  = formatDur(it.duration_secs);
+    const views = it.views ? `<span class="vm vm-views">👁 ${formatN(it.views)}</span>` : '';
+    const durEl = dur ? `<span class="vm vm-dur">${dur}</span>` : '';
+    const likes = it.likes ? `<span class="vm vm-likes">♥ ${formatN(it.likes)}</span>` : '';
+    return `<a href="${it.url}" target="_blank" rel="noopener" class="cluster-item">
       <span class="cluster-item-source">${it.source}</span>
       <span class="cluster-item-title">${it.title}</span>
-      <span class="cluster-item-date">${it.date || ''}</span>
-    </a>`
-  ).join('');
+      <span class="cluster-item-metrics">${views}${likes}${durEl}</span>
+    </a>`;
+  }).join('');
 
   return `
     <div class="cluster-card">
       <div class="cluster-top">
         <div class="cluster-kw">${kw}</div>
-        <div class="cluster-score">score ${cl.score ?? '—'}</div>
+        <div class="cluster-score-wrap">
+          <span class="cluster-score-num">${score}</span>
+        </div>
       </div>
+      <div class="score-track"><div class="score-fill" style="width:${pct}%"></div></div>
       <div class="cluster-tags">${mover}${langs}${sources}</div>
+      <div class="cluster-meta-row">
+        <span class="cluster-meta-item">📹 ${cl.item_count || 0} video</span>
+        ${totalViews ? `<span class="cluster-meta-item">👁 ${totalViews} views totali</span>` : ''}
+        ${cl.first_seen ? `<span class="cluster-meta-item">📅 ${cl.first_seen} → ${cl.last_seen}</span>` : ''}
+      </div>
       ${affLine}
       <div class="cluster-items">${items}</div>
     </div>`;
@@ -271,9 +372,8 @@ function renderTaskMonitor(data) {
     ? new Date(data.last_updated).toLocaleString('it-IT') : '—';
 
   let rows = (data.tasks || []).map(task => {
-    const cfg = STATUS_CONFIG[task.status] || STATUS_CONFIG.mai_eseguito;
-    const lastRun = task.last_run
-      ? new Date(task.last_run).toLocaleString('it-IT') : '—';
+    const cfg    = STATUS_CONFIG[task.status] || STATUS_CONFIG.mai_eseguito;
+    const lastRun = task.last_run ? new Date(task.last_run).toLocaleString('it-IT') : '—';
     const metrics = Object.entries(task.metrics || {})
       .map(([k, v]) => `<span class="metric">${k}: <strong>${v}</strong></span>`)
       .join('');
