@@ -44,12 +44,9 @@
       <div class="sidebar-divider"></div>
 
       <nav class="sidebar-nav">
-        <button class="sidebar-item" data-panel="trend-report" onclick="showPanel('trend-report', this)">
-          <span class="sidebar-icon">📊</span> Trend Report
-        </button>
-        <button class="sidebar-item" data-panel="task-monitor" onclick="showPanel('task-monitor', this)">
-          <span class="sidebar-icon">⚙️</span> Task Monitor
-        </button>
+        <a class="sidebar-item" href="report.html">
+          <span class="sidebar-icon">📑</span> Report Trend
+        </a>
       </nav>
 
       <div class="sidebar-section">
@@ -108,24 +105,6 @@
           <button onclick="loadAllFeeds()" class="btn-secondary">Riprova</button>
         </div>
         <div class="feed-grid hidden" id="feedGrid"></div>
-      </div>
-
-      <!-- ── TREND REPORT PANEL ── -->
-      <div id="panel-trend-report" class="panel-wrap hidden">
-        <div class="loading-state" id="trendLoading">
-          <div class="spinner"></div>
-          <p>Carico il report…</p>
-        </div>
-        <div class="panel-content hidden" id="trendContent"></div>
-      </div>
-
-      <!-- ── TASK MONITOR PANEL ── -->
-      <div id="panel-task-monitor" class="panel-wrap hidden">
-        <div class="loading-state" id="taskLoading">
-          <div class="spinner"></div>
-          <p>Carico lo stato…</p>
-        </div>
-        <div class="panel-content hidden" id="taskContent"></div>
       </div>
 
     </main>

@@ -3,10 +3,10 @@
 // ================================================================
 const FEEDS = [
   { url: 'https://anchor.fm/s/ffef9fd4/podcast/rss', name: 'Giappone nel Mondo', category: 'japan', icon: '🎙' },
-  { url: 'https://www3.nhk.or.jp/nhkworld/en/news/feeds/', name: 'NHK World', category: 'japan', icon: '📡' },
+  { url: 'https://www3.nhk.or.jp/rss/news/cat0.xml', name: 'NHK (Giappone)', category: 'japan', icon: '📡' },
   { url: 'https://www.japantimes.co.jp/feed/', name: 'Japan Times', category: 'japan', icon: '🗾' },
   { url: 'https://feeds.feedburner.com/TrendHunter', name: 'Trend Hunter', category: 'trends', icon: '📈' },
-  { url: 'https://rss.beehiiv.com/feeds/aiyAWnrHKq.xml', name: 'Cultural Trends', category: 'trends', icon: '🎌' },
+  { url: 'https://soranews24.com/feed/', name: 'SoraNews24', category: 'trends', icon: '🎌' },
   { url: 'https://feeds.arstechnica.com/arstechnica/index', name: 'Ars Technica', category: 'tech', icon: '💻' },
   { url: 'https://www.wired.com/feed/rss', name: 'Wired', category: 'tech', icon: '⚡' },
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml', name: 'BBC World', category: 'world', icon: '🌍' },
@@ -28,9 +28,11 @@ function setActiveBtn(btn) {
 }
 function showAllPanels(show) {
   ['panel-feed','panel-trend-report','panel-task-monitor'].forEach(id => {
-    document.getElementById(id).classList.add('hidden');
+    const el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
   });
-  document.getElementById('panel-' + show).classList.remove('hidden');
+  const target = document.getElementById('panel-' + show);
+  if (target) target.classList.remove('hidden');
 }
 function showFeed(filter, btn) {
   currentPanel = 'feed'; currentFilter = filter;
@@ -85,10 +87,11 @@ function pct(v) { return Math.round((v||0)*100); }
 // ================================================================
 async function fetchFeed(feed) {
   try {
-    const res  = await fetch(`${RSS_API}?rss_url=${encodeURIComponent(feed.url)}&count=8`);
+    // NB: il free tier di rss2json NON accetta più `count` (richiede API key) → niente count, taglio lato client.
+    const res  = await fetch(`${RSS_API}?rss_url=${encodeURIComponent(feed.url)}`);
     const data = await res.json();
     if (data.status !== 'ok' || !data.items?.length) return [];
-    return data.items.map(item => ({ ...item, sourceName: feed.name, sourceIcon: feed.icon, category: feed.category }));
+    return data.items.slice(0, 8).map(item => ({ ...item, sourceName: feed.name, sourceIcon: feed.icon, category: feed.category }));
   } catch { return []; }
 }
 async function loadAllFeeds() {

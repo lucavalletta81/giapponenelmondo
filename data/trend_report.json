@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-05-26",
+  "total_clusters": 5,
+  "sections": {
+    "emergenti": [
+      {
+        "label": 3,
+        "score": 1.0559,
+        "keywords": [
+          "amazon",
+          "avere",
+          "canale",
+          "compra",
+          "del",
+          "giappone"
+        ],
+        "item_count": 16,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-25",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8498,
+          "casual": 0.8247
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.85,
+        "top_items": [
+          {
+            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
+            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
+            "source": "Caverna di Platone",
+            "date": "2026-05-25"
+          },
+          {
+            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
+            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
+            "source": "Caverna di Platone",
+            "date": "2026-05-24"
+          },
+          {
+            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
+            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
+            "source": "Marchino in Giappone",
+            "date": "2026-05-23"
+          }
+        ]
+      },
+      {
+        "label": 0,
+        "score": 0.4249,
+        "keywords": [
+          "aprimi",
+          "calze",
+          "calze non",
+          "calze usate",
+          "codice",
+          "codice vlaszlo"
+        ],
+        "item_count": 6,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-25",
+        "sentinel_clusters": [
+          "videogiochi"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6429,
+          "casual": 0.5018
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.643,
+        "top_items": [
+          {
+            "title": "Il Declino di Star Wars: Serve il Riformismo",
+            "url": "https://www.youtube.com/watch?v=EQGh1DsF-yY",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-25"
+          },
+          {
+            "title": "Vought Rising Trailer: Mi sento preso in giro da The Boys",
+            "url": "https://www.youtube.com/watch?v=NYECQKuEvdI",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-23"
+          },
+          {
+            "title": "Euphoria 3x06",
+            "url": "https://www.youtube.com/watch?v=YNzj7f7mGnQ",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-23"
+          }
+        ]
+      }
+    ],
+    "crescita": [],
+    "cross_source": [],
+    "affinita": [
+      {
+        "label": 3,
+        "score": 1.0559,
+        "keywords": [
+          "amazon",
+          "avere",
+          "canale",
+          "compra",
+          "del",
+          "giappone"
+        ],
+        "item_count": 16,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-25",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8498,
+          "casual": 0.8247
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.85,
+        "top_items": [
+          {
+            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
+            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
+            "source": "Caverna di Platone",
+            "date": "2026-05-25"
+          },
+          {
+            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
+            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
+            "source": "Caverna di Platone",
+            "date": "2026-05-24"
+          },
+          {
+            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
+            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
+            "source": "Marchino in Giappone",
+            "date": "2026-05-23"
+          }
+        ]
+      }
+    ],
+    "anomalie": [
+      {
+        "label": 3,
+        "score": 1.0559,
+        "keywords": [
+          "amazon",
+          "avere",
+          "canale",
+          "compra",
+          "del",
+          "giappone"
+        ],
+        "item_count": 16,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-25",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8498,
+          "casual": 0.8247
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.85,
+        "top_items": [
+          {
+            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
+            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
+            "source": "Caverna di Platone",
+            "date": "2026-05-25"
+          },
+          {
+            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
+            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
+            "source": "Caverna di Platone",
+            "date": "2026-05-24"
+          },
+          {
+            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
+            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
+            "source": "Marchino in Giappone",
+            "date": "2026-05-23"
+          }
+        ]
+      }
+    ],
+    "altri": [
+      {
+        "label": 4,
+        "score": 0.3297,
+        "keywords": [
+          "bgm",
+          "english",
+          "english english",
+          "english works",
+          "naokichi",
+          "naokichi works"
+        ],
+        "item_count": 3,
+        "first_seen": "2026-05-21",
+        "last_seen": "2026-05-24",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6338,
+          "casual": 0.5399
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.634,
+        "top_items": [
+          {
+            "title": "成長の段階でえ『いいね』を気にするの禁止！！",
+            "url": "https://www.youtube.com/watch?v=32y_rsQ-mac",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-05-24"
+          },
+          {
+            "title": "【注意】その行動、絵が下手になります",
+            "url": "https://www.youtube.com/watch?v=sRGNl4L3BtM",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-05-23"
+          },
+          {
+            "title": "【質問】筆圧、線の強弱のメリットは何ですか...！？",
+            "url": "https://www.youtube.com/watch?v=XAALgr9EOeg",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-05-21"
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 0.3259,
+        "keywords": [
+          "accept",
+          "car",
+          "donations",
+          "forza",
+          "heart",
+          "heart read"
+        ],
+        "item_count": 3,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-25",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5863,
+          "casual": 0.5881
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.588,
+        "top_items": [
+          {
+            "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+            "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+            "source": "Sora The Troll",
+            "date": "2026-05-25"
+          },
+          {
+            "title": "TOKYO SHIBUYA FOREINGERS ARE GOING WILD Because Of Forza Horizon 6 LOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=MzctlQF-tbM",
+            "source": "Sora The Troll",
+            "date": "2026-05-22"
+          },
+          {
+            "title": "This Is Japan's secret Hidden  DUNGEON LOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=Z-zbpKEZ_fs",
+            "source": "Sora The Troll",
+            "date": "2026-05-19"
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.2416,
+        "keywords": [
+          "album",
+          "join the",
+          "links",
+          "links for",
+          "memberships",
+          "memberships get"
+        ],
+        "item_count": 5,
+        "first_seen": "2026-05-19",
+        "last_seen": "2026-05-22",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.635,
+          "casual": 0.6066
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.635,
+        "top_items": [
+          {
+            "title": "How Japan Treated This Japanese American VTuber LOLOL",
+            "url": "https://www.youtube.com/watch?v=YtGAJ6rxysM",
+            "source": "Sora The Troll",
+            "date": "2026-05-22"
+          },
+          {
+            "title": "How Japan Treated This Japanese American VTuber LOLOL",
+            "url": "https://www.youtube.com/watch?v=g7KDuItdZZg",
+            "source": "Sora The Troll",
+            "date": "2026-05-22"
+          },
+          {
+            "title": "Making This Japanese VTuber Say \"CRINGE\" LOL",
+            "url": "https://www.youtube.com/watch?v=J2WQTTBGN-Y",
+            "source": "Sora The Troll",
+            "date": "2026-05-21"
+          }
+        ]
+      }
+    ]
+  }
+}

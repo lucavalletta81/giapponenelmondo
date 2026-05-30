@@ -28,7 +28,9 @@ async function loadYouTubeVideos() {
 
   const grid = document.getElementById('videoGrid');
   const rssFeedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`;
-  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}&count=6`;
+  // NB: il free tier di rss2json NON accetta più il parametro `count` (richiede API key).
+  // Quindi non lo passiamo e tagliamo a 6 lato client.
+  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}`;
 
   try {
     const response = await fetch(apiUrl);
@@ -38,7 +40,7 @@ async function loadYouTubeVideos() {
 
     grid.innerHTML = '';
 
-    data.items.forEach(video => {
+    data.items.slice(0, 6).forEach(video => {
       const videoId = video.link.split('v=')[1];
       const thumb = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
       const date = new Date(video.pubDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });

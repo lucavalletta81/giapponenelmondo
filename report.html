@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Trend — Giappone nel Mondo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/report.css" />
+</head>
+<body class="report-body">
+
+  <header class="report-topbar">
+    <a class="report-logo" href="index.html">
+      <span class="logo-jp">日本</span>
+      <span class="logo-text">GnM</span>
+    </a>
+    <div class="report-topbar-mid">
+      <span class="report-topbar-title">Report Trend</span>
+      <span class="report-topbar-sub" id="genAt">—</span>
+    </div>
+    <div class="report-topbar-actions">
+      <a href="dashboard.html" class="report-navlink">Dashboard</a>
+      <button class="report-refresh" id="btnRefresh" title="Ricarica">↻</button>
+    </div>
+  </header>
+
+  <main class="report-main">
+
+    <div class="report-state" id="loadingState">
+      <div class="spinner"></div>
+      <p>Carico il report…</p>
+    </div>
+
+    <div class="report-state hidden" id="errorState">
+      <p>⚠️ Report non ancora disponibile.</p>
+      <p class="report-state-sub">Verrà generato al prossimo run dell'agente (venerdì 09:00 · lunedì 19:00).</p>
+    </div>
+
+    <div id="reportContent" class="hidden"></div>
+
+  </main>
+
+  <footer class="report-foot">
+    Generato dal dipartimento Trend Analysis · Agenzia Giappone nel Mondo
+  </footer>
+
+  <script src="js/report.js"></script>
+</body>
+</html>
