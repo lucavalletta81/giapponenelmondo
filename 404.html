@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giappone nel Mondo</title>
+  <script>
+    // Il sito è stato spostato dalla sottocartella /giapponenelmondo/ alla radice.
+    // Reindirizza i vecchi link (e le cache stantie del vecchio redirect) alla pagina giusta.
+    (function () {
+      var p = location.pathname.replace(/^\/giapponenelmondo\//, '/');
+      if (p === location.pathname) p = '/';        // path sconosciuto → home
+      if (p !== location.pathname) {
+        location.replace(p + location.search + location.hash);
+      }
+    })();
+  </script>
+  <meta http-equiv="refresh" content="2; url=/" />
+  <style>
+    body{font-family:-apple-system,Inter,sans-serif;background:#0f0f0f;color:#eee;
+         display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;text-align:center}
+    a{color:#e8b04b}
+  </style>
+</head>
+<body>
+  <div>
+    <p style="font-size:2rem">日本</p>
+    <p>Ti sto riportando al sito… <a href="/">vai alla home</a></p>
+  </div>
+</body>
+</html>
