@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-05-30 14:33",
+  "passed": 11,
+  "total": 11,
+  "results": [
+    {
+      "name": "Pagina Home (/)",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Pagina Dashboard (/dashboard.html)",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Pagina Report (/report.html)",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Pagina Pagina 404 (/404.html)",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Dati report — JSON valido",
+      "ok": true,
+      "detail": "generato 2026-05-30 11:46 (overview ok)"
+    },
+    {
+      "name": "Dati report — freschezza",
+      "ok": true,
+      "detail": "0 giorni fa"
+    },
+    {
+      "name": "YouTube — feed video",
+      "ok": true,
+      "detail": "status=ok · 10 video"
+    },
+    {
+      "name": "Regressione rss2json (&count assente)",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Feed dashboard (Japan Times)",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "Redirect vecchi link (404.html)",
+      "ok": true,
+      "detail": "attivo"
+    },
+    {
+      "name": "Git — locale allineato a GitHub",
+      "ok": true,
+      "detail": "in sync"
+    }
+  ]
+}
