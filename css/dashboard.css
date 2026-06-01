@@ -184,6 +184,9 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
   align-content: start;
+  /* Le righe si dimensionano sul contenuto reale: senza questo, con align-items:stretch
+     (default) le card flex-column con overflow:hidden collassano a ~2px (min-content ≈ 0). */
+  grid-auto-rows: max-content;
 }
 
 /* ===== ARTICLE CARD ===== */
