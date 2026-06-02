@@ -44,8 +44,14 @@
       <div class="sidebar-divider"></div>
 
       <nav class="sidebar-nav">
+        <button class="sidebar-item" data-panel="trend-report" onclick="showPanel('trend-report', this)">
+          <span class="sidebar-icon">📊</span> Cluster YouTube
+        </button>
+        <button class="sidebar-item" data-panel="task-monitor" onclick="showPanel('task-monitor', this)">
+          <span class="sidebar-icon">⚙️</span> Stato pipeline
+        </button>
         <a class="sidebar-item" href="report.html">
-          <span class="sidebar-icon">📑</span> Report Trend
+          <span class="sidebar-icon">📑</span> Report editoriale
         </a>
       </nav>
 
@@ -78,7 +84,7 @@
 
       <div class="sidebar-footer">
         <a href="index.html" class="sidebar-back">← Sito pubblico</a>
-        <p class="sidebar-back" style="opacity:.55;font-size:.72rem;margin-top:6px"><!--STAMP-->Aggiornato il 02/06/2026 09:05<!--/STAMP--></p>
+        <p class="sidebar-back" style="opacity:.55;font-size:.72rem;margin-top:6px"><!--STAMP-->Aggiornato il 02/06/2026 18:04<!--/STAMP--></p>
       </div>
     </aside>
 
@@ -106,6 +112,24 @@
           <button onclick="loadAllFeeds()" class="btn-secondary">Riprova</button>
         </div>
         <div class="feed-grid hidden" id="feedGrid"></div>
+      </div>
+
+      <!-- ── CLUSTER (TREND REPORT) PANEL ── -->
+      <div id="panel-trend-report" class="panel-wrap panel-content hidden">
+        <div class="loading-state" id="trendLoading">
+          <div class="spinner"></div>
+          <p>Carico i cluster…</p>
+        </div>
+        <div id="trendContent" class="hidden"></div>
+      </div>
+
+      <!-- ── TASK MONITOR PANEL ── -->
+      <div id="panel-task-monitor" class="panel-wrap panel-content hidden">
+        <div class="loading-state" id="taskLoading">
+          <div class="spinner"></div>
+          <p>Carico lo stato della pipeline…</p>
+        </div>
+        <div id="taskContent" class="hidden"></div>
       </div>
 
     </main>

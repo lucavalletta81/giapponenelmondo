@@ -46,10 +46,10 @@ function showPanel(name, btn) {
   if (btn) setActiveBtn(btn);
   showAllPanels(name);
   if (name === 'trend-report') {
-    document.getElementById('panelTitle').textContent = 'Trend Report';
+    document.getElementById('panelTitle').textContent = 'Cluster YouTube — Trend Discovery';
     loadTrendReport();
   } else if (name === 'task-monitor') {
-    document.getElementById('panelTitle').textContent = 'Task Monitor';
+    document.getElementById('panelTitle').textContent = 'Stato pipeline';
     loadTaskMonitor();
   }
 }
@@ -373,4 +373,15 @@ function renderTaskMonitor(data) {
 // ================================================================
 // INIT
 // ================================================================
-document.addEventListener('DOMContentLoaded', () => { setDate(); loadAllFeeds(); });
+document.addEventListener('DOMContentLoaded', () => {
+  setDate();
+  // Deep-link via hash: dashboard.html#cluster / #pipeline (usato dal link nell'email)
+  const h = (location.hash || '').replace('#', '');
+  if (h === 'cluster') {
+    showPanel('trend-report', document.querySelector('[data-panel="trend-report"]'));
+  } else if (h === 'pipeline') {
+    showPanel('task-monitor', document.querySelector('[data-panel="task-monitor"]'));
+  } else {
+    loadAllFeeds();
+  }
+});

@@ -1,24 +1,30 @@
 {
-  "generated_at": "2026-05-26",
-  "total_clusters": 5,
+  "generated_at": "2026-06-01",
+  "total_clusters": 8,
+  "total_videos": 55,
+  "date_range_start": "2026-05-20",
+  "date_range_end": "2026-05-30",
   "sections": {
     "emergenti": [
       {
-        "label": 3,
-        "score": 1.0559,
+        "label": 1,
+        "score": 0.9852,
         "keywords": [
-          "amazon",
-          "avere",
+          "boss",
+          "campone",
           "canale",
-          "compra",
-          "del",
-          "giappone"
+          "coach",
+          "con vocal",
+          "doppiaggio"
         ],
-        "item_count": 16,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-25",
+        "item_count": 3,
+        "total_views": 145619,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-05-29",
+        "last_seen": "2026-05-30",
         "sentinel_clusters": [
-          "vita_giappone",
           "anime_manga_pop"
         ],
         "languages": [
@@ -26,46 +32,462 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.8498,
-          "casual": 0.8247
+          "narrativo": 0.4974,
+          "casual": 0.4792
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.85,
+        "affinity_best_score": 0.497,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+              "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-30",
+              "views": 62271,
+              "likes": 2260,
+              "duration_secs": 54
+            },
+            {
+              "title": "Imparo a fare il GROWL con un VOCAL COACH",
+              "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-29",
+              "views": 54988,
+              "likes": 4004,
+              "duration_secs": 1508
+            },
+            {
+              "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+              "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+              "source": "151eG",
+              "date": "2026-05-30",
+              "views": 28360,
+              "likes": 3077,
+              "duration_secs": 2340
+            }
+          ]
+        },
         "top_items": [
           {
-            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
-            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
-            "source": "Caverna di Platone",
-            "date": "2026-05-25"
+            "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+            "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-30",
+            "views": 62271,
+            "likes": 2260,
+            "duration_secs": 54
           },
           {
-            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
-            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
-            "source": "Caverna di Platone",
-            "date": "2026-05-24"
+            "title": "Imparo a fare il GROWL con un VOCAL COACH",
+            "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-29",
+            "views": 54988,
+            "likes": 4004,
+            "duration_secs": 1508
           },
           {
-            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
-            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
-            "source": "Marchino in Giappone",
-            "date": "2026-05-23"
+            "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+            "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+            "source": "151eG",
+            "date": "2026-05-30",
+            "views": 28360,
+            "likes": 3077,
+            "duration_secs": 2340
+          }
+        ]
+      }
+    ],
+    "crescita": [
+      {
+        "label": 6,
+        "score": 0.8043,
+        "keywords": [
+          "amazon",
+          "avere",
+          "canale",
+          "codice",
+          "giappone",
+          "giapponesi"
+        ],
+        "item_count": 17,
+        "total_views": 47853,
+        "velocity": 0.588,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-05-20",
+        "last_seen": "2026-05-31",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8136,
+          "casual": 0.7363
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.814,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+              "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 8274,
+              "likes": 403,
+              "duration_secs": 2333
+            },
+            {
+              "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+              "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+              "source": "Tommaso In Giappone",
+              "date": "2026-05-22",
+              "views": 7783,
+              "likes": 829,
+              "duration_secs": 845
+            },
+            {
+              "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+              "source": "Vivi Giappone",
+              "date": "2026-05-28",
+              "views": 6569,
+              "likes": 277,
+              "duration_secs": 17
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+            "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+            "source": "Caverna di Platone",
+            "date": "2026-05-21",
+            "views": 8274,
+            "likes": 403,
+            "duration_secs": 2333
+          },
+          {
+            "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+            "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+            "source": "Tommaso In Giappone",
+            "date": "2026-05-22",
+            "views": 7783,
+            "likes": 829,
+            "duration_secs": 845
+          },
+          {
+            "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+            "source": "Vivi Giappone",
+            "date": "2026-05-28",
+            "views": 6569,
+            "likes": 277,
+            "duration_secs": 17
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.4902,
+        "keywords": [
+          "act",
+          "all",
+          "all music",
+          "allowance",
+          "and shiz",
+          "and sounds"
+        ],
+        "item_count": 4,
+        "total_views": 88904,
+        "velocity": 0.875,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-22",
+        "last_seen": "2026-05-29",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6158,
+          "casual": 0.6079
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.616,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "Hes unemployed with 3 wives...",
+              "url": "https://www.youtube.com/watch?v=gP6OkisioXw",
+              "source": "The Anime Man",
+              "date": "2026-05-29",
+              "views": 32581,
+              "likes": 541,
+              "duration_secs": 25
+            },
+            {
+              "title": "How much can you earn in 𝘵𝘩𝘢𝘵 industry?",
+              "url": "https://www.youtube.com/watch?v=k6Y0clHLflk",
+              "source": "The Anime Man",
+              "date": "2026-05-27",
+              "views": 20835,
+              "likes": 370,
+              "duration_secs": 30
+            },
+            {
+              "title": "He wanted to \"win\" at love",
+              "url": "https://www.youtube.com/watch?v=IK3xaMICG0I",
+              "source": "The Anime Man",
+              "date": "2026-05-22",
+              "views": 20360,
+              "likes": 266,
+              "duration_secs": 25
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Hes unemployed with 3 wives...",
+            "url": "https://www.youtube.com/watch?v=gP6OkisioXw",
+            "source": "The Anime Man",
+            "date": "2026-05-29",
+            "views": 32581,
+            "likes": 541,
+            "duration_secs": 25
+          },
+          {
+            "title": "How much can you earn in 𝘵𝘩𝘢𝘵 industry?",
+            "url": "https://www.youtube.com/watch?v=k6Y0clHLflk",
+            "source": "The Anime Man",
+            "date": "2026-05-27",
+            "views": 20835,
+            "likes": 370,
+            "duration_secs": 30
+          },
+          {
+            "title": "He wanted to \"win\" at love",
+            "url": "https://www.youtube.com/watch?v=IK3xaMICG0I",
+            "source": "The Anime Man",
+            "date": "2026-05-22",
+            "views": 20360,
+            "likes": 266,
+            "duration_secs": 25
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.3547,
+        "keywords": [
+          "anche qui",
+          "canale",
+          "canale seguimi",
+          "curiosità",
+          "dellimellow",
+          "facebook"
+        ],
+        "item_count": 4,
+        "total_views": 4077,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-05-23",
+        "last_seen": "2026-05-31",
+        "sentinel_clusters": [
+          "viaggio",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6013,
+          "casual": 0.5467
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.601,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "CAT STREET HARAJUKU",
+              "url": "https://www.youtube.com/watch?v=U2BTB1b4m1k",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-29",
+              "views": 1744,
+              "likes": 40,
+              "duration_secs": 65
+            },
+            {
+              "title": "Camion della spazzatura in Giappone sono puliti",
+              "url": "https://www.youtube.com/watch?v=gzryULN7ovw",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-23",
+              "views": 1030,
+              "likes": 74,
+              "duration_secs": 102
+            },
+            {
+              "title": "Ben-Gvir ride per Ora che supera Azione sui Social | O&I Podcast n.27",
+              "url": "https://www.youtube.com/watch?v=XSZnssPchEM",
+              "source": "Dellimellow",
+              "date": "2026-05-25",
+              "views": 803,
+              "likes": 40,
+              "duration_secs": 6933
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "CAT STREET HARAJUKU",
+            "url": "https://www.youtube.com/watch?v=U2BTB1b4m1k",
+            "source": "Calabrese in Oriente",
+            "date": "2026-05-29",
+            "views": 1744,
+            "likes": 40,
+            "duration_secs": 65
+          },
+          {
+            "title": "Camion della spazzatura in Giappone sono puliti",
+            "url": "https://www.youtube.com/watch?v=gzryULN7ovw",
+            "source": "Calabrese in Oriente",
+            "date": "2026-05-23",
+            "views": 1030,
+            "likes": 74,
+            "duration_secs": 102
+          },
+          {
+            "title": "Ben-Gvir ride per Ora che supera Azione sui Social | O&I Podcast n.27",
+            "url": "https://www.youtube.com/watch?v=XSZnssPchEM",
+            "source": "Dellimellow",
+            "date": "2026-05-25",
+            "views": 803,
+            "likes": 40,
+            "duration_secs": 6933
+          }
+        ]
+      },
+      {
+        "label": 5,
+        "score": 0.2754,
+        "keywords": [
+          "accept",
+          "accept donations",
+          "album",
+          "appreciate",
+          "appreciate the",
+          "bottom"
+        ],
+        "item_count": 6,
+        "total_views": 35667,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-22",
+        "last_seen": "2026-06-01",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5856,
+          "casual": 0.6123
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.612,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+              "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+              "source": "Sora The Troll",
+              "date": "2026-05-25",
+              "views": 13002,
+              "likes": 564,
+              "duration_secs": 13028
+            },
+            {
+              "title": "TOKYO SHIBUYA FOREINGERS ARE GOING WILD Because Of Forza Horizon 6 LOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=MzctlQF-tbM",
+              "source": "Sora The Troll",
+              "date": "2026-05-22",
+              "views": 12219,
+              "likes": 563,
+              "duration_secs": 12321
+            },
+            {
+              "title": "Japanese people hate FOREIGNERS Now because of piracy LOLOLOLOLOLOLOLOLOOLLOOLLOOLLOLOLOLOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=f4UkVqZGGa8",
+              "source": "Sora The Troll",
+              "date": "2026-05-27",
+              "views": 6337,
+              "likes": 386,
+              "duration_secs": 7134
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+            "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+            "source": "Sora The Troll",
+            "date": "2026-05-25",
+            "views": 13002,
+            "likes": 564,
+            "duration_secs": 13028
+          },
+          {
+            "title": "TOKYO SHIBUYA FOREINGERS ARE GOING WILD Because Of Forza Horizon 6 LOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=MzctlQF-tbM",
+            "source": "Sora The Troll",
+            "date": "2026-05-22",
+            "views": 12219,
+            "likes": 563,
+            "duration_secs": 12321
+          },
+          {
+            "title": "Japanese people hate FOREIGNERS Now because of piracy LOLOLOLOLOLOLOLOLOOLLOOLLOOLLOLOLOLOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=f4UkVqZGGa8",
+            "source": "Sora The Troll",
+            "date": "2026-05-27",
+            "views": 6337,
+            "likes": 386,
+            "duration_secs": 7134
           }
         ]
       },
       {
         "label": 0,
-        "score": 0.4249,
+        "score": 0.2668,
         "keywords": [
+          "aggiungete",
+          "aggiungete ulteriore",
           "aprimi",
           "calze",
           "calze non",
-          "calze usate",
-          "codice",
-          "codice vlaszlo"
+          "calze usate"
         ],
-        "item_count": 6,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-25",
+        "item_count": 10,
+        "total_views": 342489,
+        "velocity": 0.5,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-20",
+        "last_seen": "2026-05-29",
         "sentinel_clusters": [
           "videogiochi"
         ],
@@ -74,141 +496,75 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6429,
-          "casual": 0.5018
+          "narrativo": 0.679,
+          "casual": 0.5246
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.643,
+        "affinity_best_score": 0.679,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "The Boys 5X08: Un finale DELUDENTISSIMO",
+              "url": "https://www.youtube.com/watch?v=BbzlA89LWjg",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-20",
+              "views": 121594,
+              "likes": 6876,
+              "duration_secs": 2480
+            },
+            {
+              "title": "Vought Rising Trailer: Mi sento preso in giro da The Boys",
+              "url": "https://www.youtube.com/watch?v=NYECQKuEvdI",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-23",
+              "views": 50201,
+              "likes": 2153,
+              "duration_secs": 617
+            },
+            {
+              "title": "MovieBlog- 1085: Recensione Backrooms",
+              "url": "https://www.youtube.com/watch?v=tpmUDM7CpAA",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-27",
+              "views": 36647,
+              "likes": 1921,
+              "duration_secs": 2464
+            }
+          ]
+        },
         "top_items": [
           {
-            "title": "Il Declino di Star Wars: Serve il Riformismo",
-            "url": "https://www.youtube.com/watch?v=EQGh1DsF-yY",
+            "title": "The Boys 5X08: Un finale DELUDENTISSIMO",
+            "url": "https://www.youtube.com/watch?v=BbzlA89LWjg",
             "source": "Victorlaszlo88",
-            "date": "2026-05-25"
+            "date": "2026-05-20",
+            "views": 121594,
+            "likes": 6876,
+            "duration_secs": 2480
           },
           {
             "title": "Vought Rising Trailer: Mi sento preso in giro da The Boys",
             "url": "https://www.youtube.com/watch?v=NYECQKuEvdI",
             "source": "Victorlaszlo88",
-            "date": "2026-05-23"
+            "date": "2026-05-23",
+            "views": 50201,
+            "likes": 2153,
+            "duration_secs": 617
           },
           {
-            "title": "Euphoria 3x06",
-            "url": "https://www.youtube.com/watch?v=YNzj7f7mGnQ",
+            "title": "MovieBlog- 1085: Recensione Backrooms",
+            "url": "https://www.youtube.com/watch?v=tpmUDM7CpAA",
             "source": "Victorlaszlo88",
-            "date": "2026-05-23"
+            "date": "2026-05-27",
+            "views": 36647,
+            "likes": 1921,
+            "duration_secs": 2464
           }
         ]
-      }
-    ],
-    "crescita": [],
-    "cross_source": [],
-    "affinita": [
+      },
       {
-        "label": 3,
-        "score": 1.0559,
-        "keywords": [
-          "amazon",
-          "avere",
-          "canale",
-          "compra",
-          "del",
-          "giappone"
-        ],
-        "item_count": 16,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-25",
-        "sentinel_clusters": [
-          "vita_giappone",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.8498,
-          "casual": 0.8247
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.85,
-        "top_items": [
-          {
-            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
-            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
-            "source": "Caverna di Platone",
-            "date": "2026-05-25"
-          },
-          {
-            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
-            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
-            "source": "Caverna di Platone",
-            "date": "2026-05-24"
-          },
-          {
-            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
-            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
-            "source": "Marchino in Giappone",
-            "date": "2026-05-23"
-          }
-        ]
-      }
-    ],
-    "anomalie": [
-      {
-        "label": 3,
-        "score": 1.0559,
-        "keywords": [
-          "amazon",
-          "avere",
-          "canale",
-          "compra",
-          "del",
-          "giappone"
-        ],
-        "item_count": 16,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-25",
-        "sentinel_clusters": [
-          "vita_giappone",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.8498,
-          "casual": 0.8247
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.85,
-        "top_items": [
-          {
-            "title": "CERCAVO LA RANA ED È USCITA LA GATTA",
-            "url": "https://www.youtube.com/watch?v=diSJvtfsD5Y",
-            "source": "Caverna di Platone",
-            "date": "2026-05-25"
-          },
-          {
-            "title": "CHIACCHIERE MANGA e CINEMA HORROR",
-            "url": "https://www.youtube.com/watch?v=hJFT79J3RWg",
-            "source": "Caverna di Platone",
-            "date": "2026-05-24"
-          },
-          {
-            "title": "10 cose che i turisti italiani fanno MALE in Giappone \"io le vedo ogni giorno\"",
-            "url": "https://www.youtube.com/watch?v=zfCs4MQ-Hlg",
-            "source": "Marchino in Giappone",
-            "date": "2026-05-23"
-          }
-        ]
-      }
-    ],
-    "altri": [
-      {
-        "label": 4,
-        "score": 0.3297,
+        "label": 7,
+        "score": 0.2581,
         "keywords": [
           "bgm",
           "english",
@@ -217,9 +573,13 @@
           "naokichi",
           "naokichi works"
         ],
-        "item_count": 3,
+        "item_count": 7,
+        "total_views": 174935,
+        "velocity": 0.857,
+        "novelty": 0.5,
+        "diversity": 0.292,
         "first_seen": "2026-05-21",
-        "last_seen": "2026-05-24",
+        "last_seen": "2026-05-31",
         "sentinel_clusters": [
           "japan_native"
         ],
@@ -228,125 +588,353 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6338,
-          "casual": 0.5399
+          "narrativo": 0.6559,
+          "casual": 0.5572
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.634,
+        "affinity_best_score": 0.656,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "【注意】その行動、絵が下手になります",
+              "url": "https://www.youtube.com/watch?v=sRGNl4L3BtM",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-23",
+              "views": 49983,
+              "likes": 2484,
+              "duration_secs": 1259
+            },
+            {
+              "title": "絵が上手くなっても、下手に見える事があります。【きまぐれ添削237】",
+              "url": "https://www.youtube.com/watch?v=f7RHM2Jf-W8",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-28",
+              "views": 31261,
+              "likes": 1856,
+              "duration_secs": 1140
+            },
+            {
+              "title": "どうせするなら、前向きな勘違いをしよう。",
+              "url": "https://www.youtube.com/watch?v=OlYIjQcbKoI",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-30",
+              "views": 30454,
+              "likes": 1656,
+              "duration_secs": 1172
+            }
+          ]
+        },
         "top_items": [
-          {
-            "title": "成長の段階でえ『いいね』を気にするの禁止！！",
-            "url": "https://www.youtube.com/watch?v=32y_rsQ-mac",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-05-24"
-          },
           {
             "title": "【注意】その行動、絵が下手になります",
             "url": "https://www.youtube.com/watch?v=sRGNl4L3BtM",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-05-23"
+            "date": "2026-05-23",
+            "views": 49983,
+            "likes": 2484,
+            "duration_secs": 1259
           },
           {
-            "title": "【質問】筆圧、線の強弱のメリットは何ですか...！？",
-            "url": "https://www.youtube.com/watch?v=XAALgr9EOeg",
+            "title": "絵が上手くなっても、下手に見える事があります。【きまぐれ添削237】",
+            "url": "https://www.youtube.com/watch?v=f7RHM2Jf-W8",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-05-21"
-          }
-        ]
-      },
-      {
-        "label": 1,
-        "score": 0.3259,
-        "keywords": [
-          "accept",
-          "car",
-          "donations",
-          "forza",
-          "heart",
-          "heart read"
-        ],
-        "item_count": 3,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-25",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5863,
-          "casual": 0.5881
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.588,
-        "top_items": [
-          {
-            "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
-            "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
-            "source": "Sora The Troll",
-            "date": "2026-05-25"
+            "date": "2026-05-28",
+            "views": 31261,
+            "likes": 1856,
+            "duration_secs": 1140
           },
           {
-            "title": "TOKYO SHIBUYA FOREINGERS ARE GOING WILD Because Of Forza Horizon 6 LOLOLOLOL",
-            "url": "https://www.youtube.com/watch?v=MzctlQF-tbM",
-            "source": "Sora The Troll",
-            "date": "2026-05-22"
-          },
-          {
-            "title": "This Is Japan's secret Hidden  DUNGEON LOLOLOLOL",
-            "url": "https://www.youtube.com/watch?v=Z-zbpKEZ_fs",
-            "source": "Sora The Troll",
-            "date": "2026-05-19"
+            "title": "どうせするなら、前向きな勘違いをしよう。",
+            "url": "https://www.youtube.com/watch?v=OlYIjQcbKoI",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-05-30",
+            "views": 30454,
+            "likes": 1656,
+            "duration_secs": 1172
           }
         ]
-      },
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
       {
-        "label": 2,
-        "score": 0.2416,
+        "label": 6,
+        "score": 0.8043,
         "keywords": [
-          "album",
-          "join the",
-          "links",
-          "links for",
-          "memberships",
-          "memberships get"
+          "amazon",
+          "avere",
+          "canale",
+          "codice",
+          "giappone",
+          "giapponesi"
         ],
-        "item_count": 5,
-        "first_seen": "2026-05-19",
-        "last_seen": "2026-05-22",
+        "item_count": 17,
+        "total_views": 47853,
+        "velocity": 0.588,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-05-20",
+        "last_seen": "2026-05-31",
         "sentinel_clusters": [
-          "japan_native"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
-          "ja"
+          "it"
         ],
-        "has_mover": false,
+        "has_mover": true,
         "affinity": {
-          "narrativo": 0.635,
-          "casual": 0.6066
+          "narrativo": 0.8136,
+          "casual": 0.7363
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.635,
+        "affinity_best_score": 0.814,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+              "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+              "source": "Caverna di Platone",
+              "date": "2026-05-21",
+              "views": 8274,
+              "likes": 403,
+              "duration_secs": 2333
+            },
+            {
+              "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+              "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+              "source": "Tommaso In Giappone",
+              "date": "2026-05-22",
+              "views": 7783,
+              "likes": 829,
+              "duration_secs": 845
+            },
+            {
+              "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+              "source": "Vivi Giappone",
+              "date": "2026-05-28",
+              "views": 6569,
+              "likes": 277,
+              "duration_secs": 17
+            }
+          ]
+        },
         "top_items": [
           {
-            "title": "How Japan Treated This Japanese American VTuber LOLOL",
-            "url": "https://www.youtube.com/watch?v=YtGAJ6rxysM",
-            "source": "Sora The Troll",
-            "date": "2026-05-22"
+            "title": "NON HO NIENTE DA DIRE SU THE BOYS MA...",
+            "url": "https://www.youtube.com/watch?v=u7sOHGcXBf8",
+            "source": "Caverna di Platone",
+            "date": "2026-05-21",
+            "views": 8274,
+            "likes": 403,
+            "duration_secs": 2333
           },
+          {
+            "title": "IL GIAPPONE È DAVVERO UN PAESE ECONOMICO?",
+            "url": "https://www.youtube.com/watch?v=bHEFZ9HtW6Y",
+            "source": "Tommaso In Giappone",
+            "date": "2026-05-22",
+            "views": 7783,
+            "likes": 829,
+            "duration_secs": 845
+          },
+          {
+            "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+            "source": "Vivi Giappone",
+            "date": "2026-05-28",
+            "views": 6569,
+            "likes": 277,
+            "duration_secs": 17
+          }
+        ]
+      }
+    ],
+    "anomalie": [
+      {
+        "label": 1,
+        "score": 0.9852,
+        "keywords": [
+          "boss",
+          "campone",
+          "canale",
+          "coach",
+          "con vocal",
+          "doppiaggio"
+        ],
+        "item_count": 3,
+        "total_views": 145619,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-05-29",
+        "last_seen": "2026-05-30",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.4974,
+          "casual": 0.4792
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.497,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+              "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-30",
+              "views": 62271,
+              "likes": 2260,
+              "duration_secs": 54
+            },
+            {
+              "title": "Imparo a fare il GROWL con un VOCAL COACH",
+              "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-29",
+              "views": 54988,
+              "likes": 4004,
+              "duration_secs": 1508
+            },
+            {
+              "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+              "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+              "source": "151eG",
+              "date": "2026-05-30",
+              "views": 28360,
+              "likes": 3077,
+              "duration_secs": 2340
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+            "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-30",
+            "views": 62271,
+            "likes": 2260,
+            "duration_secs": 54
+          },
+          {
+            "title": "Imparo a fare il GROWL con un VOCAL COACH",
+            "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-29",
+            "views": 54988,
+            "likes": 4004,
+            "duration_secs": 1508
+          },
+          {
+            "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+            "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+            "source": "151eG",
+            "date": "2026-05-30",
+            "views": 28360,
+            "likes": 3077,
+            "duration_secs": 2340
+          }
+        ]
+      }
+    ],
+    "altri": [
+      {
+        "label": 4,
+        "score": 0.1532,
+        "keywords": [
+          "album",
+          "album try",
+          "attention",
+          "attention more",
+          "download",
+          "download album"
+        ],
+        "item_count": 4,
+        "total_views": 55386,
+        "velocity": 0.125,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-21",
+        "last_seen": "2026-05-29",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6835,
+          "casual": 0.6883
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.688,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "How Japan Treated This Japanese American VTuber LOLOL",
+              "url": "https://www.youtube.com/watch?v=g7KDuItdZZg",
+              "source": "Sora The Troll",
+              "date": "2026-05-22",
+              "views": 21930,
+              "likes": 2905,
+              "duration_secs": 121
+            },
+            {
+              "title": "Making This Japanese VTuber Say \"CRINGE\" LOL",
+              "url": "https://www.youtube.com/watch?v=J2WQTTBGN-Y",
+              "source": "Sora The Troll",
+              "date": "2026-05-21",
+              "views": 15379,
+              "likes": 651,
+              "duration_secs": 31
+            },
+            {
+              "title": "How TERRIBLY Japanese Locals TREATED This Japanese American YouTuber Duo",
+              "url": "https://www.youtube.com/watch?v=U4eAo7XwPmg",
+              "source": "Sora The Troll",
+              "date": "2026-05-29",
+              "views": 11257,
+              "likes": 526,
+              "duration_secs": 558
+            }
+          ]
+        },
+        "top_items": [
           {
             "title": "How Japan Treated This Japanese American VTuber LOLOL",
             "url": "https://www.youtube.com/watch?v=g7KDuItdZZg",
             "source": "Sora The Troll",
-            "date": "2026-05-22"
+            "date": "2026-05-22",
+            "views": 21930,
+            "likes": 2905,
+            "duration_secs": 121
           },
           {
             "title": "Making This Japanese VTuber Say \"CRINGE\" LOL",
             "url": "https://www.youtube.com/watch?v=J2WQTTBGN-Y",
             "source": "Sora The Troll",
-            "date": "2026-05-21"
+            "date": "2026-05-21",
+            "views": 15379,
+            "likes": 651,
+            "duration_secs": 31
+          },
+          {
+            "title": "How TERRIBLY Japanese Locals TREATED This Japanese American YouTuber Duo",
+            "url": "https://www.youtube.com/watch?v=U4eAo7XwPmg",
+            "source": "Sora The Troll",
+            "date": "2026-05-29",
+            "views": 11257,
+            "likes": 526,
+            "duration_secs": 558
           }
         ]
       }
