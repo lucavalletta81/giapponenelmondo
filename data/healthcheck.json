@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-05-30 14:33",
+  "checked_at": "2026-06-03 10:00",
   "passed": 11,
   "total": 11,
   "results": [
@@ -26,12 +26,12 @@
     {
       "name": "Dati report — JSON valido",
       "ok": true,
-      "detail": "generato 2026-05-30 11:46 (overview ok)"
+      "detail": "generato 2026-06-01 19:02 (overview ok)"
     },
     {
       "name": "Dati report — freschezza",
       "ok": true,
-      "detail": "0 giorni fa"
+      "detail": "1 giorni fa"
     },
     {
       "name": "YouTube — feed video",
