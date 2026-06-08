@@ -1,0 +1,1216 @@
+{
+  "generated_at": "2026-06-08",
+  "total_clusters": 11,
+  "total_videos": 63,
+  "date_range_start": "2026-05-25",
+  "date_range_end": "2026-06-07",
+  "sections": {
+    "emergenti": [
+      {
+        "label": 5,
+        "score": 0.4777,
+        "keywords": [
+          "manga",
+          "compra",
+          "kirio",
+          "altro",
+          "puoi",
+          "preferiti"
+        ],
+        "item_count": 4,
+        "total_views": 1472,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-06-04",
+        "last_seen": "2026-06-08",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6888,
+          "casual": 0.589
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.689,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Ho letto TROPPI MANGA questa settimana?",
+              "url": "https://www.youtube.com/watch?v=jyR2lYXmTcQ",
+              "source": "Kirio1984",
+              "date": "2026-06-05",
+              "views": 652,
+              "likes": 54,
+              "duration_secs": 1083
+            },
+            {
+              "title": "I MANGA PIÙ ATTESI di GIUGNO 2026 - Uno potrebbe diventare il nuovo CHAINSAW MAN",
+              "url": "https://www.youtube.com/watch?v=CMLZ7c-RXrM",
+              "source": "Kirio1984",
+              "date": "2026-06-04",
+              "views": 459,
+              "likes": 41,
+              "duration_secs": 446
+            },
+            {
+              "title": "Le NUOVE USCITE MANGA di giugno sono davvero così belle? Unboxing completo!",
+              "url": "https://www.youtube.com/watch?v=YzcSWXNIm-w",
+              "source": "Kirio1984",
+              "date": "2026-06-07",
+              "views": 318,
+              "likes": 32,
+              "duration_secs": 489
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Ho letto TROPPI MANGA questa settimana?",
+            "url": "https://www.youtube.com/watch?v=jyR2lYXmTcQ",
+            "source": "Kirio1984",
+            "date": "2026-06-05",
+            "views": 652,
+            "likes": 54,
+            "duration_secs": 1083
+          },
+          {
+            "title": "I MANGA PIÙ ATTESI di GIUGNO 2026 - Uno potrebbe diventare il nuovo CHAINSAW MAN",
+            "url": "https://www.youtube.com/watch?v=CMLZ7c-RXrM",
+            "source": "Kirio1984",
+            "date": "2026-06-04",
+            "views": 459,
+            "likes": 41,
+            "duration_secs": 446
+          },
+          {
+            "title": "Le NUOVE USCITE MANGA di giugno sono davvero così belle? Unboxing completo!",
+            "url": "https://www.youtube.com/watch?v=YzcSWXNIm-w",
+            "source": "Kirio1984",
+            "date": "2026-06-07",
+            "views": 318,
+            "likes": 32,
+            "duration_secs": 489
+          }
+        ]
+      }
+    ],
+    "crescita": [
+      {
+        "label": 9,
+        "score": 0.7864,
+        "keywords": [
+          "twitch",
+          "manga",
+          "dragon",
+          "ball",
+          "dragon ball",
+          "acquisti"
+        ],
+        "item_count": 14,
+        "total_views": 26607,
+        "velocity": 0.538,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-25",
+        "last_seen": "2026-06-08",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7624,
+          "casual": 0.6574
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.762,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
+              "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+              "source": "Caverna di Platone",
+              "date": "2026-06-06",
+              "views": 4637,
+              "likes": 276,
+              "duration_secs": 1556
+            },
+            {
+              "title": "ABBIAMO SALVATO IL MERCATO DEI FUMETTI",
+              "url": "https://www.youtube.com/watch?v=EYo-B1lJarI",
+              "source": "Caverna di Platone",
+              "date": "2026-05-29",
+              "views": 3341,
+              "likes": 183,
+              "duration_secs": 925
+            },
+            {
+              "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
+              "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
+              "source": "Caverna di Platone",
+              "date": "2026-06-04",
+              "views": 3232,
+              "likes": 156,
+              "duration_secs": 1758
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
+            "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+            "source": "Caverna di Platone",
+            "date": "2026-06-06",
+            "views": 4637,
+            "likes": 276,
+            "duration_secs": 1556
+          },
+          {
+            "title": "ABBIAMO SALVATO IL MERCATO DEI FUMETTI",
+            "url": "https://www.youtube.com/watch?v=EYo-B1lJarI",
+            "source": "Caverna di Platone",
+            "date": "2026-05-29",
+            "views": 3341,
+            "likes": 183,
+            "duration_secs": 925
+          },
+          {
+            "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
+            "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
+            "source": "Caverna di Platone",
+            "date": "2026-06-04",
+            "views": 3232,
+            "likes": 156,
+            "duration_secs": 1758
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.446,
+        "keywords": [
+          "del",
+          "lavoro",
+          "yen",
+          "vita",
+          "della",
+          "davvero"
+        ],
+        "item_count": 4,
+        "total_views": 20823,
+        "velocity": 0.875,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-27",
+        "last_seen": "2026-06-06",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6076,
+          "casual": 0.7377
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.738,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "È davvero facile trovare lavoro in Giappone? In questo video analizzo il mercato del lavoro giappone",
+              "url": "https://www.youtube.com/watch?v=-rtDIeBgsR0",
+              "source": "Marco Togni",
+              "date": "2026-06-04",
+              "views": 18033,
+              "likes": 873,
+              "duration_secs": 122
+            },
+            {
+              "title": "STIPENDI DA FAME IN GIAPPONE | REALTÀ ",
+              "url": "https://www.youtube.com/watch?v=ZiuxJIDtTSQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-03",
+              "views": 1926,
+              "likes": 102,
+              "duration_secs": 931
+            },
+            {
+              "title": "Il GIAPPONE non È  il PARADISO che ci raccontano ",
+              "url": "https://www.youtube.com/watch?v=6HClHIXbFG8",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-06",
+              "views": 778,
+              "likes": 60,
+              "duration_secs": 1245
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "È davvero facile trovare lavoro in Giappone? In questo video analizzo il mercato del lavoro giappone",
+            "url": "https://www.youtube.com/watch?v=-rtDIeBgsR0",
+            "source": "Marco Togni",
+            "date": "2026-06-04",
+            "views": 18033,
+            "likes": 873,
+            "duration_secs": 122
+          },
+          {
+            "title": "STIPENDI DA FAME IN GIAPPONE | REALTÀ ",
+            "url": "https://www.youtube.com/watch?v=ZiuxJIDtTSQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-03",
+            "views": 1926,
+            "likes": 102,
+            "duration_secs": 931
+          },
+          {
+            "title": "Il GIAPPONE non È  il PARADISO che ci raccontano ",
+            "url": "https://www.youtube.com/watch?v=6HClHIXbFG8",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-06",
+            "views": 778,
+            "likes": 60,
+            "duration_secs": 1245
+          }
+        ]
+      },
+      {
+        "label": 10,
+        "score": 0.4143,
+        "keywords": [
+          "twitch",
+          "gruppo",
+          "youtube",
+          "versione",
+          "ufficiali",
+          "supportare"
+        ],
+        "item_count": 3,
+        "total_views": 37181,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-28",
+        "last_seen": "2026-06-06",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7861,
+          "casual": 0.7842
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.786,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
+              "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
+              "source": "Vivi Giappone",
+              "date": "2026-06-03",
+              "views": 28174,
+              "likes": 626,
+              "duration_secs": 78
+            },
+            {
+              "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+              "source": "Vivi Giappone",
+              "date": "2026-05-28",
+              "views": 6569,
+              "likes": 277,
+              "duration_secs": 17
+            },
+            {
+              "title": "Un angolo d'Italia in Giappone! - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=7ectYZpYcPg",
+              "source": "Vivi Giappone",
+              "date": "2026-06-06",
+              "views": 2438,
+              "likes": 233,
+              "duration_secs": 601
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
+            "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
+            "source": "Vivi Giappone",
+            "date": "2026-06-03",
+            "views": 28174,
+            "likes": 626,
+            "duration_secs": 78
+          },
+          {
+            "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+            "source": "Vivi Giappone",
+            "date": "2026-05-28",
+            "views": 6569,
+            "likes": 277,
+            "duration_secs": 17
+          },
+          {
+            "title": "Un angolo d'Italia in Giappone! - Vivi Giappone",
+            "url": "https://www.youtube.com/watch?v=7ectYZpYcPg",
+            "source": "Vivi Giappone",
+            "date": "2026-06-06",
+            "views": 2438,
+            "likes": 233,
+            "duration_secs": 601
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.3622,
+        "keywords": [
+          "maglietta",
+          "calze",
+          "film",
+          "star maglietta",
+          "star",
+          "scary"
+        ],
+        "item_count": 3,
+        "total_views": 97923,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-27",
+        "last_seen": "2026-06-05",
+        "sentinel_clusters": [
+          "videogiochi"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6867,
+          "casual": 0.502
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.687,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "MovieBlog- 1087: Recensione Scary Movie",
+              "url": "https://www.youtube.com/watch?v=RT4dgRabqpY",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-05",
+              "views": 45968,
+              "likes": 2289,
+              "duration_secs": 2011
+            },
+            {
+              "title": "MovieBlog- 1085: Recensione Backrooms",
+              "url": "https://www.youtube.com/watch?v=tpmUDM7CpAA",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-27",
+              "views": 36647,
+              "likes": 1921,
+              "duration_secs": 2464
+            },
+            {
+              "title": "MovieBlog- 1086: recensione Masters Of The Universe",
+              "url": "https://www.youtube.com/watch?v=98YWEFrl95E",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-04",
+              "views": 15308,
+              "likes": 848,
+              "duration_secs": 2447
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "MovieBlog- 1087: Recensione Scary Movie",
+            "url": "https://www.youtube.com/watch?v=RT4dgRabqpY",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-05",
+            "views": 45968,
+            "likes": 2289,
+            "duration_secs": 2011
+          },
+          {
+            "title": "MovieBlog- 1085: Recensione Backrooms",
+            "url": "https://www.youtube.com/watch?v=tpmUDM7CpAA",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-27",
+            "views": 36647,
+            "likes": 1921,
+            "duration_secs": 2464
+          },
+          {
+            "title": "MovieBlog- 1086: recensione Masters Of The Universe",
+            "url": "https://www.youtube.com/watch?v=98YWEFrl95E",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-04",
+            "views": 15308,
+            "likes": 848,
+            "duration_secs": 2447
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.3511,
+        "keywords": [
+          "piaciuto lascia",
+          "lascia perdere",
+          "lascia",
+          "piaciuto",
+          "prossimi seguimi",
+          "prossimi"
+        ],
+        "item_count": 5,
+        "total_views": 3187,
+        "velocity": 0.7,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-05-29",
+        "last_seen": "2026-06-07",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6593,
+          "casual": 0.6162
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.659,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "CAT STREET HARAJUKU",
+              "url": "https://www.youtube.com/watch?v=U2BTB1b4m1k",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-29",
+              "views": 1744,
+              "likes": 40,
+              "duration_secs": 65
+            },
+            {
+              "title": "Shibuya crossing and around",
+              "url": "https://www.youtube.com/watch?v=a02ThHto6fc",
+              "source": "Calabrese in Oriente",
+              "date": "2026-05-31",
+              "views": 500,
+              "likes": 17,
+              "duration_secs": 139
+            },
+            {
+              "title": "PULITISSIMI Camion della spazzatura in Giappone",
+              "url": "https://www.youtube.com/watch?v=DYMZUJieFas",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-01",
+              "views": 484,
+              "likes": 30,
+              "duration_secs": 102
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "CAT STREET HARAJUKU",
+            "url": "https://www.youtube.com/watch?v=U2BTB1b4m1k",
+            "source": "Calabrese in Oriente",
+            "date": "2026-05-29",
+            "views": 1744,
+            "likes": 40,
+            "duration_secs": 65
+          },
+          {
+            "title": "Shibuya crossing and around",
+            "url": "https://www.youtube.com/watch?v=a02ThHto6fc",
+            "source": "Calabrese in Oriente",
+            "date": "2026-05-31",
+            "views": 500,
+            "likes": 17,
+            "duration_secs": 139
+          },
+          {
+            "title": "PULITISSIMI Camion della spazzatura in Giappone",
+            "url": "https://www.youtube.com/watch?v=DYMZUJieFas",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-01",
+            "views": 484,
+            "likes": 30,
+            "duration_secs": 102
+          }
+        ]
+      },
+      {
+        "label": 8,
+        "score": 0.2447,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 8,
+        "total_views": 204025,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-26",
+        "last_seen": "2026-06-07",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6841,
+          "casual": 0.5767
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.684,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "漫画のフキダシはイラスト映えしにくい！？",
+              "url": "https://www.youtube.com/watch?v=WpiwXefMNYI",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-02",
+              "views": 32062,
+              "likes": 1518,
+              "duration_secs": 60
+            },
+            {
+              "title": "プロになりたい！でも何か足りない！ナゼ…！？",
+              "url": "https://www.youtube.com/watch?v=7xiaqvhIMNA",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-04",
+              "views": 31583,
+              "likes": 1595,
+              "duration_secs": 1011
+            },
+            {
+              "title": "絵が上手くなっても、下手に見える事があります。【きまぐれ添削237】",
+              "url": "https://www.youtube.com/watch?v=f7RHM2Jf-W8",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-05-28",
+              "views": 31261,
+              "likes": 1856,
+              "duration_secs": 1140
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "漫画のフキダシはイラスト映えしにくい！？",
+            "url": "https://www.youtube.com/watch?v=WpiwXefMNYI",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-02",
+            "views": 32062,
+            "likes": 1518,
+            "duration_secs": 60
+          },
+          {
+            "title": "プロになりたい！でも何か足りない！ナゼ…！？",
+            "url": "https://www.youtube.com/watch?v=7xiaqvhIMNA",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-04",
+            "views": 31583,
+            "likes": 1595,
+            "duration_secs": 1011
+          },
+          {
+            "title": "絵が上手くなっても、下手に見える事があります。【きまぐれ添削237】",
+            "url": "https://www.youtube.com/watch?v=f7RHM2Jf-W8",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-05-28",
+            "views": 31261,
+            "likes": 1856,
+            "duration_secs": 1140
+          }
+        ]
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
+      {
+        "label": 9,
+        "score": 0.7864,
+        "keywords": [
+          "twitch",
+          "manga",
+          "dragon",
+          "ball",
+          "dragon ball",
+          "acquisti"
+        ],
+        "item_count": 14,
+        "total_views": 26607,
+        "velocity": 0.538,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-25",
+        "last_seen": "2026-06-08",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7624,
+          "casual": 0.6574
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.762,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
+              "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+              "source": "Caverna di Platone",
+              "date": "2026-06-06",
+              "views": 4637,
+              "likes": 276,
+              "duration_secs": 1556
+            },
+            {
+              "title": "ABBIAMO SALVATO IL MERCATO DEI FUMETTI",
+              "url": "https://www.youtube.com/watch?v=EYo-B1lJarI",
+              "source": "Caverna di Platone",
+              "date": "2026-05-29",
+              "views": 3341,
+              "likes": 183,
+              "duration_secs": 925
+            },
+            {
+              "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
+              "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
+              "source": "Caverna di Platone",
+              "date": "2026-06-04",
+              "views": 3232,
+              "likes": 156,
+              "duration_secs": 1758
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
+            "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+            "source": "Caverna di Platone",
+            "date": "2026-06-06",
+            "views": 4637,
+            "likes": 276,
+            "duration_secs": 1556
+          },
+          {
+            "title": "ABBIAMO SALVATO IL MERCATO DEI FUMETTI",
+            "url": "https://www.youtube.com/watch?v=EYo-B1lJarI",
+            "source": "Caverna di Platone",
+            "date": "2026-05-29",
+            "views": 3341,
+            "likes": 183,
+            "duration_secs": 925
+          },
+          {
+            "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
+            "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
+            "source": "Caverna di Platone",
+            "date": "2026-06-04",
+            "views": 3232,
+            "likes": 156,
+            "duration_secs": 1758
+          }
+        ]
+      },
+      {
+        "label": 10,
+        "score": 0.4143,
+        "keywords": [
+          "twitch",
+          "gruppo",
+          "youtube",
+          "versione",
+          "ufficiali",
+          "supportare"
+        ],
+        "item_count": 3,
+        "total_views": 37181,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-28",
+        "last_seen": "2026-06-06",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7861,
+          "casual": 0.7842
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.786,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
+              "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
+              "source": "Vivi Giappone",
+              "date": "2026-06-03",
+              "views": 28174,
+              "likes": 626,
+              "duration_secs": 78
+            },
+            {
+              "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+              "source": "Vivi Giappone",
+              "date": "2026-05-28",
+              "views": 6569,
+              "likes": 277,
+              "duration_secs": 17
+            },
+            {
+              "title": "Un angolo d'Italia in Giappone! - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=7ectYZpYcPg",
+              "source": "Vivi Giappone",
+              "date": "2026-06-06",
+              "views": 2438,
+              "likes": 233,
+              "duration_secs": 601
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
+            "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
+            "source": "Vivi Giappone",
+            "date": "2026-06-03",
+            "views": 28174,
+            "likes": 626,
+            "duration_secs": 78
+          },
+          {
+            "title": "Se Roma fosse in Giappone #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=F1u-eM4HN0E",
+            "source": "Vivi Giappone",
+            "date": "2026-05-28",
+            "views": 6569,
+            "likes": 277,
+            "duration_secs": 17
+          },
+          {
+            "title": "Un angolo d'Italia in Giappone! - Vivi Giappone",
+            "url": "https://www.youtube.com/watch?v=7ectYZpYcPg",
+            "source": "Vivi Giappone",
+            "date": "2026-06-06",
+            "views": 2438,
+            "likes": 233,
+            "duration_secs": 601
+          }
+        ]
+      }
+    ],
+    "anomalie": [],
+    "altri": [
+      {
+        "label": 0,
+        "score": 0.3677,
+        "keywords": [
+          "doppiaggio",
+          "coach",
+          "vocal",
+          "vocal coach",
+          "doppiaggio helluva",
+          "boss reaction"
+        ],
+        "item_count": 3,
+        "total_views": 145619,
+        "velocity": 0.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-29",
+        "last_seen": "2026-05-30",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.4974,
+          "casual": 0.4792
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.497,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+              "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-30",
+              "views": 62271,
+              "likes": 2260,
+              "duration_secs": 54
+            },
+            {
+              "title": "Imparo a fare il GROWL con un VOCAL COACH",
+              "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-05-29",
+              "views": 54988,
+              "likes": 4004,
+              "duration_secs": 1508
+            },
+            {
+              "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+              "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+              "source": "151eG",
+              "date": "2026-05-30",
+              "views": 28360,
+              "likes": 3077,
+              "duration_secs": 2340
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "il mio doppiaggio in HELLUVA BOSS - reaction con il vocal coach",
+            "url": "https://www.youtube.com/watch?v=7uB_sn2cBIQ",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-30",
+            "views": 62271,
+            "likes": 2260,
+            "duration_secs": 54
+          },
+          {
+            "title": "Imparo a fare il GROWL con un VOCAL COACH",
+            "url": "https://www.youtube.com/watch?v=A9AF9rhUwy8",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-05-29",
+            "views": 54988,
+            "likes": 4004,
+            "duration_secs": 1508
+          },
+          {
+            "title": "Sono entrato in uno STUDIO di DOPPIAGGIO",
+            "url": "https://www.youtube.com/watch?v=7KpANTcnv1A",
+            "source": "151eG",
+            "date": "2026-05-30",
+            "views": 28360,
+            "likes": 3077,
+            "duration_secs": 2340
+          }
+        ]
+      },
+      {
+        "label": 7,
+        "score": 0.2846,
+        "keywords": [
+          "use",
+          "copyright",
+          "fair",
+          "fair use",
+          "use purposes",
+          "twitter live"
+        ],
+        "item_count": 4,
+        "total_views": 86406,
+        "velocity": 0.125,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-25",
+        "last_seen": "2026-06-01",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6395,
+          "casual": 0.6433
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.643,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "Hes unemployed with 3 wives...",
+              "url": "https://www.youtube.com/watch?v=gP6OkisioXw",
+              "source": "The Anime Man",
+              "date": "2026-05-29",
+              "views": 32581,
+              "likes": 541,
+              "duration_secs": 25
+            },
+            {
+              "title": "How much can you earn in 𝘵𝘩𝘢𝘵 industry?",
+              "url": "https://www.youtube.com/watch?v=k6Y0clHLflk",
+              "source": "The Anime Man",
+              "date": "2026-05-27",
+              "views": 20835,
+              "likes": 370,
+              "duration_secs": 30
+            },
+            {
+              "title": "How to become a sumo",
+              "url": "https://www.youtube.com/watch?v=qFKERHXXcEk",
+              "source": "The Anime Man",
+              "date": "2026-06-01",
+              "views": 17862,
+              "likes": 415,
+              "duration_secs": 32
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Hes unemployed with 3 wives...",
+            "url": "https://www.youtube.com/watch?v=gP6OkisioXw",
+            "source": "The Anime Man",
+            "date": "2026-05-29",
+            "views": 32581,
+            "likes": 541,
+            "duration_secs": 25
+          },
+          {
+            "title": "How much can you earn in 𝘵𝘩𝘢𝘵 industry?",
+            "url": "https://www.youtube.com/watch?v=k6Y0clHLflk",
+            "source": "The Anime Man",
+            "date": "2026-05-27",
+            "views": 20835,
+            "likes": 370,
+            "duration_secs": 30
+          },
+          {
+            "title": "How to become a sumo",
+            "url": "https://www.youtube.com/watch?v=qFKERHXXcEk",
+            "source": "The Anime Man",
+            "date": "2026-06-01",
+            "views": 17862,
+            "likes": 415,
+            "duration_secs": 32
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 0.202,
+        "keywords": [
+          "maglietta",
+          "calze",
+          "star maglietta",
+          "star",
+          "serie",
+          "ulteriore paio"
+        ],
+        "item_count": 8,
+        "total_views": 161761,
+        "velocity": 0.188,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-25",
+        "last_seen": "2026-06-03",
+        "sentinel_clusters": [
+          "videogiochi"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6253,
+          "casual": 0.479
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.625,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Euphoria 3X08: MA STIAMO SCHERZANDO?!",
+              "url": "https://www.youtube.com/watch?v=mxcXUGgCTks",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-03",
+              "views": 30559,
+              "likes": 1484,
+              "duration_secs": 2093
+            },
+            {
+              "title": "Due Spicci: la migliore serie di Zerocalcare!",
+              "url": "https://www.youtube.com/watch?v=oxh8e1K7BHk",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-28",
+              "views": 27465,
+              "likes": 1573,
+              "duration_secs": 2890
+            },
+            {
+              "title": "Due Spicci: la miglior serie di Zerocalcare",
+              "url": "https://www.youtube.com/watch?v=XQYRKYWyYIE",
+              "source": "Victorlaszlo88",
+              "date": "2026-05-28",
+              "views": 21706,
+              "likes": 1109,
+              "duration_secs": 165
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Euphoria 3X08: MA STIAMO SCHERZANDO?!",
+            "url": "https://www.youtube.com/watch?v=mxcXUGgCTks",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-03",
+            "views": 30559,
+            "likes": 1484,
+            "duration_secs": 2093
+          },
+          {
+            "title": "Due Spicci: la migliore serie di Zerocalcare!",
+            "url": "https://www.youtube.com/watch?v=oxh8e1K7BHk",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-28",
+            "views": 27465,
+            "likes": 1573,
+            "duration_secs": 2890
+          },
+          {
+            "title": "Due Spicci: la miglior serie di Zerocalcare",
+            "url": "https://www.youtube.com/watch?v=XQYRKYWyYIE",
+            "source": "Victorlaszlo88",
+            "date": "2026-05-28",
+            "views": 21706,
+            "likes": 1109,
+            "duration_secs": 165
+          }
+        ]
+      },
+      {
+        "label": 4,
+        "score": 0.1499,
+        "keywords": [
+          "car",
+          "forza",
+          "well",
+          "tjhese",
+          "tools",
+          "try"
+        ],
+        "item_count": 7,
+        "total_views": 32628,
+        "velocity": 0.143,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-05-25",
+        "last_seen": "2026-06-05",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5935,
+          "casual": 0.6184
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.618,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+              "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+              "source": "Sora The Troll",
+              "date": "2026-05-25",
+              "views": 13002,
+              "likes": 564,
+              "duration_secs": 13028
+            },
+            {
+              "title": "Filming Insane Cars And People Fighting In Tokyo AT MIDNIGHT FORZA HORIZON 6 IN REAL LIFE LOLOLOLOLO",
+              "url": "https://www.youtube.com/watch?v=1_eMAhdEhAU",
+              "source": "Sora The Troll",
+              "date": "2026-06-04",
+              "views": 9180,
+              "likes": 419,
+              "duration_secs": 12391
+            },
+            {
+              "title": "Japanese people hate FOREIGNERS Now because of piracy LOLOLOLOLOLOLOLOLOOLLOOLLOOLLOLOLOLOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=f4UkVqZGGa8",
+              "source": "Sora The Troll",
+              "date": "2026-05-27",
+              "views": 6337,
+              "likes": 386,
+              "duration_secs": 7134
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Raiding Japan's ILLEGAL CAR MEET UPS At MIDNIGHT, FORZA HORIZON 6 in real life LOLOLOL (DAIKOKU PA)",
+            "url": "https://www.youtube.com/watch?v=BgIzZpCXwto",
+            "source": "Sora The Troll",
+            "date": "2026-05-25",
+            "views": 13002,
+            "likes": 564,
+            "duration_secs": 13028
+          },
+          {
+            "title": "Filming Insane Cars And People Fighting In Tokyo AT MIDNIGHT FORZA HORIZON 6 IN REAL LIFE LOLOLOLOLO",
+            "url": "https://www.youtube.com/watch?v=1_eMAhdEhAU",
+            "source": "Sora The Troll",
+            "date": "2026-06-04",
+            "views": 9180,
+            "likes": 419,
+            "duration_secs": 12391
+          },
+          {
+            "title": "Japanese people hate FOREIGNERS Now because of piracy LOLOLOLOLOLOLOLOLOOLLOOLLOOLLOLOLOLOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=f4UkVqZGGa8",
+            "source": "Sora The Troll",
+            "date": "2026-05-27",
+            "views": 6337,
+            "likes": 386,
+            "duration_secs": 7134
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "last_updated": "2026-06-08T13:09:54Z",
+  "tasks": [
+    {
+      "id": "yt_ingest",
+      "name": "YouTube Ingestion",
+      "schedule": "Ogni 12h",
+      "last_run": "2026-06-08T13:09:20Z",
+      "status": "ok",
+      "metrics": {
+        "inserted": 79,
+        "skipped": 0
+      }
+    },
+    {
+      "id": "rd_ingest",
+      "name": "Reddit Ingestion",
+      "schedule": "Ogni 6h",
+      "last_run": "2026-06-08T13:09:20Z",
+      "status": "disabled",
+      "metrics": {
+        "inserted": 0
+      }
+    },
+    {
+      "id": "embed",
+      "name": "Embedding",
+      "schedule": "Lunedì 11:00",
+      "last_run": "2026-06-08T13:09:51Z",
+      "status": "ok",
+      "metrics": {
+        "items_processed": 79
+      }
+    },
+    {
+      "id": "cluster",
+      "name": "Clustering",
+      "schedule": "Lunedì 11:00",
+      "last_run": "2026-06-08T13:09:53Z",
+      "status": "ok",
+      "metrics": {
+        "clusters_found": 11
+      }
+    },
+    {
+      "id": "score",
+      "name": "Scoring",
+      "schedule": "Lunedì 11:00",
+      "last_run": "2026-06-08T13:09:53Z",
+      "status": "ok",
+      "metrics": {
+        "top_score": 0.7864
+      }
+    },
+    {
+      "id": "report",
+      "name": "Report generazione",
+      "schedule": "Lunedì 11:00",
+      "last_run": "2026-06-08T13:09:53Z",
+      "status": "ok",
+      "metrics": {
+        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-06-08.md"
+      }
+    },
+    {
+      "id": "csv_gnm",
+      "name": "CSV Update GnM",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    },
+    {
+      "id": "csv_pt",
+      "name": "CSV Update Plot Twister",
+      "schedule": "Lunedì 11:00",
+      "last_run": null,
+      "status": "mai_eseguito",
+      "metrics": {}
+    }
+  ]
+}
