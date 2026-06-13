@@ -32,16 +32,36 @@ for name in pages:
         print(f"  timbrato: {name}")
 PY
 
-# ── 2. Commit + push ────────────────────────────────────────
-if [ -z "$(git status --porcelain)" ]; then
-  echo "[publish] Nessuna modifica da pubblicare."
+# ── 2. Commit ───────────────────────────────────────────────
+MSG="${1:-Aggiornamento automatico report $(date '+%Y-%m-%d %H:%M')}"
+
+if [ -n "$(git status --porcelain)" ]; then
+  git add -A
+  git commit -q -m "$MSG"
+else
+  echo "[publish] Nessuna modifica nuova da committare."
+fi
+
+# ── 3. Riallinea col remoto ─────────────────────────────────
+# Se su GitHub sono arrivati commit da altre parti (altre sessioni,
+# Actions), il push verrebbe rifiutato e il sito resterebbe fermo.
+# Rebase del lavoro locale sopra il remoto; sui file generati in
+# conflitto vince la versione locale (più recente: -X theirs in rebase).
+if ! git pull --rebase -X theirs origin main; then
+  git rebase --abort 2>/dev/null || true
+  echo "[publish] ERRORE: riallineamento col remoto fallito (rebase). Sito NON aggiornato." >&2
+  exit 1
+fi
+
+# ── 4. Push ─────────────────────────────────────────────────
+if [ -z "$(git rev-list origin/main..main 2>/dev/null)" ]; then
+  echo "[publish] Niente da pubblicare: il sito è già allineato."
   exit 0
 fi
 
-MSG="${1:-Aggiornamento automatico report $(date '+%Y-%m-%d %H:%M')}"
-
-git add -A
-git commit -q -m "$MSG"
-git push -q origin main
+if ! git push -q origin main; then
+  echo "[publish] ERRORE: push fallito. Controllare l'autenticazione (gh auth status / portachiavi). Sito NON aggiornato." >&2
+  exit 1
+fi
 echo "[publish] Pubblicato: $MSG"
 echo "[publish] Live tra 1-2 min su https://giapponenelmondo.com"
