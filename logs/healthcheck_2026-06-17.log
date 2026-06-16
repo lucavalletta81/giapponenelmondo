@@ -1,0 +1,19 @@
+===== 2026-06-17 10:00:05 — healthcheck =====
+==================================================
+  HEALTHCHECK SITO — 17/06/2026 10:00
+==================================================
+  ✓ Pagina Home (/) — HTTP 200
+  ✓ Pagina Dashboard (/dashboard.html) — HTTP 200
+  ✓ Pagina Report (/report.html) — HTTP 200
+  ✓ Pagina Pagina 404 (/404.html) — HTTP 200
+  ✓ Dati report — JSON valido — generato 2026-06-15 19:02 (overview ok)
+  ✓ Dati report — freschezza — 1 giorni fa
+  ✓ YouTube — feed video — status=ok · 10 video
+  ✓ Regressione rss2json (&count assente) — ok
+  ✓ Feed dashboard (Japan Times) — HTTP 200
+  ✓ Redirect vecchi link (404.html) — attivo
+  ✗ Git — locale allineato a GitHub — ci sono commit non pushati
+--------------------------------------------------
+  Risultato: 10/11 ok, 1 problemi
+  ✓ Email inviata a lucavalletta@gmail.com
+===== 2026-06-17 10:00:16 — fine (exit 0) =====

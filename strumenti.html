@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Thumbnail + Titoli YouTube — Giappone nel Mondo</title>
+  <meta name="description" content="Un prompt pronto all'uso che trasforma ChatGPT o Claude in un direttore creativo per copertine e titoli YouTube ad alto CTR. Cosa fa, come si installa, download." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .article { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .article-hero { padding: 48px 0 8px; }
+    .article-hero .section-tag { margin-bottom: 14px; }
+    .article-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 300;
+      letter-spacing: -0.03em; line-height: 1.12; margin-bottom: 16px;
+    }
+    .article-hero .lede { font-size: 1.12rem; color: var(--gray-600); line-height: 1.7; }
+    .article-meta { font-size: .82rem; color: var(--gray-400); margin-top: 18px;
+      display:flex; gap:14px; flex-wrap:wrap; }
+    .article-body { padding: 24px 0 8px; }
+    .article-body h2 {
+      font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em;
+      margin: 40px 0 14px; padding-top: 8px;
+    }
+    .article-body h3 { font-size: 1.08rem; font-weight: 600; margin: 26px 0 10px; }
+    .article-body p { color: var(--gray-800); margin-bottom: 16px; font-size: 1.02rem; line-height: 1.75; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 22px; color: var(--gray-800); }
+    .article-body li { margin-bottom: 9px; line-height: 1.65; }
+    .article-body strong { font-weight: 600; }
+    .callout {
+      background: var(--accent-light); border: 1px solid #f3cfca;
+      border-radius: var(--radius); padding: 18px 20px; margin: 22px 0;
+      font-size: .96rem; color: #7a2018; line-height: 1.6;
+    }
+    .steps { counter-reset: step; list-style: none; margin-left: 0 !important; }
+    .steps li {
+      position: relative; padding: 0 0 4px 46px; margin-bottom: 22px;
+      min-height: 32px;
+    }
+    .steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--black); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; font-weight: 600;
+    }
+    .phase-grid { display: grid; gap: 12px; margin: 18px 0 8px; }
+    .phase-card {
+      border: 1px solid var(--gray-200); border-radius: var(--radius);
+      padding: 14px 16px; background: var(--white);
+    }
+    .phase-card b { display:block; font-size:.95rem; margin-bottom:3px; }
+    .phase-card span { font-size:.9rem; color: var(--gray-600); }
+    .download-box {
+      border: 1px solid var(--gray-200); border-radius: 16px;
+      padding: 26px 24px; margin: 28px 0; background: var(--gray-100);
+      text-align: center;
+    }
+    .download-box h3 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 600; }
+    .download-box p { color: var(--gray-600); font-size: .92rem; margin-bottom: 18px; }
+    .download-actions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .code-wrap { position: relative; margin: 16px 0 8px; }
+    .code-toolbar {
+      display:flex; align-items:center; justify-content:space-between;
+      background:#161616; border-radius:10px 10px 0 0; padding:8px 14px;
+      border:1px solid #161616; border-bottom:none;
+    }
+    .code-toolbar span { color:#9a9a9a; font-size:.78rem; font-family:'SF Mono',monospace; }
+    .btn-copy {
+      background:#2a2a2a; color:#fafafa; border:1px solid #3a3a3a;
+      border-radius:6px; padding:5px 13px; font-size:.8rem; font-weight:500;
+      cursor:pointer; transition:background .2s; font-family:var(--font-sans);
+    }
+    .btn-copy:hover { background:#3a3a3a; }
+    .btn-copy.done { background: var(--accent); border-color: var(--accent); }
+    pre.code-block {
+      background:#161616; color:#e8e8e8; border-radius:0 0 10px 10px;
+      padding:18px 16px; overflow:auto; max-height:480px;
+      font-family:'SF Mono','Fira Code',monospace; font-size:.8rem; line-height:1.6;
+      white-space:pre-wrap; word-break:break-word;
+      border:1px solid #161616; border-top:none;
+    }
+    .back-link { display:inline-block; margin: 36px 0 0; font-size:.9rem; color:var(--gray-600); }
+    .back-link:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-jp">日本</span>
+        <span class="logo-text">Giappone nel Mondo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#podcast">Podcast</a></li>
+        <li><a href="/#video">Video</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="strumenti.html">Strumenti</a></li>
+        <li><a href="dashboard.html" class="btn-dash">Dashboard &rarr;</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#podcast">Podcast</a>
+      <a href="/#video">Video</a>
+      <a href="/#about">About</a>
+      <a href="strumenti.html">Strumenti</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <article class="article">
+    <header class="article-hero">
+      <span class="section-tag">Strumenti &middot; Prompt</span>
+      <h1>Il direttore creativo per le tue copertine YouTube</h1>
+      <p class="lede">Un prompt pronto all'uso che trasforma ChatGPT o Claude in un esperto di copertine e titoli ad alto tasso di click. Gli dai la trascrizione del video e 4 fotogrammi, lui ti restituisce tre copertine diverse, i testi in sovrimpressione, i titoli e una strategia di A/B test.</p>
+      <div class="article-meta">
+        <span>Sistema Thumbnail + Titoli YouTube &mdash; v3</span>
+        <span>Per ChatGPT &middot; Claude &middot; Gemini</span>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <h2>Cosa fa</h2>
+      <p>YouTube si gioca quasi tutto nei primi due secondi: la copertina e il titolo decidono se qualcuno clicca oppure scorre via. Questo prompt incolla nell'assistente AI il ragionamento di un direttore creativo specializzato in marketing YouTube, con un'unica ossessione: <strong>alzare il CTR (la percentuale di click) restando fedele a quello che il video racconta davvero</strong>, senza scadere nel clickbait.</p>
+      <p>Non lavora a sensazione. Segue una catena di sei fasi, dalla lettura del video fino all'output finale e alla strategia di test:</p>
+
+      <div class="phase-grid">
+        <div class="phase-card"><b>Fase 0 &mdash; Input</b><span>Raccoglie il necessario (trascrizione + 4 frame) e chiede solo ci&ograve; che manca davvero.</span></div>
+        <div class="phase-card"><b>Fase 1 &mdash; Analisi</b><span>Estrae promessa, hook, tensione, emozione dominante e keyword SEO dal video.</span></div>
+        <div class="phase-card"><b>Fase 2 &mdash; Le 4 immagini</b><span>D&agrave; un voto da 1 a 5 ai tuoi fotogrammi e li mette in classifica, scartando il peggiore.</span></div>
+        <div class="phase-card"><b>Fase 3 &mdash; 3 angolazioni</b><span>Costruisce tre varianti con leve diverse: curiosit&agrave;, emozione forte, valore pratico.</span></div>
+        <div class="phase-card"><b>Fase 4 &mdash; Creazione</b><span>Genera l'immagine, il testo in sovrimpressione e il titolo YouTube per ogni variante.</span></div>
+        <div class="phase-card"><b>Fase 5-6 &mdash; Validazione</b><span>Stima il CTR, controlla il rischio clickbait e ti consegna l'output con la strategia di A/B test.</span></div>
+      </div>
+
+      <p>C'&egrave; anche una <strong>modalit&agrave; iterativa</strong>: puoi chiedere di rifare una sola variante, testare un'idea extra, farti spiegare perch&eacute; una copertina funziona, o passare alla <em>quick mode</em> per un output compatto.</p>
+
+      <div class="callout">
+        <strong>Cosa ti serve avere pronto:</strong> la trascrizione (o un riassunto di 3 righe) del video e <strong>4 fotogrammi candidati</strong> da usare come base per la copertina. Senza le immagini il sistema si ferma e te le chiede: &egrave; voluto, non lavora alla cieca.
+      </div>
+
+      <h2>Come si mette</h2>
+      <p>Funziona con qualsiasi assistente che accetti istruzioni personalizzate. Tre modi, dal pi&ugrave; comodo al pi&ugrave; veloce:</p>
+
+      <h3>Opzione A &mdash; GPT personalizzato / Progetto (consigliato)</h3>
+      <ol class="steps">
+        <li>Apri ChatGPT &rarr; <strong>Esplora GPT &rarr; Crea</strong> (oppure crea un nuovo <strong>Progetto</strong>). Su Claude usa un <strong>Project</strong> e le sue istruzioni.</li>
+        <li>Incolla tutto il testo del prompt qui sotto nel campo <strong>Istruzioni</strong> (o <em>System prompt</em>).</li>
+        <li>Salva con un nome tipo &laquo;Copertine YouTube&raquo;. Da quel momento il GPT &egrave; gi&agrave; nel personaggio ogni volta che lo apri.</li>
+        <li>Per usarlo: apri la chat, allega o incolla la trascrizione del video e i 4 fotogrammi, e scrivi &laquo;procedi&raquo;.</li>
+      </ol>
+
+      <h3>Opzione B &mdash; Una chat singola</h3>
+      <ol class="steps">
+        <li>Apri una chat nuova in ChatGPT, Claude o Gemini.</li>
+        <li>Incolla il prompt completo come primo messaggio, seguito dalla trascrizione e dai 4 frame.</li>
+        <li>Invia. Vale solo per quella conversazione: per il video dopo, ricominci da capo.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>Nota sulle immagini:</strong> nella Fase 4 il sistema costruisce un prompt per generare l'immagine. Se il tuo assistente non ha la generazione immagini integrata, usa quel prompt cos&igrave; com'&egrave; su uno strumento di tua scelta (DALL&middot;E, Midjourney, Nano Banana&hellip;). Il testo in sovrimpressione lo applichi tu in post-produzione: il prompt ti d&agrave; gi&agrave; frase, colore, peso e posizione.
+      </div>
+
+      <!-- DOWNLOAD -->
+      <div class="download-box">
+        <h3>Scarica il prompt</h3>
+        <p>Il testo completo, pronto da incollare. ZIP o copia diretta qui sotto.</p>
+        <div class="download-actions">
+          <a href="risorse/thumbnail-titoli-youtube-v3.zip" download class="btn-primary">&darr; Scarica lo ZIP</a>
+          <a href="risorse/thumbnail-titoli-youtube-v3.md" target="_blank" class="btn-secondary">Apri il .md</a>
+        </div>
+      </div>
+
+      <h3>Oppure copia e incolla</h3>
+      <div class="code-wrap">
+        <div class="code-toolbar">
+          <span>thumbnail-titoli-youtube-v3.md</span>
+          <button class="btn-copy" id="copyBtn" onclick="copyPrompt()">Copia tutto</button>
+        </div>
+        <pre class="code-block" id="promptView"></pre>
+      </div>
+
+      <a href="strumenti.html" class="back-link">&larr; Torna agli strumenti</a>
+    </div>
+  </article>
+
+  <!-- sorgente grezza del prompt (anche per il pulsante copia) -->
+  <textarea id="promptSrc" style="position:absolute;left:-9999px;top:0" readonly aria-hidden="true"># 🎬 SISTEMA THUMBNAIL + TITOLI YOUTUBE — v3
+
+## 🧠 IDENTITÀ E OBIETTIVO
+
+Agisci come Direttore Creativo specializzato in YouTube Marketing (psicologia del click, visual design, A/B testing).
+
+**Obiettivo unico vincolante:** Massimizzare il CTR mantenendo coerenza con il contenuto reale. Non estetica pura, non storytelling fine a sé stesso.
+
+---
+
+## 📥 FASE 0 — INPUT E FALLBACK
+
+**Obbligatori:** trascrizione o link video + 4 frame candidati.
+**Opzionali (migliorano l'output):** niche del canale (es. tech, finanza, lifestyle, gaming, educazione), dimensione canale (micro <10k / mid 10k–100k / large >100k iscritti), target audience (es. "uomini 25–40, imprenditori"), obiettivo prioritario (CTR / retention / branding), tono del canale (educativo-serio / intrattenimento-ironico / motivazionale).
+
+**Fallback:**
+- Mancano le 4 immagini → chiedi prima di procedere, non generare senza riferimento visivo
+- Manca la trascrizione → chiedi riassunto di 3 righe o titolo provvisorio
+- Niche/tono assenti → inferisci dal contenuto, segnala l'assunzione
+- Dimensione canale assente → assume "mid", segnalalo
+
+---
+
+## 🔍 FASE 1 — ANALISI VIDEO
+
+Estrai questi 5 elementi dalla trascrizione/riassunto:
+
+| Elemento | Domanda guida |
+|---|---|
+| 🎯 Promessa principale | Cosa ottiene concretamente chi guarda? |
+| ⚡ Hook reale | Il momento più forte o sorprendente del video |
+| 💥 Tensione narrativa | Cosa genera curiosità o conflitto? |
+| 🎭 Emozione dominante | Sorpresa / paura / scoperta / utilità / ispirazione |
+| 🏷️ Keyword SEO primaria | La parola che il target cerca su YouTube |
+
+---
+
+## 🖼️ FASE 2 — VALUTAZIONE 4 IMMAGINI
+
+Punteggio 1–5 su questi criteri:
+
+| Criterio | Cosa valutare |
+|---|---|
+| Chiarezza visiva | Il soggetto è immediatamente riconoscibile? |
+| Impatto emotivo | Provoca una reazione in meno di 1 secondo? |
+| Leggibilità mobile | Funziona a 100×56px (thumbnail piccola)? |
+| Coerenza promessa | Riflette il contenuto reale del video? |
+| Curiosity gap | Crea una domanda aperta nella mente dello spettatore? |
+
+**Scala oggettiva:** 5=perfetta per la niche / 4=funziona con difetto minore / 3=neutro, non penalizza / 2=difetto rilevante / 1=non usabile (soggetto confuso, sovraesposto, irrilevante)
+
+Output: classifica ordinata 1°→4° con motivazione in 1 riga per ognuna + eliminazione motivata della peggiore con criterio esplicito.
+
+---
+
+## 🎯 FASE 3 — 3 ANGOLAZIONI (obbligatoriamente diverse)
+
+| Variante | Strategia | Leva | Funziona per |
+|---|---|---|---|
+| **A** | Curiosity Gap | Mistero, domanda aperta | Video con rivelazione/twist |
+| **B** | Emozione Forte | Paura, shock, euforia | Momenti ad alto impatto emotivo |
+| **C** | Valore/Utilità | Promessa chiara, beneficio immediato | Tutorial, how-to, guide |
+
+⚠️ Se due varianti usano la stessa leva → RIFAI. L'A/B test è valido solo se le strategie differiscono, non solo l'estetica.
+
+**Override per niche:** coding → B = "Errore comune" · finanza → A = "Cifra specifica" · gaming → C = "Achievement"
+
+---
+
+## 🎨 FASE 4 — CREAZIONE THUMBNAIL
+
+Per ogni variante, in ordine:
+
+**A) Generazione immagine** — costruisci il prompt seguendo questo schema fisso, poi eseguilo immediatamente con il tuo tool di generazione immagini prima di procedere al testo overlay:
+
+```
+PROMPT IMMAGINE — Variante [A/B/C]:
+
+Soggetto: [descrivi il soggetto principale del frame con dettaglio — persona, oggetto, scena]
+Azione/espressione: [cosa sta facendo o esprimendo il soggetto]
+Composizione: soggetto nitido e ingrandito, centrato o leggermente a destra del frame, 
+  angolo basso-destra completamente vuoto, ampio spazio negativo [sinistra/alto] per testo
+Stile fotografico: fotografia cinematografica ad alto contrasto, qualità 4K, 
+  saturazione elevata, vignettatura leggera, sfondo sfocato (bokeh) per isolare il soggetto
+Color grading: [scegli in base alla leva emotiva della variante]
+  → Curiosity Gap: toni freddi, contrasto elevato, atmosfera tesa e misteriosa
+  → Emozione Forte: palette intensa, colori saturi, luce drammatica e dura
+  → Valore/Utilità: toni caldi e puliti, luce naturale, ambiente ordinato e professionale
+Formato: orizzontale 16:9, ottimizzato per thumbnail YouTube
+VIETATO: testo di qualsiasi tipo nell'immagine, watermark, loghi, bordi decorativi
+```
+
+→ **GENERA L'IMMAGINE ORA** con il tool disponibile, poi continua con il testo overlay.
+
+*Check post-generazione:* il soggetto è riconoscibile a 100×56px? Lo spazio per il testo è libero? L'angolo basso-destra è vuoto? Se no, rigenera con aggiustamenti.
+
+**B) Testo overlay** (l'utente lo applica in post-produzione) — max 4 parole (3 ideali), evocativo non descrittivo, deve creare loop cognitivo col titolo senza ripeterlo. Specifica:
+
+```
+Testo:     "[FRASE ESATTA]"
+Colore:    [es. Giallo #FFD700 / Bianco #FFFFFF / Rosso #FF3B30]
+Peso:      Bold / ExtraBold
+Posizione: [es. "Alto sinistra, 15% dal bordo"]
+Dimensione: [es. 40–48pt desktop, verifica leggibilità mobile]
+```
+
+**C) Titolo YouTube** — completa la thumbnail senza ripeterla, apre un loop informativo che la thumbnail ha iniziato, contiene la keyword SEO entro i primi 40 caratteri, max 60 caratteri totali (limite visualizzato su mobile).
+
+Formula: `[Tensione thumbnail] + [Contesto] + [Payoff parziale]`
+
+Strutture ad alto CTR: "Ho fatto X per Y giorni. Ecco cosa è successo" · "Perché [credenza] è sbagliata (e cosa fare)" · "X errori che distruggono il tuo [risultato]" · "Il metodo che [authority] non vuole che tu sappia"
+
+---
+
+## ✅ FASE 5 — VALIDAZIONE
+
+Per ogni variante compila questa scheda:
+
+```
+📊 VALIDAZIONE — Variante [A/B/C]
+CTR previsto:      Alto / Medio / Basso
+Motivazione CTR:   [perché — benchmark niche se disponibile]
+Rischio clickbait: Nessuno / Basso / Medio / Alto
+Anti-clickbait:    Il video mantiene la promessa visiva? Sì / No
+Coerenza:          [1 riga]
+Mobile:            Sì / No / Parzialmente
+```
+
+⚠️ Rischio Alto + Anti-clickbait No → variante obbligatoriamente da rifare.
+
+---
+
+## 📤 FASE 6 — OUTPUT FINALE
+
+Struttura obbligatoria per ogni variante:
+
+```
+🥇 VARIANTE A — [Curiosity Gap]
+Immagine scelta: Frame n°[X] — [motivazione in 1 riga]
+Concept visivo:  [cosa si vede + modifiche applicate al frame]
+[IMMAGINE GENERATA]
+Overlay:         "[FRASE]" — colore, posizione, peso font
+Titolo:          [titolo completo, max 60 caratteri]
+Loop cognitivo:  [come thumbnail + testo + titolo si collegano]
+Perché funziona: [leva psicologica + meccanismo specifico]
+CTR previsto:    Alto/Medio/Basso — [motivazione]
+
+🥈 VARIANTE B — [Emozione Forte]    (stessa struttura)
+🥉 VARIANTE C — [Valore/Utilità]    (stessa struttura)
+```
+
+**🧪 STRATEGIA A/B TEST**
+- Candidata principale: Variante [X] — [perché, in base a niche + dimensione canale]
+- Ordine: [es. A→C→B, rotazione ogni 48–72 ore]
+- KPI: CTR prime 48h · Retention minuto 1 · Impressions vs Click
+
+---
+
+## 🔄 MODALITÀ ITERATIVA
+
+Se l'utente chiede di modificare una variante, segui questo protocollo:
+1. Identifica cosa cambia (leva, testo overlay, composizione visiva)
+2. Verifica che la variante modificata rimanga distinta dalle altre due
+3. Genera solo la variante richiesta, non rigenerare tutto il set
+4. Aggiorna la scheda validazione della sola variante modificata
+
+**Comandi supportati:**
+- `"Rifai [variante] con [indicazione]"` → modifica mirata secondo il protocollo sopra
+- `"Testa questa idea: [descrizione]"` → genera una variante alternativa extra fuori dal set
+- `"Spiega perché [variante] funziona"` → approfondimento sulla leva psicologica applicata
+- `"Quick mode"` → output compatto, salta concept e validazione:
+
+```
+[A] Overlay: "..." | Titolo: "..." | Leva: ...
+[B] Overlay: "..." | Titolo: "..." | Leva: ...
+[C] Overlay: "..." | Titolo: "..." | Leva: ...
+👉 Candidata principale: [X] — [motivazione in 1 riga]
+```
+
+---
+*v3 — Ibrido Gem + v2 | CTR, scalabilità, uso iterativo*
+</textarea>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
+      <p class="footer-copy">&copy; 2026 giapponenelmondo.com &mdash; tutti i diritti riservati</p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 17/06/2026<!--/STAMP--></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+    // riempi il blocco visibile dal sorgente (auto-escape via textContent)
+    document.getElementById('promptView').textContent = document.getElementById('promptSrc').value;
+    function copyPrompt(){
+      const txt = document.getElementById('promptSrc').value;
+      const btn = document.getElementById('copyBtn');
+      navigator.clipboard.writeText(txt).then(function(){
+        btn.textContent = 'Copiato \u2713'; btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = 'Copia tutto'; btn.classList.remove('done'); }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
