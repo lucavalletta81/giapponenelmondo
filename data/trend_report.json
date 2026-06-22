@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-15",
-  "total_clusters": 10,
-  "total_videos": 67,
-  "date_range_start": "2026-06-01",
-  "date_range_end": "2026-06-14",
+  "generated_at": "2026-06-22",
+  "total_clusters": 13,
+  "total_videos": 76,
+  "date_range_start": "2026-06-08",
+  "date_range_end": "2026-06-21",
   "sections": {
     "emergenti": [],
     "crescita": [
       {
-        "label": 8,
-        "score": 0.8929,
+        "label": 11,
+        "score": 0.924,
         "keywords": [
           "twitch",
           "manga",
-          "ball",
           "dragon",
           "dragon ball",
+          "ball",
           "originale"
         ],
-        "item_count": 13,
-        "total_views": 25474,
-        "velocity": 0.731,
+        "item_count": 17,
+        "total_views": 37528,
+        "velocity": 0.781,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-02",
-        "last_seen": "2026-06-14",
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-22",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -33,13 +33,22 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7807,
-          "casual": 0.672
+          "narrativo": 0.7963,
+          "casual": 0.681
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.781,
+        "affinity_best_score": 0.796,
         "items_by_lang": {
           "it": [
+            {
+              "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
+              "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
+              "source": "Caverna di Platone",
+              "date": "2026-06-16",
+              "views": 5080,
+              "likes": 269,
+              "duration_secs": 2944
+            },
             {
               "title": "Perché Casca non sa scegliere tra Gatsu e Grifis? #berserk",
               "url": "https://www.youtube.com/watch?v=Catfi7_QPC0",
@@ -50,26 +59,26 @@
               "duration_secs": 27
             },
             {
-              "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
-              "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+              "title": "BERSERK DELUXE 14 VARIANT",
+              "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
               "source": "Caverna di Platone",
-              "date": "2026-06-06",
-              "views": 4637,
-              "likes": 276,
-              "duration_secs": 1556
-            },
-            {
-              "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
-              "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
-              "source": "Caverna di Platone",
-              "date": "2026-06-04",
-              "views": 3232,
-              "likes": 156,
-              "duration_secs": 1758
+              "date": "2026-06-19",
+              "views": 4638,
+              "likes": 228,
+              "duration_secs": 1444
             }
           ]
         },
         "top_items": [
+          {
+            "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
+            "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
+            "source": "Caverna di Platone",
+            "date": "2026-06-16",
+            "views": 5080,
+            "likes": 269,
+            "duration_secs": 2944
+          },
           {
             "title": "Perché Casca non sa scegliere tra Gatsu e Grifis? #berserk",
             "url": "https://www.youtube.com/watch?v=Catfi7_QPC0",
@@ -80,43 +89,34 @@
             "duration_secs": 27
           },
           {
-            "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
-            "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+            "title": "BERSERK DELUXE 14 VARIANT",
+            "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
             "source": "Caverna di Platone",
-            "date": "2026-06-06",
-            "views": 4637,
-            "likes": 276,
-            "duration_secs": 1556
-          },
-          {
-            "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
-            "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
-            "source": "Caverna di Platone",
-            "date": "2026-06-04",
-            "views": 3232,
-            "likes": 156,
-            "duration_secs": 1758
+            "date": "2026-06-19",
+            "views": 4638,
+            "likes": 228,
+            "duration_secs": 1444
           }
         ]
       },
       {
-        "label": 2,
-        "score": 0.4855,
+        "label": 3,
+        "score": 0.5832,
         "keywords": [
-          "casa",
-          "del",
-          "lavoro",
-          "yen",
-          "mercato",
-          "immobiliare"
+          "della",
+          "tommaso",
+          "cibo",
+          "prime",
+          "vita",
+          "del"
         ],
-        "item_count": 5,
-        "total_views": 66632,
-        "velocity": 0.7,
+        "item_count": 3,
+        "total_views": 37631,
+        "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-03",
-        "last_seen": "2026-06-13",
+        "first_seen": "2026-06-10",
+        "last_seen": "2026-06-20",
         "sentinel_clusters": [
           "vita_giappone"
         ],
@@ -125,105 +125,103 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6211,
-          "casual": 0.7481
+          "narrativo": 0.6593,
+          "casual": 0.6978
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.748,
+        "affinity_best_score": 0.698,
         "items_by_lang": {
           "it": [
             {
-              "title": "È una truffa secondo voi?",
-              "url": "https://www.youtube.com/watch?v=eJmqASzjA_c",
+              "title": "Non è tutto buono in Giappone",
+              "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
               "source": "Marco Togni",
-              "date": "2026-06-12",
-              "views": 28813,
-              "likes": 1655,
-              "duration_secs": 107
+              "date": "2026-06-20",
+              "views": 30004,
+              "likes": 1543,
+              "duration_secs": 56
             },
             {
-              "title": "È davvero facile trovare lavoro in Giappone? In questo video analizzo il mercato del lavoro giappone",
-              "url": "https://www.youtube.com/watch?v=-rtDIeBgsR0",
-              "source": "Marco Togni",
-              "date": "2026-06-04",
-              "views": 18033,
-              "likes": 873,
-              "duration_secs": 122
+              "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
+              "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
+              "source": "Tommaso In Giappone",
+              "date": "2026-06-19",
+              "views": 6647,
+              "likes": 528,
+              "duration_secs": 1097
             },
             {
-              "title": "Giapponesi: popolo triste?",
-              "url": "https://www.youtube.com/watch?v=qgQxg0TN9MQ",
-              "source": "Marco Togni",
-              "date": "2026-06-13",
-              "views": 16766,
-              "likes": 1320,
-              "duration_secs": 147
+              "title": "Il Lato Oscuro dei KOMBINI in Giappone ",
+              "url": "https://www.youtube.com/watch?v=VlvVxcXYAUA",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-10",
+              "views": 980,
+              "likes": 73,
+              "duration_secs": 722
             }
           ]
         },
         "top_items": [
           {
-            "title": "È una truffa secondo voi?",
-            "url": "https://www.youtube.com/watch?v=eJmqASzjA_c",
+            "title": "Non è tutto buono in Giappone",
+            "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
             "source": "Marco Togni",
-            "date": "2026-06-12",
-            "views": 28813,
-            "likes": 1655,
-            "duration_secs": 107
+            "date": "2026-06-20",
+            "views": 30004,
+            "likes": 1543,
+            "duration_secs": 56
           },
           {
-            "title": "È davvero facile trovare lavoro in Giappone? In questo video analizzo il mercato del lavoro giappone",
-            "url": "https://www.youtube.com/watch?v=-rtDIeBgsR0",
-            "source": "Marco Togni",
-            "date": "2026-06-04",
-            "views": 18033,
-            "likes": 873,
-            "duration_secs": 122
+            "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
+            "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
+            "source": "Tommaso In Giappone",
+            "date": "2026-06-19",
+            "views": 6647,
+            "likes": 528,
+            "duration_secs": 1097
           },
           {
-            "title": "Giapponesi: popolo triste?",
-            "url": "https://www.youtube.com/watch?v=qgQxg0TN9MQ",
-            "source": "Marco Togni",
-            "date": "2026-06-13",
-            "views": 16766,
-            "likes": 1320,
-            "duration_secs": 147
+            "title": "Il Lato Oscuro dei KOMBINI in Giappone ",
+            "url": "https://www.youtube.com/watch?v=VlvVxcXYAUA",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-10",
+            "views": 980,
+            "likes": 73,
+            "duration_secs": 722
           }
         ]
       },
       {
         "label": 4,
-        "score": 0.4741,
+        "score": 0.4439,
         "keywords": [
-          "kson",
-          "treated because",
-          "kson treated",
-          "lol",
-          "lol ksononair",
-          "grew lol"
+          "use",
+          "fair use",
+          "copyright",
+          "fair",
+          "use permitted",
+          "twitter live"
         ],
-        "item_count": 10,
-        "total_views": 271121,
-        "velocity": 1.0,
+        "item_count": 5,
+        "total_views": 81928,
+        "velocity": 0.7,
         "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-06-01",
-        "last_seen": "2026-06-14",
+        "diversity": 0.292,
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-19",
         "sentinel_clusters": [
-          "anime_pop_en",
-          "japan_native"
+          "anime_pop_en"
         ],
         "languages": [
-          "ja",
           "en"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6597,
-          "casual": 0.6586
+          "narrativo": 0.6325,
+          "casual": 0.5567
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.66,
+        "affinity_best_score": 0.632,
         "items_by_lang": {
           "en": [
             {
@@ -236,51 +234,22 @@
               "duration_secs": 26
             },
             {
-              "title": "How to become a sumo",
-              "url": "https://www.youtube.com/watch?v=qFKERHXXcEk",
+              "title": "Bro Actually Does Nothing 💀",
+              "url": "https://www.youtube.com/watch?v=PZzDOXPyVl8",
               "source": "The Anime Man",
-              "date": "2026-06-01",
-              "views": 17862,
-              "likes": 415,
-              "duration_secs": 32
+              "date": "2026-06-19",
+              "views": 19931,
+              "likes": 306,
+              "duration_secs": 29
             },
             {
-              "title": "Being At The Top Of Nintendo",
-              "url": "https://www.youtube.com/watch?v=04JzVqb_hd0",
+              "title": "He sold the first Super Nintendo console",
+              "url": "https://www.youtube.com/watch?v=eswe0ZMWhYM",
               "source": "The Anime Man",
-              "date": "2026-06-12",
-              "views": 13558,
-              "likes": 585,
-              "duration_secs": 40
-            }
-          ],
-          "ja": [
-            {
-              "title": "This Is What Japan Did To \"KSON\" Because She Grew Up In America",
-              "url": "https://www.youtube.com/watch?v=UazrDv2_LXQ",
-              "source": "Sora The Troll",
-              "date": "2026-06-02",
-              "views": 113279,
-              "likes": 8426,
-              "duration_secs": 969
-            },
-            {
-              "title": "This Is What Japanese People Did To This Ex-Prn Star because She Speaks English",
-              "url": "https://www.youtube.com/watch?v=9Gb53bOqfpc",
-              "source": "Sora The Troll",
-              "date": "2026-06-10",
-              "views": 97446,
-              "likes": 5186,
-              "duration_secs": 657
-            },
-            {
-              "title": "How kson was treated in Japan because she grew up in the U.S. LOL  ⁨ ⁨@ksonONAIR",
-              "url": "https://www.youtube.com/watch?v=ad62-o1L5Mo",
-              "source": "Sora The Troll",
-              "date": "2026-06-13",
-              "views": 1996,
-              "likes": 36,
-              "duration_secs": 131
+              "date": "2026-06-15",
+              "views": 14311,
+              "likes": 550,
+              "duration_secs": 30
             }
           ]
         },
@@ -295,70 +264,43 @@
             "duration_secs": 26
           },
           {
-            "title": "How to become a sumo",
-            "url": "https://www.youtube.com/watch?v=qFKERHXXcEk",
+            "title": "Bro Actually Does Nothing 💀",
+            "url": "https://www.youtube.com/watch?v=PZzDOXPyVl8",
             "source": "The Anime Man",
-            "date": "2026-06-01",
-            "views": 17862,
-            "likes": 415,
-            "duration_secs": 32
+            "date": "2026-06-19",
+            "views": 19931,
+            "likes": 306,
+            "duration_secs": 29
           },
           {
-            "title": "Being At The Top Of Nintendo",
-            "url": "https://www.youtube.com/watch?v=04JzVqb_hd0",
+            "title": "He sold the first Super Nintendo console",
+            "url": "https://www.youtube.com/watch?v=eswe0ZMWhYM",
             "source": "The Anime Man",
-            "date": "2026-06-12",
-            "views": 13558,
-            "likes": 585,
-            "duration_secs": 40
-          },
-          {
-            "title": "This Is What Japan Did To \"KSON\" Because She Grew Up In America",
-            "url": "https://www.youtube.com/watch?v=UazrDv2_LXQ",
-            "source": "Sora The Troll",
-            "date": "2026-06-02",
-            "views": 113279,
-            "likes": 8426,
-            "duration_secs": 969
-          },
-          {
-            "title": "This Is What Japanese People Did To This Ex-Prn Star because She Speaks English",
-            "url": "https://www.youtube.com/watch?v=9Gb53bOqfpc",
-            "source": "Sora The Troll",
-            "date": "2026-06-10",
-            "views": 97446,
-            "likes": 5186,
-            "duration_secs": 657
-          },
-          {
-            "title": "How kson was treated in Japan because she grew up in the U.S. LOL  ⁨ ⁨@ksonONAIR",
-            "url": "https://www.youtube.com/watch?v=ad62-o1L5Mo",
-            "source": "Sora The Troll",
-            "date": "2026-06-13",
-            "views": 1996,
-            "likes": 36,
-            "duration_secs": 131
+            "date": "2026-06-15",
+            "views": 14311,
+            "likes": 550,
+            "duration_secs": 30
           }
         ]
       },
       {
-        "label": 9,
-        "score": 0.4158,
+        "label": 2,
+        "score": 0.4128,
         "keywords": [
-          "twitch",
-          "gruppo",
-          "tsunami",
-          "youtube twitch",
-          "ufficiali supportare",
-          "ufficiali"
+          "casa",
+          "del",
+          "della",
+          "nisa",
+          "immobiliare",
+          "conto"
         ],
-        "item_count": 3,
-        "total_views": 40156,
-        "velocity": 1.0,
+        "item_count": 4,
+        "total_views": 30554,
+        "velocity": 0.75,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-03",
-        "last_seen": "2026-06-14",
+        "first_seen": "2026-06-12",
+        "last_seen": "2026-06-21",
         "sentinel_clusters": [
           "vita_giappone"
         ],
@@ -367,90 +309,90 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7984,
-          "casual": 0.7666
+          "narrativo": 0.5989,
+          "casual": 0.7197
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.798,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.72,
         "items_by_lang": {
           "it": [
             {
-              "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
-              "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
-              "source": "Vivi Giappone",
-              "date": "2026-06-03",
-              "views": 28174,
-              "likes": 626,
-              "duration_secs": 78
+              "title": "È una truffa secondo voi?",
+              "url": "https://www.youtube.com/watch?v=eJmqASzjA_c",
+              "source": "Marco Togni",
+              "date": "2026-06-12",
+              "views": 28813,
+              "likes": 1655,
+              "duration_secs": 107
             },
             {
-              "title": "Eravamo degli sfigati #giappone #anime #giapponese",
-              "url": "https://www.youtube.com/watch?v=38stSW1Dhgk",
-              "source": "Vivi Giappone",
-              "date": "2026-06-09",
-              "views": 9451,
-              "likes": 430,
-              "duration_secs": 48
+              "title": "Comprare Casa in Giappone: La Mia Esperienza, Costi e Verità Scomode",
+              "url": "https://www.youtube.com/watch?v=WjKv_Bqqj90",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-12",
+              "views": 1094,
+              "likes": 67,
+              "duration_secs": 1811
             },
             {
-              "title": "La Scuola dello Tsunami! #giappone #giapponese #tsunami",
-              "url": "https://www.youtube.com/watch?v=jXwkQ2WNJxw",
-              "source": "Vivi Giappone",
-              "date": "2026-06-14",
-              "views": 2531,
-              "likes": 192,
-              "duration_secs": 86
+              "title": "Quanto costa vivere in Giappone 2026 ",
+              "url": "https://www.youtube.com/watch?v=h2lJUrPRJLk",
+              "source": "Calabrese in Oriente",
+              "date": "2026-06-19",
+              "views": 468,
+              "likes": 40,
+              "duration_secs": 775
             }
           ]
         },
         "top_items": [
           {
-            "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
-            "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
-            "source": "Vivi Giappone",
-            "date": "2026-06-03",
-            "views": 28174,
-            "likes": 626,
-            "duration_secs": 78
+            "title": "È una truffa secondo voi?",
+            "url": "https://www.youtube.com/watch?v=eJmqASzjA_c",
+            "source": "Marco Togni",
+            "date": "2026-06-12",
+            "views": 28813,
+            "likes": 1655,
+            "duration_secs": 107
           },
           {
-            "title": "Eravamo degli sfigati #giappone #anime #giapponese",
-            "url": "https://www.youtube.com/watch?v=38stSW1Dhgk",
-            "source": "Vivi Giappone",
-            "date": "2026-06-09",
-            "views": 9451,
-            "likes": 430,
-            "duration_secs": 48
+            "title": "Comprare Casa in Giappone: La Mia Esperienza, Costi e Verità Scomode",
+            "url": "https://www.youtube.com/watch?v=WjKv_Bqqj90",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-12",
+            "views": 1094,
+            "likes": 67,
+            "duration_secs": 1811
           },
           {
-            "title": "La Scuola dello Tsunami! #giappone #giapponese #tsunami",
-            "url": "https://www.youtube.com/watch?v=jXwkQ2WNJxw",
-            "source": "Vivi Giappone",
-            "date": "2026-06-14",
-            "views": 2531,
-            "likes": 192,
-            "duration_secs": 86
+            "title": "Quanto costa vivere in Giappone 2026 ",
+            "url": "https://www.youtube.com/watch?v=h2lJUrPRJLk",
+            "source": "Calabrese in Oriente",
+            "date": "2026-06-19",
+            "views": 468,
+            "likes": 40,
+            "duration_secs": 775
           }
         ]
       },
       {
-        "label": 5,
-        "score": 0.3522,
+        "label": 9,
+        "score": 0.3052,
         "keywords": [
           "manga",
           "compra",
-          "kirio",
           "altro",
+          "kirio",
           "puoi",
-          "mettilo preferiti"
+          "del"
         ],
-        "item_count": 8,
-        "total_views": 3563,
-        "velocity": 0.75,
+        "item_count": 7,
+        "total_views": 3993,
+        "velocity": 0.5,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-04",
-        "last_seen": "2026-06-15",
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-19",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -459,13 +401,22 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.706,
-          "casual": 0.6093
+          "narrativo": 0.7514,
+          "casual": 0.6578
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.706,
+        "affinity_best_score": 0.751,
         "items_by_lang": {
           "it": [
+            {
+              "title": "16 Anime da Vedere nell'Estate 2026",
+              "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-06-19",
+              "views": 1155,
+              "likes": 146,
+              "duration_secs": 643
+            },
             {
               "title": "I 5 MANGA che mi hanno OSSESSIONATO a maggio",
               "url": "https://www.youtube.com/watch?v=RpGoygk0fHo",
@@ -476,26 +427,26 @@
               "duration_secs": 561
             },
             {
-              "title": "Ho letto TROPPI MANGA questa settimana?",
-              "url": "https://www.youtube.com/watch?v=jyR2lYXmTcQ",
+              "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
+              "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
               "source": "Kirio1984",
-              "date": "2026-06-05",
-              "views": 652,
-              "likes": 54,
-              "duration_secs": 1083
-            },
-            {
-              "title": "Questa settimana sono uscite delle BOMBE! 😱 Unboxing MANGA",
-              "url": "https://www.youtube.com/watch?v=IKot2vgARRM",
-              "source": "Kirio1984",
-              "date": "2026-06-13",
-              "views": 580,
-              "likes": 51,
-              "duration_secs": 420
+              "date": "2026-06-19",
+              "views": 704,
+              "likes": 58,
+              "duration_secs": 684
             }
           ]
         },
         "top_items": [
+          {
+            "title": "16 Anime da Vedere nell'Estate 2026",
+            "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-06-19",
+            "views": 1155,
+            "likes": 146,
+            "duration_secs": 643
+          },
           {
             "title": "I 5 MANGA che mi hanno OSSESSIONATO a maggio",
             "url": "https://www.youtube.com/watch?v=RpGoygk0fHo",
@@ -506,135 +457,126 @@
             "duration_secs": 561
           },
           {
-            "title": "Ho letto TROPPI MANGA questa settimana?",
-            "url": "https://www.youtube.com/watch?v=jyR2lYXmTcQ",
+            "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
+            "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
             "source": "Kirio1984",
-            "date": "2026-06-05",
-            "views": 652,
-            "likes": 54,
-            "duration_secs": 1083
-          },
-          {
-            "title": "Questa settimana sono uscite delle BOMBE! 😱 Unboxing MANGA",
-            "url": "https://www.youtube.com/watch?v=IKot2vgARRM",
-            "source": "Kirio1984",
-            "date": "2026-06-13",
-            "views": 580,
-            "likes": 51,
-            "duration_secs": 420
+            "date": "2026-06-19",
+            "views": 704,
+            "likes": 58,
+            "duration_secs": 684
           }
         ]
       },
       {
-        "label": 7,
-        "score": 0.2566,
+        "label": 1,
+        "score": 0.2858,
         "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
+          "nikon",
+          "viltrox",
+          "photography",
+          "ricoh",
+          "playground streetphotography",
+          "streetphotography architecture"
         ],
-        "item_count": 6,
-        "total_views": 170753,
+        "item_count": 3,
+        "total_views": 7342,
         "velocity": 0.833,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-02",
-        "last_seen": "2026-06-14",
+        "first_seen": "2026-06-13",
+        "last_seen": "2026-06-19",
         "sentinel_clusters": [
-          "japan_native"
+          "fotografia_japan"
         ],
         "languages": [
-          "ja"
+          "en"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6793,
-          "casual": 0.5761
+          "narrativo": 0.5943,
+          "casual": 0.6017
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.679,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.602,
         "items_by_lang": {
-          "ja": [
+          "en": [
             {
-              "title": "【注意】絵が下手な人がやってしまう、5つのNG行動",
-              "url": "https://www.youtube.com/watch?v=s7uDLrOOirA",
-              "source": "Naoki Saito Illust Channel 2",
+              "title": "Ricoh GR4 Ambient Tokyo Walk",
+              "url": "https://www.youtube.com/watch?v=sBzA9DNXHhM",
+              "source": "EYExplore",
               "date": "2026-06-13",
-              "views": 47012,
-              "likes": 2501,
-              "duration_secs": 1239
+              "views": 2905,
+              "likes": 213,
+              "duration_secs": 3218
             },
             {
-              "title": "漫画のフキダシはイラスト映えしにくい！？",
-              "url": "https://www.youtube.com/watch?v=WpiwXefMNYI",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-02",
-              "views": 32062,
-              "likes": 1518,
-              "duration_secs": 60
+              "title": "Tokyo's photography playground #streetphotography #architecture",
+              "url": "https://www.youtube.com/watch?v=9NwWSZcl-Dc",
+              "source": "EYExplore",
+              "date": "2026-06-13",
+              "views": 2351,
+              "likes": 81,
+              "duration_secs": 43
             },
             {
-              "title": "プロになりたい！でも何か足りない！ナゼ…！？",
-              "url": "https://www.youtube.com/watch?v=7xiaqvhIMNA",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-04",
-              "views": 31583,
-              "likes": 1595,
-              "duration_secs": 1011
+              "title": "What's My Contribution as a Street Photographer?",
+              "url": "https://www.youtube.com/watch?v=z40ffjZCKCI",
+              "source": "EYExplore",
+              "date": "2026-06-19",
+              "views": 2086,
+              "likes": 214,
+              "duration_secs": 1071
             }
           ]
         },
         "top_items": [
           {
-            "title": "【注意】絵が下手な人がやってしまう、5つのNG行動",
-            "url": "https://www.youtube.com/watch?v=s7uDLrOOirA",
-            "source": "Naoki Saito Illust Channel 2",
+            "title": "Ricoh GR4 Ambient Tokyo Walk",
+            "url": "https://www.youtube.com/watch?v=sBzA9DNXHhM",
+            "source": "EYExplore",
             "date": "2026-06-13",
-            "views": 47012,
-            "likes": 2501,
-            "duration_secs": 1239
+            "views": 2905,
+            "likes": 213,
+            "duration_secs": 3218
           },
           {
-            "title": "漫画のフキダシはイラスト映えしにくい！？",
-            "url": "https://www.youtube.com/watch?v=WpiwXefMNYI",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-02",
-            "views": 32062,
-            "likes": 1518,
-            "duration_secs": 60
+            "title": "Tokyo's photography playground #streetphotography #architecture",
+            "url": "https://www.youtube.com/watch?v=9NwWSZcl-Dc",
+            "source": "EYExplore",
+            "date": "2026-06-13",
+            "views": 2351,
+            "likes": 81,
+            "duration_secs": 43
           },
           {
-            "title": "プロになりたい！でも何か足りない！ナゼ…！？",
-            "url": "https://www.youtube.com/watch?v=7xiaqvhIMNA",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-04",
-            "views": 31583,
-            "likes": 1595,
-            "duration_secs": 1011
+            "title": "What's My Contribution as a Street Photographer?",
+            "url": "https://www.youtube.com/watch?v=z40ffjZCKCI",
+            "source": "EYExplore",
+            "date": "2026-06-19",
+            "views": 2086,
+            "likes": 214,
+            "duration_secs": 1071
           }
         ]
       },
       {
-        "label": 3,
-        "score": 0.2415,
+        "label": 6,
+        "score": 0.2801,
         "keywords": [
           "well",
           "well tts",
           "tools",
           "tools car",
-          "try",
-          "try tjhese"
+          "try tjhese",
+          "try"
         ],
-        "item_count": 5,
-        "total_views": 47576,
-        "velocity": 0.75,
+        "item_count": 4,
+        "total_views": 62380,
+        "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-01",
-        "last_seen": "2026-06-15",
+        "first_seen": "2026-06-11",
+        "last_seen": "2026-06-21",
         "sentinel_clusters": [
           "japan_native"
         ],
@@ -643,11 +585,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6175,
-          "casual": 0.646
+          "narrativo": 0.6217,
+          "casual": 0.668
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.646,
+        "affinity_best_score": 0.668,
         "items_by_lang": {
           "ja": [
             {
@@ -660,21 +602,21 @@
               "duration_secs": 15651
             },
             {
-              "title": "Filming Insane Cars And People Fighting In Tokyo AT MIDNIGHT FORZA HORIZON 6 IN REAL LIFE LOLOLOLOLO",
-              "url": "https://www.youtube.com/watch?v=1_eMAhdEhAU",
+              "title": "WORLD CUP JAPAN VS TUNISIA IS MAKING TOKYO INSANE TODAY LOLOLOLOLOLOLOLOLOLOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=vkq8ithOhvI",
               "source": "Sora The Troll",
-              "date": "2026-06-04",
-              "views": 9180,
-              "likes": 419,
-              "duration_secs": 12391
+              "date": "2026-06-21",
+              "views": 23984,
+              "likes": 664,
+              "duration_secs": 12407
             },
             {
-              "title": "Biggest Typhoon Ever In Tokyo 2026",
-              "url": "https://www.youtube.com/watch?v=7TpNe5ruWMc",
+              "title": "TOKYO Has Areas Where Foreigners Fight Now LOLOOLOLLOLOLOLOLLOLOLOLOLOLOLOLOLOLOLOLOLLLLLL",
+              "url": "https://www.youtube.com/watch?v=lzshdkCxBXk",
               "source": "Sora The Troll",
-              "date": "2026-06-01",
+              "date": "2026-06-15",
               "views": 0,
-              "likes": 13,
+              "likes": 12,
               "duration_secs": 0
             }
           ]
@@ -690,22 +632,206 @@
             "duration_secs": 15651
           },
           {
-            "title": "Filming Insane Cars And People Fighting In Tokyo AT MIDNIGHT FORZA HORIZON 6 IN REAL LIFE LOLOLOLOLO",
-            "url": "https://www.youtube.com/watch?v=1_eMAhdEhAU",
+            "title": "WORLD CUP JAPAN VS TUNISIA IS MAKING TOKYO INSANE TODAY LOLOLOLOLOLOLOLOLOLOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=vkq8ithOhvI",
             "source": "Sora The Troll",
-            "date": "2026-06-04",
-            "views": 9180,
-            "likes": 419,
-            "duration_secs": 12391
+            "date": "2026-06-21",
+            "views": 23984,
+            "likes": 664,
+            "duration_secs": 12407
           },
           {
-            "title": "Biggest Typhoon Ever In Tokyo 2026",
-            "url": "https://www.youtube.com/watch?v=7TpNe5ruWMc",
+            "title": "TOKYO Has Areas Where Foreigners Fight Now LOLOOLOLLOLOLOLOLLOLOLOLOLOLOLOLOLOLOLOLOLLLLLL",
+            "url": "https://www.youtube.com/watch?v=lzshdkCxBXk",
             "source": "Sora The Troll",
-            "date": "2026-06-01",
+            "date": "2026-06-15",
             "views": 0,
-            "likes": 13,
+            "likes": 12,
             "duration_secs": 0
+          }
+        ]
+      },
+      {
+        "label": 5,
+        "score": 0.2703,
+        "keywords": [
+          "maglietta",
+          "calze",
+          "sword",
+          "pampling",
+          "biglietto evento",
+          "acquisto aggiungete"
+        ],
+        "item_count": 10,
+        "total_views": 252122,
+        "velocity": 0.5,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-19",
+        "sentinel_clusters": [
+          "videogiochi"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7112,
+          "casual": 0.5159
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.711,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "The Boys 5: Una fine di serie ingloriosa",
+              "url": "https://www.youtube.com/watch?v=JMXDC-8hy8w",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-10",
+              "views": 52734,
+              "likes": 2634,
+              "duration_secs": 2374
+            },
+            {
+              "title": "One Piece profano: Dressrosa è una rottura di gonadi",
+              "url": "https://www.youtube.com/watch?v=S5bY740kS2o",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-09",
+              "views": 31308,
+              "likes": 1881,
+              "duration_secs": 3406
+            },
+            {
+              "title": "Spider Man Brand New Day: Analizziamo il secondo trailer!",
+              "url": "https://www.youtube.com/watch?v=Cbrzo0O1kYo",
+              "source": "Victorlaszlo88",
+              "date": "2026-06-17",
+              "views": 30929,
+              "likes": 1858,
+              "duration_secs": 1025
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "The Boys 5: Una fine di serie ingloriosa",
+            "url": "https://www.youtube.com/watch?v=JMXDC-8hy8w",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-10",
+            "views": 52734,
+            "likes": 2634,
+            "duration_secs": 2374
+          },
+          {
+            "title": "One Piece profano: Dressrosa è una rottura di gonadi",
+            "url": "https://www.youtube.com/watch?v=S5bY740kS2o",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-09",
+            "views": 31308,
+            "likes": 1881,
+            "duration_secs": 3406
+          },
+          {
+            "title": "Spider Man Brand New Day: Analizziamo il secondo trailer!",
+            "url": "https://www.youtube.com/watch?v=Cbrzo0O1kYo",
+            "source": "Victorlaszlo88",
+            "date": "2026-06-17",
+            "views": 30929,
+            "likes": 1858,
+            "duration_secs": 1025
+          }
+        ]
+      },
+      {
+        "label": 10,
+        "score": 0.2216,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 5,
+        "total_views": 131720,
+        "velocity": 0.6,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-11",
+        "last_seen": "2026-06-20",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6718,
+          "casual": 0.5945
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.672,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "『絵師は絵師としか仲良くしない』について話してみた。",
+              "url": "https://www.youtube.com/watch?v=HzixslgDuC0",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-20",
+              "views": 49818,
+              "likes": 1857,
+              "duration_secs": 1144
+            },
+            {
+              "title": "【注意】絵が下手な人がやってしまう、5つのNG行動",
+              "url": "https://www.youtube.com/watch?v=s7uDLrOOirA",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-13",
+              "views": 47012,
+              "likes": 2501,
+              "duration_secs": 1239
+            },
+            {
+              "title": "すぐ出来る！迫力のちょい足し方法とは..！？【きまぐれ添削239】",
+              "url": "https://www.youtube.com/watch?v=WA_qMAf78MI",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-18",
+              "views": 14963,
+              "likes": 823,
+              "duration_secs": 894
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "『絵師は絵師としか仲良くしない』について話してみた。",
+            "url": "https://www.youtube.com/watch?v=HzixslgDuC0",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-20",
+            "views": 49818,
+            "likes": 1857,
+            "duration_secs": 1144
+          },
+          {
+            "title": "【注意】絵が下手な人がやってしまう、5つのNG行動",
+            "url": "https://www.youtube.com/watch?v=s7uDLrOOirA",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-13",
+            "views": 47012,
+            "likes": 2501,
+            "duration_secs": 1239
+          },
+          {
+            "title": "すぐ出来る！迫力のちょい足し方法とは..！？【きまぐれ添削239】",
+            "url": "https://www.youtube.com/watch?v=WA_qMAf78MI",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-18",
+            "views": 14963,
+            "likes": 823,
+            "duration_secs": 894
           }
         ]
       }
@@ -713,23 +839,23 @@
     "cross_source": [],
     "affinita": [
       {
-        "label": 8,
-        "score": 0.8929,
+        "label": 11,
+        "score": 0.924,
         "keywords": [
           "twitch",
           "manga",
-          "ball",
           "dragon",
           "dragon ball",
+          "ball",
           "originale"
         ],
-        "item_count": 13,
-        "total_views": 25474,
-        "velocity": 0.731,
+        "item_count": 17,
+        "total_views": 37528,
+        "velocity": 0.781,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-02",
-        "last_seen": "2026-06-14",
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-22",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -738,13 +864,22 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7807,
-          "casual": 0.672
+          "narrativo": 0.7963,
+          "casual": 0.681
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.781,
+        "affinity_best_score": 0.796,
         "items_by_lang": {
           "it": [
+            {
+              "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
+              "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
+              "source": "Caverna di Platone",
+              "date": "2026-06-16",
+              "views": 5080,
+              "likes": 269,
+              "duration_secs": 2944
+            },
             {
               "title": "Perché Casca non sa scegliere tra Gatsu e Grifis? #berserk",
               "url": "https://www.youtube.com/watch?v=Catfi7_QPC0",
@@ -755,26 +890,26 @@
               "duration_secs": 27
             },
             {
-              "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
-              "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+              "title": "BERSERK DELUXE 14 VARIANT",
+              "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
               "source": "Caverna di Platone",
-              "date": "2026-06-06",
-              "views": 4637,
-              "likes": 276,
-              "duration_secs": 1556
-            },
-            {
-              "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
-              "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
-              "source": "Caverna di Platone",
-              "date": "2026-06-04",
-              "views": 3232,
-              "likes": 156,
-              "duration_secs": 1758
+              "date": "2026-06-19",
+              "views": 4638,
+              "likes": 228,
+              "duration_secs": 1444
             }
           ]
         },
         "top_items": [
+          {
+            "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
+            "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
+            "source": "Caverna di Platone",
+            "date": "2026-06-16",
+            "views": 5080,
+            "likes": 269,
+            "duration_secs": 2944
+          },
           {
             "title": "Perché Casca non sa scegliere tra Gatsu e Grifis? #berserk",
             "url": "https://www.youtube.com/watch?v=Catfi7_QPC0",
@@ -785,43 +920,126 @@
             "duration_secs": 27
           },
           {
-            "title": "L'HANNO RIFATTO! PANINI NON IMPARA MAI!",
-            "url": "https://www.youtube.com/watch?v=l1qogqd9dT8",
+            "title": "BERSERK DELUXE 14 VARIANT",
+            "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
             "source": "Caverna di Platone",
-            "date": "2026-06-06",
-            "views": 4637,
-            "likes": 276,
-            "duration_secs": 1556
-          },
-          {
-            "title": "TORIYAMA NON DISEGNA I VECCHI COSÌ e altre cose su Dragon Ball",
-            "url": "https://www.youtube.com/watch?v=hi6HKIo2PCY",
-            "source": "Caverna di Platone",
-            "date": "2026-06-04",
-            "views": 3232,
-            "likes": 156,
-            "duration_secs": 1758
+            "date": "2026-06-19",
+            "views": 4638,
+            "likes": 228,
+            "duration_secs": 1444
           }
         ]
       },
       {
         "label": 9,
-        "score": 0.4158,
+        "score": 0.3052,
+        "keywords": [
+          "manga",
+          "compra",
+          "altro",
+          "kirio",
+          "puoi",
+          "del"
+        ],
+        "item_count": 7,
+        "total_views": 3993,
+        "velocity": 0.5,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-08",
+        "last_seen": "2026-06-19",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7514,
+          "casual": 0.6578
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.751,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "16 Anime da Vedere nell'Estate 2026",
+              "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-06-19",
+              "views": 1155,
+              "likes": 146,
+              "duration_secs": 643
+            },
+            {
+              "title": "I 5 MANGA che mi hanno OSSESSIONATO a maggio",
+              "url": "https://www.youtube.com/watch?v=RpGoygk0fHo",
+              "source": "Kirio1984",
+              "date": "2026-06-10",
+              "views": 781,
+              "likes": 79,
+              "duration_secs": 561
+            },
+            {
+              "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
+              "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
+              "source": "Kirio1984",
+              "date": "2026-06-19",
+              "views": 704,
+              "likes": 58,
+              "duration_secs": 684
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "16 Anime da Vedere nell'Estate 2026",
+            "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-06-19",
+            "views": 1155,
+            "likes": 146,
+            "duration_secs": 643
+          },
+          {
+            "title": "I 5 MANGA che mi hanno OSSESSIONATO a maggio",
+            "url": "https://www.youtube.com/watch?v=RpGoygk0fHo",
+            "source": "Kirio1984",
+            "date": "2026-06-10",
+            "views": 781,
+            "likes": 79,
+            "duration_secs": 561
+          },
+          {
+            "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
+            "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
+            "source": "Kirio1984",
+            "date": "2026-06-19",
+            "views": 704,
+            "likes": 58,
+            "duration_secs": 684
+          }
+        ]
+      },
+      {
+        "label": 12,
+        "score": 0.2396,
         "keywords": [
           "twitch",
           "gruppo",
           "tsunami",
-          "youtube twitch",
-          "ufficiali supportare",
-          "ufficiali"
+          "versione kindle",
+          "youtube",
+          "versione"
         ],
         "item_count": 3,
-        "total_views": 40156,
-        "velocity": 1.0,
+        "total_views": 20425,
+        "velocity": 0.167,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-03",
-        "last_seen": "2026-06-14",
+        "first_seen": "2026-06-09",
+        "last_seen": "2026-06-18",
         "sentinel_clusters": [
           "vita_giappone"
         ],
@@ -830,22 +1048,13 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7984,
-          "casual": 0.7666
+          "narrativo": 0.788,
+          "casual": 0.7634
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.798,
+        "affinity_best_score": 0.788,
         "items_by_lang": {
           "it": [
-            {
-              "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
-              "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
-              "source": "Vivi Giappone",
-              "date": "2026-06-03",
-              "views": 28174,
-              "likes": 626,
-              "duration_secs": 78
-            },
             {
               "title": "Eravamo degli sfigati #giappone #anime #giapponese",
               "url": "https://www.youtube.com/watch?v=38stSW1Dhgk",
@@ -854,6 +1063,15 @@
               "views": 9451,
               "likes": 430,
               "duration_secs": 48
+            },
+            {
+              "title": "Solo in Giappone? #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=sHn_EGJ_bW8",
+              "source": "Vivi Giappone",
+              "date": "2026-06-18",
+              "views": 8443,
+              "likes": 327,
+              "duration_secs": 46
             },
             {
               "title": "La Scuola dello Tsunami! #giappone #giapponese #tsunami",
@@ -868,15 +1086,6 @@
         },
         "top_items": [
           {
-            "title": "Parrucchiere in Giappone? Con sorpresa! #giappone #giapponese #parrucchiera",
-            "url": "https://www.youtube.com/watch?v=z71afX6pBKI",
-            "source": "Vivi Giappone",
-            "date": "2026-06-03",
-            "views": 28174,
-            "likes": 626,
-            "duration_secs": 78
-          },
-          {
             "title": "Eravamo degli sfigati #giappone #anime #giapponese",
             "url": "https://www.youtube.com/watch?v=38stSW1Dhgk",
             "source": "Vivi Giappone",
@@ -884,6 +1093,15 @@
             "views": 9451,
             "likes": 430,
             "duration_secs": 48
+          },
+          {
+            "title": "Solo in Giappone? #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=sHn_EGJ_bW8",
+            "source": "Vivi Giappone",
+            "date": "2026-06-18",
+            "views": 8443,
+            "likes": 327,
+            "duration_secs": 46
           },
           {
             "title": "La Scuola dello Tsunami! #giappone #giapponese #tsunami",
@@ -900,207 +1118,23 @@
     "anomalie": [],
     "altri": [
       {
-        "label": 1,
-        "score": 0.3208,
+        "label": 8,
+        "score": 0.2412,
         "keywords": [
-          "bangkok",
-          "interview",
-          "burberry",
-          "bangkok burberry",
-          "yamato bangkok",
-          "ninon bangkok"
-        ],
-        "item_count": 3,
-        "total_views": 30127,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.292,
-        "first_seen": "2026-06-12",
-        "last_seen": "2026-06-14",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5155,
-          "casual": 0.5269
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.527,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "Interview with Ninon in Bangkok  @Burberry",
-              "url": "https://www.youtube.com/watch?v=8CDd1u1rjEQ",
-              "source": "TAKASHii from Japan",
-              "date": "2026-06-12",
-              "views": 20876,
-              "likes": 542,
-              "duration_secs": 35
-            },
-            {
-              "title": "interview with Yamato in Bangkok  @Burberry",
-              "url": "https://www.youtube.com/watch?v=RoAa1qn8ne8",
-              "source": "TAKASHii from Japan",
-              "date": "2026-06-13",
-              "views": 5760,
-              "likes": 186,
-              "duration_secs": 43
-            },
-            {
-              "title": "interview with Shoma in Bangkok  @Burberry",
-              "url": "https://www.youtube.com/watch?v=u7sd8CjjK8Y",
-              "source": "TAKASHii from Japan",
-              "date": "2026-06-14",
-              "views": 3491,
-              "likes": 116,
-              "duration_secs": 46
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Interview with Ninon in Bangkok  @Burberry",
-            "url": "https://www.youtube.com/watch?v=8CDd1u1rjEQ",
-            "source": "TAKASHii from Japan",
-            "date": "2026-06-12",
-            "views": 20876,
-            "likes": 542,
-            "duration_secs": 35
-          },
-          {
-            "title": "interview with Yamato in Bangkok  @Burberry",
-            "url": "https://www.youtube.com/watch?v=RoAa1qn8ne8",
-            "source": "TAKASHii from Japan",
-            "date": "2026-06-13",
-            "views": 5760,
-            "likes": 186,
-            "duration_secs": 43
-          },
-          {
-            "title": "interview with Shoma in Bangkok  @Burberry",
-            "url": "https://www.youtube.com/watch?v=u7sd8CjjK8Y",
-            "source": "TAKASHii from Japan",
-            "date": "2026-06-14",
-            "views": 3491,
-            "likes": 116,
-            "duration_secs": 46
-          }
-        ]
-      },
-      {
-        "label": 0,
-        "score": 0.2639,
-        "keywords": [
-          "maglietta",
-          "calze",
-          "star",
-          "star maglietta",
-          "aggiungete",
-          "acquisto"
-        ],
-        "item_count": 10,
-        "total_views": 280330,
-        "velocity": 0.45,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-01",
-        "last_seen": "2026-06-12",
-        "sentinel_clusters": [
-          "videogiochi"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7389,
-          "casual": 0.5475
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.739,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "The Boys 5: Una fine di serie ingloriosa",
-              "url": "https://www.youtube.com/watch?v=JMXDC-8hy8w",
-              "source": "Victorlaszlo88",
-              "date": "2026-06-10",
-              "views": 52734,
-              "likes": 2634,
-              "duration_secs": 2374
-            },
-            {
-              "title": "MovieBlog- 1087: Recensione Scary Movie",
-              "url": "https://www.youtube.com/watch?v=RT4dgRabqpY",
-              "source": "Victorlaszlo88",
-              "date": "2026-06-05",
-              "views": 45968,
-              "likes": 2289,
-              "duration_secs": 2011
-            },
-            {
-              "title": "One Piece profano: Dressrosa è una rottura di gonadi",
-              "url": "https://www.youtube.com/watch?v=S5bY740kS2o",
-              "source": "Victorlaszlo88",
-              "date": "2026-06-09",
-              "views": 31308,
-              "likes": 1881,
-              "duration_secs": 3406
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "The Boys 5: Una fine di serie ingloriosa",
-            "url": "https://www.youtube.com/watch?v=JMXDC-8hy8w",
-            "source": "Victorlaszlo88",
-            "date": "2026-06-10",
-            "views": 52734,
-            "likes": 2634,
-            "duration_secs": 2374
-          },
-          {
-            "title": "MovieBlog- 1087: Recensione Scary Movie",
-            "url": "https://www.youtube.com/watch?v=RT4dgRabqpY",
-            "source": "Victorlaszlo88",
-            "date": "2026-06-05",
-            "views": 45968,
-            "likes": 2289,
-            "duration_secs": 2011
-          },
-          {
-            "title": "One Piece profano: Dressrosa è una rottura di gonadi",
-            "url": "https://www.youtube.com/watch?v=S5bY740kS2o",
-            "source": "Victorlaszlo88",
-            "date": "2026-06-09",
-            "views": 31308,
-            "likes": 1881,
-            "duration_secs": 3406
-          }
-        ]
-      },
-      {
-        "label": 6,
-        "score": 0.2426,
-        "keywords": [
-          "perdere",
-          "perdere prossimi",
-          "piaciuto",
+          "youtubeshorts curiosità",
+          "youtubeshorts",
           "prossimi seguimi",
           "prossimi",
-          "seguimi"
+          "seguimi",
+          "seguimi youtubeshorts"
         ],
         "item_count": 4,
-        "total_views": 3306,
+        "total_views": 3011,
         "velocity": 0.25,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-01",
-        "last_seen": "2026-06-11",
+        "first_seen": "2026-06-09",
+        "last_seen": "2026-06-18",
         "sentinel_clusters": [
           "vita_giappone"
         ],
@@ -1109,11 +1143,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6673,
-          "casual": 0.6576
+          "narrativo": 0.6554,
+          "casual": 0.6451
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.667,
+        "affinity_best_score": 0.655,
         "items_by_lang": {
           "it": [
             {
@@ -1135,13 +1169,13 @@
               "duration_secs": 181
             },
             {
-              "title": "PULITISSIMI Camion della spazzatura in Giappone",
-              "url": "https://www.youtube.com/watch?v=DYMZUJieFas",
+              "title": "Negozi a Harajuku , Tokyo",
+              "url": "https://www.youtube.com/watch?v=T5RV9hDDJQA",
               "source": "Calabrese in Oriente",
-              "date": "2026-06-01",
-              "views": 484,
-              "likes": 30,
-              "duration_secs": 102
+              "date": "2026-06-18",
+              "views": 496,
+              "likes": 20,
+              "duration_secs": 74
             }
           ]
         },
@@ -1165,13 +1199,197 @@
             "duration_secs": 181
           },
           {
-            "title": "PULITISSIMI Camion della spazzatura in Giappone",
-            "url": "https://www.youtube.com/watch?v=DYMZUJieFas",
+            "title": "Negozi a Harajuku , Tokyo",
+            "url": "https://www.youtube.com/watch?v=T5RV9hDDJQA",
             "source": "Calabrese in Oriente",
-            "date": "2026-06-01",
-            "views": 484,
-            "likes": 30,
-            "duration_secs": 102
+            "date": "2026-06-18",
+            "views": 496,
+            "likes": 20,
+            "duration_secs": 74
+          }
+        ]
+      },
+      {
+        "label": 7,
+        "score": 0.1385,
+        "keywords": [
+          "treated",
+          "grew",
+          "treated because",
+          "lol ksononair",
+          "lol",
+          "kson treated"
+        ],
+        "item_count": 7,
+        "total_views": 184449,
+        "velocity": 0.071,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-09",
+        "last_seen": "2026-06-19",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6053,
+          "casual": 0.6067
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.607,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "This Is What Japanese People Did To This Ex-Prn Star because She Speaks English",
+              "url": "https://www.youtube.com/watch?v=9Gb53bOqfpc",
+              "source": "Sora The Troll",
+              "date": "2026-06-10",
+              "views": 97446,
+              "likes": 5186,
+              "duration_secs": 657
+            },
+            {
+              "title": "I Finally Met The Japanese Girl VTuber...",
+              "url": "https://www.youtube.com/watch?v=2ciWP6MElF8",
+              "source": "Sora The Troll",
+              "date": "2026-06-19",
+              "views": 78166,
+              "likes": 3632,
+              "duration_secs": 524
+            },
+            {
+              "title": "How kson was treated in Japan because she grew up in the U.S. LOL  ⁨ ⁨@ksonONAIR",
+              "url": "https://www.youtube.com/watch?v=ad62-o1L5Mo",
+              "source": "Sora The Troll",
+              "date": "2026-06-13",
+              "views": 1996,
+              "likes": 36,
+              "duration_secs": 131
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "This Is What Japanese People Did To This Ex-Prn Star because She Speaks English",
+            "url": "https://www.youtube.com/watch?v=9Gb53bOqfpc",
+            "source": "Sora The Troll",
+            "date": "2026-06-10",
+            "views": 97446,
+            "likes": 5186,
+            "duration_secs": 657
+          },
+          {
+            "title": "I Finally Met The Japanese Girl VTuber...",
+            "url": "https://www.youtube.com/watch?v=2ciWP6MElF8",
+            "source": "Sora The Troll",
+            "date": "2026-06-19",
+            "views": 78166,
+            "likes": 3632,
+            "duration_secs": 524
+          },
+          {
+            "title": "How kson was treated in Japan because she grew up in the U.S. LOL  ⁨ ⁨@ksonONAIR",
+            "url": "https://www.youtube.com/watch?v=ad62-o1L5Mo",
+            "source": "Sora The Troll",
+            "date": "2026-06-13",
+            "views": 1996,
+            "likes": 36,
+            "duration_secs": 131
+          }
+        ]
+      },
+      {
+        "label": 0,
+        "score": 0.1375,
+        "keywords": [
+          "bangkok",
+          "bangkok burberry",
+          "interview",
+          "burberry",
+          "yamato bangkok",
+          "yamato"
+        ],
+        "item_count": 4,
+        "total_views": 43461,
+        "velocity": 0.125,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-12",
+        "last_seen": "2026-06-17",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.495,
+          "casual": 0.5017
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.502,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Interview with Ninon in Bangkok  @Burberry",
+              "url": "https://www.youtube.com/watch?v=8CDd1u1rjEQ",
+              "source": "TAKASHii from Japan",
+              "date": "2026-06-12",
+              "views": 20876,
+              "likes": 542,
+              "duration_secs": 35
+            },
+            {
+              "title": "Interview with Bright in Bangkok  @Burberry",
+              "url": "https://www.youtube.com/watch?v=5FoIlugo9DI",
+              "source": "TAKASHii from Japan",
+              "date": "2026-06-17",
+              "views": 13334,
+              "likes": 399,
+              "duration_secs": 36
+            },
+            {
+              "title": "interview with Yamato in Bangkok  @Burberry",
+              "url": "https://www.youtube.com/watch?v=RoAa1qn8ne8",
+              "source": "TAKASHii from Japan",
+              "date": "2026-06-13",
+              "views": 5760,
+              "likes": 186,
+              "duration_secs": 43
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Interview with Ninon in Bangkok  @Burberry",
+            "url": "https://www.youtube.com/watch?v=8CDd1u1rjEQ",
+            "source": "TAKASHii from Japan",
+            "date": "2026-06-12",
+            "views": 20876,
+            "likes": 542,
+            "duration_secs": 35
+          },
+          {
+            "title": "Interview with Bright in Bangkok  @Burberry",
+            "url": "https://www.youtube.com/watch?v=5FoIlugo9DI",
+            "source": "TAKASHii from Japan",
+            "date": "2026-06-17",
+            "views": 13334,
+            "likes": 399,
+            "duration_secs": 36
+          },
+          {
+            "title": "interview with Yamato in Bangkok  @Burberry",
+            "url": "https://www.youtube.com/watch?v=RoAa1qn8ne8",
+            "source": "TAKASHii from Japan",
+            "date": "2026-06-13",
+            "views": 5760,
+            "likes": 186,
+            "duration_secs": 43
           }
         ]
       }
