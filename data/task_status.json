@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-06-22T14:42:41Z",
+  "last_updated": "2026-06-29T13:10:16Z",
   "tasks": [
     {
       "id": "yt_ingest",
       "name": "YouTube Ingestion",
       "schedule": "Ogni 12h",
-      "last_run": "2026-06-22T14:41:57Z",
+      "last_run": "2026-06-29T13:09:31Z",
       "status": "ok",
       "metrics": {
         "inserted": 76,
-        "skipped": 1
+        "skipped": 2
       }
     },
     {
       "id": "rd_ingest",
       "name": "Reddit Ingestion",
       "schedule": "Ogni 6h",
-      "last_run": "2026-06-22T14:41:57Z",
+      "last_run": "2026-06-29T13:09:32Z",
       "status": "disabled",
       "metrics": {
         "inserted": 0
@@ -26,7 +26,7 @@
       "id": "embed",
       "name": "Embedding",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-06-22T14:42:38Z",
+      "last_run": "2026-06-29T13:10:13Z",
       "status": "ok",
       "metrics": {
         "items_processed": 76
@@ -36,30 +36,30 @@
       "id": "cluster",
       "name": "Clustering",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-06-22T14:42:41Z",
+      "last_run": "2026-06-29T13:10:16Z",
       "status": "ok",
       "metrics": {
-        "clusters_found": 13
+        "clusters_found": 12
       }
     },
     {
       "id": "score",
       "name": "Scoring",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-06-22T14:42:41Z",
+      "last_run": "2026-06-29T13:10:16Z",
       "status": "ok",
       "metrics": {
-        "top_score": 0.924
+        "top_score": 0.7517
       }
     },
     {
       "id": "report",
       "name": "Report generazione",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-06-22T14:42:41Z",
+      "last_run": "2026-06-29T13:10:16Z",
       "status": "ok",
       "metrics": {
-        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-06-22.md"
+        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-06-29.md"
       }
     },
     {
