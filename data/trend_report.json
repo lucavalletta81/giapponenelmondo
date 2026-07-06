@@ -1,438 +1,137 @@
 {
-  "generated_at": "2026-06-29",
-  "total_clusters": 12,
-  "total_videos": 70,
-  "date_range_start": "2026-06-15",
-  "date_range_end": "2026-06-29",
+  "generated_at": "2026-07-06",
+  "total_clusters": 10,
+  "total_videos": 61,
+  "date_range_start": "2026-06-22",
+  "date_range_end": "2026-07-05",
   "sections": {
     "emergenti": [],
     "crescita": [
       {
-        "label": 4,
-        "score": 0.7517,
+        "label": 0,
+        "score": 0.8451,
         "keywords": [
-          "anime",
-          "sangoku",
-          "sushi",
-          "osaka",
-          "del",
-          "della"
-        ],
-        "item_count": 5,
-        "total_views": 318737,
-        "velocity": 0.6,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-06-19",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "anime_manga_pop",
-          "vita_giappone",
-          "expat_japan_en"
-        ],
-        "languages": [
-          "en",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7252,
-          "casual": 0.7593
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.759,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Non è tutto buono in Giappone",
-              "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-              "source": "Marco Togni",
-              "date": "2026-06-20",
-              "views": 30004,
-              "likes": 1543,
-              "duration_secs": 56
-            },
-            {
-              "title": "Toyo Izakaya: il re dello street food a Osaka",
-              "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-              "source": "Marco Togni",
-              "date": "2026-06-28",
-              "views": 11746,
-              "likes": 701,
-              "duration_secs": 58
-            },
-            {
-              "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-              "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-              "source": "Tommaso In Giappone",
-              "date": "2026-06-19",
-              "views": 6647,
-              "likes": 528,
-              "duration_secs": 1097
-            }
-          ],
-          "en": [
-            {
-              "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-              "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-              "source": "Paolo from Tokyo",
-              "date": "2026-06-19",
-              "views": 268661,
-              "likes": 12852,
-              "duration_secs": 1064
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Non è tutto buono in Giappone",
-            "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-            "source": "Marco Togni",
-            "date": "2026-06-20",
-            "views": 30004,
-            "likes": 1543,
-            "duration_secs": 56
-          },
-          {
-            "title": "Toyo Izakaya: il re dello street food a Osaka",
-            "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-            "source": "Marco Togni",
-            "date": "2026-06-28",
-            "views": 11746,
-            "likes": 701,
-            "duration_secs": 58
-          },
-          {
-            "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-            "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-            "source": "Tommaso In Giappone",
-            "date": "2026-06-19",
-            "views": 6647,
-            "likes": 528,
-            "duration_secs": 1097
-          },
-          {
-            "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-            "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-            "source": "Paolo from Tokyo",
-            "date": "2026-06-19",
-            "views": 268661,
-            "likes": 12852,
-            "duration_secs": 1064
-          }
-        ]
-      },
-      {
-        "label": 3,
-        "score": 0.6732,
-        "keywords": [
-          "visto",
-          "anni",
-          "vivere",
-          "durata",
-          "visti",
-          "straniero"
-        ],
-        "item_count": 4,
-        "total_views": 103314,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-19",
-        "last_seen": "2026-06-29",
-        "sentinel_clusters": [
-          "vita_giappone"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5069,
-          "casual": 0.6993
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.699,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Perché in Giappone resti sempre straniero",
-              "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
-              "source": "Marco Togni",
-              "date": "2026-06-25",
-              "views": 50663,
-              "likes": 2293,
-              "duration_secs": 100
-            },
-            {
-              "title": "Giappone: il doppio prezzo per turisti",
-              "url": "https://www.youtube.com/watch?v=I_dPXuq28iU",
-              "source": "Marco Togni",
-              "date": "2026-06-19",
-              "views": 32456,
-              "likes": 2009,
-              "duration_secs": 146
-            },
-            {
-              "title": "Trasferirsi in Giappone: 4 modi legali",
-              "url": "https://www.youtube.com/watch?v=G7OH4z3v1xg",
-              "source": "Marco Togni",
-              "date": "2026-06-27",
-              "views": 15439,
-              "likes": 771,
-              "duration_secs": 44
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Perché in Giappone resti sempre straniero",
-            "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
-            "source": "Marco Togni",
-            "date": "2026-06-25",
-            "views": 50663,
-            "likes": 2293,
-            "duration_secs": 100
-          },
-          {
-            "title": "Giappone: il doppio prezzo per turisti",
-            "url": "https://www.youtube.com/watch?v=I_dPXuq28iU",
-            "source": "Marco Togni",
-            "date": "2026-06-19",
-            "views": 32456,
-            "likes": 2009,
-            "duration_secs": 146
-          },
-          {
-            "title": "Trasferirsi in Giappone: 4 modi legali",
-            "url": "https://www.youtube.com/watch?v=G7OH4z3v1xg",
-            "source": "Marco Togni",
-            "date": "2026-06-27",
-            "views": 15439,
-            "likes": 771,
-            "duration_secs": 44
-          }
-        ]
-      },
-      {
-        "label": 2,
-        "score": 0.4853,
-        "keywords": [
-          "ver",
-          "hoyoverse",
-          "xbox cognosphere",
-          "ver xbox",
-          "hoyoverse ver",
-          "xbox"
+          "località",
+          "lombarde",
+          "località lombarde",
+          "toscane",
+          "conoscete località",
+          "località toscane"
         ],
         "item_count": 3,
-        "total_views": 295637,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-06-17",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "anime_pop_en",
-          "japan_native"
-        ],
-        "languages": [
-          "en",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6779,
-          "casual": 0.5268
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.678,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "The Current State of Romance Anime.",
-              "url": "https://www.youtube.com/watch?v=6pgr5oMmNug",
-              "source": "Gigguk",
-              "date": "2026-06-28",
-              "views": 246375,
-              "likes": 17434,
-              "duration_secs": 1472
-            }
-          ],
-          "ja": [
-            {
-              "title": "HoYoverse『ゼンレスゾーンゼロ』Ver3.0のアップデートを堪能する声優 花江夏樹",
-              "url": "https://www.youtube.com/watch?v=cDdmqiF8vYo",
-              "source": "Hanae Natsuki",
-              "date": "2026-06-25",
-              "views": 29761,
-              "likes": 1203,
-              "duration_secs": 100
-            },
-            {
-              "title": "【ver 3.0】今回もきた！『ゼンレスゾーンゼロ』の新キャラクターに会いにいこう！！！",
-              "url": "https://www.youtube.com/watch?v=z-DTRquE2Cc",
-              "source": "Hanae Natsuki",
-              "date": "2026-06-17",
-              "views": 19501,
-              "likes": 713,
-              "duration_secs": 5476
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "The Current State of Romance Anime.",
-            "url": "https://www.youtube.com/watch?v=6pgr5oMmNug",
-            "source": "Gigguk",
-            "date": "2026-06-28",
-            "views": 246375,
-            "likes": 17434,
-            "duration_secs": 1472
-          },
-          {
-            "title": "HoYoverse『ゼンレスゾーンゼロ』Ver3.0のアップデートを堪能する声優 花江夏樹",
-            "url": "https://www.youtube.com/watch?v=cDdmqiF8vYo",
-            "source": "Hanae Natsuki",
-            "date": "2026-06-25",
-            "views": 29761,
-            "likes": 1203,
-            "duration_secs": 100
-          },
-          {
-            "title": "【ver 3.0】今回もきた！『ゼンレスゾーンゼロ』の新キャラクターに会いにいこう！！！",
-            "url": "https://www.youtube.com/watch?v=z-DTRquE2Cc",
-            "source": "Hanae Natsuki",
-            "date": "2026-06-17",
-            "views": 19501,
-            "likes": 713,
-            "duration_secs": 5476
-          }
-        ]
-      },
-      {
-        "label": 9,
-        "score": 0.4103,
-        "keywords": [
-          "manga",
-          "compra",
-          "kirio",
-          "altro",
-          "puoi",
-          "mettilo preferiti"
-        ],
-        "item_count": 6,
-        "total_views": 4034,
-        "velocity": 1.0,
+        "total_views": 274496,
+        "velocity": 0.833,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-15",
-        "last_seen": "2026-06-28",
+        "first_seen": "2026-06-24",
+        "last_seen": "2026-07-04",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
         "languages": [
           "it"
         ],
-        "has_mover": false,
+        "has_mover": true,
         "affinity": {
-          "narrativo": 0.7524,
-          "casual": 0.6433
+          "narrativo": 0.442,
+          "casual": 0.4154
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.752,
+        "affinity_best_score": 0.442,
         "items_by_lang": {
           "it": [
             {
-              "title": "16 Anime da Vedere nell'Estate 2026",
-              "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-06-19",
-              "views": 1155,
-              "likes": 146,
-              "duration_secs": 643
+              "title": "Conoscete queste località TOSCANE?",
+              "url": "https://www.youtube.com/watch?v=vnB1lLW6Y64",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-06-24",
+              "views": 163113,
+              "likes": 5422,
+              "duration_secs": 63
             },
             {
-              "title": "i MIGLIORI MANGA SHONEN che dovresti leggere nel 2026",
-              "url": "https://www.youtube.com/watch?v=dxYVfN17Ey8",
-              "source": "Kirio1984",
-              "date": "2026-06-23",
-              "views": 999,
-              "likes": 81,
-              "duration_secs": 904
+              "title": "Località Lombarde",
+              "url": "https://www.youtube.com/watch?v=QmsL0CW4O8Y",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-07-04",
+              "views": 66524,
+              "likes": 3164,
+              "duration_secs": 52
             },
             {
-              "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
-              "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
-              "source": "Kirio1984",
-              "date": "2026-06-19",
-              "views": 704,
-              "likes": 58,
-              "duration_secs": 684
+              "title": "Indovina la regione dall'accento! @sandanieletinti @tintoriapodcast",
+              "url": "https://www.youtube.com/watch?v=f2VDqT8_JPY",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-06-27",
+              "views": 44859,
+              "likes": 2362,
+              "duration_secs": 75
             }
           ]
         },
         "top_items": [
           {
-            "title": "16 Anime da Vedere nell'Estate 2026",
-            "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-06-19",
-            "views": 1155,
-            "likes": 146,
-            "duration_secs": 643
+            "title": "Conoscete queste località TOSCANE?",
+            "url": "https://www.youtube.com/watch?v=vnB1lLW6Y64",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-06-24",
+            "views": 163113,
+            "likes": 5422,
+            "duration_secs": 63
           },
           {
-            "title": "i MIGLIORI MANGA SHONEN che dovresti leggere nel 2026",
-            "url": "https://www.youtube.com/watch?v=dxYVfN17Ey8",
-            "source": "Kirio1984",
-            "date": "2026-06-23",
-            "views": 999,
-            "likes": 81,
-            "duration_secs": 904
+            "title": "Località Lombarde",
+            "url": "https://www.youtube.com/watch?v=QmsL0CW4O8Y",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-07-04",
+            "views": 66524,
+            "likes": 3164,
+            "duration_secs": 52
           },
           {
-            "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
-            "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
-            "source": "Kirio1984",
-            "date": "2026-06-19",
-            "views": 704,
-            "likes": 58,
-            "duration_secs": 684
+            "title": "Indovina la regione dall'accento! @sandanieletinti @tintoriapodcast",
+            "url": "https://www.youtube.com/watch?v=f2VDqT8_JPY",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-06-27",
+            "views": 44859,
+            "likes": 2362,
+            "duration_secs": 75
           }
         ]
       },
       {
         "label": 5,
-        "score": 0.3351,
+        "score": 0.5252,
         "keywords": [
-          "youtubeshorts curiosità",
           "youtubeshorts",
-          "lascia perdere",
-          "lascia",
-          "piaciuto lascia",
-          "piaciuto"
+          "youtubeshorts curiosità",
+          "perdere",
+          "perdere prossimi",
+          "seguimi youtubeshorts",
+          "seguimi"
         ],
         "item_count": 5,
-        "total_views": 3555,
-        "velocity": 0.7,
+        "total_views": 9772,
+        "velocity": 0.6,
         "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-16",
-        "last_seen": "2026-06-29",
+        "diversity": 0.583,
+        "first_seen": "2026-06-22",
+        "last_seen": "2026-07-05",
         "sentinel_clusters": [
+          "expat_japan_en",
           "vita_giappone"
         ],
         "languages": [
-          "it"
+          "it",
+          "en"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6511,
-          "casual": 0.6353
+          "narrativo": 0.712,
+          "casual": 0.7073
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.651,
+        "affinity_best_score": 0.712,
         "items_by_lang": {
           "it": [
             {
@@ -454,13 +153,24 @@
               "duration_secs": 65
             },
             {
-              "title": "Negozi a Harajuku , Tokyo",
-              "url": "https://www.youtube.com/watch?v=T5RV9hDDJQA",
+              "title": "Ponti a Tokyo",
+              "url": "https://www.youtube.com/watch?v=rfmltN6jLG4",
               "source": "Calabrese in Oriente",
-              "date": "2026-06-18",
-              "views": 496,
-              "likes": 20,
-              "duration_secs": 74
+              "date": "2026-07-01",
+              "views": 231,
+              "likes": 27,
+              "duration_secs": 181
+            }
+          ],
+          "en": [
+            {
+              "title": "The Best of Japan is... Hidden @TokyoLensExplore",
+              "url": "https://www.youtube.com/watch?v=hxEXGPnC2rI",
+              "source": "Tokyo Lens",
+              "date": "2026-07-05",
+              "views": 6634,
+              "likes": 340,
+              "duration_secs": 16
             }
           ]
         },
@@ -484,929 +194,57 @@
             "duration_secs": 65
           },
           {
-            "title": "Negozi a Harajuku , Tokyo",
-            "url": "https://www.youtube.com/watch?v=T5RV9hDDJQA",
+            "title": "Ponti a Tokyo",
+            "url": "https://www.youtube.com/watch?v=rfmltN6jLG4",
             "source": "Calabrese in Oriente",
-            "date": "2026-06-18",
-            "views": 496,
-            "likes": 20,
-            "duration_secs": 74
-          }
-        ]
-      },
-      {
-        "label": 10,
-        "score": 0.2786,
-        "keywords": [
-          "star because",
-          "speaks",
-          "treated prn",
-          "treated",
-          "prn star",
-          "fluent"
-        ],
-        "item_count": 6,
-        "total_views": 96715,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-19",
-        "last_seen": "2026-06-29",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6347,
-          "casual": 0.6501
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.65,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "I Finally Met The Japanese Girl VTuber...",
-              "url": "https://www.youtube.com/watch?v=2ciWP6MElF8",
-              "source": "Sora The Troll",
-              "date": "2026-06-19",
-              "views": 78166,
-              "likes": 3632,
-              "duration_secs": 524
-            },
-            {
-              "title": "What Happens When A Japanese Girl Streams In English In Japan",
-              "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
-              "source": "Sora The Troll",
-              "date": "2026-06-29",
-              "views": 13460,
-              "likes": 890,
-              "duration_secs": 522
-            },
-            {
-              "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-              "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
-              "source": "Sora The Troll",
-              "date": "2026-06-27",
-              "views": 2434,
-              "likes": 27,
-              "duration_secs": 108
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "I Finally Met The Japanese Girl VTuber...",
-            "url": "https://www.youtube.com/watch?v=2ciWP6MElF8",
-            "source": "Sora The Troll",
-            "date": "2026-06-19",
-            "views": 78166,
-            "likes": 3632,
-            "duration_secs": 524
-          },
-          {
-            "title": "What Happens When A Japanese Girl Streams In English In Japan",
-            "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
-            "source": "Sora The Troll",
-            "date": "2026-06-29",
-            "views": 13460,
-            "likes": 890,
-            "duration_secs": 522
-          },
-          {
-            "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-            "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
-            "source": "Sora The Troll",
-            "date": "2026-06-27",
-            "views": 2434,
+            "date": "2026-07-01",
+            "views": 231,
             "likes": 27,
-            "duration_secs": 108
+            "duration_secs": 181
+          },
+          {
+            "title": "The Best of Japan is... Hidden @TokyoLensExplore",
+            "url": "https://www.youtube.com/watch?v=hxEXGPnC2rI",
+            "source": "Tokyo Lens",
+            "date": "2026-07-05",
+            "views": 6634,
+            "likes": 340,
+            "duration_secs": 16
           }
         ]
       },
       {
         "label": 1,
-        "score": 0.2779,
+        "score": 0.4995,
         "keywords": [
-          "market",
-          "whole foods",
-          "foods",
-          "foods market",
-          "whole",
-          "sat"
+          "maglietta",
+          "tazza",
+          "calze",
+          "film",
+          "tazza snoopy",
+          "snoopy"
         ],
-        "item_count": 3,
-        "total_views": 898673,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-17",
-        "last_seen": "2026-06-26",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5758,
-          "casual": 0.6422
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.642,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "She decided to surprise her dad on Father's Day…🤭😂💇‍♀️",
-              "url": "https://www.youtube.com/watch?v=ZhYtMWFTF9U",
-              "source": "Kimono Mom",
-              "date": "2026-06-26",
-              "views": 517754,
-              "likes": 32689,
-              "duration_secs": 79
-            },
-            {
-              "title": "You surprise your daughter with a trip to Japan🇯🇵✨Japanese Family Living in the U.S.",
-              "url": "https://www.youtube.com/watch?v=Fc2CxnLIMV4",
-              "source": "Kimono Mom",
-              "date": "2026-06-17",
-              "views": 236314,
-              "likes": 12689,
-              "duration_secs": 83
-            },
-            {
-              "title": "A Japanese Family on the Road: Our Second U.S. Tour Begins!!🇺🇸",
-              "url": "https://www.youtube.com/watch?v=Zqru19ky6zc",
-              "source": "Kimono Mom",
-              "date": "2026-06-26",
-              "views": 144605,
-              "likes": 5867,
-              "duration_secs": 32
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "She decided to surprise her dad on Father's Day…🤭😂💇‍♀️",
-            "url": "https://www.youtube.com/watch?v=ZhYtMWFTF9U",
-            "source": "Kimono Mom",
-            "date": "2026-06-26",
-            "views": 517754,
-            "likes": 32689,
-            "duration_secs": 79
-          },
-          {
-            "title": "You surprise your daughter with a trip to Japan🇯🇵✨Japanese Family Living in the U.S.",
-            "url": "https://www.youtube.com/watch?v=Fc2CxnLIMV4",
-            "source": "Kimono Mom",
-            "date": "2026-06-17",
-            "views": 236314,
-            "likes": 12689,
-            "duration_secs": 83
-          },
-          {
-            "title": "A Japanese Family on the Road: Our Second U.S. Tour Begins!!🇺🇸",
-            "url": "https://www.youtube.com/watch?v=Zqru19ky6zc",
-            "source": "Kimono Mom",
-            "date": "2026-06-26",
-            "views": 144605,
-            "likes": 5867,
-            "duration_secs": 32
-          }
-        ]
-      },
-      {
-        "label": 6,
-        "score": 0.2532,
-        "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
-        ],
-        "item_count": 3,
-        "total_views": 87221,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-18",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.639,
-          "casual": 0.5625
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.639,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "『絵師は絵師としか仲良くしない』について話してみた。",
-              "url": "https://www.youtube.com/watch?v=HzixslgDuC0",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-20",
-              "views": 49818,
-              "likes": 1857,
-              "duration_secs": 1144
-            },
-            {
-              "title": "画力アップの秘訣【絵柄という武器】",
-              "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-28",
-              "views": 22440,
-              "likes": 543,
-              "duration_secs": 16
-            },
-            {
-              "title": "すぐ出来る！迫力のちょい足し方法とは..！？【きまぐれ添削239】",
-              "url": "https://www.youtube.com/watch?v=WA_qMAf78MI",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-18",
-              "views": 14963,
-              "likes": 823,
-              "duration_secs": 894
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "『絵師は絵師としか仲良くしない』について話してみた。",
-            "url": "https://www.youtube.com/watch?v=HzixslgDuC0",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-20",
-            "views": 49818,
-            "likes": 1857,
-            "duration_secs": 1144
-          },
-          {
-            "title": "画力アップの秘訣【絵柄という武器】",
-            "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-28",
-            "views": 22440,
-            "likes": 543,
-            "duration_secs": 16
-          },
-          {
-            "title": "すぐ出来る！迫力のちょい足し方法とは..！？【きまぐれ添削239】",
-            "url": "https://www.youtube.com/watch?v=WA_qMAf78MI",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-18",
-            "views": 14963,
-            "likes": 823,
-            "duration_secs": 894
-          }
-        ]
-      },
-      {
-        "label": 11,
-        "score": 0.239,
-        "keywords": [
-          "well",
-          "well tts",
-          "try tjhese",
-          "try",
-          "tts driving",
-          "tts"
-        ],
-        "item_count": 5,
-        "total_views": 34057,
-        "velocity": 0.75,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-15",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5602,
-          "casual": 0.6162
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.616,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "WORLD CUP JAPAN VS TUNISIA IS MAKING TOKYO INSANE TODAY LOLOLOLOLOLOLOLOLOLOLOLOLOL",
-              "url": "https://www.youtube.com/watch?v=vkq8ithOhvI",
-              "source": "Sora The Troll",
-              "date": "2026-06-21",
-              "views": 23984,
-              "likes": 664,
-              "duration_secs": 12407
-            },
-            {
-              "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
-              "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
-              "source": "Sora The Troll",
-              "date": "2026-06-26",
-              "views": 10073,
-              "likes": 350,
-              "duration_secs": 13600
-            },
-            {
-              "title": "TOKYO Has Areas Where Foreigners Fight Now LOLOOLOLLOLOLOLOLLOLOLOLOLOLOLOLOLOLOLOLOLLLLLL",
-              "url": "https://www.youtube.com/watch?v=lzshdkCxBXk",
-              "source": "Sora The Troll",
-              "date": "2026-06-15",
-              "views": 0,
-              "likes": 12,
-              "duration_secs": 0
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "WORLD CUP JAPAN VS TUNISIA IS MAKING TOKYO INSANE TODAY LOLOLOLOLOLOLOLOLOLOLOLOLOL",
-            "url": "https://www.youtube.com/watch?v=vkq8ithOhvI",
-            "source": "Sora The Troll",
-            "date": "2026-06-21",
-            "views": 23984,
-            "likes": 664,
-            "duration_secs": 12407
-          },
-          {
-            "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
-            "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
-            "source": "Sora The Troll",
-            "date": "2026-06-26",
-            "views": 10073,
-            "likes": 350,
-            "duration_secs": 13600
-          },
-          {
-            "title": "TOKYO Has Areas Where Foreigners Fight Now LOLOOLOLLOLOLOLOLLOLOLOLOLOLOLOLOLOLOLOLOLLLLLL",
-            "url": "https://www.youtube.com/watch?v=lzshdkCxBXk",
-            "source": "Sora The Troll",
-            "date": "2026-06-15",
-            "views": 0,
-            "likes": 12,
-            "duration_secs": 0
-          }
-        ]
-      }
-    ],
-    "cross_source": [
-      {
-        "label": 4,
-        "score": 0.7517,
-        "keywords": [
-          "anime",
-          "sangoku",
-          "sushi",
-          "osaka",
-          "del",
-          "della"
-        ],
-        "item_count": 5,
-        "total_views": 318737,
-        "velocity": 0.6,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-06-19",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "anime_manga_pop",
-          "vita_giappone",
-          "expat_japan_en"
-        ],
-        "languages": [
-          "en",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7252,
-          "casual": 0.7593
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.759,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Non è tutto buono in Giappone",
-              "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-              "source": "Marco Togni",
-              "date": "2026-06-20",
-              "views": 30004,
-              "likes": 1543,
-              "duration_secs": 56
-            },
-            {
-              "title": "Toyo Izakaya: il re dello street food a Osaka",
-              "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-              "source": "Marco Togni",
-              "date": "2026-06-28",
-              "views": 11746,
-              "likes": 701,
-              "duration_secs": 58
-            },
-            {
-              "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-              "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-              "source": "Tommaso In Giappone",
-              "date": "2026-06-19",
-              "views": 6647,
-              "likes": 528,
-              "duration_secs": 1097
-            }
-          ],
-          "en": [
-            {
-              "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-              "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-              "source": "Paolo from Tokyo",
-              "date": "2026-06-19",
-              "views": 268661,
-              "likes": 12852,
-              "duration_secs": 1064
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Non è tutto buono in Giappone",
-            "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-            "source": "Marco Togni",
-            "date": "2026-06-20",
-            "views": 30004,
-            "likes": 1543,
-            "duration_secs": 56
-          },
-          {
-            "title": "Toyo Izakaya: il re dello street food a Osaka",
-            "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-            "source": "Marco Togni",
-            "date": "2026-06-28",
-            "views": 11746,
-            "likes": 701,
-            "duration_secs": 58
-          },
-          {
-            "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-            "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-            "source": "Tommaso In Giappone",
-            "date": "2026-06-19",
-            "views": 6647,
-            "likes": 528,
-            "duration_secs": 1097
-          },
-          {
-            "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-            "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-            "source": "Paolo from Tokyo",
-            "date": "2026-06-19",
-            "views": 268661,
-            "likes": 12852,
-            "duration_secs": 1064
-          }
-        ]
-      }
-    ],
-    "affinita": [
-      {
-        "label": 4,
-        "score": 0.7517,
-        "keywords": [
-          "anime",
-          "sangoku",
-          "sushi",
-          "osaka",
-          "del",
-          "della"
-        ],
-        "item_count": 5,
-        "total_views": 318737,
-        "velocity": 0.6,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-06-19",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "anime_manga_pop",
-          "vita_giappone",
-          "expat_japan_en"
-        ],
-        "languages": [
-          "en",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7252,
-          "casual": 0.7593
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.759,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Non è tutto buono in Giappone",
-              "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-              "source": "Marco Togni",
-              "date": "2026-06-20",
-              "views": 30004,
-              "likes": 1543,
-              "duration_secs": 56
-            },
-            {
-              "title": "Toyo Izakaya: il re dello street food a Osaka",
-              "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-              "source": "Marco Togni",
-              "date": "2026-06-28",
-              "views": 11746,
-              "likes": 701,
-              "duration_secs": 58
-            },
-            {
-              "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-              "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-              "source": "Tommaso In Giappone",
-              "date": "2026-06-19",
-              "views": 6647,
-              "likes": 528,
-              "duration_secs": 1097
-            }
-          ],
-          "en": [
-            {
-              "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-              "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-              "source": "Paolo from Tokyo",
-              "date": "2026-06-19",
-              "views": 268661,
-              "likes": 12852,
-              "duration_secs": 1064
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Non è tutto buono in Giappone",
-            "url": "https://www.youtube.com/watch?v=kaUmH7ybruk",
-            "source": "Marco Togni",
-            "date": "2026-06-20",
-            "views": 30004,
-            "likes": 1543,
-            "duration_secs": 56
-          },
-          {
-            "title": "Toyo Izakaya: il re dello street food a Osaka",
-            "url": "https://www.youtube.com/watch?v=U9Piws6wQ88",
-            "source": "Marco Togni",
-            "date": "2026-06-28",
-            "views": 11746,
-            "likes": 701,
-            "duration_secs": 58
-          },
-          {
-            "title": "IL WAGYU PIÙ ECONOMICO DI TOKYO 🇯🇵?",
-            "url": "https://www.youtube.com/watch?v=xVwRz-YQxl8",
-            "source": "Tommaso In Giappone",
-            "date": "2026-06-19",
-            "views": 6647,
-            "likes": 528,
-            "duration_secs": 1097
-          },
-          {
-            "title": "Behind the Counter at a local Japanese Father & Daughter Sushi Restaurant",
-            "url": "https://www.youtube.com/watch?v=IySnirNRC7Y",
-            "source": "Paolo from Tokyo",
-            "date": "2026-06-19",
-            "views": 268661,
-            "likes": 12852,
-            "duration_secs": 1064
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.7234,
-        "keywords": [
-          "twitch",
-          "manga",
-          "comprare",
-          "acquisti",
-          "ball authority",
-          "tract dragon"
-        ],
-        "item_count": 18,
-        "total_views": 47322,
-        "velocity": 0.417,
+        "item_count": 12,
+        "total_views": 266952,
+        "velocity": 0.667,
         "novelty": 0.5,
         "diversity": 0.417,
-        "first_seen": "2026-06-16",
-        "last_seen": "2026-06-29",
+        "first_seen": "2026-06-22",
+        "last_seen": "2026-07-04",
         "sentinel_clusters": [
           "anime_manga_pop",
-          "vita_giappone"
+          "videogiochi"
         ],
         "languages": [
           "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.8127,
-          "casual": 0.7139
+          "narrativo": 0.7124,
+          "casual": 0.5084
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.813,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Solo in Giappone? #giappone #giapponese #japan",
-              "url": "https://www.youtube.com/watch?v=sHn_EGJ_bW8",
-              "source": "Vivi Giappone",
-              "date": "2026-06-18",
-              "views": 8443,
-              "likes": 327,
-              "duration_secs": 46
-            },
-            {
-              "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
-              "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
-              "source": "Caverna di Platone",
-              "date": "2026-06-16",
-              "views": 5080,
-              "likes": 269,
-              "duration_secs": 2944
-            },
-            {
-              "title": "BERSERK DELUXE 14 VARIANT",
-              "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
-              "source": "Caverna di Platone",
-              "date": "2026-06-19",
-              "views": 4638,
-              "likes": 228,
-              "duration_secs": 1444
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Solo in Giappone? #giappone #giapponese #japan",
-            "url": "https://www.youtube.com/watch?v=sHn_EGJ_bW8",
-            "source": "Vivi Giappone",
-            "date": "2026-06-18",
-            "views": 8443,
-            "likes": 327,
-            "duration_secs": 46
-          },
-          {
-            "title": "Ti spiego perché Toriyama è meglio di tutti i tuoi mangaka preferiti",
-            "url": "https://www.youtube.com/watch?v=i4ZWaqXs-7c",
-            "source": "Caverna di Platone",
-            "date": "2026-06-16",
-            "views": 5080,
-            "likes": 269,
-            "duration_secs": 2944
-          },
-          {
-            "title": "BERSERK DELUXE 14 VARIANT",
-            "url": "https://www.youtube.com/watch?v=fsgxBfgWcr4",
-            "source": "Caverna di Platone",
-            "date": "2026-06-19",
-            "views": 4638,
-            "likes": 228,
-            "duration_secs": 1444
-          }
-        ]
-      },
-      {
-        "label": 9,
-        "score": 0.4103,
-        "keywords": [
-          "manga",
-          "compra",
-          "kirio",
-          "altro",
-          "puoi",
-          "mettilo preferiti"
-        ],
-        "item_count": 6,
-        "total_views": 4034,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-15",
-        "last_seen": "2026-06-28",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7524,
-          "casual": 0.6433
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.752,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "16 Anime da Vedere nell'Estate 2026",
-              "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-06-19",
-              "views": 1155,
-              "likes": 146,
-              "duration_secs": 643
-            },
-            {
-              "title": "i MIGLIORI MANGA SHONEN che dovresti leggere nel 2026",
-              "url": "https://www.youtube.com/watch?v=dxYVfN17Ey8",
-              "source": "Kirio1984",
-              "date": "2026-06-23",
-              "views": 999,
-              "likes": 81,
-              "duration_secs": 904
-            },
-            {
-              "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
-              "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
-              "source": "Kirio1984",
-              "date": "2026-06-19",
-              "views": 704,
-              "likes": 58,
-              "duration_secs": 684
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "16 Anime da Vedere nell'Estate 2026",
-            "url": "https://www.youtube.com/watch?v=_NyJAf3dFow",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-06-19",
-            "views": 1155,
-            "likes": 146,
-            "duration_secs": 643
-          },
-          {
-            "title": "i MIGLIORI MANGA SHONEN che dovresti leggere nel 2026",
-            "url": "https://www.youtube.com/watch?v=dxYVfN17Ey8",
-            "source": "Kirio1984",
-            "date": "2026-06-23",
-            "views": 999,
-            "likes": 81,
-            "duration_secs": 904
-          },
-          {
-            "title": "Questi MANGA mi stanno facendo IMPAZZIRE (nel bene e nel male) - Letture della settimana",
-            "url": "https://www.youtube.com/watch?v=z1BebEICDI0",
-            "source": "Kirio1984",
-            "date": "2026-06-19",
-            "views": 704,
-            "likes": 58,
-            "duration_secs": 684
-          }
-        ]
-      }
-    ],
-    "anomalie": [],
-    "altri": [
-      {
-        "label": 0,
-        "score": 0.2149,
-        "keywords": [
-          "manga",
-          "compra",
-          "festival",
-          "altro",
-          "del",
-          "mettilo preferiti"
-        ],
-        "item_count": 3,
-        "total_views": 2874,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-16",
-        "last_seen": "2026-06-22",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5637,
-          "casual": 0.5829
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.583,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "VIETARE L'ACQUA CON 35 GRADI? La mia esperienza al Ferrara Summer Festival per gli A perfect circle!",
-              "url": "https://www.youtube.com/watch?v=Uk4dONC8soM",
-              "source": "Kirio1984",
-              "date": "2026-06-16",
-              "views": 2371,
-              "likes": 68,
-              "duration_secs": 1182
-            },
-            {
-              "title": "Pensavo che i festival italiani fossero morti… mi sono dovuto ricredere",
-              "url": "https://www.youtube.com/watch?v=wXAaa2jYTC8",
-              "source": "Kirio1984",
-              "date": "2026-06-22",
-              "views": 314,
-              "likes": 20,
-              "duration_secs": 1402
-            },
-            {
-              "title": "La WWE in Italia è una FOLLIA! 🇮🇹🔥 Vlog SmackDown Bologna 2026",
-              "url": "https://www.youtube.com/watch?v=d9WEUiwWI7s",
-              "source": "Kirio1984",
-              "date": "2026-06-17",
-              "views": 189,
-              "likes": 11,
-              "duration_secs": 2784
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "VIETARE L'ACQUA CON 35 GRADI? La mia esperienza al Ferrara Summer Festival per gli A perfect circle!",
-            "url": "https://www.youtube.com/watch?v=Uk4dONC8soM",
-            "source": "Kirio1984",
-            "date": "2026-06-16",
-            "views": 2371,
-            "likes": 68,
-            "duration_secs": 1182
-          },
-          {
-            "title": "Pensavo che i festival italiani fossero morti… mi sono dovuto ricredere",
-            "url": "https://www.youtube.com/watch?v=wXAaa2jYTC8",
-            "source": "Kirio1984",
-            "date": "2026-06-22",
-            "views": 314,
-            "likes": 20,
-            "duration_secs": 1402
-          },
-          {
-            "title": "La WWE in Italia è una FOLLIA! 🇮🇹🔥 Vlog SmackDown Bologna 2026",
-            "url": "https://www.youtube.com/watch?v=d9WEUiwWI7s",
-            "source": "Kirio1984",
-            "date": "2026-06-17",
-            "views": 189,
-            "likes": 11,
-            "duration_secs": 2784
-          }
-        ]
-      },
-      {
-        "label": 7,
-        "score": 0.2067,
-        "keywords": [
-          "maglietta",
-          "tazza",
-          "calze",
-          "sword",
-          "pampling",
-          "tazza snoopy"
-        ],
-        "item_count": 9,
-        "total_views": 227267,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-15",
-        "last_seen": "2026-06-25",
-        "sentinel_clusters": [
-          "videogiochi"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.706,
-          "casual": 0.4927
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.706,
+        "affinity_best_score": 0.712,
         "items_by_lang": {
           "it": [
             {
@@ -1428,13 +266,13 @@
               "duration_secs": 2824
             },
             {
-              "title": "Spider Man Brand New Day: Analizziamo il secondo trailer!",
-              "url": "https://www.youtube.com/watch?v=Cbrzo0O1kYo",
+              "title": "House of the Dragon 3x02: I nodi vengono al pettine",
+              "url": "https://www.youtube.com/watch?v=3iIK8I1HkM8",
               "source": "Victorlaszlo88",
-              "date": "2026-06-17",
-              "views": 30929,
-              "likes": 1858,
-              "duration_secs": 1025
+              "date": "2026-06-29",
+              "views": 38737,
+              "likes": 1885,
+              "duration_secs": 2358
             }
           ]
         },
@@ -1458,13 +296,663 @@
             "duration_secs": 2824
           },
           {
-            "title": "Spider Man Brand New Day: Analizziamo il secondo trailer!",
-            "url": "https://www.youtube.com/watch?v=Cbrzo0O1kYo",
+            "title": "House of the Dragon 3x02: I nodi vengono al pettine",
+            "url": "https://www.youtube.com/watch?v=3iIK8I1HkM8",
             "source": "Victorlaszlo88",
-            "date": "2026-06-17",
-            "views": 30929,
-            "likes": 1858,
-            "duration_secs": 1025
+            "date": "2026-06-29",
+            "views": 38737,
+            "likes": 1885,
+            "duration_secs": 2358
+          }
+        ]
+      },
+      {
+        "label": 4,
+        "score": 0.4575,
+        "keywords": [
+          "use",
+          "fair use",
+          "fair",
+          "copyright",
+          "anime",
+          "use tips"
+        ],
+        "item_count": 5,
+        "total_views": 93205,
+        "velocity": 0.7,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-22",
+        "last_seen": "2026-07-03",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7175,
+          "casual": 0.6796
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.718,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "Actually Having An Authentic Katana",
+              "url": "https://www.youtube.com/watch?v=1q_Ei6SAHek",
+              "source": "The Anime Man",
+              "date": "2026-06-22",
+              "views": 23999,
+              "likes": 703,
+              "duration_secs": 23
+            },
+            {
+              "title": "How to \"\"\"legally\"\"\" be polygamous",
+              "url": "https://www.youtube.com/watch?v=CCnh1McJTs0",
+              "source": "The Anime Man",
+              "date": "2026-06-26",
+              "views": 23330,
+              "likes": 332,
+              "duration_secs": 27
+            },
+            {
+              "title": "\"I want to see people for who they are\"",
+              "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
+              "source": "The Anime Man",
+              "date": "2026-07-03",
+              "views": 17853,
+              "likes": 360,
+              "duration_secs": 40
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Actually Having An Authentic Katana",
+            "url": "https://www.youtube.com/watch?v=1q_Ei6SAHek",
+            "source": "The Anime Man",
+            "date": "2026-06-22",
+            "views": 23999,
+            "likes": 703,
+            "duration_secs": 23
+          },
+          {
+            "title": "How to \"\"\"legally\"\"\" be polygamous",
+            "url": "https://www.youtube.com/watch?v=CCnh1McJTs0",
+            "source": "The Anime Man",
+            "date": "2026-06-26",
+            "views": 23330,
+            "likes": 332,
+            "duration_secs": 27
+          },
+          {
+            "title": "\"I want to see people for who they are\"",
+            "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
+            "source": "The Anime Man",
+            "date": "2026-07-03",
+            "views": 17853,
+            "likes": 360,
+            "duration_secs": 40
+          }
+        ]
+      },
+      {
+        "label": 8,
+        "score": 0.4059,
+        "keywords": [
+          "manga",
+          "compra",
+          "altro",
+          "kirio",
+          "preferiti",
+          "puoi"
+        ],
+        "item_count": 4,
+        "total_views": 1907,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-27",
+        "last_seen": "2026-07-04",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7158,
+          "casual": 0.5921
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.716,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "I manga della settimana: sorprese e un capolavoro da recuperare SUBITO!",
+              "url": "https://www.youtube.com/watch?v=uAkdUT1mZVQ",
+              "source": "Kirio1984",
+              "date": "2026-06-27",
+              "views": 594,
+              "likes": 54,
+              "duration_secs": 528
+            },
+            {
+              "title": "MANGA PAZZESCHI QUESTA SETTIMANA!",
+              "url": "https://www.youtube.com/watch?v=ROGMc4i23CM",
+              "source": "Kirio1984",
+              "date": "2026-07-03",
+              "views": 567,
+              "likes": 48,
+              "duration_secs": 818
+            },
+            {
+              "title": "UNBOXING MANGA: le MIGLIORI NOVITÀ della settimana!",
+              "url": "https://www.youtube.com/watch?v=SXCvK7bfU9Q",
+              "source": "Kirio1984",
+              "date": "2026-07-04",
+              "views": 387,
+              "likes": 41,
+              "duration_secs": 373
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "I manga della settimana: sorprese e un capolavoro da recuperare SUBITO!",
+            "url": "https://www.youtube.com/watch?v=uAkdUT1mZVQ",
+            "source": "Kirio1984",
+            "date": "2026-06-27",
+            "views": 594,
+            "likes": 54,
+            "duration_secs": 528
+          },
+          {
+            "title": "MANGA PAZZESCHI QUESTA SETTIMANA!",
+            "url": "https://www.youtube.com/watch?v=ROGMc4i23CM",
+            "source": "Kirio1984",
+            "date": "2026-07-03",
+            "views": 567,
+            "likes": 48,
+            "duration_secs": 818
+          },
+          {
+            "title": "UNBOXING MANGA: le MIGLIORI NOVITÀ della settimana!",
+            "url": "https://www.youtube.com/watch?v=SXCvK7bfU9Q",
+            "source": "Kirio1984",
+            "date": "2026-07-04",
+            "views": 387,
+            "likes": 41,
+            "duration_secs": 373
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.2606,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 4,
+        "total_views": 94838,
+        "velocity": 0.875,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-28",
+        "last_seen": "2026-07-04",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6545,
+          "casual": 0.5558
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.654,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "背景の書き方【パース線】",
+              "url": "https://www.youtube.com/watch?v=JFW2bN-aLyE",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-30",
+              "views": 32247,
+              "likes": 728,
+              "duration_secs": 15
+            },
+            {
+              "title": "画力アップの秘訣【絵柄という武器】",
+              "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-06-28",
+              "views": 22440,
+              "likes": 543,
+              "duration_secs": 16
+            },
+            {
+              "title": "絵の印象がボヤけてしまう原因は...！？【きまぐれ添削240】",
+              "url": "https://www.youtube.com/watch?v=uHWHfQI3OaM",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-07-02",
+              "views": 20662,
+              "likes": 1233,
+              "duration_secs": 850
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "背景の書き方【パース線】",
+            "url": "https://www.youtube.com/watch?v=JFW2bN-aLyE",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-30",
+            "views": 32247,
+            "likes": 728,
+            "duration_secs": 15
+          },
+          {
+            "title": "画力アップの秘訣【絵柄という武器】",
+            "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-06-28",
+            "views": 22440,
+            "likes": 543,
+            "duration_secs": 16
+          },
+          {
+            "title": "絵の印象がボヤけてしまう原因は...！？【きまぐれ添削240】",
+            "url": "https://www.youtube.com/watch?v=uHWHfQI3OaM",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-07-02",
+            "views": 20662,
+            "likes": 1233,
+            "duration_secs": 850
+          }
+        ]
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
+      {
+        "label": 9,
+        "score": 0.5986,
+        "keywords": [
+          "manga",
+          "twitch",
+          "comprare",
+          "dragon",
+          "ball",
+          "dragon ball"
+        ],
+        "item_count": 10,
+        "total_views": 15151,
+        "velocity": 0.167,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-22",
+        "last_seen": "2026-07-03",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7871,
+          "casual": 0.6871
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.787,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "NIENTE MANGA NUOVI INTERESSANTI? DIMOSTRO IL CONTRARIO! Unboxing Mangayo",
+              "url": "https://www.youtube.com/watch?v=RwuYD9tifkc",
+              "source": "Caverna di Platone",
+              "date": "2026-07-02",
+              "views": 2917,
+              "likes": 165,
+              "duration_secs": 4386
+            },
+            {
+              "title": "La VERITÀ è che dei FUMETTI non gliene FREGA NIENTE!",
+              "url": "https://www.youtube.com/watch?v=QRELpOaOrkk",
+              "source": "Caverna di Platone",
+              "date": "2026-06-27",
+              "views": 2650,
+              "likes": 124,
+              "duration_secs": 1516
+            },
+            {
+              "title": "BANDAI ha deciso che NOI DOBBIAMO SPENDERE molti molti MOLTI SOLDI su NARUTO",
+              "url": "https://www.youtube.com/watch?v=QtpLrt55WAM",
+              "source": "Caverna di Platone",
+              "date": "2026-06-23",
+              "views": 2072,
+              "likes": 106,
+              "duration_secs": 645
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "NIENTE MANGA NUOVI INTERESSANTI? DIMOSTRO IL CONTRARIO! Unboxing Mangayo",
+            "url": "https://www.youtube.com/watch?v=RwuYD9tifkc",
+            "source": "Caverna di Platone",
+            "date": "2026-07-02",
+            "views": 2917,
+            "likes": 165,
+            "duration_secs": 4386
+          },
+          {
+            "title": "La VERITÀ è che dei FUMETTI non gliene FREGA NIENTE!",
+            "url": "https://www.youtube.com/watch?v=QRELpOaOrkk",
+            "source": "Caverna di Platone",
+            "date": "2026-06-27",
+            "views": 2650,
+            "likes": 124,
+            "duration_secs": 1516
+          },
+          {
+            "title": "BANDAI ha deciso che NOI DOBBIAMO SPENDERE molti molti MOLTI SOLDI su NARUTO",
+            "url": "https://www.youtube.com/watch?v=QtpLrt55WAM",
+            "source": "Caverna di Platone",
+            "date": "2026-06-23",
+            "views": 2072,
+            "likes": 106,
+            "duration_secs": 645
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.4691,
+        "keywords": [
+          "visto",
+          "davvero",
+          "vivere",
+          "euro",
+          "del",
+          "soggiorno"
+        ],
+        "item_count": 8,
+        "total_views": 206267,
+        "velocity": 0.438,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-25",
+        "last_seen": "2026-07-04",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5953,
+          "casual": 0.7868
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.787,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Imparare il giapponese: basta poco?",
+              "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+              "source": "Marco Togni",
+              "date": "2026-07-04",
+              "views": 53052,
+              "likes": 2372,
+              "duration_secs": 55
+            },
+            {
+              "title": "Perché in Giappone resti sempre straniero",
+              "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
+              "source": "Marco Togni",
+              "date": "2026-06-25",
+              "views": 50663,
+              "likes": 2293,
+              "duration_secs": 100
+            },
+            {
+              "title": "Vivere in Giappone: costa davvero tanto?",
+              "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+              "source": "Marco Togni",
+              "date": "2026-07-01",
+              "views": 40203,
+              "likes": 2036,
+              "duration_secs": 160
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Imparare il giapponese: basta poco?",
+            "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+            "source": "Marco Togni",
+            "date": "2026-07-04",
+            "views": 53052,
+            "likes": 2372,
+            "duration_secs": 55
+          },
+          {
+            "title": "Perché in Giappone resti sempre straniero",
+            "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
+            "source": "Marco Togni",
+            "date": "2026-06-25",
+            "views": 50663,
+            "likes": 2293,
+            "duration_secs": 100
+          },
+          {
+            "title": "Vivere in Giappone: costa davvero tanto?",
+            "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+            "source": "Marco Togni",
+            "date": "2026-07-01",
+            "views": 40203,
+            "likes": 2036,
+            "duration_secs": 160
+          }
+        ]
+      }
+    ],
+    "anomalie": [],
+    "altri": [
+      {
+        "label": 7,
+        "score": 0.1661,
+        "keywords": [
+          "tools",
+          "tts",
+          "tts driving",
+          "well tts",
+          "well",
+          "accept"
+        ],
+        "item_count": 4,
+        "total_views": 27044,
+        "velocity": 0.25,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-26",
+        "last_seen": "2026-07-02",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5838,
+          "casual": 0.6227
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.623,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
+              "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
+              "source": "Sora The Troll",
+              "date": "2026-07-02",
+              "views": 16971,
+              "likes": 680,
+              "duration_secs": 13057
+            },
+            {
+              "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
+              "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
+              "source": "Sora The Troll",
+              "date": "2026-06-26",
+              "views": 10073,
+              "likes": 350,
+              "duration_secs": 13600
+            },
+            {
+              "title": "Japan VS Brazil World Cup TOKYO REACTION LIVE AT MIDNIGHT",
+              "url": "https://www.youtube.com/watch?v=ss0myrPS6EI",
+              "source": "Sora The Troll",
+              "date": "2026-06-28",
+              "views": 0,
+              "likes": 28,
+              "duration_secs": 0
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
+            "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
+            "source": "Sora The Troll",
+            "date": "2026-07-02",
+            "views": 16971,
+            "likes": 680,
+            "duration_secs": 13057
+          },
+          {
+            "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
+            "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
+            "source": "Sora The Troll",
+            "date": "2026-06-26",
+            "views": 10073,
+            "likes": 350,
+            "duration_secs": 13600
+          },
+          {
+            "title": "Japan VS Brazil World Cup TOKYO REACTION LIVE AT MIDNIGHT",
+            "url": "https://www.youtube.com/watch?v=ss0myrPS6EI",
+            "source": "Sora The Troll",
+            "date": "2026-06-28",
+            "views": 0,
+            "likes": 28,
+            "duration_secs": 0
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.1417,
+        "keywords": [
+          "treated",
+          "treated prn",
+          "english lol",
+          "lol",
+          "lol sora",
+          "prn star"
+        ],
+        "item_count": 6,
+        "total_views": 19558,
+        "velocity": 0.083,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-26",
+        "last_seen": "2026-06-30",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6011,
+          "casual": 0.6245
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.625,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "What Happens When A Japanese Girl Streams In English In Japan",
+              "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
+              "source": "Sora The Troll",
+              "date": "2026-06-29",
+              "views": 13460,
+              "likes": 890,
+              "duration_secs": 522
+            },
+            {
+              "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
+              "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
+              "source": "Sora The Troll",
+              "date": "2026-06-27",
+              "views": 2434,
+              "likes": 27,
+              "duration_secs": 108
+            },
+            {
+              "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
+              "url": "https://www.youtube.com/watch?v=oURU38HLlEg",
+              "source": "Sora The Troll",
+              "date": "2026-06-26",
+              "views": 1201,
+              "likes": 36,
+              "duration_secs": 126
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "What Happens When A Japanese Girl Streams In English In Japan",
+            "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
+            "source": "Sora The Troll",
+            "date": "2026-06-29",
+            "views": 13460,
+            "likes": 890,
+            "duration_secs": 522
+          },
+          {
+            "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
+            "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
+            "source": "Sora The Troll",
+            "date": "2026-06-27",
+            "views": 2434,
+            "likes": 27,
+            "duration_secs": 108
+          },
+          {
+            "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
+            "url": "https://www.youtube.com/watch?v=oURU38HLlEg",
+            "source": "Sora The Troll",
+            "date": "2026-06-26",
+            "views": 1201,
+            "likes": 36,
+            "duration_secs": 126
           }
         ]
       }
