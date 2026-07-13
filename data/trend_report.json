@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-07-06",
-  "total_clusters": 10,
-  "total_videos": 61,
-  "date_range_start": "2026-06-22",
-  "date_range_end": "2026-07-05",
+  "generated_at": "2026-07-13",
+  "total_clusters": 9,
+  "total_videos": 65,
+  "date_range_start": "2026-06-29",
+  "date_range_end": "2026-07-12",
   "sections": {
     "emergenti": [],
     "crescita": [
       {
-        "label": 0,
-        "score": 0.8451,
+        "label": 8,
+        "score": 0.9091,
         "keywords": [
-          "località",
-          "lombarde",
-          "località lombarde",
-          "toscane",
-          "conoscete località",
-          "località toscane"
+          "manga",
+          "twitch",
+          "originale",
+          "caverna",
+          "dragon ball",
+          "dragon"
         ],
-        "item_count": 3,
-        "total_views": 274496,
-        "velocity": 0.833,
+        "item_count": 15,
+        "total_views": 41743,
+        "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-24",
-        "last_seen": "2026-07-04",
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-13",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -33,204 +33,1021 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.442,
-          "casual": 0.4154
+          "narrativo": 0.8297,
+          "casual": 0.7053
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.442,
+        "affinity_best_score": 0.83,
         "items_by_lang": {
           "it": [
             {
-              "title": "Conoscete queste località TOSCANE?",
-              "url": "https://www.youtube.com/watch?v=vnB1lLW6Y64",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-06-24",
-              "views": 163113,
-              "likes": 5422,
-              "duration_secs": 63
+              "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
+              "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
+              "source": "Caverna di Platone",
+              "date": "2026-07-09",
+              "views": 12424,
+              "likes": 297,
+              "duration_secs": 49
             },
             {
-              "title": "Località Lombarde",
-              "url": "https://www.youtube.com/watch?v=QmsL0CW4O8Y",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-07-04",
-              "views": 66524,
-              "likes": 3164,
-              "duration_secs": 52
+              "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
+              "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
+              "source": "Caverna di Platone",
+              "date": "2026-07-10",
+              "views": 9320,
+              "likes": 543,
+              "duration_secs": 1447
             },
             {
-              "title": "Indovina la regione dall'accento! @sandanieletinti @tintoriapodcast",
-              "url": "https://www.youtube.com/watch?v=f2VDqT8_JPY",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-06-27",
-              "views": 44859,
-              "likes": 2362,
-              "duration_secs": 75
+              "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
+              "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
+              "source": "Caverna di Platone",
+              "date": "2026-07-07",
+              "views": 5245,
+              "likes": 263,
+              "duration_secs": 1167
             }
           ]
         },
         "top_items": [
           {
-            "title": "Conoscete queste località TOSCANE?",
-            "url": "https://www.youtube.com/watch?v=vnB1lLW6Y64",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-06-24",
-            "views": 163113,
-            "likes": 5422,
-            "duration_secs": 63
+            "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
+            "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
+            "source": "Caverna di Platone",
+            "date": "2026-07-09",
+            "views": 12424,
+            "likes": 297,
+            "duration_secs": 49
           },
           {
-            "title": "Località Lombarde",
-            "url": "https://www.youtube.com/watch?v=QmsL0CW4O8Y",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-07-04",
-            "views": 66524,
-            "likes": 3164,
-            "duration_secs": 52
+            "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
+            "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
+            "source": "Caverna di Platone",
+            "date": "2026-07-10",
+            "views": 9320,
+            "likes": 543,
+            "duration_secs": 1447
           },
           {
-            "title": "Indovina la regione dall'accento! @sandanieletinti @tintoriapodcast",
-            "url": "https://www.youtube.com/watch?v=f2VDqT8_JPY",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-06-27",
-            "views": 44859,
-            "likes": 2362,
-            "duration_secs": 75
-          }
-        ]
-      },
-      {
-        "label": 5,
-        "score": 0.5252,
-        "keywords": [
-          "youtubeshorts",
-          "youtubeshorts curiosità",
-          "perdere",
-          "perdere prossimi",
-          "seguimi youtubeshorts",
-          "seguimi"
-        ],
-        "item_count": 5,
-        "total_views": 9772,
-        "velocity": 0.6,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-06-22",
-        "last_seen": "2026-07-05",
-        "sentinel_clusters": [
-          "expat_japan_en",
-          "vita_giappone"
-        ],
-        "languages": [
-          "it",
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.712,
-          "casual": 0.7073
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.712,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Topi a Tokyo ( Shibuya )",
-              "url": "https://www.youtube.com/watch?v=NzVeYcAy4vI",
-              "source": "Calabrese in Oriente",
-              "date": "2026-06-22",
-              "views": 1722,
-              "likes": 20,
-              "duration_secs": 16
-            },
-            {
-              "title": "Prezzi assurdi e trappole per turisti a Tokyo",
-              "url": "https://www.youtube.com/watch?v=6zQDF_2iMps",
-              "source": "Calabrese in Oriente",
-              "date": "2026-06-24",
-              "views": 1140,
-              "likes": 58,
-              "duration_secs": 65
-            },
-            {
-              "title": "Ponti a Tokyo",
-              "url": "https://www.youtube.com/watch?v=rfmltN6jLG4",
-              "source": "Calabrese in Oriente",
-              "date": "2026-07-01",
-              "views": 231,
-              "likes": 27,
-              "duration_secs": 181
-            }
-          ],
-          "en": [
-            {
-              "title": "The Best of Japan is... Hidden @TokyoLensExplore",
-              "url": "https://www.youtube.com/watch?v=hxEXGPnC2rI",
-              "source": "Tokyo Lens",
-              "date": "2026-07-05",
-              "views": 6634,
-              "likes": 340,
-              "duration_secs": 16
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Topi a Tokyo ( Shibuya )",
-            "url": "https://www.youtube.com/watch?v=NzVeYcAy4vI",
-            "source": "Calabrese in Oriente",
-            "date": "2026-06-22",
-            "views": 1722,
-            "likes": 20,
-            "duration_secs": 16
-          },
-          {
-            "title": "Prezzi assurdi e trappole per turisti a Tokyo",
-            "url": "https://www.youtube.com/watch?v=6zQDF_2iMps",
-            "source": "Calabrese in Oriente",
-            "date": "2026-06-24",
-            "views": 1140,
-            "likes": 58,
-            "duration_secs": 65
-          },
-          {
-            "title": "Ponti a Tokyo",
-            "url": "https://www.youtube.com/watch?v=rfmltN6jLG4",
-            "source": "Calabrese in Oriente",
-            "date": "2026-07-01",
-            "views": 231,
-            "likes": 27,
-            "duration_secs": 181
-          },
-          {
-            "title": "The Best of Japan is... Hidden @TokyoLensExplore",
-            "url": "https://www.youtube.com/watch?v=hxEXGPnC2rI",
-            "source": "Tokyo Lens",
-            "date": "2026-07-05",
-            "views": 6634,
-            "likes": 340,
-            "duration_secs": 16
+            "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
+            "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
+            "source": "Caverna di Platone",
+            "date": "2026-07-07",
+            "views": 5245,
+            "likes": 263,
+            "duration_secs": 1167
           }
         ]
       },
       {
         "label": 1,
-        "score": 0.4995,
+        "score": 0.7089,
         "keywords": [
-          "maglietta",
-          "tazza",
-          "calze",
-          "film",
-          "tazza snoopy",
-          "snoopy"
+          "cesaroni",
+          "andrea",
+          "lombardi",
+          "andrea lombardi",
+          "bagno pubblico",
+          "bagno"
         ],
-        "item_count": 12,
-        "total_views": 266952,
+        "item_count": 6,
+        "total_views": 288360,
         "velocity": 0.667,
         "novelty": 0.5,
+        "diversity": 0.542,
+        "first_seen": "2026-06-30",
+        "last_seen": "2026-07-12",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop",
+          "viaggio"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.6063,
+          "casual": 0.6206
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.621,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "E se Maccio Capatonda se ne pente? - Scuola Di Voce",
+              "url": "https://www.youtube.com/watch?v=ZD70j9csBkA",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-06-30",
+              "views": 99465,
+              "likes": 5874,
+              "duration_secs": 1542
+            },
+            {
+              "title": "Bagno pubblico in Italia vs in Giappone🚽",
+              "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
+              "source": "Erikottero",
+              "date": "2026-07-12",
+              "views": 91700,
+              "likes": 2464,
+              "duration_secs": 29
+            },
+            {
+              "title": "ITALIA VS GIAPPONE: La sfida finale delle SIGLE",
+              "url": "https://www.youtube.com/watch?v=oUtDSlyEEZc",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-07-07",
+              "views": 68848,
+              "likes": 5168,
+              "duration_secs": 1289
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "E se Maccio Capatonda se ne pente? - Scuola Di Voce",
+            "url": "https://www.youtube.com/watch?v=ZD70j9csBkA",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-06-30",
+            "views": 99465,
+            "likes": 5874,
+            "duration_secs": 1542
+          },
+          {
+            "title": "Bagno pubblico in Italia vs in Giappone🚽",
+            "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
+            "source": "Erikottero",
+            "date": "2026-07-12",
+            "views": 91700,
+            "likes": 2464,
+            "duration_secs": 29
+          },
+          {
+            "title": "ITALIA VS GIAPPONE: La sfida finale delle SIGLE",
+            "url": "https://www.youtube.com/watch?v=oUtDSlyEEZc",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-07-07",
+            "views": 68848,
+            "likes": 5168,
+            "duration_secs": 1289
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.6886,
+        "keywords": [
+          "davvero",
+          "vivere",
+          "della",
+          "imparare",
+          "durata",
+          "visti"
+        ],
+        "item_count": 5,
+        "total_views": 187969,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-11",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5938,
+          "casual": 0.7763
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.776,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Come ho ricevuto 25.000 euro dal Giappone",
+              "url": "https://www.youtube.com/watch?v=eI-hcmi6AKo",
+              "source": "Marco Togni",
+              "date": "2026-07-11",
+              "views": 59806,
+              "likes": 1989,
+              "duration_secs": 90
+            },
+            {
+              "title": "Imparare il giapponese: basta poco?",
+              "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+              "source": "Marco Togni",
+              "date": "2026-07-04",
+              "views": 53052,
+              "likes": 2372,
+              "duration_secs": 55
+            },
+            {
+              "title": "Vivere in Giappone: costa davvero tanto?",
+              "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+              "source": "Marco Togni",
+              "date": "2026-07-01",
+              "views": 40203,
+              "likes": 2036,
+              "duration_secs": 160
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Come ho ricevuto 25.000 euro dal Giappone",
+            "url": "https://www.youtube.com/watch?v=eI-hcmi6AKo",
+            "source": "Marco Togni",
+            "date": "2026-07-11",
+            "views": 59806,
+            "likes": 1989,
+            "duration_secs": 90
+          },
+          {
+            "title": "Imparare il giapponese: basta poco?",
+            "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+            "source": "Marco Togni",
+            "date": "2026-07-04",
+            "views": 53052,
+            "likes": 2372,
+            "duration_secs": 55
+          },
+          {
+            "title": "Vivere in Giappone: costa davvero tanto?",
+            "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+            "source": "Marco Togni",
+            "date": "2026-07-01",
+            "views": 40203,
+            "likes": 2036,
+            "duration_secs": 160
+          }
+        ]
+      },
+      {
+        "label": 7,
+        "score": 0.3345,
+        "keywords": [
+          "twitch",
+          "gruppo",
+          "youtube",
+          "versione",
+          "twitch reupload",
+          "ufficiali supportare"
+        ],
+        "item_count": 4,
+        "total_views": 21536,
+        "velocity": 0.625,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-07-01",
+        "last_seen": "2026-07-11",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7769,
+          "casual": 0.7676
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.777,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Patate Giapponesi e Hormuz? #giappone #giapponese #hormuz",
+              "url": "https://www.youtube.com/watch?v=prrjDUJaAzk",
+              "source": "Vivi Giappone",
+              "date": "2026-07-01",
+              "views": 15048,
+              "likes": 308,
+              "duration_secs": 20
+            },
+            {
+              "title": "Il Giappone non è come pensate! #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=K9EGE-Fe9Lg",
+              "source": "Vivi Giappone",
+              "date": "2026-07-11",
+              "views": 3991,
+              "likes": 258,
+              "duration_secs": 48
+            },
+            {
+              "title": "Ho fatto il prete in Giappone per un matrimonio!! - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=1gxQaEfgR6g",
+              "source": "Vivi Giappone",
+              "date": "2026-07-04",
+              "views": 2040,
+              "likes": 261,
+              "duration_secs": 491
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Patate Giapponesi e Hormuz? #giappone #giapponese #hormuz",
+            "url": "https://www.youtube.com/watch?v=prrjDUJaAzk",
+            "source": "Vivi Giappone",
+            "date": "2026-07-01",
+            "views": 15048,
+            "likes": 308,
+            "duration_secs": 20
+          },
+          {
+            "title": "Il Giappone non è come pensate! #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=K9EGE-Fe9Lg",
+            "source": "Vivi Giappone",
+            "date": "2026-07-11",
+            "views": 3991,
+            "likes": 258,
+            "duration_secs": 48
+          },
+          {
+            "title": "Ho fatto il prete in Giappone per un matrimonio!! - Vivi Giappone",
+            "url": "https://www.youtube.com/watch?v=1gxQaEfgR6g",
+            "source": "Vivi Giappone",
+            "date": "2026-07-04",
+            "views": 2040,
+            "likes": 261,
+            "duration_secs": 491
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.2817,
+        "keywords": [
+          "try",
+          "album try",
+          "sora",
+          "sora attention",
+          "album",
+          "attention album"
+        ],
+        "item_count": 10,
+        "total_views": 178067,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-13",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6781,
+          "casual": 0.6864
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.686,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Living in Japan as Half Japanese",
+              "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
+              "source": "TAKASHii from Japan",
+              "date": "2026-07-06",
+              "views": 140443,
+              "likes": 3751,
+              "duration_secs": 2337
+            },
+            {
+              "title": "What Happens When A Japanese Girl Streams In English In Japan",
+              "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
+              "source": "Sora The Troll",
+              "date": "2026-06-29",
+              "views": 13460,
+              "likes": 890,
+              "duration_secs": 522
+            },
+            {
+              "title": "Do Japanese VTubers act the same off stream",
+              "url": "https://www.youtube.com/watch?v=Xni5XDFxJEQ",
+              "source": "Sora The Troll",
+              "date": "2026-07-10",
+              "views": 7293,
+              "likes": 99,
+              "duration_secs": 123
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Living in Japan as Half Japanese",
+            "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
+            "source": "TAKASHii from Japan",
+            "date": "2026-07-06",
+            "views": 140443,
+            "likes": 3751,
+            "duration_secs": 2337
+          },
+          {
+            "title": "What Happens When A Japanese Girl Streams In English In Japan",
+            "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
+            "source": "Sora The Troll",
+            "date": "2026-06-29",
+            "views": 13460,
+            "likes": 890,
+            "duration_secs": 522
+          },
+          {
+            "title": "Do Japanese VTubers act the same off stream",
+            "url": "https://www.youtube.com/watch?v=Xni5XDFxJEQ",
+            "source": "Sora The Troll",
+            "date": "2026-07-10",
+            "views": 7293,
+            "likes": 99,
+            "duration_secs": 123
+          }
+        ]
+      },
+      {
+        "label": 5,
+        "score": 0.2789,
+        "keywords": [
+          "yoshimyan",
+          "well tts",
+          "well",
+          "tts driving",
+          "tts",
+          "try tjhese"
+        ],
+        "item_count": 5,
+        "total_views": 48034,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-07-02",
+        "last_seen": "2026-07-13",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6258,
+          "casual": 0.6533
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.653,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Bringing This Japanese Girl Streamer To Scary Places To See Her Reaction  @Yoshimyan",
+              "url": "https://www.youtube.com/watch?v=apBJnseGrls",
+              "source": "Sora The Troll",
+              "date": "2026-07-12",
+              "views": 20038,
+              "likes": 689,
+              "duration_secs": 19262
+            },
+            {
+              "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
+              "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
+              "source": "Sora The Troll",
+              "date": "2026-07-02",
+              "views": 16971,
+              "likes": 680,
+              "duration_secs": 13057
+            },
+            {
+              "title": "The Japanese Girl VTuber JUST BROUGHT Her PARTNER To My House IN REAL LIFE LOLOLOLOLOLOLOLOLOLOLOL",
+              "url": "https://www.youtube.com/watch?v=v8phwbaHS5Y",
+              "source": "Sora The Troll",
+              "date": "2026-07-10",
+              "views": 11025,
+              "likes": 538,
+              "duration_secs": 2484
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Bringing This Japanese Girl Streamer To Scary Places To See Her Reaction  @Yoshimyan",
+            "url": "https://www.youtube.com/watch?v=apBJnseGrls",
+            "source": "Sora The Troll",
+            "date": "2026-07-12",
+            "views": 20038,
+            "likes": 689,
+            "duration_secs": 19262
+          },
+          {
+            "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
+            "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
+            "source": "Sora The Troll",
+            "date": "2026-07-02",
+            "views": 16971,
+            "likes": 680,
+            "duration_secs": 13057
+          },
+          {
+            "title": "The Japanese Girl VTuber JUST BROUGHT Her PARTNER To My House IN REAL LIFE LOLOLOLOLOLOLOLOLOLOLOL",
+            "url": "https://www.youtube.com/watch?v=v8phwbaHS5Y",
+            "source": "Sora The Troll",
+            "date": "2026-07-10",
+            "views": 11025,
+            "likes": 538,
+            "duration_secs": 2484
+          }
+        ]
+      }
+    ],
+    "cross_source": [
+      {
+        "label": 1,
+        "score": 0.7089,
+        "keywords": [
+          "cesaroni",
+          "andrea",
+          "lombardi",
+          "andrea lombardi",
+          "bagno pubblico",
+          "bagno"
+        ],
+        "item_count": 6,
+        "total_views": 288360,
+        "velocity": 0.667,
+        "novelty": 0.5,
+        "diversity": 0.542,
+        "first_seen": "2026-06-30",
+        "last_seen": "2026-07-12",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop",
+          "viaggio"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.6063,
+          "casual": 0.6206
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.621,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "E se Maccio Capatonda se ne pente? - Scuola Di Voce",
+              "url": "https://www.youtube.com/watch?v=ZD70j9csBkA",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-06-30",
+              "views": 99465,
+              "likes": 5874,
+              "duration_secs": 1542
+            },
+            {
+              "title": "Bagno pubblico in Italia vs in Giappone🚽",
+              "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
+              "source": "Erikottero",
+              "date": "2026-07-12",
+              "views": 91700,
+              "likes": 2464,
+              "duration_secs": 29
+            },
+            {
+              "title": "ITALIA VS GIAPPONE: La sfida finale delle SIGLE",
+              "url": "https://www.youtube.com/watch?v=oUtDSlyEEZc",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-07-07",
+              "views": 68848,
+              "likes": 5168,
+              "duration_secs": 1289
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "E se Maccio Capatonda se ne pente? - Scuola Di Voce",
+            "url": "https://www.youtube.com/watch?v=ZD70j9csBkA",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-06-30",
+            "views": 99465,
+            "likes": 5874,
+            "duration_secs": 1542
+          },
+          {
+            "title": "Bagno pubblico in Italia vs in Giappone🚽",
+            "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
+            "source": "Erikottero",
+            "date": "2026-07-12",
+            "views": 91700,
+            "likes": 2464,
+            "duration_secs": 29
+          },
+          {
+            "title": "ITALIA VS GIAPPONE: La sfida finale delle SIGLE",
+            "url": "https://www.youtube.com/watch?v=oUtDSlyEEZc",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-07-07",
+            "views": 68848,
+            "likes": 5168,
+            "duration_secs": 1289
+          }
+        ]
+      }
+    ],
+    "affinita": [
+      {
+        "label": 8,
+        "score": 0.9091,
+        "keywords": [
+          "manga",
+          "twitch",
+          "originale",
+          "caverna",
+          "dragon ball",
+          "dragon"
+        ],
+        "item_count": 15,
+        "total_views": 41743,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-13",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8297,
+          "casual": 0.7053
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.83,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
+              "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
+              "source": "Caverna di Platone",
+              "date": "2026-07-09",
+              "views": 12424,
+              "likes": 297,
+              "duration_secs": 49
+            },
+            {
+              "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
+              "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
+              "source": "Caverna di Platone",
+              "date": "2026-07-10",
+              "views": 9320,
+              "likes": 543,
+              "duration_secs": 1447
+            },
+            {
+              "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
+              "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
+              "source": "Caverna di Platone",
+              "date": "2026-07-07",
+              "views": 5245,
+              "likes": 263,
+              "duration_secs": 1167
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
+            "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
+            "source": "Caverna di Platone",
+            "date": "2026-07-09",
+            "views": 12424,
+            "likes": 297,
+            "duration_secs": 49
+          },
+          {
+            "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
+            "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
+            "source": "Caverna di Platone",
+            "date": "2026-07-10",
+            "views": 9320,
+            "likes": 543,
+            "duration_secs": 1447
+          },
+          {
+            "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
+            "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
+            "source": "Caverna di Platone",
+            "date": "2026-07-07",
+            "views": 5245,
+            "likes": 263,
+            "duration_secs": 1167
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.6886,
+        "keywords": [
+          "davvero",
+          "vivere",
+          "della",
+          "imparare",
+          "durata",
+          "visti"
+        ],
+        "item_count": 5,
+        "total_views": 187969,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-11",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5938,
+          "casual": 0.7763
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.776,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Come ho ricevuto 25.000 euro dal Giappone",
+              "url": "https://www.youtube.com/watch?v=eI-hcmi6AKo",
+              "source": "Marco Togni",
+              "date": "2026-07-11",
+              "views": 59806,
+              "likes": 1989,
+              "duration_secs": 90
+            },
+            {
+              "title": "Imparare il giapponese: basta poco?",
+              "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+              "source": "Marco Togni",
+              "date": "2026-07-04",
+              "views": 53052,
+              "likes": 2372,
+              "duration_secs": 55
+            },
+            {
+              "title": "Vivere in Giappone: costa davvero tanto?",
+              "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+              "source": "Marco Togni",
+              "date": "2026-07-01",
+              "views": 40203,
+              "likes": 2036,
+              "duration_secs": 160
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Come ho ricevuto 25.000 euro dal Giappone",
+            "url": "https://www.youtube.com/watch?v=eI-hcmi6AKo",
+            "source": "Marco Togni",
+            "date": "2026-07-11",
+            "views": 59806,
+            "likes": 1989,
+            "duration_secs": 90
+          },
+          {
+            "title": "Imparare il giapponese: basta poco?",
+            "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
+            "source": "Marco Togni",
+            "date": "2026-07-04",
+            "views": 53052,
+            "likes": 2372,
+            "duration_secs": 55
+          },
+          {
+            "title": "Vivere in Giappone: costa davvero tanto?",
+            "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
+            "source": "Marco Togni",
+            "date": "2026-07-01",
+            "views": 40203,
+            "likes": 2036,
+            "duration_secs": 160
+          }
+        ]
+      },
+      {
+        "label": 7,
+        "score": 0.3345,
+        "keywords": [
+          "twitch",
+          "gruppo",
+          "youtube",
+          "versione",
+          "twitch reupload",
+          "ufficiali supportare"
+        ],
+        "item_count": 4,
+        "total_views": 21536,
+        "velocity": 0.625,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-07-01",
+        "last_seen": "2026-07-11",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7769,
+          "casual": 0.7676
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.777,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Patate Giapponesi e Hormuz? #giappone #giapponese #hormuz",
+              "url": "https://www.youtube.com/watch?v=prrjDUJaAzk",
+              "source": "Vivi Giappone",
+              "date": "2026-07-01",
+              "views": 15048,
+              "likes": 308,
+              "duration_secs": 20
+            },
+            {
+              "title": "Il Giappone non è come pensate! #giappone #giapponese #japan",
+              "url": "https://www.youtube.com/watch?v=K9EGE-Fe9Lg",
+              "source": "Vivi Giappone",
+              "date": "2026-07-11",
+              "views": 3991,
+              "likes": 258,
+              "duration_secs": 48
+            },
+            {
+              "title": "Ho fatto il prete in Giappone per un matrimonio!! - Vivi Giappone",
+              "url": "https://www.youtube.com/watch?v=1gxQaEfgR6g",
+              "source": "Vivi Giappone",
+              "date": "2026-07-04",
+              "views": 2040,
+              "likes": 261,
+              "duration_secs": 491
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Patate Giapponesi e Hormuz? #giappone #giapponese #hormuz",
+            "url": "https://www.youtube.com/watch?v=prrjDUJaAzk",
+            "source": "Vivi Giappone",
+            "date": "2026-07-01",
+            "views": 15048,
+            "likes": 308,
+            "duration_secs": 20
+          },
+          {
+            "title": "Il Giappone non è come pensate! #giappone #giapponese #japan",
+            "url": "https://www.youtube.com/watch?v=K9EGE-Fe9Lg",
+            "source": "Vivi Giappone",
+            "date": "2026-07-11",
+            "views": 3991,
+            "likes": 258,
+            "duration_secs": 48
+          },
+          {
+            "title": "Ho fatto il prete in Giappone per un matrimonio!! - Vivi Giappone",
+            "url": "https://www.youtube.com/watch?v=1gxQaEfgR6g",
+            "source": "Vivi Giappone",
+            "date": "2026-07-04",
+            "views": 2040,
+            "likes": 261,
+            "duration_secs": 491
+          }
+        ]
+      }
+    ],
+    "anomalie": [],
+    "altri": [
+      {
+        "label": 4,
+        "score": 0.3066,
+        "keywords": [
+          "use",
+          "copyright",
+          "fair use",
+          "fair",
+          "anime",
+          "use purposes"
+        ],
+        "item_count": 3,
+        "total_views": 45599,
+        "velocity": 0.167,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-06",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.708,
+          "casual": 0.646
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.708,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "\"I want to see people for who they are\"",
+              "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
+              "source": "The Anime Man",
+              "date": "2026-07-03",
+              "views": 17853,
+              "likes": 360,
+              "duration_secs": 40
+            },
+            {
+              "title": "How to spot a real anime figurine",
+              "url": "https://www.youtube.com/watch?v=3ufkUgYORck",
+              "source": "The Anime Man",
+              "date": "2026-06-29",
+              "views": 15267,
+              "likes": 414,
+              "duration_secs": 38
+            },
+            {
+              "title": "This Is His Real Reason",
+              "url": "https://www.youtube.com/watch?v=EN1wXDXMCJM",
+              "source": "The Anime Man",
+              "date": "2026-07-06",
+              "views": 12479,
+              "likes": 259,
+              "duration_secs": 39
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "\"I want to see people for who they are\"",
+            "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
+            "source": "The Anime Man",
+            "date": "2026-07-03",
+            "views": 17853,
+            "likes": 360,
+            "duration_secs": 40
+          },
+          {
+            "title": "How to spot a real anime figurine",
+            "url": "https://www.youtube.com/watch?v=3ufkUgYORck",
+            "source": "The Anime Man",
+            "date": "2026-06-29",
+            "views": 15267,
+            "likes": 414,
+            "duration_secs": 38
+          },
+          {
+            "title": "This Is His Real Reason",
+            "url": "https://www.youtube.com/watch?v=EN1wXDXMCJM",
+            "source": "The Anime Man",
+            "date": "2026-07-06",
+            "views": 12479,
+            "likes": 259,
+            "duration_secs": 39
+          }
+        ]
+      },
+      {
+        "label": 0,
+        "score": 0.2315,
+        "keywords": [
+          "maglietta",
+          "calze",
+          "vlaszlo",
+          "acquisto",
+          "vlaszlo calze",
+          "gogh ken"
+        ],
+        "item_count": 13,
+        "total_views": 661042,
+        "velocity": 0.231,
+        "novelty": 0.5,
         "diversity": 0.417,
-        "first_seen": "2026-06-22",
-        "last_seen": "2026-07-04",
+        "first_seen": "2026-06-29",
+        "last_seen": "2026-07-09",
         "sentinel_clusters": [
           "anime_manga_pop",
           "videogiochi"
@@ -238,32 +1055,32 @@
         "languages": [
           "it"
         ],
-        "has_mover": true,
+        "has_mover": false,
         "affinity": {
-          "narrativo": 0.7124,
-          "casual": 0.5084
+          "narrativo": 0.698,
+          "casual": 0.5111
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.712,
+        "affinity_best_score": 0.698,
         "items_by_lang": {
           "it": [
             {
-              "title": "House of the Dragon 3x01: Un inizio CLAMOROSO",
-              "url": "https://www.youtube.com/watch?v=qMT9OMrygns",
-              "source": "Victorlaszlo88",
-              "date": "2026-06-22",
-              "views": 43787,
-              "likes": 2235,
-              "duration_secs": 2280
+              "title": "Il film più odiato di quest’anno",
+              "url": "https://www.youtube.com/watch?v=q3pGghICMIw",
+              "source": "151eG",
+              "date": "2026-07-07",
+              "views": 409688,
+              "likes": 25525,
+              "duration_secs": 178
             },
             {
-              "title": "MovieBlog- 1090: Recensione Supergirl",
-              "url": "https://www.youtube.com/watch?v=2Jp1B3PziRI",
+              "title": "L'odio a priori per Odissea : E il Cinema dov'è finito?",
+              "url": "https://www.youtube.com/watch?v=GGs2OrTstLw",
               "source": "Victorlaszlo88",
-              "date": "2026-06-25",
-              "views": 42078,
-              "likes": 1747,
-              "duration_secs": 2824
+              "date": "2026-07-08",
+              "views": 40912,
+              "likes": 2051,
+              "duration_secs": 1632
             },
             {
               "title": "House of the Dragon 3x02: I nodi vengono al pettine",
@@ -278,22 +1095,22 @@
         },
         "top_items": [
           {
-            "title": "House of the Dragon 3x01: Un inizio CLAMOROSO",
-            "url": "https://www.youtube.com/watch?v=qMT9OMrygns",
-            "source": "Victorlaszlo88",
-            "date": "2026-06-22",
-            "views": 43787,
-            "likes": 2235,
-            "duration_secs": 2280
+            "title": "Il film più odiato di quest’anno",
+            "url": "https://www.youtube.com/watch?v=q3pGghICMIw",
+            "source": "151eG",
+            "date": "2026-07-07",
+            "views": 409688,
+            "likes": 25525,
+            "duration_secs": 178
           },
           {
-            "title": "MovieBlog- 1090: Recensione Supergirl",
-            "url": "https://www.youtube.com/watch?v=2Jp1B3PziRI",
+            "title": "L'odio a priori per Odissea : E il Cinema dov'è finito?",
+            "url": "https://www.youtube.com/watch?v=GGs2OrTstLw",
             "source": "Victorlaszlo88",
-            "date": "2026-06-25",
-            "views": 42078,
-            "likes": 1747,
-            "duration_secs": 2824
+            "date": "2026-07-08",
+            "views": 40912,
+            "likes": 2051,
+            "duration_secs": 1632
           },
           {
             "title": "House of the Dragon 3x02: I nodi vengono al pettine",
@@ -307,192 +1124,8 @@
         ]
       },
       {
-        "label": 4,
-        "score": 0.4575,
-        "keywords": [
-          "use",
-          "fair use",
-          "fair",
-          "copyright",
-          "anime",
-          "use tips"
-        ],
-        "item_count": 5,
-        "total_views": 93205,
-        "velocity": 0.7,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-22",
-        "last_seen": "2026-07-03",
-        "sentinel_clusters": [
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7175,
-          "casual": 0.6796
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.718,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "Actually Having An Authentic Katana",
-              "url": "https://www.youtube.com/watch?v=1q_Ei6SAHek",
-              "source": "The Anime Man",
-              "date": "2026-06-22",
-              "views": 23999,
-              "likes": 703,
-              "duration_secs": 23
-            },
-            {
-              "title": "How to \"\"\"legally\"\"\" be polygamous",
-              "url": "https://www.youtube.com/watch?v=CCnh1McJTs0",
-              "source": "The Anime Man",
-              "date": "2026-06-26",
-              "views": 23330,
-              "likes": 332,
-              "duration_secs": 27
-            },
-            {
-              "title": "\"I want to see people for who they are\"",
-              "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
-              "source": "The Anime Man",
-              "date": "2026-07-03",
-              "views": 17853,
-              "likes": 360,
-              "duration_secs": 40
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Actually Having An Authentic Katana",
-            "url": "https://www.youtube.com/watch?v=1q_Ei6SAHek",
-            "source": "The Anime Man",
-            "date": "2026-06-22",
-            "views": 23999,
-            "likes": 703,
-            "duration_secs": 23
-          },
-          {
-            "title": "How to \"\"\"legally\"\"\" be polygamous",
-            "url": "https://www.youtube.com/watch?v=CCnh1McJTs0",
-            "source": "The Anime Man",
-            "date": "2026-06-26",
-            "views": 23330,
-            "likes": 332,
-            "duration_secs": 27
-          },
-          {
-            "title": "\"I want to see people for who they are\"",
-            "url": "https://www.youtube.com/watch?v=-_c09RlNzhM",
-            "source": "The Anime Man",
-            "date": "2026-07-03",
-            "views": 17853,
-            "likes": 360,
-            "duration_secs": 40
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.4059,
-        "keywords": [
-          "manga",
-          "compra",
-          "altro",
-          "kirio",
-          "preferiti",
-          "puoi"
-        ],
-        "item_count": 4,
-        "total_views": 1907,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-27",
-        "last_seen": "2026-07-04",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7158,
-          "casual": 0.5921
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.716,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "I manga della settimana: sorprese e un capolavoro da recuperare SUBITO!",
-              "url": "https://www.youtube.com/watch?v=uAkdUT1mZVQ",
-              "source": "Kirio1984",
-              "date": "2026-06-27",
-              "views": 594,
-              "likes": 54,
-              "duration_secs": 528
-            },
-            {
-              "title": "MANGA PAZZESCHI QUESTA SETTIMANA!",
-              "url": "https://www.youtube.com/watch?v=ROGMc4i23CM",
-              "source": "Kirio1984",
-              "date": "2026-07-03",
-              "views": 567,
-              "likes": 48,
-              "duration_secs": 818
-            },
-            {
-              "title": "UNBOXING MANGA: le MIGLIORI NOVITÀ della settimana!",
-              "url": "https://www.youtube.com/watch?v=SXCvK7bfU9Q",
-              "source": "Kirio1984",
-              "date": "2026-07-04",
-              "views": 387,
-              "likes": 41,
-              "duration_secs": 373
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "I manga della settimana: sorprese e un capolavoro da recuperare SUBITO!",
-            "url": "https://www.youtube.com/watch?v=uAkdUT1mZVQ",
-            "source": "Kirio1984",
-            "date": "2026-06-27",
-            "views": 594,
-            "likes": 54,
-            "duration_secs": 528
-          },
-          {
-            "title": "MANGA PAZZESCHI QUESTA SETTIMANA!",
-            "url": "https://www.youtube.com/watch?v=ROGMc4i23CM",
-            "source": "Kirio1984",
-            "date": "2026-07-03",
-            "views": 567,
-            "likes": 48,
-            "duration_secs": 818
-          },
-          {
-            "title": "UNBOXING MANGA: le MIGLIORI NOVITÀ della settimana!",
-            "url": "https://www.youtube.com/watch?v=SXCvK7bfU9Q",
-            "source": "Kirio1984",
-            "date": "2026-07-04",
-            "views": 387,
-            "likes": 41,
-            "duration_secs": 373
-          }
-        ]
-      },
-      {
         "label": 3,
-        "score": 0.2606,
+        "score": 0.1505,
         "keywords": [
           "works",
           "english",
@@ -502,12 +1135,12 @@
           "naokichi works"
         ],
         "item_count": 4,
-        "total_views": 94838,
-        "velocity": 0.875,
+        "total_views": 104412,
+        "velocity": 0.125,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-06-28",
-        "last_seen": "2026-07-04",
+        "first_seen": "2026-06-30",
+        "last_seen": "2026-07-09",
         "sentinel_clusters": [
           "japan_native"
         ],
@@ -516,11 +1149,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6545,
-          "casual": 0.5558
+          "narrativo": 0.6557,
+          "casual": 0.5642
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.654,
+        "affinity_best_score": 0.656,
         "items_by_lang": {
           "ja": [
             {
@@ -533,13 +1166,13 @@
               "duration_secs": 15
             },
             {
-              "title": "画力アップの秘訣【絵柄という武器】",
-              "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
+              "title": "【意外!】絵が上手くなると、描くのが遅くなります。",
+              "url": "https://www.youtube.com/watch?v=v6myZhanRas",
               "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-06-28",
-              "views": 22440,
-              "likes": 543,
-              "duration_secs": 16
+              "date": "2026-07-09",
+              "views": 32014,
+              "likes": 1731,
+              "duration_secs": 1164
             },
             {
               "title": "絵の印象がボヤけてしまう原因は...！？【きまぐれ添削240】",
@@ -563,13 +1196,13 @@
             "duration_secs": 15
           },
           {
-            "title": "画力アップの秘訣【絵柄という武器】",
-            "url": "https://www.youtube.com/watch?v=akVL6M2SmIY",
+            "title": "【意外!】絵が上手くなると、描くのが遅くなります。",
+            "url": "https://www.youtube.com/watch?v=v6myZhanRas",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-06-28",
-            "views": 22440,
-            "likes": 543,
-            "duration_secs": 16
+            "date": "2026-07-09",
+            "views": 32014,
+            "likes": 1731,
+            "duration_secs": 1164
           },
           {
             "title": "絵の印象がボヤけてしまう原因は...！？【きまぐれ添削240】",
@@ -579,380 +1212,6 @@
             "views": 20662,
             "likes": 1233,
             "duration_secs": 850
-          }
-        ]
-      }
-    ],
-    "cross_source": [],
-    "affinita": [
-      {
-        "label": 9,
-        "score": 0.5986,
-        "keywords": [
-          "manga",
-          "twitch",
-          "comprare",
-          "dragon",
-          "ball",
-          "dragon ball"
-        ],
-        "item_count": 10,
-        "total_views": 15151,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-22",
-        "last_seen": "2026-07-03",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.7871,
-          "casual": 0.6871
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.787,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "NIENTE MANGA NUOVI INTERESSANTI? DIMOSTRO IL CONTRARIO! Unboxing Mangayo",
-              "url": "https://www.youtube.com/watch?v=RwuYD9tifkc",
-              "source": "Caverna di Platone",
-              "date": "2026-07-02",
-              "views": 2917,
-              "likes": 165,
-              "duration_secs": 4386
-            },
-            {
-              "title": "La VERITÀ è che dei FUMETTI non gliene FREGA NIENTE!",
-              "url": "https://www.youtube.com/watch?v=QRELpOaOrkk",
-              "source": "Caverna di Platone",
-              "date": "2026-06-27",
-              "views": 2650,
-              "likes": 124,
-              "duration_secs": 1516
-            },
-            {
-              "title": "BANDAI ha deciso che NOI DOBBIAMO SPENDERE molti molti MOLTI SOLDI su NARUTO",
-              "url": "https://www.youtube.com/watch?v=QtpLrt55WAM",
-              "source": "Caverna di Platone",
-              "date": "2026-06-23",
-              "views": 2072,
-              "likes": 106,
-              "duration_secs": 645
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "NIENTE MANGA NUOVI INTERESSANTI? DIMOSTRO IL CONTRARIO! Unboxing Mangayo",
-            "url": "https://www.youtube.com/watch?v=RwuYD9tifkc",
-            "source": "Caverna di Platone",
-            "date": "2026-07-02",
-            "views": 2917,
-            "likes": 165,
-            "duration_secs": 4386
-          },
-          {
-            "title": "La VERITÀ è che dei FUMETTI non gliene FREGA NIENTE!",
-            "url": "https://www.youtube.com/watch?v=QRELpOaOrkk",
-            "source": "Caverna di Platone",
-            "date": "2026-06-27",
-            "views": 2650,
-            "likes": 124,
-            "duration_secs": 1516
-          },
-          {
-            "title": "BANDAI ha deciso che NOI DOBBIAMO SPENDERE molti molti MOLTI SOLDI su NARUTO",
-            "url": "https://www.youtube.com/watch?v=QtpLrt55WAM",
-            "source": "Caverna di Platone",
-            "date": "2026-06-23",
-            "views": 2072,
-            "likes": 106,
-            "duration_secs": 645
-          }
-        ]
-      },
-      {
-        "label": 2,
-        "score": 0.4691,
-        "keywords": [
-          "visto",
-          "davvero",
-          "vivere",
-          "euro",
-          "del",
-          "soggiorno"
-        ],
-        "item_count": 8,
-        "total_views": 206267,
-        "velocity": 0.438,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-25",
-        "last_seen": "2026-07-04",
-        "sentinel_clusters": [
-          "vita_giappone"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5953,
-          "casual": 0.7868
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.787,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Imparare il giapponese: basta poco?",
-              "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
-              "source": "Marco Togni",
-              "date": "2026-07-04",
-              "views": 53052,
-              "likes": 2372,
-              "duration_secs": 55
-            },
-            {
-              "title": "Perché in Giappone resti sempre straniero",
-              "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
-              "source": "Marco Togni",
-              "date": "2026-06-25",
-              "views": 50663,
-              "likes": 2293,
-              "duration_secs": 100
-            },
-            {
-              "title": "Vivere in Giappone: costa davvero tanto?",
-              "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
-              "source": "Marco Togni",
-              "date": "2026-07-01",
-              "views": 40203,
-              "likes": 2036,
-              "duration_secs": 160
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Imparare il giapponese: basta poco?",
-            "url": "https://www.youtube.com/watch?v=h6PiKnSii6w",
-            "source": "Marco Togni",
-            "date": "2026-07-04",
-            "views": 53052,
-            "likes": 2372,
-            "duration_secs": 55
-          },
-          {
-            "title": "Perché in Giappone resti sempre straniero",
-            "url": "https://www.youtube.com/watch?v=MVCX_r-66eE",
-            "source": "Marco Togni",
-            "date": "2026-06-25",
-            "views": 50663,
-            "likes": 2293,
-            "duration_secs": 100
-          },
-          {
-            "title": "Vivere in Giappone: costa davvero tanto?",
-            "url": "https://www.youtube.com/watch?v=u3FJMrAxTyM",
-            "source": "Marco Togni",
-            "date": "2026-07-01",
-            "views": 40203,
-            "likes": 2036,
-            "duration_secs": 160
-          }
-        ]
-      }
-    ],
-    "anomalie": [],
-    "altri": [
-      {
-        "label": 7,
-        "score": 0.1661,
-        "keywords": [
-          "tools",
-          "tts",
-          "tts driving",
-          "well tts",
-          "well",
-          "accept"
-        ],
-        "item_count": 4,
-        "total_views": 27044,
-        "velocity": 0.25,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-26",
-        "last_seen": "2026-07-02",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5838,
-          "casual": 0.6227
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.623,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
-              "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
-              "source": "Sora The Troll",
-              "date": "2026-07-02",
-              "views": 16971,
-              "likes": 680,
-              "duration_secs": 13057
-            },
-            {
-              "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
-              "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
-              "source": "Sora The Troll",
-              "date": "2026-06-26",
-              "views": 10073,
-              "likes": 350,
-              "duration_secs": 13600
-            },
-            {
-              "title": "Japan VS Brazil World Cup TOKYO REACTION LIVE AT MIDNIGHT",
-              "url": "https://www.youtube.com/watch?v=ss0myrPS6EI",
-              "source": "Sora The Troll",
-              "date": "2026-06-28",
-              "views": 0,
-              "likes": 28,
-              "duration_secs": 0
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Making this japanese girl streamer uncomfortable LIVE@Yoshimyan",
-            "url": "https://www.youtube.com/watch?v=6bxEb-0ic44",
-            "source": "Sora The Troll",
-            "date": "2026-07-02",
-            "views": 16971,
-            "likes": 680,
-            "duration_secs": 13057
-          },
-          {
-            "title": "WORLD CUP JAPAN VS SWEDEN BROKE TOKYO TODAY LOLLOLOLOLOLOLOLOLOLOLOLOLOLOLOLLOLOLOLOLOLOLLOLOLLO",
-            "url": "https://www.youtube.com/watch?v=0XSMSIH5vj4",
-            "source": "Sora The Troll",
-            "date": "2026-06-26",
-            "views": 10073,
-            "likes": 350,
-            "duration_secs": 13600
-          },
-          {
-            "title": "Japan VS Brazil World Cup TOKYO REACTION LIVE AT MIDNIGHT",
-            "url": "https://www.youtube.com/watch?v=ss0myrPS6EI",
-            "source": "Sora The Troll",
-            "date": "2026-06-28",
-            "views": 0,
-            "likes": 28,
-            "duration_secs": 0
-          }
-        ]
-      },
-      {
-        "label": 6,
-        "score": 0.1417,
-        "keywords": [
-          "treated",
-          "treated prn",
-          "english lol",
-          "lol",
-          "lol sora",
-          "prn star"
-        ],
-        "item_count": 6,
-        "total_views": 19558,
-        "velocity": 0.083,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-06-26",
-        "last_seen": "2026-06-30",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6011,
-          "casual": 0.6245
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.625,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "What Happens When A Japanese Girl Streams In English In Japan",
-              "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
-              "source": "Sora The Troll",
-              "date": "2026-06-29",
-              "views": 13460,
-              "likes": 890,
-              "duration_secs": 522
-            },
-            {
-              "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-              "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
-              "source": "Sora The Troll",
-              "date": "2026-06-27",
-              "views": 2434,
-              "likes": 27,
-              "duration_secs": 108
-            },
-            {
-              "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-              "url": "https://www.youtube.com/watch?v=oURU38HLlEg",
-              "source": "Sora The Troll",
-              "date": "2026-06-26",
-              "views": 1201,
-              "likes": 36,
-              "duration_secs": 126
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "What Happens When A Japanese Girl Streams In English In Japan",
-            "url": "https://www.youtube.com/watch?v=JLmfZM3GR7A",
-            "source": "Sora The Troll",
-            "date": "2026-06-29",
-            "views": 13460,
-            "likes": 890,
-            "duration_secs": 522
-          },
-          {
-            "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-            "url": "https://www.youtube.com/watch?v=PuXygW2HM7o",
-            "source": "Sora The Troll",
-            "date": "2026-06-27",
-            "views": 2434,
-            "likes": 27,
-            "duration_secs": 108
-          },
-          {
-            "title": "How Japan Treated This Ex prn Star Because She Speaks Fluent English LOL",
-            "url": "https://www.youtube.com/watch?v=oURU38HLlEg",
-            "source": "Sora The Troll",
-            "date": "2026-06-26",
-            "views": 1201,
-            "likes": 36,
-            "duration_secs": 126
           }
         ]
       }
