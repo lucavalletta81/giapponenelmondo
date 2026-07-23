@@ -1,0 +1,512 @@
+{
+ "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
+ "fatti": [
+  {
+   "titolo": "5 oggetti fondamentali",
+   "uscito": "26/09/2025",
+   "come": "5oggetti che DEVI conoscere prima di andare in GIAPPONE"
+  },
+  {
+   "titolo": "Slot Halloween 2025 (3 di 5)",
+   "uscito": "ott 2025",
+   "come": "J-HORROR 01/02/03 — 30 iscritti"
+  },
+  {
+   "titolo": "Daruma/portafortuna",
+   "uscito": "09/11/2025",
+   "come": "Il mistero delle KOKESHI e i portafortuna"
+  },
+  {
+   "titolo": "Dicembre in Giappone consigli",
+   "uscito": "16/11/2025",
+   "come": "Dicembre in GIAPPONE: luci, silenzi..."
+  },
+  {
+   "titolo": "True crime",
+   "uscito": "23/11/2025",
+   "come": "44 Giorni nel Cemento"
+  },
+  {
+   "titolo": "JappoVan budget",
+   "uscito": "29/11/2025",
+   "come": "Quanto Costa un Viaggio in Camper ep5"
+  },
+  {
+   "titolo": "Fotografo giapponese (Araki)",
+   "uscito": "12/12/2025",
+   "come": "TOKYO Amore e Morte: tutto su ARAKI"
+  },
+  {
+   "titolo": "Scams (versione foto)",
+   "uscito": "02/02/2026",
+   "come": "Tokyo Photo-Shopping: Affari veri o Scam da Social?"
+  },
+  {
+   "titolo": "Viaggio (5 slot pianificati)",
+   "uscito": "feb-lug 2026",
+   "come": "16+ puntate Japan Van"
+  }
+ ],
+ "backlog": [
+  {
+   "id": "inunaki",
+   "titolo": "Inunaki: ci sono stato davvero (FINALE Halloween S2, 31/10)",
+   "cluster": "jhorror",
+   "stato": "girato",
+   "effort": 3,
+   "fit": 9,
+   "tipo": "acquisizione",
+   "nota": "girato da Luca in Giappone; montaggio pesante da iniziare a settembre; doppio uso video+podcast"
+  },
+  {
+   "id": "fukushima",
+   "titolo": "Fukushima: il racconto (girato + libro ricevuto)",
+   "cluster": "societa",
+   "stato": "girato",
+   "effort": 2,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "IMPEGNO settembre (19/09): libro ricevuto da citare; doppio uso video+podcast"
+  },
+  {
+   "id": "jvan_finale",
+   "titolo": "Japan Van — episodi finali del viaggio",
+   "cluster": "viaggio",
+   "stato": "girato",
+   "effort": 3,
+   "fit": 4,
+   "tipo": "cuore",
+   "nota": "chiusura della serie, i fedeli la aspettano; playlist"
+  },
+  {
+   "id": "sara_resoconto",
+   "titolo": "Resoconto del viaggio con Sara + annuncio prossimo viaggio",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 5,
+   "tipo": "cuore",
+   "nota": "video in studio post-Jvan; annuncio = gancio"
+  },
+  {
+   "id": "akihabara_5cose",
+   "titolo": "5 cose / negozi ad Akihabara",
+   "cluster": "viaggio",
+   "stato": "girato",
+   "effort": 2,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "girato a marzo, da montare"
+  },
+  {
+   "id": "manga_roma",
+   "titolo": "Intervista al negozio di manga più famoso di Roma",
+   "cluster": "community",
+   "stato": "girato",
+   "effort": 2,
+   "fit": 4,
+   "tipo": "reputazione",
+   "nota": "PRIORITÀ ALTA di Luca: fatto a febbraio, va fuori subito"
+  },
+  {
+   "id": "libri_foto_tokyo",
+   "titolo": "Dove comprare libri fotografici a Tokyo",
+   "cluster": "fotografia",
+   "stato": "mezzo_fatto",
+   "effort": 2,
+   "fit": 9,
+   "tipo": "acquisizione",
+   "nota": "già girato, 50% montato: manca voice over — riapre il filone foto"
+  },
+  {
+   "id": "cibo_giappone",
+   "titolo": "Cibo in Giappone (girato di dicembre)",
+   "cluster": "cibo",
+   "stato": "girato",
+   "effort": 2,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "usare girato dicembre; konbini fece 12 iscritti"
+  },
+  {
+   "id": "storia_canon",
+   "titolo": "Storia di CANON",
+   "cluster": "fotografia",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 10,
+   "tipo": "acquisizione",
+   "nota": "brand-story + filone foto = il colpo grosso; 'dominio mercato fotografico' = 37 iscritti"
+  },
+  {
+   "id": "nikon_museum",
+   "titolo": "Nikon Museum (+ storia Nikon)",
+   "cluster": "fotografia",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 9,
+   "tipo": "acquisizione",
+   "nota": "ref YouTube; gemello Canon, serie brand foto"
+  },
+  {
+   "id": "fotografia_film",
+   "titolo": "Fotografia a pellicola in Giappone",
+   "cluster": "fotografia",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 9,
+   "tipo": "acquisizione",
+   "nota": "nostalgia + arte, collega serie negozi dic 25"
+  },
+  {
+   "id": "grandi_fotografi",
+   "titolo": "Grandi fotografi giapponesi (monografia seriale)",
+   "cluster": "fotografia",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "Araki già fatto; Moriyama, Kawauchi... evergreen seriale"
+  },
+  {
+   "id": "fotografa_giapponese",
+   "titolo": "Fotografa giapponese (ref video)",
+   "cluster": "fotografia",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "dentro la serie grandi fotografi"
+  },
+  {
+   "id": "noroi",
+   "titolo": "Noroi: il found footage che terrorizza (su Shudder)",
+   "cluster": "jhorror",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "Halloween s2"
+  },
+  {
+   "id": "iceberg_movie",
+   "titolo": "Iceberg dei film giapponesi",
+   "cluster": "jhorror",
+   "stato": "da_fare",
+   "effort": 2,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "formato iceberg = clic; Halloween s2"
+  },
+  {
+   "id": "battle_royale",
+   "titolo": "Battle Royale",
+   "cluster": "jhorror",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "cult; Halloween s2"
+  },
+  {
+   "id": "cannibale_kyoto",
+   "titolo": "Il cannibale di Kyoto (true crime)",
+   "cluster": "truecrime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "Halloween s2"
+  },
+  {
+   "id": "murders_disturbing",
+   "titolo": "Gli omicidi più disturbanti del Giappone",
+   "cluster": "truecrime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "ref video internazionale; 31/10/2026 è SABATO"
+  },
+  {
+   "id": "catturata_20anni",
+   "titolo": "Catturata dopo 20 anni di fuga (true crime)",
+   "cluster": "truecrime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "ref IG; storia fortissima"
+  },
+  {
+   "id": "netflix_3film",
+   "titolo": "3 film su Netflix prima di andare in Giappone",
+   "cluster": "jhorror",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "SEO Netflix; doppione nel CSV (2 volte)"
+  },
+  {
+   "id": "young_homeless",
+   "titolo": "Young homeless in Giappone",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "cuore",
+   "nota": "sociale/riflessivo"
+  },
+  {
+   "id": "bullismo_anni80",
+   "titolo": "Bullismo e criminalità minorile anni '80",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "dark-society, aggancia true crime"
+  },
+  {
+   "id": "metabolismo",
+   "titolo": "Il Metabolismo (architettura giapponese)",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "cuore",
+   "nota": "Nakagin ecc.; colto, evergreen"
+  },
+  {
+   "id": "geografia_tokyo",
+   "titolo": "Geografia di Tokyo: come funziona la città",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 2,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "preludio SERIE quartieri = motore playlist"
+  },
+  {
+   "id": "giappone_ricco",
+   "titolo": "Perché il Giappone è ricco",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "ref video internazionale enorme; macro evergreen"
+  },
+  {
+   "id": "scams_10",
+   "titolo": "10 truffe in Giappone (e come evitarle)",
+   "cluster": "viaggio_pratico",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "evergreen ricerca; ref video internazionale"
+  },
+  {
+   "id": "cosa_sapere",
+   "titolo": "Cosa sapere prima di andare in Giappone",
+   "cluster": "viaggio_pratico",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "evergreen ricerca perpetua"
+  },
+  {
+   "id": "5cose_non_servono",
+   "titolo": "5 cose che NON ti servono in Giappone",
+   "cluster": "viaggio_pratico",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "gemello del '5 oggetti' che funzionò"
+  },
+  {
+   "id": "natale_capodanno",
+   "titolo": "Natale e Capodanno in Giappone",
+   "cluster": "viaggio_pratico",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "stagionale dicembre; 2025 coperto solo in parte"
+  },
+  {
+   "id": "toriyama",
+   "titolo": "Toriyama: la Genkidama che ha unito il mondo",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "anniversario morte 1° marzo"
+  },
+  {
+   "id": "ghost_shell",
+   "titolo": "Ghost in the Shell",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "ref hugo guerra vox movies; 2026/2027 nuovo film?"
+  },
+  {
+   "id": "sailor_censura",
+   "titolo": "La censura di Sailor Moon in Italia",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "nostalgia italiana fortissima"
+  },
+  {
+   "id": "video_girl_ai",
+   "titolo": "Video Girl AI e i manga anni '80-'90",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "cuore",
+   "nota": "nostalgia retrò"
+  },
+  {
+   "id": "ado",
+   "titolo": "ADO: la popstar senza volto (monografia)",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "doppione nel CSV (2 voci) = unificare"
+  },
+  {
+   "id": "anime_famosi",
+   "titolo": "Gli anime più famosi nel mondo — non ci crederai",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "divulgazione"
+  },
+  {
+   "id": "sorayama",
+   "titolo": "Hajime Sorayama",
+   "cluster": "anime",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 5,
+   "tipo": "cuore",
+   "nota": "estetica cyber; ponte con fotografia/arte"
+  },
+  {
+   "id": "storia_sega",
+   "titolo": "Storia di SEGA",
+   "cluster": "brand",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "nostalgia gaming"
+  },
+  {
+   "id": "storia_asics",
+   "titolo": "Storia di ASICS (dalle ceneri di Onitsuka)",
+   "cluster": "brand",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "brand-story"
+  },
+  {
+   "id": "nakamura_led",
+   "titolo": "Nakamura: il LED blu che valeva un Nobel",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "ref TikTok; scienza+rivincita"
+  },
+  {
+   "id": "puroresu",
+   "titolo": "Puroresu e Rikidozan",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 5,
+   "tipo": "cuore",
+   "nota": "nicchia; pubblico maschile 45-59"
+  },
+  {
+   "id": "memento_giapponese",
+   "titolo": "Memento giapponese",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 5,
+   "tipo": "cuore",
+   "nota": "ref YouTube da chiarire"
+  },
+  {
+   "id": "sake_omotenashi",
+   "titolo": "Sake con Omotenashi Anime",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 2,
+   "fit": 4,
+   "tipo": "cuore",
+   "nota": "collab"
+  },
+  {
+   "id": "annachiara",
+   "titolo": "Intervista @annachiara_santoro",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 2,
+   "fit": 4,
+   "tipo": "cuore",
+   "nota": "ospite"
+  },
+  {
+   "id": "dieci_canali",
+   "titolo": "Dieci migliori canali sul Giappone",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 4,
+   "tipo": "cuore",
+   "nota": "community building"
+  },
+  {
+   "id": "qa_community",
+   "titolo": "Domande e risposte con la community",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 3,
+   "tipo": "cuore",
+   "nota": "leggero; meglio quando il canale cresce"
+  },
+  {
+   "id": "hokkaido_extra",
+   "titolo": "EXTRA mensile: preparazione Hokkaido Van v2 (ago 2027)",
+   "cluster": "viaggio",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 5,
+   "tipo": "cuore",
+   "nota": "rubrica mensile parallela, da gennaio 2027"
+  }
+ ]
+}

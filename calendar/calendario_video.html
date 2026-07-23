@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GnM — Cronoprogramma Editoriale</title>
+<style>
+:root{--ink:#141210;--paper:#faf7f2;--red:#c8102e;--mut:#6b645c;--line:#e6ddd0;--ok:#1d7a3a;--warn:#b9741e;--blue:#2e4f8a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:14.5px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:28px 20px 80px}
+h1{font-size:26px;margin:0;letter-spacing:-.02em}
+.sub{color:var(--mut);margin:4px 0 14px;font-size:13px}
+h2{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin:30px 0 8px;font-weight:800}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;display:flex;gap:12px;align-items:flex-start}
+.card.done{opacity:.45}
+.card.locked-off{outline:2px solid var(--warn)}
+.card.conflict{outline:2px solid var(--red)}
+.date{width:86px;flex:none;font-weight:800;color:var(--red);font-variant-numeric:tabular-nums;padding-top:2px}
+.date small{display:block;font-weight:400;color:var(--mut)}
+.body{flex:1;min-width:0}
+.tit{font-weight:700;font-size:15px}
+.nota{font-size:12.5px;color:var(--mut);margin-top:2px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.b{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid var(--line);background:#faf7f2}
+.b.trend{border-color:#c8102e;color:#c8102e}
+.b.fit{border-color:#1d7a3a;color:#1d7a3a}
+.b.eff{color:var(--mut)}
+.b.acq{background:var(--red);border-color:var(--red);color:#fff}
+.b.cuo{background:#efe9df;color:#5a5248}
+.b.rep{background:#3b3630;border-color:#3b3630;color:#fff}
+.b.gir{background:#e7f0e9;border-color:#bcd8c3;color:#1d7a3a}
+.b.season{border-color:var(--warn);color:var(--warn)}
+.b.pod{background:var(--blue);border-color:var(--blue);color:#fff}
+.b.podA{border-color:var(--blue);color:var(--blue)}
+.b.buf-ok{background:#e7f0e9;border-color:#1d7a3a;color:#1d7a3a}
+.b.buf-thin{background:#fdf3e0;border-color:var(--warn);color:#7a5a1e}
+.b.buf-bad{background:var(--red);border-color:var(--red);color:#fff}
+.lav{font-size:12px;color:#7a5a1e;margin-top:5px}
+.lav b{color:#5a4212}
+.ctrl{display:flex;flex-direction:column;gap:4px;flex:none}
+.ctrl button{border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer;font-size:12px;padding:3px 8px}
+.ctrl button:hover{background:#f2ece2}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;align-items:center}
+.toolbar button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px}
+.toolbar .active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.month-sep{margin:20px 0 6px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);border-bottom:2px solid var(--line);padding-bottom:4px}
+.hint{font-size:12px;color:var(--mut);background:#fff;border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin:10px 0}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 0;font-size:12.5px;color:var(--mut)}
+.stats b{color:var(--ink)}
+.off-card{background:#fff8ec;border:1px solid #ecd9b0;border-radius:10px;padding:8px 14px;margin:6px 0;font-size:13px;display:flex;gap:10px;align-items:baseline}
+.off-card .when{font-weight:800;color:#7a5a1e;width:170px;flex:none}
+.gantt{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;margin:10px 0;overflow-x:auto}
+.g-row{display:flex;align-items:center;gap:8px;margin:3px 0}
+.g-lab{width:220px;flex:none;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g-track{position:relative;flex:1;height:16px;background:#f4efe6;border-radius:4px;min-width:560px}
+.g-bar{position:absolute;top:2px;height:12px;border-radius:3px;background:#d9b96a}
+.g-bar.mont{background:#e08a3c}
+.g-bar.heavy{background:#c8102e}
+.g-pub{position:absolute;top:-1px;width:3px;height:18px;background:var(--ink);border-radius:2px}
+.g-fer{position:absolute;top:0;height:16px;background:rgba(120,110,100,.18)}
+.g-months{position:relative;height:16px;margin-left:228px;min-width:560px;font-size:10px;color:var(--mut)}
+.g-months span{position:absolute;top:0;border-left:1px solid var(--line);padding-left:3px}
+.concept{background:#fff;border-left:4px solid var(--red);border-radius:0 10px 10px 0;padding:12px 16px;margin:12px 0;font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Cronoprogramma Editoriale — Giappone nel Mondo</h1>
+<p class="sub">v2 · 23/07/2026 · DUE BINARI SEPARATI: le uscite non si fermano mai, il lavoro sì</p>
+
+<div class="concept">
+<b>Il modello:</b> ogni video ha DUE date — quando lo LAVORI (binario produzione, con le tue ferie dentro) e quando ESCE (sabato 17:00 IT, programmato su YouTube — mai più "finito oggi, esce domani"). Il <b>buffer</b> è l'anticipo tra "pronto" e "esce": cresce da agosto, e nelle <b>ferie di dicembre (14/12 → 3/1) tu NON lavori ma escono 3 video già pronti</b>. Agosto = uscite light e lasche (estate italiana: la gente guarda meno YouTube) mentre TU accumuli l'autunno. Due binari di lavoro in parallelo: <span style="color:#e08a3c">■ montaggio</span> (girati) e <span style="color:#b9962a">■ scrittura/podcast</span>.
+</div>
+
+<h2>Officina — cosa lavori questa settimana (per binario)</h2>
+<div id="officina"></div>
+
+<h2>Cronoprogramma (lavorazioni + uscite + ferie)</h2>
+<div class="gantt" id="gantt"></div>
+<div class="stats" id="bufstats"></div>
+
+<h2>Rilanci mensili (solo nuovo pacchetto, nessuno slot)</h2>
+<div class="hint" style="border-style:solid">
+<b>Settembre</b>: Kitakyushu/Capitan Harlock — retention 82%, mai distribuito: nuovo titolo+thumbnail, playlist anime, schede.<br>
+<b>Ottobre</b>: Momiji — la sua stagione: nuovo pacchetto (il vecchio bruciò 155k impressioni, CTR 0,48%).<br>
+<b>Dicembre</b>: 47 Ronin — l'anniversario della vendetta è il 14/12 (il video esiste già: uscì il 18/12/25).
+</div>
+
+<div class="toolbar" id="filters"></div>
+<div class="stats" id="stats"></div>
+<div id="list"></div>
+
+<h2>Backlog — fuori dal piano, col MOTIVO</h2>
+<div id="backlog"></div>
+
+<h2>Già fatti scoperti nel confronto semantico (lista vs canale)</h2>
+<div class="hint" style="border-style:solid">
+<b>Intervista Annachiara Santoro</b> = GIÀ USCITA il 10/01/26 come «Vita a Tokyo - Studiare in una Senmon Gakko» (è l'intervista podcast a Santoro). ·
+<b>Dieci migliori canali sul Giappone</b> = in gran parte coperto da «Come organizziamo il viaggio» (26/01, rassegna canali e risorse): in backlog solo come eventuale formato-classifica. ·
+<b>47 Ronin</b> esiste già (18/12/25) → è il rilancio di dicembre, non un video nuovo. ·
+Daruma≈Kokeshi/portafortuna (09/11/25) · scams-foto = Tokyo Photo-Shopping (02/02) · 5 oggetti, budget van, dicembre consigli, Araki, Halloween S1, true crime: fatti (v. analisi).
+</div>
+
+<div class="toolbar">
+<button onclick="exportJson()">Esporta stato (JSON)</button>
+<button onclick="if(confirm('Ripristinare il piano originale?')){localStorage.removeItem(KEY);location.reload()}">Reset piano</button>
+</div>
+<p class="sub">Ferie produzione: 10–16/08 (ferragosto) e 14/12–03/01 (feste) — IPOTESI modificabili nel blocco FERIE in cima allo script. Tempi: E1=1 settimana di lavoro, E2=2, speciali dichiarati (Inunaki 8). Punteggi: T trend · F fit canale · E effort.</p>
+</div>
+
+<script>
+const KEY='gnm_cal_v2';
+// ── FERIE PRODUZIONE (Luca non lavora; le uscite continuano dal buffer) ──
+const FERIE=[['2026-08-10','2026-08-16'],['2026-12-14','2027-01-03']];
+// ── SLOT USCITA (densità progettata: agosto lasco, poi settimanale) ──
+const SLOTS=['2026-07-25','2026-08-08','2026-08-22','2026-09-05','2026-09-12','2026-09-19','2026-09-26',
+'2026-10-03','2026-10-10','2026-10-17','2026-10-24','2026-10-31','2026-11-07','2026-11-14','2026-11-21','2026-11-28',
+'2026-12-05','2026-12-12','2026-12-19','2026-12-26','2027-01-02','2027-01-09','2027-01-16','2027-01-23','2027-01-30',
+'2027-02-06','2027-02-13','2027-02-20','2027-02-27','2027-03-06','2027-03-13','2027-03-20','2027-03-27','2027-04-03','2027-04-10'];
+// ── PIANO (ordine = assegnazione agli slot; tr: mont|scrit) ──
+const PLAN={
+ queue:[
+  {id:'jvan_finale',tr:'mont',lead:1,inCorso:1,pod:0,t:'Japan Van — finale del viaggio',cl:'viaggio',tipo:'cuore',T:5,F:4,E:3,girato:1,nota:'Chiusura serie (montaggio già in corso). Poi playlist Jvan in vetrina.'},
+  {id:'ghost_shell',tr:'scrit',pod:2,t:'Ghost in the Shell: la profezia che si è avverata',cl:'anime',tipo:'acq',T:8,F:7,E:1,nota:'Onda della serie Prime (dal 7/7). Uscita estiva LIGHT: podcast puro.'},
+  {id:'sara_resoconto',tr:'scrit',pod:2,t:'Resoconto del viaggio con Sara + annuncio nuovo viaggio',cl:'community',tipo:'cuore',T:4,F:5,E:1,nota:'In studio. Chiude l\'era Jvan; l\'annuncio è il gancio. Agosto lasco: 2 sole uscite.'},
+  {id:'manga_roma',tr:'mont',pod:2,t:'Il negozio di manga più famoso di Roma (intervista)',cl:'community',tipo:'rep',T:5,F:4,E:2,girato:1,nota:'Reputazione: ESCE a inizio settembre (Italia rientrata) ma si MONTA a fine luglio. Pronto con un mese di anticipo.'},
+  {id:'storia_canon',tr:'scrit',pod:2,t:'Storia di CANON: come il Giappone ha conquistato la fotografia',cl:'foto',tipo:'acq',T:7,F:10,E:1,nota:'Il colpo grosso del filone foto (37 iscritti col video sul mercato fotografico). Si scrive ad agosto, esce a settembre.'},
+  {id:'fukushima',tr:'mont',lead:2,pod:2,t:'Fukushima: il racconto (dal girato + il libro ricevuto)',cl:'societa',tipo:'acq',T:8,F:8,E:2,girato:1,season:9,nota:'IMPEGNO settembre (libro da citare). Montaggio dopo ferragosto, esce il 19/9 col buffer.'},
+  {id:'scams_10',tr:'scrit',pod:2,t:'10 truffe in Giappone (e come evitarle)',cl:'pratico',tipo:'acq',T:9,F:7,E:1,nota:'Picco ricerche viaggio ago-set: chiude settembre.'},
+  {id:'nakamura_led',tr:'scrit',pod:2,t:'Nakamura: il LED blu che valeva un Nobel',cl:'societa',tipo:'acq',T:6,F:6,E:1,season:10,nota:'Nobel week (5-12/10). In italiano non l\'ha raccontata nessuno.'},
+  {id:'noroi',tr:'scrit',pod:2,t:'Halloween S2 · Noroi: il found footage più spaventoso del Giappone',cl:'horror',tipo:'acq',T:8,F:8,E:1,season:10,nota:'Halloween ep.1 — scritto a settembre, esce il 10/10.'},
+  {id:'battle_royale',tr:'scrit',pod:2,t:'Halloween S2 · Battle Royale: il film che il Giappone volle vietare',cl:'horror',tipo:'acq',T:8,F:8,E:1,season:10,nota:'Halloween ep.2.'},
+  {id:'murders_disturbing',tr:'scrit',pod:2,t:'Halloween S2 · Gli omicidi più disturbanti del Giappone',cl:'truecrime',tipo:'acq',T:8,F:8,E:1,season:10,nota:'Halloween ep.3: il true crime STA nella stagione horror, non sparso a novembre.'},
+  {id:'inunaki',tr:'mont',lead:8,pod:1,t:'Halloween S2 FINALE · Inunaki: ci sono stato davvero',cl:'horror',tipo:'acq',T:9,F:9,E:3,girato:1,season:10,nota:'Girato TUO nel luogo maledetto più famoso del Giappone. Montaggio 8 settimane sul binario montaggio, esce il 31/10: SABATO di Halloween.'},
+  {id:'akihabara_5cose',tr:'mont',pod:0,t:'5 negozi da vedere ad Akihabara',cl:'viaggio',tipo:'acq',T:8,F:6,E:2,girato:1,nota:'Girato a marzo. Novembre CAMBIA REGISTRO dopo l\'horror: si torna a Tokyo.'},
+  {id:'storia_sega',tr:'scrit',pod:2,t:'Storia di SEGA: ascesa e caduta di un impero',cl:'brand',tipo:'acq',T:7,F:7,E:1,nota:'40 anni di OutRun/Fantasy Zone, revival in corso. Nostalgia pre-Natale.'},
+  {id:'geografia_tokyo',tr:'scrit',lead:2,pod:1,t:'Come funziona Tokyo: geografia e quartieri della megalopoli',cl:'societa',tipo:'acq',T:7,F:8,E:2,nota:'Lancio serie quartieri = motore playlist (40% del watch time).'},
+  {id:'cibo_giappone',tr:'mont',pod:0,t:'Il cibo in Giappone che non ti aspetti (girato di dicembre)',cl:'cibo',tipo:'acq',T:9,F:7,E:2,girato:1,nota:'Konbini trend n.1 2026. Chiude novembre col girato che c\'è già.'},
+  {id:'libri_foto_tokyo',tr:'mont',pod:1,t:'Dove comprare libri fotografici a Tokyo',cl:'foto',tipo:'acq',T:6,F:9,E:2,girato:1,nota:'50% montato. Apre il DICEMBRE FOTOGRAFICO: anniversario del filone che ha fatto esplodere il canale (dic 25).'},
+  {id:'natale_capodanno',tr:'scrit',pod:2,t:'Natale e Capodanno in Giappone: la guida',cl:'pratico',tipo:'acq',T:8,F:6,E:1,season:12,nota:'Esce il 12/12 (quando si cerca), ma è SCRITTO A FINE SETTEMBRE: a dicembre tu sei in ferie.'},
+  {id:'grandi_fotografi',tr:'scrit',pod:2,t:'Daido Moriyama e i grandi fotografi giapponesi',cl:'foto',tipo:'acq',T:6,F:8,E:1,season:12,nota:'Dicembre fotografico ep.2 (Araki già fatto). La settimana del rilancio 47 Ronin (14/12).'},
+  {id:'sailor_censura',tr:'scrit',pod:2,t:'La censura di Sailor Moon in Italia (30 anni dopo)',cl:'anime',tipo:'acq',T:7,F:7,E:1,nota:'Sotto le feste, famiglie a casa, nostalgia 45-59. Pronto da fine ottobre: esce mentre sei in ferie.'},
+  {id:'video_girl_ai',tr:'scrit',pod:2,t:'Video Girl AI e i manga anni \'80-\'90',cl:'anime',tipo:'cuore',T:6,F:6,E:1,nota:'Retrò leggero tra Natale e Capodanno. Esce dal buffer: tu non stai lavorando.'},
+  {id:'young_homeless',tr:'scrit',pod:2,t:'I senzatetto invisibili del Giappone (net café refugees)',cl:'societa',tipo:'cuore',T:7,F:7,E:1,season:1,nota:'La TUA idea originale: pezzo sociale a Capodanno (2/1). Scritto a novembre, esce dalle ferie.'},
+  {id:'cosa_sapere',tr:'scrit',pod:2,t:'Cosa sapere prima di andare in Giappone',cl:'pratico',tipo:'acq',T:9,F:7,E:1,season:1,nota:'Picco ricerche gen-mar (sakura 2027).'},
+  {id:'nikon_museum',tr:'scrit',pod:2,t:'Nikon: storia e museo del gigante della fotografia',cl:'foto',tipo:'acq',T:6,F:9,E:1,nota:'Gemello di Canon: la serie brand-foto continua a gennaio.'},
+  {id:'catturata_20anni',tr:'scrit',pod:2,t:'Catturata dopo 20 anni di fuga',cl:'truecrime',tipo:'acq',T:8,F:8,E:1,nota:'True crime d\'INVERNO, a 3 mesi da Halloween: registro nuovo, non coda.'},
+  {id:'giappone_ricco',tr:'scrit',pod:2,t:'Perché il Giappone è ricco',cl:'societa',tipo:'acq',T:8,F:8,E:1,nota:'Macro evergreen: ultima scrittura prima delle ferie di dicembre.'},
+  {id:'metabolismo',tr:'scrit',pod:2,t:'Il Metabolismo: l\'architettura giapponese che sognava il futuro',cl:'societa',tipo:'cuore',T:6,F:6,E:1,nota:'Colto, evergreen, zero concorrenza IT.'},
+  {id:'cannibale_kyoto',tr:'scrit',pod:2,t:'Il cannibale di Kyoto',cl:'truecrime',tipo:'acq',T:8,F:8,E:1,nota:'Secondo true crime invernale, ben distanziato da ottobre.'},
+  {id:'toriyama',tr:'scrit',pod:2,t:'Toriyama: la Genkidama che ha unito il mondo',cl:'anime',tipo:'acq',T:7,F:7,E:1,season:2,nota:'Anniversario della morte 1/3: esce l\'ultimo sabato di febbraio.'},
+  {id:'5cose_non_servono',tr:'scrit',pod:2,t:'5 cose che NON ti servono in Giappone',cl:'pratico',tipo:'acq',T:7,F:6,E:1,season:3,nota:'Pre-sakura, gemello del "5 oggetti" che funzionò.'},
+  {id:'netflix_3film',tr:'scrit',pod:2,t:'3 film su Netflix da vedere prima del Giappone',cl:'horror',tipo:'acq',T:6,F:6,E:1,nota:'SEO Netflix pre-partenze primavera (doppione del CSV unificato).'},
+  {id:'ado',tr:'scrit',pod:2,t:'ADO: la popstar che nessuno ha mai visto in faccia',cl:'anime',tipo:'acq',T:6,F:6,E:1,nota:'Monografia (2 voci del CSV unificate).'},
+  {id:'bullismo_anni80',tr:'scrit',pod:2,t:'Bullismo e criminalità minorile nel Giappone anni \'80',cl:'societa',tipo:'acq',T:7,F:7,E:1,nota:'Dark-society di primavera.'}
+ ],
+ backlog:[
+  {id:'iceberg_movie',pod:2,t:'L\'iceberg dei film giapponesi disturbanti',cl:'horror',tipo:'acq',T:8,F:7,E:2,nota:'MOTIVO: Halloween 2026 ha già 5 slot col finale Inunaki (girato tuo > podcast su film). Riserva n.1 per Halloween 2027.'},
+  {id:'anime_famosi',pod:2,t:'Gli anime più famosi nel mondo',cl:'anime',tipo:'acq',T:6,F:6,E:1,nota:'MOTIVO: 5 slot anime già in piano (GitS, Sailor, Video Girl, Toriyama, ADO); concorrenza IT alta. Jolly.'},
+  {id:'storia_asics',pod:2,t:'Storia di ASICS (dalle ceneri di Onitsuka)',cl:'brand',tipo:'acq',T:7,F:6,E:1,nota:'MOTIVO: lo slot brand generalista 2026 va a SEGA (che ha l\'anniversario). ASICS = riserva brand.'},
+  {id:'sorayama',pod:2,t:'Hajime Sorayama',cl:'anime',tipo:'cuore',T:5,F:5,E:1,nota:'MOTIVO: nicchia arte; meglio dentro la serie grandi fotografi/artisti più avanti.'},
+  {id:'puroresu',pod:2,t:'Puroresu e Rikidozan',cl:'societa',tipo:'cuore',T:4,F:5,E:1,nota:'MOTIVO: trend 4/10 (indagine), nessun aggancio temporale; solo se avanza spazio.'},
+  {id:'memento_giapponese',pod:2,t:'Memento giapponese',cl:'societa',tipo:'cuore',T:5,F:5,E:1,nota:'MOTIVO: riferimento da chiarire con Luca prima di stimare qualsiasi cosa.'},
+  {id:'sake_omotenashi',pod:1,t:'Sake con Omotenashi Anime (collab)',cl:'community',tipo:'cuore',T:5,F:4,E:2,nota:'MOTIVO: dipende dall\'agenda di Simone — si infila quando c\'è la data (precedente: la reaction "Dalle Alpi a Shinjuku").'},
+  {id:'dieci_canali',pod:2,t:'Dieci migliori canali sul Giappone',cl:'community',tipo:'cuore',T:5,F:4,E:1,nota:'MOTIVO: già in gran parte coperto da "Come organizziamo il viaggio" (26/01). Solo se rifatto come formato-classifica.'},
+  {id:'qa_community',pod:1,t:'Q&A con la community',cl:'community',tipo:'cuore',T:3,F:3,E:1,nota:'MOTIVO: ha senso con più pubblico; rivalutare a primavera 2027.'},
+  {id:'hokkaido_extra',pod:2,t:'EXTRA mensile: preparazione Hokkaido Van v2',cl:'viaggio',tipo:'cuore',T:5,F:5,E:1,nota:'Rubrica PARALLELA mensile da gennaio 2027 (non consuma i sabati): si attiva quando il buffer è ≥3 settimane.'}
+ ]
+};
+let S = JSON.parse(localStorage.getItem(KEY)||'null') || {order:PLAN.queue.map(x=>x.id), done:{}, parked:[], userkept:[]};
+PLAN.queue.forEach((x,i)=>{ if(!S.order.includes(x.id) && !S.parked.includes(x.id) && !S.done[x.id]) S.order.splice(Math.min(i,S.order.length),0,x.id); });
+const ALL={}; [...PLAN.queue,...PLAN.backlog].forEach(x=>ALL[x.id]=x);
+const CLNAMES={foto:'Fotografia',horror:'J-Horror',truecrime:'True Crime',anime:'Anime/Pop',societa:'Società',pratico:'Viaggio pratico',viaggio:'Viaggio/girato',cibo:'Cibo',brand:'Brand',community:'Community'};
+const MESI=['','gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+let filter='';
+function save(){localStorage.setItem(KEY, JSON.stringify(S))}
+function D(s){return new Date(s+'T12:00:00')}
+function fmt(d){return d.getDate().toString().padStart(2,'0')+'/'+(d.getMonth()+1).toString().padStart(2,'0')}
+function fmtY(d){return fmt(d)+'/'+d.getFullYear().toString().slice(2)}
+function leadOf(it){return it.lead || ({1:1,2:2,3:6}[it.E]||1)}
+function inFerie(d){return FERIE.some(([a,b])=>d>=D(a)&&d<=D(b))}
+function nextWorkMonday(d){
+  const x=new Date(d); x.setHours(12,0,0,0);
+  while(x.getDay()!==1) x.setDate(x.getDate()+1);
+  while(inFerie(x)) x.setDate(x.getDate()+7);
+  return x;
+}
+function podBadge(it){ if(it.pod===2)return '<span class="b pod">→ podcast</span>'; if(it.pod===1)return '<span class="b podA">podcast adattabile</span>'; return ''; }
+
+function schedule(){
+  const items=S.order.map(id=>ALL[id]).filter(Boolean);
+  let si=0; const rows=[];
+  items.forEach(it=>{
+    const done=S.done[it.id];
+    let rel;
+    if(done){ rel=new Date(done); }
+    else {
+      if(si<SLOTS.length) rel=D(SLOTS[si]);
+      else { rel=D(SLOTS[SLOTS.length-1]); rel.setDate(rel.getDate()+7*(si-SLOTS.length+1)); }
+      si++;
+    }
+    rows.push({it, rel, done: !!done});
+  });
+  const cursors={mont: nextWorkMonday(new Date()), scrit: nextWorkMonday(new Date())};
+  rows.filter(r=>!r.done).forEach(r=>{
+    const tr=r.it.tr||'scrit';
+    if(r.it.inCorso){ const t0=new Date(); t0.setHours(12,0,0,0); r.wstart=t0; r.wend=new Date(r.rel.getTime()-86400000); r.buffer=0.1; cursors[tr]=nextWorkMonday(r.rel); return; }
+    const start=new Date(cursors[tr]);
+    let need=leadOf(r.it);
+    const w=new Date(start);
+    let end=new Date(start);
+    while(need>0){
+      if(!inFerie(w)) { need--; end=new Date(w); }
+      w.setDate(w.getDate()+7);
+    }
+    end.setDate(end.getDate()+4); // venerdì dell'ultima settimana lavorata
+    r.wstart=start; r.wend=end;
+    cursors[tr]=nextWorkMonday(new Date(end.getTime()+3*86400000));
+    r.buffer=Math.round((r.rel-end)/86400000/7*10)/10;
+  });
+  return rows;
+}
+
+function render(){
+  const rows=schedule();
+  const list=document.getElementById('list'); list.innerHTML='';
+  let lastMonth=-1,nAcq=0,nCuo=0,pend=0;
+  rows.forEach(r=>{
+    const it=r.it, d=r.rel;
+    if(!r.done){pend++; if(it.tipo==='acq')nAcq++; else nCuo++;}
+    const mKey=d.getMonth()+d.getFullYear()*12;
+    if(mKey!==lastMonth && (!filter||it.cl===filter)){ lastMonth=mKey; const sep=document.createElement('div'); sep.className='month-sep'; sep.textContent=MESI[d.getMonth()+1]+' '+d.getFullYear(); list.appendChild(sep); }
+    if(filter && it.cl!==filter) return;
+    const offSeason = it.season && !r.done && (d.getMonth()+1)!==it.season;
+    const conflict = !r.done && r.buffer!==undefined && r.buffer<0;
+    const bufB = r.done||r.buffer===undefined?'' : (conflict?'<span class="b buf-bad">⚠ pronto DOPO l\'uscita</span>' : (r.buffer<1?('<span class="b buf-thin">buffer '+r.buffer+' sett.</span>'):('<span class="b buf-ok">pronto '+r.buffer+' sett. prima</span>')));
+    const c=document.createElement('div');
+    c.className='card'+(r.done?' done':'')+(offSeason?' locked-off':'')+(conflict?' conflict':'');
+    c.innerHTML=`
+      <div class="date">${fmtY(d)}<small>${r.done?'pubblicato':'esce (programmato)'}</small></div>
+      <div class="body">
+        <div class="tit">${it.t}</div>
+        <div class="nota">${it.nota||''}</div>
+        ${r.wstart?`<div class="lav">🔧 si lavora: <b>${fmt(r.wstart)} → ${fmt(r.wend)}</b> · binario ${it.tr==='mont'?'montaggio':'scrittura'} · giorno 1 = titolo+thumbnail</div>`:''}
+        <div class="badges">${bufB}${podBadge(it)}<span class="b ${it.tipo==='acq'?'acq':it.tipo==='rep'?'rep':'cuo'}">${it.tipo==='acq'?'porta gente':it.tipo==='rep'?'reputazione':'cuore'}</span><span class="b">${CLNAMES[it.cl]||it.cl}</span><span class="b trend">T ${it.T}</span><span class="b fit">F ${it.F}</span><span class="b eff">E ${it.E}</span>${it.girato?'<span class="b gir">già girato</span>':''}${it.season?`<span class="b season">finestra: ${MESI[it.season]}</span>`:''}${offSeason?'<span class="b season">⚠ fuori finestra</span>':''}</div>
+      </div>
+      <div class="ctrl">
+        <button onclick="mark('${it.id}')">${r.done?'annulla ✓':'✓'}</button>
+        <button onclick="move('${it.id}',-1)">↑</button>
+        <button onclick="move('${it.id}',1)">↓</button>
+        <button onclick="park('${it.id}')">⏸</button>
+      </div>`;
+    list.appendChild(c);
+  });
+  // officina
+  const off=document.getElementById('officina'); off.innerHTML='';
+  const today=new Date(); today.setHours(0,0,0,0);
+  const soon=new Date(today); soon.setDate(soon.getDate()+7);
+  if(inFerie(today)){ const h=document.createElement('div'); h.className='hint'; h.innerHTML='<b>SEI IN FERIE.</b> Nessuna lavorazione: le uscite escono dal buffer.'; off.appendChild(h); }
+  ['mont','scrit'].forEach(tr=>{
+    const act=rows.filter(r=>!r.done&&(r.it.tr||'scrit')===tr&&r.wstart&&r.wstart<=soon).sort((a,b)=>a.wstart-b.wstart).slice(0,2);
+    act.forEach(r=>{
+      const started=r.wstart<=today;
+      const c=document.createElement('div'); c.className='off-card';
+      c.innerHTML=`<span class="when">${tr==='mont'?'MONTAGGIO':'SCRITTURA'} · ${started?'in corso':'da '+fmt(r.wstart)}</span><span><b>${r.it.t}</b> — consegna ${fmt(r.wend)}, esce ${fmt(r.rel)} (buffer ${r.buffer} sett.)</span>`;
+      off.appendChild(c);
+    });
+  });
+  // gantt
+  const g=document.getElementById('gantt'); g.innerHTML='';
+  const g0=new Date(today), g1=new Date(today); g1.setDate(g1.getDate()+24*7);
+  const span=g1-g0;
+  const mrow=document.createElement('div'); mrow.className='g-months';
+  const mc=new Date(g0.getFullYear(),g0.getMonth(),1);
+  while(mc<=g1){ if(mc>=g0){const s=document.createElement('span'); s.style.left=((mc-g0)/span*100)+'%'; s.textContent=MESI[mc.getMonth()+1].slice(0,3); mrow.appendChild(s);} mc.setMonth(mc.getMonth()+1); }
+  g.appendChild(mrow);
+  rows.filter(r=>!r.done&&r.wstart&&r.wstart<=g1&&r.rel>=g0).forEach(r=>{
+    const row=document.createElement('div'); row.className='g-row';
+    const l=Math.max(0,(r.wstart-g0)/span*100), rr=Math.min(100,(r.wend-g0)/span*100);
+    const pubX=Math.min(100,Math.max(0,(r.rel-g0)/span*100));
+    let fer='';
+    FERIE.forEach(([a,b])=>{ const fa=Math.max(0,(D(a)-g0)/span*100), fb=Math.min(100,(D(b)-g0)/span*100); if(fb>0&&fa<100) fer+=`<div class="g-fer" style="left:${fa}%;width:${Math.max(.5,fb-fa)}%"></div>`; });
+    const cls=(r.it.tr==='mont')?(r.it.E>=3?'heavy':'mont'):'';
+    row.innerHTML=`<div class="g-lab" title="${r.it.t}">${r.it.t}</div><div class="g-track">${fer}<div class="g-bar ${cls}" style="left:${l}%;width:${Math.max(1.2,rr-l)}%"></div><div class="g-pub" style="left:${pubX}%" title="esce ${fmt(r.rel)}"></div></div>`;
+    g.appendChild(row);
+  });
+  const gl=document.createElement('div'); gl.className='hint';
+  gl.innerHTML='barra = lavorazione (<span style="color:#c8102e">■</span> montaggio pesante · <span style="color:#e08a3c">■</span> montaggio · <span style="color:#d9b96a">■</span> scrittura) · tacca nera = USCITA · colonne grigie = FERIE (le uscite continuano). La distanza barra→tacca è il buffer.';
+  g.appendChild(gl);
+  // buffer stats
+  const pendRows=rows.filter(r=>!r.done&&r.buffer!==undefined);
+  const minB=pendRows.length?Math.min(...pendRows.map(r=>r.buffer)):0;
+  const conflicts=pendRows.filter(r=>r.buffer<0).length;
+  const ready2=pendRows.filter(r=>r.buffer>=2).length;
+  const ferieRel=pendRows.filter(r=>inFerie(r.rel)).length;
+  document.getElementById('bufstats').innerHTML=`<span>buffer minimo: <b>${minB} sett.</b></span><span>pronti con ≥2 sett. di anticipo: <b>${ready2}/${pendRows.length}</b></span><span>conflitti: <b>${conflicts}</b></span><span>uscite mentre sei in ferie: <b>${ferieRel}</b> (dal buffer)</span>`;
+  // filtri + stats
+  const fbar=document.getElementById('filters'); fbar.innerHTML='';
+  const bAll=document.createElement('button'); bAll.textContent='Tutti'; bAll.className=filter?'':'active'; bAll.onclick=()=>{filter='';render()}; fbar.appendChild(bAll);
+  Object.entries(CLNAMES).forEach(([k,v])=>{const b=document.createElement('button'); b.textContent=v; b.className=filter===k?'active':''; b.onclick=()=>{filter=k;render()}; fbar.appendChild(b);});
+  document.getElementById('stats').innerHTML=`<span>in piano: <b>${pend}</b></span><span>pubblicati: <b>${Object.keys(S.done).length}</b></span><span>equilibrio: <b>${nAcq}</b> porta-gente · <b>${nCuo}</b> cuore/reputazione</span>`;
+  // backlog
+  const bl=document.getElementById('backlog'); bl.innerHTML='';
+  const backlogIds=[...PLAN.backlog.map(x=>x.id).filter(id=>!S.order.includes(id)), ...S.parked.filter(id=>!S.order.includes(id))];
+  [...new Set(backlogIds)].forEach(id=>{
+    const it=ALL[id]; if(!it) return;
+    const c=document.createElement('div'); c.className='card';
+    c.innerHTML=`<div class="body"><div class="tit">${it.t}</div><div class="nota">${it.nota||''}</div><div class="badges">${podBadge(it)}<span class="b">${CLNAMES[it.cl]||it.cl}</span><span class="b trend">T ${it.T}</span><span class="b fit">F ${it.F}</span></div></div>
+      <div class="ctrl"><button onclick="unpark('${id}')">+ in piano</button></div>`;
+    bl.appendChild(c);
+  });
+}
+function mark(id){ if(S.done[id]) delete S.done[id]; else S.done[id]=new Date().toISOString(); save(); render(); }
+function move(id,dir){ const i=S.order.indexOf(id), j=i+dir; if(i<0||j<0||j>=S.order.length) return; [S.order[i],S.order[j]]=[S.order[j],S.order[i]]; save(); render(); }
+function park(id){ S.order=S.order.filter(x=>x!==id); if(!S.parked.includes(id)) S.parked.push(id); save(); render(); }
+function unpark(id){ S.parked=S.parked.filter(x=>x!==id); if(!S.order.includes(id)) S.order.push(id); if(!S.userkept.includes(id)) S.userkept.push(id); save(); render(); }
+function exportJson(){ const blob=new Blob([JSON.stringify({stato:S, esportato:new Date().toISOString()},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='gnm_cronoprogramma_stato.json'; a.click(); }
+render();
+</script>
+</body>
+</html>
