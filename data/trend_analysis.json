@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-24 09:02",
-  "summary": "Il mercato italiano è bloccato su angolature già ciclate per akiya, haikyo, showa e famicom con delta piatti o negativi ovunque. L'unica pressione esterna reale arriva dal blocco akiya in inglese (volume 100) e dalla nostalgia showa (47 EN vs 0 IT), entrambi senza copertura italiana autentica. La rotazione deve puntare su angolature ibride non ancora tentate: akiya come sistema legale-demografico, showa come corpo e performance, famicom come export culturale globale.",
+  "generated_at": "2026-07-27 19:03",
+  "summary": "Il mercato italiano rimane bloccato su angolature già ciclate per tutti i macro-temi (akiya, showa, haikyo, famicom), con delta piatti e saturazione crescente sui titoli già pubblicati negli ultimi 60 giorni. L'unica pressione esterna reale e non ancora intercettata in italiano riguarda la dimensione sistemica del declino demografico rurale giapponese e la nostalgia showa come vissuto quotidiano incarnato. La rotazione editoriale deve spostarsi su angolature ibride ancora libere: il lutto come pratica domestica nelle akiya, la Showa come suono e corpo ASMR, e il documentarismo giapponese come forma di autonarrazione nazionale.",
   "overview": {
     "IT": {
       "trend_count": 5,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 4,
+      "gap_IT_EN_count": 3,
       "delta_trend_count": 0
     },
     "EN": {
-      "trend_count": 7,
+      "trend_count": 6,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 1
     },
@@ -30,16 +30,16 @@
       },
       {
         "keyword": "horror giapponese film giappone OR japan",
-        "volume": 63,
+        "volume": 65,
         "delta": "flat",
-        "delta_value": -1,
+        "delta_value": 2,
         "source": "youtube_velocity"
       },
       {
         "keyword": "case abbandonate giappone giappone OR japan",
-        "volume": 12,
+        "volume": 17,
         "delta": "flat",
-        "delta_value": 2,
+        "delta_value": 5,
         "source": "youtube_velocity"
       },
       {
@@ -73,15 +73,8 @@
         "source": "youtube_velocity"
       },
       {
-        "keyword": "japan documentary 2025",
-        "volume": 61,
-        "delta": "flat",
-        "delta_value": -3,
-        "source": "youtube_velocity"
-      },
-      {
         "keyword": "showa era nostalgia japan",
-        "volume": 47,
+        "volume": 48,
         "delta": "flat",
         "delta_value": 1,
         "source": "youtube_velocity"
@@ -94,17 +87,24 @@
         "source": "youtube_velocity"
       },
       {
+        "keyword": "japan documentary 2025",
+        "volume": 41,
+        "delta": "down",
+        "delta_value": -20,
+        "source": "youtube_velocity"
+      },
+      {
         "keyword": "j-horror explained",
         "volume": 33,
         "delta": "flat",
-        "delta_value": 1,
+        "delta_value": 0,
         "source": "youtube_velocity"
       },
       {
         "keyword": "retro gaming japan famicom culture",
-        "volume": 6,
+        "volume": 5,
         "delta": "flat",
-        "delta_value": 0,
+        "delta_value": -1,
         "source": "youtube_velocity"
       },
       {
@@ -125,30 +125,30 @@
       },
       {
         "keyword": "廃墟 探索",
-        "volume": 34,
-        "delta": "down",
-        "delta_value": -47,
+        "volume": 37,
+        "delta": "flat",
+        "delta_value": 3,
         "source": "youtube_velocity"
       },
       {
         "keyword": "昭和レトロ 動画",
-        "volume": 7,
-        "delta": "down",
-        "delta_value": -9,
+        "volume": 9,
+        "delta": "flat",
+        "delta_value": 2,
         "source": "youtube_velocity"
       },
       {
         "keyword": "空き家 ドキュメンタリー",
-        "volume": 3,
+        "volume": 4,
         "delta": "flat",
-        "delta_value": -5,
+        "delta_value": 1,
         "source": "youtube_velocity"
       },
       {
         "keyword": "過疎化 問題",
         "volume": 2,
         "delta": "flat",
-        "delta_value": -3,
+        "delta_value": 0,
         "source": "youtube_velocity"
       }
     ]
@@ -156,93 +156,97 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Akiya: perché 9 milioni di case non trovano padrone",
+      "title": "Akiya e il lutto: le case abbandonate come spazi del ricordo",
       "category": "Sociale/Culturale",
       "urgency": "Alta",
       "coerenza": 9,
       "saturazione_IT": 2,
-      "saturazione_EN": 9,
-      "saturazione_JP": 3,
-      "delta_coerenza": "up",
+      "saturazione_EN": 8,
+      "saturazione_JP": 5,
+      "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "9 milioni di case abbandonate. Nessuno le vuole. Ecco perché.",
-      "video_title": "Akiya: il Giappone non riesce a regalare le sue case vuote",
-      "podcast_title": "Akiya — perché 9 milioni di case restano abbandonate per sempre",
-      "angolatura": "Non l'estetica delle rovine ma il meccanismo legale, fiscale e demografico che rende impossibile svuotare il paese di case-fantasma",
+      "thumbnail_hook": "9 milioni di case vuote. Dentro ognuna, una vita intera lasciata sola.",
+      "video_title": "Le case abbandonate del Giappone custodiscono i morti",
+      "podcast_title": "Akiya: quando una casa diventa un altare",
+      "angolatura": "Le akiya non sono solo un problema demografico: sono archivi del lutto. La pratica giapponese di lasciare intatte le case dei defunti come tabù culturale e radice del fenomeno.",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Video per impatto visivo, podcast per approfondimento legale-demografico",
+      "motivazione_formato": "Il video regge visivamente, il podcast approfondisce il lato antropologico del lutto.",
       "struttura_atti": [
-        "Atto I: il numero assurdo — 9 milioni di case vuote in un paese sovraffollato, la mappa del problema",
-        "Atto II: il meccanismo — leggi ereditarie, tasse, censimento impossibile, burocrazia che blocca ogni soluzione",
-        "Atto III: chi prova a rompere il sistema — akiya banks, stranieri che comprano a 3000 dollari, comuni che regalano case"
+        "Atto I: il numero assurdo - 9 milioni di case vuote e la domanda che nessuno fa: perché non le vendono?",
+        "Atto II: il tabù del morto in casa - la cultura giapponese del lutto domestico, il concetto di ke-gare e la paura del jiko bukken",
+        "Atto III: chi entra nelle akiya oggi - gli eredi che non tornano, i foreigners che comprano, i team di recupero che trovano vite intatte"
       ],
-      "coverage_IT": "Zero video in italiano con questa angolatura sistemica; solo travel-vlog superficiali sulle case economiche",
-      "opportunita_IT": "Luca può essere il primo in italiano a spiegare il meccanismo strutturale dietro akiya, non solo l'estetica o il prezzo basso",
+      "coverage_IT": "Nessun canale italiano ha trattato l'angolatura del lutto e del tabù culturale dietro le akiya. Solo dati numerici.",
+      "opportunita_IT": "Primo in italiano a connettere akiya, jiko bukken e cultura del lutto giapponese. Differenziazione netta rispetto ai video numerici già esistenti.",
       "esempi_EN": [
         {
           "titolo": "Why Does Japan Have 9,000,000 Abandoned Homes?",
           "url": "https://youtube.com/watch?v=PApu9YFk1HI"
         },
         {
-          "titolo": "I Bought a House for $3,000 in Rural Japan",
-          "url": "https://youtube.com/watch?v=pAujdQFchnE"
+          "titolo": "I Bought a $19,000 Abandoned House in Japan's Mountains!",
+          "url": "https://youtube.com/watch?v=xaXAsgk8XKA"
         }
       ],
-      "angolo_EN": "EN copre il fascino e il prezzo, non spiega mai il perché strutturale del fallimento del sistema",
-      "segnale_JP": "Documentario NHK-style sulla rigenerazione di akiya a Kobe già online, angolo civile non estetico",
+      "angolo_EN": "EN tratta akiya come opportunità economica o avventura. Il lato culturale del lutto è assente anche in inglese.",
+      "segnale_JP": "Video JP su 空き家 mostrano team di recupero che trovano oggetti personali intatti: segnale di interesse per la dimensione umana.",
       "esempi_JP": [
         {
-          "titolo": "【全編配信】この世のすべての建物は直せる…廃屋REBORN",
+          "titolo": "遺品整理中にスタッフが悲鳴。空き家で起きていた'現実的すぎる恐怖' #遺品整理 #空き家 #shorts",
+          "url": "https://youtube.com/watch?v=IHMNVBhuRUI"
+        },
+        {
+          "titolo": "【全編配信】「この世のすべての建物は直せる…」神戸のオンボロ空き家、奇跡の'再生'なるか⁉",
           "url": "https://youtube.com/watch?v=hPIarsJCQtE"
         }
       ],
-      "utilita_JP": "Mostra il frame giapponese autentico: rigenerazione come atto civile, non avventura da straniero"
+      "utilita_JP": "I video JP rivelano che il tabù del jiko bukken è vissuto come paura reale, non solo statistica."
     },
     {
-      "title": "Showa come corpo vivo: la nostalgia che si sente sulla pelle",
+      "title": "Showa ASMR: la nostalgia giapponese che si ascolta",
       "category": "Estetica/Visiva",
       "urgency": "Alta",
       "coerenza": 8,
       "saturazione_IT": 1,
-      "saturazione_EN": 5,
-      "saturazione_JP": 4,
-      "delta_coerenza": "up",
+      "saturazione_EN": 3,
+      "saturazione_JP": 6,
+      "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "L'era Showa non è un museo. È ancora viva. E si sente.",
-      "video_title": "Showa: l'era giapponese che non riesci a dimenticare anche se non l'hai vissuta",
-      "podcast_title": "Showa — perché il Giappone degli anni '60-'80 ossessiona ancora tutti",
-      "angolatura": "La nostalgia showa non come estetica vintage ma come fenomeno neurologico e sociale: perché seduce anche chi non era nato, in Giappone e fuori",
+      "thumbnail_hook": "Giappone 1985. Un uomo solo in un appartamento di periferia. Nessuno lo ricorda. Nessuno lo ha dimenticato.",
+      "video_title": "Showa come suono: la nostalgia giapponese che si ascolta",
+      "podcast_title": "Dentro la domenica Showa: il Giappone che si ricorda coi sensi",
+      "angolatura": "La nostalgia Showa non è solo estetica visiva ma sensoriale: l'ASMR Showa giapponese come forma di memoria corporea, dai suoni della danchi ai rumori del quartiere degli anni 80.",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "La dimensione sensoriale e psicologica si racconta meglio con voce e narrazione densa",
+      "motivazione_formato": "Il formato audio è coerente con il tema sonoro e crea un'esperienza immersiva unica per il pubblico IT.",
       "struttura_atti": [
-        "Atto I: cos'è la nostalgia showa — l'era del boom, i driveins, le star, il corpo collettivo di un paese che credeva nel futuro",
-        "Atto II: perché ossessiona anche chi non c'era — il meccanismo della nostalgia indiretta, l'estetica come identità",
-        "Atto III: dove vive oggi — i driveins rimasti, i mercati retro, l'industria da miliardi che vende rimpianto come prodotto"
+        "Atto I: cos'è la nostalgia Showa oggi in Giappone - non un revival estetico ma un bisogno sensoriale di ritrovare un tempo che non si è vissuto",
+        "Atto II: i canali ASMR giapponesi che ricostruiscono domeniche del 1985 in una danchi - chi li fa, chi li ascolta, cosa cercano",
+        "Atto III: la nostalgia come risposta al presente - perché la Showa torna proprio ora in un Giappone iperconnesso e spopolato"
       ],
-      "coverage_IT": "Un solo video italiano con frame showa esplicito, trattato come curiosità travel non come fenomeno culturale",
-      "opportunita_IT": "Nessuno in italiano ha spiegato perché la nostalgia showa funziona anche su chi non ha memoria diretta di quell'era",
+      "coverage_IT": "Zero copertura italiana sul tema ASMR Showa. Showa trattata solo come estetica visiva o mercato vintage.",
+      "opportunita_IT": "Primo formato podcast italiano a usare la nostalgia sensoriale giapponese come chiave narrativa. Nicchia libera e coerente con lo stile del canale.",
       "esempi_EN": [
         {
-          "titolo": "TIMELINE JAPAN 1980 — What Happened in Japan in the 80s",
+          "titolo": "TIMELINE JAPAN | 1980 - What Happened in Japan in the 80s? [ REACT VID ]",
           "url": "https://youtube.com/watch?v=whVuEdo1oNY"
         }
       ],
-      "angolo_EN": "EN tratta showa come timeline storica o estetica visiva, mai come meccanismo psicologico collettivo",
-      "segnale_JP": "Canali giapponesi documentano ryokan e driveins showa ancora attivi come 'tempo congelato', angolo esperienziale forte",
+      "angolo_EN": "EN tratta Showa come storia culturale visiva. L'angolo sensoriale e ASMR è assente anche nel mercato anglofono.",
+      "segnale_JP": "Canale 存在しない街の記憶 produce ASMR di domeniche Showa in danchi: 9 volume JP con delta +2, segnale di interesse crescente.",
       "esempi_JP": [
         {
-          "titolo": "【激渋旅館】まるで時間が止まった世界。昭和遺産「泊まれるドライブイン」",
-          "url": "https://youtube.com/watch?v=D4W3E5hn-Js"
+          "titolo": "昭和60年代の夏の日曜日｜団地に暮らす男の一人暮らし Vol.1【ASMR】",
+          "url": "https://youtube.com/watch?v=rhzwZ171tMc"
         }
       ],
-      "utilita_JP": "Fornisce esempi concreti di luoghi showa ancora vivi da usare come ancore narrative nel video"
+      "utilita_JP": "Il formato JP dimostra che esiste un pubblico pagante per nostalgia Showa sensoriale, non solo visiva."
     },
     {
-      "title": "Rural Japan: i paesi che scelgono di sparire",
+      "title": "Spopolamento: i mukoku no mura che scelgono di sparire",
       "category": "Sociale/Culturale",
       "urgency": "Media",
       "coerenza": 8,
@@ -252,168 +256,172 @@
       "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Alcuni paesi giapponesi non vogliono essere salvati. Vogliono sparire.",
-      "video_title": "I paesi giapponesi che hanno smesso di resistere allo spopolamento",
-      "podcast_title": "Mukoku no mura — i villaggi giapponesi che hanno scelto di finire",
-      "angolatura": "Non il dramma dello spopolamento ma la scelta consapevole di alcune comunità di non combatterlo: la dignità del finire insieme",
+      "thumbnail_hook": "In Giappone esistono villaggi che non aspettano di morire. Lo hanno già deciso.",
+      "video_title": "I villaggi giapponesi che hanno scelto di sparire",
+      "podcast_title": "Mukoku no mura: il Giappone che si lascia andare",
+      "angolatura": "Non lo spopolamento come crisi da risolvere ma come scelta consapevole: i villaggi giapponesi che rifiutano i programmi governativi e si preparano all'estinzione con dignità.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema denso e lento, richiede narrazione riflessiva senza pressione visiva",
+      "motivazione_formato": "Il tema richiede profondità narrativa e contesto demografico che il podcast porta meglio del video.",
       "struttura_atti": [
-        "Atto I: la mappa della crisi — i dati reali dello spopolamento rurale giapponese, i villaggi sotto i 100 abitanti",
-        "Atto II: la scelta radicale — comuni che rifiutano i sussidi, anziani che scelgono di finire dove sono nati",
-        "Atto III: cosa resta dopo — le scuole vuote, i templi senza monaci, e chi arriva da fuori a raccogliere i frammenti"
+        "Atto I: il numero che nessuno dice - non 9 milioni di case ma 900 villaggi già oltre il punto di non ritorno demografico",
+        "Atto II: i piani di estinzione ordinata - come alcuni villaggi giapponesi gestiscono la propria scomparsa, trasferiscono archivi, archiviano memorie",
+        "Atto III: il Giappone che guarda e non interviene - perché Tokyo sceglie di lasciare morire la periferia e cosa dice di una società"
       ],
-      "coverage_IT": "Zero trattazioni in italiano con questo angolo etico-esistenziale; solo citazioni numeriche in articoli di news",
-      "opportunita_IT": "Luca può portare in italiano un angolo completamente assente: non la tragedia ma la scelta, con voce e punto di vista",
+      "coverage_IT": "Nessuna copertura italiana sull'angolatura della scelta consapevole di estinzione. Solo dati demografici generici.",
+      "opportunita_IT": "Angolatura politica e antropologica inedita in italiano: lo spopolamento come decisione, non come tragedia passiva.",
       "esempi_EN": [
         {
           "titolo": "Why Does Japan Have 9,000,000 Abandoned Homes?",
           "url": "https://youtube.com/watch?v=PApu9YFk1HI"
         }
       ],
-      "angolo_EN": "EN tratta rural depopulation come crisi economica e demografica, mai come scelta culturale e comunitaria",
-      "segnale_JP": "Volume 過疎化 問題 basso ma stabile; il tema esiste come preoccupazione civile silenziosa, non come trend mediatico",
-      "esempi_JP": [
-        {
-          "titolo": "遺品整理中にスタッフが悲鳴。空き家で起きていた現実的すぎる恐怖",
-          "url": "https://youtube.com/watch?v=IHMNVBhuRUI"
-        }
-      ],
-      "utilita_JP": "Mostra la dimensione umana concreta: le vite lasciate nelle case, le storie degli addetti alle pulizie post-morte"
-    },
-    {
-      "title": "J-Horror digitale: Kisaragi Station e l'orrore che nasce online",
-      "category": "Cinema/J-Horror",
-      "urgency": "Media",
-      "coerenza": 8,
-      "saturazione_IT": 2,
-      "saturazione_EN": 4,
-      "saturazione_JP": 2,
-      "delta_coerenza": "flat",
-      "delta_sat_IT": "flat",
-      "gap_IT_EN": "Medio",
-      "thumbnail_hook": "Kisaragi Station non esiste. Eppure ogni anno qualcuno ci arriva.",
-      "video_title": "Kisaragi Station: la leggenda horror nata su un forum e diventata reale",
-      "podcast_title": "Kisaragi Station — quando l'horror giapponese nasce sul web e contagia il mondo",
-      "angolatura": "Il J-Horror di seconda generazione non nasce al cinema ma nei forum 2ch: come le urban legend digitali giapponesi costruiscono paura collettiva più efficace dei film",
-      "timing": "Prossimo mese",
-      "formato_consigliato": "Video",
-      "motivazione_formato": "L'horror digitale richiede editing visivo e sonoro per replicare l'atmosfera dei forum originali",
-      "struttura_atti": [
-        "Atto I: la storia — il post originale su 2ch nel 2004, la donna che scrive in tempo reale di essere su un treno che non si ferma",
-        "Atto II: il meccanismo — perché funziona, la struttura narrativa del creepypasta giapponese, il ruolo del forum come palcoscenico",
-        "Atto III: il contagio globale — da Kisaragi a tutte le urban legend digitali giapponesi che hanno attraversato l'oceano"
-      ],
-      "coverage_IT": "Un solo video italiano tangente (Kokkuri-san), nessuno ha trattato Kisaragi Station o il fenomeno 2ch horror in italiano",
-      "opportunita_IT": "Il tema è esploso in EN ma in italiano è completamente vergine: Luca può definire il frame per il pubblico italiano",
-      "esempi_EN": [
-        {
-          "titolo": "She Woke Up At A Station That Doesn't Exist — Kisaragi Station Explained",
-          "url": "https://youtube.com/watch?v=d0urRAXkfss"
-        },
-        {
-          "titolo": "The Bride With Two Mouths — Japanese Urban Legend Horror",
-          "url": "https://youtube.com/watch?v=CsRWrkBlTXE"
-        }
-      ],
-      "angolo_EN": "EN racconta la storia come horror narrativo; non spiega mai il meccanismo culturale e digitale che la genera",
-      "segnale_JP": "廃墟 探索 in calo netto (-47): il pubblico JP si è stancato dell'haikyo fisico, l'orrore si sposta sul digitale",
+      "angolo_EN": "EN tratta rural depopulation come crisi economica. L'angolo della scelta consapevole di estinzione è raro anche in inglese.",
+      "segnale_JP": "過疎化 問題 ha volume bassissimo (2) ma stabile: tema di nicchia istituzionale, non ancora diventato narrativa popolare in JP.",
       "esempi_JP": [
         {
           "titolo": "廃墟で幽霊を起こす男",
           "url": "https://youtube.com/watch?v=3uc7g0FcoBY"
         }
       ],
-      "utilita_JP": "Conferma il calo dell'haikyo horror fisico: il mercato JP si è già spostato, quello IT non lo sa ancora"
+      "utilita_JP": "Il JP affronta le rovine come spazio emotivo, non istituzionale: suggerisce che la narrativa umana è più forte di quella politica."
     },
     {
-      "title": "Famicom: la console che ha esportato il Giappone nel mondo",
-      "category": "Gaming/Retro",
-      "urgency": "Bassa",
+      "title": "Il Giappone che si ripara: i collettivi akiya reborn",
+      "category": "Sociale/Culturale",
+      "urgency": "Media",
       "coerenza": 7,
-      "saturazione_IT": 1,
-      "saturazione_EN": 2,
-      "saturazione_JP": 10,
+      "saturazione_IT": 2,
+      "saturazione_EN": 4,
+      "saturazione_JP": 4,
       "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
-      "gap_IT_EN": "Basso",
-      "thumbnail_hook": "Prima del sushi e degli anime, il Giappone ha conquistato il mondo con un joystick.",
-      "video_title": "Famicom: come una console ha costruito l'identità culturale del Giappone moderno",
-      "podcast_title": "Famicom — la macchina che ha esportato il Giappone nel salotto di tutti",
-      "angolatura": "Il Famicom non come oggetto retro ma come primo grande vettore di soft power giapponese: prima degli anime e del manga, il Giappone è entrato nelle case mondiali con i videogiochi",
-      "timing": "In sviluppo",
-      "formato_consigliato": "Podcast",
-      "motivazione_formato": "L'argomento è culturale e storico, il pubblico 25-45 IT lo consuma meglio in forma narrativa lunga",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "Nessuno vuole queste case. Loro le prendono tutte. E le restituiscono al Giappone.",
+      "video_title": "Chi ripara il Giappone abbandonato: i collettivi akiya reborn",
+      "podcast_title": "Akiya Reborn: il Giappone che si ricuce casa per casa",
+      "angolatura": "I collettivi giapponesi che ristrutturano akiya non come business ma come atto civile e identitario: chi sono, come si finanziano, cosa pensano del Giappone che verrà.",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Video",
+      "motivazione_formato": "Il processo di ristrutturazione e la dimensione visiva delle case recuperate reggono bene il formato video narrativo.",
       "struttura_atti": [
-        "Atto I: il contesto — il crollo Atari 1983, il vuoto, e Nintendo che porta in America una console giapponese camuffata da giocattolo",
-        "Atto II: il meccanismo del soft power — come i game designer giapponesi hanno codificato valori, estetica e narrativa nipponiche in ogni pixel",
-        "Atto III: l'eredità — perché i 40enni di tutto il mondo hanno un Giappone immaginario costruito da Miyamoto più che dalla realtà"
+        "Atto I: il problema sistemico - perché le akiya non si vendono e chi ci prova comunque, fuori dai canali ordinari",
+        "Atto II: i collettivi - dalla squadra di Kobe filmata da Kantele ai movimenti nazionali di recupero, chi sono e cosa li muove",
+        "Atto III: il paradosso - ristrutturare una casa in un paese che si spopola è un atto di speranza o di negazione?"
       ],
-      "coverage_IT": "Volume IT retrogaming: 2/100, praticamente assente; nessun canale culturale italiano ha trattato il Famicom come soft power",
-      "opportunita_IT": "Angolatura completamente libera in italiano: il retrogaming come cultura, non come nostalgia da collezionista",
+      "coverage_IT": "Tema trattato marginalmente in IT solo come notizia. Nessun approfondimento narrativo sui protagonisti del recupero.",
+      "opportunita_IT": "L'angolatura civile e identitaria del recupero akiya è libera in italiano e offre personaggi narrativi forti.",
       "esempi_EN": [
         {
-          "titolo": "The game glitch that became a japanese urban legend",
-          "url": "https://youtube.com/watch?v=wflo5RJ6vms"
+          "titolo": "My $25K Japanese House was Cheap Because..",
+          "url": "https://youtube.com/watch?v=WAh2X27oAgI"
+        },
+        {
+          "titolo": "Japan Offered Me a Free House on a Cat Island. I Had to Decide.",
+          "url": "https://youtube.com/watch?v=MfWrxujsMfQ"
         }
       ],
-      "angolo_EN": "EN tratta il gaming JP come curiosità o nostalgia, raramente come vettore culturale strutturale",
-      "segnale_JP": "ファミコン レトロゲーム è il termine con volume massimo in JP (100): il mercato nativo è saturo ma dimostra che la domanda culturale è reale e profonda",
+      "angolo_EN": "EN tratta akiya come avventura personale del compratore straniero. Il punto di vista dei collettivi giapponesi è assente.",
+      "segnale_JP": "Il documentario Kantele su Kobe mostra un collettivo reale con filosofia precisa: 'tutti gli edifici sono riparabili'. Segnale narrativo forte.",
       "esempi_JP": [
         {
-          "titolo": "【昔と今 AI】80歳を超えてもバリバリ活躍するスター達の若かりし頃",
-          "url": "https://youtube.com/watch?v=R7-v4bYDNzM"
+          "titolo": "【全編配信】「この世のすべての建物は直せる…」神戸のオンボロ空き家、奇跡の'再生'なるか⁉",
+          "url": "https://youtube.com/watch?v=hPIarsJCQtE"
         }
       ],
-      "utilita_JP": "Il volume JP altissimo conferma che la domanda culturale sul retro giapponese è strutturale, non una moda passeggera"
+      "utilita_JP": "Il JP fornisce il personaggio e la filosofia del collettivo: materiale narrativo diretto da adattare per il pubblico italiano."
+    },
+    {
+      "title": "J-Horror urbano: Kisaragi e le leggende nate su internet",
+      "category": "Cinema/J-Horror",
+      "urgency": "Bassa",
+      "coerenza": 7,
+      "saturazione_IT": 3,
+      "saturazione_EN": 5,
+      "saturazione_JP": 3,
+      "delta_coerenza": "flat",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "Non è un film. Non è una serie. È nato su un forum. E ha spaventato tutto il Giappone.",
+      "video_title": "Kisaragi Station: l'orrore giapponese che nasce solo online",
+      "podcast_title": "J-Horror digitale: le leggende urbane che il Giappone crea in rete",
+      "angolatura": "Il J-Horror di nuova generazione non nasce al cinema ma nei forum 2ch e nei thread Twitter: Kisaragi Station come caso studio della nuova narrazione dell'orrore partecipativo giapponese.",
+      "timing": "In sviluppo",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "Il formato orale amplifica la tensione narrativa delle leggende urbane meglio del video descrittivo.",
+      "struttura_atti": [
+        "Atto I: cosa è Kisaragi Station - la storia originale del thread, il formato del live-tweeting horror e perché ha funzionato",
+        "Atto II: la tradizione da cui nasce - dal kuchisake-onna alle leggende scolastiche fino all'internet horror giapponese degli anni 2000",
+        "Atto III: perché il Giappone produce horror partecipativo - il ruolo dell'anonimato digitale, la cultura del mise en scène collettivo, il confine tra finzione e credenza"
+      ],
+      "coverage_IT": "Tema già lambito in sessioni precedenti ma mai sviluppato con l'angolatura del horror partecipativo digitale come forma culturale.",
+      "opportunita_IT": "L'angolatura del horror come genere narrativo partecipativo e digitale è libera in italiano e coerente con il pubblico 25-45 del canale.",
+      "esempi_EN": [
+        {
+          "titolo": "'She Woke Up At A Station That Doesn't Exist | Kisaragi Station Explained'",
+          "url": "https://youtube.com/watch?v=d0urRAXkfss"
+        }
+      ],
+      "angolo_EN": "EN tratta Kisaragi come storia da spiegare. L'angolo culturale del horror partecipativo come forma sociale è assente.",
+      "segnale_JP": "廃墟 探索 ha volume 37 con delta +3: l'esplorazione di spazi abbandonati come horror vissuto in prima persona è in leggera crescita.",
+      "esempi_JP": [
+        {
+          "titolo": "【トラウマ】立入禁止の廃墟水族館",
+          "url": "https://youtube.com/watch?v=5BQl7YXaZh8"
+        }
+      ],
+      "utilita_JP": "Il JP mostra che l'horror vissuto in prima persona in spazi reali è il formato più consumato: suggerisce di ancorare il podcast a luoghi fisici oltre che digitali."
     }
   ],
   "trends_EN": [
     {
-      "title": "Akiya come investimento: il mercato che sfida l'Occidente",
+      "title": "Akiya come progetto di vita: compro casa in Giappone per 20k",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 12,
+      "volume_IT": 17,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "In EN l'akiya e trattato come opportunita finanziaria reale (case a 3k-25k dollari). In IT esiste solo come curiosita estetica. La finestra e aperta: nessun canale italiano ha trattato la meccanica burocratica e finanziaria dell'acquisto.",
-      "connessione_canale": "Naturale prosecuzione degli episodi su Toyoko Kids e spopolamento: dall'abbandono sociale all'abbandono immobiliare come sistema."
+      "perche_monitorarlo": "In EN domina con volume 100 e canali come Yes Theory e JacksAdventures che trattano akiya come progetto personale acquistabile. In IT il tema resta a 17 con angolatura prevalentemente sociologica. La finestra per raccontarlo come esperienza umana concreta è aperta ora.",
+      "connessione_canale": "Ponte diretto con episodio akiya già prodotto: si può approfondire il lato esperienziale e legale che mancava nell angolatura precedente."
     },
     {
-      "title": "Showa Era Nostalgia: il rimpianto come architettura mentale",
+      "title": "Showa era nostalgia: il rimpianto giapponese spiegato in EN",
       "category": "Estetica/Visiva",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 47,
+      "urgency_radar": "Caldo",
+      "volume_EN": 48,
       "volume_IT": 0,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "In EN volume 47 e in crescita lenta ma costante. In IT volume zero. L'angolatura non e la nostalgia sentimentale ma lo Showa come struttura cognitiva e estetica che il Giappone usa per definire se stesso oggi. Finestra stimata 3-6 mesi.",
-      "connessione_canale": "Collega J-Horror gia trattato (atmosfera Showa nei film) e Visual Kei (estetica come rifiuto del presente): c e un filo editoriale forte."
+      "perche_monitorarlo": "Volume EN a 48 su un fenomeno che in IT segna 0. I canali anglofoni trattano la nostalgia showa come estetica e sentimento collettivo. In italiano non esiste ancora nessuna voce strutturata su questo. Finestra libera e immediata.",
+      "connessione_canale": "Collegabile all episodio showa già prodotto, ma con angolatura inedita: cosa significa nostalgia per una generazione che non ha vissuto quegli anni."
     },
     {
-      "title": "Rural Japan Depopulation: i villaggi oltre il punto di ritorno",
+      "title": "Rural Japan depopulation: i villaggi che spariscono nel 2025",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
       "volume_EN": 42,
       "volume_IT": 0,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "In EN il tema ha massa critica consolidata (42) con angolature sistemiche e demografiche. In IT e assente come volume misurato. L'approccio EN e documentaristico-analitico, non turistico: esattamente il registro del canale. Finestra aperta ma si sta chiudendo.",
-      "connessione_canale": "Estende il tema konbini (infrastruttura nelle aree rurali che resiste allo spopolamento) e completa il quadro sociale gia avviato con Toyoko Kids."
+      "perche_monitorarlo": "In EN volume stabile a 42 con focus su crisi demografica strutturale. In IT il tema segna 0 e non compare nei video di punta. Il mercato italiano non ha ancora un episodio che spieghi lo spopolamento rurale come sistema e non come curiosità estetica.",
+      "connessione_canale": "Connette il filone akiya con quello dello spopolamento già monitorato: qui si può fare la sintesi narrativa definitiva che mancava."
     }
   ],
   "trends_JP": [
     {
-      "title": "Rigenerazione akiya: chi ripara il Giappone dimenticato / 空き家 再生ドキュメンタリー",
+      "title": "Case abbandonate come lutto: il documentario giapponese sull akiya / 空き家 ドキュメンタリー",
       "category": "Sociale/Culturale",
-      "volume_JP": 3,
+      "volume_JP": 4,
       "delta_JP": "flat",
       "rilevanza": "Alta",
-      "segnale": "In JP emerge un documentarismo nativo sulla rigenerazione delle case abbandonate non come business ma come atto civile. Il canale kantele mostra squadre che operano su edifici considerati irrecuperabili a Kobe con approccio quasi militante.",
-      "utilita_canale": "Fornisce materiale primario autentico per costruire un episodio sulla rigenerazione come identita comunitaria, angolatura non ancora tentata in italiano con fonti JP dirette.",
+      "segnale": "In JP emergono documentari su akiya che mescolano dimensione emotiva e pratica: personale di sgombero che urla per paura, squadre che tentano la rinascita di case considerate irrecuperabili. Il lutto domestico come tema nativo.",
+      "utilita_canale": "Offre materiale narrativo autentico e angolatura emotiva non sfruttata in IT: la casa abbandonata non come dato demografico ma come spazio di memoria e perdita.",
       "esempi_JP": [
+        {
+          "titolo": "遺品整理中にスタッフが悲鳴。空き家で起きていた'現実的すぎる恐怖'",
+          "url": "https://youtube.com/watch?v=IHMNVBhuRUI"
+        },
         {
           "titolo": "【全編配信】「この世のすべての建物は直せる…」神戸のオンボロ空き家、奇跡の'再生'なるか⁉",
           "url": "https://youtube.com/watch?v=hPIarsJCQtE"
@@ -421,41 +429,45 @@
       ]
     },
     {
-      "title": "Showa fisico: gli alberghi-capsula del tempo / 昭和レトロ 泊まれる遺産",
+      "title": "Showa ASMR e memoria sensoriale: vivere il passato giapponese / 昭和レトロ 動画",
       "category": "Estetica/Visiva",
-      "volume_JP": 7,
-      "delta_JP": "down",
+      "volume_JP": 9,
+      "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "In JP emerge il fenomeno dei drive-in e ryokan rimasti congelati nell estetica Showa, documentati come esperienze immersive. Volume in calo in JP ma l angolatura non e ancora arrivata in italiano con questa profondita.",
-      "utilita_canale": "Permette di trattare lo Showa non come nostalgia astratta ma come spazio fisico visitabile: episodio narrativo forte con materiale visivo gia disponibile in JP.",
+      "segnale": "In JP cresce un formato ibrido: ASMR ambientato negli anni Showa, ricostruzioni di domeniche anni 80 in danchi, canali dedicati a memorie di luoghi mai esistiti. Nostalgia come esperienza sensoriale progettata.",
+      "utilita_canale": "Permette di raccontare lo Showa non come estetica visiva ma come esperienza immersiva e psicologica, con un formato narrativo inedito per il pubblico IT.",
       "esempi_JP": [
         {
-          "titolo": "【激渋旅館】まるで時間が止まった世界。昭和遺産「泊まれるドライブイン」が凄すぎた。",
-          "url": "https://youtube.com/watch?v=D4W3E5hn-Js"
+          "titolo": "昭和60年代の夏の日曜日｜団地に暮らす男の一人暮らし Vol.1【ASMR】",
+          "url": "https://youtube.com/watch?v=rhzwZ171tMc"
         }
       ]
     },
     {
-      "title": "Akiya e morte: lo spazio del lutto in casa abbandonata / 遺品整理 空き家 恐怖",
-      "category": "Sociale/Culturale",
-      "volume_JP": 3,
+      "title": "Haikyo tra paura e proibito: le rovine come spazio dell inconscio / 廃墟 探索",
+      "category": "Cinema/J-Horror",
+      "volume_JP": 37,
       "delta_JP": "flat",
       "rilevanza": "Alta",
-      "segnale": "In JP i canali di sgombero eredita documentano esperienze perturbanti nelle case abbandonate post-mortem. Non e horror di finzione ma documentarismo del lutto materiale: oggetti lasciati, vite interrotte, paura reale degli operatori.",
-      "utilita_canale": "Angolatura ibrida tra J-Horror gia trattato e akiya: la casa abbandonata come archivio del lutto, non come rovina estetica. Episodio ad alta densita emotiva e culturale.",
+      "segnale": "Il filone haikyo in JP unisce esplorazione urbana e horror psicologico: acquari abbandonati off-limits, fantasmi evocati nelle rovine. Volume a 37 con delta in leggera crescita. Fenomeno consolidato ma con nuove angolature horror.",
+      "utilita_canale": "Collega direttamente J-Horror e spopolamento in un unico episodio: le rovine come spazio dove il Giappone deposita le sue paure collettive.",
       "esempi_JP": [
         {
-          "titolo": "遺品整理中にスタッフが悲鳴。空き家で起きていた'現実的すぎる恐怖' #遺品整理 #空き家 #shorts",
-          "url": "https://youtube.com/watch?v=IHMNVBhuRUI"
+          "titolo": "廃墟で幽霊を起こす男",
+          "url": "https://youtube.com/watch?v=3uc7g0FcoBY"
+        },
+        {
+          "titolo": "【トラウマ】立入禁止の廃墟水族館",
+          "url": "https://youtube.com/watch?v=5BQl7YXaZh8"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Delta volume EN 'showa era nostalgia japan': se sale sopra 50 la finestra italiana si chiude entro 30 giorni",
-    "Nuovi video IT su akiya con angolatura finanziaria: se emergono la saturazione sale rapidamente da 12 verso 30",
-    "Volume JP '空き家 ドキュメンタリー': se risale da 3 indica ripresa di interesse nativo con nuovo materiale primario disponibile",
-    "Comparsa di canali italiani generalisti su spopolamento rurale giapponese: segnale che la finestra EN-IT si sta chiudendo"
+    "Verificare se il video Yes Theory akiya (9M+ views in EN) genera onda secondaria in IT nei prossimi 7 giorni",
+    "Monitorare se il formato ASMR showa giapponese viene replicato da creator anglofoni: sarebbe segnale di prossima ondata EN",
+    "Osservare delta volume EN su rural japan depopulation: se sale sopra 50 la finestra IT diventa urgente",
+    "Tracciare eventuali nuovi canali IT che entrano sul tema haikyo horror: indica saturazione imminente dell angolatura"
   ],
   "warnings": []
 }
