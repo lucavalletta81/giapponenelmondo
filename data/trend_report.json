@@ -1,969 +1,408 @@
 {
-  "generated_at": "2026-07-20",
-  "total_clusters": 8,
-  "total_videos": 61,
-  "date_range_start": "2026-07-06",
-  "date_range_end": "2026-07-18",
+  "generated_at": "2026-07-27",
+  "total_clusters": 4,
+  "total_videos": 27,
+  "date_range_start": "2026-07-20",
+  "date_range_end": "2026-07-27",
   "sections": {
     "emergenti": [
       {
-        "label": 4,
-        "score": 1.0828,
+        "label": 2,
+        "score": 1.3845,
         "keywords": [
-          "pancake",
-          "osaka",
-          "soba",
-          "matcha",
-          "prezzo",
-          "usa international"
+          "manga",
+          "twitch",
+          "english",
+          "works",
+          "compra",
+          "twitch qualità"
         ],
-        "item_count": 3,
-        "total_views": 219225,
+        "item_count": 6,
+        "total_views": 60433,
         "velocity": 1.0,
         "novelty": 1.0,
         "diversity": 0.583,
-        "first_seen": "2026-07-16",
-        "last_seen": "2026-07-17",
+        "first_seen": "2026-07-20",
+        "last_seen": "2026-07-26",
         "sentinel_clusters": [
-          "expat_japan_en",
+          "anime_manga_pop",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8541,
+          "casual": 0.7442
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.854,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Il cavallo di Troia è una bomba atomica?",
+              "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+              "source": "Caverna di Platone",
+              "date": "2026-07-22",
+              "views": 6710,
+              "likes": 191,
+              "duration_secs": 46
+            },
+            {
+              "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+              "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+              "source": "Kirio1984",
+              "date": "2026-07-24",
+              "views": 1164,
+              "likes": 77,
+              "duration_secs": 562
+            },
+            {
+              "title": "ANIME SULLA BOMBA DI MARADONA",
+              "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+              "source": "Caverna di Platone",
+              "date": "2026-07-26",
+              "views": 679,
+              "likes": 47,
+              "duration_secs": 755
+            }
+          ],
+          "ja": [
+            {
+              "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+              "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-07-23",
+              "views": 50704,
+              "likes": 3235,
+              "duration_secs": 1074
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Il cavallo di Troia è una bomba atomica?",
+            "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+            "source": "Caverna di Platone",
+            "date": "2026-07-22",
+            "views": 6710,
+            "likes": 191,
+            "duration_secs": 46
+          },
+          {
+            "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+            "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+            "source": "Kirio1984",
+            "date": "2026-07-24",
+            "views": 1164,
+            "likes": 77,
+            "duration_secs": 562
+          },
+          {
+            "title": "ANIME SULLA BOMBA DI MARADONA",
+            "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+            "source": "Caverna di Platone",
+            "date": "2026-07-26",
+            "views": 679,
+            "likes": 47,
+            "duration_secs": 755
+          },
+          {
+            "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+            "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-07-23",
+            "views": 50704,
+            "likes": 3235,
+            "duration_secs": 1074
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.9385,
+        "keywords": [
+          "fireworks",
+          "sushi",
+          "puoi",
+          "del",
+          "manga",
+          "monte"
+        ],
+        "item_count": 4,
+        "total_views": 27864,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.708,
+        "first_seen": "2026-07-21",
+        "last_seen": "2026-07-27",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
           "vita_giappone"
         ],
         "languages": [
           "it",
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5812,
-          "casual": 0.5656
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.581,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Pancake giapponesi a Osaka: il prezzo shock",
-              "url": "https://www.youtube.com/watch?v=taOSqQmMmpA",
-              "source": "Marco Togni",
-              "date": "2026-07-16",
-              "views": 9102,
-              "likes": 556,
-              "duration_secs": 42
-            },
-            {
-              "title": "Fonduta al Matcha: la specialità di Osaka",
-              "url": "https://www.youtube.com/watch?v=vsIu8ifxAec",
-              "source": "Marco Togni",
-              "date": "2026-07-16",
-              "views": 8141,
-              "likes": 571,
-              "duration_secs": 61
-            }
-          ],
-          "en": [
-            {
-              "title": "Behind the Counter at a local Japanese Handcrafted Soba Restaurant in Asakusa",
-              "url": "https://www.youtube.com/watch?v=P2Fg1BG5ZcM",
-              "source": "Paolo from Tokyo",
-              "date": "2026-07-17",
-              "views": 201982,
-              "likes": 9913,
-              "duration_secs": 1219
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Pancake giapponesi a Osaka: il prezzo shock",
-            "url": "https://www.youtube.com/watch?v=taOSqQmMmpA",
-            "source": "Marco Togni",
-            "date": "2026-07-16",
-            "views": 9102,
-            "likes": 556,
-            "duration_secs": 42
-          },
-          {
-            "title": "Fonduta al Matcha: la specialità di Osaka",
-            "url": "https://www.youtube.com/watch?v=vsIu8ifxAec",
-            "source": "Marco Togni",
-            "date": "2026-07-16",
-            "views": 8141,
-            "likes": 571,
-            "duration_secs": 61
-          },
-          {
-            "title": "Behind the Counter at a local Japanese Handcrafted Soba Restaurant in Asakusa",
-            "url": "https://www.youtube.com/watch?v=P2Fg1BG5ZcM",
-            "source": "Paolo from Tokyo",
-            "date": "2026-07-17",
-            "views": 201982,
-            "likes": 9913,
-            "duration_secs": 1219
-          }
-        ]
-      }
-    ],
-    "crescita": [
-      {
-        "label": 1,
-        "score": 0.6484,
-        "keywords": [
-          "cesaroni",
-          "pubblico italia",
-          "italia",
-          "pubblico",
-          "bagno",
-          "bagno pubblico"
-        ],
-        "item_count": 5,
-        "total_views": 305875,
-        "velocity": 0.5,
-        "novelty": 0.5,
-        "diversity": 0.542,
-        "first_seen": "2026-07-08",
-        "last_seen": "2026-07-18",
-        "sentinel_clusters": [
-          "viaggio",
-          "vita_giappone",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.5313,
-          "casual": 0.5165
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.531,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "\"Mi sto cagando sotto\"",
-              "url": "https://www.youtube.com/watch?v=CwXAv1JCJjg",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-07-11",
-              "views": 140314,
-              "likes": 4140,
-              "duration_secs": 23
-            },
-            {
-              "title": "Bagno pubblico in Italia vs in Giappone🚽",
-              "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
-              "source": "Erikottero",
-              "date": "2026-07-12",
-              "views": 91700,
-              "likes": 2464,
-              "duration_secs": 29
-            },
-            {
-              "title": "leggo Tití Me Preguntó di Bad Bunny (in italiano)",
-              "url": "https://www.youtube.com/watch?v=lWxnEy96jWM",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-07-18",
-              "views": 47825,
-              "likes": 1993,
-              "duration_secs": 111
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "\"Mi sto cagando sotto\"",
-            "url": "https://www.youtube.com/watch?v=CwXAv1JCJjg",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-07-11",
-            "views": 140314,
-            "likes": 4140,
-            "duration_secs": 23
-          },
-          {
-            "title": "Bagno pubblico in Italia vs in Giappone🚽",
-            "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
-            "source": "Erikottero",
-            "date": "2026-07-12",
-            "views": 91700,
-            "likes": 2464,
-            "duration_secs": 29
-          },
-          {
-            "title": "leggo Tití Me Preguntó di Bad Bunny (in italiano)",
-            "url": "https://www.youtube.com/watch?v=lWxnEy96jWM",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-07-18",
-            "views": 47825,
-            "likes": 1993,
-            "duration_secs": 111
-          }
-        ]
-      },
-      {
-        "label": 2,
-        "score": 0.2812,
-        "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
-        ],
-        "item_count": 3,
-        "total_views": 79413,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-09",
-        "last_seen": "2026-07-18",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
           "ja"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6814,
-          "casual": 0.5806
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.681,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "【虹深°ぬふ】ココを修正するだけで、めっちゃいい絵になります！！【きまぐれ添削242】",
-              "url": "https://www.youtube.com/watch?v=doaJU_lG_xU",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-07-16",
-              "views": 35884,
-              "likes": 1788,
-              "duration_secs": 1042
-            },
-            {
-              "title": "【意外!】絵が上手くなると、描くのが遅くなります。",
-              "url": "https://www.youtube.com/watch?v=v6myZhanRas",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-07-09",
-              "views": 32014,
-              "likes": 1731,
-              "duration_secs": 1164
-            },
-            {
-              "title": "【必見】これを意識すると、絵の伝わりやすさが劇的に変わります。",
-              "url": "https://www.youtube.com/watch?v=k_3n2jzuqCo",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-07-18",
-              "views": 11515,
-              "likes": 649,
-              "duration_secs": 1251
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "【虹深°ぬふ】ココを修正するだけで、めっちゃいい絵になります！！【きまぐれ添削242】",
-            "url": "https://www.youtube.com/watch?v=doaJU_lG_xU",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-07-16",
-            "views": 35884,
-            "likes": 1788,
-            "duration_secs": 1042
-          },
-          {
-            "title": "【意外!】絵が上手くなると、描くのが遅くなります。",
-            "url": "https://www.youtube.com/watch?v=v6myZhanRas",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-07-09",
-            "views": 32014,
-            "likes": 1731,
-            "duration_secs": 1164
-          },
-          {
-            "title": "【必見】これを意識すると、絵の伝わりやすさが劇的に変わります。",
-            "url": "https://www.youtube.com/watch?v=k_3n2jzuqCo",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-07-18",
-            "views": 11515,
-            "likes": 649,
-            "duration_secs": 1251
-          }
-        ]
-      },
-      {
-        "label": 5,
-        "score": 0.2672,
-        "keywords": [
-          "yoshimyan",
-          "tts driving",
-          "well",
-          "well tts",
-          "tts",
-          "tools car"
-        ],
-        "item_count": 6,
-        "total_views": 55576,
-        "velocity": 0.917,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-10",
-        "last_seen": "2026-07-20",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6234,
-          "casual": 0.6598
+          "narrativo": 0.7402,
+          "casual": 0.8037
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.66,
+        "affinity_best_score": 0.804,
         "items_by_lang": {
+          "it": [
+            {
+              "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+              "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+              "source": "Marco Togni",
+              "date": "2026-07-21",
+              "views": 13759,
+              "likes": 1153,
+              "duration_secs": 2028
+            },
+            {
+              "title": "Sushi al supermercato sul Monte Fuji",
+              "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+              "source": "Marco Togni",
+              "date": "2026-07-27",
+              "views": 4018,
+              "likes": 505,
+              "duration_secs": 52
+            },
+            {
+              "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+              "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+              "source": "Kirio1984",
+              "date": "2026-07-22",
+              "views": 473,
+              "likes": 32,
+              "duration_secs": 1067
+            }
+          ],
           "ja": [
             {
-              "title": "Bringing This Japanese Girl Streamer To Scary Places To See Her Reaction  @Yoshimyan",
-              "url": "https://www.youtube.com/watch?v=apBJnseGrls",
+              "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+              "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
               "source": "Sora The Troll",
-              "date": "2026-07-12",
-              "views": 20038,
-              "likes": 689,
-              "duration_secs": 19262
-            },
-            {
-              "title": "Beef About Japan With Shibuya Kaho LIVE",
-              "url": "https://www.youtube.com/watch?v=bg0d_sTn2XI",
-              "source": "Sora The Troll",
-              "date": "2026-07-15",
-              "views": 14818,
-              "likes": 639,
-              "duration_secs": 7554
-            },
-            {
-              "title": "The Japanese Girl VTuber JUST BROUGHT Her PARTNER To My House IN REAL LIFE LOLOLOLOLOLOLOLOLOLOLOL",
-              "url": "https://www.youtube.com/watch?v=v8phwbaHS5Y",
-              "source": "Sora The Troll",
-              "date": "2026-07-10",
-              "views": 11025,
-              "likes": 538,
-              "duration_secs": 2484
+              "date": "2026-07-25",
+              "views": 9614,
+              "likes": 330,
+              "duration_secs": 11952
             }
           ]
         },
         "top_items": [
           {
-            "title": "Bringing This Japanese Girl Streamer To Scary Places To See Her Reaction  @Yoshimyan",
-            "url": "https://www.youtube.com/watch?v=apBJnseGrls",
-            "source": "Sora The Troll",
-            "date": "2026-07-12",
-            "views": 20038,
-            "likes": 689,
-            "duration_secs": 19262
+            "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+            "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+            "source": "Marco Togni",
+            "date": "2026-07-21",
+            "views": 13759,
+            "likes": 1153,
+            "duration_secs": 2028
           },
           {
-            "title": "Beef About Japan With Shibuya Kaho LIVE",
-            "url": "https://www.youtube.com/watch?v=bg0d_sTn2XI",
-            "source": "Sora The Troll",
-            "date": "2026-07-15",
-            "views": 14818,
-            "likes": 639,
-            "duration_secs": 7554
+            "title": "Sushi al supermercato sul Monte Fuji",
+            "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+            "source": "Marco Togni",
+            "date": "2026-07-27",
+            "views": 4018,
+            "likes": 505,
+            "duration_secs": 52
           },
           {
-            "title": "The Japanese Girl VTuber JUST BROUGHT Her PARTNER To My House IN REAL LIFE LOLOLOLOLOLOLOLOLOLOLOL",
-            "url": "https://www.youtube.com/watch?v=v8phwbaHS5Y",
+            "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+            "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+            "source": "Kirio1984",
+            "date": "2026-07-22",
+            "views": 473,
+            "likes": 32,
+            "duration_secs": 1067
+          },
+          {
+            "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+            "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
             "source": "Sora The Troll",
-            "date": "2026-07-10",
-            "views": 11025,
-            "likes": 538,
-            "duration_secs": 2484
+            "date": "2026-07-25",
+            "views": 9614,
+            "likes": 330,
+            "duration_secs": 11952
           }
         ]
       },
       {
-        "label": 7,
-        "score": 0.2387,
+        "label": 1,
+        "score": 0.5495,
         "keywords": [
-          "sora attention",
+          "use",
           "try",
+          "sora attention",
           "sora",
-          "attention",
-          "album try",
-          "album"
+          "album",
+          "attention"
         ],
-        "item_count": 14,
-        "total_views": 75083,
-        "velocity": 0.714,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-08",
-        "last_seen": "2026-07-20",
+        "item_count": 11,
+        "total_views": 183843,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.583,
+        "first_seen": "2026-07-20",
+        "last_seen": "2026-07-27",
         "sentinel_clusters": [
-          "japan_native"
+          "japan_native",
+          "anime_pop_en"
         ],
         "languages": [
+          "en",
           "ja"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6751,
-          "casual": 0.6725
+          "narrativo": 0.6749,
+          "casual": 0.6585
         },
         "affinity_best_tipo": "narrativo",
         "affinity_best_score": 0.675,
         "items_by_lang": {
-          "ja": [
-            {
-              "title": "Do Japanese Elders Want Foreigners In Japan?",
-              "url": "https://www.youtube.com/watch?v=fT9VSz3Ai7U",
-              "source": "TAKASHii from Japan",
-              "date": "2026-07-17",
-              "views": 24431,
-              "likes": 1280,
-              "duration_secs": 809
-            },
-            {
-              "title": "Japanese people started liking ishowspeed because he likes anime",
-              "url": "https://www.youtube.com/watch?v=WAdAr9Hq_Mk",
-              "source": "Sora The Troll",
-              "date": "2026-07-16",
-              "views": 8137,
-              "likes": 664,
-              "duration_secs": 98
-            },
-            {
-              "title": "Do Japanese VTubers act the same off stream",
-              "url": "https://www.youtube.com/watch?v=Xni5XDFxJEQ",
-              "source": "Sora The Troll",
-              "date": "2026-07-10",
-              "views": 7293,
-              "likes": 99,
-              "duration_secs": 123
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Do Japanese Elders Want Foreigners In Japan?",
-            "url": "https://www.youtube.com/watch?v=fT9VSz3Ai7U",
-            "source": "TAKASHii from Japan",
-            "date": "2026-07-17",
-            "views": 24431,
-            "likes": 1280,
-            "duration_secs": 809
-          },
-          {
-            "title": "Japanese people started liking ishowspeed because he likes anime",
-            "url": "https://www.youtube.com/watch?v=WAdAr9Hq_Mk",
-            "source": "Sora The Troll",
-            "date": "2026-07-16",
-            "views": 8137,
-            "likes": 664,
-            "duration_secs": 98
-          },
-          {
-            "title": "Do Japanese VTubers act the same off stream",
-            "url": "https://www.youtube.com/watch?v=Xni5XDFxJEQ",
-            "source": "Sora The Troll",
-            "date": "2026-07-10",
-            "views": 7293,
-            "likes": 99,
-            "duration_secs": 123
-          }
-        ]
-      }
-    ],
-    "cross_source": [
-      {
-        "label": 6,
-        "score": 1.0045,
-        "keywords": [
-          "manga",
-          "twitch",
-          "originale",
-          "compra",
-          "caverna",
-          "tract"
-        ],
-        "item_count": 21,
-        "total_views": 739120,
-        "velocity": 0.35,
-        "novelty": 0.5,
-        "diversity": 1.0,
-        "first_seen": "2026-07-06",
-        "last_seen": "2026-07-20",
-        "sentinel_clusters": [
-          "expat_japan_en",
-          "vita_giappone",
-          "japan_native",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "ja",
-          "it",
-          "en"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.871,
-          "casual": 0.7656
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.871,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
-              "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
-              "source": "Caverna di Platone",
-              "date": "2026-07-09",
-              "views": 12424,
-              "likes": 297,
-              "duration_secs": 49
-            },
-            {
-              "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
-              "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
-              "source": "Caverna di Platone",
-              "date": "2026-07-10",
-              "views": 9320,
-              "likes": 543,
-              "duration_secs": 1447
-            },
-            {
-              "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
-              "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
-              "source": "Caverna di Platone",
-              "date": "2026-07-07",
-              "views": 5245,
-              "likes": 263,
-              "duration_secs": 1167
-            }
-          ],
           "en": [
             {
-              "title": "A New Chapter",
-              "url": "https://www.youtube.com/watch?v=UrfwAbts0nM",
-              "source": "Abroad in Japan",
-              "date": "2026-07-10",
-              "views": 549517,
-              "likes": 45249,
-              "duration_secs": 332
+              "title": "What A Sumo Match Is REALLY Like",
+              "url": "https://www.youtube.com/watch?v=OzcHE7PiDTY",
+              "source": "The Anime Man",
+              "date": "2026-07-22",
+              "views": 20012,
+              "likes": 478,
+              "duration_secs": 29
+            },
+            {
+              "title": "When You Find Out About Him...",
+              "url": "https://www.youtube.com/watch?v=_BgFP-Uqn5A",
+              "source": "The Anime Man",
+              "date": "2026-07-20",
+              "views": 15409,
+              "likes": 282,
+              "duration_secs": 33
+            },
+            {
+              "title": "Debugging Before The Internet",
+              "url": "https://www.youtube.com/watch?v=9tlSIm1b9LY",
+              "source": "The Anime Man",
+              "date": "2026-07-24",
+              "views": 9588,
+              "likes": 317,
+              "duration_secs": 53
             }
           ],
           "ja": [
             {
-              "title": "Living in Japan as Half Japanese",
-              "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
-              "source": "TAKASHii from Japan",
-              "date": "2026-07-06",
-              "views": 140443,
-              "likes": 3751,
-              "duration_secs": 2337
+              "title": "Ameircan Man Who Met a Japanese Person For The First Time",
+              "url": "https://www.youtube.com/watch?v=GdM7D-FcQcA",
+              "source": "Sora The Troll",
+              "date": "2026-07-23",
+              "views": 31165,
+              "likes": 2441,
+              "duration_secs": 62
+            },
+            {
+              "title": "American Who Learns Japanese For The First Time",
+              "url": "https://www.youtube.com/watch?v=Plqp-y3uZ_k",
+              "source": "Sora The Troll",
+              "date": "2026-07-24",
+              "views": 28727,
+              "likes": 1479,
+              "duration_secs": 32
+            },
+            {
+              "title": "American Who Went To His Japanese Friends House",
+              "url": "https://www.youtube.com/watch?v=mQqTv4clPQw",
+              "source": "Sora The Troll",
+              "date": "2026-07-26",
+              "views": 24957,
+              "likes": 2511,
+              "duration_secs": 70
             }
           ]
         },
         "top_items": [
           {
-            "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
-            "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
-            "source": "Caverna di Platone",
-            "date": "2026-07-09",
-            "views": 12424,
-            "likes": 297,
-            "duration_secs": 49
+            "title": "What A Sumo Match Is REALLY Like",
+            "url": "https://www.youtube.com/watch?v=OzcHE7PiDTY",
+            "source": "The Anime Man",
+            "date": "2026-07-22",
+            "views": 20012,
+            "likes": 478,
+            "duration_secs": 29
           },
           {
-            "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
-            "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
-            "source": "Caverna di Platone",
-            "date": "2026-07-10",
-            "views": 9320,
-            "likes": 543,
-            "duration_secs": 1447
+            "title": "When You Find Out About Him...",
+            "url": "https://www.youtube.com/watch?v=_BgFP-Uqn5A",
+            "source": "The Anime Man",
+            "date": "2026-07-20",
+            "views": 15409,
+            "likes": 282,
+            "duration_secs": 33
           },
           {
-            "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
-            "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
-            "source": "Caverna di Platone",
-            "date": "2026-07-07",
-            "views": 5245,
-            "likes": 263,
-            "duration_secs": 1167
+            "title": "Debugging Before The Internet",
+            "url": "https://www.youtube.com/watch?v=9tlSIm1b9LY",
+            "source": "The Anime Man",
+            "date": "2026-07-24",
+            "views": 9588,
+            "likes": 317,
+            "duration_secs": 53
           },
           {
-            "title": "A New Chapter",
-            "url": "https://www.youtube.com/watch?v=UrfwAbts0nM",
-            "source": "Abroad in Japan",
-            "date": "2026-07-10",
-            "views": 549517,
-            "likes": 45249,
-            "duration_secs": 332
+            "title": "Ameircan Man Who Met a Japanese Person For The First Time",
+            "url": "https://www.youtube.com/watch?v=GdM7D-FcQcA",
+            "source": "Sora The Troll",
+            "date": "2026-07-23",
+            "views": 31165,
+            "likes": 2441,
+            "duration_secs": 62
           },
           {
-            "title": "Living in Japan as Half Japanese",
-            "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
-            "source": "TAKASHii from Japan",
-            "date": "2026-07-06",
-            "views": 140443,
-            "likes": 3751,
-            "duration_secs": 2337
+            "title": "American Who Learns Japanese For The First Time",
+            "url": "https://www.youtube.com/watch?v=Plqp-y3uZ_k",
+            "source": "Sora The Troll",
+            "date": "2026-07-24",
+            "views": 28727,
+            "likes": 1479,
+            "duration_secs": 32
+          },
+          {
+            "title": "American Who Went To His Japanese Friends House",
+            "url": "https://www.youtube.com/watch?v=mQqTv4clPQw",
+            "source": "Sora The Troll",
+            "date": "2026-07-26",
+            "views": 24957,
+            "likes": 2511,
+            "duration_secs": 70
           }
         ]
       },
       {
-        "label": 1,
-        "score": 0.6484,
-        "keywords": [
-          "cesaroni",
-          "pubblico italia",
-          "italia",
-          "pubblico",
-          "bagno",
-          "bagno pubblico"
-        ],
-        "item_count": 5,
-        "total_views": 305875,
-        "velocity": 0.5,
-        "novelty": 0.5,
-        "diversity": 0.542,
-        "first_seen": "2026-07-08",
-        "last_seen": "2026-07-18",
-        "sentinel_clusters": [
-          "viaggio",
-          "vita_giappone",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.5313,
-          "casual": 0.5165
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.531,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "\"Mi sto cagando sotto\"",
-              "url": "https://www.youtube.com/watch?v=CwXAv1JCJjg",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-07-11",
-              "views": 140314,
-              "likes": 4140,
-              "duration_secs": 23
-            },
-            {
-              "title": "Bagno pubblico in Italia vs in Giappone🚽",
-              "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
-              "source": "Erikottero",
-              "date": "2026-07-12",
-              "views": 91700,
-              "likes": 2464,
-              "duration_secs": 29
-            },
-            {
-              "title": "leggo Tití Me Preguntó di Bad Bunny (in italiano)",
-              "url": "https://www.youtube.com/watch?v=lWxnEy96jWM",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-07-18",
-              "views": 47825,
-              "likes": 1993,
-              "duration_secs": 111
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "\"Mi sto cagando sotto\"",
-            "url": "https://www.youtube.com/watch?v=CwXAv1JCJjg",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-07-11",
-            "views": 140314,
-            "likes": 4140,
-            "duration_secs": 23
-          },
-          {
-            "title": "Bagno pubblico in Italia vs in Giappone🚽",
-            "url": "https://www.youtube.com/watch?v=eRKmZqlUE04",
-            "source": "Erikottero",
-            "date": "2026-07-12",
-            "views": 91700,
-            "likes": 2464,
-            "duration_secs": 29
-          },
-          {
-            "title": "leggo Tití Me Preguntó di Bad Bunny (in italiano)",
-            "url": "https://www.youtube.com/watch?v=lWxnEy96jWM",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-07-18",
-            "views": 47825,
-            "likes": 1993,
-            "duration_secs": 111
-          }
-        ]
-      }
-    ],
-    "affinita": [
-      {
-        "label": 6,
-        "score": 1.0045,
-        "keywords": [
-          "manga",
-          "twitch",
-          "originale",
-          "compra",
-          "caverna",
-          "tract"
-        ],
-        "item_count": 21,
-        "total_views": 739120,
-        "velocity": 0.35,
-        "novelty": 0.5,
-        "diversity": 1.0,
-        "first_seen": "2026-07-06",
-        "last_seen": "2026-07-20",
-        "sentinel_clusters": [
-          "expat_japan_en",
-          "vita_giappone",
-          "japan_native",
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "ja",
-          "it",
-          "en"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.871,
-          "casual": 0.7656
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.871,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
-              "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
-              "source": "Caverna di Platone",
-              "date": "2026-07-09",
-              "views": 12424,
-              "likes": 297,
-              "duration_secs": 49
-            },
-            {
-              "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
-              "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
-              "source": "Caverna di Platone",
-              "date": "2026-07-10",
-              "views": 9320,
-              "likes": 543,
-              "duration_secs": 1447
-            },
-            {
-              "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
-              "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
-              "source": "Caverna di Platone",
-              "date": "2026-07-07",
-              "views": 5245,
-              "likes": 263,
-              "duration_secs": 1167
-            }
-          ],
-          "en": [
-            {
-              "title": "A New Chapter",
-              "url": "https://www.youtube.com/watch?v=UrfwAbts0nM",
-              "source": "Abroad in Japan",
-              "date": "2026-07-10",
-              "views": 549517,
-              "likes": 45249,
-              "duration_secs": 332
-            }
-          ],
-          "ja": [
-            {
-              "title": "Living in Japan as Half Japanese",
-              "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
-              "source": "TAKASHii from Japan",
-              "date": "2026-07-06",
-              "views": 140443,
-              "likes": 3751,
-              "duration_secs": 2337
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Oshii ha Distrutto l'Originale Ghost in the Shell",
-            "url": "https://www.youtube.com/watch?v=iCW-rTIkmAw",
-            "source": "Caverna di Platone",
-            "date": "2026-07-09",
-            "views": 12424,
-            "likes": 297,
-            "duration_secs": 49
-          },
-          {
-            "title": "BERSERK 386 È IL MIGLIOR FINALE DELLA TRILOGIA",
-            "url": "https://www.youtube.com/watch?v=yjs4W1gBW2s",
-            "source": "Caverna di Platone",
-            "date": "2026-07-10",
-            "views": 9320,
-            "likes": 543,
-            "duration_secs": 1447
-          },
-          {
-            "title": "Non sto dicendo che THE ONE PIECE è una scammata, ma...",
-            "url": "https://www.youtube.com/watch?v=jltlETz6Ch0",
-            "source": "Caverna di Platone",
-            "date": "2026-07-07",
-            "views": 5245,
-            "likes": 263,
-            "duration_secs": 1167
-          },
-          {
-            "title": "A New Chapter",
-            "url": "https://www.youtube.com/watch?v=UrfwAbts0nM",
-            "source": "Abroad in Japan",
-            "date": "2026-07-10",
-            "views": 549517,
-            "likes": 45249,
-            "duration_secs": 332
-          },
-          {
-            "title": "Living in Japan as Half Japanese",
-            "url": "https://www.youtube.com/watch?v=KEe-kmPxC64",
-            "source": "TAKASHii from Japan",
-            "date": "2026-07-06",
-            "views": 140443,
-            "likes": 3751,
-            "duration_secs": 2337
-          }
-        ]
-      }
-    ],
-    "anomalie": [
-      {
-        "label": 4,
-        "score": 1.0828,
-        "keywords": [
-          "pancake",
-          "osaka",
-          "soba",
-          "matcha",
-          "prezzo",
-          "usa international"
-        ],
-        "item_count": 3,
-        "total_views": 219225,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-07-16",
-        "last_seen": "2026-07-17",
-        "sentinel_clusters": [
-          "expat_japan_en",
-          "vita_giappone"
-        ],
-        "languages": [
-          "it",
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5812,
-          "casual": 0.5656
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.581,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Pancake giapponesi a Osaka: il prezzo shock",
-              "url": "https://www.youtube.com/watch?v=taOSqQmMmpA",
-              "source": "Marco Togni",
-              "date": "2026-07-16",
-              "views": 9102,
-              "likes": 556,
-              "duration_secs": 42
-            },
-            {
-              "title": "Fonduta al Matcha: la specialità di Osaka",
-              "url": "https://www.youtube.com/watch?v=vsIu8ifxAec",
-              "source": "Marco Togni",
-              "date": "2026-07-16",
-              "views": 8141,
-              "likes": 571,
-              "duration_secs": 61
-            }
-          ],
-          "en": [
-            {
-              "title": "Behind the Counter at a local Japanese Handcrafted Soba Restaurant in Asakusa",
-              "url": "https://www.youtube.com/watch?v=P2Fg1BG5ZcM",
-              "source": "Paolo from Tokyo",
-              "date": "2026-07-17",
-              "views": 201982,
-              "likes": 9913,
-              "duration_secs": 1219
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Pancake giapponesi a Osaka: il prezzo shock",
-            "url": "https://www.youtube.com/watch?v=taOSqQmMmpA",
-            "source": "Marco Togni",
-            "date": "2026-07-16",
-            "views": 9102,
-            "likes": 556,
-            "duration_secs": 42
-          },
-          {
-            "title": "Fonduta al Matcha: la specialità di Osaka",
-            "url": "https://www.youtube.com/watch?v=vsIu8ifxAec",
-            "source": "Marco Togni",
-            "date": "2026-07-16",
-            "views": 8141,
-            "likes": 571,
-            "duration_secs": 61
-          },
-          {
-            "title": "Behind the Counter at a local Japanese Handcrafted Soba Restaurant in Asakusa",
-            "url": "https://www.youtube.com/watch?v=P2Fg1BG5ZcM",
-            "source": "Paolo from Tokyo",
-            "date": "2026-07-17",
-            "views": 201982,
-            "likes": 9913,
-            "duration_secs": 1219
-          }
-        ]
-      }
-    ],
-    "altri": [
-      {
-        "label": 3,
-        "score": 0.1973,
+        "label": 0,
+        "score": 0.428,
         "keywords": [
           "maglietta",
           "calze",
+          "panel",
+          "vlaszlo",
           "usate vlaszlo",
-          "usate",
-          "ulteriore",
-          "ulteriore paio"
+          "usate"
         ],
         "item_count": 6,
-        "total_views": 129989,
-        "velocity": 0.167,
-        "novelty": 0.5,
+        "total_views": 123516,
+        "velocity": 1.0,
+        "novelty": 1.0,
         "diversity": 0.292,
-        "first_seen": "2026-07-06",
-        "last_seen": "2026-07-15",
+        "first_seen": "2026-07-22",
+        "last_seen": "2026-07-26",
         "sentinel_clusters": [
           "videogiochi"
         ],
@@ -972,164 +411,803 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6186,
-          "casual": 0.4413
+          "narrativo": 0.6708,
+          "casual": 0.4857
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.619,
+        "affinity_best_score": 0.671,
         "items_by_lang": {
           "it": [
             {
-              "title": "L'odio a priori per Odissea : E il Cinema dov'è finito?",
-              "url": "https://www.youtube.com/watch?v=GGs2OrTstLw",
+              "title": "La Classifica (aggiornata): Tutti i film di Nolan dal peggiore al migliore",
+              "url": "https://www.youtube.com/watch?v=ViIpvCUTe44",
               "source": "Victorlaszlo88",
-              "date": "2026-07-08",
-              "views": 40912,
-              "likes": 2051,
-              "duration_secs": 1632
+              "date": "2026-07-24",
+              "views": 42438,
+              "likes": 2013,
+              "duration_secs": 5541
             },
             {
-              "title": "House of the Dragon 3X03: La tipologia di puntata che amo!",
-              "url": "https://www.youtube.com/watch?v=qm2z47kwL9U",
+              "title": "House of the Dragon 3x05: La noia vera",
+              "url": "https://www.youtube.com/watch?v=AmGrSfM3imM",
               "source": "Victorlaszlo88",
-              "date": "2026-07-07",
-              "views": 29585,
-              "likes": 1452,
-              "duration_secs": 2507
+              "date": "2026-07-22",
+              "views": 21172,
+              "likes": 974,
+              "duration_secs": 1847
             },
             {
-              "title": "House of the Dragon 3X04: Ho delle riserve",
-              "url": "https://www.youtube.com/watch?v=2MJf45epT1U",
+              "title": "Resident Evil Trailer Ufficiale: Io sono ESTASIATO",
+              "url": "https://www.youtube.com/watch?v=cBEYJCDuUiA",
               "source": "Victorlaszlo88",
-              "date": "2026-07-13",
-              "views": 25309,
-              "likes": 1205,
-              "duration_secs": 1766
+              "date": "2026-07-23",
+              "views": 17154,
+              "likes": 1003,
+              "duration_secs": 895
             }
           ]
         },
         "top_items": [
           {
-            "title": "L'odio a priori per Odissea : E il Cinema dov'è finito?",
-            "url": "https://www.youtube.com/watch?v=GGs2OrTstLw",
+            "title": "La Classifica (aggiornata): Tutti i film di Nolan dal peggiore al migliore",
+            "url": "https://www.youtube.com/watch?v=ViIpvCUTe44",
             "source": "Victorlaszlo88",
-            "date": "2026-07-08",
-            "views": 40912,
-            "likes": 2051,
-            "duration_secs": 1632
+            "date": "2026-07-24",
+            "views": 42438,
+            "likes": 2013,
+            "duration_secs": 5541
           },
           {
-            "title": "House of the Dragon 3X03: La tipologia di puntata che amo!",
-            "url": "https://www.youtube.com/watch?v=qm2z47kwL9U",
+            "title": "House of the Dragon 3x05: La noia vera",
+            "url": "https://www.youtube.com/watch?v=AmGrSfM3imM",
             "source": "Victorlaszlo88",
-            "date": "2026-07-07",
-            "views": 29585,
-            "likes": 1452,
-            "duration_secs": 2507
+            "date": "2026-07-22",
+            "views": 21172,
+            "likes": 974,
+            "duration_secs": 1847
           },
           {
-            "title": "House of the Dragon 3X04: Ho delle riserve",
-            "url": "https://www.youtube.com/watch?v=2MJf45epT1U",
+            "title": "Resident Evil Trailer Ufficiale: Io sono ESTASIATO",
+            "url": "https://www.youtube.com/watch?v=cBEYJCDuUiA",
             "source": "Victorlaszlo88",
-            "date": "2026-07-13",
-            "views": 25309,
-            "likes": 1205,
-            "duration_secs": 1766
+            "date": "2026-07-23",
+            "views": 17154,
+            "likes": 1003,
+            "duration_secs": 895
+          }
+        ]
+      }
+    ],
+    "crescita": [],
+    "cross_source": [
+      {
+        "label": 3,
+        "score": 0.9385,
+        "keywords": [
+          "fireworks",
+          "sushi",
+          "puoi",
+          "del",
+          "manga",
+          "monte"
+        ],
+        "item_count": 4,
+        "total_views": 27864,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.708,
+        "first_seen": "2026-07-21",
+        "last_seen": "2026-07-27",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7402,
+          "casual": 0.8037
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.804,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+              "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+              "source": "Marco Togni",
+              "date": "2026-07-21",
+              "views": 13759,
+              "likes": 1153,
+              "duration_secs": 2028
+            },
+            {
+              "title": "Sushi al supermercato sul Monte Fuji",
+              "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+              "source": "Marco Togni",
+              "date": "2026-07-27",
+              "views": 4018,
+              "likes": 505,
+              "duration_secs": 52
+            },
+            {
+              "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+              "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+              "source": "Kirio1984",
+              "date": "2026-07-22",
+              "views": 473,
+              "likes": 32,
+              "duration_secs": 1067
+            }
+          ],
+          "ja": [
+            {
+              "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+              "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+              "source": "Sora The Troll",
+              "date": "2026-07-25",
+              "views": 9614,
+              "likes": 330,
+              "duration_secs": 11952
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+            "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+            "source": "Marco Togni",
+            "date": "2026-07-21",
+            "views": 13759,
+            "likes": 1153,
+            "duration_secs": 2028
+          },
+          {
+            "title": "Sushi al supermercato sul Monte Fuji",
+            "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+            "source": "Marco Togni",
+            "date": "2026-07-27",
+            "views": 4018,
+            "likes": 505,
+            "duration_secs": 52
+          },
+          {
+            "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+            "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+            "source": "Kirio1984",
+            "date": "2026-07-22",
+            "views": 473,
+            "likes": 32,
+            "duration_secs": 1067
+          },
+          {
+            "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+            "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+            "source": "Sora The Troll",
+            "date": "2026-07-25",
+            "views": 9614,
+            "likes": 330,
+            "duration_secs": 11952
+          }
+        ]
+      }
+    ],
+    "affinita": [
+      {
+        "label": 2,
+        "score": 1.3845,
+        "keywords": [
+          "manga",
+          "twitch",
+          "english",
+          "works",
+          "compra",
+          "twitch qualità"
+        ],
+        "item_count": 6,
+        "total_views": 60433,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.583,
+        "first_seen": "2026-07-20",
+        "last_seen": "2026-07-26",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8541,
+          "casual": 0.7442
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.854,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Il cavallo di Troia è una bomba atomica?",
+              "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+              "source": "Caverna di Platone",
+              "date": "2026-07-22",
+              "views": 6710,
+              "likes": 191,
+              "duration_secs": 46
+            },
+            {
+              "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+              "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+              "source": "Kirio1984",
+              "date": "2026-07-24",
+              "views": 1164,
+              "likes": 77,
+              "duration_secs": 562
+            },
+            {
+              "title": "ANIME SULLA BOMBA DI MARADONA",
+              "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+              "source": "Caverna di Platone",
+              "date": "2026-07-26",
+              "views": 679,
+              "likes": 47,
+              "duration_secs": 755
+            }
+          ],
+          "ja": [
+            {
+              "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+              "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-07-23",
+              "views": 50704,
+              "likes": 3235,
+              "duration_secs": 1074
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Il cavallo di Troia è una bomba atomica?",
+            "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+            "source": "Caverna di Platone",
+            "date": "2026-07-22",
+            "views": 6710,
+            "likes": 191,
+            "duration_secs": 46
+          },
+          {
+            "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+            "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+            "source": "Kirio1984",
+            "date": "2026-07-24",
+            "views": 1164,
+            "likes": 77,
+            "duration_secs": 562
+          },
+          {
+            "title": "ANIME SULLA BOMBA DI MARADONA",
+            "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+            "source": "Caverna di Platone",
+            "date": "2026-07-26",
+            "views": 679,
+            "likes": 47,
+            "duration_secs": 755
+          },
+          {
+            "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+            "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-07-23",
+            "views": 50704,
+            "likes": 3235,
+            "duration_secs": 1074
           }
         ]
       },
       {
-        "label": 0,
-        "score": 0.1618,
+        "label": 3,
+        "score": 0.9385,
         "keywords": [
-          "nikon",
-          "travel",
-          "all",
-          "guides",
-          "use",
-          "everything"
+          "fireworks",
+          "sushi",
+          "puoi",
+          "del",
+          "manga",
+          "monte"
         ],
-        "item_count": 3,
-        "total_views": 17134,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-06",
-        "last_seen": "2026-07-14",
+        "item_count": 4,
+        "total_views": 27864,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.708,
+        "first_seen": "2026-07-21",
+        "last_seen": "2026-07-27",
         "sentinel_clusters": [
-          "fotografia_japan"
+          "anime_manga_pop",
+          "japan_native",
+          "vita_giappone"
         ],
         "languages": [
-          "en"
+          "it",
+          "ja"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.4767,
-          "casual": 0.4693
+          "narrativo": 0.7402,
+          "casual": 0.8037
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.477,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.804,
         "items_by_lang": {
-          "en": [
+          "it": [
             {
-              "title": "X2DII, street settings, and lens pairings",
-              "url": "https://www.youtube.com/watch?v=NfHdklOe0Wc",
-              "source": "Roman Fox / Snaps By Fox",
-              "date": "2026-07-14",
-              "views": 8219,
-              "likes": 369,
-              "duration_secs": 1479
+              "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+              "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+              "source": "Marco Togni",
+              "date": "2026-07-21",
+              "views": 13759,
+              "likes": 1153,
+              "duration_secs": 2028
             },
             {
-              "title": "this video is for grandma",
-              "url": "https://www.youtube.com/watch?v=J2WNtLqCwK8",
-              "source": "Roman Fox / Snaps By Fox",
-              "date": "2026-07-06",
-              "views": 5793,
-              "likes": 568,
-              "duration_secs": 1306
+              "title": "Sushi al supermercato sul Monte Fuji",
+              "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+              "source": "Marco Togni",
+              "date": "2026-07-27",
+              "views": 4018,
+              "likes": 505,
+              "duration_secs": 52
             },
             {
-              "title": "Street Shooting with Nikon F5 and Cinestill 800T",
-              "url": "https://www.youtube.com/watch?v=_9H3nMXaULY",
-              "source": "EYExplore",
-              "date": "2026-07-11",
-              "views": 3122,
-              "likes": 258,
-              "duration_secs": 2034
+              "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+              "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+              "source": "Kirio1984",
+              "date": "2026-07-22",
+              "views": 473,
+              "likes": 32,
+              "duration_secs": 1067
+            }
+          ],
+          "ja": [
+            {
+              "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+              "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+              "source": "Sora The Troll",
+              "date": "2026-07-25",
+              "views": 9614,
+              "likes": 330,
+              "duration_secs": 11952
             }
           ]
         },
         "top_items": [
           {
-            "title": "X2DII, street settings, and lens pairings",
-            "url": "https://www.youtube.com/watch?v=NfHdklOe0Wc",
-            "source": "Roman Fox / Snaps By Fox",
-            "date": "2026-07-14",
-            "views": 8219,
-            "likes": 369,
-            "duration_secs": 1479
+            "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+            "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+            "source": "Marco Togni",
+            "date": "2026-07-21",
+            "views": 13759,
+            "likes": 1153,
+            "duration_secs": 2028
           },
           {
-            "title": "this video is for grandma",
-            "url": "https://www.youtube.com/watch?v=J2WNtLqCwK8",
-            "source": "Roman Fox / Snaps By Fox",
-            "date": "2026-07-06",
-            "views": 5793,
-            "likes": 568,
-            "duration_secs": 1306
+            "title": "Sushi al supermercato sul Monte Fuji",
+            "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+            "source": "Marco Togni",
+            "date": "2026-07-27",
+            "views": 4018,
+            "likes": 505,
+            "duration_secs": 52
           },
           {
-            "title": "Street Shooting with Nikon F5 and Cinestill 800T",
-            "url": "https://www.youtube.com/watch?v=_9H3nMXaULY",
-            "source": "EYExplore",
-            "date": "2026-07-11",
-            "views": 3122,
-            "likes": 258,
-            "duration_secs": 2034
+            "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+            "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+            "source": "Kirio1984",
+            "date": "2026-07-22",
+            "views": 473,
+            "likes": 32,
+            "duration_secs": 1067
+          },
+          {
+            "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+            "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+            "source": "Sora The Troll",
+            "date": "2026-07-25",
+            "views": 9614,
+            "likes": 330,
+            "duration_secs": 11952
           }
         ]
       }
-    ]
+    ],
+    "anomalie": [
+      {
+        "label": 2,
+        "score": 1.3845,
+        "keywords": [
+          "manga",
+          "twitch",
+          "english",
+          "works",
+          "compra",
+          "twitch qualità"
+        ],
+        "item_count": 6,
+        "total_views": 60433,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.583,
+        "first_seen": "2026-07-20",
+        "last_seen": "2026-07-26",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8541,
+          "casual": 0.7442
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.854,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Il cavallo di Troia è una bomba atomica?",
+              "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+              "source": "Caverna di Platone",
+              "date": "2026-07-22",
+              "views": 6710,
+              "likes": 191,
+              "duration_secs": 46
+            },
+            {
+              "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+              "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+              "source": "Kirio1984",
+              "date": "2026-07-24",
+              "views": 1164,
+              "likes": 77,
+              "duration_secs": 562
+            },
+            {
+              "title": "ANIME SULLA BOMBA DI MARADONA",
+              "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+              "source": "Caverna di Platone",
+              "date": "2026-07-26",
+              "views": 679,
+              "likes": 47,
+              "duration_secs": 755
+            }
+          ],
+          "ja": [
+            {
+              "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+              "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-07-23",
+              "views": 50704,
+              "likes": 3235,
+              "duration_secs": 1074
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Il cavallo di Troia è una bomba atomica?",
+            "url": "https://www.youtube.com/watch?v=QOD7JE15xD4",
+            "source": "Caverna di Platone",
+            "date": "2026-07-22",
+            "views": 6710,
+            "likes": 191,
+            "duration_secs": 46
+          },
+          {
+            "title": "MANGA IN CORSO: Quali CONSIGLIO e quali NO!?",
+            "url": "https://www.youtube.com/watch?v=WR-IJDHFRxg",
+            "source": "Kirio1984",
+            "date": "2026-07-24",
+            "views": 1164,
+            "likes": 77,
+            "duration_secs": 562
+          },
+          {
+            "title": "ANIME SULLA BOMBA DI MARADONA",
+            "url": "https://www.youtube.com/watch?v=sGorjbBYIIw",
+            "source": "Caverna di Platone",
+            "date": "2026-07-26",
+            "views": 679,
+            "likes": 47,
+            "duration_secs": 755
+          },
+          {
+            "title": "【ブラックさいとうなおき】 絵が楽しくない？当たり前だバカやろう！！",
+            "url": "https://www.youtube.com/watch?v=rZNEbwmVEQQ",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-07-23",
+            "views": 50704,
+            "likes": 3235,
+            "duration_secs": 1074
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.9385,
+        "keywords": [
+          "fireworks",
+          "sushi",
+          "puoi",
+          "del",
+          "manga",
+          "monte"
+        ],
+        "item_count": 4,
+        "total_views": 27864,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.708,
+        "first_seen": "2026-07-21",
+        "last_seen": "2026-07-27",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7402,
+          "casual": 0.8037
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.804,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+              "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+              "source": "Marco Togni",
+              "date": "2026-07-21",
+              "views": 13759,
+              "likes": 1153,
+              "duration_secs": 2028
+            },
+            {
+              "title": "Sushi al supermercato sul Monte Fuji",
+              "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+              "source": "Marco Togni",
+              "date": "2026-07-27",
+              "views": 4018,
+              "likes": 505,
+              "duration_secs": 52
+            },
+            {
+              "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+              "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+              "source": "Kirio1984",
+              "date": "2026-07-22",
+              "views": 473,
+              "likes": 32,
+              "duration_secs": 1067
+            }
+          ],
+          "ja": [
+            {
+              "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+              "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+              "source": "Sora The Troll",
+              "date": "2026-07-25",
+              "views": 9614,
+              "likes": 330,
+              "duration_secs": 11952
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "La vita in Giappone: SUSHI PODCAST con Tommaso",
+            "url": "https://www.youtube.com/watch?v=MzVhplj0ma4",
+            "source": "Marco Togni",
+            "date": "2026-07-21",
+            "views": 13759,
+            "likes": 1153,
+            "duration_secs": 2028
+          },
+          {
+            "title": "Sushi al supermercato sul Monte Fuji",
+            "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
+            "source": "Marco Togni",
+            "date": "2026-07-27",
+            "views": 4018,
+            "likes": 505,
+            "duration_secs": 52
+          },
+          {
+            "title": "Una settimana FUORI di TESTA a TOKYO e DINTORNI!",
+            "url": "https://www.youtube.com/watch?v=L8BcDHPamg0",
+            "source": "Kirio1984",
+            "date": "2026-07-22",
+            "views": 473,
+            "likes": 32,
+            "duration_secs": 1067
+          },
+          {
+            "title": "Going To Japan's BIGGEST Fireworks To See People's Reactions (Sumida Fireworks Festival 2026)",
+            "url": "https://www.youtube.com/watch?v=l-bR3lLlOJU",
+            "source": "Sora The Troll",
+            "date": "2026-07-25",
+            "views": 9614,
+            "likes": 330,
+            "duration_secs": 11952
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 0.5495,
+        "keywords": [
+          "use",
+          "try",
+          "sora attention",
+          "sora",
+          "album",
+          "attention"
+        ],
+        "item_count": 11,
+        "total_views": 183843,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.583,
+        "first_seen": "2026-07-20",
+        "last_seen": "2026-07-27",
+        "sentinel_clusters": [
+          "japan_native",
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6749,
+          "casual": 0.6585
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.675,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "What A Sumo Match Is REALLY Like",
+              "url": "https://www.youtube.com/watch?v=OzcHE7PiDTY",
+              "source": "The Anime Man",
+              "date": "2026-07-22",
+              "views": 20012,
+              "likes": 478,
+              "duration_secs": 29
+            },
+            {
+              "title": "When You Find Out About Him...",
+              "url": "https://www.youtube.com/watch?v=_BgFP-Uqn5A",
+              "source": "The Anime Man",
+              "date": "2026-07-20",
+              "views": 15409,
+              "likes": 282,
+              "duration_secs": 33
+            },
+            {
+              "title": "Debugging Before The Internet",
+              "url": "https://www.youtube.com/watch?v=9tlSIm1b9LY",
+              "source": "The Anime Man",
+              "date": "2026-07-24",
+              "views": 9588,
+              "likes": 317,
+              "duration_secs": 53
+            }
+          ],
+          "ja": [
+            {
+              "title": "Ameircan Man Who Met a Japanese Person For The First Time",
+              "url": "https://www.youtube.com/watch?v=GdM7D-FcQcA",
+              "source": "Sora The Troll",
+              "date": "2026-07-23",
+              "views": 31165,
+              "likes": 2441,
+              "duration_secs": 62
+            },
+            {
+              "title": "American Who Learns Japanese For The First Time",
+              "url": "https://www.youtube.com/watch?v=Plqp-y3uZ_k",
+              "source": "Sora The Troll",
+              "date": "2026-07-24",
+              "views": 28727,
+              "likes": 1479,
+              "duration_secs": 32
+            },
+            {
+              "title": "American Who Went To His Japanese Friends House",
+              "url": "https://www.youtube.com/watch?v=mQqTv4clPQw",
+              "source": "Sora The Troll",
+              "date": "2026-07-26",
+              "views": 24957,
+              "likes": 2511,
+              "duration_secs": 70
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "What A Sumo Match Is REALLY Like",
+            "url": "https://www.youtube.com/watch?v=OzcHE7PiDTY",
+            "source": "The Anime Man",
+            "date": "2026-07-22",
+            "views": 20012,
+            "likes": 478,
+            "duration_secs": 29
+          },
+          {
+            "title": "When You Find Out About Him...",
+            "url": "https://www.youtube.com/watch?v=_BgFP-Uqn5A",
+            "source": "The Anime Man",
+            "date": "2026-07-20",
+            "views": 15409,
+            "likes": 282,
+            "duration_secs": 33
+          },
+          {
+            "title": "Debugging Before The Internet",
+            "url": "https://www.youtube.com/watch?v=9tlSIm1b9LY",
+            "source": "The Anime Man",
+            "date": "2026-07-24",
+            "views": 9588,
+            "likes": 317,
+            "duration_secs": 53
+          },
+          {
+            "title": "Ameircan Man Who Met a Japanese Person For The First Time",
+            "url": "https://www.youtube.com/watch?v=GdM7D-FcQcA",
+            "source": "Sora The Troll",
+            "date": "2026-07-23",
+            "views": 31165,
+            "likes": 2441,
+            "duration_secs": 62
+          },
+          {
+            "title": "American Who Learns Japanese For The First Time",
+            "url": "https://www.youtube.com/watch?v=Plqp-y3uZ_k",
+            "source": "Sora The Troll",
+            "date": "2026-07-24",
+            "views": 28727,
+            "likes": 1479,
+            "duration_secs": 32
+          },
+          {
+            "title": "American Who Went To His Japanese Friends House",
+            "url": "https://www.youtube.com/watch?v=mQqTv4clPQw",
+            "source": "Sora The Troll",
+            "date": "2026-07-26",
+            "views": 24957,
+            "likes": 2511,
+            "duration_secs": 70
+          }
+        ]
+      }
+    ],
+    "altri": []
   }
 }
