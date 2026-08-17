@@ -1,328 +1,497 @@
 {
-  "generated_at": "2026-08-10",
-  "total_clusters": 11,
-  "total_videos": 62,
-  "date_range_start": "2026-07-27",
-  "date_range_end": "2026-08-09",
+  "generated_at": "2026-08-17",
+  "total_clusters": 10,
+  "total_videos": 60,
+  "date_range_start": "2026-08-03",
+  "date_range_end": "2026-08-17",
   "sections": {
-    "emergenti": [],
-    "crescita": [
+    "emergenti": [
       {
         "label": 1,
-        "score": 0.8634,
+        "score": 0.8316,
         "keywords": [
-          "usa international",
-          "usa",
-          "international",
-          "market",
-          "japanese",
-          "business"
+          "comedy",
+          "scioglilingua",
+          "ragno",
+          "uomo",
+          "uomo ragno",
+          "doppiaggio"
         ],
-        "item_count": 4,
-        "total_views": 729902,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-07",
+        "item_count": 5,
+        "total_views": 1110999,
+        "velocity": 0.4,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-08-10",
+        "last_seen": "2026-08-14",
         "sentinel_clusters": [
-          "vita_giappone",
-          "expat_japan_en"
+          "anime_manga_pop"
         ],
         "languages": [
-          "en",
           "it"
         ],
-        "has_mover": false,
+        "has_mover": true,
         "affinity": {
-          "narrativo": 0.6082,
-          "casual": 0.654
+          "narrativo": 0.5304,
+          "casual": 0.4267
         },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.654,
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.53,
         "items_by_lang": {
           "it": [
             {
-              "title": "Sushi a Tokyo: 10.000 yen per 11 pezzi",
-              "url": "https://www.youtube.com/watch?v=-2KgSs8oG-g",
-              "source": "Marco Togni",
-              "date": "2026-07-31",
-              "views": 21696,
-              "likes": 1190,
-              "duration_secs": 60
+              "title": "Tony Stark con la voce di Winchester dei Simpson \\ con @angelomaggiofficial",
+              "url": "https://www.youtube.com/watch?v=ItArJPzo4_w",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-11",
+              "views": 581769,
+              "likes": 15445,
+              "duration_secs": 26
             },
             {
-              "title": "Sushi al supermercato sul Monte Fuji",
-              "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
-              "source": "Marco Togni",
-              "date": "2026-07-27",
-              "views": 4018,
-              "likes": 505,
-              "duration_secs": 52
-            }
-          ],
-          "en": [
-            {
-              "title": "What a Day at a Japanese Fish Market Auction is like",
-              "url": "https://www.youtube.com/watch?v=KFKu2ARffd0",
-              "source": "Paolo from Tokyo",
-              "date": "2026-07-31",
-              "views": 367223,
-              "likes": 13987,
-              "duration_secs": 1317
+              "title": "divento un Minion con @arianna_craviotto",
+              "url": "https://www.youtube.com/watch?v=9Citlm868kE",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-13",
+              "views": 376188,
+              "likes": 12865,
+              "duration_secs": 39
             },
             {
-              "title": "Behind the Counter at a Japanese Fish Market Bento Shop",
-              "url": "https://www.youtube.com/watch?v=OLXppx6g0W4",
-              "source": "Paolo from Tokyo",
-              "date": "2026-08-07",
-              "views": 336965,
-              "likes": 14758,
-              "duration_secs": 1448
+              "title": "L'abilità di @francescofanucchi nel cambiare pubblico!",
+              "url": "https://www.youtube.com/watch?v=y7BjOTTgHxA",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-14",
+              "views": 114703,
+              "likes": 5543,
+              "duration_secs": 44
             }
           ]
         },
         "top_items": [
           {
-            "title": "Sushi a Tokyo: 10.000 yen per 11 pezzi",
-            "url": "https://www.youtube.com/watch?v=-2KgSs8oG-g",
-            "source": "Marco Togni",
-            "date": "2026-07-31",
-            "views": 21696,
-            "likes": 1190,
-            "duration_secs": 60
+            "title": "Tony Stark con la voce di Winchester dei Simpson \\ con @angelomaggiofficial",
+            "url": "https://www.youtube.com/watch?v=ItArJPzo4_w",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-11",
+            "views": 581769,
+            "likes": 15445,
+            "duration_secs": 26
           },
           {
-            "title": "Sushi al supermercato sul Monte Fuji",
-            "url": "https://www.youtube.com/watch?v=AuQ3asbT8XQ",
-            "source": "Marco Togni",
-            "date": "2026-07-27",
-            "views": 4018,
-            "likes": 505,
-            "duration_secs": 52
+            "title": "divento un Minion con @arianna_craviotto",
+            "url": "https://www.youtube.com/watch?v=9Citlm868kE",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-13",
+            "views": 376188,
+            "likes": 12865,
+            "duration_secs": 39
           },
           {
-            "title": "What a Day at a Japanese Fish Market Auction is like",
-            "url": "https://www.youtube.com/watch?v=KFKu2ARffd0",
-            "source": "Paolo from Tokyo",
-            "date": "2026-07-31",
-            "views": 367223,
-            "likes": 13987,
-            "duration_secs": 1317
-          },
-          {
-            "title": "Behind the Counter at a Japanese Fish Market Bento Shop",
-            "url": "https://www.youtube.com/watch?v=OLXppx6g0W4",
-            "source": "Paolo from Tokyo",
-            "date": "2026-08-07",
-            "views": 336965,
-            "likes": 14758,
-            "duration_secs": 1448
-          }
-        ]
-      },
-      {
-        "label": 4,
-        "score": 0.4145,
-        "keywords": [
-          "use",
-          "copyright",
-          "fair",
-          "fair use",
-          "use tips",
-          "used"
-        ],
-        "item_count": 6,
-        "total_views": 87870,
-        "velocity": 0.583,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-07",
-        "sentinel_clusters": [
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6531,
-          "casual": 0.6127
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.653,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "This Is His Success Rate...",
-              "url": "https://www.youtube.com/watch?v=CMqXefSwtvU",
-              "source": "The Anime Man",
-              "date": "2026-07-27",
-              "views": 18356,
-              "likes": 346,
-              "duration_secs": 38
-            },
-            {
-              "title": "Why do sumo wrestlers throw salt?",
-              "url": "https://www.youtube.com/watch?v=gPG-dIw8t88",
-              "source": "The Anime Man",
-              "date": "2026-07-29",
-              "views": 16379,
-              "likes": 321,
-              "duration_secs": 23
-            },
-            {
-              "title": "What a Mother programmer thinks of Undertale",
-              "url": "https://www.youtube.com/watch?v=nHR6JHQII-4",
-              "source": "The Anime Man",
-              "date": "2026-08-05",
-              "views": 14862,
-              "likes": 486,
-              "duration_secs": 34
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "This Is His Success Rate...",
-            "url": "https://www.youtube.com/watch?v=CMqXefSwtvU",
-            "source": "The Anime Man",
-            "date": "2026-07-27",
-            "views": 18356,
-            "likes": 346,
-            "duration_secs": 38
-          },
-          {
-            "title": "Why do sumo wrestlers throw salt?",
-            "url": "https://www.youtube.com/watch?v=gPG-dIw8t88",
-            "source": "The Anime Man",
-            "date": "2026-07-29",
-            "views": 16379,
-            "likes": 321,
-            "duration_secs": 23
-          },
-          {
-            "title": "What a Mother programmer thinks of Undertale",
-            "url": "https://www.youtube.com/watch?v=nHR6JHQII-4",
-            "source": "The Anime Man",
-            "date": "2026-08-05",
-            "views": 14862,
-            "likes": 486,
-            "duration_secs": 34
+            "title": "L'abilità di @francescofanucchi nel cambiare pubblico!",
+            "url": "https://www.youtube.com/watch?v=y7BjOTTgHxA",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-14",
+            "views": 114703,
+            "likes": 5543,
+            "duration_secs": 44
           }
         ]
       },
       {
         "label": 3,
-        "score": 0.3544,
+        "score": 0.6698,
         "keywords": [
-          "maglietta",
-          "calze",
-          "walls maglietta",
-          "walls",
-          "usate",
-          "usate vlaszlo"
+          "eriko",
+          "armani",
+          "cassata",
+          "locale",
+          "del",
+          "possa"
         ],
-        "item_count": 4,
-        "total_views": 56758,
+        "item_count": 3,
+        "total_views": 5444,
         "velocity": 1.0,
-        "novelty": 0.5,
+        "novelty": 1.0,
         "diversity": 0.292,
-        "first_seen": "2026-07-28",
-        "last_seen": "2026-08-08",
+        "first_seen": "2026-08-10",
+        "last_seen": "2026-08-17",
         "sentinel_clusters": [
-          "videogiochi"
+          "vita_giappone"
         ],
         "languages": [
           "it"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6148,
-          "casual": 0.4576
+          "narrativo": 0.5594,
+          "casual": 0.5727
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.615,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.573,
         "items_by_lang": {
           "it": [
             {
-              "title": "House of the Dragon 3X06: Migliora, ma...",
-              "url": "https://www.youtube.com/watch?v=djoSHMFZCck",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-28",
-              "views": 22270,
-              "likes": 1197,
-              "duration_secs": 2349
+              "title": "Perché il cibo di \"SERIE B\" in Giappone è un CAPOLAVORO?🥢",
+              "url": "https://www.youtube.com/watch?v=SNZWm71skB4",
+              "source": "Erikottero",
+              "date": "2026-08-16",
+              "views": 4410,
+              "likes": 514,
+              "duration_secs": 688
             },
             {
-              "title": "Il record di Incassi di Odissea e il box office dell'estate!",
-              "url": "https://www.youtube.com/watch?v=ZWa_zn8YO8c",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-28",
-              "views": 13323,
-              "likes": 980,
-              "duration_secs": 1231
+              "title": "Cannoli siciliani a Tokyo: meglio degli originali?",
+              "url": "https://www.youtube.com/watch?v=B7A5lpNyIQM",
+              "source": "Marco Togni",
+              "date": "2026-08-10",
+              "views": 557,
+              "likes": 74,
+              "duration_secs": 143
             },
             {
-              "title": "Il trailer di GTA VI su Netflix è una cosa inaccettabile?",
-              "url": "https://www.youtube.com/watch?v=Pyby9gb6RXk",
-              "source": "Victorlaszlo88",
-              "date": "2026-08-08",
-              "views": 12597,
-              "likes": 736,
-              "duration_secs": 899
+              "title": "Cassata siciliana a Tokyo: l'esperienza Armani",
+              "url": "https://www.youtube.com/watch?v=_gIiR7gXSnU",
+              "source": "Marco Togni",
+              "date": "2026-08-17",
+              "views": 477,
+              "likes": 42,
+              "duration_secs": 47
             }
           ]
         },
         "top_items": [
           {
-            "title": "House of the Dragon 3X06: Migliora, ma...",
-            "url": "https://www.youtube.com/watch?v=djoSHMFZCck",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-28",
-            "views": 22270,
-            "likes": 1197,
-            "duration_secs": 2349
+            "title": "Perché il cibo di \"SERIE B\" in Giappone è un CAPOLAVORO?🥢",
+            "url": "https://www.youtube.com/watch?v=SNZWm71skB4",
+            "source": "Erikottero",
+            "date": "2026-08-16",
+            "views": 4410,
+            "likes": 514,
+            "duration_secs": 688
           },
           {
-            "title": "Il record di Incassi di Odissea e il box office dell'estate!",
-            "url": "https://www.youtube.com/watch?v=ZWa_zn8YO8c",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-28",
-            "views": 13323,
-            "likes": 980,
-            "duration_secs": 1231
+            "title": "Cannoli siciliani a Tokyo: meglio degli originali?",
+            "url": "https://www.youtube.com/watch?v=B7A5lpNyIQM",
+            "source": "Marco Togni",
+            "date": "2026-08-10",
+            "views": 557,
+            "likes": 74,
+            "duration_secs": 143
           },
           {
-            "title": "Il trailer di GTA VI su Netflix è una cosa inaccettabile?",
-            "url": "https://www.youtube.com/watch?v=Pyby9gb6RXk",
-            "source": "Victorlaszlo88",
-            "date": "2026-08-08",
-            "views": 12597,
-            "likes": 736,
-            "duration_secs": 899
+            "title": "Cassata siciliana a Tokyo: l'esperienza Armani",
+            "url": "https://www.youtube.com/watch?v=_gIiR7gXSnU",
+            "source": "Marco Togni",
+            "date": "2026-08-17",
+            "views": 477,
+            "likes": 42,
+            "duration_secs": 47
+          }
+        ]
+      }
+    ],
+    "crescita": [
+      {
+        "label": 8,
+        "score": 0.7691,
+        "keywords": [
+          "manga",
+          "twitch",
+          "compra",
+          "ball",
+          "dragon ball",
+          "dragon"
+        ],
+        "item_count": 6,
+        "total_views": 103648,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-17",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8503,
+          "casual": 0.775
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.85,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Nonni italiani e nipotina giapponese a Tokyo dopo 9 mesi! #giappone #giapponese #tokyo",
+              "url": "https://www.youtube.com/watch?v=_c5zx10NEgk",
+              "source": "Vivi Giappone",
+              "date": "2026-08-14",
+              "views": 95563,
+              "likes": 977,
+              "duration_secs": 26
+            },
+            {
+              "title": "RITORNO AL MERCATINO",
+              "url": "https://www.youtube.com/watch?v=rSx2JWGCqTA",
+              "source": "Caverna di Platone",
+              "date": "2026-08-13",
+              "views": 3373,
+              "likes": 168,
+              "duration_secs": 1691
+            },
+            {
+              "title": "SEI FORTE SOLO COI CAPELLI LUNGHI: LO DICE DRAGON BALL",
+              "url": "https://www.youtube.com/watch?v=O8-3nout2xY",
+              "source": "Caverna di Platone",
+              "date": "2026-08-14",
+              "views": 3018,
+              "likes": 210,
+              "duration_secs": 3479
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Nonni italiani e nipotina giapponese a Tokyo dopo 9 mesi! #giappone #giapponese #tokyo",
+            "url": "https://www.youtube.com/watch?v=_c5zx10NEgk",
+            "source": "Vivi Giappone",
+            "date": "2026-08-14",
+            "views": 95563,
+            "likes": 977,
+            "duration_secs": 26
+          },
+          {
+            "title": "RITORNO AL MERCATINO",
+            "url": "https://www.youtube.com/watch?v=rSx2JWGCqTA",
+            "source": "Caverna di Platone",
+            "date": "2026-08-13",
+            "views": 3373,
+            "likes": 168,
+            "duration_secs": 1691
+          },
+          {
+            "title": "SEI FORTE SOLO COI CAPELLI LUNGHI: LO DICE DRAGON BALL",
+            "url": "https://www.youtube.com/watch?v=O8-3nout2xY",
+            "source": "Caverna di Platone",
+            "date": "2026-08-14",
+            "views": 3018,
+            "likes": 210,
+            "duration_secs": 3479
           }
         ]
       },
       {
-        "label": 5,
-        "score": 0.2807,
+        "label": 9,
+        "score": 0.6635,
         "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
+          "life",
+          "vita",
+          "del",
+          "lavoro",
+          "integrazione",
+          "famiglia"
         ],
         "item_count": 3,
-        "total_views": 89136,
+        "total_views": 105833,
+        "velocity": 0.833,
+        "novelty": 0.5,
+        "diversity": 0.583,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-16",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6619,
+          "casual": 0.813
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.813,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "IL GIAPPONE MI HA CAMBIATO in PEGGIO? LIBERO PROFESSIONISTA in GIAPPONE?",
+              "url": "https://www.youtube.com/watch?v=82Li9YzIc8A",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-07",
+              "views": 4521,
+              "likes": 447,
+              "duration_secs": 1113
+            },
+            {
+              "title": "Non C’è Integrazione in Giappone ",
+              "url": "https://www.youtube.com/watch?v=8hGnmjVCNPQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-08-16",
+              "views": 637,
+              "likes": 79,
+              "duration_secs": 1055
+            }
+          ],
+          "ja": [
+            {
+              "title": "Life in Japan",
+              "url": "https://www.youtube.com/watch?v=Vu73KueAHXY",
+              "source": "TAKASHii from Japan",
+              "date": "2026-08-03",
+              "views": 100675,
+              "likes": 4155,
+              "duration_secs": 51
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "IL GIAPPONE MI HA CAMBIATO in PEGGIO? LIBERO PROFESSIONISTA in GIAPPONE?",
+            "url": "https://www.youtube.com/watch?v=82Li9YzIc8A",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-07",
+            "views": 4521,
+            "likes": 447,
+            "duration_secs": 1113
+          },
+          {
+            "title": "Non C’è Integrazione in Giappone ",
+            "url": "https://www.youtube.com/watch?v=8hGnmjVCNPQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-08-16",
+            "views": 637,
+            "likes": 79,
+            "duration_secs": 1055
+          },
+          {
+            "title": "Life in Japan",
+            "url": "https://www.youtube.com/watch?v=Vu73KueAHXY",
+            "source": "TAKASHii from Japan",
+            "date": "2026-08-03",
+            "views": 100675,
+            "likes": 4155,
+            "duration_secs": 51
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.6018,
+        "keywords": [
+          "maglietta",
+          "calze",
+          "house",
+          "house dragon",
+          "dragon",
+          "vlaszlo"
+        ],
+        "item_count": 8,
+        "total_views": 163120,
         "velocity": 1.0,
         "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-16",
+        "sentinel_clusters": [
+          "videogiochi",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.6377,
+          "casual": 0.4394
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.638,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "House of the Dragon 3X08: Ma per l'amore del cielo",
+              "url": "https://www.youtube.com/watch?v=0O2M66uPKaA",
+              "source": "Victorlaszlo88",
+              "date": "2026-08-10",
+              "views": 39947,
+              "likes": 1712,
+              "duration_secs": 2026
+            },
+            {
+              "title": "House of the Dragon 3X07: Non ho più speranze",
+              "url": "https://www.youtube.com/watch?v=fejBh6OITiU",
+              "source": "Victorlaszlo88",
+              "date": "2026-08-03",
+              "views": 34450,
+              "likes": 1348,
+              "duration_secs": 2090
+            },
+            {
+              "title": "Avengers Doomsday Special look: Questo è spettacolare!",
+              "url": "https://www.youtube.com/watch?v=l8cPprcdXNU",
+              "source": "Victorlaszlo88",
+              "date": "2026-08-15",
+              "views": 33103,
+              "likes": 1983,
+              "duration_secs": 668
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "House of the Dragon 3X08: Ma per l'amore del cielo",
+            "url": "https://www.youtube.com/watch?v=0O2M66uPKaA",
+            "source": "Victorlaszlo88",
+            "date": "2026-08-10",
+            "views": 39947,
+            "likes": 1712,
+            "duration_secs": 2026
+          },
+          {
+            "title": "House of the Dragon 3X07: Non ho più speranze",
+            "url": "https://www.youtube.com/watch?v=fejBh6OITiU",
+            "source": "Victorlaszlo88",
+            "date": "2026-08-03",
+            "views": 34450,
+            "likes": 1348,
+            "duration_secs": 2090
+          },
+          {
+            "title": "Avengers Doomsday Special look: Questo è spettacolare!",
+            "url": "https://www.youtube.com/watch?v=l8cPprcdXNU",
+            "source": "Victorlaszlo88",
+            "date": "2026-08-15",
+            "views": 33103,
+            "likes": 1983,
+            "duration_secs": 668
+          }
+        ]
+      },
+      {
+        "label": 7,
+        "score": 0.2576,
+        "keywords": [
+          "sora",
+          "sora attention",
+          "attention album",
+          "attention",
+          "japanese",
+          "album"
+        ],
+        "item_count": 18,
+        "total_views": 493185,
+        "velocity": 0.853,
+        "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-07-30",
-        "last_seen": "2026-08-08",
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-17",
         "sentinel_clusters": [
           "japan_native"
         ],
@@ -331,11 +500,103 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6754,
-          "casual": 0.5836
+          "narrativo": 0.6567,
+          "casual": 0.6572
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.657,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Japanese girl talks about the 67 situation in Japan LOL",
+              "url": "https://www.youtube.com/watch?v=KQh-95Ip2-Y",
+              "source": "Sora The Troll",
+              "date": "2026-08-15",
+              "views": 267093,
+              "likes": 8841,
+              "duration_secs": 30
+            },
+            {
+              "title": "Very typical communication in Japan",
+              "url": "https://www.youtube.com/watch?v=5z-b0UX2K54",
+              "source": "Sora The Troll",
+              "date": "2026-08-14",
+              "views": 37339,
+              "likes": 1415,
+              "duration_secs": 34
+            },
+            {
+              "title": "How To Make Japanese Girls Uncomfortable",
+              "url": "https://www.youtube.com/watch?v=uaMHNKHmQPE",
+              "source": "Sora The Troll",
+              "date": "2026-08-16",
+              "views": 34544,
+              "likes": 1165,
+              "duration_secs": 11
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Japanese girl talks about the 67 situation in Japan LOL",
+            "url": "https://www.youtube.com/watch?v=KQh-95Ip2-Y",
+            "source": "Sora The Troll",
+            "date": "2026-08-15",
+            "views": 267093,
+            "likes": 8841,
+            "duration_secs": 30
+          },
+          {
+            "title": "Very typical communication in Japan",
+            "url": "https://www.youtube.com/watch?v=5z-b0UX2K54",
+            "source": "Sora The Troll",
+            "date": "2026-08-14",
+            "views": 37339,
+            "likes": 1415,
+            "duration_secs": 34
+          },
+          {
+            "title": "How To Make Japanese Girls Uncomfortable",
+            "url": "https://www.youtube.com/watch?v=uaMHNKHmQPE",
+            "source": "Sora The Troll",
+            "date": "2026-08-16",
+            "views": 34544,
+            "likes": 1165,
+            "duration_secs": 11
+          }
+        ]
+      },
+      {
+        "label": 5,
+        "score": 0.246,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "naokichi works",
+          "naokichi"
+        ],
+        "item_count": 4,
+        "total_views": 103644,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-08-06",
+        "last_seen": "2026-08-15",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6989,
+          "casual": 0.6054
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.675,
+        "affinity_best_score": 0.699,
         "items_by_lang": {
           "ja": [
             {
@@ -357,13 +618,13 @@
               "duration_secs": 895
             },
             {
-              "title": "【プロ絵師】作業部屋、新環境ができたので公開します…！！",
-              "url": "https://www.youtube.com/watch?v=K8d425hCtTo",
+              "title": "【かかげコラボ総まとめ】プロ同士がガチで絵の添削をしてみた...！！！",
+              "url": "https://www.youtube.com/watch?v=0teH9aIfvwA",
               "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-07-30",
-              "views": 26775,
-              "likes": 1477,
-              "duration_secs": 881
+              "date": "2026-08-13",
+              "views": 25928,
+              "likes": 1451,
+              "duration_secs": 1764
             }
           ]
         },
@@ -387,641 +648,322 @@
             "duration_secs": 895
           },
           {
-            "title": "【プロ絵師】作業部屋、新環境ができたので公開します…！！",
-            "url": "https://www.youtube.com/watch?v=K8d425hCtTo",
+            "title": "【かかげコラボ総まとめ】プロ同士がガチで絵の添削をしてみた...！！！",
+            "url": "https://www.youtube.com/watch?v=0teH9aIfvwA",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-07-30",
-            "views": 26775,
-            "likes": 1477,
-            "duration_secs": 881
+            "date": "2026-08-13",
+            "views": 25928,
+            "likes": 1451,
+            "duration_secs": 1764
           }
         ]
-      },
-      {
-        "label": 7,
-        "score": 0.2533,
-        "keywords": [
-          "japanese",
-          "well",
-          "driving",
-          "car appreciate",
-          "well tts",
-          "try"
-        ],
-        "item_count": 3,
-        "total_views": 18857,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-31",
-        "last_seen": "2026-08-09",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6246,
-          "casual": 0.64
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.64,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "WAIT This Japanese BEACH TOWN Has Half NAKIIID People IN PUBLIC LOLOLOL",
-              "url": "https://www.youtube.com/watch?v=MXvspnlIwLk",
-              "source": "Sora The Troll",
-              "date": "2026-08-02",
-              "views": 12045,
-              "likes": 413,
-              "duration_secs": 18293
-            },
-            {
-              "title": "GUYS Let's Review VTUBERS/YOUTUBERS Japanese With The Japanese Girl Streamer @Yoshimyan LOLOLOLOLO",
-              "url": "https://www.youtube.com/watch?v=tUVZWIiWtHs",
-              "source": "Sora The Troll",
-              "date": "2026-07-31",
-              "views": 6812,
-              "likes": 294,
-              "duration_secs": 6879
-            },
-            {
-              "title": "Would This Japanese Girl YouTuber REALLY Show Up AGAIN On Stream?",
-              "url": "https://www.youtube.com/watch?v=JVAHtMCXG38",
-              "source": "Sora The Troll",
-              "date": "2026-08-09",
-              "views": 0,
-              "likes": 47,
-              "duration_secs": 0
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "WAIT This Japanese BEACH TOWN Has Half NAKIIID People IN PUBLIC LOLOLOL",
-            "url": "https://www.youtube.com/watch?v=MXvspnlIwLk",
-            "source": "Sora The Troll",
-            "date": "2026-08-02",
-            "views": 12045,
-            "likes": 413,
-            "duration_secs": 18293
-          },
-          {
-            "title": "GUYS Let's Review VTUBERS/YOUTUBERS Japanese With The Japanese Girl Streamer @Yoshimyan LOLOLOLOLO",
-            "url": "https://www.youtube.com/watch?v=tUVZWIiWtHs",
-            "source": "Sora The Troll",
-            "date": "2026-07-31",
-            "views": 6812,
-            "likes": 294,
-            "duration_secs": 6879
-          },
-          {
-            "title": "Would This Japanese Girl YouTuber REALLY Show Up AGAIN On Stream?",
-            "url": "https://www.youtube.com/watch?v=JVAHtMCXG38",
-            "source": "Sora The Troll",
-            "date": "2026-08-09",
-            "views": 0,
-            "likes": 47,
-            "duration_secs": 0
-          }
-        ]
-      },
-      {
-        "label": 0,
-        "score": 0.2493,
-        "keywords": [
-          "august",
-          "bee",
-          "cave",
-          "bee cave",
-          "whole foods",
-          "whole"
-        ],
-        "item_count": 3,
-        "total_views": 855677,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-08-02",
-        "last_seen": "2026-08-08",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.3012,
-          "casual": 0.2967
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.301,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "Before the tour vs. After reaching out goal",
-              "url": "https://www.youtube.com/watch?v=7xTRaw2W4Wg",
-              "source": "Kimono Mom",
-              "date": "2026-08-08",
-              "views": 466310,
-              "likes": 9689,
-              "duration_secs": 7
-            },
-            {
-              "title": "Yes, I married with a good person😂",
-              "url": "https://www.youtube.com/watch?v=lExQ80pMxHk",
-              "source": "Kimono Mom",
-              "date": "2026-08-02",
-              "views": 282563,
-              "likes": 17299,
-              "duration_secs": 58
-            },
-            {
-              "title": "TEXAS‼️WE’RE HERE🤠🐎💨",
-              "url": "https://www.youtube.com/watch?v=vwb9NARfkRE",
-              "source": "Kimono Mom",
-              "date": "2026-08-04",
-              "views": 106804,
-              "likes": 4968,
-              "duration_secs": 19
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Before the tour vs. After reaching out goal",
-            "url": "https://www.youtube.com/watch?v=7xTRaw2W4Wg",
-            "source": "Kimono Mom",
-            "date": "2026-08-08",
-            "views": 466310,
-            "likes": 9689,
-            "duration_secs": 7
-          },
-          {
-            "title": "Yes, I married with a good person😂",
-            "url": "https://www.youtube.com/watch?v=lExQ80pMxHk",
-            "source": "Kimono Mom",
-            "date": "2026-08-02",
-            "views": 282563,
-            "likes": 17299,
-            "duration_secs": 58
-          },
-          {
-            "title": "TEXAS‼️WE’RE HERE🤠🐎💨",
-            "url": "https://www.youtube.com/watch?v=vwb9NARfkRE",
-            "source": "Kimono Mom",
-            "date": "2026-08-04",
-            "views": 106804,
-            "likes": 4968,
-            "duration_secs": 19
-          }
-        ]
-      },
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
       {
         "label": 8,
-        "score": 0.2304,
+        "score": 0.7691,
         "keywords": [
-          "japanese",
-          "american",
-          "sora attention",
-          "try",
-          "attention album",
-          "album try"
+          "manga",
+          "twitch",
+          "compra",
+          "ball",
+          "dragon ball",
+          "dragon"
         ],
-        "item_count": 15,
-        "total_views": 230158,
-        "velocity": 0.679,
+        "item_count": 6,
+        "total_views": 103648,
+        "velocity": 0.75,
         "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-10",
+        "diversity": 0.417,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-17",
         "sentinel_clusters": [
+          "anime_manga_pop",
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8503,
+          "casual": 0.775
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.85,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Nonni italiani e nipotina giapponese a Tokyo dopo 9 mesi! #giappone #giapponese #tokyo",
+              "url": "https://www.youtube.com/watch?v=_c5zx10NEgk",
+              "source": "Vivi Giappone",
+              "date": "2026-08-14",
+              "views": 95563,
+              "likes": 977,
+              "duration_secs": 26
+            },
+            {
+              "title": "RITORNO AL MERCATINO",
+              "url": "https://www.youtube.com/watch?v=rSx2JWGCqTA",
+              "source": "Caverna di Platone",
+              "date": "2026-08-13",
+              "views": 3373,
+              "likes": 168,
+              "duration_secs": 1691
+            },
+            {
+              "title": "SEI FORTE SOLO COI CAPELLI LUNGHI: LO DICE DRAGON BALL",
+              "url": "https://www.youtube.com/watch?v=O8-3nout2xY",
+              "source": "Caverna di Platone",
+              "date": "2026-08-14",
+              "views": 3018,
+              "likes": 210,
+              "duration_secs": 3479
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Nonni italiani e nipotina giapponese a Tokyo dopo 9 mesi! #giappone #giapponese #tokyo",
+            "url": "https://www.youtube.com/watch?v=_c5zx10NEgk",
+            "source": "Vivi Giappone",
+            "date": "2026-08-14",
+            "views": 95563,
+            "likes": 977,
+            "duration_secs": 26
+          },
+          {
+            "title": "RITORNO AL MERCATINO",
+            "url": "https://www.youtube.com/watch?v=rSx2JWGCqTA",
+            "source": "Caverna di Platone",
+            "date": "2026-08-13",
+            "views": 3373,
+            "likes": 168,
+            "duration_secs": 1691
+          },
+          {
+            "title": "SEI FORTE SOLO COI CAPELLI LUNGHI: LO DICE DRAGON BALL",
+            "url": "https://www.youtube.com/watch?v=O8-3nout2xY",
+            "source": "Caverna di Platone",
+            "date": "2026-08-14",
+            "views": 3018,
+            "likes": 210,
+            "duration_secs": 3479
+          }
+        ]
+      },
+      {
+        "label": 9,
+        "score": 0.6635,
+        "keywords": [
+          "life",
+          "vita",
+          "del",
+          "lavoro",
+          "integrazione",
+          "famiglia"
+        ],
+        "item_count": 3,
+        "total_views": 105833,
+        "velocity": 0.833,
+        "novelty": 0.5,
+        "diversity": 0.583,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-16",
+        "sentinel_clusters": [
+          "vita_giappone",
           "japan_native"
         ],
         "languages": [
+          "it",
           "ja"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.636,
-          "casual": 0.6391
+          "narrativo": 0.6619,
+          "casual": 0.813
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.639,
+        "affinity_best_score": 0.813,
         "items_by_lang": {
+          "it": [
+            {
+              "title": "IL GIAPPONE MI HA CAMBIATO in PEGGIO? LIBERO PROFESSIONISTA in GIAPPONE?",
+              "url": "https://www.youtube.com/watch?v=82Li9YzIc8A",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-07",
+              "views": 4521,
+              "likes": 447,
+              "duration_secs": 1113
+            },
+            {
+              "title": "Non C’è Integrazione in Giappone ",
+              "url": "https://www.youtube.com/watch?v=8hGnmjVCNPQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-08-16",
+              "views": 637,
+              "likes": 79,
+              "duration_secs": 1055
+            }
+          ],
           "ja": [
             {
-              "title": "What Happens If A Japanese Guy Acts \"AMERICAN\" In Front Of Japanese-American Girl VTubers?",
-              "url": "https://www.youtube.com/watch?v=GB0pUziBcmw",
-              "source": "Sora The Troll",
-              "date": "2026-07-29",
-              "views": 47893,
-              "likes": 3315,
-              "duration_secs": 1155
+              "title": "Life in Japan",
+              "url": "https://www.youtube.com/watch?v=Vu73KueAHXY",
+              "source": "TAKASHii from Japan",
+              "date": "2026-08-03",
+              "views": 100675,
+              "likes": 4155,
+              "duration_secs": 51
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "IL GIAPPONE MI HA CAMBIATO in PEGGIO? LIBERO PROFESSIONISTA in GIAPPONE?",
+            "url": "https://www.youtube.com/watch?v=82Li9YzIc8A",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-07",
+            "views": 4521,
+            "likes": 447,
+            "duration_secs": 1113
+          },
+          {
+            "title": "Non C’è Integrazione in Giappone ",
+            "url": "https://www.youtube.com/watch?v=8hGnmjVCNPQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-08-16",
+            "views": 637,
+            "likes": 79,
+            "duration_secs": 1055
+          },
+          {
+            "title": "Life in Japan",
+            "url": "https://www.youtube.com/watch?v=Vu73KueAHXY",
+            "source": "TAKASHii from Japan",
+            "date": "2026-08-03",
+            "views": 100675,
+            "likes": 4155,
+            "duration_secs": 51
+          }
+        ]
+      }
+    ],
+    "anomalie": [
+      {
+        "label": 3,
+        "score": 0.6698,
+        "keywords": [
+          "eriko",
+          "armani",
+          "cassata",
+          "locale",
+          "del",
+          "possa"
+        ],
+        "item_count": 3,
+        "total_views": 5444,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-08-10",
+        "last_seen": "2026-08-17",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5594,
+          "casual": 0.5727
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.573,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Perché il cibo di \"SERIE B\" in Giappone è un CAPOLAVORO?🥢",
+              "url": "https://www.youtube.com/watch?v=SNZWm71skB4",
+              "source": "Erikottero",
+              "date": "2026-08-16",
+              "views": 4410,
+              "likes": 514,
+              "duration_secs": 688
             },
             {
-              "title": "I Exposed The Japanese Girl VTuber’s Face",
-              "url": "https://www.youtube.com/watch?v=9WPlaWQcVJU",
-              "source": "Sora The Troll",
-              "date": "2026-08-04",
-              "views": 27277,
-              "likes": 1539,
-              "duration_secs": 597
+              "title": "Cannoli siciliani a Tokyo: meglio degli originali?",
+              "url": "https://www.youtube.com/watch?v=B7A5lpNyIQM",
+              "source": "Marco Togni",
+              "date": "2026-08-10",
+              "views": 557,
+              "likes": 74,
+              "duration_secs": 143
             },
             {
-              "title": "American Who Learned Japanese In 1 minute",
-              "url": "https://www.youtube.com/watch?v=W5XAVnovfz0",
-              "source": "Sora The Troll",
-              "date": "2026-07-28",
-              "views": 26307,
-              "likes": 1664,
+              "title": "Cassata siciliana a Tokyo: l'esperienza Armani",
+              "url": "https://www.youtube.com/watch?v=_gIiR7gXSnU",
+              "source": "Marco Togni",
+              "date": "2026-08-17",
+              "views": 477,
+              "likes": 42,
               "duration_secs": 47
             }
           ]
         },
         "top_items": [
           {
-            "title": "What Happens If A Japanese Guy Acts \"AMERICAN\" In Front Of Japanese-American Girl VTubers?",
-            "url": "https://www.youtube.com/watch?v=GB0pUziBcmw",
-            "source": "Sora The Troll",
-            "date": "2026-07-29",
-            "views": 47893,
-            "likes": 3315,
-            "duration_secs": 1155
+            "title": "Perché il cibo di \"SERIE B\" in Giappone è un CAPOLAVORO?🥢",
+            "url": "https://www.youtube.com/watch?v=SNZWm71skB4",
+            "source": "Erikottero",
+            "date": "2026-08-16",
+            "views": 4410,
+            "likes": 514,
+            "duration_secs": 688
           },
           {
-            "title": "I Exposed The Japanese Girl VTuber’s Face",
-            "url": "https://www.youtube.com/watch?v=9WPlaWQcVJU",
-            "source": "Sora The Troll",
-            "date": "2026-08-04",
-            "views": 27277,
-            "likes": 1539,
-            "duration_secs": 597
+            "title": "Cannoli siciliani a Tokyo: meglio degli originali?",
+            "url": "https://www.youtube.com/watch?v=B7A5lpNyIQM",
+            "source": "Marco Togni",
+            "date": "2026-08-10",
+            "views": 557,
+            "likes": 74,
+            "duration_secs": 143
           },
           {
-            "title": "American Who Learned Japanese In 1 minute",
-            "url": "https://www.youtube.com/watch?v=W5XAVnovfz0",
-            "source": "Sora The Troll",
-            "date": "2026-07-28",
-            "views": 26307,
-            "likes": 1664,
+            "title": "Cassata siciliana a Tokyo: l'esperienza Armani",
+            "url": "https://www.youtube.com/watch?v=_gIiR7gXSnU",
+            "source": "Marco Togni",
+            "date": "2026-08-17",
+            "views": 477,
+            "likes": 42,
             "duration_secs": 47
           }
         ]
       }
     ],
-    "cross_source": [
-      {
-        "label": 9,
-        "score": 0.7775,
-        "keywords": [
-          "man",
-          "spider",
-          "spider man",
-          "day",
-          "brand new",
-          "new day"
-        ],
-        "item_count": 12,
-        "total_views": 414510,
-        "velocity": 0.292,
-        "novelty": 0.5,
-        "diversity": 0.833,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-07",
-        "sentinel_clusters": [
-          "videogiochi",
-          "vita_giappone",
-          "anime_manga_pop",
-          "japan_native"
-        ],
-        "languages": [
-          "ja",
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.8003,
-          "casual": 0.6741
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.8,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "La scoperta dei 3 Spider-man, con @jacopocalatroni3293  e @AlexPolidori",
-              "url": "https://www.youtube.com/watch?v=RqM5D2IZ3hg",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-08-05",
-              "views": 213018,
-              "likes": 6664,
-              "duration_secs": 37
-            },
-            {
-              "title": "MovieBlog- 1096:  Recensione Spider-Man Brand New Day",
-              "url": "https://www.youtube.com/watch?v=VF_xOjC_oj8",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-29",
-              "views": 76133,
-              "likes": 4465,
-              "duration_secs": 2831
-            },
-            {
-              "title": "Ho visto Spider-Man Brand New Day",
-              "url": "https://www.youtube.com/watch?v=_SLBGIhMDHk",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-28",
-              "views": 52206,
-              "likes": 2143,
-              "duration_secs": 42
-            }
-          ],
-          "ja": [
-            {
-              "title": "Bests of Tokyo @usiimoo.10314",
-              "url": "https://www.youtube.com/watch?v=RlF2kXqhPyg",
-              "source": "TAKASHii from Japan",
-              "date": "2026-07-30",
-              "views": 17786,
-              "likes": 831,
-              "duration_secs": 55
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "La scoperta dei 3 Spider-man, con @jacopocalatroni3293  e @AlexPolidori",
-            "url": "https://www.youtube.com/watch?v=RqM5D2IZ3hg",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-08-05",
-            "views": 213018,
-            "likes": 6664,
-            "duration_secs": 37
-          },
-          {
-            "title": "MovieBlog- 1096:  Recensione Spider-Man Brand New Day",
-            "url": "https://www.youtube.com/watch?v=VF_xOjC_oj8",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-29",
-            "views": 76133,
-            "likes": 4465,
-            "duration_secs": 2831
-          },
-          {
-            "title": "Ho visto Spider-Man Brand New Day",
-            "url": "https://www.youtube.com/watch?v=_SLBGIhMDHk",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-28",
-            "views": 52206,
-            "likes": 2143,
-            "duration_secs": 42
-          },
-          {
-            "title": "Bests of Tokyo @usiimoo.10314",
-            "url": "https://www.youtube.com/watch?v=RlF2kXqhPyg",
-            "source": "TAKASHii from Japan",
-            "date": "2026-07-30",
-            "views": 17786,
-            "likes": 831,
-            "duration_secs": 55
-          }
-        ]
-      }
-    ],
-    "affinita": [
-      {
-        "label": 9,
-        "score": 0.7775,
-        "keywords": [
-          "man",
-          "spider",
-          "spider man",
-          "day",
-          "brand new",
-          "new day"
-        ],
-        "item_count": 12,
-        "total_views": 414510,
-        "velocity": 0.292,
-        "novelty": 0.5,
-        "diversity": 0.833,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-07",
-        "sentinel_clusters": [
-          "videogiochi",
-          "vita_giappone",
-          "anime_manga_pop",
-          "japan_native"
-        ],
-        "languages": [
-          "ja",
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.8003,
-          "casual": 0.6741
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.8,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "La scoperta dei 3 Spider-man, con @jacopocalatroni3293  e @AlexPolidori",
-              "url": "https://www.youtube.com/watch?v=RqM5D2IZ3hg",
-              "source": "Maurizio Merluzzo",
-              "date": "2026-08-05",
-              "views": 213018,
-              "likes": 6664,
-              "duration_secs": 37
-            },
-            {
-              "title": "MovieBlog- 1096:  Recensione Spider-Man Brand New Day",
-              "url": "https://www.youtube.com/watch?v=VF_xOjC_oj8",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-29",
-              "views": 76133,
-              "likes": 4465,
-              "duration_secs": 2831
-            },
-            {
-              "title": "Ho visto Spider-Man Brand New Day",
-              "url": "https://www.youtube.com/watch?v=_SLBGIhMDHk",
-              "source": "Victorlaszlo88",
-              "date": "2026-07-28",
-              "views": 52206,
-              "likes": 2143,
-              "duration_secs": 42
-            }
-          ],
-          "ja": [
-            {
-              "title": "Bests of Tokyo @usiimoo.10314",
-              "url": "https://www.youtube.com/watch?v=RlF2kXqhPyg",
-              "source": "TAKASHii from Japan",
-              "date": "2026-07-30",
-              "views": 17786,
-              "likes": 831,
-              "duration_secs": 55
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "La scoperta dei 3 Spider-man, con @jacopocalatroni3293  e @AlexPolidori",
-            "url": "https://www.youtube.com/watch?v=RqM5D2IZ3hg",
-            "source": "Maurizio Merluzzo",
-            "date": "2026-08-05",
-            "views": 213018,
-            "likes": 6664,
-            "duration_secs": 37
-          },
-          {
-            "title": "MovieBlog- 1096:  Recensione Spider-Man Brand New Day",
-            "url": "https://www.youtube.com/watch?v=VF_xOjC_oj8",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-29",
-            "views": 76133,
-            "likes": 4465,
-            "duration_secs": 2831
-          },
-          {
-            "title": "Ho visto Spider-Man Brand New Day",
-            "url": "https://www.youtube.com/watch?v=_SLBGIhMDHk",
-            "source": "Victorlaszlo88",
-            "date": "2026-07-28",
-            "views": 52206,
-            "likes": 2143,
-            "duration_secs": 42
-          },
-          {
-            "title": "Bests of Tokyo @usiimoo.10314",
-            "url": "https://www.youtube.com/watch?v=RlF2kXqhPyg",
-            "source": "TAKASHii from Japan",
-            "date": "2026-07-30",
-            "views": 17786,
-            "likes": 831,
-            "duration_secs": 55
-          }
-        ]
-      },
-      {
-        "label": 10,
-        "score": 0.2292,
-        "keywords": [
-          "manga",
-          "compra",
-          "altro",
-          "kirio",
-          "puoi",
-          "mettilo"
-        ],
-        "item_count": 4,
-        "total_views": 2617,
-        "velocity": 0.125,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-07-29",
-        "last_seen": "2026-08-03",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7742,
-          "casual": 0.7067
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.774,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "ANNUNCI MANGA J-POP: Quali prenderò e quali non mi convincono!",
-              "url": "https://www.youtube.com/watch?v=g0ZXNubs1Cs",
-              "source": "Kirio1984",
-              "date": "2026-07-29",
-              "views": 777,
-              "likes": 46,
-              "duration_secs": 818
-            },
-            {
-              "title": "Potrei MOLLARE alcuni di questi MANGA... ma alcuni sono INCREDIBILI!",
-              "url": "https://www.youtube.com/watch?v=92afTV_M-N4",
-              "source": "Kirio1984",
-              "date": "2026-08-01",
-              "views": 752,
-              "likes": 63,
-              "duration_secs": 808
-            },
-            {
-              "title": "Ho ricevuto un SACCO di MANGA! 📦 Le novità più interessanti del momento",
-              "url": "https://www.youtube.com/watch?v=jUXMlYcy420",
-              "source": "Kirio1984",
-              "date": "2026-07-31",
-              "views": 558,
-              "likes": 52,
-              "duration_secs": 462
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "ANNUNCI MANGA J-POP: Quali prenderò e quali non mi convincono!",
-            "url": "https://www.youtube.com/watch?v=g0ZXNubs1Cs",
-            "source": "Kirio1984",
-            "date": "2026-07-29",
-            "views": 777,
-            "likes": 46,
-            "duration_secs": 818
-          },
-          {
-            "title": "Potrei MOLLARE alcuni di questi MANGA... ma alcuni sono INCREDIBILI!",
-            "url": "https://www.youtube.com/watch?v=92afTV_M-N4",
-            "source": "Kirio1984",
-            "date": "2026-08-01",
-            "views": 752,
-            "likes": 63,
-            "duration_secs": 808
-          },
-          {
-            "title": "Ho ricevuto un SACCO di MANGA! 📦 Le novità più interessanti del momento",
-            "url": "https://www.youtube.com/watch?v=jUXMlYcy420",
-            "source": "Kirio1984",
-            "date": "2026-07-31",
-            "views": 558,
-            "likes": 52,
-            "duration_secs": 462
-          }
-        ]
-      }
-    ],
-    "anomalie": [],
     "altri": [
       {
         "label": 6,
-        "score": 0.5029,
+        "score": 0.5563,
         "keywords": [
           "manga",
           "davvero",
-          "presa",
-          "ennesima",
-          "editore manga",
-          "giro editore"
+          "editori",
+          "creator",
+          "fumetti",
+          "lettori"
         ],
-        "item_count": 4,
-        "total_views": 8761,
-        "velocity": 0.25,
+        "item_count": 3,
+        "total_views": 6853,
+        "velocity": 0.333,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-07-27",
-        "last_seen": "2026-08-07",
+        "first_seen": "2026-08-07",
+        "last_seen": "2026-08-12",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -1030,11 +972,11 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7411,
-          "casual": 0.6241
+          "narrativo": 0.6396,
+          "casual": 0.5442
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.741,
+        "affinity_best_score": 0.64,
         "items_by_lang": {
           "it": [
             {
@@ -1047,22 +989,22 @@
               "duration_secs": 1497
             },
             {
-              "title": "L’ennesima presa in giro di un editore manga italiano?",
-              "url": "https://www.youtube.com/watch?v=3m1Nx20N1VM",
-              "source": "Kirio1984",
-              "date": "2026-08-07",
-              "views": 2613,
-              "likes": 121,
-              "duration_secs": 119
+              "title": "Perché oggi gli editori comprano QUALSIASI manga?",
+              "url": "https://www.youtube.com/watch?v=g4_TGhX2zUc",
+              "source": "Caverna di Platone",
+              "date": "2026-08-12",
+              "views": 2828,
+              "likes": 147,
+              "duration_secs": 1194
             },
             {
-              "title": "CASE EDITRICI OBBLIGATE A PUBBLICARE MANGA? La verità",
-              "url": "https://www.youtube.com/watch?v=z8o9Lls4WUM",
-              "source": "Caverna di Platone",
-              "date": "2026-07-31",
-              "views": 2534,
-              "likes": 152,
-              "duration_secs": 1102
+              "title": "MANGA GRATIS, RECENSIONI E PUBBLICITÀ OCCULTA: DOVE FINISCE LA TRASPARENZA?",
+              "url": "https://www.youtube.com/watch?v=oeffnWY76IU",
+              "source": "Kirio1984",
+              "date": "2026-08-10",
+              "views": 810,
+              "likes": 68,
+              "duration_secs": 728
             }
           ]
         },
@@ -1077,114 +1019,206 @@
             "duration_secs": 1497
           },
           {
-            "title": "L’ennesima presa in giro di un editore manga italiano?",
-            "url": "https://www.youtube.com/watch?v=3m1Nx20N1VM",
-            "source": "Kirio1984",
-            "date": "2026-08-07",
-            "views": 2613,
-            "likes": 121,
-            "duration_secs": 119
+            "title": "Perché oggi gli editori comprano QUALSIASI manga?",
+            "url": "https://www.youtube.com/watch?v=g4_TGhX2zUc",
+            "source": "Caverna di Platone",
+            "date": "2026-08-12",
+            "views": 2828,
+            "likes": 147,
+            "duration_secs": 1194
           },
           {
-            "title": "CASE EDITRICI OBBLIGATE A PUBBLICARE MANGA? La verità",
-            "url": "https://www.youtube.com/watch?v=z8o9Lls4WUM",
-            "source": "Caverna di Platone",
-            "date": "2026-07-31",
-            "views": 2534,
-            "likes": 152,
-            "duration_secs": 1102
+            "title": "MANGA GRATIS, RECENSIONI E PUBBLICITÀ OCCULTA: DOVE FINISCE LA TRASPARENZA?",
+            "url": "https://www.youtube.com/watch?v=oeffnWY76IU",
+            "source": "Kirio1984",
+            "date": "2026-08-10",
+            "views": 810,
+            "likes": 68,
+            "duration_secs": 728
           }
         ]
       },
       {
-        "label": 2,
-        "score": 0.4119,
+        "label": 0,
+        "score": 0.4549,
         "keywords": [
-          "shopping",
-          "magliette",
-          "del",
-          "truffe",
-          "nei",
-          "gacha"
+          "ricomincio",
+          "dobbiamo migliori",
+          "dobbiamo",
+          "migliori",
+          "secondo",
+          "interessi"
         ],
-        "item_count": 4,
-        "total_views": 31894,
-        "velocity": 0.25,
+        "item_count": 5,
+        "total_views": 16782,
+        "velocity": 0.2,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-08-01",
-        "last_seen": "2026-08-06",
+        "first_seen": "2026-08-06",
+        "last_seen": "2026-08-10",
         "sentinel_clusters": [
-          "vita_giappone"
+          "anime_manga_pop"
         ],
         "languages": [
           "it"
         ],
-        "has_mover": false,
+        "has_mover": true,
         "affinity": {
-          "narrativo": 0.6803,
-          "casual": 0.7056
+          "narrativo": 0.3815,
+          "casual": 0.3649
         },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.706,
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.382,
         "items_by_lang": {
           "it": [
             {
-              "title": "Truffe in Giappone: come evitarle",
-              "url": "https://www.youtube.com/watch?v=GFbCM-4QGug",
-              "source": "Marco Togni",
-              "date": "2026-08-05",
-              "views": 20729,
-              "likes": 874,
-              "duration_secs": 78
+              "title": "Ho fallito. Tocca ricominciare da zero. #adv",
+              "url": "https://www.youtube.com/watch?v=7mArX3pKxx8",
+              "source": "Caverna di Platone",
+              "date": "2026-08-08",
+              "views": 4030,
+              "likes": 124,
+              "duration_secs": 43
             },
             {
-              "title": "Shopping a Tokyo: dove trovare magliette uniche",
-              "url": "https://www.youtube.com/watch?v=T1DhvDVh-Fo",
-              "source": "Marco Togni",
-              "date": "2026-08-01",
-              "views": 4762,
-              "likes": 396,
-              "duration_secs": 70
+              "title": "Secondo giorno senza conflitto d’interessi",
+              "url": "https://www.youtube.com/watch?v=7fQltpcXR14",
+              "source": "Caverna di Platone",
+              "date": "2026-08-07",
+              "views": 3993,
+              "likes": 150,
+              "duration_secs": 39
             },
             {
-              "title": "Dove comprare l'omino giapponese",
-              "url": "https://www.youtube.com/watch?v=AE7YiC0q-b4",
-              "source": "Marco Togni",
-              "date": "2026-08-06",
-              "views": 4375,
-              "likes": 260,
-              "duration_secs": 66
+              "title": "Ricomincio da due",
+              "url": "https://www.youtube.com/watch?v=RXmCZDdEyys",
+              "source": "Caverna di Platone",
+              "date": "2026-08-10",
+              "views": 3734,
+              "likes": 138,
+              "duration_secs": 62
             }
           ]
         },
         "top_items": [
           {
-            "title": "Truffe in Giappone: come evitarle",
-            "url": "https://www.youtube.com/watch?v=GFbCM-4QGug",
-            "source": "Marco Togni",
+            "title": "Ho fallito. Tocca ricominciare da zero. #adv",
+            "url": "https://www.youtube.com/watch?v=7mArX3pKxx8",
+            "source": "Caverna di Platone",
+            "date": "2026-08-08",
+            "views": 4030,
+            "likes": 124,
+            "duration_secs": 43
+          },
+          {
+            "title": "Secondo giorno senza conflitto d’interessi",
+            "url": "https://www.youtube.com/watch?v=7fQltpcXR14",
+            "source": "Caverna di Platone",
+            "date": "2026-08-07",
+            "views": 3993,
+            "likes": 150,
+            "duration_secs": 39
+          },
+          {
+            "title": "Ricomincio da due",
+            "url": "https://www.youtube.com/watch?v=RXmCZDdEyys",
+            "source": "Caverna di Platone",
+            "date": "2026-08-10",
+            "views": 3734,
+            "likes": 138,
+            "duration_secs": 62
+          }
+        ]
+      },
+      {
+        "label": 4,
+        "score": 0.3087,
+        "keywords": [
+          "use",
+          "fair",
+          "copyright",
+          "fair use",
+          "use tips",
+          "used owned"
+        ],
+        "item_count": 5,
+        "total_views": 88465,
+        "velocity": 0.2,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-08-03",
+        "last_seen": "2026-08-13",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6629,
+          "casual": 0.6173
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.663,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "One must become crab to know",
+              "url": "https://www.youtube.com/watch?v=8Uyv3dkj1F0",
+              "source": "The Anime Man",
+              "date": "2026-08-13",
+              "views": 26260,
+              "likes": 1459,
+              "duration_secs": 71
+            },
+            {
+              "title": "\"Anyone got a link cable?\"",
+              "url": "https://www.youtube.com/watch?v=ETVMq-ln8Qs",
+              "source": "The Anime Man",
+              "date": "2026-08-11",
+              "views": 19404,
+              "likes": 508,
+              "duration_secs": 29
+            },
+            {
+              "title": "What a Mother programmer thinks of Undertale",
+              "url": "https://www.youtube.com/watch?v=nHR6JHQII-4",
+              "source": "The Anime Man",
+              "date": "2026-08-05",
+              "views": 14862,
+              "likes": 486,
+              "duration_secs": 34
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "One must become crab to know",
+            "url": "https://www.youtube.com/watch?v=8Uyv3dkj1F0",
+            "source": "The Anime Man",
+            "date": "2026-08-13",
+            "views": 26260,
+            "likes": 1459,
+            "duration_secs": 71
+          },
+          {
+            "title": "\"Anyone got a link cable?\"",
+            "url": "https://www.youtube.com/watch?v=ETVMq-ln8Qs",
+            "source": "The Anime Man",
+            "date": "2026-08-11",
+            "views": 19404,
+            "likes": 508,
+            "duration_secs": 29
+          },
+          {
+            "title": "What a Mother programmer thinks of Undertale",
+            "url": "https://www.youtube.com/watch?v=nHR6JHQII-4",
+            "source": "The Anime Man",
             "date": "2026-08-05",
-            "views": 20729,
-            "likes": 874,
-            "duration_secs": 78
-          },
-          {
-            "title": "Shopping a Tokyo: dove trovare magliette uniche",
-            "url": "https://www.youtube.com/watch?v=T1DhvDVh-Fo",
-            "source": "Marco Togni",
-            "date": "2026-08-01",
-            "views": 4762,
-            "likes": 396,
-            "duration_secs": 70
-          },
-          {
-            "title": "Dove comprare l'omino giapponese",
-            "url": "https://www.youtube.com/watch?v=AE7YiC0q-b4",
-            "source": "Marco Togni",
-            "date": "2026-08-06",
-            "views": 4375,
-            "likes": 260,
-            "duration_secs": 66
+            "views": 14862,
+            "likes": 486,
+            "duration_secs": 34
           }
         ]
       }
