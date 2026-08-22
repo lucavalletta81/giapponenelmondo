@@ -277,14 +277,20 @@ function disegna(r, comp) {
   h.push("</div>");
 
   /* --- onestà ----------------------------------------------------------- */
-  h.push('<div class="box"><h3>Quanto ti puoi fidare di questi numeri</h3>' +
+  h.push('<div class="box"><h3>Da dove vengono questi prezzi</h3>' +
+    "<p><b>" + r.attendibilita.stime + " voci su " + r.attendibilita.totale + " (" +
+    r.attendibilita.perc + "%) di questo preventivo sono stime</b>, non tariffe controllate su fonte ufficiale.</p>" +
+    "<p>Sono ordini di grandezza scritti a mano nel catalogo del sito: nessun prezzo è collegato " +
+    "in tempo reale a compagnie aeree, alberghi o ferrovie giapponesi, e nessuna disponibilità " +
+    "viene interrogata. Il volo e il cambio euro/yen sono stime per definizione, perché cambiano " +
+    "di giorno in giorno.</p>" +
+    "<p>Quello che invece è calcolato e non stimato è il <b>ragionamento</b>: la somma delle voci, " +
+    "i moltiplicatori di stagione, la durata delle tappe, il confronto fra Japan Rail Pass e " +
+    "biglietti singoli. Cambia i prezzi del catalogo e tutto il resto continua a valere.</p>" +
     "<p>Dataset versione " + esc(D.meta.versione) + ", aggiornato il " + esc(D.meta.aggiornato) +
     ". Cambio usato: 1 € = " + D.cambio.jpy_per_eur + " ¥.</p>" +
-    "<p><b>" + r.attendibilita.perc + "% delle voci usate in questo preventivo sono stime</b> (" +
-    r.attendibilita.stime + " su " + r.attendibilita.totale + "), non prezzi verificati su fonte ufficiale. " +
-    "Volo e cambio valuta sono stime per definizione.</p>" +
-    '<p class="nota">Questa riga è la ragione per cui il servizio è credibile: dice quello che non sa. ' +
-    "In produzione si riduce verificando il dataset, non nascondendo il contatore.</p></div>");
+    '<p class="nota">Questo contatore dice quello che il servizio non sa. Scende solo verificando ' +
+    "le voci una per una, non nascondendolo.</p></div>");
 
   h.push('<div id="comandi"><button id="stampa">Stampa / salva in PDF</button>' +
     '<button id="modifica">Cambia le risposte</button>' +

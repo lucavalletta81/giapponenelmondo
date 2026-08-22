@@ -38,7 +38,8 @@ function tratta(a, b) {
     var t = D.tratte[i];
     if ((t.a===a && t.b===b) || (t.a===b && t.b===a)) {
       if (SOLO_TRENO && t.mezzo.indexOf("volo") !== -1) break;   // si passa alla stima su rotaia
-      return { min:t.min, yen:t.yen, jr:t.jr, mezzo:t.mezzo, stimata:false };
+      return { min:t.min, yen:t.yen, jr:t.jr, mezzo:t.mezzo,
+               stimata:false, verificata: t.c === "V" };
     }
   }
   var km = haversine(citta(a), citta(b));
@@ -47,7 +48,7 @@ function tratta(a, b) {
     yen: Math.round((1300 + 21.5*km)/100)*100,
     jr: km < 1600,
     mezzo: "treno (tratta stimata su distanza)",
-    stimata: true
+    stimata: true, verificata: false
   };
 }
 
@@ -383,13 +384,19 @@ function pianifica(input) {
            stagione: stagione(input.stagione), attendibilita: contaStime(itin) };
 }
 
-/* Quante voci usate sono ancora stime: si dichiara a schermo. */
+/* Quante voci usate sono ancora stime: si dichiara a schermo.
+   Regola: è verificato SOLO ciò che porta c:"V" esplicito. Una voce senza
+   marca è una voce che nessuno ha controllato, quindi conta come stima —
+   il contrario faceva sembrare verificato tutto ciò che avevo dimenticato
+   di marcare, ed era il contatore stesso a mentire. */
+function verificato(x) { return !!x && x.c === "V"; }
+
 function contaStime(itin) {
   var tot=0, stime=0;
-  for (var i=0;i<itin.attivita.length;i++){ tot++; if (itin.attivita[i].c === "S") stime++; }
-  for (var j=0;j<itin.tappe.length;j++){ tot++; if (citta(itin.tappe[j].citta).c === "S") stime++; }
+  for (var i=0;i<itin.attivita.length;i++){ tot++; if (!verificato(itin.attivita[i])) stime++; }
+  for (var j=0;j<itin.tappe.length;j++){ tot++; if (!verificato(citta(itin.tappe[j].citta))) stime++; }
   var g = itin.gambe.concat(itin.ritorno? [itin.ritorno]:[]);
-  for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata) stime++; }
+  for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata || !g[k].verificata) stime++; }
   tot += 2; stime += 2;   // volo e cambio valuta: sempre stime
   return { totale:tot, stime:stime, perc: Math.round(stime/tot*100) };
 }
