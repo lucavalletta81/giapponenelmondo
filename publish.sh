@@ -8,6 +8,7 @@
 #  Cosa fa:
 #    1. timbra la data/ora corrente in OGNI pagina (index, dashboard, report)
 #       sostituendo il testo tra <!--STAMP--> e <!--/STAMP-->
+#       (index, dashboard, report, preventivo)
 #    2. commit + push su GitHub (token nel Portachiavi macOS → non interattivo)
 # ============================================================
 set -euo pipefail
@@ -19,7 +20,7 @@ STAMP="Aggiornato il $(date '+%d/%m/%Y %H:%M')"
 /usr/bin/env python3 - "$STAMP" <<'PY'
 import re, sys, pathlib
 stamp = sys.argv[1]
-pages = ["index.html", "dashboard.html", "report.html"]
+pages = ["index.html", "dashboard.html", "report.html", "preventivo/index.html"]
 pat = re.compile(r"(<!--STAMP-->).*?(<!--/STAMP-->)", re.DOTALL)
 for name in pages:
     p = pathlib.Path(name)
