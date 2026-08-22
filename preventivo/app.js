@@ -189,8 +189,15 @@ function disegna(r, comp) {
   /* --- dettaglio della spesa -------------------------------------------- */
   h.push("<h2>Da cosa è fatto questo numero</h2>");
   h.push("<div class=\"tabella-wrap\"><table><tr><th>Voce</th><th class=num>a persona</th><th class=num>gruppo</th><th>come è calcolata</th></tr>");
+  var vf = liv.volo_fonte;
   var spiega = {
-    volo: "andata/ritorno da " + M.partenza(S.partenza).nome + ", tariffa media × moltiplicatore di stagione (" + r.stagione.volo + "×)",
+    volo: vf
+      ? ("prezzo reale Google Flights per " + M.partenza(S.partenza).nome + " → Tokyo, partenza " +
+         vf.out.split("-").reverse().join("/") + ", 14 notti" +
+         (vf.compagnia ? ", " + vf.compagnia : "") + " — rilevato il " +
+         vf.aggiornato.slice(0, 10).split("-").reverse().join("/"))
+      : ("stima: andata/ritorno da " + M.partenza(S.partenza).nome +
+         ", tariffa media × moltiplicatore di stagione (" + r.stagione.volo + "×)"),
     trasporti: "biglietti del giro + trasporto urbano " + yen(D.trasporto_locale_yen_giorno) + "/giorno + transfer aeroporto",
     alloggio: liv.notti + " notti, tariffa per città × " + r.stagione.hotel + "× di stagione",
     cibo: D.cibo[S.stile].desc,
@@ -198,7 +205,8 @@ function disegna(r, comp) {
     extra: "assicurazione, eSIM, souvenir",
     imprevisti: "5% di margine: c'è sempre qualcosa"
   };
-  [["volo", "Volo intercontinentale"], ["trasporti", "Trasporti in Giappone"], ["alloggio", "Alloggio"],
+  [["volo", "Volo intercontinentale" + (vf ? ' <span class="tag">reale</span>' : ' <span class="tag">stima</span>')],
+   ["trasporti", "Trasporti in Giappone"], ["alloggio", "Alloggio"],
    ["cibo", "Mangiare"], ["attivita", "Ingressi ed esperienze"], ["extra", "Extra"], ["imprevisti", "Imprevisti"]
   ].forEach(function (v) {
     h.push("<tr><td>" + v[1] + '</td><td class=num>' + eu(liv.voci[v[0]]) + "</td><td class=num>" +
@@ -280,10 +288,17 @@ function disegna(r, comp) {
   h.push('<div class="box"><h3>Da dove vengono questi prezzi</h3>' +
     "<p><b>" + r.attendibilita.stime + " voci su " + r.attendibilita.totale + " (" +
     r.attendibilita.perc + "%) di questo preventivo sono stime</b>, non tariffe controllate su fonte ufficiale.</p>" +
-    "<p>Sono ordini di grandezza scritti a mano nel catalogo del sito: nessun prezzo è collegato " +
-    "in tempo reale a compagnie aeree, alberghi o ferrovie giapponesi, e nessuna disponibilità " +
-    "viene interrogata. Il volo e il cambio euro/yen sono stime per definizione, perché cambiano " +
-    "di giorno in giorno.</p>" +
+    (vf
+      ? ("<p><b>Il volo fa eccezione ed è un prezzo vero.</b> Viene da Google Flights, " +
+         "rilevato il " + vf.aggiornato.slice(0,10).split("-").reverse().join("/") +
+         ": " + esc(vf.condizioni) + ". Nel preventivo è arrotondato ai 25 € " +
+         "(la tariffa esatta letta era " + vf.grezzo + " €), perché una cifra tonda dice " +
+         "onestamente che è un ordine di grandezza e non una prenotazione.</p>")
+      : "<p>Nemmeno il volo è un prezzo reale per questa combinazione: Google non copre ancora " +
+        "queste date, quindi vale la stima del catalogo.</p>") +
+    "<p>Tutto il resto sono ordini di grandezza scritti a mano nel catalogo: alberghi, treni, " +
+    "ingressi e cambio euro/yen non sono collegati a nessun sistema di prenotazione, e nessuna " +
+    "disponibilità viene interrogata.</p>" +
     "<p>Quello che invece è calcolato e non stimato è il <b>ragionamento</b>: la somma delle voci, " +
     "i moltiplicatori di stagione, la durata delle tappe, il confronto fra Japan Rail Pass e " +
     "biglietti singoli. Cambia i prezzi del catalogo e tutto il resto continua a valere.</p>" +

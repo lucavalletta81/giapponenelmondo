@@ -52,6 +52,24 @@ function tratta(a, b) {
   };
 }
 
+/* ------------------------------------------------------- VOLI REALI -----
+   data/voli.js è generato da voli/aggiorna_voli.py leggendo Google Flights.
+   Se manca (o manca la coppia richiesta) il motore continua a funzionare con
+   le stime: il listino reale è un miglioramento, non una dipendenza.        */
+function voloReale(partenzaId, stagioneId) {
+  var V = window.VOLI;
+  if (!V || !V.prezzi) return null;
+  var perOrigine = V.prezzi[partenzaId];
+  if (!perOrigine) return null;
+  var p = perOrigine[stagioneId];
+  if (!p || !p.eur) return null;
+  return {
+    eur: p.eur, grezzo: p.grezzo, out: p.out, ret: p.ret,
+    anticipo: p.anticipo, compagnia: p.compagnia,
+    aggiornato: V.aggiornato, fonte: V.fonte, condizioni: V.condizioni
+  };
+}
+
 /* --------------------------------------------------- RITMO E STILE ------- */
 var RITMI = {
   lento:  { gg_citta:2.8, ore_giorno:5.5, nome:"lento",  desc:"poche basi, tempo di stare fermi" },
@@ -248,7 +266,8 @@ function costruisciItinerario(input) {
     rotta: rotta, tappe: tappe, gambe: gambe, ritorno: ritornoBase,
     giorni: pianoGiorni, attivita: attivitaScelte,
     ggGiappone: ggGiappone, ggPersiInTreno: ggPersi,
-    scartate: scartate.slice(0,6), score: score, ore: oreCitta, base: base
+    scartate: scartate.slice(0,6), score: score, ore: oreCitta, base: base,
+    input_partenza: input.partenza, input_stagione: input.stagione
   };
 }
 
@@ -331,8 +350,12 @@ function calcolaLivello(input, itin, treni, stileKey) {
   /* --- transfer aeroportuali */
   var transfer = D.transfer_aeroporto_yen * 2;
 
-  /* --- volo (in euro, non in yen) */
-  var volo = partenza(input.partenza).volo.media * st.volo;
+  /* --- volo: se abbiamo il prezzo VERO di Google per questa coppia
+     (aeroporto × stagione) si usa quello, e NON si applica il moltiplicatore
+     di stagione, perché il prezzo reale la stagione ce l'ha già dentro.
+     Altrimenti si ricade sulla stima del catalogo, e si dichiara.          */
+  var v = voloReale(input.partenza, input.stagione);
+  var volo = v ? v.eur : partenza(input.partenza).volo.media * st.volo;
 
   /* --- extra in euro */
   var e = D.extra;
@@ -352,6 +375,7 @@ function calcolaLivello(input, itin, treni, stileKey) {
   var persone = input.adulti + input.bambini * 0.65;
   return {
     stile: stileKey, nome: stile.nome,
+    volo_fonte: v || null,
     voci: {
       volo: volo,
       trasporti: eur(vociYen.trasporti),
@@ -397,7 +421,9 @@ function contaStime(itin) {
   for (var j=0;j<itin.tappe.length;j++){ tot++; if (!verificato(citta(itin.tappe[j].citta))) stime++; }
   var g = itin.gambe.concat(itin.ritorno? [itin.ritorno]:[]);
   for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata || !g[k].verificata) stime++; }
-  tot += 2; stime += 2;   // volo e cambio valuta: sempre stime
+  tot += 2;                                   // volo + cambio valuta
+  stime += 1;                                 // il cambio è sempre una stima
+  if (!voloReale(itin.input_partenza, itin.input_stagione)) stime += 1;
   return { totale:tot, stime:stime, perc: Math.round(stime/tot*100) };
 }
 
@@ -500,6 +526,16 @@ function prosa(r) {
   if (it.ggPersiInTreno > 1.4)
     p.push("Nota di realtà: fra un trasferimento e l'altro perdi circa " +
       it.ggPersiInTreno.toFixed(1) + " giornate in viaggio. Togliendo una tappa le recuperi.");
+
+  if (liv.volo_fonte) {
+    p.push("Il volo non è una stima: " + arrotonda(liv.volo_fonte.eur) + " euro a persona è " +
+      "il prezzo più basso che Google Flights dava per " + partenza(i.partenza).nome +
+      " il " + liv.volo_fonte.out.split("-").reverse().join("/") + ", andata e ritorno di due settimane" +
+      (liv.volo_fonte.compagnia ? " con " + liv.volo_fonte.compagnia : "") + ".");
+  } else {
+    p.push("Sul volo non ho un prezzo reale per questa combinazione di aeroporto e stagione: " +
+      "quella voce resta una stima del catalogo.");
+  }
 
   p.push("Il livello \"" + liv.nome + "\" viene circa " + arrotonda(liv.perPersona) +
     " euro a persona, cioè " + arrotonda(liv.alGiorno) + " euro al giorno tutto compreso.");
