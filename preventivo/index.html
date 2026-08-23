@@ -12,10 +12,11 @@
   <link rel="canonical" href="https://giapponenelmondo.com/preventivo/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="tema.css?v=202608232128" />
-  <link rel="stylesheet" href="app.css?v=202608232128" />
+  <link rel="stylesheet" href="tema.css?v=202608232150" />
+  <link rel="stylesheet" href="tema-pixel.css?v=202608232150" />
+  <link rel="stylesheet" href="app.css?v=202608232150" />
 </head>
 <body>
 
@@ -75,6 +76,12 @@
 
   <div class="pv-main">
 
+    <div class="pv-testa">
+      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o pixel art">
+        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Pixel</span>
+      </button>
+    </div>
+
     <div class="pv-avviso">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v7M12 7v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       <p><b>Prima versione: solo Tokyo.</b> Volo e alloggio sono prezzi veri, letti da Google Flights e
@@ -103,7 +110,7 @@
 
       <!-- (dinamico) -->
       <section class="passo" data-id="rami" hidden>
-        <figure class="illu"><img src="img/passo-precisiamo.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-precisiamo.webp" data-img="passo-precisiamo.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Precisiamo</h2>
           <p class="nota">Per ogni cosa che hai scelto, dimmi che taglio darle. Ogni risposta
@@ -114,7 +121,7 @@
       </section>
 
       <section class="passo" data-id="chi" hidden>
-        <figure class="illu"><img src="img/passo-chi-parte.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-chi-parte.webp" data-img="passo-chi-parte.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Chi parte, e da dove</h2>
           <label>Aeroporto di partenza
@@ -129,7 +136,7 @@
       </section>
 
       <section class="passo" data-id="quando" hidden>
-        <figure class="illu"><img src="img/passo-quando.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-quando.webp" data-img="passo-quando.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Quando</h2>
           <p class="nota">La stagione è la leva più potente sul prezzo: fra la settimana più cara e la più economica
@@ -139,7 +146,7 @@
       </section>
 
       <section class="passo" data-id="ritmo" hidden>
-        <figure class="illu"><img src="img/passo-ritmo.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-ritmo.webp" data-img="passo-ritmo.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Quanto a lungo, e con che ritmo</h2>
           <label>Giorni totali, volo compreso: <output id="giorni-out">14</output>
@@ -155,7 +162,7 @@
       </section>
 
       <section class="passo" data-id="giastato" hidden>
-        <figure class="illu"><img src="img/passo-gia-stato.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-gia-stato.webp" data-img="passo-gia-stato.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Ci sei già stato?</h2>
           <fieldset id="primavolta">
@@ -173,7 +180,7 @@
       <!-- Solo quando il giro tocca più città: a Tokyo e nelle gite in giornata
            non si vola, quindi la domanda non cambierebbe niente e non si fa. -->
       <section class="passo" data-id="spostamenti" data-solo-multi hidden>
-        <figure class="illu"><img src="img/passo-voli-interni.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-voli-interni.webp" data-img="passo-voli-interni.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Spostamenti dentro il Giappone</h2>
           <fieldset>
@@ -185,7 +192,7 @@
       </section>
 
       <section class="passo" data-id="stile" hidden>
-        <figure class="illu"><img src="img/passo-viaggiatore.webp" alt="" width="640" height="640"></figure>
+        <figure class="illu"><img src="img/passo-viaggiatore.webp" data-img="passo-viaggiatore.webp" alt="" width="640" height="640"></figure>
         <div class="campo">
           <h2><span class="n"></span>Che tipo di viaggiatore sei</h2>
           <fieldset id="stile">
@@ -222,14 +229,14 @@
     <div class="container footer-inner">
       <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
       <p class="footer-copy">&copy; 2026 giapponenelmondo.com &mdash; tutti i diritti riservati</p>
-      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 23/08/2026 21:28<!--/STAMP--></p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 23/08/2026 21:50<!--/STAMP--></p>
     </div>
   </footer>
 
   <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-  <script src="dati.js?v=202608232128"></script>
-  <script src="prezzi.js?v=202608232128"></script>
-  <script src="motore.js?v=202608232128"></script>
-  <script src="app.js?v=202608232128"></script>
+  <script src="dati.js?v=202608232150"></script>
+  <script src="prezzi.js?v=202608232150"></script>
+  <script src="motore.js?v=202608232150"></script>
+  <script src="app.js?v=202608232150"></script>
 </body>
 </html>

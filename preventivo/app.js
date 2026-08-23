@@ -45,8 +45,26 @@ var raggiunto = 0;        // il passo più avanti che l'utente ha visto: quelli 
 var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i click
 
 /* le immagini: in locale e nel sito stanno in img/, nel file unico della demo
-   build_demo.py le inietta in window.PV_IMG come data URI */
-function img(nome) { return (window.PV_IMG && window.PV_IMG[nome]) || ("img/" + nome); }
+   build_demo.py le inietta in window.PV_IMG come data URI. Nel tema pixel
+   ogni nome prende il prefisso px- (stessi nomi, altro disegno). */
+var TEMA = "piatto";
+try { TEMA = localStorage.getItem("pv-tema") === "pixel" ? "pixel" : "piatto"; } catch (e) {}
+function img(nome) {
+  var n = (TEMA === "pixel" ? "px-" : "") + nome;
+  return (window.PV_IMG && window.PV_IMG[n]) || ("img/" + n);
+}
+
+/* L'interruttore in alto a destra: due vestiti per la stessa pagina. Cambia
+   l'attributo data-tema (tema-pixel.css fa il resto) e scambia le immagini. */
+function applicaTema(t) {
+  TEMA = t === "pixel" ? "pixel" : "piatto";
+  try { localStorage.setItem("pv-tema", TEMA); } catch (e) {}
+  var lay = $(".pv-layout");
+  if (lay) lay.setAttribute("data-tema", TEMA);
+  document.body.setAttribute("data-tema", TEMA);
+  $$("img[data-img]").forEach(function (im) { im.src = img(im.dataset.img); });
+  $$("#pv-tema span").forEach(function (sp) { sp.classList.toggle("on", sp.dataset.tema === TEMA); });
+}
 
 /* ------------------------------------------------------------ FORMATTO --- */
 function eu(n) { return Math.round(n).toLocaleString("it-IT") + " €"; }
@@ -81,7 +99,7 @@ function riempiInteressi() {
     var n = M.ramiDisponibili(i.id, S.soloTokyo).length;
     return '<div class="carta conAiuto" data-id="' + i.id + '" tabindex="0" role="button" ' +
       'aria-pressed="false" title="' + esc(i.dettaglio || i.desc) + '">' +
-      '<img class="ico" src="' + img("int-" + i.id + ".webp") + '" alt="" width="128" height="128" loading="lazy">' +
+      '<img class="ico" src="' + img("int-" + i.id + ".webp") + '" data-img="int-' + i.id + '.webp" alt="" width="128" height="128" loading="lazy">' +
       "<b>" + esc(i.nome) + "</b>" +
       "<span>" + esc(i.desc) + "</span>" +
       (n ? '<span class="conta">' + n + " domande in più al passo dopo</span>" : "") +
@@ -596,6 +614,10 @@ function avvia() {
     mostraPasso(passo + 1);
   };
   $("#indietro").onclick = function () { if (passo > 0) mostraPasso(passo - 1); };
+
+  applicaTema(TEMA);
+  var bt = $("#pv-tema");
+  if (bt) bt.onclick = function () { applicaTema(TEMA === "pixel" ? "piatto" : "pixel"); };
 
   /* la data dei prezzi nella spalla: è la fotografia del listino, non oggi */
   var dp = $("#pv-data-prezzi");

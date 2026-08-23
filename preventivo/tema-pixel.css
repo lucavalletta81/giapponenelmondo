@@ -1,0 +1,190 @@
+/* =========================================================================
+   TEMA PIXEL — la versione alternativa «per divertimento» (23/08/2026).
+   Stessa pagina, stesso markup, stesso motore: cambia solo il vestito.
+   Si accende con l'interruttore in alto a destra, che mette
+   data-tema="pixel" su .pv-layout (e su body). Tutto qui dentro è un
+   override di tema.css, scopato sotto quell'attributo. Le immagini le
+   scambia app.js (img/px-*.webp).
+   Font: Press Start 2P per titoli, etichette e bottoni; Pixelify Sans per
+   il testo corrente, che con un font a 8 px non si legge.
+   ========================================================================= */
+
+.pv-layout[data-tema="pixel"] {
+  --pv-fondo:   #FBEFD2;
+  --pv-carta:   #FFF9E8;
+  --pv-crema:   #F7E6BF;
+  --pv-ink:     #1E2A47;
+  --pv-testo:   #24304A;
+  --pv-muto:    #5B5F78;
+  --pv-tenue:   #8B8FA8;
+  --pv-linea:   #1E2A47;
+  --pv-linea2:  #1E2A47;
+  --pv-rosso:   #E0392B;
+  --pv-rosso-w: #FFE3B8;
+  --pv-rosso-b: #1E2A47;
+  --pv-verde:   #3E8E2A;
+  --pv-blu:     #2B67B3;
+  --pv-giallo:  #F7C948;
+  --pv-font:    'Pixelify Sans', 'Inter', sans-serif;
+  --pv-font-px: 'Press Start 2P', 'Pixelify Sans', monospace;
+  --pv-raggio:  0px;
+  --pv-ombra:   4px 4px 0 var(--pv-ink);
+  font-size: 17px;
+  background-image:
+    linear-gradient(rgba(30,42,71,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,42,71,.045) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+.pv-pagina[data-tema="pixel"] { background: #FBEFD2; }
+
+/* ------------------------------------------------------------ spalla ---- */
+.pv-layout[data-tema="pixel"] .pv-lato { border-right: 3px solid var(--pv-ink); background: var(--pv-carta); }
+.pv-layout[data-tema="pixel"] .pv-torii { fill: var(--pv-rosso); filter: drop-shadow(2px 2px 0 var(--pv-ink)); }
+.pv-layout[data-tema="pixel"] .pv-nome { font-family: var(--pv-font-px); font-size: 12px; line-height: 1.6; font-weight: 400; letter-spacing: 0; }
+.pv-layout[data-tema="pixel"] .pv-nome b { font-weight: 400; color: var(--pv-rosso); text-shadow: 2px 2px 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .pv-tagline { font-family: var(--pv-font); font-size: 13px; letter-spacing: .02em; text-transform: none; }
+.pv-layout[data-tema="pixel"] .pv-passi li { font-size: 15px; }
+.pv-layout[data-tema="pixel"] .pv-passi li .pallino {
+  border-radius: 0; border: 2px solid var(--pv-ink); font-family: var(--pv-font-px); font-size: 9px;
+  box-shadow: 2px 2px 0 var(--pv-ink); width: 24px; height: 24px;
+}
+.pv-layout[data-tema="pixel"] .pv-passi li.on .pallino { background: var(--pv-rosso); color: #fff; }
+.pv-layout[data-tema="pixel"] .pv-passi li.fatto .pallino { background: var(--pv-giallo); color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .pv-passi li.fatto:hover .pallino { background: var(--pv-blu); color: #fff; }
+.pv-layout[data-tema="pixel"] .pv-passi li.risultato { border-top: 2px dashed var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .pv-fiducia { border: 2px solid var(--pv-ink); box-shadow: 3px 3px 0 var(--pv-ink); background: var(--pv-carta); font-size: 13px; }
+.pv-layout[data-tema="pixel"] .pv-fiducia-t { font-family: var(--pv-font-px); font-size: 9px; line-height: 1.7; }
+
+/* -------------------------------------------------------- la colonna ---- */
+.pv-layout[data-tema="pixel"] .pv-avviso {
+  border: 3px solid var(--pv-ink); box-shadow: var(--pv-ombra); border-radius: 0;
+  background: var(--pv-rosso-w); color: var(--pv-testo); font-size: 15px;
+}
+.pv-layout[data-tema="pixel"] .pv-avviso b { color: var(--pv-rosso); }
+.pv-layout[data-tema="pixel"] .pv-scheda { border: 3px solid var(--pv-ink); border-radius: 0; box-shadow: var(--pv-ombra); }
+
+.pv-layout[data-tema="pixel"] #barra-testo { font-family: var(--pv-font-px); font-size: 9px; letter-spacing: .05em; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] #barra-riga { height: 12px; border: 2px solid var(--pv-ink); background: var(--pv-carta); padding: 2px; margin-top: 10px; }
+.pv-layout[data-tema="pixel"] #barra-fill {
+  height: 100%; background: repeating-linear-gradient(90deg, var(--pv-rosso) 0 8px, #F46A5C 8px 10px);
+}
+
+.pv-layout[data-tema="pixel"] h2 { font-family: var(--pv-font-px); font-size: 15px; line-height: 1.7; letter-spacing: 0; font-weight: 400; text-transform: uppercase; }
+.pv-layout[data-tema="pixel"] h2 .n { color: var(--pv-rosso); }
+.pv-layout[data-tema="pixel"] h3 { font-family: var(--pv-font-px); font-size: 9px; letter-spacing: .02em; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .nota { font-size: 15px; }
+.pv-layout[data-tema="pixel"] .illu { border: 3px solid var(--pv-ink); border-radius: 0; box-shadow: var(--pv-ombra); background: var(--pv-crema); padding: 10px; }
+.pv-layout[data-tema="pixel"] .illu img { image-rendering: auto; }
+
+/* ------------------------------------------------------------ campi ----- */
+.pv-layout[data-tema="pixel"] input[type=number], .pv-layout[data-tema="pixel"] input[type=text],
+.pv-layout[data-tema="pixel"] select {
+  border: 2px solid var(--pv-ink); border-radius: 0; box-shadow: 2px 2px 0 var(--pv-ink); font-family: var(--pv-font); font-size: 16px;
+}
+.pv-layout[data-tema="pixel"] input:focus, .pv-layout[data-tema="pixel"] select:focus { outline: 3px solid var(--pv-giallo); outline-offset: 0; }
+.pv-layout[data-tema="pixel"] fieldset { border: 2px solid var(--pv-ink); border-radius: 0; }
+.pv-layout[data-tema="pixel"] legend { font-family: var(--pv-font-px); font-size: 8px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] output { color: var(--pv-rosso); font-family: var(--pv-font-px); font-size: 12px; }
+.pv-layout[data-tema="pixel"] input[type=range] { accent-color: var(--pv-rosso); }
+
+.pv-layout[data-tema="pixel"] button {
+  font-family: var(--pv-font-px); font-size: 10px; border: 3px solid var(--pv-ink); border-radius: 0;
+  box-shadow: 3px 3px 0 var(--pv-ink); padding: 12px 18px; background: var(--pv-giallo); color: var(--pv-ink);
+  transition: none;
+}
+.pv-layout[data-tema="pixel"] button:hover { background: #FFD966; transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] button:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] #avanti, .pv-layout[data-tema="pixel"] #stampa { background: var(--pv-rosso); color: #fff; }
+.pv-layout[data-tema="pixel"] #avanti:hover, .pv-layout[data-tema="pixel"] #stampa:hover { background: #F04A3C; }
+.pv-layout[data-tema="pixel"] #comandi { border-top: 2px dashed var(--pv-ink); }
+
+/* ------------------------------------------------------------ carte ----- */
+.pv-layout[data-tema="pixel"] .carta {
+  border: 2px solid var(--pv-ink); border-radius: 0; box-shadow: 3px 3px 0 var(--pv-ink);
+  background: var(--carta, var(--pv-carta)); transition: none;
+}
+.pv-layout[data-tema="pixel"] .carta:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--pv-ink); background: var(--carta, var(--pv-carta)); }
+.pv-layout[data-tema="pixel"] .carta.on { box-shadow: inset 0 0 0 3px var(--pv-rosso), 3px 3px 0 var(--pv-ink); background: var(--carta, var(--pv-rosso-w)); }
+.pv-layout[data-tema="pixel"] .carta b { font-family: var(--pv-font-px); font-size: 9px; line-height: 1.7; text-transform: uppercase; }
+.pv-layout[data-tema="pixel"] .carta span { color: var(--pv-testo); font-size: 14px; }
+.pv-layout[data-tema="pixel"] .carta .conta { font-family: var(--pv-font-px); font-size: 7px; color: var(--pv-ink); opacity: .8; line-height: 1.6; }
+.pv-layout[data-tema="pixel"] .carta .aiuto { border: 2px solid var(--pv-ink); border-radius: 0; background: var(--pv-ink); color: #fff; font-family: var(--pv-font); font-size: 14px; }
+.pv-layout[data-tema="pixel"] .carte.interessi .carta { padding: 0 12px 14px; overflow: hidden; }
+.pv-layout[data-tema="pixel"] .carte.interessi .ico {
+  width: calc(100% + 24px); height: auto; max-width: none; aspect-ratio: 1.5; object-fit: cover;
+  margin: 0 -12px 10px; border-bottom: 2px solid var(--pv-ink);
+}
+.pv-layout[data-tema="pixel"] .carte.interessi .carta b { font-size: 10px; }
+.pv-layout[data-tema="pixel"] .carte.interessi .carta.on .ico { filter: saturate(1.25) brightness(1.04); }
+.pv-layout[data-tema="pixel"] .ramo { border-top: 2px dashed var(--pv-ink); }
+
+/* ---------------------------------------------------------- risultato --- */
+.pv-layout[data-tema="pixel"] .prezzo { border: 3px solid var(--pv-ink); border-radius: 0; box-shadow: var(--pv-ombra); transition: none; }
+.pv-layout[data-tema="pixel"] .prezzo.on { box-shadow: var(--pv-ombra), inset 0 0 0 3px var(--pv-rosso); background: var(--pv-rosso-w); }
+.pv-layout[data-tema="pixel"] .prezzo > div:first-child { font-family: var(--pv-font-px); font-size: 8px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .prezzo .cifra { font-family: var(--pv-font-px); font-size: 20px; letter-spacing: 0; margin: 12px 0 10px; }
+.pv-layout[data-tema="pixel"] .box { border: 2px solid var(--pv-ink); border-left-width: 8px; border-radius: 0; box-shadow: 3px 3px 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .box.attenzione { border-left-color: var(--pv-rosso); background: var(--pv-rosso-w); }
+.pv-layout[data-tema="pixel"] #risultato table { border: 2px solid var(--pv-ink); border-radius: 0; }
+.pv-layout[data-tema="pixel"] #risultato th { font-family: var(--pv-font-px); font-size: 7.5px; color: var(--pv-ink); background: var(--pv-crema); border-bottom: 2px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] #risultato th, .pv-layout[data-tema="pixel"] #risultato td { border-bottom-color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] #risultato tr.tot td { border-top: 3px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] details { border: 2px solid var(--pv-ink); border-radius: 0; box-shadow: 3px 3px 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] summary { font-family: var(--pv-font-px); font-size: 9px; line-height: 1.7; }
+.pv-layout[data-tema="pixel"] .giorno { border-bottom: 2px dashed var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .giorno .n { font-family: var(--pv-font-px); font-size: 8px; }
+.pv-layout[data-tema="pixel"] .trasf { border-left: 3px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .compromesso { border: 2px solid var(--pv-ink); border-radius: 0; box-shadow: 3px 3px 0 var(--pv-ink); transition: none; }
+.pv-layout[data-tema="pixel"] .compromesso:hover { background: var(--pv-rosso-w); transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .compromesso.info { border-style: dashed; box-shadow: none; }
+.pv-layout[data-tema="pixel"] .compromesso .d { font-family: var(--pv-font-px); font-size: 11px; }
+.pv-layout[data-tema="pixel"] .manopole { border: 2px solid var(--pv-ink); border-radius: 0; background: var(--pv-crema); }
+.pv-layout[data-tema="pixel"] .manopole > b { font-family: var(--pv-font-px); font-size: 8px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] svg.mappa { border: 2px solid var(--pv-ink); border-radius: 0; background: var(--pv-crema); }
+.pv-layout[data-tema="pixel"] svg.mappa .rotta { stroke: var(--pv-blu); stroke-width: 3; }
+.pv-layout[data-tema="pixel"] svg.mappa .tappa { fill: var(--pv-rosso); }
+.pv-layout[data-tema="pixel"] .tag { border: 2px solid var(--pv-ink); border-radius: 0; font-family: var(--pv-font-px); font-size: 6.5px; padding: 2px 4px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .tag.ok { color: var(--pv-verde); border-color: var(--pv-verde); }
+.pv-layout[data-tema="pixel"] .giu { color: var(--pv-verde); }
+
+.pv-layout[data-tema="pixel"] .pv-piede { font-family: var(--pv-font-px); font-size: 8px; line-height: 1.8; color: var(--pv-ink); }
+
+/* ---------------------------------------------------- l'interruttore ---- */
+/* Sta in tema.css per la posizione; qui solo l'aspetto nel tema pixel. */
+.pv-layout[data-tema="pixel"] .pv-tema {
+  font-family: var(--pv-font-px); font-size: 8px; border: 2px solid var(--pv-ink); border-radius: 0;
+  box-shadow: 2px 2px 0 var(--pv-ink); background: var(--pv-carta); padding: 0;
+}
+.pv-layout[data-tema="pixel"] .pv-tema span { padding: 8px 10px; border-radius: 0; line-height: 1.6; }
+.pv-layout[data-tema="pixel"] .pv-tema .on { background: var(--pv-rosso); color: #fff; }
+
+@media (max-width: 860px) {
+  .pv-layout[data-tema="pixel"] .pv-lato { border-right: none; border-bottom: 3px solid var(--pv-ink); }
+  .pv-layout[data-tema="pixel"] h2 { font-size: 12px; }
+  .pv-layout[data-tema="pixel"] .carte.interessi .carta b { font-size: 8px; }
+}
+
+/* COLORI-INTERESSI (generato da grafica/prepara.py) */
+.pv-layout[data-tema="pixel"] .carta[data-id="anime"] { --carta: #F9BBC8; }
+.pv-layout[data-tema="pixel"] .carta[data-id="action"] { --carta: #FBCB83; }
+.pv-layout[data-tema="pixel"] .carta[data-id="templi"] { --carta: #ABD4E6; }
+.pv-layout[data-tema="pixel"] .carta[data-id="cibo"] { --carta: #FCDB98; }
+.pv-layout[data-tema="pixel"] .carta[data-id="storia"] { --carta: #D3E2A9; }
+.pv-layout[data-tema="pixel"] .carta[data-id="natura"] { --carta: #B5DDD2; }
+.pv-layout[data-tema="pixel"] .carta[data-id="onsen"] { --carta: #CFB6D8; }
+.pv-layout[data-tema="pixel"] .carta[data-id="hiking"] { --carta: #C8DB99; }
+.pv-layout[data-tema="pixel"] .carta[data-id="arte"] { --carta: #B5DDD4; }
+.pv-layout[data-tema="pixel"] .carta[data-id="retrogaming"] { --carta: #CCB4D8; }
+.pv-layout[data-tema="pixel"] .carta[data-id="shopping"] { --carta: #F8BAC7; }
+.pv-layout[data-tema="pixel"] .carta[data-id="notturno"] { --carta: #FAC47E; }
+.pv-layout[data-tema="pixel"] .carta[data-id="tradizione"] { --carta: #B8A1AE; }
+.pv-layout[data-tema="pixel"] .carta[data-id="neve"] { --carta: #BDD3EB; }
+.pv-layout[data-tema="pixel"] .carta[data-id="mare"] { --carta: #AFDBE4; }
+.pv-layout[data-tema="pixel"] .carta[data-id="musei"] { --carta: #E4B984; }
+.pv-layout[data-tema="pixel"] .carta[data-id="insolito"] { --carta: #FBD580; }
+.pv-layout[data-tema="pixel"] .carta[data-id="panorama"] { --carta: #6DA9D7; }
+.pv-layout[data-tema="pixel"] .carta[data-id="kids"] { --carta: #90B254; }
+/* /COLORI-INTERESSI */
+
+/* la freccia del bottone non esiste in Press Start 2P: la disegna Inter */
+.pv-layout[data-tema="pixel"] #avanti span { font-family: 'Inter', sans-serif; font-weight: 700; }

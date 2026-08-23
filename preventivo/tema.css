@@ -84,7 +84,19 @@
 .pv-fiducia-t svg { width: 18px; height: 18px; flex: none; margin-top: 1px; }
 
 /* ----------------------------------------------------- la colonna ------- */
-.pv-main { padding: 30px 36px 40px; min-width: 0; max-width: 1180px; }
+.pv-main { padding: 22px 36px 40px; min-width: 0; max-width: 1180px; }
+/* la riga in testa: a destra l'interruttore fra i due vestiti (piatto / pixel) */
+.pv-testa { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 12px; }
+.pv-tema {
+  display: inline-flex; align-items: center; padding: 3px; border: 1px solid var(--pv-linea2);
+  border-radius: 100px; background: var(--pv-carta); cursor: pointer; font-family: var(--pv-font);
+  font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--pv-muto);
+  transition: border-color .2s;
+}
+.pv-tema:hover { border-color: var(--pv-ink); }
+.pv-tema:focus-visible { outline: 2px solid var(--pv-rosso); outline-offset: 2px; }
+.pv-tema span { padding: 5px 12px; border-radius: 100px; line-height: 1.4; }
+.pv-tema .on { background: var(--pv-ink); color: #fff; }
 .pv-avviso {
   background: var(--pv-rosso-w); border: 1px solid var(--pv-rosso-b); border-radius: var(--pv-raggio);
   padding: 16px 20px 16px 18px; display: flex; gap: 14px; align-items: flex-start;
@@ -301,7 +313,7 @@ svg.mappa .guida{ stroke: #CFC7BC; stroke-width: 1; }
 /* --------------------------------------------------------- schermi ------ */
 @media (max-width: 1080px) {
   .pv-layout { grid-template-columns: 232px minmax(0, 1fr); }
-  .pv-main { padding: 24px 24px 36px; }
+  .pv-main { padding: 18px 24px 36px; }
   .passo { grid-template-columns: 240px minmax(0, 1fr); gap: 26px; }
   .carte.interessi { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
@@ -319,7 +331,8 @@ svg.mappa .guida{ stroke: #CFC7BC; stroke-width: 1; }
   .pv-passi li .testo { display: none; }
   .pv-passi li.on .testo { display: inline; white-space: nowrap; }
   .pv-passi li.risultato { margin: 0; padding-top: 4px; border-top: none; }
-  .pv-main { padding: 18px 16px 30px; }
+  .pv-main { padding: 12px 16px 30px; }
+  .pv-testa { margin-bottom: 10px; }
   .pv-scheda { padding: 22px 18px 20px; border-radius: 14px; }
   .passo { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .illu { position: static; width: 160px; padding: 12px; border-radius: 16px; }
