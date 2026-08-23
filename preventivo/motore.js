@@ -15,7 +15,7 @@ function luogo(id)     { return byId(D.luoghi, id); }
 function stagione(id)  { return byId(D.stagioni, id); }
 function partenza(id)  { return byId(D.partenze, id); }
 function serie(id)     { return byId(D.anime, id); }
-function eur(yen)      { return yen / D.cambio.jpy_per_eur; }
+function eur(yen)      { return yen / cambio().v; }
 function clamp(v,a,b)  { return Math.max(a, Math.min(b, v)); }
 function arrotonda(n, step) { step = step || 5; return Math.round(n/step)*step; }
 
@@ -56,18 +56,47 @@ function tratta(a, b) {
    data/voli.js è generato da voli/aggiorna_voli.py leggendo Google Flights.
    Se manca (o manca la coppia richiesta) il motore continua a funzionare con
    le stime: il listino reale è un miglioramento, non una dipendenza.        */
-function voloReale(partenzaId, stagioneId) {
-  var V = window.VOLI;
-  if (!V || !V.prezzi) return null;
-  var perOrigine = V.prezzi[partenzaId];
-  if (!perOrigine) return null;
-  var p = perOrigine[stagioneId];
-  if (!p || !p.eur) return null;
-  return {
-    eur: p.eur, grezzo: p.grezzo, out: p.out, ret: p.ret,
-    anticipo: p.anticipo, compagnia: p.compagnia,
-    aggiornato: V.aggiornato, fonte: V.fonte, condizioni: V.condizioni
-  };
+function voloReale(partenzaId, stagioneId, fascia) {
+  var P = window.PREZZI;
+  if (!P || !P.voli) return null;
+  var o = P.voli[partenzaId]; if (!o) return null;
+  var s = o[stagioneId];      if (!s) return null;
+  var v = s[fascia];          if (!v || !v.eur) return null;
+  return v;
+}
+
+function alloggioReale(zona, fascia, stagioneId) {
+  var P = window.PREZZI;
+  if (!P || !P.alloggi) return null;
+  var z = P.alloggi[zona];    if (!z) return null;
+  var f = z[fascia];          if (!f) return null;
+  var a = f[stagioneId];      if (!a || !a.eur) return null;
+  return a;
+}
+
+/* Il cambio vero della BCE se c'è; altrimenti quello del catalogo, dichiarato. */
+function cambio() {
+  var P = window.PREZZI;
+  if (P && P.cambio && P.cambio.jpy_per_eur)
+    return { v: P.cambio.jpy_per_eur, vero: true, data: P.cambio.data };
+  return { v: D.cambio.jpy_per_eur, vero: false, data: null };
+}
+
+/* "a Asakusa" stona: davanti a vocale ci vuole "ad". */
+function aZona(id) {
+  var n = nomeZona(id);
+  return (/^[AEIOU]/i.test(n) ? "ad " : "a ") + n;
+}
+
+function nomeZona(id) {
+  var z = zoneDisponibili();
+  for (var i=0;i<z.length;i++) if (z[i].id === id) return z[i].nome;
+  return id;
+}
+
+function zoneDisponibili() {
+  var P = window.PREZZI;
+  return (P && P.zone) ? P.zone : [];
 }
 
 /* --------------------------------------------------- RITMO E STILE ------- */
@@ -76,11 +105,17 @@ var RITMI = {
   medio:  { gg_citta:2.1, ore_giorno:7.0, nome:"medio",  desc:"vedi molto senza correre" },
   veloce: { gg_citta:1.5, ore_giorno:9.0, nome:"veloce", desc:"tanti posti, valigia sempre in mano" }
 };
+/* Le tre fasce. Ognuna pesca da una sorgente diversa per volo e alloggio:
+   sono prezzi VERI, non tre moltiplicatori applicati allo stesso numero.     */
 var STILI = {
-  essenziale:  { alloggio:"ostello",  quota_attivita:0.55, nome:"Essenziale" },
-  equilibrato: { alloggio:"business", quota_attivita:1.00, nome:"Equilibrato" },
-  comodo:      { alloggio:"medio",    quota_attivita:1.25, nome:"Senza pensieri" }
+  essenziale:  { nome:"Il minimo",      volo:"economico", alloggio:"ostello",  cibo:"essenziale",  quota_attivita:0.55 },
+  equilibrato: { nome:"Normale",        volo:"normale",   alloggio:"business", cibo:"equilibrato", quota_attivita:1.00 },
+  comodo:      { nome:"Senza pensieri", volo:"lusso",     alloggio:"lusso",    cibo:"comodo",      quota_attivita:1.25 }
 };
+
+/* Le mete raggiungibili in giornata da Tokyo: la gita consuma il giorno intero
+   e costa il treno andata e ritorno, ma non cambia l'albergo.                */
+var GITE = ["kamakura", "nikko", "hakone", "fuji", "chichibu"];
 
 /* ================================================== MOTORE 1: ITINERARIO == */
 
@@ -131,6 +166,11 @@ function costruisciItinerario(input) {
     oreCitta[D.citta[i].id] = r.ore;
     dettagli[D.citta[i].id] = r.luoghi;
   }
+
+  /* SOLO TOKYO (fase 1 del progetto): una base sola, e le mete vicine
+     diventano gite in giornata invece di tappe con cambio d'albergo.
+     Il codice multi-città resta sotto, per quando si allargherà.            */
+  if (input.soloTokyo !== false) return itinerarioTokyo(input, mese, score, oreCitta, dettagli);
 
   /* la base di partenza: dove atterri */
   var base = input.ancoraggio || "tokyo";
@@ -271,6 +311,79 @@ function costruisciItinerario(input) {
   };
 }
 
+/* Itinerario tutto su Tokyo: giornate in città più eventuali gite in giornata.
+   Le gite competono con le giornate normali a punteggio, ma costano un treno
+   andata e ritorno e si mangiano l'intera giornata.                          */
+function itinerarioTokyo(input, mese, score, oreCitta, dettagli) {
+  var ritmo = RITMI[input.ritmo];
+  var ggTokyo = Math.max(2, input.giorni - 1);
+
+  var inCitta = (dettagli["tokyo"] || []).filter(function (x) { return x.p >= 0; });
+
+  /* ogni meta vicina diventa UNA gita, col suo costo di treno */
+  var gite = [];
+  GITE.forEach(function (cid) {
+    var voci = (dettagli[cid] || []).filter(function (x) { return x.p >= 0.4; });
+    if (!voci.length) return;
+    var t = tratta("tokyo", cid);
+    var punti = 0;
+    voci.slice(0, 3).forEach(function (v, i) { punti += v.p * (1 - i * 0.15); });
+    punti -= t.min / 120;                       /* più è lontana, meno rende */
+    gite.push({ citta: cid, punti: punti, tratta: t,
+                luoghi: voci.slice(0, 3).map(function (v) { return v.l; }) });
+  });
+  gite.sort(function (a, b) { return b.punti - a.punti; });
+
+  /* quante gite: una ogni 4 giorni, e solo se battono una giornata in città */
+  var sogliaCitta = inCitta.length ? inCitta[Math.min(3, inCitta.length - 1)].p : 0;
+  var quante = clamp(Math.floor(ggTokyo / 4), 0, 3);
+  gite = gite.filter(function (g) { return g.punti > sogliaCitta * 0.8; }).slice(0, quante);
+
+  /* le giornate: prima Tokyo, poi una gita ogni tanto, mai due di fila */
+  var pool = inCitta.slice(), giorni = [], attivita = [], usateGite = 0;
+  for (var d = 0; d < ggTokyo; d++) {
+    var faiGita = usateGite < gite.length && d >= 2 && (d % 3 === 2);
+    if (faiGita) {
+      var g = gite[usateGite++];
+      g.luoghi.forEach(function (l) { attivita.push(l); });
+      giorni.push({ n: d + 1, citta: g.citta, gita: g, luoghi: g.luoghi });
+      continue;
+    }
+    var ore = ritmo.ore_giorno, voci = [];
+    while (pool.length && ore > 1) {
+      var cand = pool.shift();
+      if (cand.l.ore > ore + 1.5) continue;
+      voci.push(cand.l); attivita.push(cand.l);
+      ore -= cand.l.ore + 0.7;
+    }
+    giorni.push({ n: d + 1, citta: "tokyo", luoghi: voci });
+  }
+
+  /* il conto dei treni: qui non ci sono trasferimenti, solo le gite */
+  var gambe = gite.map(function (g) {
+    var t = tratta("tokyo", g.citta);
+    return { da: "tokyo", a: g.citta, min: t.min * 2, yen: t.yen * 2, jr: t.jr,
+             mezzo: t.mezzo + " (andata e ritorno in giornata)",
+             stimata: t.stimata, verificata: false, giorno: 1, gita: true };
+  });
+
+  var scartate = [];
+  for (var z = 0; z < D.citta.length; z++) {
+    var cid2 = D.citta[z].id;
+    if (cid2 !== "tokyo") scartate.push({ id: cid2, punti: score[cid2] });
+  }
+  scartate.sort(function (a, b) { return b.punti - a.punti; });
+
+  return {
+    soloTokyo: true, rotta: ["tokyo"], base: "tokyo",
+    tappe: [{ citta: "tokyo", giorni: ggTokyo }],
+    gambe: gambe, ritorno: null, giorni: giorni, attivita: attivita,
+    gite: gite, ggGiappone: ggTokyo, ggPersiInTreno: 0,
+    scartate: scartate.slice(0, 6), score: score, ore: oreCitta,
+    input_partenza: input.partenza, input_stagione: input.stagione
+  };
+}
+
 /* ======================================================= MOTORE 2: COSTO == */
 
 /* Confronto pay-as-you-go contro Japan Rail Pass. Aritmetica pura. */
@@ -323,20 +436,36 @@ function calcolaTreni(itin, ggGiappone) {
 function calcolaLivello(input, itin, treni, stileKey) {
   var st = stagione(input.stagione), stile = STILI[stileKey];
 
-  /* --- alloggio: notte per notte, città per città, col moltiplicatore stagione */
-  var alloggio = 0, notti = 0, dettAlloggio = [];
-  for (var i=0;i<itin.tappe.length;i++) {
-    var c = citta(itin.tappe[i].citta);
-    var tariffa = c.alloggio[stile.alloggio] || c.alloggio.medio || c.alloggio.alto;
-    var n = itin.tappe[i].giorni;
-    var sub = tariffa * st.hotel * n;
-    alloggio += sub; notti += n;
-    dettAlloggio.push({ citta:c.nome, notti:n, tariffa:Math.round(tariffa*st.hotel), sub:Math.round(sub) });
+  /* --- alloggio: prezzo VERO a notte per zona e fascia, se ce l'abbiamo.
+     Il moltiplicatore di stagione NON si applica al prezzo reale: la stagione
+     è già dentro, perché la notte l'abbiamo chiesta proprio in quella data.  */
+  var alloggio = 0, notti = 0, dettAlloggio = [], alloggioFonte = null;
+  var zona = input.zona || "shinjuku";
+  var reale = alloggioReale(zona, stile.alloggio, input.stagione);
+  if (reale) {
+    notti = itin.ggGiappone;
+    alloggio = null;                              /* in euro, non in yen */
+    alloggioFonte = reale;
+    dettAlloggio.push({ citta: nomeZona(zona), notti: notti,
+                        tariffaEur: reale.eur, subEur: reale.eur * notti,
+                        campione: reale.campione, esempio: reale.esempio,
+                        min: reale.min, max: reale.max });
+  } else {
+    for (var i=0;i<itin.tappe.length;i++) {
+      var c = citta(itin.tappe[i].citta);
+      var chiaveVecchia = { ostello:"ostello", business:"business", lusso:"medio" }[stile.alloggio] || "business";
+      var tariffa = c.alloggio[chiaveVecchia] || c.alloggio.medio || c.alloggio.alto;
+      var n = itin.tappe[i].giorni;
+      var sub = tariffa * st.hotel * n;
+      alloggio += sub; notti += n;
+      dettAlloggio.push({ citta:c.nome, notti:n, tariffa:Math.round(tariffa*st.hotel), sub:Math.round(sub) });
+    }
   }
 
   /* --- cibo: per giorno, col modificatore della città in cui sei */
   var cibo = 0;
-  for (var g=0; g<itin.giorni.length; g++) cibo += D.cibo[stileKey].yen * citta(itin.giorni[g].citta).cibo_mod;
+  for (var g=0; g<itin.giorni.length; g++)
+    cibo += D.cibo[stile.cibo].yen * citta(itin.giorni[g].citta).cibo_mod;
 
   /* --- attività: quota diversa per livello */
   var attCosti = [];
@@ -350,12 +479,11 @@ function calcolaLivello(input, itin, treni, stileKey) {
   /* --- transfer aeroportuali */
   var transfer = D.transfer_aeroporto_yen * 2;
 
-  /* --- volo: se abbiamo il prezzo VERO di Google per questa coppia
-     (aeroporto × stagione) si usa quello, e NON si applica il moltiplicatore
-     di stagione, perché il prezzo reale la stagione ce l'ha già dentro.
-     Altrimenti si ricade sulla stima del catalogo, e si dichiara.          */
-  var v = voloReale(input.partenza, input.stagione);
-  var volo = v ? v.eur : partenza(input.partenza).volo.media * st.volo;
+  /* --- volo: prezzo VERO di Google per (aeroporto × stagione × fascia).
+     Niente moltiplicatore di stagione sopra: il prezzo reale ce l'ha dentro. */
+  var v = voloReale(input.partenza, input.stagione, stile.volo);
+  var volo = v ? v.eur : partenza(input.partenza).volo.media * st.volo
+                         * (stile.volo === "lusso" ? 3.4 : 1);
 
   /* --- extra in euro */
   var e = D.extra;
@@ -363,12 +491,13 @@ function calcolaLivello(input, itin, treni, stileKey) {
 
   var vociYen = {
     trasporti: treni.scelto + transfer,
-    alloggio: alloggio,
+    alloggio: alloggio,                 /* null quando il prezzo è già in euro */
     cibo: cibo,
     attivita: attivita
   };
+  var alloggioEur = alloggioFonte ? alloggioFonte.eur * notti : eur(alloggio);
   var perPersona = volo + extra
-    + eur(vociYen.trasporti) + eur(vociYen.alloggio) + eur(vociYen.cibo) + eur(vociYen.attivita);
+    + eur(vociYen.trasporti) + alloggioEur + eur(vociYen.cibo) + eur(vociYen.attivita);
   var imprevisti = perPersona * e.imprevisti_perc;
   perPersona += imprevisti;
 
@@ -376,10 +505,12 @@ function calcolaLivello(input, itin, treni, stileKey) {
   return {
     stile: stileKey, nome: stile.nome,
     volo_fonte: v || null,
+    alloggio_fonte: alloggioFonte,
+    zona: zona,
     voci: {
       volo: volo,
       trasporti: eur(vociYen.trasporti),
-      alloggio: eur(vociYen.alloggio),
+      alloggio: alloggioEur,
       cibo: eur(vociYen.cibo),
       attivita: eur(vociYen.attivita),
       extra: extra,
@@ -404,8 +535,11 @@ function pianifica(input) {
     equilibrato: calcolaLivello(input, itin, treni, "equilibrato"),
     comodo:      calcolaLivello(input, itin, treni, "comodo")
   };
+  itin.fascia_volo = STILI[input.stile].volo;
+  itin.alloggio_vero = !!livelli[input.stile].alloggio_fonte;
   return { input:input, itinerario:itin, treni:treni, livelli:livelli,
-           stagione: stagione(input.stagione), attendibilita: contaStime(itin) };
+           stagione: stagione(input.stagione), cambio: cambio(),
+           zone: zoneDisponibili(), attendibilita: contaStime(itin) };
 }
 
 /* Quante voci usate sono ancora stime: si dichiara a schermo.
@@ -421,9 +555,10 @@ function contaStime(itin) {
   for (var j=0;j<itin.tappe.length;j++){ tot++; if (!verificato(citta(itin.tappe[j].citta))) stime++; }
   var g = itin.gambe.concat(itin.ritorno? [itin.ritorno]:[]);
   for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata || !g[k].verificata) stime++; }
-  tot += 2;                                   // volo + cambio valuta
-  stime += 1;                                 // il cambio è sempre una stima
-  if (!voloReale(itin.input_partenza, itin.input_stagione)) stime += 1;
+  tot += 3;                                   // volo, alloggio, cambio
+  if (!cambio().vero) stime += 1;
+  if (!voloReale(itin.input_partenza, itin.input_stagione, itin.fascia_volo || "normale")) stime += 1;
+  if (!itin.alloggio_vero) stime += 1;
   return { totale:tot, stime:stime, perc: Math.round(stime/tot*100) };
 }
 
@@ -432,15 +567,55 @@ function contaStime(itin) {
    e si mostra la differenza. È il pezzo che rende il servizio utile.        */
 function compromessi(input, base) {
   var out = [], stileRif = input.stile;
-  function delta(patch, etichetta, avvertenza) {
+  function delta(patch, etichetta, avvertenza, cambiaFascia) {
     var nuovo = {}; for (var k in input) nuovo[k] = input[k];
     for (var k2 in patch) nuovo[k2] = patch[k2];
     var r;
     try { r = pianifica(nuovo); } catch(e) { return; }
-    var d = r.livelli[stileRif].gruppo - base.livelli[stileRif].gruppo;
+    var quale = cambiaFascia ? (patch.stile || stileRif) : stileRif;
+    var d = r.livelli[quale].gruppo - base.livelli[stileRif].gruppo;
     if (Math.abs(d) < 15) return;
     out.push({ etichetta: etichetta, delta: d, avvertenza: avvertenza || "", patch: patch });
   }
+
+  /* in modalità Tokyo le leve utili sono la zona e la fascia, non altre città */
+  if (base.itinerario.soloTokyo) {
+    var zAttuale = input.zona || "shinjuku";
+    var fasciaAll = STILI[stileRif].alloggio;
+    var candidate = [];
+    zoneDisponibili().forEach(function (z) {
+      var a = alloggioReale(z.id, fasciaAll, input.stagione);
+      if (a && z.id !== zAttuale) candidate.push({ id: z.id, nome: z.nome, eur: a.eur, nota: z.nota });
+    });
+    candidate.sort(function (a, b) { return a.eur - b.eur; });
+    if (candidate.length) {
+      delta({ zona: candidate[0].id }, "Dormi " + aZona(candidate[0].id) +
+            " invece che " + aZona(zAttuale), candidate[0].nota);
+      var caro = candidate[candidate.length - 1];
+      if (caro.id !== candidate[0].id)
+        delta({ zona: caro.id }, "Dormi " + aZona(caro.id) + ", la zona più cara del campione", caro.nota);
+    }
+    var att = stagione(input.stagione);
+    var alt = D.stagioni.filter(function (x) {
+      return x.id !== att.id && Math.abs(x.mese - att.mese) <= 2;
+    });
+    alt.forEach(function (x) {
+      var vv = voloReale(input.partenza, x.id, STILI[stileRif].volo);
+      var aa = alloggioReale(zAttuale, fasciaAll, x.id);
+      if (vv && aa) x._tot = vv.eur + aa.eur * base.itinerario.ggGiappone;
+    });
+    alt = alt.filter(function (x) { return x._tot; }).sort(function (a, b) { return a._tot - b._tot; });
+    if (alt.length) delta({ stagione: alt[0].id }, "Sposti il viaggio a " + alt[0].nome, alt[0].nota);
+    if (input.giorni > 5)  delta({ giorni: input.giorni - 2 }, "Due giorni in meno");
+    if (input.giorni < 25) delta({ giorni: input.giorni + 2 }, "Due giorni in più");
+    if (stileRif !== "essenziale") delta({ stile: "essenziale" }, "Scendi alla fascia minima",
+      "Ostello, volo al minimo, si mangia al konbini.", true);
+    if (stileRif !== "comodo") delta({ stile: "comodo" }, "Sali a senza pensieri",
+      "Business a bordo e hotel di categoria: è un altro viaggio, e si vede.", true);
+    out.sort(function (a, b) { return a.delta - b.delta; });
+    return out;
+  }
+
 
   /* stagione: la più economica entro 2 mesi di distanza */
   var attuale = stagione(input.stagione);
@@ -494,13 +669,29 @@ function prosa(r) {
     : nomi.slice(0,-1).join(", ") + " e " + nomi[nomi.length-1];
   var p = [];
 
-  p.push("Con " + i.giorni + " giorni a disposizione e un ritmo " + RITMI[i.ritmo].nome +
-    ", il giro che regge meglio è " + elenco + ": " + it.rotta.length +
-    (it.rotta.length===1 ? " base" : " basi") + " in " + it.ggGiappone + " giorni pieni sul posto.");
+  if (it.soloTokyo) {
+    var g = (it.gite || []).map(function(x){ return citta(x.citta).nome; });
+    p.push("Tokyo per " + it.ggGiappone + " giorni pieni, con base a " + nomeZona(liv.zona) +
+      (g.length ? ", più " + g.length + (g.length===1 ? " gita in giornata: " : " gite in giornata: ") + g.join(", ")
+                : ", senza gite fuori: con questi giorni la città basta e avanza") + ".");
+  } else {
+    p.push("Con " + i.giorni + " giorni a disposizione e un ritmo " + RITMI[i.ritmo].nome +
+      ", il giro che regge meglio è " + elenco + ": " + it.rotta.length +
+      (it.rotta.length===1 ? " base" : " basi") + " in " + it.ggGiappone + " giorni pieni sul posto.");
+  }
 
   p.push(st.nota);
 
-  if (r.treni.usaPass) {
+  if (it.soloTokyo) {
+    var costoGite = 0;
+    (it.gambe || []).forEach(function (g) { costoGite += g.yen; });
+    p.push(costoGite > 0
+      ? ("Il Japan Rail Pass qui non c'entra: restando a Tokyo i treni sono solo quelli delle gite, " +
+         arrotonda(eur(costoGite)) + " euro a persona in tutto, più il trasporto urbano. " +
+         "Il pass costa da " + arrotonda(eur(D.pass[0].yen)) + " euro in su: non lo ammortizzi.")
+      : ("Nessun treno a lunga percorrenza: solo metropolitana, che a Tokyo costa " +
+         "sui " + arrotonda(eur(D.trasporto_locale_yen_giorno)) + " euro al giorno."));
+  } else if (r.treni.usaPass) {
     p.push("Con questo itinerario il " + r.treni.pass.nome + " conviene: ti fa risparmiare circa " +
       arrotonda(eur(r.treni.risparmio)) + " euro a persona rispetto ai biglietti singoli. " +
       "Attivalo il giorno " + r.treni.passDal + " del viaggio, non appena atterri: è la finestra " +
@@ -527,14 +718,39 @@ function prosa(r) {
     p.push("Nota di realtà: fra un trasferimento e l'altro perdi circa " +
       it.ggPersiInTreno.toFixed(1) + " giornate in viaggio. Togliendo una tappa le recuperi.");
 
-  if (liv.volo_fonte) {
-    p.push("Il volo non è una stima: " + arrotonda(liv.volo_fonte.eur) + " euro a persona è " +
-      "il prezzo più basso che Google Flights dava per " + partenza(i.partenza).nome +
-      " il " + liv.volo_fonte.out.split("-").reverse().join("/") + ", andata e ritorno di due settimane" +
-      (liv.volo_fonte.compagnia ? " con " + liv.volo_fonte.compagnia : "") + ".");
+  var vf = liv.volo_fonte;
+  if (vf) {
+    var ore = Math.round((vf.min_and||0)/60);
+    p.push("Il volo è un prezzo vero: " + arrotonda(vf.eur) + " euro a persona, " +
+      (vf.compagnia ? vf.compagnia + ", " : "") + ore + " ore all'andata con " +
+      (vf.scali === 0 ? "volo diretto" : vf.scali + (vf.scali===1?" scalo":" scali")) +
+      ", letto su Google Flights per la partenza del " + vf.out.split("-").reverse().join("/") + ".");
+    /* la trappola: risparmiare sul volo spesso non fa risparmiare, fa perdere ore */
+    var eco = voloReale(i.partenza, i.stagione, "economico");
+    var nor = voloReale(i.partenza, i.stagione, "normale");
+    if (eco && nor) {
+      var risparmio = nor.esatto - eco.esatto, oreInPiu = ((eco.min_and||0) - (nor.min_and||0))/60;
+      if (oreInPiu >= 2) {
+        p.push(risparmio < 20
+          ? ("Attenzione a cercare il volo più economico: su questa rotta costa " +
+             (risparmio <= 1 ? "esattamente uguale" : "appena " + Math.round(risparmio) + " euro meno") +
+             " e ti porta via " + oreInPiu.toFixed(0) + " ore in più, con uno scalo di " +
+             Math.floor((eco.scalo_peggio||0)/60) + " ore. Non è un risparmio, è una perdita.")
+          : ("Il volo più economico costa " + Math.round(risparmio) + " euro meno ma dura " +
+             oreInPiu.toFixed(0) + " ore in più, con uno scalo di " +
+             Math.floor((eco.scalo_peggio||0)/60) + " ore: decidi tu se vale."));
+      }
+    }
   } else {
-    p.push("Sul volo non ho un prezzo reale per questa combinazione di aeroporto e stagione: " +
+    p.push("Per questa combinazione di aeroporto e stagione Google non ha ancora i voli: " +
       "quella voce resta una stima del catalogo.");
+  }
+
+  var af = liv.alloggio_fonte;
+  if (af) {
+    p.push("Anche l'alloggio è vero: " + af.eur + " euro a notte è la mediana di " + af.campione +
+      " strutture che Google Hotels elenca " + aZona(liv.zona) + " in quella fascia e in quelle date" +
+      " (si va da " + af.min + " a " + af.max + "; la più economica era " + af.esempio + ").");
   }
 
   p.push("Il livello \"" + liv.nome + "\" viene circa " + arrotonda(liv.perPersona) +
@@ -554,6 +770,8 @@ function prosa(r) {
 return {
   pianifica: pianifica, compromessi: compromessi, prosa: prosa,
   citta: citta, luogo: luogo, stagione: stagione, serie: serie, partenza: partenza,
-  tratta: tratta, eur: eur, arrotonda: arrotonda, RITMI: RITMI, STILI: STILI
+  tratta: tratta, eur: eur, arrotonda: arrotonda, RITMI: RITMI, STILI: STILI,
+  zoneDisponibili: zoneDisponibili, nomeZona: nomeZona, aZona: aZona,
+  voloReale: voloReale, alloggioReale: alloggioReale, cambio: cambio, GITE: GITE
 };
 })();

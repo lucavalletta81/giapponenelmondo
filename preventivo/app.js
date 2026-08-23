@@ -11,9 +11,10 @@ var $$ = function (s, r) { return Array.prototype.slice.call((r || document).que
 var S = {
   partenza: "fco", stagione: "ott", giorni: 14, ritmo: "medio", stile: "equilibrato",
   adulti: 2, bambini: 0, interessi: [], anime: [], giaVisti: [], primaVolta: true,
-  voliInterni: "si", budgetMax: 0, ancoraggio: "tokyo", jrPass: "auto"
+  voliInterni: "si", budgetMax: 0, ancoraggio: "tokyo", jrPass: "auto",
+  soloTokyo: true, zona: "shinjuku"
 };
-var passo = 1, PASSI = 7;
+var passo = 1, PASSI = 8;
 var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i click
 
 /* ------------------------------------------------------------ FORMATTO --- */
@@ -72,6 +73,32 @@ function riempiSerie() {
   });
 }
 
+/* Le zone col loro prezzo VERO: si sceglie guardando quanto costa. */
+function riempiZone() {
+  var zone = M.zoneDisponibili();
+  if (!zone.length) { $("#zone").innerHTML = '<p class="nota">Listino zone non caricato.</p>'; return; }
+  var fascia = M.STILI[S.stile].alloggio;
+  var righe = zone.map(function (z) {
+    var a = M.alloggioReale(z.id, fascia, S.stagione);
+    return { z: z, a: a };
+  }).filter(function (r) { return r.a; });
+  righe.sort(function (x, y) { return x.a.eur - y.a.eur; });
+  if (!righe.length) { $("#zone").innerHTML = '<p class="nota">Per queste date non ho ancora prezzi di zona.</p>'; return; }
+  if (!righe.some(function (r) { return r.z.id === S.zona; })) S.zona = righe[0].z.id;
+  $("#zone").innerHTML = righe.map(function (r) {
+    return '<div class="carta' + (r.z.id === S.zona ? " on" : "") + '" data-id="' + r.z.id + '">' +
+      "<b>" + esc(r.z.nome) + " · " + r.a.eur + " €/notte</b><span>" + esc(r.z.nota) + "</span>" +
+      '<span class="piccolo">da ' + r.a.min + " a " + r.a.max + " € su " + r.a.campione + " strutture</span></div>";
+  }).join("");
+  $$("#zone .carta").forEach(function (c) {
+    c.onclick = function () {
+      S.zona = c.dataset.id;
+      $$("#zone .carta").forEach(function (x) { x.classList.remove("on"); });
+      c.classList.add("on");
+    };
+  });
+}
+
 function riempiGiaVisti() {
   var lista = D.citta.filter(function (c) { return c.iconica || c.hub; });
   $("#giavisti").innerHTML = lista.map(function (c) {
@@ -95,6 +122,7 @@ function mostraPasso(n) {
   $("#barra-testo").textContent = "Passo " + n + " di " + PASSI;
   $("#barra-fill").style.width = (n / PASSI * 100) + "%";
   if (n === 6) preparaRamo();
+  if (n === 8) riempiZone();
   window.scrollTo(0, 0);
 }
 
@@ -192,21 +220,30 @@ function disegna(r, comp) {
   var vf = liv.volo_fonte;
   var spiega = {
     volo: vf
-      ? ("prezzo reale Google Flights per " + M.partenza(S.partenza).nome + " → Tokyo, partenza " +
-         vf.out.split("-").reverse().join("/") + ", 14 notti" +
-         (vf.compagnia ? ", " + vf.compagnia : "") + " — rilevato il " +
-         vf.aggiornato.slice(0, 10).split("-").reverse().join("/"))
+      ? ("prezzo reale Google Flights, " + M.partenza(S.partenza).nome + " → Tokyo, partenza " +
+         vf.out.split("-").reverse().join("/") + (vf.compagnia ? ", " + vf.compagnia : "") +
+         ", " + Math.round((vf.min_and || 0) / 60) + "h all'andata, " +
+         (vf.scali === 0 ? "diretto" : vf.scali + (vf.scali === 1 ? " scalo" : " scali")) +
+         (vf.scalo_peggio > 240 ? " (il più lungo di " + Math.floor(vf.scalo_peggio / 60) + "h)" : "") +
+         ", classe " + (vf.classe || "").toLowerCase().replace("_", " ") +
+         " — rilevato il " + (vf.letto || "").split("-").reverse().join("/"))
       : ("stima: andata/ritorno da " + M.partenza(S.partenza).nome +
          ", tariffa media × moltiplicatore di stagione (" + r.stagione.volo + "×)"),
     trasporti: "biglietti del giro + trasporto urbano " + yen(D.trasporto_locale_yen_giorno) + "/giorno + transfer aeroporto",
-    alloggio: liv.notti + " notti, tariffa per città × " + r.stagione.hotel + "× di stagione",
+    alloggio: liv.alloggio_fonte
+      ? ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
+         " notti " + esc(M.aZona(liv.zona)) + " — mediana di " + liv.alloggio_fonte.campione +
+         " strutture (da " + liv.alloggio_fonte.min + " a " + liv.alloggio_fonte.max + " €), " +
+         "rilevato il " + liv.alloggio_fonte.letto.split("-").reverse().join("/"))
+      : (liv.notti + " notti, stima: tariffa per città × " + r.stagione.hotel + "× di stagione"),
     cibo: D.cibo[S.stile].desc,
     attivita: liv.attIncluse.length + " ingressi ed esperienze a pagamento",
     extra: "assicurazione, eSIM, souvenir",
     imprevisti: "5% di margine: c'è sempre qualcosa"
   };
   [["volo", "Volo intercontinentale" + (vf ? ' <span class="tag">reale</span>' : ' <span class="tag">stima</span>')],
-   ["trasporti", "Trasporti in Giappone"], ["alloggio", "Alloggio"],
+   ["trasporti", "Trasporti in Giappone"],
+   ["alloggio", "Alloggio" + (liv.alloggio_fonte ? ' <span class="tag">reale</span>' : ' <span class="tag">stima</span>')],
    ["cibo", "Mangiare"], ["attivita", "Ingressi ed esperienze"], ["extra", "Extra"], ["imprevisti", "Imprevisti"]
   ].forEach(function (v) {
     h.push("<tr><td>" + v[1] + '</td><td class=num>' + eu(liv.voci[v[0]]) + "</td><td class=num>" +
@@ -288,22 +325,30 @@ function disegna(r, comp) {
   h.push('<div class="box"><h3>Da dove vengono questi prezzi</h3>' +
     "<p><b>" + r.attendibilita.stime + " voci su " + r.attendibilita.totale + " (" +
     r.attendibilita.perc + "%) di questo preventivo sono stime</b>, non tariffe controllate su fonte ufficiale.</p>" +
-    (vf
-      ? ("<p><b>Il volo fa eccezione ed è un prezzo vero.</b> Viene da Google Flights, " +
-         "rilevato il " + vf.aggiornato.slice(0,10).split("-").reverse().join("/") +
-         ": " + esc(vf.condizioni) + ". Nel preventivo è arrotondato ai 25 € " +
-         "(la tariffa esatta letta era " + vf.grezzo + " €), perché una cifra tonda dice " +
-         "onestamente che è un ordine di grandezza e non una prenotazione.</p>")
-      : "<p>Nemmeno il volo è un prezzo reale per questa combinazione: Google non copre ancora " +
-        "queste date, quindi vale la stima del catalogo.</p>") +
-    "<p>Tutto il resto sono ordini di grandezza scritti a mano nel catalogo: alberghi, treni, " +
-    "ingressi e cambio euro/yen non sono collegati a nessun sistema di prenotazione, e nessuna " +
-    "disponibilità viene interrogata.</p>" +
-    "<p>Quello che invece è calcolato e non stimato è il <b>ragionamento</b>: la somma delle voci, " +
-    "i moltiplicatori di stagione, la durata delle tappe, il confronto fra Japan Rail Pass e " +
-    "biglietti singoli. Cambia i prezzi del catalogo e tutto il resto continua a valere.</p>" +
-    "<p>Dataset versione " + esc(D.meta.versione) + ", aggiornato il " + esc(D.meta.aggiornato) +
-    ". Cambio usato: 1 € = " + D.cambio.jpy_per_eur + " ¥.</p>" +
+    "<p><b>Prezzi veri, letti da un sistema di prenotazione:</b> " +
+      [vf ? "il volo (Google Flights, tariffa esatta " + vf.esatto + " €, arrotondata ai 25)" : null,
+       liv.alloggio_fonte ? "l'alloggio (Google Hotels, mediana di " + liv.alloggio_fonte.campione +
+         " strutture " + esc(M.aZona(liv.zona)) + ", arrotondata ai 5)" : null,
+       r.cambio && r.cambio.vero ? "il cambio euro/yen (1 € = " + r.cambio.v + " ¥, BCE del " +
+         r.cambio.data.split("-").reverse().join("/") + ")" : null
+      ].filter(Boolean).join("; ") + ".</p>" +
+    "<p><b>Ancora stime scritte a mano:</b> " +
+      (liv.alloggio_fonte ? "" : "l'alloggio (per questa zona e questa fascia Google non aveva " +
+        "abbastanza strutture, quindi vale il catalogo); ") +
+      "treni e metropolitana, ingressi ed esperienze, quanto si spende per mangiare, " +
+      "assicurazione e souvenir. Nessuna disponibilità viene interrogata: se l'albergo è pieno, " +
+      "questo non lo sa.</p>" +
+    "<p>Quello che non è né vero né stimato ma <b>calcolato</b> è il ragionamento: come si " +
+    "riempiono le giornate, quali gite reggono il viaggio, la somma delle voci, e di quanto " +
+    "si sposta il totale quando cambi una risposta. Quello vale a prescindere dai prezzi.</p>" +
+    "<p>" + (r.cambio && r.cambio.vero
+      ? ("Cambio usato: 1 € = " + r.cambio.v + " ¥, quotazione BCE del " +
+         r.cambio.data.split("-").reverse().join("/") + ".")
+      : ("Cambio usato: 1 € = " + r.cambio.v + " ¥, valore di ripiego: il servizio della BCE " +
+         "non ha risposto.")) +
+    (window.PREZZI && window.PREZZI.generato
+      ? " Listino prezzi rigenerato il " + window.PREZZI.generato.slice(0,10).split("-").reverse().join("/") + "."
+      : "") + "</p>" +
     '<p class="nota">Questo contatore dice quello che il servizio non sa. Scende solo verificando ' +
     "le voci una per una, non nascondendolo.</p></div>");
 

@@ -45,7 +45,7 @@ stagioni: [
   { id:"ago",  nome:"Agosto (fuori Obon)",      mese:8,  volo:1.28, hotel:1.20, affoll:4, tag:["mare","matsuri"],  nota:"Caldo estremo in città. Ottimo per Hokkaido e montagna." },
   { id:"set",  nome:"Settembre",                mese:9,  volo:1.00, hotel:1.00, affoll:3, tag:[],                  nota:"Ancora caldo, rischio tifoni, ma prezzi normali." },
   { id:"ott",  nome:"Ottobre",                  mese:10, volo:1.08, hotel:1.08, affoll:3, tag:["foliage"],         nota:"Clima perfetto. Il foliage inizia dal nord." },
-  { id:"nov",  nome:"Novembre (foliage)",       mese:11, volo:1.22, hotel:1.28, affoll:5, tag:["foliage"],         nota:"Kyoto a novembre è la seconda alta stagione dopo la sakura." },
+  { id:"nov",  nome:"Novembre (foliage)",       mese:11, volo:1.22, hotel:1.28, affoll:5, tag:["foliage"],         nota:"Il foliage: dopo la sakura è il secondo periodo più richiesto dell'anno." },
   { id:"dic",  nome:"Dicembre (fino al 24)",    mese:12, volo:0.90, hotel:0.92, affoll:2, tag:["illuminazioni"],   nota:"Sottovalutato: freddo ma limpido, illuminazioni ovunque, poca gente." },
   { id:"cap",  nome:"25 dic - 5 gen (Capodanno)", mese:12, volo:1.45, hotel:1.40, affoll:5, tag:[],                nota:"Capodanno: molti musei e ristoranti chiusi 1-3 gennaio." }
 ],
