@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Preventivo Giappone — documento di progetto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Dossier di progetto. Trattamento da documento, non da vetrina: gerarchia
+   tipografica vera, spaziature misurate, e il colore speso in un punto solo.
+   Continuità con l'altro artifact del progetto: stesse famiglie, stesso indigo. */
+
+:root {
+  --carta:    #F7F7F4;
+  --foglio:   #FFFFFF;
+  --alt:      #EFEFEB;
+  --inchio:   #16181D;
+  --smorz:    #5B6070;
+  --riga:     #E2E2DD;
+  --riga2:    #C9CAC4;
+  --kon:      #26418F;   /* indigo giapponese: l'unico colore acceso */
+  --kon-tenue:#E9ECF7;
+  --fatto:    #1F6B44;
+  --attesa:   #8A6410;
+  --dafare:   #6E7382;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --carta:    #101216;
+    --foglio:   #171A20;
+    --alt:      #1D2129;
+    --inchio:   #E8EAEF;
+    --smorz:    #9AA0AE;
+    --riga:     #262A33;
+    --riga2:    #3A4050;
+    --kon:      #93AAF2;
+    --kon-tenue:#1B2440;
+    --fatto:    #6FCF9C;
+    --attesa:   #E0B860;
+    --dafare:   #8B91A0;
+  }
+}
+:root[data-theme="dark"] {
+  --carta:    #101216;
+  --foglio:   #171A20;
+  --alt:      #1D2129;
+  --inchio:   #E8EAEF;
+  --smorz:    #9AA0AE;
+  --riga:     #262A33;
+  --riga2:    #3A4050;
+  --kon:      #93AAF2;
+  --kon-tenue:#1B2440;
+  --fatto:    #6FCF9C;
+  --attesa:   #E0B860;
+  --dafare:   #8B91A0;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--carta); color: var(--inchio);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16.5px; line-height: 1.62; -webkit-font-smoothing: antialiased;
+}
+
+.pagina {
+  max-width: 1180px; margin: 0 auto; padding: 56px 28px 96px;
+  display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 56px; align-items: start;
+}
+@media (max-width: 900px) {
+  .pagina { grid-template-columns: 1fr; gap: 28px; padding: 36px 20px 72px; }
+  .indice { position: static !important; border-left: none !important; padding-left: 0 !important;
+            border-top: 1px solid var(--riga); padding-top: 18px; }
+}
+
+/* ------------------------------------------------------------- indice --- */
+.indice {
+  position: sticky; top: 40px; display: flex; flex-direction: column; gap: 2px;
+  border-left: 2px solid var(--riga); padding-left: 16px;
+}
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--smorz); margin: 0 0 10px;
+}
+.indice a {
+  color: var(--smorz); text-decoration: none; font-size: 13.5px; line-height: 1.4;
+  padding: 3px 0; border-bottom: 1px solid transparent;
+}
+.indice a:hover { color: var(--kon); }
+.indice a:focus-visible { outline: 2px solid var(--kon); outline-offset: 2px; }
+
+/* ---------------------------------------------------------- tipografia --- */
+article { max-width: 74ch; }
+article > * + * { margin-top: 1.05em; }
+
+h1 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600;
+  font-size: clamp(32px, 5vw, 46px); line-height: 1.08; letter-spacing: -.015em;
+  margin: 0 0 .2em; text-wrap: balance;
+}
+h2 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600;
+  font-size: 27px; line-height: 1.2; letter-spacing: -.01em;
+  margin-top: 2.4em !important; padding-top: .9em; border-top: 1px solid var(--riga);
+  text-wrap: balance; scroll-margin-top: 30px;
+}
+h2:first-of-type { border-top: none; padding-top: 0; }
+h3 {
+  font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--smorz); margin-top: 2em !important;
+}
+p { margin: 0; }
+strong { font-weight: 600; }
+a { color: var(--kon); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+ul, ol { margin: 0; padding-left: 1.35em; }
+li + li { margin-top: .4em; }
+li::marker { color: var(--riga2); }
+
+blockquote {
+  margin: 1.6em 0 !important; padding: 16px 20px; background: var(--kon-tenue);
+  border-left: 3px solid var(--kon); border-radius: 0 3px 3px 0;
+}
+blockquote p { font-size: 15.5px; }
+
+code {
+  font-family: "IBM Plex Mono", monospace; font-size: .875em;
+  background: var(--alt); padding: 1px 5px; border-radius: 3px;
+}
+pre {
+  background: var(--foglio); border: 1px solid var(--riga); border-radius: 3px;
+  padding: 14px 16px; overflow-x: auto; margin: 1.4em 0 !important;
+}
+pre code { background: none; padding: 0; font-size: 13px; line-height: 1.55; }
+
+/* -------------------------------------------------------------- tabelle -- */
+.tab { overflow-x: auto; margin: 1.5em 0 !important; }
+table {
+  border-collapse: collapse; width: 100%; font-size: 14.5px;
+  background: var(--foglio); border: 1px solid var(--riga);
+}
+th {
+  font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--smorz);
+  background: var(--alt); text-align: left; white-space: nowrap;
+}
+th, td { border-bottom: 1px solid var(--riga); padding: 9px 13px; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+.num { text-align: right; font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", monospace; }
+
+/* stato delle milestone: la forma dice quanto il colore */
+.stato {
+  display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
+  font-weight: 500; letter-spacing: .07em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 2px; border: 1px solid currentColor; white-space: nowrap;
+}
+.stato.fatto  { color: var(--fatto); }
+.stato.attesa { color: var(--attesa); }
+.stato.dafare { color: var(--dafare); border-style: dashed; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media print {
+  .indice { display: none; }
+  .pagina { display: block; max-width: none; padding: 0; }
+  body { background: #fff; font-size: 11pt; }
+  h2 { break-after: avoid; }
+  table, blockquote, pre { break-inside: avoid; }
+}
+
+/* Avviso in cima alla copia pubblicata: la pagina non è elencata da nessuna parte,
+   ma un indirizzo non elencato non è una password. */
+.riservato {
+  max-width: 1180px; margin: 0 auto; padding: 14px 28px; font-size: 13px;
+  color: var(--attesa); border-bottom: 1px solid var(--riga); background: var(--foglio);
+  font-family: "IBM Plex Mono", monospace; line-height: 1.5;
+}
+@media (max-width: 900px) { .riservato { padding: 12px 20px; } }
+@media print { .riservato { display: none; } }
+
+</style>
+</head>
+<body>
+<p class="riservato">Documento di lavoro interno. Pagina non elencata e non indicizzabile, ma chi ha il collegamento la legge: non metterla in giro.</p>
+<div class="pagina"><nav class="indice"><p class="eyebrow">Indice</p><a href="#1-la-richiesta-com-nata">La richiesta, com&#x27;è nata</a><a href="#2-il-patto-questo-il-pitch-leggerlo-prim">Il patto (questo è il pitch: leggerlo prima di giudicare il resto)</a><a href="#3-architettura-e-perch-cos">Architettura, e perché è così</a><a href="#4-la-base-dati">La base dati</a><a href="#5-le-fonti">Le fonti</a><a href="#6-cosa-hanno-detto-i-dati">Cosa hanno detto i dati</a><a href="#7-il-motore">Il motore</a><a href="#8-stato-attuale">Stato attuale</a><a href="#9-milestone">Milestone</a><a href="#10-target">Target</a><a href="#11-aggiornamenti-cadenza-e-automazione">Aggiornamenti: cadenza e automazione</a><a href="#12-necessit-e-decisioni-aperte">Necessità e decisioni aperte</a><a href="#13-rischi">Rischi</a><a href="#14-dove-sta-cosa">Dove sta cosa</a><a href="#15-revisione-esterna-23-agosto-2026">Revisione esterna (23 agosto 2026)</a></nav><article><h1>Preventivo Giappone — documento di progetto</h1>
+<p><strong>Versione 1.0 — 23 agosto 2026</strong> Luca Valletta (Giappone nel Mondo) · Simone Modenasciani (Omotenashi Anime) In produzione su <a href="https://giapponenelmondo.com/preventivo/">https://giapponenelmondo.com/preventivo/</a></p>
+<h2 id="1-la-richiesta-com-nata">1. La richiesta, com&#x27;è nata</h2>
+<p>L&#x27;idea di partenza di Luca e Simone: <em>«come se andassi in un&#x27;agenzia di viaggi e gli dicessi i miei interessi, e lui mi dicesse guarda possiamo fare questo e questo»</em>. Non un preventivo commerciale — un modo per farsi un&#x27;idea seria di quanto costa un viaggio in Giappone <strong>costruito sui propri interessi</strong>, non su un pacchetto.</p>
+<p>Il vincolo posto subito: <strong>niente AI a pagamento</strong>. Nessuna API LLM nel percorso critico.</p>
+<p>Il secondo vincolo, arrivato dopo la prima versione: <strong>prezzi veri</strong>. Un catalogo di prezzi scritto a mano <em>«è una cazzata, i prezzi cambiano molto spesso»</em>. Il servizio deve leggere prezzi reali da una fonte reale.</p>
+<h3>Cosa NON è</h3>
+<ul><li>Non è un motore di prenotazione. Non vende, non blocca, non verifica disponibilità.</li><li>Non è un preventivo contrattuale. È una stima dichiarata come tale.</li><li>Non è un aggregatore in tempo reale. I prezzi hanno una data di rilevazione scritta a schermo.</li></ul>
+<h2 id="2-il-patto-questo-il-pitch-leggerlo-prim">2. Il patto (questo è il pitch: leggerlo prima di giudicare il resto)</h2>
+<p>Il servizio promette <strong>tre cose</strong> e le promette in questo ordine:</p>
+<ol><li><strong>Un numero credibile.</strong> Non il più basso, non il più prudente: quello che regge se uno poi ci va davvero. Ogni voce dice da dove viene.</li><li><strong>Le leve.</strong> Non basta dire quanto costa: bisogna far vedere <em>cosa lo sposta</em>. Spostare la stagione, cambiare zona, aggiungere due giorni, salire di fascia — ogni leva è il preventivo rifatto da capo, non una percentuale.</li><li><strong>L&#x27;onestà come funzionalità.</strong> La pagina dichiara quante voci sono ancora stime e quali. Il contatore non si nasconde: si abbassa verificando.</li></ol>
+<p><strong>Il criterio di successo</strong> non è la precisione al centesimo: è che una persona esca dalla pagina sapendo una cosa che non sapeva, e con un ordine di grandezza di cui può fidarsi.</p>
+<h3>Divieti, decisi e non riaprire</h3>
+<ul><li><strong>Nessuna AI a runtime.</strong> Il preventivo è deterministico. L&#x27;AI si usa solo a monte, per costruire il catalogo, con gli abbonamenti già pagati.</li><li><strong>Nessuna API a pagamento.</strong> Tutto ciò che gira deve costare zero.</li><li><strong>Il sito resta statico.</strong> Nessun backend applicativo, nessun token segreto da difendere.</li><li><strong>Niente numero secco.</strong> Sempre tre fasce, sempre con la data di rilevazione.</li><li><strong>Non si nasconde ciò che non si sa.</strong> Le stime restano dichiarate stime.</li></ul>
+<h3>L&#x27;angolo che ci distingue</h3>
+<p>Calcolatori di costo per il Giappone ce ne sono a centinaia in inglese, pochi e brutti in italiano. Il vantaggio vero è il pubblico di Simone: il <strong>seichi junrei</strong> (聖地巡礼), il pellegrinaggio nei luoghi degli anime. Il catalogo lega 14 serie a luoghi reali, e le serie scelte <strong>spostano davvero l&#x27;itinerario</strong> — non sono un&#x27;etichetta appiccicata alla fine.</p>
+<h2 id="3-architettura-e-perch-cos">3. Architettura, e perché è così</h2>
+<pre><code>   Google Flights ──┐
+   Google Hotels ───┼──► raccoglitori Python ──► SQLite (storico) ──► prezzi.js ──► sito statico
+   BCE (cambio) ────┘         (a comando o                              (export)      (browser)
+                               di notte)</code></pre>
+<p><strong>Il sito è una pagina statica.</strong> Dataset e motore girano nel browser di chi visita: nessun server applicativo, nessun rate limit, nessuna bolletta, e regge qualunque picco arrivi da un video di YouTube.</p>
+<h3>Perché i prezzi sono precalcolati e non chiamati dal browser</h3>
+<p>Domanda posta esplicitamente da Luca: <em>«vorrei che il sito faccia delle chiamate»</em>. Non si può, e non converrebbe:</p>
+<ol><li>Non esiste un&#x27;API pubblica di Google Flights. La sorgente è l&#x27;endpoint interno <code>/_/FlightsFrontendUi/data/</code>, che risponde solo con l&#x27;impersonificazione TLS di <code>curl_cffi</code> (libreria Python): un worker serverless o una pagina non ce la fanno.</li><li>Una pagina statica non può chiamarlo comunque: CORS lo blocca.</li><li>Una ricerca fredda costa <strong>8-10 secondi</strong>. Dentro un questionario è inaccettabile.</li><li>Con il traffico di un video, decine di richieste al minuto dallo stesso IP verrebbero bloccate in mezz&#x27;ora — e il sito resterebbe senza prezzi proprio nel giorno buono.</li></ol>
+<p>Il giro notturno dura ~50 minuti e produce prezzi vecchi al massimo di un giorno. Per una stima di costo è abbondante.</p>
+<h3>Perché SQLite e non Notion</h3>
+<p>Domanda posta esplicitamente da Luca. Questa è una <strong>serie storica</strong>: ~500 righe a ogni giro, decine di migliaia in un anno. Notion è un database di documenti — API limitata a poche richieste al secondo, nessuna aggregazione, quindi «il prezzo medio di Shibuya a novembre» richiederebbe di scaricare tutto ogni volta. E un sito statico non può leggere Notion senza un backend con un token segreto, cioè esattamente il divieto sopra. Notion resta buono come <strong>vetrina</strong> leggibile a mano: ci si spinge una tabella riassuntiva quando serve.</p>
+<h2 id="4-la-base-dati">4. La base dati</h2>
+<p>File: <code>raccolta/prezzi.db</code> (SQLite, 128 KB oggi).</p>
+<p><strong>Principio: append-only.</strong> Non si aggiorna mai una riga. Ogni lettura è una <em>rilevazione</em> timbrata. Le viste <code>volo_corrente</code> e <code>alloggio_corrente</code> danno l&#x27;ultima di ogni combinazione — è quella che finisce nel sito — mentre lo storico resta per rispondere a «sta salendo?».</p>
+<h3>Tabelle</h3>
+<p><strong><code>rilevazione</code></strong> — una riga per giro di raccolta: <code>id, ts, tipo, fonte, valuta, note</code>.</p>
+<p><strong><code>volo</code></strong> — <code>origine, destinazione, fascia, stagione, data_out, data_ret, notti, anticipo, classe, max_scali, prezzo, prezzo_tondo, compagnia, durata_and, durata_rit, scali_and, scali_rit, scalo_peggio, scali_dove</code>. Il campo <code>scalo_peggio</code> (minuti del singolo scalo più lungo) è quello che permette di dire «dodici ore a Pechino» invece di limitarsi al prezzo.</p>
+<p><strong><code>alloggio</code></strong> — <code>citta, zona, fascia, stagione, data_in, notti, anticipo, prezzo_notte, prezzo_tondo, prezzo_min, prezzo_max, campione, nome, stelle, voto, ricerca</code>. <code>prezzo_notte</code> è la <strong>mediana</strong> del campione, non il minimo: la mediana regge, il minimo è l&#x27;eccezione. <code>campione</code> dice su quante strutture è calcolata. <code>ricerca</code> conserva la query esatta, così la rilevazione si può rifare identica.</p>
+<h3>Stato al 23 agosto 2026</h3>
+<div class="tab"><table><thead><tr><th class=""></th><th class="">righe totali</th><th class="">correnti</th><th class="">copertura</th></tr></thead><tbody><tr><td class="">voli</td><td class="num">162</td><td class="num">159</td><td class="">4 aeroporti × 10 stagioni × 4 fasce</td></tr><tr><td class="">alloggi</td><td class="num">356</td><td class="num">351</td><td class="">10 zone × 14 stagioni × 3 fasce</td></tr></tbody></table></div>
+<h2 id="5-le-fonti">5. Le fonti</h2>
+<div class="tab"><table><thead><tr><th class="">voce</th><th class="">fonte</th><th class="">costo</th><th class="">come</th></tr></thead><tbody><tr><td class="">volo</td><td class="">Google Flights</td><td class="num">0 €</td><td class="">pacchetto <code>fli</code> (PyPI <code>flights</code>), endpoint interno, senza chiavi</td></tr><tr><td class="">alloggio</td><td class="">Google Hotels</td><td class="num">0 €</td><td class="">HTTP diretto: la pagina arriva completa, il parametro <code>ts</code> è un protobuf con luogo, date e valuta, costruito da noi</td></tr><tr><td class="">cambio EUR/JPY</td><td class="">BCE via frankfurter.dev</td><td class="num">0 €</td><td class="">API pubblica senza chiave</td></tr><tr><td class="">treni, ingressi, cibo</td><td class="">catalogo scritto a mano</td><td class="">—</td><td class=""><strong>ancora stime</strong></td></tr></tbody></table></div>
+<p><strong>Verifica di attendibilità della sorgente voli:</strong> sulle stesse date la libreria dà 769 € e la pagina di Google, aperta a mano nel browser, diceva «da 769 €». Coincide a un euro.</p>
+<h3>Le quattro tariffe raccolte</h3>
+<div class="tab"><table><thead><tr><th class="">fascia</th><th class="">filtri</th><th class="">esempio Roma, maggio 2027</th></tr></thead><tbody><tr><td class="">economico</td><td class="">economy, scali illimitati, ordine «prezzo»</td><td class="">775 € — 24h, 1 scalo</td></tr><tr><td class="">normale</td><td class="">economy, max 1 scalo, ordine «migliore» di Google</td><td class="">775 € — 20h, 1 scalo</td></tr><tr><td class="">premium</td><td class="">premium economy, diretto quando esiste</td><td class="">1.550 € — <strong>12h, diretto</strong></td></tr><tr><td class="">lusso</td><td class="">business, diretto quando esiste</td><td class="">3.475 € — 12h, diretto</td></tr></tbody></table></div>
+<h3>Le tre fasce vendute all&#x27;utente</h3>
+<div class="tab"><table><thead><tr><th class=""></th><th class="">volo</th><th class="">alloggio</th><th class="">cibo</th></tr></thead><tbody><tr><td class=""><strong>Il minimo</strong></td><td class="">economico</td><td class="">hostel</td><td class="">konbini e gyudon</td></tr><tr><td class=""><strong>Normale</strong></td><td class="">normale</td><td class="">business hotel</td><td class="">trattoria</td></tr><tr><td class=""><strong>Senza pensieri</strong></td><td class="">lusso</td><td class="">5 stelle</td><td class="">cene vere</td></tr></tbody></table></div>
+<p>La premium economy non è una fascia da scegliere: compare <strong>dentro il risultato</strong>, in prosa e come riga informativa non cliccabile fra le leve, perché cambia solo il volo. Serve perché fra economy e business ci sono migliaia di euro e in mezzo non c&#x27;era niente.</p>
+<h2 id="6-cosa-hanno-detto-i-dati">6. Cosa hanno detto i dati</h2>
+<blockquote><p><strong>Avvertenza sulla profondità del campione.</strong> Tutte le osservazioni qui sotto hanno <strong>una sola rilevazione per cella</strong>. La volatilità giornaliera dei prezzi aerei è del 10-20%, cioè più grande di molte delle differenze citate. Finché non ci sono almeno tre rilevazioni per cella a giorni distanti, queste sono osservazioni, non classifiche. Rilievo condiviso da tutti e tre i revisori esterni (paragrafo 15).</p></blockquote>
+<p><strong>Il filtro «volo più economico» su questa rotta quasi non compra niente.</strong> In 15 combinazioni su 18 la tariffa più bassa costa <em>identica</em> a quella con al massimo uno scalo, e dura da 4 a 12 ore in più. Nei 3 casi in cui costa davvero meno, il risparmio è piccolo rispetto alle ore: Milano a novembre 889 € in 41 ore con uno scalo di 28h25 contro 934 € in 19 ore, cioè 45 € per 22 ore. Attenzione a come si dice: quando il prezzo è identico <strong>non si perdono soldi, non se ne risparmiano</strong> — la pagina ora distingue i due casi. Nota metodologica: le due fasce non interrogano lo stesso insieme (una ordina per prezzo senza limiti di scali, l&#x27;altra filtra a uno scalo e ordina per «migliore»), quindi si confrontano due strategie di ricerca, non due mercati.</p>
+<p><strong>Nelle nostre rilevazioni Roma ha prodotto la tariffa più bassa</strong>, 725 €, davanti a Venezia 825 e Napoli 875. Da qualificare: è un <em>minimo osservato</em>, uno stimatore distorto verso il basso che cresce col numero di celle popolate. Non è ancora una classifica strutturale.</p>
+<p><strong>L&#x27;aeroporto del sud è Napoli, scelto per copertura e non per prezzo.</strong> 1.086 € con 6 itinerari contro Catania 1.073 con 3: Napoli costa l&#x27;1,2% <em>in più</em>, dentro il rumore. Il criterio vero è il doppio delle combinazioni disponibili. Brindisi 1.119, Palermo 1.128, Bari 1.203. Bergamo è stato tolto su una misura sola (1.016 € contro i 690 stimati a mano): la decisione va riconfermata con una seconda rilevazione.</p>
+<p><strong>Il Japan Rail Pass quasi mai conviene</strong>, e con un viaggio nella sola Tokyo non c&#x27;entra proprio. Il conto usa una finestra scorrevole di 7/14/21 giorni sui trasferimenti cari, non l&#x27;intera durata del viaggio. ⚠️ <strong>Questa conclusione è provvisoria</strong>: la tariffa del pass nel catalogo è ancora una stima. Finché non è verificata su fonte ufficiale sta nella colonna delle stime, non in quella dei risultati — ed è l&#x27;unico punto in cui un nostro errore costerebbe soldi veri a chi legge.</p>
+<p><strong>Le zone di Tokyo si ordinano da sole</strong> (business hotel, novembre, € a notte): San&#x27;ya 50 · Ikebukuro 60 · Asakusa 70 · Akihabara 85 · Shinjuku e Ueno 90 · Ginza 110 · Roppongi e Marunouchi 115 · Shibuya 160. In fascia lusso Ginza arriva a 610.</p>
+<p><strong>Il tasso di riferimento BCE rilevato è 185,66 ¥/€</strong>, contro i 165 stimati a naso: tutte le voci in yen erano gonfiate del 12%. Non è «il cambio vero» in senso assoluto — è una quotazione di mercato del giorno, e chi cambia davvero paga una commissione dell&#x27;1,5-3% sopra. Chi legge oggi e parte fra otto mesi porta un rischio cambio del 10-15%, più grande di molte differenze che la pagina evidenzia.</p>
+<h2 id="7-il-motore">7. Il motore</h2>
+<p>Quattro pezzi, tutti deterministici, tutti nel browser.</p>
+<p><strong>Itinerario.</strong> Ogni luogo ha dei tag; le risposte diventano un insieme di tag; il punteggio è tag in comune più bonus se è un luogo di una serie scelta, più bonus se è il suo mese. Il punteggio decide <strong>dove</strong> andare, le <em>ore di roba sensata da fare</em> decidono <strong>quanti giorni</strong> restarci — distinzione cruciale, altrimenti tre giorni finiscono a Takayama e uno a Kyoto. In modalità Tokyo le mete vicine diventano <strong>gite in giornata</strong> che competono a punteggio con una giornata in città, costano un treno andata e ritorno e non cambiano l&#x27;albergo.</p>
+<p><strong>Costo.</strong> Somma di volo, trasporti, alloggio, cibo, ingressi, extra e 5% di imprevisti, per tutte e tre le fasce in parallelo. Volo e alloggio dai prezzi veri; il moltiplicatore di stagione <strong>non</strong> si applica sopra un prezzo reale, perché la stagione ce l&#x27;ha già dentro.</p>
+<p><strong>Compromessi.</strong> Nessuna magia: ri-esegue il preventivo con un input modificato e mostra la differenza. È il pezzo che rende il servizio utile invece che curioso.</p>
+<p><strong>Prosa.</strong> Frasi a slot scritte a mano. Nessun modello, nessuna bolletta.</p>
+<h2 id="8-stato-attuale">8. Stato attuale</h2>
+<p><strong>Fase 1 in produzione: solo Tokyo.</strong> Le altre città arrivano dopo. Il codice multi-città resta sotto, dietro un flag, ed è già funzionante.</p>
+<p>Il contatore di attendibilità è sceso dal 100% all&#x27;<strong>85%</strong>. Sono veri: volo, alloggio, cambio. Restano stime: treni e metropolitana, ingressi ed esperienze, quanto si spende per mangiare, assicurazione e souvenir.</p>
+<h3>Limiti misurati, non supposti</h3>
+<ul><li><strong>Orizzonte voli ≈ 9-10 mesi.</strong> Luglio-settembre 2027 non esistono ancora su Google: quelle stagioni ricadono sulla stima e la pagina lo dichiara.</li><li>Finestre a meno di 45 giorni saltano all&#x27;anno dopo, per non leggere un last-minute e spacciarlo per prezzo di stagione.</li><li>Il prezzo del volo è per <strong>1 adulto su 14 notti</strong> e non scala con la durata del viaggio.</li><li>L&#x27;alloggio è <strong>una notte infrasettimanale</strong>: il weekend gonfia.</li><li><strong>Nessuna disponibilità reale.</strong> Se l&#x27;albergo è pieno, il sistema non lo sa.</li><li>Quattro combinazioni zona/fascia hanno campione troppo piccolo (ostello a Roppongi, Marunouchi, Akihabara, San&#x27;ya) e ricadono sul catalogo.</li></ul>
+<h2 id="9-milestone">9. Milestone</h2>
+<div class="tab"><table><thead><tr><th class="">#</th><th class="">milestone</th><th class="">stato</th></tr></thead><tbody><tr><td class="num">0</td><td class="">Prototipo locale: motore, questionario, tre fasce stimate</td><td class=""><span class="stato fatto">fatto</span> 21/08/2026</td></tr><tr><td class="num">1</td><td class="">Online come sezione del sito</td><td class=""><span class="stato fatto">fatto</span> 22/08/2026</td></tr><tr><td class="num">2</td><td class="">Volo con prezzi veri da Google Flights</td><td class=""><span class="stato fatto">fatto</span> 23/08/2026</td></tr><tr><td class="num">3</td><td class="">Base dati SQLite append-only</td><td class=""><span class="stato fatto">fatto</span> 23/08/2026</td></tr><tr><td class="num">4</td><td class="">Alloggi veri da Google Hotels, 10 zone di Tokyo</td><td class=""><span class="stato fatto">fatto</span> 23/08/2026</td></tr><tr><td class="num">5</td><td class="">Cambio EUR/JPY reale dalla BCE</td><td class=""><span class="stato fatto">fatto</span> 23/08/2026</td></tr><tr><td class="num">6</td><td class="">Premium economy come gradino intermedio</td><td class=""><span class="stato fatto">fatto</span> 23/08/2026</td></tr><tr><td class="num">7</td><td class=""><strong>Rinfresco automatico acceso</strong> (LaunchAgent pronto, non caricato)</td><td class=""><span class="stato attesa">in attesa</span> decisione di Luca</td></tr><tr><td class="num">8</td><td class="">Treni: tariffe Shinkansen verificate su fonte</td><td class=""><span class="stato dafare">da fare</span></td></tr><tr><td class="num">9</td><td class="">Ingressi ed esperienze verificati</td><td class=""><span class="stato dafare">da fare</span></td></tr><tr><td class="num">10</td><td class="">Espansione a Kyoto e Osaka</td><td class=""><span class="stato dafare">da fare</span></td></tr><tr><td class="num">11</td><td class="">Espansione al resto del catalogo (26 città)</td><td class=""><span class="stato dafare">da fare</span></td></tr><tr><td class="num">12</td><td class="">Grafica definitiva e nome del servizio</td><td class=""><span class="stato dafare">da fare</span></td></tr><tr><td class="num">13</td><td class="">Decisione monetizzazione (gratuito vs affiliazione)</td><td class=""><span class="stato dafare">da fare</span> decisione di Luca</td></tr></tbody></table></div>
+<h2 id="10-target">10. Target</h2>
+<p><strong>Di prodotto</strong></p>
+<ul><li><strong>Contatore pesato per euro sotto il 15%</strong> dopo le milestone 8 e 9 (oggi 39%). Il vecchio target «sotto il 40% delle voci» è stato ritirato: contare le voci fa valere la verifica dei souvenir quanto quella del volo, e cibo e souvenir non diventeranno mai prezzi di mercato, quindi era irraggiungibile per costruzione. La pagina ora mostra <strong>due numeri con la formula scritta</strong>: percentuale di voci e percentuale dell&#x27;importo.</li><li>Tempo dal primo click al preventivo: <strong>sotto i 90 secondi</strong>.</li><li>Ogni voce di costo deve avere una riga «come è calcolata» leggibile da chi non è del mestiere.</li></ul>
+<p><strong>Di dato</strong></p>
+<ul><li>Prezzi mai più vecchi di <strong>24 ore</strong> a rinfresco acceso.</li><li>Copertura voli: 4 aeroporti × tutte le stagioni entro l&#x27;orizzonte di Google.</li><li>Copertura alloggi: 10 zone × 3 fasce × 14 stagioni, campione minimo 4 strutture per cella.</li></ul>
+<p><strong>Di pubblico</strong> (da fissare con Simone, oggi non misurati)</p>
+<ul><li>Il servizio deve produrre almeno un contenuto video autonomo: «il Japan Rail Pass non conviene più» e «il volo economico che ti ruba mezza giornata» sono già due.</li></ul>
+<h2 id="11-aggiornamenti-cadenza-e-automazione">11. Aggiornamenti: cadenza e automazione</h2>
+<p>Lo script <code>voli/rinfresca.sh</code> fa tutto in un colpo: rilegge i voli, rilegge gli alberghi, riesporta il listino, ricostruisce la sezione del sito e pubblica. Dura circa <strong>50 minuti</strong>.</p>
+<p>Il LaunchAgent <code>com.luca.preventivo-voli</code> è scritto e pronto per le 05:10, <strong>non caricato</strong>: accendere un processo che pubblica da solo sul sito è una decisione di Luca.</p>
+<p>I log vanno in <code>~/Library/Logs/preventivo-voli.log</code> — <strong>mai su /Volumes</strong>, che da LaunchAgent darebbe exit 78.</p>
+<p><strong>Cadenze consigliate diverse per tipo di dato:</strong></p>
+<ul><li>voli e alloggi: giornaliero (cambiano di continuo)</li><li>cambio valuta: giornaliero (è dentro lo stesso giro, costa nulla)</li><li>catalogo treni e ingressi: due volte l&#x27;anno, a mano</li><li>zone e fasce: quando si aggiunge una città</li></ul>
+<h2 id="12-necessit-e-decisioni-aperte">12. Necessità e decisioni aperte</h2>
+<p><strong>Servono da Luca</strong></p>
+<ol><li><strong>Accendere o no il rinfresco automatico.</strong></li><li><strong>Gratuito o con affiliazione?</strong> Cambia la profondità dei dati e se serve la raccolta email. Va deciso prima, non dopo: se c&#x27;è affiliazione il preventivo deve restare onesto o brucia la fiducia del pubblico di Simone, che è l&#x27;asset vero.</li><li><strong>Il nome del servizio.</strong> Oggi la pagina si chiama «Quanto costa un viaggio a Tokyo».</li></ol>
+<p><strong>Servono da Simone</strong></p>
+<ol><li><strong>La curatela dei luoghi.</strong> Il catalogo ha 89 luoghi scritti da me: vanno passati da chi conosce il pubblico. Aggiungere un luogo è una riga.</li><li><strong>Le serie anime.</strong> Oggi sono 14. È l&#x27;angolo differenziante, ed è lui che lo sa fare.</li></ol>
+<p><strong>Necessità tecniche</strong></p>
+<ol><li>Verificare le tariffe Shinkansen e il prezzo del Japan Rail Pass su fonte ufficiale: il pass regge da solo il consiglio più forte del sito, e oggi è una stima.</li><li>Alzare il campione delle quattro celle ostello scoperte.</li><li>Un piano B sulla sorgente: se Google cambia il formato interno, i raccoglitori si rompono. Oggi non c&#x27;è allarme automatico.</li></ol>
+<h2 id="13-rischi">13. Rischi</h2>
+<div class="tab"><table><thead><tr><th class="">rischio</th><th class="">probabilità</th><th class="">impatto</th><th class="">mitigazione</th></tr></thead><tbody><tr><td class="">Google cambia il formato interno e i raccoglitori si rompono</td><td class="">alta, è questione di quando</td><td class="">il listino invecchia in silenzio</td><td class="">allarme sull&#x27;età del dato + fallback dichiarato sul catalogo</td></tr><tr><td class="">Blocco per troppe richieste</td><td class="">media</td><td class="">stesso</td><td class="">pause fra le chiamate, giro notturno, mai chiamate dal browser</td></tr><tr><td class="">Qualcuno prende un numero e prenota</td><td class="">media</td><td class="">reputazione</td><td class="">tre dichiarazioni a schermo + arrotondamento a cifra tonda</td></tr><tr><td class="">Il catalogo a mano invecchia e nessuno lo aggiorna</td><td class="">alta</td><td class="">il servizio muore al terzo mese</td><td class="">dati in un file unico che Simone può modificare senza toccare codice</td></tr><tr><td class="">Dipendenza da una persona sola</td><td class="">alta</td><td class="">tutto fermo</td><td class="">questo documento, il README, e i raccoglitori commentati in italiano</td></tr></tbody></table></div>
+<h2 id="14-dove-sta-cosa">14. Dove sta cosa</h2>
+<pre><code>preventivo-giappone/
+  index.html            questionario (versione locale, grafica spoglia)
+  data/dati.js          IL CATALOGO — luoghi, città, tratte, serie anime, stagioni
+  data/prezzi.js        generato: i prezzi veri esportati dal database
+  js/motore.js          i quattro motori
+  js/app.js             interfaccia
+  css/                  tre vestiti: spoglio (locale), demo (artifact), sito (giapponenelmondo)
+  raccolta/
+    db.py               schema SQLite
+    scanner_voli.py     Google Flights → database
+    scanner_alloggi.py  Google Hotels → database
+    google_hotels.py    lettore di Google Hotels, costruttore del protobuf
+    esporta.py          database → data/prezzi.js
+    prezzi.db           il database
+  voli/rinfresca.sh     il giro completo + pubblicazione
+  build_sito.py         genera la sezione dentro giapponenelmondo.com
+  build_demo.py         genera il file unico condivisibile
+  PROGETTO.md           questo documento
+  README.md             il manuale operativo</code></pre>
+<p>Il sito vive in <code>giapponenelmondo/preventivo/</code> ed è <strong>generato</strong>: non si modifica a mano.</p>
+<h2 id="15-revisione-esterna-23-agosto-2026">15. Revisione esterna (23 agosto 2026)</h2>
+<p>Il documento è stato mandato per intero a <strong>ChatGPT</strong>, <strong>Gemini</strong> e <strong>Claude</strong>, ciascuno con lo stesso mandato: il patto del paragrafo 2 come vincolo non riapribile, e sei domande girate al positivo (cosa manca, quali rischi, dove il ragionamento non regge, come rendere verificabili milestone e target, quale decisione prenderesti, e solo alla fine cosa toglieresti).</p>
+<h3>Su cosa hanno concordato tutti e tre</h3>
+<p>Quattro rilievi sono arrivati identici da tre revisori indipendenti. Sono i più solidi.</p>
+<ol><li><strong>Le conclusioni del paragrafo 6 erano troppo forti per il campione.</strong> Una sola rilevazione per cella, mentre la volatilità giornaliera dei voli è più grande delle differenze dichiarate. <em>Corretto: paragrafo 6 riscritto con l&#x27;avvertenza sul campione, «non conviene mai» qualificato, Napoli attribuito alla copertura e non al prezzo, Roma dichiarata come minimo osservato, Bergamo marcato come decisione da riconfermare.</em></li><li><strong>Il contatore di attendibilità non era riproducibile e premiava il lavoro sbagliato.</strong> Contando le voci, verificare i souvenir vale quanto verificare l&#x27;alloggio. <em>Corretto: la pagina mostra due numeri, voci e importo, con la formula scritta accanto. Il numero pesato per euro è 39% dove quello sulle voci diceva 89%. Il target è stato riscritto sull&#x27;importo.</em></li><li><strong>Manca la validazione automatica del dato prima della pubblicazione.</strong> Il rischio peggiore non è che il raccoglitore si rompa: è che continui a funzionare producendo numeri sbagliati e plausibili. Nessuno se ne accorgerebbe. <em>Da fare, milestone 14.</em></li><li><strong>Il consiglio sul Japan Rail Pass poggia su una tariffa non verificata</strong> ed è l&#x27;unico punto in cui un errore costa soldi veri a chi legge. <em>Corretto a schermo: la conclusione ora porta l&#x27;avvertenza. La verifica sale a priorità massima.</em></li></ol>
+<h3>I rilievi migliori di ciascuno</h3>
+<p><strong>ChatGPT</strong> — la sequenza «osservazione → dato → interpretazione → conclusione» non è disciplinata: serve uno <strong>stato esplicito del dato</strong> (reale, derivato, stimato, fallback, scaduto) invece della coppia vero/stima. E chiede un <strong>backtest</strong>: lo storico append-only permette già di prendere un preventivo di un mese fa e misurare quanto era buono — errore mediano, percentuale entro il 10 e il 20%. Trasformerebbe «un numero credibile» da promessa a proprietà misurata.</p>
+<p><strong>Gemini</strong> — i rilievi più concreti sui <strong>soldi</strong>, tutti veri e tutti non considerati:</p>
+<ul><li>la notte infrasettimanale sottostima l&#x27;alloggio del 15-25%, perché in 14 notti ce ne sono 4 di weekend e a Tokyo il venerdì e il sabato raddoppiano;</li><li>le tariffe minime rilevate sono spesso <strong>senza bagaglio in stiva</strong>, che su due settimane serve quasi sempre: 120-200 € in più;</li><li>il prezzo dell&#x27;alloggio <strong>non scala per persona</strong>: due in doppia spendono il 30-40% in meno a testa di due singole;</li><li>mancano la <strong>tassa di soggiorno</strong> giapponese e la commissione di cambio delle carte;</li><li>una pagina di blocco di Google può tornare con codice 200 e avvelenare il database in silenzio.</li></ul>
+<p><strong>Claude</strong> — i rilievi di sistema:</p>
+<ul><li><strong>zero test</strong>, in un motore dichiarato deterministico: dieci input fissi col preventivo atteso, rieseguiti a ogni build, costano un&#x27;ora e impediscono che una modifica al catalogo sposti tutti i preventivi senza che nessuno lo veda;</li><li><strong>deriva dell&#x27;anticipo travestita da stagione</strong>: rimisurando la stessa cella mese dopo mese, l&#x27;anticipo si accorcia e il prezzo sale; il listino deriva verso l&#x27;alto e la causa viene attribuita alla stagione. La colonna <code>anticipo</code> c&#x27;è già: va usata come dimensione, non come metadato;</li><li><strong>bias di sopravvivenza sugli hotel</strong>: Google mostra solo il disponibile, quindi in alta stagione la mediana è quella dell&#x27;invenduto;</li><li><strong>il preventivo non è comprabile da nessuno</strong>: ogni voce è l&#x27;ottimo di una rilevazione fatta in un momento diverso, e la somma non corrisponde a un itinerario acquistabile. Va bene come ordine di grandezza — che è ciò che il patto promette — ma va detto;</li><li>il database storico è <strong>l&#x27;unico asset non ricostruibile</strong> e sta su una macchina sola: serve una copia fuori sede e un ripristino provato;</li><li><strong>etica del seichi junrei</strong>: parte dei luoghi degli anime sono case private e scuole, e alcuni comuni giapponesi hanno chiesto di non mandarci visitatori. Filtro obbligatorio.</li></ul>
+<h3>Dove hanno detto cose diverse</h3>
+<p>Sul <strong>rinfresco automatico</strong> ChatGPT dice di accenderlo subito, Gemini di non pubblicare in diretta ma passare da una build di anteprima, Claude di accenderlo solo dopo la sonda sull&#x27;età del dato e il controllo di sanità. Convergono nella sostanza: <strong>prima il controllo, poi l&#x27;automatismo</strong>, altrimenti l&#x27;automatismo trasforma il rischio numero 1 da possibile a certo.</p>
+<p>Sulla <strong>monetizzazione</strong> tutti e tre dicono gratuito nella prima fase. Gemini aggiunge la sfumatura migliore: se un giorno serve, l&#x27;affiliazione va messa solo su cose che <strong>non entrano nel calcolo</strong> — eSIM, assicurazione — mai su voli e alberghi, che sono l&#x27;oggetto della stima. Claude aggiunge la promessa che solo questo progetto può mantenere grazie allo storico: «ti avviso quando i prezzi della tua stagione scendono del 15%».</p>
+<p>Sulla <strong>premium economy</strong> Claude è l&#x27;unico a criticarla: in una pagina che promette tre fasce, una quarta cosa non selezionabile costa attenzione. O diventa una leva vera o va tolta.</p>
+<h3>Cosa è già stato corretto oggi</h3>
+<ul><li>Paragrafo 6 riscritto, con l&#x27;avvertenza sulla profondità del campione.</li><li>«Il cambio vero» → «tasso di riferimento BCE rilevato», con la nota sul rischio cambio.</li><li>La frase a schermo «non è un risparmio, è una perdita» ora compare <strong>solo</strong> quando c&#x27;è una differenza di prezzo reale; a parità di prezzo la pagina dice «non ci perdi soldi, semplicemente non ne risparmi», e quando il risparmio è piccolo lo divide per le ore di attesa.</li><li>Il consiglio sul Japan Rail Pass porta l&#x27;avvertenza che la tariffa è ancora una stima.</li><li>Il contatore mostra due numeri con la formula, e il target è passato all&#x27;importo.</li></ul>
+<h3>Milestone aggiunte dalla revisione</h3>
+<div class="tab"><table><thead><tr><th class="">#</th><th class="">milestone</th><th class="">da chi</th></tr></thead><tbody><tr><td class="num">14</td><td class="">Validazione del dataset: confronto col giro precedente, blocco della pubblicazione se una cella sparisce o un prezzo si muove oltre il 40%</td><td class="">tutti e tre</td></tr><tr><td class="num">15</td><td class="">Test dei parser su risposte grezze salvate: distingue «è cambiato il formato» da «è cambiato il mercato»</td><td class="">ChatGPT, Claude</td></tr><tr><td class="num">16</td><td class="">Dieci preventivi di riferimento con risultato atteso, rieseguiti a ogni build</td><td class="">Claude</td></tr><tr><td class="num">17</td><td class="">Sonda sull&#x27;età del dato + degradazione automatica della pagina oltre le 72 ore</td><td class="">ChatGPT, Claude</td></tr><tr><td class="num">18</td><td class="">Profondità: almeno 3 rilevazioni per cella prima di ripubblicare qualunque confronto</td><td class="">Claude</td></tr><tr><td class="num">19</td><td class="">Correzione del weekend sull&#x27;alloggio e del bagaglio in stiva sul volo</td><td class="">Gemini</td></tr><tr><td class="num">20</td><td class="">Prezzo alloggio per camera e non per persona, con la scala per gruppo</td><td class="">Gemini</td></tr><tr><td class="num">21</td><td class="">Backtest sullo storico: errore mediano e percentuale entro il 10 e il 20%</td><td class="">ChatGPT</td></tr><tr><td class="num">22</td><td class="">Backup fuori sede del database, con un ripristino provato e datato</td><td class="">Claude</td></tr><tr><td class="num">23</td><td class="">Privacy policy, termini d&#x27;uso e filtro etico sui luoghi privati</td><td class="">tutti e tre</td></tr></tbody></table></div>
+<p>L&#x27;ordine consigliato, su cui i tre convergono: <strong>verificare il JR Pass</strong>, poi <strong>validazione e test</strong>, poi <strong>accendere il rinfresco</strong>, poi <strong>la curatela dei luoghi</strong>, e solo dopo l&#x27;espansione ad altre città. Tutti e tre sconsigliano di allargare a 26 città finché la profondità del campione è uno.</p></article></div>
+</body>
+</html>

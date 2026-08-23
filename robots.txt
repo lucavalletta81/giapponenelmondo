@@ -1,0 +1,6 @@
+# giapponenelmondo.com
+User-agent: *
+Allow: /
+
+# Documenti di lavoro interni: non indicizzare.
+Disallow: /preventivo/progetto/
