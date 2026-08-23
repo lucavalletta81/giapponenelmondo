@@ -590,7 +590,12 @@ function confronto(r) {
    far vedere la forma del percorso e a smascherare gli itinerari a zig-zag. */
 function mappa(r) {
   var W = 900, H = 540, PAD = 56;
-  var rotta = r.itinerario.rotta.map(function (id) { return M.citta(id); });
+  /* Nella sola Tokyo la "rotta" è un punto: la mappa mostra allora la base e
+     le gite in giornata che le stanno intorno, con un raggio per ciascuna. */
+  var soloTk = !!r.itinerario.soloTokyo;
+  var gite = soloTk ? (r.itinerario.gite || []).map(function (g) { return g.citta; }) : [];
+  var ids = soloTk ? ["tokyo"].concat(gite) : r.itinerario.rotta;
+  var rotta = ids.map(function (id) { return M.citta(id); });
   var latM = rotta.reduce(function (a, c) { return a + c.lat; }, 0) / rotta.length;
   var kx = Math.cos(latM * Math.PI / 180);
   function PX(c) { return c.lon * kx; }
@@ -600,40 +605,62 @@ function mappa(r) {
   var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
   var y0 = Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
   var cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-  var sx = Math.max(x1 - x0, 1.4), sy = Math.max(y1 - y0, 1.1);
+  var sx = Math.max(x1 - x0, soloTk ? 2.2 : 1.4), sy = Math.max(y1 - y0, soloTk ? 1.6 : 1.1);
   var scala = Math.min((W - PAD * 2 - 150) / sx, (H - PAD * 2) / sy);
   function px(c) { return W / 2 + (PX(c) - cx) * scala - 60; }
   function py(c) { return H / 2 + (PY(c) - cy) * scala; }
 
+  var titolo = soloTk
+    ? "Tokyo e le gite in giornata: " + (gite.length ? gite.map(function (g) { return M.citta(g).nome; }).join(", ") : "nessuna")
+    : "Percorso: " + rotta.map(function (c) { return c.nome; }).join(", ");
   var s = ['<svg class="mappa" viewBox="0 0 ' + W + " " + H + '" xmlns="http://www.w3.org/2000/svg" ' +
-           'role="img" aria-label="Percorso: ' + esc(rotta.map(function (c) { return c.nome; }).join(", ")) + '">'];
+           'role="img" aria-label="' + esc(titolo) + '">'];
 
   /* le altre città, come sfondo: danno la scala del giro */
   D.citta.forEach(function (c) {
+    if (ids.indexOf(c.id) !== -1) return;
     var x = px(c), y = py(c);
     if (x < 4 || x > W - 4 || y < 4 || y > H - 4) return;
     s.push('<circle class="pt" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="3"/>');
+    /* nella mappa di Tokyo le vicine hanno il nome, anche se non si va: è l'orientamento */
+    if (soloTk) s.push('<text class="sfondo" x="' + (x + 7).toFixed(1) + '" y="' + (y + 4).toFixed(1) +
+      '" font-size="11">' + esc(c.nome) + "</text>");
   });
 
-  var giro = rotta.concat([M.citta(r.itinerario.base)]);
-  s.push('<polyline class="rotta" fill="none" stroke-width="1.8" stroke-dasharray="6 4" points="' +
-    giro.map(function (c) { return px(c).toFixed(1) + "," + py(c).toFixed(1); }).join(" ") + '"/>');
+  var base = M.citta("tokyo");
+  if (soloTk) {
+    /* un raggio tratteggiato da Tokyo a ogni gita */
+    gite.forEach(function (g) {
+      var c = M.citta(g);
+      s.push('<line class="rotta" stroke-width="1.8" stroke-dasharray="6 4" x1="' + px(base).toFixed(1) +
+        '" y1="' + py(base).toFixed(1) + '" x2="' + px(c).toFixed(1) + '" y2="' + py(c).toFixed(1) + '"/>');
+    });
+  } else {
+    var giro = rotta.concat([M.citta(r.itinerario.base)]);
+    s.push('<polyline class="rotta" fill="none" stroke-width="1.8" stroke-dasharray="6 4" points="' +
+      giro.map(function (c) { return px(c).toFixed(1) + "," + py(c).toFixed(1); }).join(" ") + '"/>');
+  }
 
   /* etichette: si spostano in giù finché non si pestano i piedi */
   var messe = [];
   rotta.forEach(function (c, i) {
     var x = px(c), y = py(c);
-    s.push('<circle class="tappa" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="6"/>');
+    var eBase = soloTk && c.id === "tokyo";
+    s.push('<circle class="tappa' + (eBase ? " base" : "") + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) +
+      '" r="' + (eBase ? 9 : 6) + '"/>');
     var destra = x < W * 0.6;
-    var tx = destra ? x + 12 : x - 12, ty = y + 5, giri = 0;
+    var tx = destra ? x + 13 : x - 13, ty = y + 5, giri = 0;
     while (giri < 14 && messe.some(function (m) {
       return Math.abs(m.y - ty) < 17 && Math.abs(m.x - tx) < 210;
     })) { ty += 17; giri++; }
     messe.push({ x: tx, y: ty });
     if (ty - y > 8) s.push('<line class="guida" x1="' + x.toFixed(1) + '" y1="' + (y + 6).toFixed(1) +
       '" x2="' + tx.toFixed(1) + '" y2="' + (ty - 4).toFixed(1) + '"/>');
+    var eti = soloTk
+      ? (eBase ? c.nome + " — la base" : c.nome + " — gita in giornata")
+      : (i + 1) + ". " + c.nome;
     s.push('<text x="' + tx.toFixed(1) + '" y="' + ty.toFixed(1) + '" font-size="15"' +
-      (destra ? "" : ' text-anchor="end"') + ">" + (i + 1) + ". " + esc(c.nome) + "</text>");
+      (eBase ? ' font-weight="600"' : "") + (destra ? "" : ' text-anchor="end"') + ">" + esc(eti) + "</text>");
   });
   s.push("</svg>");
   return s.join("");

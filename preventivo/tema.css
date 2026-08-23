@@ -320,6 +320,8 @@ svg.mappa text  { font-family: var(--pv-font); fill: var(--pv-testo); }
 svg.mappa .pt   { fill: #CFC7BC; }
 svg.mappa .rotta{ stroke: var(--pv-rosso); }
 svg.mappa .tappa{ fill: var(--pv-rosso); }
+svg.mappa .tappa.base { fill: var(--pv-ink); stroke: var(--pv-rosso); stroke-width: 3; }
+svg.mappa .sfondo { fill: var(--pv-tenue); }
 svg.mappa .guida{ stroke: #CFC7BC; stroke-width: 1; }
 
 .tag {
