@@ -23,8 +23,30 @@ function perMotore() {
   m.interessi = S.interessi.concat(S.rami);
   return m;
 }
-var passo = 1, PASSI = 7;
+/* I passi, nell'ordine in cui si fanno. Gli interessi vengono per primi
+   perché sono il cuore del servizio: decidono l'itinerario, non le date.
+   "spostamenti" esiste solo quando il giro tocca più città: a Tokyo e nelle
+   gite in giornata non si vola, e una domanda che non cambia niente non si fa. */
+var PASSI = [
+  { id: "interessi",   breve: "Cosa ti interessa davvero" },
+  { id: "rami",        breve: "Precisiamo" },
+  { id: "chi",         breve: "Chi parte, e da dove" },
+  { id: "quando",      breve: "Quando andare" },
+  { id: "ritmo",       breve: "Quanto a lungo, e che ritmo" },
+  { id: "giastato",    breve: "Ci sei già stato in Giappone?" },
+  { id: "spostamenti", breve: "Spostamenti dentro il Giappone", soloMulti: true },
+  { id: "stile",       breve: "Che tipo di viaggiatore sei" }
+];
+function passiAttivi() {
+  return PASSI.filter(function (p) { return !p.soloMulti || S.soloTokyo === false; });
+}
+var passo = 0;            // indice dentro passiAttivi()
+var raggiunto = 0;        // il passo più avanti che l'utente ha visto: quelli prima sono cliccabili
 var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i click
+
+/* le immagini: in locale e nel sito stanno in img/, nel file unico della demo
+   build_demo.py le inietta in window.PV_IMG come data URI */
+function img(nome) { return (window.PV_IMG && window.PV_IMG[nome]) || ("img/" + nome); }
 
 /* ------------------------------------------------------------ FORMATTO --- */
 function eu(n) { return Math.round(n).toLocaleString("it-IT") + " €"; }
@@ -58,7 +80,9 @@ function riempiInteressi() {
   $("#interessi").innerHTML = D.interessi.map(function (i) {
     var n = M.ramiDisponibili(i.id, S.soloTokyo).length;
     return '<div class="carta conAiuto" data-id="' + i.id + '" tabindex="0" role="button" ' +
-      'aria-pressed="false" title="' + esc(i.dettaglio || i.desc) + '"><b>' + esc(i.nome) + "</b>" +
+      'aria-pressed="false" title="' + esc(i.dettaglio || i.desc) + '">' +
+      '<img class="ico" src="' + img("int-" + i.id + ".webp") + '" alt="" width="128" height="128" loading="lazy">' +
+      "<b>" + esc(i.nome) + "</b>" +
       "<span>" + esc(i.desc) + "</span>" +
       (n ? '<span class="conta">' + n + " domande in più al passo dopo</span>" : "") +
       '<span class="aiuto">' + esc(i.dettaglio || i.desc) + "</span></div>";
@@ -89,14 +113,48 @@ function riempiGiaVisti() {
 
 /* ================================================== NAVIGAZIONE PASSI ==== */
 function mostraPasso(n) {
-  passo = n;
-  $$(".passo").forEach(function (s) { s.hidden = +s.dataset.n !== n; });
-  $("#indietro").disabled = (n === 1);
-  $("#avanti").textContent = (n === PASSI) ? "Calcola il preventivo" : "Avanti";
-  $("#barra-testo").textContent = "Passo " + n + " di " + PASSI;
-  $("#barra-fill").style.width = (n / PASSI * 100) + "%";
-  if (n === 6) preparaRamo();
+  var lista = passiAttivi();
+  passo = Math.max(0, Math.min(n, lista.length - 1));
+  if (passo > raggiunto) raggiunto = passo;
+  var corrente = lista[passo].id;
+  $$(".passo").forEach(function (s) { s.hidden = s.dataset.id !== corrente; });
+  lista.forEach(function (p, k) {
+    var sez = $('.passo[data-id="' + p.id + '"] h2 .n');
+    if (sez) sez.textContent = (k + 1) + ".";
+  });
+  $("#indietro").disabled = (passo === 0);
+  $("#avanti").innerHTML = (passo === lista.length - 1)
+    ? "Calcola il preventivo <span aria-hidden=\"true\">→</span>"
+    : "Avanti <span aria-hidden=\"true\">→</span>";
+  $("#barra-testo").textContent = "Passo " + (passo + 1) + " di " + lista.length;
+  $("#barra-fill").style.width = ((passo + 1) / lista.length * 100) + "%";
+  if (corrente === "rami") preparaRamo();
+  disegnaSpalla(corrente);
   window.scrollTo(0, 0);
+}
+
+/* la spalla a sinistra: l'elenco dei passi, con quello corrente acceso e
+   quelli già visti cliccabili. L'ultima voce è il risultato. */
+function disegnaSpalla(corrente) {
+  var ol = $("#pv-passi");
+  if (!ol) return;
+  var lista = passiAttivi();
+  var h = lista.map(function (p, k) {
+    var cls = p.id === corrente ? "on" : (k <= raggiunto ? "fatto" : "");
+    return '<li class="' + cls + '" data-k="' + k + '"' + (cls === "fatto" ? ' tabindex="0" role="button"' : "") + ">" +
+      '<span class="pallino">' + (k + 1) + '</span><span class="testo">' + esc(p.breve) + "</span></li>";
+  });
+  h.push('<li class="risultato' + (corrente === "risultato" ? " on" : "") + '">' +
+    '<span class="pallino">' + (lista.length + 1) + '</span><span class="testo">Il risultato e il tuo budget</span></li>');
+  ol.innerHTML = h.join("");
+  $$("#pv-passi li.fatto").forEach(function (li) {
+    var vai = function () {
+      if (!$("#risultato").hidden) { $("#risultato").hidden = true; $("#wizard").hidden = false; }
+      mostraPasso(+li.dataset.k);
+    };
+    li.onclick = vai;
+    li.onkeydown = function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); vai(); } };
+  });
 }
 
 /* Il passo 6 esiste solo in funzione di quello che hai risposto prima:
@@ -150,26 +208,25 @@ function preparaRamo() {
   });
 }
 
-function leggiPasso(n) {
-  if (n === 1) {
+function leggiPasso(id) {
+  if (id === "chi") {
     S.partenza = $("#partenza").value;
     S.adulti = Math.max(1, +$("#adulti").value || 1);
     S.bambini = Math.max(0, +$("#bambini").value || 0);
   }
-  if (n === 3) {
+  if (id === "ritmo") {
     S.giorni = +$("#giorni").value;
     S.ritmo = $$('input[name=ritmo]').filter(function (r) { return r.checked; })[0].value;
   }
-  if (n === 4) {
+  if (id === "giastato") {
     S.primaVolta = $$('input[name=pv]').filter(function (r) { return r.checked; })[0].value === "si";
     if (S.primaVolta) S.giaVisti = [];
   }
-  if (n === 5) {
+  if (id === "interessi") {
     if (S.interessi.length < 2) { $("#err-interessi").hidden = false; return false; }
     $("#err-interessi").hidden = true;
   }
-  if (n === 6) {
-    S.voliInterni = $$('input[name=voli]').filter(function (r) { return r.checked; })[0].value;
+  if (id === "rami") {
     /* i rami spariti perché l'interesse è stato deselezionato non devono restare */
     S.rami = S.rami.filter(function (t) {
       return S.interessi.some(function (i) {
@@ -177,7 +234,10 @@ function leggiPasso(n) {
       });
     });
   }
-  if (n === 7) S.stile = $$('input[name=stile]').filter(function (r) { return r.checked; })[0].value;
+  if (id === "spostamenti") {
+    S.voliInterni = $$('input[name=voli]').filter(function (r) { return r.checked; })[0].value;
+  }
+  if (id === "stile") S.stile = $$('input[name=stile]').filter(function (r) { return r.checked; })[0].value;
   return true;
 }
 
@@ -191,6 +251,7 @@ function calcolaEMostra() {
   COMP = comp;
   $("#risultato").innerHTML = disegna(r, comp);
   agganciaRisultato();
+  disegnaSpalla("risultato");
   window.scrollTo(0, 0);
 }
 
@@ -232,10 +293,13 @@ function disegna(r, comp) {
     }).join("") + "</select></label>" +
     '<label>Tetto di spesa per il gruppo, in euro<input type="number" id="m-budget" min="0" step="100" value="' +
       (S.budgetMax || "") + '" placeholder="nessuno"></label>' +
-    "<label>Voli interni<select id=\"m-voli\">" +
-      '<option value="si"' + (S.voliInterni === "si" ? " selected" : "") + ">sì</option>" +
-      '<option value="no"' + (S.voliInterni === "no" ? " selected" : "") + ">no, solo treno</option>" +
-    "</select></label></div></div>");
+    (S.soloTokyo === false
+      ? "<label>Voli interni<select id=\"m-voli\">" +
+        '<option value="si"' + (S.voliInterni === "si" ? " selected" : "") + ">sì</option>" +
+        '<option value="no"' + (S.voliInterni === "no" ? " selected" : "") + ">no, solo treno</option>" +
+        "</select></label>"
+      : "") +
+    "</div></div>");
 
   /* --- dettaglio della spesa -------------------------------------------- */
   h.push("<h2>Da cosa è fatto questo numero</h2>");
@@ -511,7 +575,7 @@ function agganciaRisultato() {
   });
   $("#stampa").onclick = function () { window.print(); };
   $("#modifica").onclick = function () {
-    $("#risultato").hidden = true; $("#wizard").hidden = false; mostraPasso(1);
+    $("#risultato").hidden = true; $("#wizard").hidden = false; mostraPasso(0);
   };
   $("#ricomincia").onclick = function () { location.reload(); };
 }
@@ -526,13 +590,20 @@ function avvia() {
   });
 
   $("#avanti").onclick = function () {
-    if (!leggiPasso(passo)) return;
-    if (passo === PASSI) { calcolaEMostra(); return; }
+    var lista = passiAttivi();
+    if (!leggiPasso(lista[passo].id)) return;
+    if (passo === lista.length - 1) { calcolaEMostra(); return; }
     mostraPasso(passo + 1);
   };
-  $("#indietro").onclick = function () { if (passo > 1) mostraPasso(passo - 1); };
+  $("#indietro").onclick = function () { if (passo > 0) mostraPasso(passo - 1); };
 
-  mostraPasso(1);
+  /* la data dei prezzi nella spalla: è la fotografia del listino, non oggi */
+  var dp = $("#pv-data-prezzi");
+  if (dp && window.PREZZI && window.PREZZI.generato) {
+    dp.textContent = "Prezzi rilevati il " + window.PREZZI.generato.slice(0, 10).split("-").reverse().join("/") + ".";
+  }
+
+  mostraPasso(0);
 }
 avvia();
 })();

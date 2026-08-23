@@ -775,7 +775,10 @@ function prosa(r) {
 
   if (it.soloTokyo) {
     var g = (it.gite || []).map(function(x){ return citta(x.citta).nome; });
-    p.push("Tokyo per " + it.ggGiappone + " giorni pieni, con base a " + nomeZona(liv.zona) +
+    /* la zona c'è solo se l'utente l'ha fissata da una leva: altrimenti
+       l'alloggio è la mediana della fascia e una "base" non si nomina */
+    p.push("Tokyo per " + it.ggGiappone + " giorni pieni" +
+      (liv.zona ? ", con base a " + nomeZona(liv.zona) : "") +
       (g.length ? ", più " + g.length + (g.length===1 ? " gita in giornata: " : " gite in giornata: ") + g.join(", ")
                 : ", senza gite fuori: con questi giorni la città basta e avanza") + ".");
   } else {
