@@ -314,7 +314,7 @@ function disegna(r, comp) {
     "Cliccala per applicarla davvero.</p>");
   h.push('<div id="compromessi">');
   comp.forEach(function (c, i) {
-    h.push('<div class="compromesso" data-i="' + i + '"><span>' + esc(c.etichetta) +
+    h.push('<div class="compromesso' + (c.soloInfo ? " info" : "") + '" data-i="' + i + '"><span>' + esc(c.etichetta) +
       (c.avvertenza ? '<br><span class="nota">' + esc(c.avvertenza) + "</span>" : "") + "</span>" +
       '<span class="d ' + (c.delta < 0 ? "giu" : "su") + '">' + (c.delta > 0 ? "+" : "−") +
       eu0(Math.abs(c.delta)) + "</span></div>");
@@ -430,7 +430,7 @@ function agganciaRisultato() {
   $$("#risultato .compromesso").forEach(function (el) {
     el.onclick = function () {
       var c = COMP[+el.dataset.i];
-      if (!c) return;
+      if (!c || c.soloInfo) return;
       for (var k in c.patch) S[k] = c.patch[k];
       calcolaEMostra();
     };

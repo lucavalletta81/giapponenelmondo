@@ -1,7 +1,7 @@
 /* GENERATO da raccolta/esporta.py — non modificare a mano.
    Prezzi VERI da Google Flights e Google Hotels. */
 window.PREZZI = {
- "generato": "2026-08-23T12:04:41+12:00",
+ "generato": "2026-08-23T12:22:01+12:00",
  "cambio": {
   "jpy_per_eur": 185.66,
   "data": "2026-08-21",
@@ -123,6 +123,22 @@ window.PREZZI = {
      "scalo_peggio": 115,
      "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h55",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2250,
+     "esatto": 2251,
+     "out": "2027-04-07",
+     "ret": "2027-04-21",
+     "notti": 14,
+     "anticipo": 227,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 750,
+     "min_rit": 885,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-08-23"
     }
    },
    "cap": {
@@ -172,6 +188,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 150,
      "dove": "and.: Varsavia 0h50 · rit.: Varsavia 2h30",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1675,
+     "esatto": 1663,
+     "out": "2026-12-27",
+     "ret": "2027-01-10",
+     "notti": 14,
+     "anticipo": 126,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1115,
+     "min_rit": 1240,
+     "scali": 1,
+     "scalo_peggio": 185,
+     "dove": "and.: Londra 1h50 · rit.: Londra 3h05",
      "letto": "2026-08-23"
     }
    },
@@ -223,6 +255,22 @@ window.PREZZI = {
      "scalo_peggio": 95,
      "dove": "and.: Abu Dhabi 1h35 · rit.: Abu Dhabi 1h30",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1325,
+     "esatto": 1315,
+     "out": "2026-12-08",
+     "ret": "2026-12-22",
+     "notti": 14,
+     "anticipo": 107,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-08-23"
     }
    },
    "feb": {
@@ -272,6 +320,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 95,
      "dove": "and.: Abu Dhabi 1h35 · rit.: Abu Dhabi 1h30",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1400,
+     "esatto": 1390,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 171,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
      "letto": "2026-08-23"
     }
    },
@@ -323,6 +387,22 @@ window.PREZZI = {
      "scalo_peggio": 250,
      "dove": "and.: Doha 4h10 · rit.: Doha 3h05 (notte)",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1300,
+     "esatto": 1300,
+     "out": "2027-01-13",
+     "ret": "2027-01-27",
+     "notti": 14,
+     "anticipo": 143,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-08-23"
     }
    },
    "gw": {
@@ -372,6 +452,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 280,
      "dove": "and.: Doha 4h40 · rit.: Doha 4h05 (notte)",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1600,
+     "esatto": 1606,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 248,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 750,
+     "min_rit": 885,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
      "letto": "2026-08-23"
     }
    },
@@ -423,6 +519,22 @@ window.PREZZI = {
      "scalo_peggio": 655,
      "dove": "and.: Doha 4h30 · rit.: Doha 10h55 (notte)",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1550,
+     "esatto": 1560,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 269,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 750,
+     "min_rit": 885,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-08-23"
     }
    },
    "mar": {
@@ -472,6 +584,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 125,
      "dove": "and.: Seul 1h20 · rit.: Seul 2h05",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1625,
+     "esatto": 1622,
+     "out": "2027-03-10",
+     "ret": "2027-03-24",
+     "notti": 14,
+     "anticipo": 199,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1185,
+     "min_rit": 1735,
+     "scali": 1,
+     "scalo_peggio": 715,
+     "dove": "and.: Helsinki 2h20 · rit.: Londra 11h55",
      "letto": "2026-08-23"
     }
    },
@@ -523,6 +651,22 @@ window.PREZZI = {
      "scalo_peggio": 595,
      "dove": "and.: Seul 3h55 · rit.: Seul 9h55",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2250,
+     "esatto": 2250,
+     "out": "2026-11-10",
+     "ret": "2026-11-24",
+     "notti": 14,
+     "anticipo": 79,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-08-23"
     }
    },
    "ott": {
@@ -572,6 +716,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 190,
      "dove": "and.: Istanbul 1h05 · rit.: Istanbul 3h10",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2375,
+     "esatto": 2385,
+     "out": "2026-10-13",
+     "ret": "2026-10-27",
+     "notti": 14,
+     "anticipo": 51,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 750,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
      "letto": "2026-08-23"
     }
    }
@@ -625,6 +785,22 @@ window.PREZZI = {
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1625,
+     "esatto": 1625,
+     "out": "2027-04-07",
+     "ret": "2027-04-21",
+     "notti": 14,
+     "anticipo": 227,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1185,
+     "min_rit": 1570,
+     "scali": 1,
+     "scalo_peggio": 615,
+     "dove": "and.: Helsinki 3h20 · rit.: Helsinki 10h15",
+     "letto": "2026-08-23"
     }
    },
    "cap": {
@@ -674,6 +850,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 105,
      "dove": "and.: Varsavia 0h55 · rit.: Varsavia 1h45",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1675,
+     "esatto": 1667,
+     "out": "2026-12-27",
+     "ret": "2027-01-10",
+     "notti": 14,
+     "anticipo": 126,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1660,
+     "min_rit": 1740,
+     "scali": 1,
+     "scalo_peggio": 735,
+     "dove": "and.: Londra 12h15 (notte) · rit.: Londra 11h50 (notte)",
      "letto": "2026-08-23"
     }
    },
@@ -725,6 +917,22 @@ window.PREZZI = {
      "scalo_peggio": 115,
      "dove": "and.: Abu Dhabi 1h35 · rit.: Abu Dhabi 1h55",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1525,
+     "esatto": 1528,
+     "out": "2026-12-08",
+     "ret": "2026-12-22",
+     "notti": 14,
+     "anticipo": 107,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1170,
+     "min_rit": 1215,
+     "scali": 1,
+     "scalo_peggio": 240,
+     "dove": "and.: Helsinki 3h00 · rit.: Helsinki 4h00",
+     "letto": "2026-08-23"
     }
    },
    "feb": {
@@ -774,6 +982,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 160,
      "dove": "and.: Istanbul 2h40 (notte) · rit.: Istanbul 2h25",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1525,
+     "esatto": 1528,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 171,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1170,
+     "min_rit": 1215,
+     "scali": 1,
+     "scalo_peggio": 240,
+     "dove": "and.: Helsinki 3h00 · rit.: Helsinki 4h00",
      "letto": "2026-08-23"
     }
    },
@@ -825,6 +1049,22 @@ window.PREZZI = {
      "scalo_peggio": 160,
      "dove": "and.: Istanbul 2h40 (notte) · rit.: Istanbul 2h25",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1300,
+     "esatto": 1297,
+     "out": "2027-01-13",
+     "ret": "2027-01-27",
+     "notti": 14,
+     "anticipo": 143,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "LOT Polish Airlines",
+     "min_and": 2390,
+     "min_rit": 1685,
+     "scali": 1,
+     "scalo_peggio": 1495,
+     "dove": "and.: Varsavia 24h55 (notte) · rit.: Varsavia 11h05",
+     "letto": "2026-08-23"
     }
    },
    "gw": {
@@ -874,6 +1114,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1250,
+     "esatto": 1254,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 248,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Scandinavian Airlines",
+     "min_and": 935,
+     "min_rit": 1830,
+     "scali": 1,
+     "scalo_peggio": 900,
+     "dove": "and.: Copenaghen 1h20 · rit.: Copenaghen 15h00 (notte)",
      "letto": "2026-08-23"
     }
    },
@@ -925,6 +1181,22 @@ window.PREZZI = {
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1525,
+     "esatto": 1528,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 269,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1230,
+     "min_rit": 1125,
+     "scali": 1,
+     "scalo_peggio": 245,
+     "dove": "and.: Helsinki 4h05 · rit.: Helsinki 2h50",
+     "letto": "2026-08-23"
     }
    },
    "mar": {
@@ -974,6 +1246,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 455,
      "dove": "and.: Seul 5h05 · rit.: Seul 7h35",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1600,
+     "esatto": 1608,
+     "out": "2027-03-10",
+     "ret": "2027-03-24",
+     "notti": 14,
+     "anticipo": 199,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1165,
+     "min_rit": 1070,
+     "scali": 1,
+     "scalo_peggio": 150,
+     "dove": "and.: Helsinki 2h30 · rit.: Helsinki 1h25",
      "letto": "2026-08-23"
     }
    },
@@ -1025,6 +1313,22 @@ window.PREZZI = {
      "scalo_peggio": 620,
      "dove": "and.: Helsinki 2h30 · rit.: Londra 10h20",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1625,
+     "esatto": 1616,
+     "out": "2026-11-10",
+     "ret": "2026-11-24",
+     "notti": 14,
+     "anticipo": 79,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1170,
+     "min_rit": 1775,
+     "scali": 1,
+     "scalo_peggio": 745,
+     "dove": "and.: Helsinki 2h30 · rit.: Londra 12h25 (notte)",
+     "letto": "2026-08-23"
     }
    },
    "ott": {
@@ -1074,6 +1378,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 170,
      "dove": "and.: Istanbul 1h10 · rit.: Istanbul 2h50",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2100,
+     "esatto": 2095,
+     "out": "2026-10-13",
+     "ret": "2026-10-27",
+     "notti": 14,
+     "anticipo": 51,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Scandinavian Airlines",
+     "min_and": 935,
+     "min_rit": 1040,
+     "scali": 1,
+     "scalo_peggio": 110,
+     "dove": "and.: Copenaghen 1h20 · rit.: Copenaghen 1h50",
      "letto": "2026-08-23"
     }
    }
@@ -1127,6 +1447,22 @@ window.PREZZI = {
      "scalo_peggio": 160,
      "dove": "and.: Roma 2h40 · rit.: Roma 1h15",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2100,
+     "esatto": 2106,
+     "out": "2027-04-07",
+     "ret": "2027-04-21",
+     "notti": 14,
+     "anticipo": 227,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1740,
+     "min_rit": 1205,
+     "scali": 1,
+     "scalo_peggio": 755,
+     "dove": "and.: Londra 12h35 (notte) · rit.: Londra 2h30",
+     "letto": "2026-08-23"
     }
    },
    "cap": {
@@ -1176,6 +1512,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 840,
      "dove": "and.: Istanbul 2h05 (notte) · rit.: Istanbul 14h00 (notte)",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2075,
+     "esatto": 2069,
+     "out": "2026-12-27",
+     "ret": "2027-01-10",
+     "notti": 14,
+     "anticipo": 126,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Swiss International Air Lines",
+     "min_and": 1845,
+     "min_rit": 2045,
+     "scali": 1,
+     "scalo_peggio": 1070,
+     "dove": "and.: Zurigo 15h40 (notte) · rit.: Zurigo 17h50 (notte)",
      "letto": "2026-08-23"
     }
    },
@@ -1227,6 +1579,22 @@ window.PREZZI = {
      "scalo_peggio": 170,
      "dove": "and.: Roma 2h50 · rit.: Roma 1h20",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1325,
+     "esatto": 1324,
+     "out": "2026-12-08",
+     "ret": "2026-12-22",
+     "notti": 14,
+     "anticipo": 107,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1040,
+     "scali": 1,
+     "scalo_peggio": 460,
+     "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
+     "letto": "2026-08-23"
     }
    },
    "feb": {
@@ -1276,6 +1644,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 840,
      "dove": "and.: Istanbul 1h40 · rit.: Istanbul 14h00 (notte)",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2450,
+     "esatto": 2439,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 171,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "flydubai",
+     "min_and": 1020,
+     "min_rit": 1300,
+     "scali": 1,
+     "scalo_peggio": 170,
+     "dove": "and.: Dubai 2h00 · rit.: Dubai 2h50",
      "letto": "2026-08-23"
     }
    },
@@ -1327,6 +1711,22 @@ window.PREZZI = {
      "scalo_peggio": 160,
      "dove": "and.: Istanbul 2h40 (notte) · rit.: Istanbul 2h15",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1275,
+     "esatto": 1275,
+     "out": "2027-01-13",
+     "ret": "2027-01-27",
+     "notti": 14,
+     "anticipo": 143,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 2180,
+     "min_rit": 1755,
+     "scali": 1,
+     "scalo_peggio": 1390,
+     "dove": "and.: Roma 23h10 (notte) · rit.: Roma 13h10 (notte)",
+     "letto": "2026-08-23"
     }
    },
    "gw": {
@@ -1376,6 +1776,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 200,
      "dove": "and.: Londra 3h20 · rit.: Londra 2h20",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1575,
+     "esatto": 1579,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 248,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1015,
+     "scali": 1,
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h15",
      "letto": "2026-08-23"
     }
    },
@@ -1427,6 +1843,22 @@ window.PREZZI = {
      "scalo_peggio": 150,
      "dove": "and.: Londra 2h25 · rit.: Londra 2h30",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1575,
+     "esatto": 1579,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 269,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1950,
+     "scali": 1,
+     "scalo_peggio": 1005,
+     "dove": "and.: Roma 7h30 · rit.: Roma 16h45 (notte)",
+     "letto": "2026-08-23"
     }
    },
    "mar": {
@@ -1476,6 +1908,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 280,
      "dove": "and.: Istanbul 4h40 · rit.: Istanbul 2h05",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2025,
+     "esatto": 2034,
+     "out": "2027-03-10",
+     "ret": "2027-03-24",
+     "notti": 14,
+     "anticipo": 199,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1755,
+     "scali": 1,
+     "scalo_peggio": 790,
+     "dove": "and.: Roma 7h40 · rit.: Roma 13h10 (notte)",
      "letto": "2026-08-23"
     }
    },
@@ -1577,6 +2025,22 @@ window.PREZZI = {
      "scalo_peggio": 840,
      "dove": "and.: Istanbul 2h55 · rit.: Istanbul 14h00 (notte)",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2425,
+     "esatto": 2434,
+     "out": "2026-10-13",
+     "ret": "2026-10-27",
+     "notti": 14,
+     "anticipo": 51,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1040,
+     "scali": 1,
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h20",
+     "letto": "2026-08-23"
     }
    }
   },
@@ -1629,6 +2093,22 @@ window.PREZZI = {
      "scalo_peggio": 190,
      "dove": "and.: Zurigo 1h30 · rit.: Zurigo 3h10",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2025,
+     "esatto": 2031,
+     "out": "2027-04-07",
+     "ret": "2027-04-21",
+     "notti": 14,
+     "anticipo": 227,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1215,
+     "min_rit": 1585,
+     "scali": 1,
+     "scalo_peggio": 635,
+     "dove": "and.: Helsinki 4h05 · rit.: Helsinki 10h35",
+     "letto": "2026-08-23"
     }
    },
    "cap": {
@@ -1678,6 +2158,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 275,
      "dove": "and.: Monaco di Baviera 4h15 · rit.: Monaco di Baviera 4h35",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1650,
+     "esatto": 1650,
+     "out": "2026-12-27",
+     "ret": "2027-01-10",
+     "notti": 14,
+     "anticipo": 126,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1185,
+     "min_rit": 1195,
+     "scali": 1,
+     "scalo_peggio": 205,
+     "dove": "and.: Londra 3h25 · rit.: Londra 2h45",
      "letto": "2026-08-23"
     }
    },
@@ -1729,6 +2225,22 @@ window.PREZZI = {
      "scalo_peggio": 135,
      "dove": "and.: Istanbul 2h10 · rit.: Istanbul 2h15",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1375,
+     "esatto": 1384,
+     "out": "2026-12-08",
+     "ret": "2026-12-22",
+     "notti": 14,
+     "anticipo": 107,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1265,
+     "min_rit": 1055,
+     "scali": 1,
+     "scalo_peggio": 460,
+     "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
+     "letto": "2026-08-23"
     }
    },
    "feb": {
@@ -1778,6 +2290,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 135,
      "dove": "and.: Istanbul 2h10 · rit.: Istanbul 2h15",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1325,
+     "esatto": 1334,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 171,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1265,
+     "min_rit": 1055,
+     "scali": 1,
+     "scalo_peggio": 460,
+     "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
      "letto": "2026-08-23"
     }
    },
@@ -1829,6 +2357,22 @@ window.PREZZI = {
      "scalo_peggio": 135,
      "dove": "and.: Istanbul 2h10 · rit.: Istanbul 2h15",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1325,
+     "esatto": 1334,
+     "out": "2027-01-13",
+     "ret": "2027-01-27",
+     "notti": 14,
+     "anticipo": 143,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1920,
+     "min_rit": 1055,
+     "scali": 1,
+     "scalo_peggio": 1110,
+     "dove": "and.: Roma 18h30 (notte) · rit.: Roma 1h20",
+     "letto": "2026-08-23"
     }
    },
    "gw": {
@@ -1878,6 +2422,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 315,
      "dove": "and.: Dubai 3h20 (notte) · rit.: Dubai 5h15",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1625,
+     "esatto": 1629,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 248,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 1260,
+     "min_rit": 1220,
+     "scali": 1,
+     "scalo_peggio": 290,
+     "dove": "and.: Helsinki 4h50 · rit.: Londra 3h20",
      "letto": "2026-08-23"
     }
    },
@@ -1929,6 +2489,22 @@ window.PREZZI = {
      "scalo_peggio": 180,
      "dove": "and.: Vienna 1h30 · rit.: Vienna 3h00",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1450,
+     "esatto": 1444,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 269,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1270,
+     "min_rit": 1025,
+     "scali": 1,
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h15",
+     "letto": "2026-08-23"
     }
    },
    "mar": {
@@ -1978,6 +2554,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 190,
      "dove": "and.: Londra 3h10 · rit.: Londra 2h35",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1650,
+     "esatto": 1650,
+     "out": "2027-03-10",
+     "ret": "2027-03-24",
+     "notti": 14,
+     "anticipo": 199,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1170,
+     "min_rit": 1700,
+     "scali": 1,
+     "scalo_peggio": 705,
+     "dove": "and.: Londra 3h10 · rit.: Londra 11h45",
      "letto": "2026-08-23"
     }
    },
@@ -2029,6 +2621,22 @@ window.PREZZI = {
      "scalo_peggio": 335,
      "dove": "and.: Londra 5h35 · rit.: Londra 2h05",
      "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 1650,
+     "esatto": 1654,
+     "out": "2026-11-10",
+     "ret": "2026-11-24",
+     "notti": 14,
+     "anticipo": 79,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "British Airways",
+     "min_and": 1185,
+     "min_rit": 1135,
+     "scali": 1,
+     "scalo_peggio": 205,
+     "dove": "and.: Londra 3h25 · rit.: Londra 1h45",
+     "letto": "2026-08-23"
     }
    },
    "ott": {
@@ -2078,6 +2686,22 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1155,
      "dove": "and.: Istanbul 2h55 · rit.: Istanbul 19h15 (notte)",
+     "letto": "2026-08-23"
+    },
+    "premium": {
+     "eur": 2400,
+     "esatto": 2389,
+     "out": "2026-10-13",
+     "ret": "2026-10-27",
+     "notti": 14,
+     "anticipo": 51,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1270,
+     "min_rit": 1055,
+     "scali": 1,
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h20",
      "letto": "2026-08-23"
     }
    }

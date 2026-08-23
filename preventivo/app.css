@@ -212,3 +212,7 @@ svg.mappa .guida{ stroke: #c9c9c9; stroke-width: 1; }
   body { font-size: 11pt; }
   .compromesso, .giorno, #risultato table { break-inside: avoid; }
 }
+
+/* Le righe puramente informative non si cliccano: non c'è niente da applicare. */
+.compromesso.info { cursor: default; border-style: dashed; border-color: var(--gray-400); }
+.compromesso.info:hover { background: transparent; border-color: var(--gray-400); }

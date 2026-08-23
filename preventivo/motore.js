@@ -608,6 +608,18 @@ function compromessi(input, base) {
     if (alt.length) delta({ stagione: alt[0].id }, "Sposti il viaggio a " + alt[0].nome, alt[0].nota);
     if (input.giorni > 5)  delta({ giorni: input.giorni - 2 }, "Due giorni in meno");
     if (input.giorni < 25) delta({ giorni: input.giorni + 2 }, "Due giorni in più");
+    var vOra = voloReale(input.partenza, input.stagione, STILI[stileRif].volo);
+    var vPre = voloReale(input.partenza, input.stagione, "premium");
+    if (vOra && vPre && vPre.eur > vOra.eur) {
+      var persone = input.adulti + input.bambini * 0.65;
+      out.push({
+        etichetta: "Passa in premium economy" + (vPre.scali === 0 ? " (volo diretto)" : ""),
+        delta: (vPre.eur - vOra.eur) * persone,
+        avvertenza: "Sedile più largo e bagaglio incluso, senza arrivare alla business. " +
+                    "Cambia solo il volo, non il resto del viaggio.",
+        soloInfo: true, patch: {}
+      });
+    }
     if (stileRif !== "essenziale") delta({ stile: "essenziale" }, "Scendi alla fascia minima",
       "Ostello, volo al minimo, si mangia al konbini.", true);
     if (stileRif !== "comodo") delta({ stile: "comodo" }, "Sali a senza pensieri",
@@ -744,6 +756,20 @@ function prosa(r) {
   } else {
     p.push("Per questa combinazione di aeroporto e stagione Google non ha ancora i voli: " +
       "quella voce resta una stima del catalogo.");
+  }
+
+  /* fra economy e business ci sono migliaia di euro: se la premium economy
+     esiste su questa rotta, va detta, perché è l'unica cosa che sta in mezzo. */
+  var pre = voloReale(i.partenza, i.stagione, "premium");
+  if (pre && vf && i.stile !== "comodo") {
+    var inPiu = pre.eur - vf.eur;
+    if (inPiu > 50)
+      p.push("Se le " + Math.round((vf.min_and||0)/60) + " ore in economy ti spaventano, " +
+        "il gradino di mezzo esiste: la premium economy costa " + arrotonda(pre.eur) +
+        " euro, cioè " + arrotonda(inPiu) + " in più a persona" +
+        (pre.scali === 0 ? ", ed è un volo diretto" : "") +
+        ". La business, per confronto, ne chiede " +
+        arrotonda((voloReale(i.partenza, i.stagione, "lusso") || {eur:0}).eur) + ".");
   }
 
   var af = liv.alloggio_fonte;
