@@ -109,6 +109,34 @@ function interesse(id) {
   return null;
 }
 
+/* Il prezzo dell'alloggio quando l'utente NON sceglie la zona: la mediana
+   delle zone che hanno dati per quella fascia e quella stagione. Non il minimo
+   (è l'eccezione) e non la media (una zona fuori scala la trascina). Portiamo
+   dietro gli estremi, perché la forbice fra la zona più economica e la più cara
+   è più interessante del numero singolo.                                      */
+function alloggioAuto(fascia, stagioneId) {
+  var righe = [];
+  zoneDisponibili().forEach(function (z) {
+    var a = alloggioReale(z.id, fascia, stagioneId);
+    if (a) righe.push({ zona: z.id, nome: z.nome, eur: a.eur, campione: a.campione,
+                        min: a.min, max: a.max, esempio: a.esempio, letto: a.letto });
+  });
+  if (!righe.length) return null;
+  righe.sort(function (a, b) { return a.eur - b.eur; });
+  var m = righe.length % 2
+    ? righe[(righe.length - 1) / 2].eur
+    : Math.round((righe[righe.length/2 - 1].eur + righe[righe.length/2].eur) / 2);
+  var strutture = righe.reduce(function (t, r) { return t + r.campione; }, 0);
+  return {
+    auto: true, eur: m,
+    zone: righe.length, strutture: strutture,
+    economica: righe[0], cara: righe[righe.length - 1],
+    min: righe[0].min, max: righe[righe.length - 1].max,
+    campione: strutture, esempio: righe[0].esempio, letto: righe[0].letto,
+    elenco: righe
+  };
+}
+
 function nomeZona(id) {
   var z = zoneDisponibili();
   for (var i=0;i<z.length;i++) if (z[i].id === id) return z[i].nome;
@@ -461,13 +489,15 @@ function calcolaLivello(input, itin, treni, stileKey) {
      Il moltiplicatore di stagione NON si applica al prezzo reale: la stagione
      è già dentro, perché la notte l'abbiamo chiesta proprio in quella data.  */
   var alloggio = 0, notti = 0, dettAlloggio = [], alloggioFonte = null;
-  var zona = input.zona || "shinjuku";
-  var reale = alloggioReale(zona, stile.alloggio, input.stagione);
+  var zona = input.zona || null;                 /* null = la decidiamo noi */
+  var reale = zona ? alloggioReale(zona, stile.alloggio, input.stagione)
+                   : alloggioAuto(stile.alloggio, input.stagione);
   if (reale) {
     notti = itin.ggGiappone;
     alloggio = null;                              /* in euro, non in yen */
     alloggioFonte = reale;
-    dettAlloggio.push({ citta: nomeZona(zona), notti: notti,
+    dettAlloggio.push({ citta: reale.auto ? ("Tokyo, mediana di " + reale.zone + " zone")
+                                          : nomeZona(zona), notti: notti,
                         tariffaEur: reale.eur, subEur: reale.eur * notti,
                         campione: reale.campione, esempio: reale.esempio,
                         min: reale.min, max: reale.max });
@@ -619,7 +649,7 @@ function compromessi(input, base) {
 
   /* in modalità Tokyo le leve utili sono la zona e la fascia, non altre città */
   if (base.itinerario.soloTokyo) {
-    var zAttuale = input.zona || "shinjuku";
+    var zAttuale = input.zona || null;
     var fasciaAll = STILI[stileRif].alloggio;
     var candidate = [];
     zoneDisponibili().forEach(function (z) {
@@ -628,11 +658,20 @@ function compromessi(input, base) {
     });
     candidate.sort(function (a, b) { return a.eur - b.eur; });
     if (candidate.length) {
-      delta({ zona: candidate[0].id }, "Dormi " + aZona(candidate[0].id) +
-            " invece che " + aZona(zAttuale), candidate[0].nota);
+      /* Se la zona è già fissata l'etichetta dice il confronto; se la stiamo
+         scegliendo noi dice qual è il posto di quella zona nella classifica. */
+      delta({ zona: candidate[0].id },
+            zAttuale ? "Dormi " + aZona(candidate[0].id) + " invece che " + aZona(zAttuale)
+                     : "Dormi " + aZona(candidate[0].id) + ", la zona più economica",
+            candidate[0].nota);
       var caro = candidate[candidate.length - 1];
       if (caro.id !== candidate[0].id)
-        delta({ zona: caro.id }, "Dormi " + aZona(caro.id) + ", la zona più cara del campione", caro.nota);
+        delta({ zona: caro.id }, "Dormi " + aZona(caro.id) + ", la zona più cara", caro.nota);
+      if (zAttuale) {
+        var tutte = alloggioAuto(fasciaAll, input.stagione);
+        delta({ zona: null }, "Lascia scegliere a noi la zona",
+          "Torna alla mediana delle " + (tutte ? tutte.zone : candidate.length + 1) + " zone di Tokyo.");
+      }
     }
     var att = stagione(input.stagione);
     var alt = D.stagioni.filter(function (x) {
@@ -817,7 +856,16 @@ function prosa(r) {
   }
 
   var af = liv.alloggio_fonte;
-  if (af) {
+  if (af && af.auto) {
+    p.push("Anche l'alloggio è vero, e la zona l'abbiamo scelta noi per te: " + af.eur +
+      " euro a notte è la mediana delle " + af.zone + " zone di Tokyo in fascia " +
+      STILI[i.stile].alloggio + ", su " + af.strutture + " strutture lette da Google Hotels. " +
+      "Fra la zona più economica e la più cara ballano parecchi soldi: " +
+      af.economica.nome + " sta a " + af.economica.eur + " euro a notte, " +
+      af.cara.nome + " a " + af.cara.eur + ". Su " + liv.notti + " notti sono " +
+      arrotonda((af.cara.eur - af.economica.eur) * liv.notti) + " euro di differenza a persona: " +
+      "le leve qui sotto te la fanno vedere.");
+  } else if (af) {
     p.push("Anche l'alloggio è vero: " + af.eur + " euro a notte è la mediana di " + af.campione +
       " strutture che Google Hotels elenca " + aZona(liv.zona) + " in quella fascia e in quelle date" +
       " (si va da " + af.min + " a " + af.max + "; la più economica era " + af.esempio + ").");
@@ -842,7 +890,7 @@ return {
   citta: citta, luogo: luogo, stagione: stagione, serie: serie, partenza: partenza,
   tratta: tratta, eur: eur, arrotonda: arrotonda, RITMI: RITMI, STILI: STILI,
   zoneDisponibili: zoneDisponibili, nomeZona: nomeZona, aZona: aZona,
-  ramiDisponibili: ramiDisponibili, interesse: interesse,
+  ramiDisponibili: ramiDisponibili, interesse: interesse, alloggioAuto: alloggioAuto,
   voloReale: voloReale, alloggioReale: alloggioReale, cambio: cambio, GITE: GITE
 };
 })();

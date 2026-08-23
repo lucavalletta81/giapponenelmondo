@@ -12,7 +12,7 @@ var S = {
   partenza: "fco", stagione: "ott", giorni: 14, ritmo: "medio", stile: "equilibrato",
   adulti: 2, bambini: 0, interessi: [], anime: [], giaVisti: [], primaVolta: true,
   voliInterni: "si", budgetMax: 0, ancoraggio: "tokyo", jrPass: "auto",
-  soloTokyo: true, zona: "shinjuku", rami: []
+  soloTokyo: true, zona: null, rami: []
 };
 
 /* Il motore vuole un solo elenco di tag: interessi grossi + rami fini.
@@ -23,7 +23,7 @@ function perMotore() {
   m.interessi = S.interessi.concat(S.rami);
   return m;
 }
-var passo = 1, PASSI = 8;
+var passo = 1, PASSI = 7;
 var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i click
 
 /* ------------------------------------------------------------ FORMATTO --- */
@@ -73,36 +73,6 @@ function riempiInteressi() {
   });
 }
 
-/* Le zone col loro prezzo VERO: si sceglie guardando quanto costa la notte,
-   e i prezzi sono quelli della fascia scelta al passo prima. */
-function riempiZone() {
-  var zone = M.zoneDisponibili();
-  if (!zone.length) { $("#zone").innerHTML = '<p class="nota">Listino zone non caricato.</p>'; return; }
-  var fascia = M.STILI[S.stile].alloggio;
-  var righe = zone.map(function (z) {
-    return { z: z, a: M.alloggioReale(z.id, fascia, S.stagione) };
-  }).filter(function (r) { return r.a; });
-  righe.sort(function (x, y) { return x.a.eur - y.a.eur; });
-  if (!righe.length) { $("#zone").innerHTML = '<p class="nota">Per queste date non ho ancora prezzi di zona.</p>'; return; }
-  if (!righe.some(function (r) { return r.z.id === S.zona; })) S.zona = righe[0].z.id;
-  $("#zone").innerHTML = righe.map(function (r) {
-    return '<div class="carta conAiuto" data-id="' + r.z.id + '" tabindex="0" role="button" title="' +
-      esc(r.z.nota) + '"><b>' + esc(r.z.nome) + " · " + r.a.eur + " €/notte</b>" +
-      "<span>" + esc(r.z.nota) + "</span>" +
-      '<span class="conta">da ' + r.a.min + " a " + r.a.max + " € su " + r.a.campione + " strutture</span>" +
-      '<span class="aiuto">Mediana di ' + r.a.campione + " strutture che Google Hotels elenca " +
-      esc(M.aZona(r.z.id)) + " in fascia " + esc(fascia) + " per quelle date: si va da " +
-      r.a.min + " a " + r.a.max + " €. La più economica del campione era " + esc(r.a.esempio) + ".</span></div>";
-  }).join("");
-  $$("#zone .carta").forEach(function (c) {
-    c.onclick = function () {
-      S.zona = c.dataset.id;
-      $$("#zone .carta").forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed","false"); });
-      c.classList.add("on"); c.setAttribute("aria-pressed", "true");
-    };
-  });
-}
-
 function riempiGiaVisti() {
   var lista = D.citta.filter(function (c) { return c.iconica || c.hub; });
   $("#giavisti").innerHTML = lista.map(function (c) {
@@ -126,7 +96,6 @@ function mostraPasso(n) {
   $("#barra-testo").textContent = "Passo " + n + " di " + PASSI;
   $("#barra-fill").style.width = (n / PASSI * 100) + "%";
   if (n === 6) preparaRamo();
-  if (n === 8) riempiZone();
   window.scrollTo(0, 0);
 }
 
@@ -284,12 +253,19 @@ function disegna(r, comp) {
       : ("stima: andata/ritorno da " + M.partenza(S.partenza).nome +
          ", tariffa media × moltiplicatore di stagione (" + r.stagione.volo + "×)"),
     trasporti: "biglietti del giro + trasporto urbano " + yen(D.trasporto_locale_yen_giorno) + "/giorno + transfer aeroporto",
-    alloggio: liv.alloggio_fonte
-      ? ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
-         " notti " + esc(M.aZona(liv.zona)) + " — mediana di " + liv.alloggio_fonte.campione +
-         " strutture (da " + liv.alloggio_fonte.min + " a " + liv.alloggio_fonte.max + " €), " +
-         "rilevato il " + liv.alloggio_fonte.letto.split("-").reverse().join("/"))
-      : (liv.notti + " notti, stima: tariffa per città × " + r.stagione.hotel + "× di stagione"),
+    alloggio: !liv.alloggio_fonte
+      ? (liv.notti + " notti, stima: tariffa per città × " + r.stagione.hotel + "× di stagione")
+      : liv.alloggio_fonte.auto
+        ? ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
+           " notti — mediana delle " + liv.alloggio_fonte.zone + " zone di Tokyo in questa fascia, " +
+           "su " + liv.alloggio_fonte.strutture + " strutture (da " + liv.alloggio_fonte.economica.nome +
+           " a " + liv.alloggio_fonte.economica.eur + " € fino a " + liv.alloggio_fonte.cara.nome +
+           " a " + liv.alloggio_fonte.cara.eur + " €), rilevato il " +
+           liv.alloggio_fonte.letto.split("-").reverse().join("/"))
+        : ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
+           " notti " + esc(M.aZona(liv.zona)) + " — mediana di " + liv.alloggio_fonte.campione +
+           " strutture (da " + liv.alloggio_fonte.min + " a " + liv.alloggio_fonte.max + " €), " +
+           "rilevato il " + liv.alloggio_fonte.letto.split("-").reverse().join("/")),
     cibo: D.cibo[S.stile].desc,
     attivita: liv.attIncluse.length + " ingressi ed esperienze a pagamento",
     extra: "assicurazione, eSIM, souvenir",
@@ -312,6 +288,20 @@ function disegna(r, comp) {
       return "<tr><td>" + esc(a.citta) + "</td><td class=num>" + a.notti + "</td><td class=num>" +
         eu(M.eur(a.tariffa)) + "</td><td class=num>" + eu(M.eur(a.sub)) + "</td></tr>";
     }).join("") + "</table></div></details>");
+
+  if (liv.alloggio_fonte && liv.alloggio_fonte.auto) {
+    h.push('<details><summary>Quanto costa la notte, zona per zona</summary>' +
+      '<p class="nota">Fascia ' + esc(M.STILI[S.stile].alloggio) + ", " + esc(r.stagione.nome) +
+      ". Il preventivo usa la mediana; cliccando una leva più sotto ti sposti su una zona precisa.</p>" +
+      '<div class="tabella-wrap"><table><tr><th>Zona</th><th class=num>€/notte</th>' +
+      "<th class=num>su " + liv.notti + " notti</th><th class=num>strutture</th><th>com'è</th></tr>" +
+      liv.alloggio_fonte.elenco.map(function (z) {
+        var zz = M.zoneDisponibili().filter(function (x) { return x.id === z.zona; })[0] || {};
+        return "<tr><td>" + esc(z.nome) + "</td><td class=num>" + z.eur + " €</td><td class=num>" +
+          eu(z.eur * liv.notti) + "</td><td class=num>" + z.campione + "</td><td>" +
+          esc(zz.nota || "") + "</td></tr>";
+      }).join("") + "</table></div></details>");
+  }
 
   h.push("<details><summary>Ogni biglietto del giro</summary><div class=\"tabella-wrap\"><table><tr><th>Tratta</th><th>Mezzo</th><th class=num>min</th><th class=num>costo</th><th>JR Pass</th></tr>" +
     r.treni.biglietti.map(function (b) {
@@ -392,8 +382,12 @@ function disegna(r, comp) {
     "1 meno la somma delle voci verificate diviso il totale a persona.</p>" +
     "<p><b>Prezzi veri, letti da un sistema di prenotazione:</b> " +
       [vf ? "il volo (Google Flights, tariffa esatta " + vf.esatto + " €, arrotondata ai 25)" : null,
-       liv.alloggio_fonte ? "l'alloggio (Google Hotels, mediana di " + liv.alloggio_fonte.campione +
-         " strutture " + esc(M.aZona(liv.zona)) + ", arrotondata ai 5)" : null,
+       liv.alloggio_fonte ? ("l'alloggio (Google Hotels, " +
+         (liv.alloggio_fonte.auto
+           ? "mediana delle " + liv.alloggio_fonte.zone + " zone di Tokyo su " +
+             liv.alloggio_fonte.strutture + " strutture"
+           : "mediana di " + liv.alloggio_fonte.campione + " strutture " + esc(M.aZona(liv.zona))) +
+         ", arrotondata ai 5)") : null,
        r.cambio && r.cambio.vero ? "il cambio euro/yen (1 € = " + r.cambio.v + " ¥, BCE del " +
          r.cambio.data.split("-").reverse().join("/") + ")" : null
       ].filter(Boolean).join("; ") + ".</p>" +
