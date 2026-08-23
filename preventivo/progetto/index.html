@@ -71,7 +71,9 @@ body {
   display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 56px; align-items: start;
 }
 @media (max-width: 900px) {
-  .pagina { grid-template-columns: 1fr; gap: 28px; padding: 36px 20px 72px; }
+  /* minmax(0,1fr) e non 1fr: con 1fr la colonna prende la larghezza del contenuto
+     più largo che non si spezza (un URL lungo, una tabella) e la pagina sfora. */
+  .pagina { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 36px 20px 72px; }
   .indice { position: static !important; border-left: none !important; padding-left: 0 !important;
             border-top: 1px solid var(--riga); padding-top: 18px; }
 }
@@ -87,13 +89,16 @@ body {
 }
 .indice a {
   color: var(--smorz); text-decoration: none; font-size: 13.5px; line-height: 1.4;
+  overflow-wrap: anywhere;
   padding: 3px 0; border-bottom: 1px solid transparent;
 }
 .indice a:hover { color: var(--kon); }
 .indice a:focus-visible { outline: 2px solid var(--kon); outline-offset: 2px; }
 
 /* ---------------------------------------------------------- tipografia --- */
-article { max-width: 74ch; }
+article, .indice { min-width: 0; }
+article { max-width: 74ch; overflow-wrap: break-word; }
+article a { overflow-wrap: anywhere; }
 article > * + * { margin-top: 1.05em; }
 
 h1 {
