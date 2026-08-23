@@ -630,6 +630,13 @@ function contaStime(itin, liv) {
     euroTot = v.volo + v.trasporti + v.alloggio + v.cibo + v.attivita + v.extra + v.imprevisti;
     if (voloVero) euroVeri += v.volo;
     if (itin.alloggio_vero) euroVeri += v.alloggio;
+    /* la quota degli ingressi che ha una fonte: dalla milestone 9 non è più zero */
+    var incl = liv.attIncluse || [], yenTot = 0, yenVeri = 0;
+    for (var q=0;q<incl.length;q++) {
+      yenTot += incl[q].yen;
+      if (incl[q].c === "V") yenVeri += incl[q].yen;
+    }
+    if (yenTot > 0) euroVeri += v.attivita * (yenVeri / yenTot);
   }
   return {
     totale: tot, stime: stime, spese: spese, perc: Math.round(stime/tot*100),
