@@ -539,7 +539,7 @@ function pianifica(input) {
   itin.alloggio_vero = !!livelli[input.stile].alloggio_fonte;
   return { input:input, itinerario:itin, treni:treni, livelli:livelli,
            stagione: stagione(input.stagione), cambio: cambio(),
-           zone: zoneDisponibili(), attendibilita: contaStime(itin) };
+           zone: zoneDisponibili(), attendibilita: contaStime(itin, livelli[input.stile]) };
 }
 
 /* Quante voci usate sono ancora stime: si dichiara a schermo.
@@ -549,17 +549,35 @@ function pianifica(input) {
    di marcare, ed era il contatore stesso a mentire. */
 function verificato(x) { return !!x && x.c === "V"; }
 
-function contaStime(itin) {
+/* Due numeri, non uno. Contare le VOCI dice che verificare i souvenir vale quanto
+   verificare l'alloggio, il che è falso: premia il lavoro sbagliato. Il numero che
+   conta è la quota dell'IMPORTO che arriva da voci verificate. Li pubblichiamo
+   entrambi, con la formula scritta a schermo, così chiunque può rifare il conto.  */
+function contaStime(itin, liv) {
   var tot=0, stime=0;
   for (var i=0;i<itin.attivita.length;i++){ tot++; if (!verificato(itin.attivita[i])) stime++; }
   for (var j=0;j<itin.tappe.length;j++){ tot++; if (!verificato(citta(itin.tappe[j].citta))) stime++; }
   var g = itin.gambe.concat(itin.ritorno? [itin.ritorno]:[]);
   for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata || !g[k].verificata) stime++; }
+  var voloVero = !!voloReale(itin.input_partenza, itin.input_stagione, itin.fascia_volo || "normale");
   tot += 3;                                   // volo, alloggio, cambio
   if (!cambio().vero) stime += 1;
-  if (!voloReale(itin.input_partenza, itin.input_stagione, itin.fascia_volo || "normale")) stime += 1;
+  if (!voloVero) stime += 1;
   if (!itin.alloggio_vero) stime += 1;
-  return { totale:tot, stime:stime, perc: Math.round(stime/tot*100) };
+
+  /* la quota in euro: quanto del totale viene da una fonte verificata */
+  var euroVeri = 0, euroTot = 0;
+  if (liv) {
+    var v = liv.voci;
+    euroTot = v.volo + v.trasporti + v.alloggio + v.cibo + v.attivita + v.extra + v.imprevisti;
+    if (voloVero) euroVeri += v.volo;
+    if (itin.alloggio_vero) euroVeri += v.alloggio;
+  }
+  return {
+    totale: tot, stime: stime, perc: Math.round(stime/tot*100),
+    euro_tot: euroTot, euro_veri: euroVeri,
+    perc_importo: euroTot ? Math.round((1 - euroVeri/euroTot) * 100) : null
+  };
 }
 
 /* ============================================ MOTORE 3: I COMPROMESSI ===== */
@@ -711,7 +729,9 @@ function prosa(r) {
   } else {
     p.push("Attenzione al Japan Rail Pass: con questo itinerario NON conviene. " +
       "Compri i biglietti singoli e risparmi circa " + arrotonda(eur(r.treni.risparmio)) +
-      " euro a persona. È il primo errore che fanno quasi tutti.");
+      " euro a persona. Attenzione però: il prezzo del pass nel nostro catalogo è ancora una " +
+      "stima, non una tariffa verificata, quindi questo è l'unico consiglio della pagina che " +
+      "va ricontrollato sul sito ufficiale prima di deciderci qualcosa.");
   }
 
   var animeScelti = i.anime.map(function(a){ return serie(a) ? serie(a).nome : a; });
@@ -742,15 +762,18 @@ function prosa(r) {
     var nor = voloReale(i.partenza, i.stagione, "normale");
     if (eco && nor) {
       var risparmio = nor.esatto - eco.esatto, oreInPiu = ((eco.min_and||0) - (nor.min_and||0))/60;
-      if (oreInPiu >= 2) {
-        p.push(risparmio < 20
-          ? ("Attenzione a cercare il volo più economico: su questa rotta costa " +
-             (risparmio <= 1 ? "esattamente uguale" : "appena " + Math.round(risparmio) + " euro meno") +
-             " e ti porta via " + oreInPiu.toFixed(0) + " ore in più, con uno scalo di " +
-             Math.floor((eco.scalo_peggio||0)/60) + " ore. Non è un risparmio, è una perdita.")
-          : ("Il volo più economico costa " + Math.round(risparmio) + " euro meno ma dura " +
-             oreInPiu.toFixed(0) + " ore in più, con uno scalo di " +
-             Math.floor((eco.scalo_peggio||0)/60) + " ore: decidi tu se vale."));
+      var scaloOre = Math.floor((eco.scalo_peggio||0)/60);
+      if (oreInPiu >= 2 && risparmio <= 1) {
+        p.push("Su queste date cercare il volo più economico non serve: costa esattamente " +
+          "quanto quello normale e dura " + oreInPiu.toFixed(0) + " ore in più, con uno scalo di " +
+          scaloOre + " ore. Non ci perdi soldi, semplicemente non ne risparmi.");
+      } else if (oreInPiu >= 2 && risparmio < 25) {
+        p.push("Il volo più economico costa appena " + Math.round(risparmio) + " euro meno e dura " +
+          oreInPiu.toFixed(0) + " ore in più, con uno scalo di " + scaloOre + " ore: " +
+          "sono " + Math.round(risparmio/oreInPiu) + " euro l'ora di attesa.");
+      } else if (oreInPiu >= 2) {
+        p.push("Il volo più economico costa " + Math.round(risparmio) + " euro meno ma dura " +
+          oreInPiu.toFixed(0) + " ore in più, con uno scalo di " + scaloOre + " ore: decidi tu se vale.");
       }
     }
   } else {

@@ -324,7 +324,18 @@ function disegna(r, comp) {
   /* --- onestà ----------------------------------------------------------- */
   h.push('<div class="box"><h3>Da dove vengono questi prezzi</h3>' +
     "<p><b>" + r.attendibilita.stime + " voci su " + r.attendibilita.totale + " (" +
-    r.attendibilita.perc + "%) di questo preventivo sono stime</b>, non tariffe controllate su fonte ufficiale.</p>" +
+    r.attendibilita.perc + "%) sono stime</b>, non tariffe controllate su fonte ufficiale. " +
+    (r.attendibilita.perc_importo !== null
+      ? ("Ma le voci non pesano uguale: contando gli <b>euro</b>, la quota che arriva da stime è il <b>" +
+         r.attendibilita.perc_importo + "%</b> del totale (" +
+         Math.round(r.attendibilita.euro_veri) + " € su " + Math.round(r.attendibilita.euro_tot) +
+         " vengono da un prezzo verificato). È questo il numero che conta: verificare i souvenir " +
+         "non vale quanto verificare il volo.")
+      : "") + "</p>" +
+    '<p class="nota">La formula, così puoi rifare il conto: la percentuale sulle voci conta una voce ' +
+    "per ogni ingresso, ogni tratta, ogni città toccata, più volo, alloggio e cambio, e considera " +
+    "verificata solo quella che porta una marca esplicita. La percentuale sull'importo è " +
+    "1 meno la somma delle voci verificate diviso il totale a persona.</p>" +
     "<p><b>Prezzi veri, letti da un sistema di prenotazione:</b> " +
       [vf ? "il volo (Google Flights, tariffa esatta " + vf.esatto + " €, arrotondata ai 25)" : null,
        liv.alloggio_fonte ? "l'alloggio (Google Hotels, mediana di " + liv.alloggio_fonte.campione +
