@@ -12,8 +12,17 @@ var S = {
   partenza: "fco", stagione: "ott", giorni: 14, ritmo: "medio", stile: "equilibrato",
   adulti: 2, bambini: 0, interessi: [], anime: [], giaVisti: [], primaVolta: true,
   voliInterni: "si", budgetMax: 0, ancoraggio: "tokyo", jrPass: "auto",
-  soloTokyo: true, zona: "shinjuku"
+  soloTokyo: true, zona: "shinjuku", rami: []
 };
+
+/* Il motore vuole un solo elenco di tag: interessi grossi + rami fini.
+   Li teniamo separati nello stato perché il questionario li chiede in due
+   momenti diversi, e li uniamo solo quando si calcola. */
+function perMotore() {
+  var m = {}; for (var k in S) m[k] = S[k];
+  m.interessi = S.interessi.concat(S.rami);
+  return m;
+}
 var passo = 1, PASSI = 8;
 var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i click
 
@@ -47,54 +56,49 @@ function riempiStagioni() {
 
 function riempiInteressi() {
   $("#interessi").innerHTML = D.interessi.map(function (i) {
-    return '<div class="carta" data-id="' + i.id + '"><b>' + esc(i.nome) + "</b><span>" + esc(i.desc) + "</span></div>";
+    var n = M.ramiDisponibili(i.id, S.soloTokyo).length;
+    return '<div class="carta conAiuto" data-id="' + i.id + '" tabindex="0" role="button" ' +
+      'aria-pressed="false" title="' + esc(i.dettaglio || i.desc) + '"><b>' + esc(i.nome) + "</b>" +
+      "<span>" + esc(i.desc) + "</span>" +
+      (n ? '<span class="conta">' + n + " domande in più al passo dopo</span>" : "") +
+      '<span class="aiuto">' + esc(i.dettaglio || i.desc) + "</span></div>";
   }).join("");
   $$("#interessi .carta").forEach(function (c) {
     c.onclick = function () {
       var id = c.dataset.id, k = S.interessi.indexOf(id);
       if (k === -1) S.interessi.push(id); else S.interessi.splice(k, 1);
       c.classList.toggle("on");
+      c.setAttribute("aria-pressed", c.classList.contains("on") ? "true" : "false");
     };
   });
 }
 
-function riempiSerie() {
-  $("#serie").innerHTML = D.anime.map(function (a) {
-    var dove = a.luoghi.map(function (l) { return M.citta(M.luogo(l).citta).nome; });
-    var uniq = dove.filter(function (v, i) { return dove.indexOf(v) === i; });
-    return '<div class="carta" data-id="' + a.id + '"><b>' + esc(a.nome) + "</b><span>" + esc(uniq.join(", ")) + "</span></div>";
-  }).join("");
-  $$("#serie .carta").forEach(function (c) {
-    c.onclick = function () {
-      var id = c.dataset.id, k = S.anime.indexOf(id);
-      if (k === -1) S.anime.push(id); else S.anime.splice(k, 1);
-      c.classList.toggle("on");
-    };
-  });
-}
-
-/* Le zone col loro prezzo VERO: si sceglie guardando quanto costa. */
+/* Le zone col loro prezzo VERO: si sceglie guardando quanto costa la notte,
+   e i prezzi sono quelli della fascia scelta al passo prima. */
 function riempiZone() {
   var zone = M.zoneDisponibili();
   if (!zone.length) { $("#zone").innerHTML = '<p class="nota">Listino zone non caricato.</p>'; return; }
   var fascia = M.STILI[S.stile].alloggio;
   var righe = zone.map(function (z) {
-    var a = M.alloggioReale(z.id, fascia, S.stagione);
-    return { z: z, a: a };
+    return { z: z, a: M.alloggioReale(z.id, fascia, S.stagione) };
   }).filter(function (r) { return r.a; });
   righe.sort(function (x, y) { return x.a.eur - y.a.eur; });
   if (!righe.length) { $("#zone").innerHTML = '<p class="nota">Per queste date non ho ancora prezzi di zona.</p>'; return; }
   if (!righe.some(function (r) { return r.z.id === S.zona; })) S.zona = righe[0].z.id;
   $("#zone").innerHTML = righe.map(function (r) {
-    return '<div class="carta' + (r.z.id === S.zona ? " on" : "") + '" data-id="' + r.z.id + '">' +
-      "<b>" + esc(r.z.nome) + " · " + r.a.eur + " €/notte</b><span>" + esc(r.z.nota) + "</span>" +
-      '<span class="piccolo">da ' + r.a.min + " a " + r.a.max + " € su " + r.a.campione + " strutture</span></div>";
+    return '<div class="carta conAiuto" data-id="' + r.z.id + '" tabindex="0" role="button" title="' +
+      esc(r.z.nota) + '"><b>' + esc(r.z.nome) + " · " + r.a.eur + " €/notte</b>" +
+      "<span>" + esc(r.z.nota) + "</span>" +
+      '<span class="conta">da ' + r.a.min + " a " + r.a.max + " € su " + r.a.campione + " strutture</span>" +
+      '<span class="aiuto">Mediana di ' + r.a.campione + " strutture che Google Hotels elenca " +
+      esc(M.aZona(r.z.id)) + " in fascia " + esc(fascia) + " per quelle date: si va da " +
+      r.a.min + " a " + r.a.max + " €. La più economica del campione era " + esc(r.a.esempio) + ".</span></div>";
   }).join("");
   $$("#zone .carta").forEach(function (c) {
     c.onclick = function () {
       S.zona = c.dataset.id;
-      $$("#zone .carta").forEach(function (x) { x.classList.remove("on"); });
-      c.classList.add("on");
+      $$("#zone .carta").forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed","false"); });
+      c.classList.add("on"); c.setAttribute("aria-pressed", "true");
     };
   });
 }
@@ -127,10 +131,54 @@ function mostraPasso(n) {
 }
 
 /* Il passo 6 esiste solo in funzione di quello che hai risposto prima:
-   è questo che dà la sensazione del colloquio invece che del modulo. */
+   è questo che dà la sensazione del colloquio invece che del modulo.
+   Un blocco per ogni interesse scelto, e dentro solo i rami che a Tokyo
+   hanno davvero dei luoghi: una scelta che non cambia niente non si offre. */
 function preparaRamo() {
-  $("#ramo-anime").hidden = S.interessi.indexOf("anime") === -1;
-  $("#ramo-hiking").hidden = S.interessi.indexOf("hiking") === -1;
+  var h = [];
+  S.interessi.forEach(function (id) {
+    var i = M.interesse(id);
+    if (!i) return;
+    if (id === "anime") {                       /* l'anime ha il suo mazzo di serie */
+      h.push('<div class="ramo"><h3>' + esc(i.nome) + "</h3>" +
+        '<p class="nota">Quali serie vuoi vedere dal vivo. Il pellegrinaggio (聖地巡礼, ' +
+        "<i>seichi junrei</i>) cambia la rotta: alcuni luoghi sono lontani dai giri classici.</p>" +
+        '<div class="carte fitte" data-serie="1">' + D.anime.map(function (a) {
+          var dove = a.luoghi.map(function (l) { return M.citta(M.luogo(l).citta).nome; });
+          var uniq = dove.filter(function (v, k) { return dove.indexOf(v) === k; });
+          return '<div class="carta' + (S.anime.indexOf(a.id) !== -1 ? " on" : "") +
+            '" data-serie-id="' + a.id + '"><b>' + esc(a.nome) + "</b><span>" +
+            esc(uniq.join(", ")) + "</span></div>";
+        }).join("") + "</div></div>");
+      return;
+    }
+    var rami = M.ramiDisponibili(id, S.soloTokyo);
+    if (!rami.length) return;
+    h.push('<div class="ramo"><h3>' + esc(i.nome) + "</h3>" +
+      (i.dettaglio ? '<p class="nota">' + esc(i.dettaglio) + "</p>" : "") +
+      '<div class="carte fitte">' + rami.map(function (r) {
+        return '<div class="carta' + (S.rami.indexOf(r.id) !== -1 ? " on" : "") +
+          '" data-ramo="' + r.id + '"><b>' + esc(r.nome) + "</b><span>" + esc(r.desc) + "</span>" +
+          '<span class="conta">' + r.quanti + (r.quanti === 1 ? " luogo" : " luoghi") + "</span></div>";
+      }).join("") + "</div></div>");
+  });
+  $("#rami").innerHTML = h.join("") ||
+    '<p class="nota">Per quello che hai scelto non ci sono altre domande: si va avanti.</p>';
+
+  $$("#rami .carta[data-ramo]").forEach(function (c) {
+    c.onclick = function () {
+      var id = c.dataset.ramo, k = S.rami.indexOf(id);
+      if (k === -1) S.rami.push(id); else S.rami.splice(k, 1);
+      c.classList.toggle("on");
+    };
+  });
+  $$("#rami .carta[data-serie-id]").forEach(function (c) {
+    c.onclick = function () {
+      var id = c.dataset.serieId, k = S.anime.indexOf(id);
+      if (k === -1) S.anime.push(id); else S.anime.splice(k, 1);
+      c.classList.toggle("on");
+    };
+  });
 }
 
 function leggiPasso(n) {
@@ -153,9 +201,12 @@ function leggiPasso(n) {
   }
   if (n === 6) {
     S.voliInterni = $$('input[name=voli]').filter(function (r) { return r.checked; })[0].value;
-    S.budgetMax = +$("#budget").value || 0;
-    if (S.interessi.indexOf("hiking") !== -1 && $("#fuji-si").checked && S.interessi.indexOf("insolito") === -1)
-      S.interessi.push("insolito");
+    /* i rami spariti perché l'interesse è stato deselezionato non devono restare */
+    S.rami = S.rami.filter(function (t) {
+      return S.interessi.some(function (i) {
+        return M.ramiDisponibili(i, S.soloTokyo).some(function (r) { return r.id === t; });
+      });
+    });
   }
   if (n === 7) S.stile = $$('input[name=stile]').filter(function (r) { return r.checked; })[0].value;
   return true;
@@ -163,8 +214,9 @@ function leggiPasso(n) {
 
 /* ========================================================= RISULTATO ===== */
 function calcolaEMostra() {
-  var r = M.pianifica(S);
-  var comp = M.compromessi(S, r);
+  var input = perMotore();
+  var r = M.pianifica(input);
+  var comp = M.compromessi(input, r);
   $("#wizard").hidden = true;
   $("#risultato").hidden = false;
   COMP = comp;
@@ -209,6 +261,8 @@ function disegna(r, comp) {
     "<label>Ritmo<select id=\"m-ritmo\">" + ["lento", "medio", "veloce"].map(function (x) {
       return '<option value="' + x + '"' + (x === S.ritmo ? " selected" : "") + ">" + x + "</option>";
     }).join("") + "</select></label>" +
+    '<label>Tetto di spesa per il gruppo, in euro<input type="number" id="m-budget" min="0" step="100" value="' +
+      (S.budgetMax || "") + '" placeholder="nessuno"></label>' +
     "<label>Voli interni<select id=\"m-voli\">" +
       '<option value="si"' + (S.voliInterni === "si" ? " selected" : "") + ">sì</option>" +
       '<option value="no"' + (S.voliInterni === "no" ? " selected" : "") + ">no, solo treno</option>" +
@@ -434,6 +488,8 @@ function agganciaRisultato() {
     mg.oninput = function () { $("#m-giorni-out").textContent = mg.value; };
     mg.onchange = function () { S.giorni = +mg.value; calcolaEMostra(); };
   }
+  var mb = $("#m-budget");
+  if (mb) mb.onchange = function () { S.budgetMax = +mb.value || 0; calcolaEMostra(); };
   ["m-stagione:stagione", "m-ritmo:ritmo", "m-voli:voliInterni"].forEach(function (par) {
     var p = par.split(":"), el = $("#" + p[0]);
     if (el) el.onchange = function () { S[p[1]] = el.value; calcolaEMostra(); };
@@ -455,7 +511,7 @@ function agganciaRisultato() {
 
 /* ------------------------------------------------------------- AVVIO ----- */
 function avvia() {
-  riempiPartenze(); riempiStagioni(); riempiInteressi(); riempiSerie(); riempiGiaVisti();
+  riempiPartenze(); riempiStagioni(); riempiInteressi(); riempiGiaVisti();
 
   $("#giorni").oninput = function () { $("#giorni-out").textContent = this.value; };
   $$('input[name=pv]').forEach(function (r) {

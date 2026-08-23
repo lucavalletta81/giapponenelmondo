@@ -216,3 +216,36 @@ svg.mappa .guida{ stroke: #c9c9c9; stroke-width: 1; }
 /* Le righe puramente informative non si cliccano: non c'è niente da applicare. */
 .compromesso.info { cursor: default; border-style: dashed; border-color: var(--gray-400); }
 .compromesso.info:hover { background: transparent; border-color: var(--gray-400); }
+
+/* --------------------------------------------- passo 6: le ramificazioni --
+   Un blocco per interesse scelto. Il contatore dice quanti luoghi porta ogni
+   ramo: se dice 1, sai già che sposta poco.                                  */
+.ramo { border-top: 1px solid var(--gray-200); padding-top: 16px; margin-top: 20px; }
+.ramo:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+.ramo h3 { margin-bottom: 4px; }
+.ramo .nota { margin-top: 0; margin-bottom: 10px; }
+.carta .conta {
+  display: block; margin-top: 5px; font-size: 11px; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--gray-600); opacity: .8;
+}
+
+/* il dettaglio lungo compare passando sopra o arrivandoci da tastiera */
+.carta.conAiuto { position: relative; }
+.carta .aiuto {
+  position: absolute; left: 0; right: 0; bottom: calc(100% + 6px); z-index: 20;
+  background: var(--black); color: var(--white); padding: 10px 12px; border-radius: 4px;
+  font-size: 13px; line-height: 1.45; text-transform: none; letter-spacing: 0;
+  box-shadow: var(--shadow); opacity: 0; visibility: hidden; transition: opacity .14s;
+  pointer-events: none;
+}
+.carta.conAiuto:hover .aiuto,
+.carta.conAiuto:focus-visible .aiuto { opacity: 1; visibility: visible; }
+.carta.conAiuto:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* su schermo stretto e su touch il riquadro fluttuante non serve: il dettaglio
+   sta sotto, sempre visibile, invece di apparire e sparire */
+@media (hover: none), (max-width: 620px) {
+  .carta .aiuto {
+    position: static; opacity: 1; visibility: visible; box-shadow: none;
+    background: var(--gray-100); color: var(--black); margin-top: 8px; padding: 8px 10px; font-size: 12.5px;
+  }
+}

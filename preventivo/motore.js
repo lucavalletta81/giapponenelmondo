@@ -88,6 +88,27 @@ function aZona(id) {
   return (/^[AEIOU]/i.test(n) ? "ad " : "a ") + n;
 }
 
+/* I rami che hanno almeno un luogo dentro il perimetro attuale. Offrire una
+   scelta che non può cambiare niente è peggio che non offrirla.              */
+function ramiDisponibili(idInteresse, soloTokyo) {
+  var i = null;
+  for (var k=0;k<D.interessi.length;k++) if (D.interessi[k].id === idInteresse) i = D.interessi[k];
+  if (!i || !i.rami || !i.rami.length) return [];
+  var dentro = soloTokyo === false ? null : ["tokyo"].concat(GITE);
+  var tag = {};
+  D.luoghi.forEach(function (l) {
+    if (dentro && dentro.indexOf(l.citta) === -1) return;
+    l.tag.forEach(function (t) { tag[t] = (tag[t] || 0) + 1; });
+  });
+  return i.rami.filter(function (r) { return tag[r.id]; })
+               .map(function (r) { var c={}; for(var k in r) c[k]=r[k]; c.quanti = tag[r.id]; return c; });
+}
+
+function interesse(id) {
+  for (var k=0;k<D.interessi.length;k++) if (D.interessi[k].id === id) return D.interessi[k];
+  return null;
+}
+
 function nomeZona(id) {
   var z = zoneDisponibili();
   for (var i=0;i<z.length;i++) if (z[i].id === id) return z[i].nome;
@@ -821,6 +842,7 @@ return {
   citta: citta, luogo: luogo, stagione: stagione, serie: serie, partenza: partenza,
   tratta: tratta, eur: eur, arrotonda: arrotonda, RITMI: RITMI, STILI: STILI,
   zoneDisponibili: zoneDisponibili, nomeZona: nomeZona, aZona: aZona,
+  ramiDisponibili: ramiDisponibili, interesse: interesse,
   voloReale: voloReale, alloggioReale: alloggioReale, cambio: cambio, GITE: GITE
 };
 })();
