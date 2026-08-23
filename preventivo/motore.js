@@ -605,8 +605,15 @@ function verificato(x) { return !!x && x.c === "V"; }
    conta è la quota dell'IMPORTO che arriva da voci verificate. Li pubblichiamo
    entrambi, con la formula scritta a schermo, così chiunque può rifare il conto.  */
 function contaStime(itin, liv) {
-  var tot=0, stime=0;
-  for (var i=0;i<itin.attivita.length;i++){ tot++; if (!verificato(itin.attivita[i])) stime++; }
+  var tot=0, stime=0, spese=0;
+  /* Una "spesa tipica" (un ramen, una serata al Golden Gai) non ha un listino
+     ufficiale: non diventerà mai un prezzo verificato. Tenerla nel mucchio
+     delle stime rende il contatore impossibile da abbassare, che è il difetto
+     che ci avevano segnalato. Sta in una colonna sua, dichiarata.            */
+  for (var i=0;i<itin.attivita.length;i++){
+    if (itin.attivita[i].tipo === "spesa") { spese++; continue; }
+    tot++; if (!verificato(itin.attivita[i])) stime++;
+  }
   for (var j=0;j<itin.tappe.length;j++){ tot++; if (!verificato(citta(itin.tappe[j].citta))) stime++; }
   var g = itin.gambe.concat(itin.ritorno? [itin.ritorno]:[]);
   for (var k=0;k<g.length;k++){ tot++; if (g[k].stimata || !g[k].verificata) stime++; }
@@ -625,7 +632,7 @@ function contaStime(itin, liv) {
     if (itin.alloggio_vero) euroVeri += v.alloggio;
   }
   return {
-    totale: tot, stime: stime, perc: Math.round(stime/tot*100),
+    totale: tot, stime: stime, spese: spese, perc: Math.round(stime/tot*100),
     euro_tot: euroTot, euro_veri: euroVeri,
     perc_importo: euroTot ? Math.round((1 - euroVeri/euroTot) * 100) : null
   };

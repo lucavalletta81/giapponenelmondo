@@ -310,10 +310,20 @@ function disegna(r, comp) {
         "</td><td class=num>" + eu(M.eur(b.yen)) + "</td><td>" + (b.jr ? "coperta" : "no") + "</td></tr>";
     }).join("") + "</table></div></details>");
 
-  h.push("<details><summary>Cosa è incluso negli ingressi</summary><ul>" +
+  h.push('<details><summary>Cosa è incluso negli ingressi, e da dove viene ogni prezzo</summary>' +
+    '<div class="tabella-wrap"><table><tr><th>Voce</th><th class=num>costo</th><th>prezzo</th><th>fonte</th></tr>' +
     (liv.attIncluse.length ? liv.attIncluse.map(function (a) {
-      return "<li>" + esc(a.nome) + " — " + eu(M.eur(a.yen)) + "</li>";
-    }).join("") : "<li>Solo cose gratuite: a questo livello si punta su quello che non si paga.</li>") + "</ul></details>");
+      var stato = a.c === "V" ? '<span class="tag ok">verificato</span>'
+                : a.tipo === "spesa" ? '<span class="tag">spesa tipica</span>'
+                : '<span class="tag">stima</span>';
+      var fonte = a.c === "V" ? esc(a.fonte || "") + (a.verificato ? " · " + a.verificato.split("-").reverse().join("/") : "")
+                : a.fascia_prezzo ? esc(a.fascia_prezzo)
+                : a.tipo === "spesa" ? "non esiste un listino: è quanto si spende"
+                : "scritto a mano nel catalogo";
+      return "<tr><td>" + esc(a.nome) + "</td><td class=num>" + eu(M.eur(a.yen)) +
+             "</td><td>" + stato + "</td><td>" + fonte + "</td></tr>";
+    }).join("") : '<tr><td colspan="4">Solo cose gratuite: a questo livello si punta su quello che non si paga.</td></tr>') +
+    "</table></div></details>");
 
   /* --- il pass ---------------------------------------------------------- */
   h.push('<div class="box attenzione"><h3>Japan Rail Pass: conviene o no</h3>');
@@ -368,7 +378,10 @@ function disegna(r, comp) {
   /* --- onestà ----------------------------------------------------------- */
   h.push('<div class="box"><h3>Da dove vengono questi prezzi</h3>' +
     "<p><b>" + r.attendibilita.stime + " voci su " + r.attendibilita.totale + " (" +
-    r.attendibilita.perc + "%) sono stime</b>, non tariffe controllate su fonte ufficiale. " +
+    r.attendibilita.perc + "%) sono stime</b>, non tariffe controllate su fonte ufficiale" +
+    (r.attendibilita.spese ? ", più " + r.attendibilita.spese + " voci che sono <b>spese tipiche</b> " +
+      "(un ramen, una serata fuori): quelle un listino ufficiale non ce l'hanno, quindi restano " +
+      "stime per sempre e le teniamo contate a parte" : "") + ". " +
     (r.attendibilita.perc_importo !== null
       ? ("Ma le voci non pesano uguale: contando gli <b>euro</b>, la quota che arriva da stime è il <b>" +
          r.attendibilita.perc_importo + "%</b> del totale (" +

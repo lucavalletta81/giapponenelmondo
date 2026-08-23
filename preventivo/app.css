@@ -249,3 +249,6 @@ svg.mappa .guida{ stroke: #c9c9c9; stroke-width: 1; }
     background: var(--gray-100); color: var(--black); margin-top: 8px; padding: 8px 10px; font-size: 12.5px;
   }
 }
+
+/* L'etichetta verde dice che quel prezzo ha una fonte e una data. */
+.tag.ok { color: #1f6b44; border-color: #1f6b44; }
