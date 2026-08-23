@@ -282,6 +282,33 @@
 .compromesso.info { cursor: default; border-style: dashed; border-color: var(--pv-linea2); }
 .compromesso.info:hover { background: transparent; border-color: var(--pv-linea2); }
 
+/* il confronto fra due stagioni, alla Apple: stesse righe, due colonne */
+.confronto { border: 1px solid var(--pv-linea); border-radius: 14px; padding: 20px 22px 18px; margin: 22px 0; background: var(--pv-carta); }
+.confronto > b { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-muto); display: block; margin-bottom: 6px; }
+.confronto > .nota { margin-top: 0; }
+.confronto .griglia { display: grid; grid-template-columns: minmax(120px, 1.1fr) 1fr 1fr; margin-top: 12px; border-top: 1px solid var(--pv-linea); }
+.confronto .r { display: contents; }
+.confronto .r > div { padding: 10px 12px; border-bottom: 1px solid var(--pv-linea); font-size: .92rem; line-height: 1.45; }
+.confronto .r .l { color: var(--pv-muto); font-size: .85rem; padding-left: 0; }
+.confronto .r .c { font-variant-numeric: tabular-nums; font-weight: 500; border-left: 1px solid var(--pv-linea); }
+.confronto .r .c.meglio { color: var(--pv-verde); background: #F0F7F2; }
+.confronto .r.testa > div { border-bottom: 2px solid var(--pv-ink); padding-top: 14px; padding-bottom: 12px; }
+.confronto .r.testa .eti { display: block; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-muto); font-weight: 600; margin-bottom: 4px; }
+.confronto .r.testa .nome { font-weight: 600; color: var(--pv-ink); font-size: 1rem; }
+.confronto .r.testa select { margin-top: 0; width: 100%; max-width: 260px; padding: 6px 8px; font-weight: 600; }
+.confronto .r.grande .c { font-size: 1.55rem; font-weight: 700; color: var(--pv-ink); letter-spacing: -.02em; padding-top: 14px; padding-bottom: 12px; }
+.confronto .r.grande .c.meglio { color: var(--pv-verde); }
+.confronto .r.sep > div { border-bottom: none; padding-top: 16px; padding-bottom: 2px; }
+.confronto .r.sep .l { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-muto); font-weight: 600; }
+.confronto .r.testo .c { font-weight: 400; font-size: .85rem; color: var(--pv-testo); }
+.confronto .esito { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; padding-top: 14px; }
+.confronto .esito .d { font-weight: 600; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+@media (max-width: 620px) {
+  .confronto .griglia { grid-template-columns: minmax(86px, .9fr) 1fr 1fr; }
+  .confronto .r > div { padding: 8px 6px; font-size: .84rem; }
+  .confronto .r.grande .c { font-size: 1.15rem; }
+}
+
 .manopole { border: 1px solid var(--pv-linea); border-radius: var(--pv-raggio); padding: 15px 19px 17px; margin: 22px 0; background: var(--pv-fondo); }
 .manopole > b { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-muto); display: block; margin-bottom: 6px; }
 .manopole .riga { align-items: flex-end; }

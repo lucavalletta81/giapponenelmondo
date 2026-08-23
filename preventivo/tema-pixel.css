@@ -138,6 +138,16 @@
 .pv-layout[data-tema="pixel"] .compromesso:hover { background: var(--pv-rosso-w); transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--pv-ink); }
 .pv-layout[data-tema="pixel"] .compromesso.info { border-style: dashed; box-shadow: none; }
 .pv-layout[data-tema="pixel"] .compromesso .d { font-family: var(--pv-font-px); font-size: 11px; }
+.pv-layout[data-tema="pixel"] .confronto { border: 3px solid var(--pv-ink); border-radius: 0; box-shadow: var(--pv-ombra); }
+.pv-layout[data-tema="pixel"] .confronto > b { font-family: var(--pv-font-px); font-size: 9px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .griglia { border-top: 2px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .r > div { border-bottom-color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .r .c { border-left: 2px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .r .c.meglio { background: #DDF3C8; color: var(--pv-verde); }
+.pv-layout[data-tema="pixel"] .confronto .r.testa > div { border-bottom: 3px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .r.testa .eti, .pv-layout[data-tema="pixel"] .confronto .r.sep .l { font-family: var(--pv-font-px); font-size: 7px; color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .confronto .r.grande .c { font-family: var(--pv-font-px); font-size: 14px; }
+.pv-layout[data-tema="pixel"] .confronto .esito .d { font-family: var(--pv-font-px); font-size: 10px; }
 .pv-layout[data-tema="pixel"] .manopole { border: 2px solid var(--pv-ink); border-radius: 0; background: var(--pv-crema); }
 .pv-layout[data-tema="pixel"] .manopole > b { font-family: var(--pv-font-px); font-size: 8px; color: var(--pv-ink); }
 .pv-layout[data-tema="pixel"] svg.mappa { border: 2px solid var(--pv-ink); border-radius: 0; background: var(--pv-crema); }

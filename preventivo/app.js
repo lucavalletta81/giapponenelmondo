@@ -12,7 +12,8 @@ var S = {
   partenza: "fco", stagione: "ott", giorni: 14, ritmo: "medio", stile: "equilibrato",
   adulti: 2, bambini: 0, interessi: [], anime: [], giaVisti: [], primaVolta: true,
   voliInterni: "si", budgetMax: 0, ancoraggio: "tokyo", jrPass: "auto",
-  soloTokyo: true, zona: null, rami: []
+  soloTokyo: true, zona: null, rami: [],
+  confronto: null          /* la stagione affiancata nel confronto del risultato */
 };
 
 /* Il motore vuole un solo elenco di tag: interessi grossi + rami fini.
@@ -298,17 +299,14 @@ function disegna(r, comp) {
   M.prosa(r).forEach(function (p) { h.push("<p>" + esc(p) + "</p>"); });
   h.push("</div>");
 
-  /* --- manopole live ---------------------------------------------------- */
-  h.push('<div class="manopole"><b>Prova a cambiare qualcosa</b>' +
-    '<div class="riga">' +
-    '<label>Giorni: <output id="m-giorni-out">' + S.giorni + "</output>" +
-      '<input type="range" id="m-giorni" min="5" max="30" value="' + S.giorni + '"></label>' +
-    "<label>Stagione<select id=\"m-stagione\">" + D.stagioni.map(function (s) {
-      return '<option value="' + s.id + '"' + (s.id === S.stagione ? " selected" : "") + ">" + esc(s.nome) + "</option>";
-    }).join("") + "</select></label>" +
-    "<label>Ritmo<select id=\"m-ritmo\">" + ["lento", "medio", "veloce"].map(function (x) {
-      return '<option value="' + x + '"' + (x === S.ritmo ? " selected" : "") + ">" + x + "</option>";
-    }).join("") + "</select></label>" +
+  /* --- confronto fra stagioni ------------------------------------------- */
+  /* Come la pagina "confronta" di Apple: due colonne, le stesse righe, e si
+     vede subito dove sta la differenza. La stagione è la leva più grossa,
+     quindi si confronta quella; di default l'alternativa più economica. */
+  h.push(confronto(r));
+
+  /* il tetto di spesa resta, ma in una riga discreta sotto il confronto */
+  h.push('<div class="manopole"><div class="riga">' +
     '<label>Tetto di spesa per il gruppo, in euro<input type="number" id="m-budget" min="0" step="100" value="' +
       (S.budgetMax || "") + '" placeholder="nessuno"></label>' +
     (S.soloTokyo === false
@@ -512,6 +510,80 @@ function disegna(r, comp) {
   return h.join("");
 }
 
+/* ---------------------------------------------------------- CONFRONTO ---- */
+function confronto(r) {
+  var input = perMotore();
+  /* se non è stata scelta, l'alternativa è la stagione che costa meno */
+  if (!S.confronto || S.confronto === S.stagione) {
+    var meglio = null;
+    D.stagioni.forEach(function (s) {
+      if (s.id === S.stagione) return;
+      var i2 = perMotore(); i2.stagione = s.id;
+      var tot = M.pianifica(i2).livelli[S.stile].perPersona;
+      if (!meglio || tot < meglio.tot) meglio = { id: s.id, tot: tot };
+    });
+    S.confronto = meglio ? meglio.id : S.stagione;
+  }
+  var i2 = perMotore(); i2.stagione = S.confronto;
+  var r2 = M.pianifica(i2);
+  var A = r.livelli[S.stile], B = r2.livelli[S.stile];
+  var sA = r.stagione, sB = r2.stagione;
+  var persone = S.adulti + S.bambini;
+
+  function cella(v, altro, fmt, menoEmeglio) {
+    var cls = "";
+    if (typeof v === "number" && typeof altro === "number" && v !== altro) {
+      cls = (menoEmeglio !== false ? v < altro : v > altro) ? " meglio" : "";
+    }
+    return '<div class="c' + cls + '">' + fmt(v) + "</div>";
+  }
+  function riga(nome, a, b, fmt, menoEmeglio) {
+    return '<div class="r"><div class="l">' + nome + "</div>" +
+      cella(a, b, fmt, menoEmeglio) + cella(b, a, fmt, menoEmeglio) + "</div>";
+  }
+  var delta = B.perPersona - A.perPersona;
+  var h = [];
+  h.push('<div class="confronto"><b>Confronta con un\'altra stagione</b>' +
+    '<p class="nota">Stesso viaggio, stesse risposte, cambia solo quando parti. Le due colonne ' +
+    "sono due preventivi rifatti da capo: evidenziato in verde quello che costa meno.</p>");
+  h.push('<div class="griglia">');
+  /* testa: la stagione scelta e quella da confrontare */
+  h.push('<div class="r testa"><div class="l"></div>' +
+    '<div class="c"><span class="eti">La tua scelta</span><span class="nome">' + esc(sA.nome) + "</span></div>" +
+    '<div class="c"><span class="eti">Confronta con</span><select id="c-stagione">' +
+      D.stagioni.filter(function (s) { return s.id !== S.stagione; }).map(function (s) {
+        return '<option value="' + s.id + '"' + (s.id === S.confronto ? " selected" : "") + ">" + esc(s.nome) + "</option>";
+      }).join("") + "</select></div></div>");
+  /* il numero grosso */
+  h.push('<div class="r grande"><div class="l">A persona, livello ' + esc(A.nome) + "</div>" +
+    cella(A.perPersona, B.perPersona, eu0) + cella(B.perPersona, A.perPersona, eu0) + "</div>");
+  h.push(riga("Gruppo di " + persone, A.gruppo, B.gruppo, eu0));
+  h.push(riga("Al giorno, a persona", A.alGiorno, B.alGiorno, eu0));
+  h.push('<div class="r sep"><div class="l">Le voci che cambiano</div><div class="c"></div><div class="c"></div></div>');
+  h.push(riga("Volo", A.voci.volo, B.voci.volo, eu));
+  h.push(riga("Alloggio, " + A.notti + " notti", A.voci.alloggio, B.voci.alloggio, eu));
+  h.push(riga("Tutto il resto", A.perPersona - A.voci.volo - A.voci.alloggio,
+    B.perPersona - B.voci.volo - B.voci.alloggio, eu));
+  h.push('<div class="r sep"><div class="l">Gli altri livelli</div><div class="c"></div><div class="c"></div></div>');
+  ["essenziale", "equilibrato", "comodo"].forEach(function (k) {
+    if (k === S.stile) return;
+    h.push(riga(r.livelli[k].nome + ", a persona", r.livelli[k].perPersona, r2.livelli[k].perPersona, eu0));
+  });
+  h.push('<div class="r sep"><div class="l">Com\'è</div><div class="c"></div><div class="c"></div></div>');
+  h.push('<div class="r testo"><div class="l">Clima e affollamento</div>' +
+    '<div class="c">' + esc(sA.nota || "") + "</div><div class=\"c\">" + esc(sB.nota || "") + "</div></div>");
+  h.push('<div class="r testo"><div class="l">Il volo è</div>' +
+    '<div class="c">' + (A.volo_fonte ? "un prezzo vero (Google Flights)" : "una stima") + "</div>" +
+    '<div class="c">' + (B.volo_fonte ? "un prezzo vero (Google Flights)" : "una stima") + "</div></div>");
+  h.push("</div>");   /* griglia */
+  h.push('<div class="esito"><span class="d ' + (delta < 0 ? "giu" : delta > 0 ? "su" : "") + '">' +
+    (delta === 0 ? "Costa uguale" : (delta < 0 ? "−" : "+") + eu0(Math.abs(delta)) + " a persona" +
+      (delta < 0 ? " partendo " : " partendo ") + "a " + esc(sB.nome).toLowerCase()) + "</span>" +
+    '<button type="button" id="c-applica">Passa a ' + esc(sB.nome) + " →</button></div>");
+  h.push("</div>");
+  return h.join("");
+}
+
 /* ---------------------------------------------------------- MAPPINA ------ */
 /* Non è una mappa vera: è una proiezione equirettangolare corretta in
    longitudine, inquadrata sul giro invece che su tutto il Giappone. Serve a
@@ -572,17 +644,17 @@ function agganciaRisultato() {
   $$("#risultato .prezzo").forEach(function (p) {
     p.onclick = function () { S.stile = p.dataset.stile; calcolaEMostra(); };
   });
-  var mg = $("#m-giorni");
-  if (mg) {
-    mg.oninput = function () { $("#m-giorni-out").textContent = mg.value; };
-    mg.onchange = function () { S.giorni = +mg.value; calcolaEMostra(); };
-  }
   var mb = $("#m-budget");
   if (mb) mb.onchange = function () { S.budgetMax = +mb.value || 0; calcolaEMostra(); };
-  ["m-stagione:stagione", "m-ritmo:ritmo", "m-voli:voliInterni"].forEach(function (par) {
-    var p = par.split(":"), el = $("#" + p[0]);
-    if (el) el.onchange = function () { S[p[1]] = el.value; calcolaEMostra(); };
-  });
+  var mv = $("#m-voli");
+  if (mv) mv.onchange = function () { S.voliInterni = mv.value; calcolaEMostra(); };
+  var cs = $("#c-stagione");
+  if (cs) cs.onchange = function () { S.confronto = cs.value; calcolaEMostra(); };
+  var ca = $("#c-applica");
+  if (ca) ca.onclick = function () {
+    /* si passa alla stagione affiancata; quella di prima resta nel confronto */
+    var prima = S.stagione; S.stagione = S.confronto; S.confronto = prima; calcolaEMostra();
+  };
   $$("#risultato .compromesso").forEach(function (el) {
     el.onclick = function () {
       var c = COMP[+el.dataset.i];
