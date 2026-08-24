@@ -413,7 +413,7 @@ function itinerarioTokyo(input, mese, score, oreCitta, dettagli) {
     var t = tratta("tokyo", g.citta);
     return { da: "tokyo", a: g.citta, min: t.min * 2, yen: t.yen * 2, jr: t.jr,
              mezzo: t.mezzo + " (andata e ritorno in giornata)",
-             stimata: t.stimata, verificata: false, giorno: 1, gita: true };
+             stimata: t.stimata, verificata: t.verificata, giorno: 1, gita: true };
   });
 
   var scartate = [];
@@ -590,7 +590,7 @@ function pianifica(input) {
   itin.alloggio_vero = !!livelli[input.stile].alloggio_fonte;
   return { input:input, itinerario:itin, treni:treni, livelli:livelli,
            stagione: stagione(input.stagione), cambio: cambio(),
-           zone: zoneDisponibili(), attendibilita: contaStime(itin, livelli[input.stile]) };
+           zone: zoneDisponibili(), attendibilita: contaStime(itin, livelli[input.stile], treni) };
 }
 
 /* Quante voci usate sono ancora stime: si dichiara a schermo.
@@ -604,7 +604,7 @@ function verificato(x) { return !!x && x.c === "V"; }
    verificare l'alloggio, il che è falso: premia il lavoro sbagliato. Il numero che
    conta è la quota dell'IMPORTO che arriva da voci verificate. Li pubblichiamo
    entrambi, con la formula scritta a schermo, così chiunque può rifare il conto.  */
-function contaStime(itin, liv) {
+function contaStime(itin, liv, treni) {
   var tot=0, stime=0, spese=0;
   /* Una "spesa tipica" (un ramen, una serata al Golden Gai) non ha un listino
      ufficiale: non diventerà mai un prezzo verificato. Tenerla nel mucchio
@@ -637,6 +637,18 @@ function contaStime(itin, liv) {
       if (incl[q].c === "V") yenVeri += incl[q].yen;
     }
     if (yenTot > 0) euroVeri += v.attivita * (yenVeri / yenTot);
+
+    /* la voce "trasporti" tiene insieme due cose diverse: i biglietti del giro,
+       che dalla milestone 8 sono tariffe lette alla fonte, e la metropolitana
+       urbana, che resta una spesa media a giornata. Conta come verificata solo
+       la prima parte, e in proporzione a quanto pesa. */
+    var bi = (treni && treni.biglietti) || [], yTot = 0, yVeri = 0;
+    for (var b=0;b<bi.length;b++) {
+      yTot += bi[b].yen;
+      if (!bi[b].stimata && bi[b].verificata) yVeri += bi[b].yen;
+    }
+    var yLocale = (treni && treni.locale) || 0;
+    if (yTot + yLocale > 0) euroVeri += v.trasporti * (yVeri / (yTot + yLocale));
   }
   return {
     totale: tot, stime: stime, spese: spese, perc: Math.round(stime/tot*100),
@@ -806,9 +818,8 @@ function prosa(r) {
   } else {
     p.push("Attenzione al Japan Rail Pass: con questo itinerario NON conviene. " +
       "Compri i biglietti singoli e risparmi circa " + arrotonda(eur(r.treni.risparmio)) +
-      " euro a persona. Attenzione però: il prezzo del pass nel nostro catalogo è ancora una " +
-      "stima, non una tariffa verificata, quindi questo è l'unico consiglio della pagina che " +
-      "va ricontrollato sul sito ufficiale prima di deciderci qualcosa.");
+      " euro a persona. Il conto regge su numeri verificati: il pass al prezzo ufficiale del " +
+      "JR Group in vigore dal 1° ottobre 2026, e le tariffe dei treni lette una per una.");
   }
 
   var animeScelti = i.anime.map(function(a){ return serie(a) ? serie(a).nome : a; });

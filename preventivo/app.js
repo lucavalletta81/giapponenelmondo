@@ -370,8 +370,13 @@ function disegna(r, comp) {
   /* dettagli apribili */
   h.push("<details><summary>Notte per notte</summary><div class=\"tabella-wrap\"><table><tr><th>Città</th><th class=num>notti</th><th class=num>a notte</th><th class=num>totale</th></tr>" +
     liv.dettAlloggio.map(function (a) {
+      /* due sorgenti, due unità: il prezzo VERO di Google Hotels arriva già in
+         euro (tariffaEur), quello di catalogo in yen. Prima si convertiva tutto
+         come se fosse yen, e la riga del prezzo vero finiva a schermo come NaN. */
+      var notte  = a.tariffaEur != null ? a.tariffaEur : M.eur(a.tariffa);
+      var totale = a.subEur     != null ? a.subEur     : M.eur(a.sub);
       return "<tr><td>" + esc(a.citta) + "</td><td class=num>" + a.notti + "</td><td class=num>" +
-        eu(M.eur(a.tariffa)) + "</td><td class=num>" + eu(M.eur(a.sub)) + "</td></tr>";
+        eu(notte) + "</td><td class=num>" + eu(totale) + "</td></tr>";
     }).join("") + "</table></div></details>");
 
   if (liv.alloggio_fonte && liv.alloggio_fonte.auto) {
@@ -388,11 +393,17 @@ function disegna(r, comp) {
       }).join("") + "</table></div></details>");
   }
 
-  h.push("<details><summary>Ogni biglietto del giro</summary><div class=\"tabella-wrap\"><table><tr><th>Tratta</th><th>Mezzo</th><th class=num>min</th><th class=num>costo</th><th>JR Pass</th></tr>" +
+  h.push("<details><summary>Ogni biglietto del giro</summary><div class=\"tabella-wrap\"><table><tr><th>Tratta</th><th>Mezzo</th><th class=num>min</th><th class=num>costo</th><th>prezzo</th><th>JR Pass</th></tr>" +
     r.treni.biglietti.map(function (b) {
+      /* la stessa distinzione che vale per gli ingressi vale per i treni: una
+         tariffa letta alla fonte lo dice, una stimata anche. */
+      var prov = b.stimata ? '<span class="tag">stimata</span>'
+               : b.verificata ? '<span class="tag ok">verificata</span>'
+               : '<span class="tag">stima</span>';
       return "<tr><td>" + esc(M.citta(b.da).nome + " → " + M.citta(b.a).nome) + "</td><td>" + esc(b.mezzo) +
-        (b.stimata ? ' <span class="tag">stimata</span>' : "") + "</td><td class=num>" + b.min +
-        "</td><td class=num>" + eu(M.eur(b.yen)) + "</td><td>" + (b.jr ? "coperta" : "no") + "</td></tr>";
+        "</td><td class=num>" + b.min +
+        "</td><td class=num>" + eu(M.eur(b.yen)) + "</td><td>" + prov +
+        "</td><td>" + (b.jr ? "coperta" : "no") + "</td></tr>";
     }).join("") + "</table></div></details>");
 
   h.push('<details><summary>Cosa è incluso negli ingressi, e da dove viene ogni prezzo</summary>' +
@@ -418,8 +429,11 @@ function disegna(r, comp) {
     ? "Conviene il pass: risparmi " + eu(M.eur(r.treni.risparmio)) + " a persona. Attivalo il giorno " + r.treni.passDal + "."
     : "Non conviene il pass: coi biglietti singoli risparmi " + eu(M.eur(r.treni.risparmio)) + " a persona.") + "</b></p>");
   h.push('<p class="nota">Il conto tiene conto che il pass non deve coprire tutto il viaggio, ' +
-    "ma solo la finestra in cui cadono i trasferimenti cari. Il prezzo del pass nel dataset è marcato come stima: " +
-    "va riverificato sul sito ufficiale prima di dare questo consiglio a qualcuno.</p></div>");
+    "ma solo la finestra in cui cadono i trasferimenti cari. Il prezzo è quello ufficiale del JR Group " +
+    "(" + esc(DATI.pass[0].fonte) + ", letto il " + DATI.pass[0].verificato.split("-").reverse().join("/") + "): " +
+    "dal 1° ottobre 2026 il pass da 7 giorni costa " + DATI.pass[0].yen.toLocaleString("it") + " yen, " +
+    "prima ne costava " + DATI.pass[0].prima.toLocaleString("it") + ". Qui si usa il prezzo nuovo, " +
+    "perché è quello che pagherai. Anche le tariffe dei treni sono verificate una per una.</p></div>");
 
   /* --- itinerario ------------------------------------------------------- */
   h.push("<h2>L'itinerario che ne esce</h2>");
@@ -492,7 +506,8 @@ function disegna(r, comp) {
     "<p><b>Ancora stime scritte a mano:</b> " +
       (liv.alloggio_fonte ? "" : "l'alloggio (per questa zona e questa fascia Google non aveva " +
         "abbastanza strutture, quindi vale il catalogo); ") +
-      "treni e metropolitana, ingressi ed esperienze, quanto si spende per mangiare, " +
+      "la metropolitana urbana, i voli dentro il Giappone e i due traghetti, " +
+      "quanto si spende per mangiare, " +
       "assicurazione e souvenir. Nessuna disponibilità viene interrogata: se l'albergo è pieno, " +
       "questo non lo sa.</p>" +
     "<p>Quello che non è né vero né stimato ma <b>calcolato</b> è il ragionamento: come si " +

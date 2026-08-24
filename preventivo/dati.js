@@ -50,11 +50,23 @@ stagioni: [
   { id:"cap",  nome:"25 dic - 5 gen (Capodanno)", mese:12, volo:1.45, hotel:1.40, affoll:5, tag:[],                nota:"Capodanno: molti musei e ristoranti chiusi 1-3 gennaio." }
 ],
 
-/* ------------------------------------------------------------------- PASS */
+/* ------------------------------------------------------------------- PASS
+   Prezzi UFFICIALI del JR Group, letti su japanrailpass.net/en/purchase/price/
+   il 25 agosto 2026. Sono le tariffe dell'Ordinary Car per un adulto.
+
+   Il 9 aprile 2026 il JR Group ha annunciato il rincaro che entra in vigore il
+   1 ottobre 2026: 7 giorni da 50.000 a 53.000 yen, 14 da 80.000 a 84.000, 21
+   da 100.000 a 105.000. Qui si usa il prezzo NUOVO, perché chi legge questa
+   pagina compra dopo quella data; `prima` tiene il vecchio, per chi ha già in
+   mano l'exchange order. Il bambino (6-11 anni) paga metà: lo dice la stessa
+   pagina, e il motore lo applica con il suo coefficiente.                    */
 pass: [
-  { id:"jr7",  nome:"Japan Rail Pass 7 giorni",  giorni:7,  yen:50000,  c:"S", d:"2023-10" },
-  { id:"jr14", nome:"Japan Rail Pass 14 giorni", giorni:14, yen:80000,  c:"S", d:"2023-10" },
-  { id:"jr21", nome:"Japan Rail Pass 21 giorni", giorni:21, yen:100000, c:"S", d:"2023-10" }
+  { id:"jr7",  nome:"Japan Rail Pass 7 giorni",  giorni:7,  yen:53000,  prima:50000,
+    dal:"2026-10-01", c:"V", fonte:"japanrailpass.net/en/purchase/price/", verificato:"2026-08-25" },
+  { id:"jr14", nome:"Japan Rail Pass 14 giorni", giorni:14, yen:84000,  prima:80000,
+    dal:"2026-10-01", c:"V", fonte:"japanrailpass.net/en/purchase/price/", verificato:"2026-08-25" },
+  { id:"jr21", nome:"Japan Rail Pass 21 giorni", giorni:21, yen:105000, prima:100000,
+    dal:"2026-10-01", c:"V", fonte:"japanrailpass.net/en/purchase/price/", verificato:"2026-08-25" }
 ],
 
 /* ------------------------------------------------------ CIBO E TRASPORTO LOCALE
@@ -140,46 +152,46 @@ citta: [
    NOTA: il pass ordinario non copre i Nozomi/Mizuho; qui è semplificato
    assumendo l'uso di Hikari/Sakura (stessi percorsi, 20-30 min in più).       */
 tratte: [
-  { a:"tokyo", b:"kyoto",      min:165, yen:13900, jr:true,  mezzo:"Shinkansen Hikari", c:"S" },
-  { a:"tokyo", b:"osaka",      min:180, yen:14600, jr:true,  mezzo:"Shinkansen Hikari", c:"S" },
-  { a:"tokyo", b:"nagoya",     min:105, yen:11300, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"tokyo", b:"hiroshima",  min:260, yen:19800, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"tokyo", b:"fukuoka",    min:320, yen:23400, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"tokyo", b:"sendai",     min:95,  yen:11200, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"tokyo", b:"kanazawa",   min:155, yen:14400, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"tokyo", b:"matsumoto",  min:165, yen:6900,  jr:true,  mezzo:"Ltd Express Azusa", c:"S" },
-  { a:"tokyo", b:"hakone",     min:95,  yen:2400,  jr:false, mezzo:"Odakyu Romancecar", c:"S" },
-  { a:"tokyo", b:"kamakura",   min:60,  yen:950,   jr:true,  mezzo:"JR Yokosuka", c:"S" },
-  { a:"tokyo", b:"nikko",      min:120, yen:2900,  jr:false, mezzo:"Tobu Spacia", c:"S" },
-  { a:"tokyo", b:"fuji",       min:130, yen:2100,  jr:false, mezzo:"bus da Shinjuku", c:"S" },
-  { a:"tokyo", b:"chichibu",   min:100, yen:1600,  jr:false, mezzo:"Seibu Red Arrow", c:"S" },
+  { a:"tokyo", b:"kyoto", min:165, yen:13970, jr:true, mezzo:"Shinkansen Hikari", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"osaka", min:180, yen:14520, jr:true, mezzo:"Shinkansen Hikari", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"nagoya", min:105, yen:11100, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"hiroshima", min:260, yen:19560, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"fukuoka", min:320, yen:23610, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"sendai", min:95, yen:11430, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"kanazawa", min:155, yen:14400, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"matsumoto", min:165, yen:6730, jr:true, mezzo:"Ltd Express Azusa", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"hakone", min:95, yen:2461, jr:false, mezzo:"Odakyu Romancecar", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"kamakura", min:60, yen:1034, jr:true, mezzo:"JR Yokosuka", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"nikko", min:120, yen:3133, jr:false, mezzo:"Tobu Spacia", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"fuji", min:130, yen:2200, jr:false, mezzo:"bus da Shinjuku", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"tokyo", b:"chichibu", min:80, yen:1700, jr:false, mezzo:"Seibu Red Arrow", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
   { a:"tokyo", b:"sapporo",    min:230, yen:16000, jr:false, mezzo:"volo interno", c:"S" },
   { a:"tokyo", b:"naha",       min:240, yen:18000, jr:false, mezzo:"volo interno", c:"S" },
-  { a:"kyoto", b:"osaka",      min:30,  yen:580,   jr:true,  mezzo:"JR Special Rapid", c:"S" },
-  { a:"kyoto", b:"nara",       min:45,  yen:720,   jr:true,  mezzo:"JR Nara Line", c:"S" },
-  { a:"kyoto", b:"hiroshima",  min:105, yen:11400, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"kyoto", b:"kanazawa",   min:130, yen:7000,  jr:true,  mezzo:"Ltd Express Thunderbird", c:"S" },
-  { a:"kyoto", b:"tottori",    min:170, yen:8500,  jr:true,  mezzo:"Ltd Express Super Hakuto", c:"S" },
-  { a:"osaka", b:"nara",       min:45,  yen:810,   jr:true,  mezzo:"JR Yamatoji", c:"S" },
-  { a:"osaka", b:"himeji",     min:45,  yen:3400,  jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"osaka", b:"hiroshima",  min:95,  yen:10600, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"osaka", b:"fukuoka",    min:155, yen:16000, jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"osaka", b:"koyasan",    min:110, yen:2100,  jr:false, mezzo:"Nankai + funicolare", c:"S" },
+  { a:"kyoto", b:"osaka", min:30, yen:580, jr:true, mezzo:"JR Special Rapid", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"kyoto", b:"nara", min:45, yen:720, jr:true, mezzo:"JR Nara Line", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"kyoto", b:"hiroshima", min:105, yen:11740, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"kyoto", b:"kanazawa", min:110, yen:7520, jr:true, mezzo:"Ltd Express Thunderbird", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"kyoto", b:"tottori", min:170, yen:10710, jr:true, mezzo:"Ltd Express Super Hakuto", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"osaka", b:"nara", min:45, yen:840, jr:true, mezzo:"JR Yamatoji", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"osaka", b:"himeji", min:45, yen:3550, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"osaka", b:"hiroshima", min:110, yen:10220, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"osaka", b:"fukuoka", min:155, yen:15080, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"osaka", b:"koyasan", min:110, yen:1430, jr:false, mezzo:"Nankai + funicolare", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
   { a:"osaka", b:"naha",       min:220, yen:16000, jr:false, mezzo:"volo interno", c:"S" },
-  { a:"himeji",b:"okayama",    min:25,  yen:3400,  jr:true,  mezzo:"Shinkansen", c:"S" },
+  { a:"himeji", b:"okayama", min:35, yen:3610, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
   { a:"okayama",b:"naoshima",  min:75,  yen:1900,  jr:false, mezzo:"JR + traghetto", c:"S" },
-  { a:"okayama",b:"hiroshima", min:40,  yen:6000,  jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"hiroshima",b:"fukuoka", min:65,  yen:9000,  jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"fukuoka",b:"nagasaki",  min:95,  yen:5100,  jr:true,  mezzo:"Kamome + Shinkansen", c:"S" },
-  { a:"fukuoka",b:"beppu",     min:130, yen:6000,  jr:true,  mezzo:"Ltd Express Sonic", c:"S" },
-  { a:"nagoya", b:"takayama",  min:145, yen:6200,  jr:true,  mezzo:"Ltd Express Hida", c:"S" },
-  { a:"nagoya", b:"kyoto",     min:40,  yen:5900,  jr:true,  mezzo:"Shinkansen", c:"S" },
-  { a:"nagoya", b:"matsumoto", min:125, yen:6500,  jr:true,  mezzo:"Ltd Express Shinano", c:"S" },
-  { a:"kanazawa",b:"takayama", min:145, yen:4300,  jr:false, mezzo:"bus Nohi", c:"S" },
+  { a:"okayama", b:"hiroshima", min:40, yen:6260, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"hiroshima", b:"fukuoka", min:65, yen:8900, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"fukuoka", b:"nagasaki", min:95, yen:6490, jr:true, mezzo:"Kamome + Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"fukuoka", b:"beppu", min:130, yen:6910, jr:true, mezzo:"Ltd Express Sonic", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"nagoya", b:"takayama", min:145, yen:5940, jr:true, mezzo:"Ltd Express Hida", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"nagoya", b:"kyoto", min:40, yen:5500, jr:true, mezzo:"Shinkansen", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"nagoya", b:"matsumoto", min:125, yen:5960, jr:true, mezzo:"Ltd Express Shinano", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"kanazawa", b:"takayama", min:145, yen:4200, jr:false, mezzo:"bus Nohi", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
   { a:"kanazawa",b:"shirakawa",min:80,  yen:2200,  jr:false, mezzo:"bus", c:"S" },
   { a:"takayama",b:"shirakawa",min:55,  yen:2600,  jr:false, mezzo:"bus Nohi", c:"S" },
-  { a:"sendai", b:"sapporo",   min:250, yen:24000, jr:true,  mezzo:"Shinkansen + Ltd Express", c:"S" },
-  { a:"matsumoto",b:"kanazawa",min:190, yen:9000,  jr:false, mezzo:"bus + treno", c:"S" }
+  { a:"sendai", b:"sapporo", min:375, yen:24660, jr:true, mezzo:"Shinkansen + Ltd Express", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" },
+  { a:"matsumoto", b:"kanazawa", min:155, yen:11660, jr:true, mezzo:"Ltd Express Shinano + Shinkansen Hakutaka", c:"V", fonte:"transit.yahoo.co.jp", verificato:"2026-08-25" }
 ],
 
 /* ------------------------------------------------------------------ LUOGHI
