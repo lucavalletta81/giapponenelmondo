@@ -380,3 +380,32 @@ svg.mappa .guida{ stroke: #CFC7BC; stroke-width: 1; }
   .pv-layout { font-size: 11pt; }
   .compromesso, .giorno, #risultato table { break-inside: avoid; }
 }
+
+/* ------------------------------------------------ la mappa vera del Kanto --
+   Immagine OSM sotto, SVG sopra: stessa viewBox dell'immagine, così i punti
+   cadono dove cadono le strade. Il testo porta un alone bianco (paint-order)
+   perché su una carta geografica l'etichetta nuda annega. */
+.mappa-vera { position: relative; margin: 12px 0 20px; max-width: 560px; }
+.mappa-vera img { display: block; width: 100%; height: auto; border: 1px solid var(--pv-linea); border-radius: var(--pv-raggio, 10px); }
+.mappa-vera svg.sopra { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mappa-vera .velo { fill: #fff; opacity: .22; }
+.mappa-vera .pt { fill: #667; opacity: .8; }
+.mappa-vera .rotta { stroke: var(--pv-rosso); }
+.mappa-vera .tappa { fill: var(--pv-rosso); stroke: #fff; stroke-width: 2.5; }
+.mappa-vera .tappa.base { fill: var(--pv-ink); stroke: var(--pv-rosso); stroke-width: 3; }
+.mappa-vera text { font-family: inherit; font-size: 17px; fill: #1b1b1b;
+  paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+.mappa-vera text.eti { font-weight: 600; }
+.mappa-vera text.sfondo { font-size: 14px; fill: #556; font-weight: 400; }
+.mappa-vera figcaption { font-size: 11px; color: var(--pv-smorz); margin-top: 4px; }
+
+/* ------------------------------------------- l'avviso sull'età del listino --
+   Compare da solo quando i prezzi invecchiano: è la protezione contro il
+   guasto silenzioso, quello in cui il raccoglitore smette e nessuno lo nota. */
+.avviso-eta { border-radius: var(--pv-raggio); padding: 10px 14px; margin: 0 0 14px;
+  font-size: .92rem; line-height: 1.5; border: 1px solid; }
+.avviso-eta b { font-weight: 700; }
+.avviso-eta.attenzione { color: #7A5A12; background: #FEF7E6; border-color: #E8D08A; }
+.avviso-eta.vecchio,
+.avviso-eta.scaduto,
+.avviso-eta.ignoto  { color: #7A2018; background: #FDEEEC; border-color: #F0BDB6; }

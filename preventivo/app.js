@@ -230,8 +230,12 @@ function preparaRamo() {
 function leggiPasso(id) {
   if (id === "chi") {
     S.partenza = $("#partenza").value;
-    S.adulti = Math.max(1, +$("#adulti").value || 1);
-    S.bambini = Math.max(0, +$("#bambini").value || 0);
+    /* i limiti min/max dell'input valgono solo per le freccette: un numero
+       DIGITATO li scavalca, e "99 bambini" produceva un gruppo di 100 persone.
+       Si blocca qui, e il campo viene riscritto col valore corretto. */
+    S.adulti  = Math.min(10, Math.max(1, Math.round(+$("#adulti").value)  || 1));
+    S.bambini = Math.min(8,  Math.max(0, Math.round(+$("#bambini").value) || 0));
+    $("#adulti").value = S.adulti; $("#bambini").value = S.bambini;
   }
   if (id === "ritmo") {
     S.giorni = +$("#giorni").value;
@@ -279,6 +283,7 @@ function disegna(r, comp) {
   var liv = r.livelli[S.stile];
   var persone = S.adulti + S.bambini;
 
+  h.push(avvisoEta());
   h.push("<h2>Il tuo viaggio, in numeri</h2>");
 
   /* --- i tre livelli ---------------------------------------------------- */
@@ -588,11 +593,76 @@ function confronto(r) {
 /* Non è una mappa vera: è una proiezione equirettangolare corretta in
    longitudine, inquadrata sul giro invece che su tutto il Giappone. Serve a
    far vedere la forma del percorso e a smascherare gli itinerari a zig-zag. */
+/* La mappa di Tokyo e dintorni: GEOGRAFIA VERA. Lo sfondo è un'immagine
+   OpenStreetMap del Kanto scaricata una volta (grafica/scarica_mappa.py) e
+   salvata nel repo: a runtime non si chiama nessun servizio. Le tessere OSM
+   sono in Web Mercator, quindi anche i punti qui sopra usano Mercator — con
+   la proiezione piatta Nikko finirebbe nel posto sbagliato di ~15 km. */
+var MAPPA_BBOX = { lon0: 138.45, lon1: 140.40, lat0: 34.90, lat1: 37.10, w: 710, h: 990 };
+
+function mercY(lat) {
+  var r = lat * Math.PI / 180;
+  return Math.log(Math.tan(Math.PI / 4 + r / 2));
+}
+
+function mappaVera(r) {
+  var B = MAPPA_BBOX;
+  var gite = (r.itinerario.gite || []).map(function (g) { return g.citta; });
+  function px(c) { return (c.lon - B.lon0) / (B.lon1 - B.lon0) * B.w; }
+  function py(c) { return (mercY(B.lat1) - mercY(c.lat)) / (mercY(B.lat1) - mercY(B.lat0)) * B.h; }
+
+  var base = M.citta("tokyo");
+  var titolo = "Tokyo e le gite in giornata: " +
+    (gite.length ? gite.map(function (g) { return M.citta(g).nome; }).join(", ") : "nessuna");
+  var s = ['<figure class="mappa-vera">',
+    '<img src="img/mappa-kanto.webp" data-img="mappa-kanto.webp" alt="" width="' + B.w + '" height="' + B.h + '">',
+    '<svg class="sopra" viewBox="0 0 ' + B.w + " " + B.h + '" xmlns="http://www.w3.org/2000/svg" ' +
+      'role="img" aria-label="' + esc(titolo) + '">',
+    /* un velo chiaro smorza i colori della carta: i punti devono vincere */
+    '<rect x="0" y="0" width="' + B.w + '" height="' + B.h + '" class="velo"/>'];
+
+  /* le mete vicine NON scelte: puntini di orientamento, col nome */
+  M.GITE.forEach(function (id) {
+    if (gite.indexOf(id) !== -1) return;
+    var c = M.citta(id), x = px(c), y = py(c);
+    s.push('<circle class="pt" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4"/>');
+    s.push('<text class="sfondo" x="' + (x + 8).toFixed(1) + '" y="' + (y + 4).toFixed(1) + '">' + esc(c.nome) + "</text>");
+  });
+
+  /* i raggi dalle gite alla base */
+  gite.forEach(function (g) {
+    var c = M.citta(g);
+    s.push('<line class="rotta" stroke-width="2.5" stroke-dasharray="7 5" x1="' + px(base).toFixed(1) +
+      '" y1="' + py(base).toFixed(1) + '" x2="' + px(c).toFixed(1) + '" y2="' + py(c).toFixed(1) + '"/>');
+  });
+
+  /* la base e le gite, con l'etichetta che schiva le altre */
+  var messe = [];
+  ["tokyo"].concat(gite).forEach(function (id) {
+    var c = M.citta(id), x = px(c), y = py(c), eBase = id === "tokyo";
+    s.push('<circle class="tappa' + (eBase ? " base" : "") + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) +
+      '" r="' + (eBase ? 11 : 7) + '"/>');
+    var destra = x < B.w * 0.55;
+    var tx = destra ? x + 15 : x - 15, ty = y + 6, giri = 0;
+    while (giri < 12 && messe.some(function (m) {
+      return Math.abs(m.y - ty) < 22 && Math.abs(m.x - tx) < 230;
+    })) { ty += 22; giri++; }
+    messe.push({ x: tx, y: ty });
+    s.push('<text class="eti' + (eBase ? " base" : "") + '" x="' + tx.toFixed(1) + '" y="' + ty.toFixed(1) + '"' +
+      (destra ? "" : ' text-anchor="end"') + ">" +
+      esc(eBase ? c.nome + " — la base" : c.nome + " — gita in giornata") + "</text>");
+  });
+
+  s.push("</svg>");
+  s.push('<figcaption>Sfondo cartografico © OpenStreetMap contributors</figcaption>');
+  s.push("</figure>");
+  return s.join("");
+}
+
 function mappa(r) {
   var W = 900, H = 540, PAD = 56;
-  /* Nella sola Tokyo la "rotta" è un punto: la mappa mostra allora la base e
-     le gite in giornata che le stanno intorno, con un raggio per ciascuna. */
   var soloTk = !!r.itinerario.soloTokyo;
+  if (soloTk) return mappaVera(r);
   var gite = soloTk ? (r.itinerario.gite || []).map(function (g) { return g.citta; }) : [];
   var ids = soloTk ? ["tokyo"].concat(gite) : r.itinerario.rotta;
   var rotta = ids.map(function (id) { return M.citta(id); });
@@ -666,6 +736,200 @@ function mappa(r) {
   return s.join("");
 }
 
+/* ------------------------------------------------- QUANTO È VECCHIO ------
+   Il rischio numero uno del progetto non è che il raccoglitore si rompa: è che
+   si rompa in silenzio e il listino invecchi senza che nessuno se ne accorga.
+   La pagina lo dice da sola, e oltre una certa età smette di presentare i
+   prezzi come freschi. Soglie: 3 giorni tranquillo, 7 avviso, 21 scaduto. */
+function etaListino() {
+  var P = window.PREZZI;
+  if (!P || !P.generato) return { giorni: null, stato: "ignoto" };
+  var g = new Date(P.generato);
+  if (isNaN(g)) return { giorni: null, stato: "ignoto" };
+  var giorni = Math.floor((Date.now() - g.getTime()) / 86400000);
+  return {
+    giorni: giorni, data: P.generato.slice(0, 10).split("-").reverse().join("/"),
+    stato: giorni <= 3 ? "fresco" : giorni <= 7 ? "attenzione" : giorni <= 21 ? "vecchio" : "scaduto"
+  };
+}
+
+function avvisoEta() {
+  var e = etaListino();
+  if (e.stato === "fresco") return "";
+  var testo = e.stato === "ignoto"
+    ? "Il listino non dice quando è stato rilevato: trattalo come non aggiornato."
+    : e.stato === "attenzione"
+      ? "I prezzi hanno " + e.giorni + " giorni (rilevati il " + e.data + "). Sui voli in " +
+        "una settimana si muove parecchio: prendili come ordine di grandezza."
+      : e.stato === "vecchio"
+        ? "Attenzione: i prezzi sono di " + e.giorni + " giorni fa (" + e.data + "). " +
+          "Non sono più affidabili come cifra, solo come proporzione fra le voci."
+        : "Questi prezzi hanno più di tre settimane (" + e.data + ") e non sono " +
+          "aggiornati. Il preventivo qui sotto vale come struttura del costo, non come cifra.";
+  return '<div class="avviso-eta ' + e.stato + '"><b>' +
+    (e.stato === "attenzione" ? "Prezzi non freschissimi" : "Prezzi non aggiornati") +
+    "</b> " + esc(testo) + "</div>";
+}
+
+/* ------------------------------------------------------------ IL PDF ----- */
+/* Il PDF non ricalcola niente: prende gli stessi numeri che sono a schermo.
+   Se ricalcolasse, carta e schermo potrebbero dire cose diverse, ed è il
+   genere di incoerenza che distrugge la fiducia in un preventivo. */
+function datiPdf(r) {
+  var liv = r.livelli[S.stile];
+  var persone = S.adulti + S.bambini;
+  var st = r.stagione;
+  var vf = liv.volo_fonte, af = liv.alloggio_fonte;
+  var q = S.adulti + S.bambini * 0.65;
+
+  var voci = [
+    { nome: "Volo intercontinentale", pp: liv.voci.volo, gr: liv.voci.volo * q, reale: !!vf,
+      come: vf ? "Google Flights, " + M.partenza(S.partenza).nome + " → Tokyo, partenza " +
+            vf.out.split("-").reverse().join("/") + (vf.compagnia ? ", " + vf.compagnia : "")
+          : "stima del catalogo" },
+    { nome: "Alloggio", pp: liv.voci.alloggio, gr: liv.voci.alloggio * q, reale: !!af,
+      come: af ? (af.auto ? "Google Hotels, mediana delle " + af.zone + " zone di Tokyo, " +
+                            af.eur + " € × " + liv.notti + " notti"
+                          : "Google Hotels, " + M.nomeZona(liv.zona) + ", " + af.eur + " € × " + liv.notti + " notti")
+               : "stima del catalogo" },
+    { nome: "Trasporti in Giappone", pp: liv.voci.trasporti, gr: liv.voci.trasporti * q, reale: false,
+      come: "gite in giornata, metropolitana e transfer: stima" },
+    { nome: "Mangiare", pp: liv.voci.cibo, gr: liv.voci.cibo * q, reale: false,
+      come: D.cibo[M.STILI[S.stile].cibo].desc },
+    { nome: "Ingressi ed esperienze", pp: liv.voci.attivita, gr: liv.voci.attivita * q,
+      reale: (liv.attIncluse || []).some(function (a) { return a.c === "V"; }),
+      come: (liv.attIncluse || []).filter(function (a) { return a.c === "V"; }).length +
+            " prezzi verificati su fonte ufficiale, il resto stimato" },
+    { nome: "Extra", pp: liv.voci.extra, gr: liv.voci.extra * q, reale: false,
+      come: "assicurazione, eSIM, souvenir" },
+    { nome: "Imprevisti", pp: liv.voci.imprevisti, gr: liv.voci.imprevisti * q, reale: false,
+      come: "5% di margine" }
+  ];
+
+  var giorni = [{ titolo: "Giorno 1", trasferimento: "", cose: ["Volo, arrivo a Tokyo, transfer e crollo."] }];
+  r.itinerario.giorni.forEach(function (g) {
+    giorni.push({
+      titolo: "Giorno " + (g.n + 1) + " · " + M.citta(g.citta).nome,
+      trasferimento: g.trasferimento
+        ? "Da Tokyo: " + g.trasferimento.mezzo + ", " + g.trasferimento.min + " min andata e ritorno" : "",
+      cose: g.luoghi.map(function (l) {
+        return l.nome + (l.yen ? " · " + Math.round(M.eur(l.yen)) + " €" : " · gratis");
+      })
+    });
+  });
+
+  return {
+    titolo: "Tokyo, " + S.giorni + " giorni",
+    sottotitolo: st.nome + " · " + persone + (persone === 1 ? " persona" : " persone") +
+                 " · partenza da " + M.partenza(S.partenza).nome + " · fascia " + liv.nome.toLowerCase(),
+    quando: "Preventivo generato il " + new Date().toLocaleDateString("it-IT") +
+            (window.PREZZI && window.PREZZI.generato
+              ? " · prezzi rilevati il " + window.PREZZI.generato.slice(0,10).split("-").reverse().join("/") : "") +
+            " · non è un preventivo commerciale, è una stima",
+    perPersona: liv.perPersona, alGiorno: liv.alGiorno, gruppo: liv.gruppo, persone: persone,
+    fasce: ["essenziale","equilibrato","comodo"].map(function (k) {
+      return { nome: r.livelli[k].nome, perPersona: r.livelli[k].perPersona,
+               gruppo: r.livelli[k].gruppo, scelta: k === S.stile };
+    }),
+    voci: voci, giorni: giorni,
+    leve: COMP.slice(0, 8).map(function (c) { return { etichetta: c.etichetta, delta: c.delta }; }),
+    mappa: null,
+    onesta: (function () { var e = etaListino();
+        return e.stato === "fresco" ? "" :
+          "ATTENZIONE: i prezzi di questo documento sono stati rilevati il " + e.data +
+          ", " + e.giorni + " giorni fa. "; })() +
+      r.attendibilita.stime + " voci su " + r.attendibilita.totale + " sono stime; contando gli euro, " +
+      "la quota che arriva da stime è il " + r.attendibilita.perc_importo + "%. Volo, alloggio e cambio " +
+      "sono prezzi veri letti da Google Flights, Google Hotels e BCE. Nessuna disponibilità è stata " +
+      "verificata: se l'albergo è pieno, questo documento non lo sa."
+  };
+}
+
+/* la mappa nel PDF: l'immagine di sfondo più l'SVG dei punti, fusi in un solo
+   PNG con un canvas. Un <img> e un <svg> sovrapposti in stampa si sfasano. */
+function mappaPerPdf(cb) {
+  var fig = $("#risultato .mappa-vera");
+  if (!fig) { cb(null); return; }
+  var img = fig.querySelector("img"), svg = fig.querySelector("svg");
+  if (!img || !svg) { cb(null); return; }
+  /* Se si preme Stampa prima che la cartina sia scaricata, naturalWidth è 0 e
+     il PDF uscirebbe senza mappa. Si aspetta il caricamento, con un tetto:
+     meglio un PDF senza mappa che un pulsante che non risponde più. */
+  if (!img.complete || !img.naturalWidth) {
+    var fatto = false;
+    var poi = function () { if (fatto) return; fatto = true; mappaPerPdf(cb); };
+    var rinuncia = function () { if (fatto) return; fatto = true; cb(null); };
+    img.addEventListener("load", poi, { once: true });
+    img.addEventListener("error", rinuncia, { once: true });
+    setTimeout(rinuncia, 4000);
+    return;
+  }
+  try {
+    var K = 2;                       /* doppia risoluzione: a 86 mm servono ~420 dpi */
+    var c = document.createElement("canvas");
+    c.width = img.naturalWidth * K; c.height = img.naturalHeight * K;
+    var x = c.getContext("2d");
+    x.drawImage(img, 0, 0, c.width, c.height);
+    /* Un SVG serializzato NON porta con sé il CSS del documento, e uno <style>
+       incollato dentro non basta a farlo rasterizzare in modo affidabile.
+       L'unica via che regge sempre: scrivere i colori come ATTRIBUTI su ogni
+       nodo, che è quello che il rasterizzatore capisce senza cascata. */
+    var clone = svg.cloneNode(true);
+    var PENNA = {
+      /* sulla carta il velo va quasi tolto e i caratteri vanno cresciuti:
+         l'immagine finisce a 86 mm, un terzo della larghezza che ha a schermo */
+      velo:   { fill: "#ffffff", "fill-opacity": ".08" },
+      pt:     { fill: "#666677", "fill-opacity": ".85" },
+      rotta:  { stroke: "#B52D20", fill: "none" },
+      tappa:  { fill: "#B52D20", stroke: "#ffffff", "stroke-width": "3.5" },
+      base:   { fill: "#0F1A24", stroke: "#B52D20", "stroke-width": "4" },
+      sfondo: { fill: "#3B4450", "font-size": "22", "font-weight": "500",
+                stroke: "#ffffff", "stroke-width": "5", "paint-order": "stroke" },
+      eti:    { fill: "#14181D", "font-size": "27", "font-weight": "700",
+                stroke: "#ffffff", "stroke-width": "7", "paint-order": "stroke" }
+    };
+    Array.prototype.forEach.call(clone.querySelectorAll("*"), function (n) {
+      var cl = (n.getAttribute("class") || "").split(/\s+/);
+      cl.forEach(function (c) {
+        if (!PENNA[c]) return;
+        for (var k in PENNA[c]) n.setAttribute(k, PENNA[c][k]);
+      });
+      if (n.tagName === "text") {
+        n.setAttribute("font-family", "Inter, Helvetica, Arial, sans-serif");
+        n.setAttribute("stroke-linejoin", "round");
+      }
+    });
+    clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    clone.setAttribute("width", img.naturalWidth * K);
+    clone.setAttribute("height", img.naturalHeight * K);
+    var s2 = new XMLSerializer().serializeToString(clone);
+    var v = new Image();
+    v.onload = function () {
+      x.drawImage(v, 0, 0, c.width, c.height);
+      /* JPEG e non PNG: una cartina è un'immagine fotografica, e in PNG
+         pesava 7 MB — un PDF così è ingestibile. In JPEG all'86% sta sotto
+         il mezzo mega e a occhio non si distingue. */
+      try { cb(c.toDataURL("image/jpeg", 0.86)); } catch (e) { cb(null); }
+    };
+    v.onerror = function () { cb(null); };
+    v.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s2);
+  } catch (e) { cb(null); }
+}
+
+function creaPdf(soloDati) {
+  var r = M.pianifica(perMotore());
+  var d = datiPdf(r);
+  return new Promise(function (ok) {
+    mappaPerPdf(function (png) {
+      d.mappa = png;
+      if (!soloDati) window.PDF.stampa(d);
+      ok(d);
+    });
+  });
+}
+/* aggancio per collaudare l'impaginazione del PDF senza aprire la stampa */
+window.PV_PDF_PROVA = function () { return creaPdf(true); };
+
 /* ------------------------------------------------------- EVENTI OUTPUT --- */
 function agganciaRisultato() {
   $$("#risultato .prezzo").forEach(function (p) {
@@ -690,7 +954,7 @@ function agganciaRisultato() {
       calcolaEMostra();
     };
   });
-  $("#stampa").onclick = function () { window.print(); };
+  $("#stampa").onclick = function () { creaPdf(); };
   $("#modifica").onclick = function () {
     $("#risultato").hidden = true; $("#wizard").hidden = false; mostraPasso(0);
   };
