@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GnM — Catalogo video interrogabile</title>
+<style>
+:root{
+ --bg:#faf8f5; --card:#fff; --ink:#1a1714; --muted:#6b625a; --line:#e6ded4;
+ --accent:#b4291f; --accent-soft:#fbeceb; --ok:#1f7a4d; --warn:#b06b0a;
+ --shadow:0 1px 2px rgba(26,23,20,.06),0 6px 18px rgba(26,23,20,.05);
+}
+@media (prefers-color-scheme:dark){:root{
+ --bg:#14110f; --card:#1e1a17; --ink:#f0eae3; --muted:#a2968a; --line:#332c26;
+ --accent:#ff6b5e; --accent-soft:#33201d; --ok:#4fbd85;
+}}
+@media (prefers-color-scheme:dark){:root{--warn:#e0a24a;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;}
+header{padding:28px 24px 18px;border-bottom:1px solid var(--line);background:var(--card);
+ position:sticky;top:0;z-index:20;box-shadow:var(--shadow)}
+h1{margin:0 0 4px;font-size:21px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:13px;margin:0 0 14px}
+.searchrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input[type=search]{flex:1;min-width:220px;padding:10px 13px;border:1px solid var(--line);
+ border-radius:10px;background:var(--bg);color:var(--ink);font-size:15px}
+input[type=search]:focus{outline:2px solid var(--accent);outline-offset:-1px}
+select{padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);
+ color:var(--ink);font-size:14px}
+main{max-width:1180px;margin:0 auto;padding:20px 24px 80px}
+.filters{display:flex;flex-direction:column;gap:10px;margin:18px 0 8px}
+.frow{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.flab{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+ min-width:96px;font-weight:600}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;
+ padding:5px 12px;font-size:13px;cursor:pointer;transition:.12s}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+ margin:16px 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.count{font-size:13px;color:var(--muted)}
+.count b{color:var(--ink);font-size:16px}
+.reset{background:none;border:none;color:var(--accent);cursor:pointer;font-size:13px;
+ text-decoration:underline;padding:0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 17px;
+ box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:16px;line-height:1.35;letter-spacing:-.01em}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.t{font-size:11.5px;padding:3px 9px;border-radius:6px;border:1px solid var(--line);
+ color:var(--muted);white-space:nowrap}
+.t.arg{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
+.t.easy{color:var(--ok);border-color:currentColor}
+.t.med{color:var(--warn);border-color:currentColor}
+.t.hard{color:var(--accent);border-color:currentColor}
+.t.trend{background:var(--accent);color:#fff;border-color:transparent;font-weight:600}
+.nota{font-size:13px;color:var(--muted);margin:0}
+.nec{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:9px;margin:0}
+.nec b{color:var(--ink);font-weight:600}
+.meta{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:auto;padding-top:4px}
+.score{margin-left:auto;font-variant-numeric:tabular-nums}
+.empty{text-align:center;color:var(--muted);padding:60px 20px}
+footer{max-width:1180px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:12.5px}
+</style></head><body>
+<header>
+ <h1>Giappone nel Mondo — catalogo video</h1>
+ <p class="sub">52 voci · piano editoriale 22/07/2026 + radar trend 24/08/2026 · aggiornato 2026-08-26</p>
+ <div class="searchrow">
+  <input type="search" id="q" placeholder="cerca: titolo, nota, tag, necessità…">
+  <select id="sort">
+   <option value="score">Ordina: consigliato</option>
+   <option value="fit">Resa attesa</option>
+   <option value="effort">Più facile prima</option>
+   <option value="durata">Più corto prima</option>
+   <option value="trend">Segnale trend</option>
+   <option value="titolo">Alfabetico</option>
+  </select>
+ </div>
+</header>
+<main>
+ <div class="filters" id="filters"></div>
+ <div class="bar">
+  <span class="count"><b id="n">0</b> video corrispondono</span>
+  <button class="reset" id="reset">azzera filtri</button>
+ </div>
+ <div class="grid" id="grid"></div>
+ <div class="empty" id="empty" hidden>Nessun video con questi filtri.</div>
+</main>
+<footer>
+ <p><b>Come si legge.</b> <i>Resa attesa</i> e <i>difficoltà</i> vengono dal piano editoriale di luglio (analisi del canale + CSV idee).
+ <i>Tipologia</i>, <i>durata</i> e <i>necessità speciali</i> sono stime dedotte dalle note, non misure.
+ <i>Segnale trend</i> viene dai report dell'agente trend-analysis delle ultime 6 settimane: <b>alto</b> = tema ricorrente con gap IT alto e saturazione IT 1-2/10.
+ <i>Consigliato</i> = resa + segnale trend + materiale già pronto − difficoltà.</p>
+</footer>
+<script>
+const DATA = {"note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.", "aggiornato": "2026-08-26", "fatti": [{"titolo": "5 oggetti fondamentali", "uscito": "26/09/2025", "come": "5oggetti che DEVI conoscere prima di andare in GIAPPONE"}, {"titolo": "Slot Halloween 2025 (3 di 5)", "uscito": "ott 2025", "come": "J-HORROR 01/02/03 — 30 iscritti"}, {"titolo": "Daruma/portafortuna", "uscito": "09/11/2025", "come": "Il mistero delle KOKESHI e i portafortuna"}, {"titolo": "Dicembre in Giappone consigli", "uscito": "16/11/2025", "come": "Dicembre in GIAPPONE: luci, silenzi..."}, {"titolo": "True crime", "uscito": "23/11/2025", "come": "44 Giorni nel Cemento"}, {"titolo": "JappoVan budget", "uscito": "29/11/2025", "come": "Quanto Costa un Viaggio in Camper ep5"}, {"titolo": "Fotografo giapponese (Araki)", "uscito": "12/12/2025", "come": "TOKYO Amore e Morte: tutto su ARAKI"}, {"titolo": "Scams (versione foto)", "uscito": "02/02/2026", "come": "Tokyo Photo-Shopping: Affari veri o Scam da Social?"}, {"titolo": "Viaggio (5 slot pianificati)", "uscito": "feb-lug 2026", "come": "16+ puntate Japan Van"}], "items": [{"id": "akiya", "titolo": "Akiya: perché il Giappone regala 9 milioni di case e nessuno le vuole", "cluster": "societa", "stato": "proposta", "effort": 1, "fit": 9, "tipo": "acquisizione", "nota": "Nel radar trend in 6 report su 6 da luglio. Coerenza 9/10, saturazione IT 2/10, gap Alto. Zero video IT seri.", "tipologia": "studio", "durata_min": 13, "durata_max": 18, "necessita": ["si gira in studio", "ricerca fonti", "grafiche dati"], "stagione": "nessuna", "trend": "alto", "origine": "radar trend 24/08/2026", "score": 12.0}, {"id": "haikyo", "titolo": "Haikyo: le rovine del boom economico giapponese", "cluster": "societa", "stato": "proposta", "effort": 1, "fit": 9, "tipo": "acquisizione", "nota": "Radar: coerenza 9/10, saturazione IT 2/10, gap Alto. Si sposa col filone foto e col J-Horror.", "tipologia": "studio", "durata_min": 13, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "archivio foto rovine"], "stagione": "nessuna", "trend": "alto", "origine": "radar trend 24/08/2026", "score": 12.0}, {"id": "noroi", "titolo": "Noroi: il found footage che terrorizza (su Shudder)", "cluster": "jhorror", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Halloween s2", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "visione film richiesta", "clip sotto fair use"], "stagione": "halloween", "trend": "alto", "origine": "piano 22/07/2026", "score": 11.0}, {"id": "battle_royale", "titolo": "Battle Royale", "cluster": "jhorror", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "cult; Halloween s2", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "visione film richiesta", "clip sotto fair use"], "stagione": "halloween", "trend": "alto", "origine": "piano 22/07/2026", "score": 11.0}, {"id": "showa_nostalgia", "titolo": "Showa: la nostalgia giapponese come industria da miliardi", "cluster": "societa", "stato": "proposta", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Radar: presente in 6 report su 6, saturazione IT 1/10 (il piu' vuoto di tutti).", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "archivio anni 70-80"], "stagione": "nessuna", "trend": "alto", "origine": "radar trend 24/08/2026", "score": 11.0}, {"id": "spopolamento", "titolo": "I villaggi giapponesi che scelgono di sparire (mukoku no mura)", "cluster": "societa", "stato": "proposta", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Radar: gap IT Alto costante. Si aggancia ad akiya come serie.", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca fonti", "mappe/grafiche"], "stagione": "nessuna", "trend": "alto", "origine": "radar trend 24/08/2026", "score": 11.0}, {"id": "kisaragi", "titolo": "Kisaragi Station: l'horror giapponese nato solo su internet", "cluster": "jhorror", "stato": "proposta", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Radar: J-Horror unico segnale di domanda VIVO nel mercato IT. Perfetto per Halloween S2.", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca leggende urbane"], "stagione": "halloween", "trend": "alto", "origine": "radar trend 24/08/2026", "score": 11.0}, {"id": "storia_canon", "titolo": "Storia di CANON", "cluster": "fotografia", "stato": "da_fare", "effort": 1, "fit": 10, "tipo": "acquisizione", "nota": "brand-story + filone foto = il colpo grosso; 'dominio mercato fotografico' = 37 iscritti", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca storica", "archivio foto/immagini"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 10.0}, {"id": "libri_foto_tokyo", "titolo": "Dove comprare libri fotografici a Tokyo", "cluster": "fotografia", "stato": "mezzo_fatto", "effort": 2, "fit": 9, "tipo": "acquisizione", "nota": "già girato, 50% montato: manca voice over — riapre il filone foto", "tipologia": "montaggio", "durata_min": 12, "durata_max": 18, "necessita": ["girato disponibile", "montato al 50%", "manca solo il VO"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 9.5}, {"id": "nikon_museum", "titolo": "Nikon Museum (+ storia Nikon)", "cluster": "fotografia", "stato": "da_fare", "effort": 1, "fit": 9, "tipo": "acquisizione", "nota": "ref YouTube; gemello Canon, serie brand foto", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca storica", "archivio foto/immagini"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 9.0}, {"id": "fotografia_film", "titolo": "Fotografia a pellicola in Giappone", "cluster": "fotografia", "stato": "da_fare", "effort": 1, "fit": 9, "tipo": "acquisizione", "nota": "nostalgia + arte, collega serie negozi dic 25", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "materiale foto proprio"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 9.0}, {"id": "storia_sega", "titolo": "Storia di SEGA", "cluster": "brand", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "nostalgia gaming", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca storica", "archivio gaming"], "stagione": "nessuna", "trend": "medio", "origine": "piano 22/07/2026", "score": 8.5}, {"id": "famicom", "titolo": "Famicom: la console che ha inventato il Giappone moderno", "cluster": "brand", "stato": "proposta", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "Radar ricorrente. Gemello naturale di 'Storia di SEGA': girarli nella stessa giornata.", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca storica", "archivio gaming"], "stagione": "nessuna", "trend": "medio", "origine": "radar trend 24/08/2026", "score": 8.5}, {"id": "grandi_fotografi", "titolo": "Grandi fotografi giapponesi (monografia seriale)", "cluster": "fotografia", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Araki già fatto; Moriyama, Kawauchi... evergreen seriale", "tipologia": "monografia", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "diritti immagine da gestire"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "fotografa_giapponese", "titolo": "Fotografa giapponese (ref video)", "cluster": "fotografia", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "dentro la serie grandi fotografi", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca", "diritti immagine da gestire"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "cannibale_kyoto", "titolo": "Il cannibale di Kyoto (true crime)", "cluster": "truecrime", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "Halloween s2", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca fonti", "tema sensibile"], "stagione": "halloween", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "murders_disturbing", "titolo": "Gli omicidi più disturbanti del Giappone", "cluster": "truecrime", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "ref video internazionale; 31/10/2026 è SABATO", "tipologia": "lista", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca fonti", "tema sensibile"], "stagione": "halloween", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "catturata_20anni", "titolo": "Catturata dopo 20 anni di fuga (true crime)", "cluster": "truecrime", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "ref IG; storia fortissima", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca fonti"], "stagione": "halloween", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "giappone_ricco", "titolo": "Perché il Giappone è ricco", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 8, "tipo": "acquisizione", "nota": "ref video internazionale enorme; macro evergreen", "tipologia": "studio", "durata_min": 15, "durata_max": 20, "necessita": ["si gira in studio", "ricerca economica", "grafiche dati"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 8.0}, {"id": "iceberg_movie", "titolo": "Iceberg dei film giapponesi", "cluster": "jhorror", "stato": "da_fare", "effort": 2, "fit": 7, "tipo": "acquisizione", "nota": "formato iceberg = clic; Halloween s2", "tipologia": "iceberg", "durata_min": 18, "durata_max": 30, "necessita": ["si gira in studio", "ricerca lunga", "grafica iceberg da produrre"], "stagione": "halloween", "trend": "alto", "origine": "piano 22/07/2026", "score": 7.5}, {"id": "young_homeless", "titolo": "Young homeless in Giappone", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "cuore", "nota": "sociale/riflessivo", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca fonti", "tema sensibile"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "fukushima", "titolo": "Fukushima: il racconto (girato + libro ricevuto)", "cluster": "societa", "stato": "girato", "effort": 2, "fit": 8, "tipo": "acquisizione", "nota": "IMPEGNO settembre (19/09): libro ricevuto da citare; doppio uso video+podcast", "tipologia": "doc", "durata_min": 15, "durata_max": 22, "necessita": ["girato disponibile", "montaggio medio", "VO da scrivere", "fonti da verificare"], "stagione": "settembre", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "bullismo_anni80", "titolo": "Bullismo e criminalità minorile anni '80", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "dark-society, aggancia true crime", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca fonti", "tema sensibile"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "sailor_censura", "titolo": "La censura di Sailor Moon in Italia", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "nostalgia italiana fortissima", "tipologia": "monografia", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca doppiaggio IT", "clip sotto fair use"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "scams_10", "titolo": "10 truffe in Giappone (e come evitarle)", "cluster": "viaggio_pratico", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "evergreen ricerca; ref video internazionale", "tipologia": "lista", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "materiale proprio riusabile"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "cosa_sapere", "titolo": "Cosa sapere prima di andare in Giappone", "cluster": "viaggio_pratico", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "evergreen ricerca perpetua", "tipologia": "lista", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "b-roll d'archivio proprio"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "toriyama", "titolo": "Toriyama: la Genkidama che ha unito il mondo", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "anniversario morte 1° marzo", "tipologia": "monografia", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "diritti immagine delicati"], "stagione": "1 marzo", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "ghost_shell", "titolo": "Ghost in the Shell", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 7, "tipo": "acquisizione", "nota": "ref hugo guerra vox movies; 2026/2027 nuovo film?", "tipologia": "monografia", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "visione film richiesta", "clip sotto fair use"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 7.0}, {"id": "netflix_3film", "titolo": "3 film su Netflix prima di andare in Giappone", "cluster": "jhorror", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "SEO Netflix; doppione nel CSV (2 volte)", "tipologia": "lista", "durata_min": 8, "durata_max": 12, "necessita": ["si gira in studio", "visione film richiesta"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "metabolismo", "titolo": "Il Metabolismo (architettura giapponese)", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "cuore", "nota": "Nakagin ecc.; colto, evergreen", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "archivio architettura"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "video_girl_ai", "titolo": "Video Girl AI e i manga anni '80-'90", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "cuore", "nota": "nostalgia retrò", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca", "scansioni manga"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "cibo_giappone", "titolo": "Cibo in Giappone (girato di dicembre)", "cluster": "cibo", "stato": "girato", "effort": 2, "fit": 7, "tipo": "acquisizione", "nota": "usare girato dicembre; konbini fece 12 iscritti", "tipologia": "montaggio", "durata_min": 12, "durata_max": 18, "necessita": ["girato disponibile", "montaggio medio", "VO da scrivere"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "5cose_non_servono", "titolo": "5 cose che NON ti servono in Giappone", "cluster": "viaggio_pratico", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "gemello del '5 oggetti' che funzionò", "tipologia": "lista", "durata_min": 8, "durata_max": 12, "necessita": ["si gira in studio", "b-roll d'archivio proprio"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "natale_capodanno", "titolo": "Natale e Capodanno in Giappone", "cluster": "viaggio_pratico", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "stagionale dicembre; 2025 coperto solo in parte", "tipologia": "lista", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "b-roll d'archivio proprio"], "stagione": "dicembre", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "ado", "titolo": "ADO: la popstar senza volto (monografia)", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "doppione nel CSV (2 voci) = unificare", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "diritti musicali delicati"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "anime_famosi", "titolo": "Gli anime più famosi nel mondo — non ci crederai", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "divulgazione", "tipologia": "lista", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "clip sotto fair use"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "storia_asics", "titolo": "Storia di ASICS (dalle ceneri di Onitsuka)", "cluster": "brand", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "brand-story", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca storica", "archivio"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "nakamura_led", "titolo": "Nakamura: il LED blu che valeva un Nobel", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 6, "tipo": "acquisizione", "nota": "ref TikTok; scienza+rivincita", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "ricerca scientifica"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 6.0}, {"id": "inunaki", "titolo": "Inunaki: ci sono stato davvero (FINALE Halloween S2, 31/10)", "cluster": "jhorror", "stato": "girato", "effort": 3, "fit": 9, "tipo": "acquisizione", "nota": "girato da Luca in Giappone; montaggio pesante da iniziare a settembre; doppio uso video+podcast", "tipologia": "doc", "durata_min": 18, "durata_max": 28, "necessita": ["girato disponibile", "montaggio pesante", "VO da scrivere", "color+sound"], "stagione": "halloween", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.5}, {"id": "geografia_tokyo", "titolo": "Geografia di Tokyo: come funziona la città", "cluster": "societa", "stato": "da_fare", "effort": 2, "fit": 8, "tipo": "acquisizione", "nota": "preludio SERIE quartieri = motore playlist", "tipologia": "studio", "durata_min": 15, "durata_max": 20, "necessita": ["si gira in studio", "mappe/grafiche da produrre", "apre una serie"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.5}, {"id": "akihabara_5cose", "titolo": "5 cose / negozi ad Akihabara", "cluster": "viaggio", "stato": "girato", "effort": 2, "fit": 6, "tipo": "acquisizione", "nota": "girato a marzo, da montare", "tipologia": "montaggio", "durata_min": 10, "durata_max": 14, "necessita": ["girato disponibile", "montaggio medio", "VO da scrivere"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "sorayama", "titolo": "Hajime Sorayama", "cluster": "anime", "stato": "da_fare", "effort": 1, "fit": 5, "tipo": "cuore", "nota": "estetica cyber; ponte con fotografia/arte", "tipologia": "monografia", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "diritti immagine da gestire"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "puroresu", "titolo": "Puroresu e Rikidozan", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 5, "tipo": "cuore", "nota": "nicchia; pubblico maschile 45-59", "tipologia": "studio", "durata_min": 12, "durata_max": 18, "necessita": ["si gira in studio", "ricerca", "archivio wrestling"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "sara_resoconto", "titolo": "Resoconto del viaggio con Sara + annuncio prossimo viaggio", "cluster": "community", "stato": "da_fare", "effort": 1, "fit": 5, "tipo": "cuore", "nota": "video in studio post-Jvan; annuncio = gancio", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "seconda persona in scena"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "memento_giapponese", "titolo": "Memento giapponese", "cluster": "societa", "stato": "da_fare", "effort": 1, "fit": 5, "tipo": "cuore", "nota": "ref YouTube da chiarire", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "riferimento da chiarire"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "hokkaido_extra", "titolo": "EXTRA mensile: preparazione Hokkaido Van v2 (ago 2027)", "cluster": "viaggio", "stato": "da_fare", "effort": 1, "fit": 5, "tipo": "cuore", "nota": "rubrica mensile parallela, da gennaio 2027", "tipologia": "studio", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "rubrica ricorrente"], "stagione": "da gen 2027", "trend": "nullo", "origine": "piano 22/07/2026", "score": 5.0}, {"id": "dieci_canali", "titolo": "Dieci migliori canali sul Giappone", "cluster": "community", "stato": "da_fare", "effort": 1, "fit": 4, "tipo": "cuore", "nota": "community building", "tipologia": "lista", "durata_min": 10, "durata_max": 15, "necessita": ["si gira in studio", "clip terzi sotto fair use"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 4.0}, {"id": "manga_roma", "titolo": "Intervista al negozio di manga più famoso di Roma", "cluster": "community", "stato": "girato", "effort": 2, "fit": 4, "tipo": "reputazione", "nota": "PRIORITÀ ALTA di Luca: fatto a febbraio, va fuori subito", "tipologia": "intervista", "durata_min": 15, "durata_max": 25, "necessita": ["girato disponibile", "montaggio medio", "liberatoria ospite"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 3.0}, {"id": "qa_community", "titolo": "Domande e risposte con la community", "cluster": "community", "stato": "da_fare", "effort": 1, "fit": 3, "tipo": "cuore", "nota": "leggero; meglio quando il canale cresce", "tipologia": "studio", "durata_min": 12, "durata_max": 20, "necessita": ["si gira in studio", "serve raccolta domande prima"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 3.0}, {"id": "sake_omotenashi", "titolo": "Sake con Omotenashi Anime", "cluster": "community", "stato": "da_fare", "effort": 2, "fit": 4, "tipo": "cuore", "nota": "collab", "tipologia": "collab", "durata_min": 20, "durata_max": 35, "necessita": ["serve ospite", "coordinare agende", "set da preparare"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 1.5}, {"id": "annachiara", "titolo": "Intervista @annachiara_santoro", "cluster": "community", "stato": "da_fare", "effort": 2, "fit": 4, "tipo": "cuore", "nota": "ospite", "tipologia": "intervista", "durata_min": 20, "durata_max": 35, "necessita": ["serve ospite", "coordinare agende", "liberatoria"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 1.5}, {"id": "jvan_finale", "titolo": "Japan Van — episodi finali del viaggio", "cluster": "viaggio", "stato": "girato", "effort": 3, "fit": 4, "tipo": "cuore", "nota": "chiusura della serie, i fedeli la aspettano; playlist", "tipologia": "doc", "durata_min": 15, "durata_max": 20, "necessita": ["girato disponibile", "montaggio pesante", "VO da scrivere", "serie in corso"], "stagione": "nessuna", "trend": "nullo", "origine": "piano 22/07/2026", "score": 0.5}], "labels": {"cluster": {"jhorror": "J-Horror", "societa": "Società & storia", "viaggio": "Viaggio (girato)", "community": "Community & ospiti", "fotografia": "Fotografia", "cibo": "Cibo", "truecrime": "True crime", "viaggio_pratico": "Viaggio pratico / SEO", "anime": "Anime & pop", "brand": "Brand story"}, "tipo": {"acquisizione": "Acquisizione", "cuore": "Cuore (fedeli)", "reputazione": "Reputazione"}, "stato": {"da_fare": "Da fare", "girato": "Girato, da montare", "mezzo_fatto": "Mezzo fatto", "proposta": "Proposta radar"}, "difficolta": {"1": "Facile", "2": "Medio", "3": "Pesante"}, "tipologia": {"studio": "Studio / saggio", "montaggio": "Montaggio girato", "intervista": "Intervista", "doc": "Documentario", "lista": "Lista / SEO", "monografia": "Monografia", "iceberg": "Iceberg", "collab": "Collaborazione"}}, "ricorrenze_radar": {"akiya": 8, "haikyo": 7, "showa": 8, "spopolamento": 5, "jhorror": 6, "famicom": 3, "documentario": 3}};
+const L = DATA.labels;
+const items = DATA.items;
+const DIFF = {1:'Facile',2:'Medio',3:'Pesante'};
+const TRENDW = {alto:3,medio:2,basso:1,nullo:0};
+
+const NEC = [...new Set(items.flatMap(i=>i.necessita))].sort();
+const FACETS = [
+ {key:'cluster', lab:'Argomento', vals:[...new Set(items.map(i=>i.cluster))].sort(), fmt:v=>L.cluster[v]||v},
+ {key:'tipologia', lab:'Tipologia', vals:[...new Set(items.map(i=>i.tipologia))].sort(), fmt:v=>L.tipologia[v]||v},
+ {key:'effort', lab:'Difficoltà', vals:[1,2,3], fmt:v=>DIFF[v]},
+ {key:'stato', lab:'Stato', vals:[...new Set(items.map(i=>i.stato))].sort(), fmt:v=>L.stato[v]||v},
+ {key:'tipo', lab:'Ruolo', vals:[...new Set(items.map(i=>i.tipo))].sort(), fmt:v=>L.tipo[v]||v},
+ {key:'trend', lab:'Segnale trend', vals:['alto','medio','basso','nullo'], fmt:v=>v},
+ {key:'stagione', lab:'Stagionalità', vals:[...new Set(items.map(i=>i.stagione))].sort(), fmt:v=>v},
+ {key:'necessita', lab:'Necessità', vals:NEC, fmt:v=>v, multi:true},
+];
+const state = {}; FACETS.forEach(f=>state[f.key]=new Set());
+
+const fEl = document.getElementById('filters');
+FACETS.forEach(f=>{
+ const row = document.createElement('div'); row.className='frow';
+ const lab = document.createElement('span'); lab.className='flab'; lab.textContent=f.lab; row.appendChild(lab);
+ f.vals.forEach(v=>{
+  const b=document.createElement('button'); b.className='chip'; b.textContent=f.fmt(v);
+  b.onclick=()=>{ state[f.key].has(v)?state[f.key].delete(v):state[f.key].add(v);
+                  b.classList.toggle('on'); render(); };
+  row.appendChild(b);
+ });
+ fEl.appendChild(row);
+});
+
+function match(it){
+ const q = document.getElementById('q').value.trim().toLowerCase();
+ if(q){
+  const hay = [it.titolo,it.nota,it.cluster,it.tipologia,it.stato,it.tipo,it.stagione,
+               L.cluster[it.cluster],L.tipologia[it.tipologia],it.necessita.join(' '),it.origine]
+              .join(' ').toLowerCase();
+  if(!q.split(/\s+/).every(w=>hay.includes(w))) return false;
+ }
+ for(const f of FACETS){
+  const s=state[f.key]; if(!s.size) continue;
+  if(f.multi){ if(![...s].some(v=>it.necessita.includes(v))) return false; }
+  else if(!s.has(it[f.key])) return false;
+ }
+ return true;
+}
+
+function render(){
+ const sort=document.getElementById('sort').value;
+ let out = items.filter(match);
+ const cmp = {
+  score:(a,b)=>b.score-a.score, fit:(a,b)=>b.fit-a.fit,
+  effort:(a,b)=>a.effort-b.effort||b.score-a.score,
+  durata:(a,b)=>a.durata_min-b.durata_min,
+  trend:(a,b)=>TRENDW[b.trend]-TRENDW[a.trend]||b.score-a.score,
+  titolo:(a,b)=>a.titolo.localeCompare(b.titolo,'it'),
+ }[sort];
+ out=[...out].sort(cmp);
+ document.getElementById('n').textContent=out.length;
+ const g=document.getElementById('grid'); g.innerHTML='';
+ document.getElementById('empty').hidden = out.length>0;
+ out.forEach(it=>{
+  const c=document.createElement('article'); c.className='card';
+  const dcls = it.effort===1?'easy':it.effort===2?'med':'hard';
+  c.innerHTML =
+   '<h3>'+esc(it.titolo)+'</h3>'+
+   '<div class="tags">'+
+    '<span class="t arg">'+esc(L.cluster[it.cluster]||it.cluster)+'</span>'+
+    '<span class="t">'+esc(L.tipologia[it.tipologia])+'</span>'+
+    '<span class="t '+dcls+'">'+DIFF[it.effort]+'</span>'+
+    '<span class="t">'+it.durata_min+'–'+it.durata_max+' min</span>'+
+    '<span class="t">'+esc(L.stato[it.stato]||it.stato)+'</span>'+
+    (it.trend==='alto'?'<span class="t trend">trend alto</span>':
+     it.trend==='medio'?'<span class="t med">trend medio</span>':'')+
+    (it.stagione!=='nessuna'?'<span class="t">'+esc(it.stagione)+'</span>':'')+
+   '</div>'+
+   '<p class="nota">'+esc(it.nota)+'</p>'+
+   '<p class="nec"><b>Serve:</b> '+it.necessita.map(esc).join(' · ')+'</p>'+
+   '<div class="meta"><span>resa '+it.fit+'/10</span><span>'+esc(L.tipo[it.tipo])+'</span>'+
+   '<span class="score">punteggio '+it.score+'</span></div>';
+  g.appendChild(c);
+ });
+}
+function esc(s){return String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('sort').addEventListener('change',render);
+document.getElementById('reset').onclick=()=>{
+ FACETS.forEach(f=>state[f.key].clear());
+ document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));
+ document.getElementById('q').value=''; render();
+};
+render();
+</script></body></html>
