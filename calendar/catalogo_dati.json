@@ -50,179 +50,26 @@
  ],
  "items": [
   {
-   "id": "akiya",
-   "titolo": "Akiya: perché il Giappone regala 9 milioni di case e nessuno le vuole",
+   "id": "giappone_ricco",
+   "titolo": "Perché il Giappone è ricco",
    "cluster": "societa",
-   "stato": "proposta",
+   "stato": "da_fare",
    "effort": 1,
-   "fit": 9,
+   "fit": 8,
    "tipo": "acquisizione",
-   "nota": "Nel radar trend in 6 report su 6 da luglio. Coerenza 9/10, saturazione IT 2/10, gap Alto. Zero video IT seri.",
+   "nota": "DOMANDA MISURATA (27/08/26, valida_tema.py): Nova Lectio 425k views con lo stesso titolo, Geopop 624k, Erikottero 20k recente sul mito che crolla; mediana comparabili IT 43k. EN: 1,5-2,5M sui big. Tema vivo, formato studio.",
    "tipologia": "studio",
-   "durata_min": 13,
-   "durata_max": 18,
+   "durata_min": 15,
+   "durata_max": 20,
    "necessita": [
     "si gira in studio",
-    "ricerca fonti",
+    "ricerca economica",
     "grafiche dati"
    ],
    "stagione": "nessuna",
    "trend": "alto",
-   "origine": "radar trend 24/08/2026",
-   "score": 12.0
-  },
-  {
-   "id": "haikyo",
-   "titolo": "Haikyo: le rovine del boom economico giapponese",
-   "cluster": "societa",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 9,
-   "tipo": "acquisizione",
-   "nota": "Radar: coerenza 9/10, saturazione IT 2/10, gap Alto. Si sposa col filone foto e col J-Horror.",
-   "tipologia": "studio",
-   "durata_min": 13,
-   "durata_max": 18,
-   "necessita": [
-    "si gira in studio",
-    "ricerca",
-    "archivio foto rovine"
-   ],
-   "stagione": "nessuna",
-   "trend": "alto",
-   "origine": "radar trend 24/08/2026",
-   "score": 12.0
-  },
-  {
-   "id": "noroi",
-   "titolo": "Noroi: il found footage che terrorizza (su Shudder)",
-   "cluster": "jhorror",
-   "stato": "da_fare",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "Halloween s2",
-   "tipologia": "monografia",
-   "durata_min": 10,
-   "durata_max": 15,
-   "necessita": [
-    "si gira in studio",
-    "visione film richiesta",
-    "clip sotto fair use"
-   ],
-   "stagione": "halloween",
-   "trend": "alto",
    "origine": "piano 22/07/2026",
    "score": 11.0
-  },
-  {
-   "id": "battle_royale",
-   "titolo": "Battle Royale",
-   "cluster": "jhorror",
-   "stato": "da_fare",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "cult; Halloween s2",
-   "tipologia": "monografia",
-   "durata_min": 10,
-   "durata_max": 15,
-   "necessita": [
-    "si gira in studio",
-    "visione film richiesta",
-    "clip sotto fair use"
-   ],
-   "stagione": "halloween",
-   "trend": "alto",
-   "origine": "piano 22/07/2026",
-   "score": 11.0
-  },
-  {
-   "id": "showa_nostalgia",
-   "titolo": "Showa: la nostalgia giapponese come industria da miliardi",
-   "cluster": "societa",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "Radar: presente in 6 report su 6, saturazione IT 1/10 (il piu' vuoto di tutti).",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
-   "necessita": [
-    "si gira in studio",
-    "ricerca",
-    "archivio anni 70-80"
-   ],
-   "stagione": "nessuna",
-   "trend": "alto",
-   "origine": "radar trend 24/08/2026",
-   "score": 11.0
-  },
-  {
-   "id": "spopolamento",
-   "titolo": "I villaggi giapponesi che scelgono di sparire (mukoku no mura)",
-   "cluster": "societa",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "Radar: gap IT Alto costante. Si aggancia ad akiya come serie.",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
-   "necessita": [
-    "si gira in studio",
-    "ricerca fonti",
-    "mappe/grafiche"
-   ],
-   "stagione": "nessuna",
-   "trend": "alto",
-   "origine": "radar trend 24/08/2026",
-   "score": 11.0
-  },
-  {
-   "id": "kisaragi",
-   "titolo": "Kisaragi Station: l'horror giapponese nato solo su internet",
-   "cluster": "jhorror",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "Radar: J-Horror unico segnale di domanda VIVO nel mercato IT. Perfetto per Halloween S2.",
-   "tipologia": "studio",
-   "durata_min": 10,
-   "durata_max": 15,
-   "necessita": [
-    "si gira in studio",
-    "ricerca leggende urbane"
-   ],
-   "stagione": "halloween",
-   "trend": "alto",
-   "origine": "radar trend 24/08/2026",
-   "score": 11.0
-  },
-  {
-   "id": "storia_canon",
-   "titolo": "Storia di CANON",
-   "cluster": "fotografia",
-   "stato": "da_fare",
-   "effort": 1,
-   "fit": 10,
-   "tipo": "acquisizione",
-   "nota": "brand-story + filone foto = il colpo grosso; 'dominio mercato fotografico' = 37 iscritti",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
-   "necessita": [
-    "si gira in studio",
-    "ricerca storica",
-    "archivio foto/immagini"
-   ],
-   "stagione": "nessuna",
-   "trend": "nullo",
-   "origine": "piano 22/07/2026",
-   "score": 10.0
   },
   {
    "id": "libri_foto_tokyo",
@@ -290,48 +137,48 @@
    "score": 9.0
   },
   {
-   "id": "storia_sega",
-   "titolo": "Storia di SEGA",
-   "cluster": "brand",
+   "id": "noroi",
+   "titolo": "Noroi: il found footage che terrorizza (su Shudder)",
+   "cluster": "jhorror",
    "stato": "da_fare",
    "effort": 1,
-   "fit": 7,
+   "fit": 8,
    "tipo": "acquisizione",
-   "nota": "nostalgia gaming",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
+   "nota": "Halloween s2",
+   "tipologia": "monografia",
+   "durata_min": 10,
+   "durata_max": 15,
    "necessita": [
     "si gira in studio",
-    "ricerca storica",
-    "archivio gaming"
+    "visione film richiesta",
+    "clip sotto fair use"
    ],
-   "stagione": "nessuna",
-   "trend": "medio",
+   "stagione": "halloween",
+   "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.5
+   "score": 8.0
   },
   {
-   "id": "famicom",
-   "titolo": "Famicom: la console che ha inventato il Giappone moderno",
-   "cluster": "brand",
-   "stato": "proposta",
+   "id": "battle_royale",
+   "titolo": "Battle Royale",
+   "cluster": "jhorror",
+   "stato": "da_fare",
    "effort": 1,
-   "fit": 7,
+   "fit": 8,
    "tipo": "acquisizione",
-   "nota": "Radar ricorrente. Gemello naturale di 'Storia di SEGA': girarli nella stessa giornata.",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
+   "nota": "cult; Halloween s2",
+   "tipologia": "monografia",
+   "durata_min": 10,
+   "durata_max": 15,
    "necessita": [
     "si gira in studio",
-    "ricerca storica",
-    "archivio gaming"
+    "visione film richiesta",
+    "clip sotto fair use"
    ],
-   "stagione": "nessuna",
-   "trend": "medio",
-   "origine": "radar trend 24/08/2026",
-   "score": 8.5
+   "stagione": "halloween",
+   "trend": "nullo",
+   "origine": "piano 22/07/2026",
+   "score": 8.0
   },
   {
    "id": "grandi_fotografi",
@@ -443,48 +290,48 @@
    "score": 8.0
   },
   {
-   "id": "giappone_ricco",
-   "titolo": "Perché il Giappone è ricco",
-   "cluster": "societa",
+   "id": "storia_canon",
+   "titolo": "Come il Giappone si è preso la fotografia mondiale (ex Storia di CANON)",
+   "cluster": "fotografia",
    "stato": "da_fare",
    "effort": 1,
-   "fit": 8,
+   "fit": 7,
    "tipo": "acquisizione",
-   "nota": "ref video internazionale enorme; macro evergreen",
+   "nota": "DOMANDA MISURATA (27/08/26): comparabili IT a 38-413 views in anni — 'storia Canon' non la cerca nessuno in IT. Ma il tuo n.1 di sempre (2.841v, +37 iscr) era 'Il dominio del Giappone nel mercato fotografico': riconfezionare come macro Giappone-industria, non come monografia brand.",
    "tipologia": "studio",
-   "durata_min": 15,
-   "durata_max": 20,
+   "durata_min": 12,
+   "durata_max": 18,
    "necessita": [
     "si gira in studio",
-    "ricerca economica",
-    "grafiche dati"
+    "ricerca storica",
+    "archivio foto/immagini"
    ],
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 7.0
   },
   {
-   "id": "iceberg_movie",
-   "titolo": "Iceberg dei film giapponesi",
-   "cluster": "jhorror",
+   "id": "storia_sega",
+   "titolo": "Storia di SEGA",
+   "cluster": "brand",
    "stato": "da_fare",
-   "effort": 2,
+   "effort": 1,
    "fit": 7,
    "tipo": "acquisizione",
-   "nota": "formato iceberg = clic; Halloween s2",
-   "tipologia": "iceberg",
-   "durata_min": 18,
-   "durata_max": 30,
+   "nota": "nostalgia gaming",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
    "necessita": [
     "si gira in studio",
-    "ricerca lunga",
-    "grafica iceberg da produrre"
+    "ricerca storica",
+    "archivio gaming"
    ],
-   "stagione": "halloween",
-   "trend": "alto",
+   "stagione": "nessuna",
+   "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.5
+   "score": 7.0
   },
   {
    "id": "young_homeless",
@@ -660,6 +507,137 @@
    "trend": "nullo",
    "origine": "piano 22/07/2026",
    "score": 7.0
+  },
+  {
+   "id": "akiya",
+   "titolo": "Akiya: perché il Giappone regala 9 milioni di case e nessuno le vuole",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 13,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca fonti",
+    "grafiche dati"
+   ],
+   "stagione": "nessuna",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
+  },
+  {
+   "id": "haikyo",
+   "titolo": "Haikyo: le rovine del boom economico giapponese",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 13,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca",
+    "archivio foto rovine"
+   ],
+   "stagione": "nessuna",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
+  },
+  {
+   "id": "showa_nostalgia",
+   "titolo": "Showa: la nostalgia giapponese come industria da miliardi",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca",
+    "archivio anni 70-80"
+   ],
+   "stagione": "nessuna",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
+  },
+  {
+   "id": "spopolamento",
+   "titolo": "I villaggi giapponesi che scelgono di sparire (mukoku no mura)",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca fonti",
+    "mappe/grafiche"
+   ],
+   "stagione": "nessuna",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
+  },
+  {
+   "id": "kisaragi",
+   "titolo": "Kisaragi Station: l'horror giapponese nato solo su internet",
+   "cluster": "jhorror",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 10,
+   "durata_max": 15,
+   "necessita": [
+    "si gira in studio",
+    "ricerca leggende urbane"
+   ],
+   "stagione": "halloween",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
+  },
+  {
+   "id": "famicom",
+   "titolo": "Famicom: la console che ha inventato il Giappone moderno",
+   "cluster": "brand",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca storica",
+    "archivio gaming"
+   ],
+   "stagione": "nessuna",
+   "trend": "nullo",
+   "origine": "radar pre-fix (evidenza viziata)",
+   "score": 6.0
   },
   {
    "id": "netflix_3film",
@@ -1049,6 +1027,28 @@
    "score": 5.0
   },
   {
+   "id": "iceberg_movie",
+   "titolo": "Iceberg dei film giapponesi",
+   "cluster": "jhorror",
+   "stato": "da_fare",
+   "effort": 2,
+   "fit": 7,
+   "tipo": "acquisizione",
+   "nota": "formato iceberg = clic; Halloween s2",
+   "tipologia": "iceberg",
+   "durata_min": 18,
+   "durata_max": 30,
+   "necessita": [
+    "si gira in studio",
+    "ricerca lunga",
+    "grafica iceberg da produrre"
+   ],
+   "stagione": "halloween",
+   "trend": "nullo",
+   "origine": "piano 22/07/2026",
+   "score": 4.5
+  },
+  {
    "id": "dieci_canali",
    "titolo": "Dieci migliori canali sul Giappone",
    "cluster": "community",
@@ -1221,12 +1221,12 @@
   }
  },
  "ricorrenze_radar": {
-  "akiya": 8,
-  "haikyo": 7,
-  "showa": 8,
-  "spopolamento": 5,
-  "jhorror": 6,
-  "famicom": 3,
-  "documentario": 3
+  "akiya": 0,
+  "haikyo": 0,
+  "showa": 0,
+  "spopolamento": 0,
+  "jhorror": 0,
+  "famicom": 0,
+  "documentario": 0
  }
 }

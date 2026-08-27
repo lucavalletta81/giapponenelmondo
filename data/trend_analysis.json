@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-26 21:18",
-  "summary": "Settimana piatta su tutti i delta: nessun segnale nuovo emerge dai dati di questa run. I canali sentinella IT rimangono fermi su anime/manga e viaggio, senza picchi o accelerazioni. I temi dello storico (haikyo, akiya, J-Horror, Showa) non mostrano risalite. Settimana da monitoraggio, non da pubblicazione urgente.",
+  "generated_at": "2026-08-28 09:01",
+  "summary": "Settimana ancora sostanzialmente piatta. L'unico segnale degno di nota è il cluster expat_japan_en in inglese (+14 delta), trainato da Tokyo Lens con due video sul minimalismo estremo e sullo studio/living space retrò. In italiano non emerge nulla di nuovo: anime_manga_pop domina ma è saturo e non è territorio di Luca. Un solo trend genuino supportato dai dati.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 0,
       "youtube_videos_analyzed": 10,
       "gap_IT_EN_count": 1,
       "delta_trend_count": 0
     },
     "EN": {
-      "trend_count": 2,
+      "trend_count": 1,
       "youtube_videos_analyzed": 10,
-      "delta_trend_count": 0
+      "delta_trend_count": 1
     },
     "JP": {
-      "signal_count": 1,
+      "signal_count": 0,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -30,23 +30,23 @@
       },
       {
         "keyword": "viaggio",
-        "volume": 77,
-        "delta": "flat",
-        "delta_value": 0,
+        "volume": 30,
+        "delta": "down",
+        "delta_value": -47,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 63,
-        "delta": "flat",
-        "delta_value": 0,
+        "volume": 23,
+        "delta": "down",
+        "delta_value": -40,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 20,
+        "volume": 17,
         "delta": "flat",
-        "delta_value": 0,
+        "delta_value": -3,
         "source": "youtube_velocity"
       }
     ],
@@ -60,16 +60,16 @@
       },
       {
         "keyword": "expat_japan_en",
-        "volume": 62,
-        "delta": "flat",
-        "delta_value": 0,
+        "volume": 76,
+        "delta": "up",
+        "delta_value": 14,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 16,
+        "volume": 17,
         "delta": "flat",
-        "delta_value": 0,
+        "delta_value": 1,
         "source": "youtube_velocity"
       }
     ],
@@ -86,103 +86,111 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Minimalismo estremo in Giappone: 2 anni dopo",
+      "title": "Vivere piccolo a Tokyo: lo spazio come scelta identitaria",
       "category": "Sociale/Culturale",
       "urgency": "Media",
-      "coerenza": 6,
+      "coerenza": 5,
       "saturazione_IT": 2,
-      "saturazione_EN": 5,
+      "saturazione_EN": 6,
       "saturazione_JP": 3,
-      "delta_coerenza": "flat",
+      "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Vive con meno di 30 oggetti da 2 anni. Come sta adesso?",
-      "video_title": "Il minimalismo radicale giapponese: cosa resta dopo 2 anni",
-      "podcast_title": "Vivere con niente: il minimalismo come scelta identitaria in Giappone",
-      "angolatura": "Non il minimalismo come estetica Instagram, ma come risposta culturale al consumismo Showa: cosa dice di chi lo sceglie oggi",
+      "thumbnail_hook": "Vive in 20 mq a Tokyo da 2 anni. Ha scelto lui.",
+      "video_title": "Vivere in 20 mq a Tokyo: minimalismo o ideologia?",
+      "podcast_title": "Lo spazio come ribellione: il Giappone che sceglie di vivere piccolo",
+      "angolatura": "Non il minimalismo estetico da Pinterest, ma la scelta politica e identitaria di rinunciare allo spazio in una città che lo nega a tutti — e cosa dice di noi.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema riflessivo, nessuna componente visiva indispensabile, si presta alla narrazione lunga",
+      "motivazione_formato": "Tema concettuale, nessun visual esclusivo disponibile, si presta alla narrazione lunga.",
       "struttura_atti": [
-        "Atto I: Il Giappone del troppo — dalla cultura dell accumulo Showa al punto di rottura",
-        "Atto II: Chi sceglie il vuoto — profili dei minimalisti estremi giapponesi e cosa li ha spinti",
-        "Atto III: Due anni dopo — cosa rimane, cosa cambia, e cosa dice di noi questa ossessione occidentale per il loro vuoto"
+        "Atto I: Tokyo Lens torna sul suo minimalista estremo 2 anni dopo — cosa è cambiato, cosa no, e perché il pubblico EN continua a guardare.",
+        "Atto II: Lo spazio minimo in Giappone non è solo estetica — è risposta alla crisi immobiliare, alla solitudine, al consumismo. Chi sceglie di vivere in poco: studenti, single, anziani, expat.",
+        "Atto III: E in Italia? Il minimalismo giapponese importato è spesso vuoto — cosa succederebbe se capissimo davvero cosa significa rinunciare allo spazio per scelta e non per necessità."
       ],
-      "coverage_IT": "Quasi assente: il minimalismo giapponese trattato solo come estetica, mai come fenomeno sociale longitudinale",
-      "opportunita_IT": "Angolatura sociologica e narrativa completamente libera in italiano; il formato '2 anni dopo' crea struttura narrativa pronta",
+      "coverage_IT": "Quasi nulla in italiano: il minimalismo giapponese viene trattato come estetica decorativa, mai come fenomeno sociale.",
+      "opportunita_IT": "Luca può essere il primo in italiano a trattare il tema con profondità sociologica, sfruttando il delta EN in crescita come onda da anticipare.",
       "esempi_EN": [
         {
           "titolo": "Japan's Most EXTREME Minimalist 2 Years Later",
           "url": "https://youtube.com/watch?v=BpqYEWbkFYw"
+        },
+        {
+          "titolo": "Building a TINY (Retro) Room in my Tokyo Japan YT Studio",
+          "url": "https://youtube.com/watch?v=M-JR3ON5uJ8"
         }
       ],
-      "angolo_EN": "Tokyo Lens segue il soggetto nel tempo: approccio documentaristico, non estetico",
-      "segnale_JP": "Nessun segnale diretto nei dati JP questa run; tema guidato dal lato expat EN",
+      "angolo_EN": "In EN si punta sulla curiosità voyeuristica dello spazio fisico. In IT si può puntare sul perché culturale e politico.",
+      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run sul tema spazio/minimalismo.",
       "esempi_JP": [],
-      "utilita_JP": "Nessun esempio JP disponibile nei dati — segnale non confermato dalla fonte nativa"
+      "utilita_JP": "Nessun esempio JP disponibile in questa run. Monitorare nelle prossime sessioni."
     }
   ],
   "trends_EN": [
     {
-      "title": "Minimalismo estremo a Tokyo: vivere con quasi nulla",
+      "title": "Minimalismo estremo in Giappone: follow-up narrativo",
       "category": "Sociale/Culturale",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 62,
-      "volume_IT": 0,
-      "delta_EN": "flat",
+      "urgency_radar": "Caldo",
+      "volume_EN": 76,
+      "volume_IT": 23,
+      "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens copre il tema con follow-up a 2 anni su un minimalista estremo. In IT zero copertura. Il minimalismo giapponese come scelta esistenziale — non estetica — è un angolo culturale profondo non ancora toccato dai canali italiani. Finestra aperta ma si stringe.",
-      "connessione_canale": "Si aggancia alla serie vita_giappone e al filone sociale già esplorato con Toyoko Kids e konbini: il corpo e lo spazio come scelta identitaria."
+      "perche_monitorarlo": "Tokyo Lens pubblica un follow-up a 2 anni sul minimalismo estremo: formato 'dove sono finiti' con alta trazione. In IT il cluster vita_giappone e' a -40. Finestra aperta: 2-4 settimane prima che arrivi qualche canale italiano travel.",
+      "connessione_canale": "Il tema minimalismo era gia' in radar (score 6, saturazione bassa). Il follow-up di Tokyo Lens e' il gancio narrativo per rilanciarlo con angolo identitario, non lifestyle."
     },
     {
-      "title": "L'anime controverso: cosa la community non perdona",
-      "category": "Cinema/J-Horror",
+      "title": "Expat in Giappone: lo studio come spazio rituale",
+      "category": "Estetica/Visiva",
       "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 63,
-      "delta_EN": "flat",
-      "gap_IT": "Medio",
-      "perche_monitorarlo": "Trash Taste dedica un episodio intero all'anime più controverso del momento con taglio critico-culturale. In IT il cluster anime_manga_pop è saturo di pop ma non di analisi. L'angolo 'cosa scandalizza la community e perché' è ancora libero in italiano.",
-      "connessione_canale": "Diretto collegamento al filone Visual Kei e Jirai-kei: il Giappone che disturba, provoca, divide. Luca può portare il punto di vista antropologico che manca in IT."
+      "volume_EN": 76,
+      "volume_IT": 23,
+      "delta_EN": "up",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Tokyo Lens costruisce una stanza retro nel suo studio Tokyo: trend expat_japan_en in risalita (+14). In IT nessuno tratta lo spazio fisico dell'expat come oggetto culturale. Finestra: 3-6 settimane.",
+      "connessione_canale": "Si collega all'episodio Showa fisico e ai mercatini: lo studio retro e' una forma di collezionismo identitario, non arredamento."
     }
   ],
   "trends_JP": [
     {
-      "title": "Stipendi in Giappone: il tabù del denaro — 給料の話",
-      "category": "Sociale/Culturale",
+      "title": "Illustrazione digitale e i suoi errori tipici / 絵が下手に見える失敗例",
+      "category": "Estetica/Visiva",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Alta",
-      "segnale": "TAKASHii from Japan affronta i salari giapponesi in modo diretto. In Giappone parlare di stipendi è culturalmente tabù, ma i creator lo rompono con numeri reali. Fenomeno di trasparenza dal basso.",
-      "utilita_canale": "Permette un episodio su lavoro, classe e silenzio economico in Giappone: tema sociale denso, quasi assente in IT con angolatura culturale.",
+      "rilevanza": "Bassa",
+      "segnale": "Naoki Saito pubblica su errori comuni nel disegno digitale: segnale di cultura visiva nativa, non fenomeno sociale. Interessa artisti e appassionati JP.",
+      "utilita_canale": "Scarsa per il formato narrativo di Luca. Utile solo se si costruisse un episodio sull'estetica manga come standard visivo culturale, non tecnico.",
       "esempi_JP": [
         {
-          "titolo": "Salaries in Japan",
-          "url": "https://youtube.com/watch?v=mIjmvBBaPOw"
+          "titolo": "絵が下手に見える！よくある失敗例 ！！",
+          "url": "https://youtube.com/watch?v=PL7jKd8bSF0"
         }
       ]
     },
     {
-      "title": "Otsukimi: la luna come rituale collettivo — お月見",
-      "category": "Estetica/Visiva",
+      "title": "Kimono Mom e il matcha: il Giappone tradizionale per export / 伝統のグローバル化",
+      "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "TAKASHii from Japan documenta la tradizione dell'Otsukimi, celebrazione lunare autunnale. Rito stagionale con radici profonde, quasi ignorato fuori dal Giappone.",
-      "utilita_canale": "Angolo Showa-culturale: le festività minori come specchio dell'anima giapponese. Diverso dai temi già esauriti, ha stagionalità precisa — finestra autunnale.",
+      "segnale": "Kimono Mom lancia il proprio matcha brandizzato e un tour estivo: creator JP che costruiscono economia della tradizione per pubblico internazionale. Fenomeno di soft export dal basso.",
+      "utilita_canale": "Angolo interessante: chi decide cosa e' 'autentico' del Giappone quando e' un creator a venderlo. Collegabile al tema Showa come eredita' contesa.",
       "esempi_JP": [
         {
-          "titolo": "Japan's long tradition of celebrating the moon. @wearesakuraco",
-          "url": "https://youtube.com/watch?v=gajXzVwc3hA"
+          "titolo": "Our Matcha Is Finally Here!🍵🌸#kimonomom #matcha",
+          "url": "https://youtube.com/watch?v=hVqRk0ZX2sI"
+        },
+        {
+          "titolo": "Our two-month summer adventure | UMAMI TOUR 2026",
+          "url": "https://youtube.com/watch?v=8g_HbYMX2mg"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Minimalismo Tokyo: verificare se altri canali EN o IT entrano sul tema nelle prossime due settimane",
-    "Salari e tabù economico: cercare video IT che affrontino lavoro e classe in Giappone con angolatura culturale",
-    "Otsukimi e festività minori: monitorare se il cluster vita_giappone IT tocca riti stagionali con approccio non travel",
-    "Trash Taste controversia anime: osservare se la discussione migra su YouTube IT o resta confinata all'ecosystem EN/community"
+    "expat_japan_en: delta +14, monitorare se accelera oltre 80 nelle prossime 2 run",
+    "Tokyo Lens studio retro: verificare se il format 'spazio fisico come identita'' genera imitatori EN o IT",
+    "vita_giappone IT a -40: controllare se il cluster si stabilizza o continua a perdere, segnala possibile spazio editoriale libero",
+    "Kimono Mom economy: seguire se altri creator JP nativi lanciano prodotti fisici, potrebbe diventare episodio sul Giappone che si vende da solo"
   ],
   "warnings": []
 }

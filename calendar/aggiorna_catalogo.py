@@ -113,6 +113,29 @@ def main():
             nuovo = "basso"          # il segnale è passato: si abbassa, non si azzera
         it["trend"] = nuovo
 
+    # 2-bis. scoperta APERTA: parole-tema ricorrenti nei report, oltre ai 7
+    # temi mappati (altrimenti il ponte tracciarebbe solo temi predefiniti —
+    # la stessa circolarità del vecchio radar, in piccolo)
+    STOP = set("""giappone giapponese giapponesi japan della dello delle degli
+        nella nelle come sono stato stata anni ancora senza sempre quando cosa
+        perche' perche più mondo video storia dopo prima oltre contro tra fra""".split())
+    conta_parole = {}
+    for r in report:
+        parole_report = set()
+        for t in r:
+            for w in re.findall(r"[a-zàèéìòù]{5,}", norm(t)):
+                if w not in STOP:
+                    parole_report.add(w)
+        for w in parole_report:
+            conta_parole[w] = conta_parole.get(w, 0) + 1
+    gia_mappate = {k for _, (kws, _, _) in TEMI.items() for k in kws}
+    emergenti = {w: n for w, n in conta_parole.items()
+                 if n >= SOGLIA_PROPOSTA and not any(w in k or k in w for k in gia_mappate)}
+    if emergenti:
+        print("[catalogo] parole-tema emergenti fuori mappa:",
+              ", ".join(f"{w}×{n}" for w, n in sorted(emergenti.items(), key=lambda x: -x[1])[:8]),
+              "— valutare se aggiungerle a TEMI o proporle come video")
+
     # 3. proposte nuove per temi caldi non coperti
     esistenti = {slug(i["titolo"]) for i in cat["items"]}
     for tema, (kw_radar, kw_cat, meta) in TEMI.items():
