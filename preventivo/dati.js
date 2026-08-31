@@ -269,7 +269,7 @@ luoghi: [
   /* --- NARA / KOYASAN --------------------------------------------------- */
   { id:"todaiji",    citta:"nara",  nome:"Todai-ji e il Grande Buddha", tag:["templi","storia","templi_top"], ore:2.5, yen:800, c:"S" },
   { id:"naradeer",   citta:"nara",  nome:"Parco dei cervi di Nara", tag:["natura","gratis","kids","kids_animali"], ore:2, yen:200 },
-  { id:"okunoin",    citta:"koyasan",nome:"Okunoin di notte, il cimitero nella foresta", tag:["templi","insolito","natura","gratis","templi_nascosti"], ore:2.5, yen:0 },
+  { id:"okunoin",    citta:"koyasan",nome:"Okunoin di notte, il cimitero nella foresta", tag:["templi","insolito","natura","gratis","templi_nascosti"], ore:2.5, yen:0, nota:"È un cimitero vivo: silenzio, e oltre il ponte Gobyonobashi non si fotografa." },
   { id:"shukubo",    citta:"koyasan",nome:"Notte in tempio con cena shojin e cerimonia all'alba", tag:["tradizione","templi","insolito","onsen_ryokan","trad_te"], ore:3, yen:0, nota:"Il costo è nell'alloggio, non nell'attività." },
 
   /* --- HAKONE / FUJI ---------------------------------------------------- */

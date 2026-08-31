@@ -48,11 +48,16 @@ var COMP = [];        // i compromessi disegnati ora: serve ad agganciare i clic
 /* le immagini: in locale e nel sito stanno in img/, nel file unico della demo
    build_demo.py le inietta in window.PV_IMG come data URI. Nel tema pixel
    ogni nome prende il prefisso px- (stessi nomi, altro disegno). */
-var TEMA = "piatto";
-try { TEMA = localStorage.getItem("pv-tema") === "pixel" ? "pixel" : "piatto"; } catch (e) {}
+/* Il tema di casa è l'arcade (31/08/2026): chi ha già scelto Flat lo tiene. */
+var TEMA = "pixel";
+try { TEMA = localStorage.getItem("pv-tema") === "piatto" ? "piatto" : "pixel"; } catch (e) {}
 function img(nome) {
   var n = (TEMA === "pixel" ? "px-" : "") + nome;
   return (window.PV_IMG && window.PV_IMG[n]) || ("img/" + n);
+}
+/* i disegni del vestito arcade sono già pixel art: niente prefisso px- */
+function pix(nome) {
+  return (window.PV_IMG && window.PV_IMG[nome]) || ("img/" + nome);
 }
 
 /* L'interruttore in alto a destra: due vestiti per la stessa pagina. Cambia
@@ -69,6 +74,14 @@ function applicaTema(t) {
 
 /* ------------------------------------------------------------ FORMATTO --- */
 function eu(n) { return Math.round(n).toLocaleString("it-IT") + " €"; }
+/* il rincaro del weekend, detto con le cifre misurate e non con un aggettivo */
+function spiegaWeekend(liv) {
+  var w = window.PREZZI && window.PREZZI.alloggi_weekend;
+  if (!w || !liv.weekend || liv.weekend <= 1.001) return "";
+  return ", più il rincaro di venerdì e sabato (misurato: ×" +
+    String(w.venerdi).replace(".", ",") + " e ×" + String(w.sabato).replace(".", ",") +
+    ", una notte su sette ciascuno, +" + Math.round((liv.weekend - 1) * 100) + "% sul soggiorno)";
+}
 function eu0(n) { return M.arrotonda(n, 10).toLocaleString("it-IT") + " €"; }
 function yen(n) { return Math.round(n).toLocaleString("it-IT") + " ¥"; }
 function esc(t) { return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
@@ -276,6 +289,15 @@ function calcolaEMostra() {
   agganciaRisultato();
   disegnaSpalla("risultato");
   window.scrollTo(0, 0);
+  /* il conteggio di fine livello del tema arcade (hud.js); solo la prima
+     apertura, non a ogni manopola toccata nel risultato */
+  if (window.PV_FINE_LIVELLO && !calcolaEMostra.gia) {
+    calcolaEMostra.gia = true;
+    window.PV_FINE_LIVELLO(r, S.stile);
+  }
+  /* un preventivo in più nel conto pubblico: solo il primo di questa visita,
+     e solo quando il numero è stato davvero calcolato */
+  if (window.PV_CONTA) window.PV_CONTA.segna();
 }
 
 function disegna(r, comp) {
@@ -298,6 +320,7 @@ function disegna(r, comp) {
   h.push("</div>");
   h.push('<p class="nota">Clicca una colonna per cambiare il livello di riferimento. ' +
     "Il numero è un intervallo travestito da cifra: consideralo ±15%.</p>");
+  h.push('<p class="conta-preventivi" id="conta-preventivi" hidden></p>');
 
   /* --- la prosa --------------------------------------------------------- */
   h.push('<div class="box">');
@@ -334,7 +357,9 @@ function disegna(r, comp) {
          (vf.scali === 0 ? "diretto" : vf.scali + (vf.scali === 1 ? " scalo" : " scali")) +
          (vf.scalo_peggio > 240 ? " (il più lungo di " + Math.floor(vf.scalo_peggio / 60) + "h)" : "") +
          ", classe " + (vf.classe || "").toLowerCase().replace("_", " ") +
-         " — rilevato il " + (vf.letto || "").split("-").reverse().join("/"))
+         " — rilevato il " + (vf.letto || "").split("-").reverse().join("/") +
+         ". Google non dichiara il bagaglio in stiva: sulle tariffe più basse di solito " +
+         "NON è incluso, e non è in questo totale")
       : ("stima: andata/ritorno da " + M.partenza(S.partenza).nome +
          ", tariffa media × moltiplicatore di stagione (" + r.stagione.volo + "×)"),
     trasporti: "biglietti del giro + trasporto urbano " + yen(D.trasporto_locale_yen_giorno) + "/giorno + transfer aeroporto",
@@ -342,13 +367,16 @@ function disegna(r, comp) {
       ? (liv.notti + " notti, stima: tariffa per città × " + r.stagione.hotel + "× di stagione")
       : liv.alloggio_fonte.auto
         ? ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
-           " notti — mediana delle " + liv.alloggio_fonte.zone + " zone di Tokyo in questa fascia, " +
+           " notti × " + (liv.camere || 1) + (liv.camere > 1 ? " camere" : " camera") +
+           ", diviso fra chi ci dorme" + spiegaWeekend(liv) +
+           " — mediana delle " + liv.alloggio_fonte.zone + " zone di Tokyo in questa fascia, " +
            "su " + liv.alloggio_fonte.strutture + " strutture (da " + liv.alloggio_fonte.economica.nome +
            " a " + liv.alloggio_fonte.economica.eur + " € fino a " + liv.alloggio_fonte.cara.nome +
            " a " + liv.alloggio_fonte.cara.eur + " €), rilevato il " +
            liv.alloggio_fonte.letto.split("-").reverse().join("/"))
         : ("prezzo reale Google Hotels: " + liv.alloggio_fonte.eur + " € a notte × " + liv.notti +
-           " notti " + esc(M.aZona(liv.zona)) + " — mediana di " + liv.alloggio_fonte.campione +
+           " notti × " + (liv.camere || 1) + (liv.camere > 1 ? " camere" : " camera") +
+           " " + esc(M.aZona(liv.zona)) + " — mediana di " + liv.alloggio_fonte.campione +
            " strutture (da " + liv.alloggio_fonte.min + " a " + liv.alloggio_fonte.max + " €), " +
            "rilevato il " + liv.alloggio_fonte.letto.split("-").reverse().join("/")),
     cibo: D.cibo[S.stile].desc,
@@ -366,9 +394,31 @@ function disegna(r, comp) {
   });
   h.push('<tr class=tot><td>Totale</td><td class=num>' + eu(liv.perPersona) + "</td><td class=num>" +
     eu(liv.gruppo) + "</td><td></td></tr></table></div>");
+  /* Il pellegrinaggio anime è l'angolo più bello del servizio ed è anche
+     quello che può fare danno: se nel giro ci sono luoghi di una serie, si
+     dice come ci si sta. */
+  var pellegrinaggi = [];
+  (r.itinerario.giorni || []).forEach(function (g) {
+    (g.luoghi || []).forEach(function (l) { if (l.anime) pellegrinaggi.push(l.nome); });
+    if (g.gita) (g.gita.luoghi || []).forEach(function (l) { if (l.anime) pellegrinaggi.push(l.nome); });
+  });
+  if (pellegrinaggi.length) {
+    h.push('<p class="nota"><b>Sui luoghi delle serie.</b> Nel tuo giro ce ne sono ' +
+      pellegrinaggi.length + ". Sono tutti posti pubblici — stazioni, scalinate, strade, " +
+      "musei: in questo catalogo non entrano case private né indirizzi di persone. " +
+      "Quando ci arrivi, ricordati che per chi ci abita è solo il quartiere sotto casa: " +
+      "voce bassa, niente riprese dentro i cortili, e la fila la fanno anche i pellegrini.</p>");
+  }
+
+  h.push('<p class="nota"><b>Due cose che questo totale non contiene.</b> ' +
+    "Il <b>bagaglio in stiva</b>: la fonte dei voli non dice se la tariffa lo include, " +
+    "e sulle tariffe più basse di solito non c'è — se ti serve, aggiungi quanto chiede " +
+    "la tua compagnia (di norma fra i 60 e i 100 € a tratta). E la <b>disponibilità</b>: " +
+    "il prezzo è quello che si vedeva alla data della rilevazione, non una camera o un " +
+    "posto prenotato.</p>");
 
   /* dettagli apribili */
-  h.push("<details><summary>Notte per notte</summary><div class=\"tabella-wrap\"><table><tr><th>Città</th><th class=num>notti</th><th class=num>a notte</th><th class=num>totale</th></tr>" +
+  h.push("<details><summary>Notte per notte</summary><div class=\"tabella-wrap\"><table><tr><th>Città</th><th class=num>notti</th><th class=num>camere</th><th class=num>a notte</th><th class=num>totale</th></tr>" +
     liv.dettAlloggio.map(function (a) {
       /* due sorgenti, due unità: il prezzo VERO di Google Hotels arriva già in
          euro (tariffaEur), quello di catalogo in yen. Prima si convertiva tutto
@@ -376,6 +426,7 @@ function disegna(r, comp) {
       var notte  = a.tariffaEur != null ? a.tariffaEur : M.eur(a.tariffa);
       var totale = a.subEur     != null ? a.subEur     : M.eur(a.sub);
       return "<tr><td>" + esc(a.citta) + "</td><td class=num>" + a.notti + "</td><td class=num>" +
+        (a.camere || 1) + "</td><td class=num>" +
         eu(notte) + "</td><td class=num>" + eu(totale) + "</td></tr>";
     }).join("") + "</table></div></details>");
 
@@ -630,7 +681,7 @@ function mappaVera(r) {
   var titolo = "Tokyo e le gite in giornata: " +
     (gite.length ? gite.map(function (g) { return M.citta(g).nome; }).join(", ") : "nessuna");
   var s = ['<figure class="mappa-vera">',
-    '<img src="img/mappa-kanto.webp" data-img="mappa-kanto.webp" alt="" width="' + B.w + '" height="' + B.h + '">',
+    '<img src="img/mappa-kanto.webp" alt="" width="' + B.w + '" height="' + B.h + '">',
     '<svg class="sopra" viewBox="0 0 ' + B.w + " " + B.h + '" xmlns="http://www.w3.org/2000/svg" ' +
       'role="img" aria-label="' + esc(titolo) + '">',
     /* un velo chiaro smorza i colori della carta: i punti devono vincere */
@@ -674,10 +725,124 @@ function mappaVera(r) {
   return s.join("");
 }
 
+/* ======================================================= LA MAPPA GIOCO ==
+   La mappa-mondo alla Super Mario / Pokémon: il fondo è disegnato a tessere
+   (grafica/mappa_gioco.py), i punti d'interesse ci stanno sopra come icone
+   (grafica/prepara_icone_mappa.py). La geografia è EVOCATA, non misurata:
+   per i chilometri veri c'è la mappa reale, a un clic di distanza.
+   Le coordinate sono in tessere e vanno tenute uguali a COORD nel py. */
+var MG = { w: 640, h: 416, tile: 16 };
+var MG_COORD = {
+  tokyo: [24, 14], nikko: [22, 3], chichibu: [11, 9],
+  fuji: [3, 15], hakone: [10, 21], kamakura: [21, 18]
+};
+function mgXY(id) {
+  var c = MG_COORD[id] || [20, 13];
+  return { x: (c[0] + 0.5) * MG.tile, y: (c[1] + 0.5) * MG.tile };
+}
+/* il distintivo appeso all'icona: dice PERCHÉ quella meta è nel giro, e lo
+   dice leggendo i luoghi che il motore ci ha davvero messo dentro */
+function mgDistintivo(g) {
+  var L = g.luoghi || [];
+  function primo(f) { return L.filter(f)[0]; }
+  var a = primo(function (l) { return l.anime; });
+  if (a) return { f: "arcade-map-anime.png", t: a.nome };
+  var o = primo(function (l) { return (l.tag || []).indexOf("onsen") !== -1; });
+  if (o) return { f: "arcade-map-onsen.png", t: o.nome };
+  var h = primo(function (l) { return (l.tag || []).indexOf("hiking") !== -1; });
+  if (h) return { f: "arcade-map-tenda.png", t: h.nome };
+  return null;
+}
+/* sulla mappa il nome deve stare in una targhetta: quello del catalogo a
+   volte è una frase */
+var MG_NOME = { fuji: "Fuji", kamakura: "Kamakura", chichibu: "Chichibu",
+                hakone: "Hakone", nikko: "Nikko", tokyo: "Tokyo" };
+function mgNodo(id, opt) {
+  var p = mgXY(id), c = M.citta(id);
+  var nome = MG_NOME[id] || c.nome;
+  var s = ['<div class="mg-nodo' + (opt.on ? " on" : "") + (opt.base ? " base" : "") +
+    '" style="left:' + (p.x / MG.w * 100).toFixed(2) + '%;top:' + (p.y / MG.h * 100).toFixed(2) + '%">'];
+  s.push('<span class="mg-ico"><img class="mg-base" src="' + pix("arcade-map-" + id + ".png") + '" alt="">');
+  if (opt.distintivo)
+    s.push('<img class="mg-badge" src="' + pix(opt.distintivo.f) + '" alt="" title="' +
+      esc(opt.distintivo.t) + '">');
+  s.push("</span>");
+  s.push('<b class="mg-eti">' + esc(nome) +
+    (opt.sotto ? '<span>' + esc(opt.sotto) + "</span>" : "") + "</b>");
+  s.push("</div>");
+  return s.join("");
+}
+function mgVia(a, b) {
+  var p1 = mgXY(a), p2 = mgXY(b);
+  var dx = p2.x - p1.x, dy = p2.y - p1.y;
+  var n = Math.max(3, Math.round(Math.sqrt(dx * dx + dy * dy) / 26)), s = [];
+  for (var i = 1; i < n; i++) {
+    var k = i / n;
+    s.push('<circle cx="' + (p1.x + dx * k).toFixed(1) + '" cy="' + (p1.y + dy * k).toFixed(1) + '" r="4.5"/>');
+  }
+  return s.join("");
+}
+function mappaGioco(r) {
+  var gite = r.itinerario.gite || [];
+  var scelte = gite.map(function (g) { return g.citta; });
+  var s = ['<figure class="mappa-gioco">',
+    '<div class="mg-quadro" style="aspect-ratio:' + MG.w + "/" + MG.h + '">',
+    '<img class="mg-terra" src="' + pix("arcade-mappa.png") + '" alt="La mappa del Kanto">',
+    '<svg class="mg-vie" viewBox="0 0 ' + MG.w + " " + MG.h + '" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'];
+  scelte.forEach(function (id) { s.push(mgVia("tokyo", id)); });
+  s.push("</svg>");
+
+  /* le mete non scelte restano sulla mappa, spente: si vede cosa c'è intorno */
+  M.GITE.forEach(function (id) {
+    if (scelte.indexOf(id) !== -1) return;
+    s.push(mgNodo(id, { on: false }));
+  });
+  gite.forEach(function (g) {
+    s.push(mgNodo(g.citta, {
+      on: true, distintivo: mgDistintivo(g),
+      sotto: g.tratta && g.tratta.min ? g.tratta.min + " min" : ""
+    }));
+  });
+  s.push(mgNodo("tokyo", { on: true, base: true, sotto: "la base" }));
+  s.push("</div>");
+  s.push('<figcaption>Le mete del tuo giro sono accese, le altre restano spente. ' +
+    "Mappa disegnata: le distanze non sono in scala.</figcaption>");
+  s.push("</figure>");
+  return s.join("");
+}
+
+/* Due carte per la stessa gita: quella di gioco e quella vera. Stanno
+   entrambe nel documento e il bottone scambia quale si vede — così il PDF
+   trova sempre la carta reale, qualunque cosa ci sia a schermo. */
+var MAPPA_STILE = null;   /* scelta manuale; null = segue il tema */
+function stileMappa() { return MAPPA_STILE || (TEMA === "pixel" ? "gioco" : "reale"); }
+/* ogni icona prende la sua larghezza vera in percentuale della mappa: le
+   proporzioni restano giuste a ogni dimensione dello schermo */
+function mgMisura() {
+  $$("#risultato .mg-ico img.mg-base").forEach(function (im) {
+    var metti = function () {
+      /* la misura va sul NODO: è lui il riquadro in percentuale sulla mappa.
+         L'etichetta esce dai suoi bordi e resta centrata, ed è quello che
+         vogliamo — se la larghezza la desse il testo, l'icona ballerebbe. */
+      if (im.naturalWidth)
+        im.closest(".mg-nodo").style.width = (im.naturalWidth / MG.w * 100) + "%";
+    };
+    if (im.complete) metti(); else im.addEventListener("load", metti, { once: true });
+  });
+}
+function applicaMappa() {
+  var g = $("#risultato .mappa-gioco"), v = $("#risultato .mappa-vera"), bt = $("#mappa-stile");
+  if (!g || !v) return;
+  var gioco = stileMappa() === "gioco";
+  g.hidden = !gioco;
+  v.hidden = gioco;
+  if (bt) bt.textContent = gioco ? "vedi la mappa reale \u25b8" : "vedi la mappa di gioco \u25b8";
+}
 function mappa(r) {
   var W = 900, H = 540, PAD = 56;
   var soloTk = !!r.itinerario.soloTokyo;
-  if (soloTk) return mappaVera(r);
+  if (soloTk) return '<div class="mappa-doppia">' + mappaGioco(r) + mappaVera(r) +
+    '<p class="mappa-scambia"><button type="button" id="mappa-stile" class="mappa-stile"></button></p></div>';
   var gite = soloTk ? (r.itinerario.gite || []).map(function (g) { return g.citta; }) : [];
   var ids = soloTk ? ["tokyo"].concat(gite) : r.itinerario.rotta;
   var rotta = ids.map(function (id) { return M.citta(id); });
@@ -882,6 +1047,8 @@ function mappaPerPdf(cb) {
   try {
     var K = 2;                       /* doppia risoluzione: a 86 mm servono ~420 dpi */
     var c = document.createElement("canvas");
+    /* nel PDF va SEMPRE la carta reale: l'immagine di .mappa-vera è quella,
+       anche quando a schermo si sta guardando la mappa di gioco */
     c.width = img.naturalWidth * K; c.height = img.naturalHeight * K;
     var x = c.getContext("2d");
     x.drawImage(img, 0, 0, c.width, c.height);
@@ -969,6 +1136,13 @@ function agganciaRisultato() {
       calcolaEMostra();
     };
   });
+  mgMisura();
+  applicaMappa();
+  var bms = $("#mappa-stile");
+  if (bms) bms.onclick = function () {
+    MAPPA_STILE = stileMappa() === "gioco" ? "reale" : "gioco";
+    applicaMappa();
+  };
   $("#stampa").onclick = function () { creaPdf(); };
   $("#modifica").onclick = function () {
     $("#risultato").hidden = true; $("#wizard").hidden = false; mostraPasso(0);
@@ -1005,5 +1179,17 @@ function avvia() {
 
   mostraPasso(0);
 }
+
+/* L'aggancio per il vestito arcade (hud.js/intro.js): stato e motore in sola
+   lettura, senza aprire la chiusura. */
+window.PV_HOOK = {
+  stato: function () { return S; },
+  pianifica: function () { return M.pianifica(perMotore()); },
+  passo: function () {
+    return { n: passo, tot: passiAttivi().length, risultato: !$("#risultato").hidden,
+             raggiunto: raggiunto, ids: passiAttivi().map(function (p) { return p.id; }) };
+  }
+};
+
 avvia();
 })();

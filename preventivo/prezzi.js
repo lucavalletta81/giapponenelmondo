@@ -1,10 +1,10 @@
 /* GENERATO da raccolta/esporta.py — non modificare a mano.
    Prezzi VERI da Google Flights e Google Hotels. */
 window.PREZZI = {
- "generato": "2026-08-23T12:22:01+12:00",
+ "generato": "2026-08-31T16:35:03+12:00",
  "cambio": {
-  "jpy_per_eur": 185.66,
-  "data": "2026-08-21",
+  "jpy_per_eur": 185.92,
+  "data": "2026-08-28",
   "fonte": "frankfurter.dev (BCE)",
   "verificato": true
  },
@@ -15,11 +15,19 @@ window.PREZZI = {
  },
  "condizioni": {
   "voli": "andata e ritorno, 1 adulto, 14 notti, Tokyo Narita o Haneda; economico = tariffa più bassa senza limiti di scali; normale = economy con al massimo uno scalo, ordine «migliore» di Google; lusso = business, diretto quando esiste",
-  "alloggi": "prezzo a notte, una notte infrasettimanale, mediana del campione trovato da Google Hotels per quella zona e quella fascia"
+  "alloggi": "prezzo a notte di una camera doppia, una notte infrasettimanale, mediana del campione trovato da Google Hotels per quella zona e quella fascia; il rincaro di venerdì e sabato è misurato a parte (alloggi_weekend) e lo applica il motore"
  },
  "arrotondamenti": {
   "voli": 25,
   "alloggi": 5
+ },
+ "alloggi_weekend": {
+  "venerdi": 1.32,
+  "sabato": 1.613,
+  "coppie": 8,
+  "anticipo_max": 120,
+  "letto": "2026-08-31",
+  "nota": "mediana del rapporto fra la stessa camera di venerdì/sabato e la stessa camera infrasettimanale, sulle celle lette a meno di 120 giorni dalla data"
  },
  "zone": [
   {
@@ -3010,23 +3018,23 @@ window.PREZZI = {
    "business": {
     "ago": {
      "eur": 45,
-     "mediana": 44,
-     "min": 31,
-     "max": 86,
-     "campione": 23,
-     "esempio": "Agora Place Tokyo Asakusa",
+     "mediana": 43,
+     "min": 33,
+     "max": 83,
+     "campione": 21,
+     "esempio": "Amanek Asakusa Sakurabashi",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
-     "eur": 100,
-     "mediana": 98,
-     "min": 61,
+     "eur": 105,
+     "mediana": 106,
+     "min": 72,
      "max": 177,
-     "campione": 18,
-     "esempio": "Sakura Hostel Asakusa",
+     "campione": 19,
+     "esempio": "Hotel Ann Asakusa",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 85,
@@ -3129,14 +3137,14 @@ window.PREZZI = {
      "letto": "2026-08-23"
     },
     "ott": {
-     "eur": 70,
-     "mediana": 71,
-     "min": 27,
-     "max": 140,
-     "campione": 25,
-     "esempio": "ACE INN ASAKUSA",
+     "eur": 75,
+     "mediana": 74,
+     "min": 43,
+     "max": 108,
+     "campione": 24,
+     "esempio": "kaguya asakusa/Japanese Guest House 【Woman only】",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 45,
@@ -3152,23 +3160,23 @@ window.PREZZI = {
    "ostello": {
     "ago": {
      "eur": 35,
-     "mediana": 36,
+     "mediana": 34,
      "min": 27,
-     "max": 52,
-     "campione": 17,
+     "max": 66,
+     "campione": 14,
      "esempio": "Hotel Plus Hostel Tokyo Asakusa 1",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
      "eur": 45,
      "mediana": 46,
-     "min": 37,
-     "max": 100,
+     "min": 41,
+     "max": 96,
      "campione": 13,
-     "esempio": "Hostel Wasabi Asakusa",
+     "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 60,
@@ -3271,14 +3279,14 @@ window.PREZZI = {
      "letto": "2026-08-23"
     },
     "ott": {
-     "eur": 50,
-     "mediana": 51,
+     "eur": 55,
+     "mediana": 55,
      "min": 32,
-     "max": 102,
-     "campione": 19,
+     "max": 94,
+     "campione": 17,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 35,
@@ -3295,24 +3303,24 @@ window.PREZZI = {
   "ginza": {
    "business": {
     "ago": {
-     "eur": 70,
-     "mediana": 70,
-     "min": 38,
-     "max": 150,
-     "campione": 24,
-     "esempio": "Hotel Ginza Daiei",
+     "eur": 85,
+     "mediana": 84,
+     "min": 63,
+     "max": 139,
+     "campione": 21,
+     "esempio": "Hotel Vista Tokyo Tsukiji",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
-     "eur": 150,
-     "mediana": 148,
-     "min": 113,
-     "max": 349,
-     "campione": 21,
+     "eur": 170,
+     "mediana": 168,
+     "min": 116,
+     "max": 350,
+     "campione": 22,
      "esempio": "KOKO HOTEL Ginza 1-chome",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 125,
@@ -3416,13 +3424,13 @@ window.PREZZI = {
     },
     "ott": {
      "eur": 110,
-     "mediana": 108,
-     "min": 65,
-     "max": 197,
-     "campione": 24,
-     "esempio": "Hotel Ginza Daiei",
+     "mediana": 112,
+     "min": 67,
+     "max": 194,
+     "campione": 25,
+     "esempio": "Tabist銀座",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 80,
@@ -3579,24 +3587,24 @@ window.PREZZI = {
    },
    "ostello": {
     "ago": {
-     "eur": 55,
-     "mediana": 56,
-     "min": 35,
-     "max": 89,
-     "campione": 6,
-     "esempio": "Tengcle stay 5th floor",
+     "eur": 50,
+     "mediana": 49,
+     "min": 49,
+     "max": 98,
+     "campione": 5,
+     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
      "eur": 65,
      "mediana": 65,
      "min": 65,
-     "max": 170,
+     "max": 193,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 70,
@@ -3701,12 +3709,12 @@ window.PREZZI = {
     "ott": {
      "eur": 60,
      "mediana": 61,
-     "min": 61,
-     "max": 153,
+     "min": 55,
+     "max": 179,
      "campione": 5,
-     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
+     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 60,
@@ -3724,23 +3732,23 @@ window.PREZZI = {
    "business": {
     "ago": {
      "eur": 50,
-     "mediana": 49,
+     "mediana": 48,
      "min": 21,
-     "max": 188,
+     "max": 144,
      "campione": 31,
      "esempio": "Tabist Hotel Aurora Ikebukuro",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
      "eur": 110,
      "mediana": 108,
-     "min": 54,
-     "max": 426,
+     "min": 58,
+     "max": 427,
      "campione": 14,
-     "esempio": "Hotel Changtee Tokyo",
+     "esempio": "ASTA HOTEL",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 75,
@@ -3843,14 +3851,14 @@ window.PREZZI = {
      "letto": "2026-08-23"
     },
     "ott": {
-     "eur": 55,
-     "mediana": 54,
+     "eur": 60,
+     "mediana": 61,
      "min": 37,
-     "max": 101,
+     "max": 103,
      "campione": 32,
-     "esempio": "Kankokukan Business Hotel",
+     "esempio": "Hotel Lala33",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 60,
@@ -4008,23 +4016,23 @@ window.PREZZI = {
    "ostello": {
     "ago": {
      "eur": 40,
-     "mediana": 40,
+     "mediana": 41,
      "min": 21,
-     "max": 55,
-     "campione": 31,
+     "max": 61,
+     "campione": 28,
      "esempio": "Tabist Hotel Aurora Ikebukuro",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
      "eur": 65,
-     "mediana": 63,
-     "min": 54,
-     "max": 388,
-     "campione": 9,
-     "esempio": "Hotel Changtee Tokyo",
+     "mediana": 64,
+     "min": 58,
+     "max": 389,
+     "campione": 7,
+     "esempio": "ASTA HOTEL",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 70,
@@ -4120,11 +4128,11 @@ window.PREZZI = {
      "eur": 55,
      "mediana": 53,
      "min": 37,
-     "max": 85,
+     "max": 80,
      "campione": 33,
-     "esempio": "Kankokukan Business Hotel",
+     "esempio": "Hotel Lala33",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 40,
@@ -4889,14 +4897,14 @@ window.PREZZI = {
      "letto": "2026-08-23"
     },
     "apr1": {
-     "eur": 4890,
-     "mediana": 4890,
+     "eur": 415,
+     "mediana": 413,
      "min": 99,
-     "max": 4890,
-     "campione": 5,
+     "max": 413,
+     "campione": 4,
      "esempio": "Ichiyu Hotel Asakusa",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 110,
@@ -5445,22 +5453,22 @@ window.PREZZI = {
     "ago": {
      "eur": 50,
      "mediana": 52,
-     "min": 34,
-     "max": 134,
+     "min": 38,
+     "max": 116,
      "campione": 26,
-     "esempio": "UNPLAN Shinjuku",
+     "esempio": "Imano Tokyo Hostel/Cafe&Bar Shinjuku",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
-     "eur": 135,
-     "mediana": 133,
-     "min": 64,
-     "max": 220,
-     "campione": 17,
-     "esempio": "9h nine hours woman Shinjuku",
+     "eur": 120,
+     "mediana": 120,
+     "min": 54,
+     "max": 197,
+     "campione": 18,
+     "esempio": "Hotel & Co. Sagami",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 100,
@@ -5563,14 +5571,14 @@ window.PREZZI = {
      "letto": "2026-08-23"
     },
     "ott": {
-     "eur": 75,
-     "mediana": 77,
-     "min": 49,
-     "max": 165,
-     "campione": 28,
-     "esempio": "Hotel Livemax - Shinjuku East",
+     "eur": 60,
+     "mediana": 59,
+     "min": 43,
+     "max": 116,
+     "campione": 32,
+     "esempio": "ELE Cabin Shinjuku Kabukicho",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 65,
@@ -5727,24 +5735,24 @@ window.PREZZI = {
    },
    "ostello": {
     "ago": {
-     "eur": 45,
-     "mediana": 44,
-     "min": 28,
-     "max": 567,
+     "eur": 50,
+     "mediana": 48,
+     "min": 26,
+     "max": 75,
      "campione": 20,
      "esempio": "House Ikebukuro",
      "notte": "2027-08-19",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "apr1": {
-     "eur": 80,
-     "mediana": 82,
-     "min": 54,
-     "max": 102,
-     "campione": 12,
-     "esempio": "BOOK AND BED TOKYO Shinjuku",
+     "eur": 65,
+     "mediana": 64,
+     "min": 30,
+     "max": 112,
+     "campione": 11,
+     "esempio": "Yamate Resthouse",
      "notte": "2027-04-07",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "cap": {
      "eur": 60,
@@ -5848,13 +5856,13 @@ window.PREZZI = {
     },
     "ott": {
      "eur": 60,
-     "mediana": 61,
-     "min": 38,
-     "max": 108,
+     "mediana": 62,
+     "min": 36,
+     "max": 116,
      "campione": 28,
-     "esempio": "Shinjuku Skycapsule Hotel",
+     "esempio": "Ace Inn Shinjuku",
      "notte": "2026-10-13",
-     "letto": "2026-08-23"
+     "letto": "2026-08-31"
     },
     "set": {
      "eur": 45,

@@ -295,6 +295,9 @@ function calcolaEMostra() {
     calcolaEMostra.gia = true;
     window.PV_FINE_LIVELLO(r, S.stile);
   }
+  /* un preventivo in più nel conto pubblico: solo il primo di questa visita,
+     e solo quando il numero è stato davvero calcolato */
+  if (window.PV_CONTA) window.PV_CONTA.segna();
 }
 
 function disegna(r, comp) {
@@ -317,6 +320,7 @@ function disegna(r, comp) {
   h.push("</div>");
   h.push('<p class="nota">Clicca una colonna per cambiare il livello di riferimento. ' +
     "Il numero è un intervallo travestito da cifra: consideralo ±15%.</p>");
+  h.push('<p class="conta-preventivi" id="conta-preventivi" hidden></p>');
 
   /* --- la prosa --------------------------------------------------------- */
   h.push('<div class="box">');

@@ -482,8 +482,33 @@ function calcolaTreni(itin, ggGiappone) {
   };
 }
 
+/* Quante camere serve prenotare. Google Hotels legge il prezzo di una CAMERA
+   DOPPIA (lo dice la nota della rilevazione): addebitarlo a ogni persona era
+   sovrastimare del 30-40% chi viaggia in due. Regola dichiarata: due adulti
+   per camera, i bambini dormono con i genitori. */
+function camere(input) {
+  var ad = Math.max(1, input.adulti || 1), bm = input.bambini || 0;
+  /* due adulti per camera; nella stanza ci sta al massimo un terzo letto per
+     un bambino, quindi la capienza vera è tre persone */
+  return Math.max(1, Math.ceil(ad / 2), Math.ceil((ad + bm) / 3));
+}
+
+/* Il listino legge una notte INFRASETTIMANALE. In un soggiorno vero, una
+   notte su sette è un venerdì e una è un sabato, e costano di più: il
+   rincaro è MISURATO (data/prezzi.js → alloggi_weekend, coppie feriale/
+   venerdì/sabato sulle stesse celle). Se la misura non c'è, non si corregge
+   niente: meglio un numero prudente che un numero inventato. */
+function fattoreWeekend() {
+  var P = window.PREZZI, w = P && P.alloggi_weekend;
+  if (!w || !w.venerdi || !w.sabato) return 1;
+  return (5 + w.venerdi + w.sabato) / 7;
+}
+
 function calcolaLivello(input, itin, treni, stileKey) {
   var st = stagione(input.stagione), stile = STILI[stileKey];
+  var nCamere = camere(input);
+  var fWeek = fattoreWeekend();
+  var teste = (input.adulti || 1) + (input.bambini || 0) * 0.65;
 
   /* --- alloggio: prezzo VERO a notte per zona e fascia, se ce l'abbiamo.
      Il moltiplicatore di stagione NON si applica al prezzo reale: la stagione
@@ -497,8 +522,9 @@ function calcolaLivello(input, itin, treni, stileKey) {
     alloggio = null;                              /* in euro, non in yen */
     alloggioFonte = reale;
     dettAlloggio.push({ citta: reale.auto ? ("Tokyo, mediana di " + reale.zone + " zone")
-                                          : nomeZona(zona), notti: notti,
-                        tariffaEur: reale.eur, subEur: reale.eur * notti,
+                                          : nomeZona(zona), notti: notti, camere: nCamere,
+                        weekend: fWeek,
+                        tariffaEur: reale.eur, subEur: reale.eur * notti * nCamere * fWeek,
                         campione: reale.campione, esempio: reale.esempio,
                         min: reale.min, max: reale.max });
   } else {
@@ -507,9 +533,10 @@ function calcolaLivello(input, itin, treni, stileKey) {
       var chiaveVecchia = { ostello:"ostello", business:"business", lusso:"medio" }[stile.alloggio] || "business";
       var tariffa = c.alloggio[chiaveVecchia] || c.alloggio.medio || c.alloggio.alto;
       var n = itin.tappe[i].giorni;
-      var sub = tariffa * st.hotel * n;
+      var sub = tariffa * st.hotel * n * nCamere;
       alloggio += sub; notti += n;
-      dettAlloggio.push({ citta:c.nome, notti:n, tariffa:Math.round(tariffa*st.hotel), sub:Math.round(sub) });
+      dettAlloggio.push({ citta:c.nome, notti:n, camere:nCamere,
+                          tariffa:Math.round(tariffa*st.hotel), sub:Math.round(sub) });
     }
   }
 
@@ -546,15 +573,20 @@ function calcolaLivello(input, itin, treni, stileKey) {
     cibo: cibo,
     attivita: attivita
   };
-  var alloggioEur = alloggioFonte ? alloggioFonte.eur * notti : eur(alloggio);
+  /* il conto delle camere si divide fra chi ci dorme: così il totale di
+     gruppo (perPersona × teste) resta il prezzo vero delle camere */
+  var alloggioGruppo = alloggioFonte ? alloggioFonte.eur * notti * nCamere * fWeek
+                                     : eur(alloggio);
+  var alloggioEur = alloggioGruppo / teste;
   var perPersona = volo + extra
     + eur(vociYen.trasporti) + alloggioEur + eur(vociYen.cibo) + eur(vociYen.attivita);
   var imprevisti = perPersona * e.imprevisti_perc;
   perPersona += imprevisti;
 
-  var persone = input.adulti + input.bambini * 0.65;
+  var persone = teste;
   return {
     stile: stileKey, nome: stile.nome,
+    camere: nCamere, weekend: fWeek,
     volo_fonte: v || null,
     alloggio_fonte: alloggioFonte,
     zona: zona,
@@ -891,7 +923,7 @@ function prosa(r) {
       "Fra la zona più economica e la più cara ballano parecchi soldi: " +
       af.economica.nome + " sta a " + af.economica.eur + " euro a notte, " +
       af.cara.nome + " a " + af.cara.eur + ". Su " + liv.notti + " notti sono " +
-      arrotonda((af.cara.eur - af.economica.eur) * liv.notti) + " euro di differenza a persona: " +
+      arrotonda((af.cara.eur - af.economica.eur) * liv.notti * (liv.camere || 1)) + " euro di differenza sul soggiorno: " +
       "le leve qui sotto te la fanno vedere.");
   } else if (af) {
     p.push("Anche l'alloggio è vero: " + af.eur + " euro a notte è la mediana di " + af.campione +

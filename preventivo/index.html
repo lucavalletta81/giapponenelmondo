@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Tokyo Budget Lab — quanto costa un viaggio a Tokyo · Giappone nel Mondo</title>
   <meta name="description" content="Rispondi a sette domande e ottieni un itinerario su misura con la stima di quanto costa: volo, treni, alloggio, cibo, ingressi. Compreso il conto vero del Japan Rail Pass." />
   <meta property="og:title" content="Quanto costa un viaggio in Giappone" />
@@ -14,9 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="tema.css?v=202608251127" />
-  <link rel="stylesheet" href="tema-pixel.css?v=202608251127" />
-  <link rel="stylesheet" href="app.css?v=202608251127" />
+  <link rel="stylesheet" href="tema.css?v=202608312008" />
+  <link rel="stylesheet" href="tema-pixel.css?v=202608312008" />
+  <link rel="stylesheet" href="tema-arcade.css?v=202608312008" />
+  <link rel="stylesheet" href="app.css?v=202608312008" />
 </head>
 <body>
 
@@ -77,8 +79,8 @@
   <div class="pv-main">
 
     <div class="pv-testa">
-      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o pixel art">
-        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Pixel</span>
+      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o arcade">
+        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Arcade</span>
       </button>
     </div>
 
@@ -103,9 +105,10 @@
       <section class="passo largo" data-id="interessi">
         <div class="campo">
           <h2><span class="n"></span>Cosa ti interessa davvero</h2>
-          <p class="nota">Scegline da 3 a 6. Sono queste a decidere l'itinerario, non le date.</p>
+          <p class="nota">Scegline almeno 2; il punto giusto sta fra 3 e 6. Sono queste a decidere
+          l'itinerario, non le date.</p>
           <div id="interessi" class="carte interessi"></div>
-          <p class="errore" id="err-interessi" hidden>Scegline almeno due.</p>
+          <p class="errore" id="err-interessi" hidden>Serve almeno un paio di interessi: sono loro a costruire l'itinerario.</p>
         </div>
       </section>
 
@@ -132,7 +135,7 @@
             <label>Adulti <input type="number" id="adulti" value="2" min="1" max="10"></label>
             <label>Bambini (0-11) <input type="number" id="bambini" value="0" min="0" max="8"></label>
           </div>
-          <p class="nota">I bambini contano circa il 65% di un adulto: volo quasi pieno, cibo e ingressi ridotti, letto condiviso.</p>
+          <p class="nota">In questa simulazione un bambino pesa il 65% di un adulto: volo quasi pieno, cibo e ingressi ridotti, letto condiviso. È l'assunzione del nostro modello, non una tariffa: quella vera dipende da età e compagnia.</p>
         </div>
       </section>
 
@@ -219,6 +222,10 @@
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5.2 3.4 10 8 11 4.6-1 8-5.8 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> I tuoi dati restano nel tuo browser</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Volo e alloggio da prezzi reali</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7l-3 7h6l-3-7zm14 0-3 7h6l-3-7zM7 7h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Le stime sono dichiarate stime</span>
+      <span id="conta-piede"></span>
+      <a href="#" id="pv-rivedi">rivedi l'intro</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="termini.html">Termini d'uso</a>
     </footer>
 
   </div>
@@ -230,15 +237,20 @@
     <div class="container footer-inner">
       <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
       <p class="footer-copy">&copy; 2026 giapponenelmondo.com &mdash; tutti i diritti riservati</p>
-      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 31/08/2026 19:03<!--/STAMP--></p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 22/08/2026<!--/STAMP--></p>
     </div>
   </footer>
 
   <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-  <script src="dati.js?v=202608251127"></script>
-  <script src="prezzi.js?v=202608251127"></script>
-  <script src="motore.js?v=202608251127"></script>
-  <script src="pdf.js?v=202608251127"></script>
-  <script src="app.js?v=202608251127"></script>
+  <script src="dati.js?v=202608312008"></script>
+  <script src="prezzi.js?v=202608312008"></script>
+  <script src="motore.js?v=202608312008"></script>
+  <script src="pdf.js?v=202608312008"></script>
+  <script src="app.js?v=202608312008"></script>
+  <script src="suoni.js?v=202608312008"></script>
+  <script src="hud.js?v=202608312008"></script>
+  <script src="intro.js?v=202608312008"></script>
+  <script src="mascotte.js?v=202608312008"></script>
+  <script src="contatore.js?v=202608312008"></script>
 </body>
 </html>
