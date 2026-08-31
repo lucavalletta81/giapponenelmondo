@@ -4,3 +4,6 @@ Allow: /
 
 # Documenti di lavoro interni: non indicizzare.
 Disallow: /preventivo/progetto/
+
+# Copia di prova del preventivo (versione arcade in collaudo).
+Disallow: /preventivo/prova/

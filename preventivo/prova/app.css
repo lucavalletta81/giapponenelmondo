@@ -1,0 +1,11 @@
+/* Ritocchi per la sezione dentro giapponenelmondo.com: il vestito vero è
+   tema.css, questo aggiusta solo la convivenza con la nav e il footer del sito
+   (style.css azzera margin/padding di tutto e fissa la nav in alto). */
+.prev { background: var(--pv-fondo, #FAF7F2); }
+.prev .pv-layout { min-height: calc(100vh - var(--nav-h, 64px)); }
+.prev .back-link {
+  display: inline-block; margin: 0 0 28px 36px; font-size: .9rem; color: var(--gray-600);
+  font-family: var(--font-sans);
+}
+.prev .back-link:hover { color: var(--accent); }
+@media (max-width: 860px) { .prev .back-link { margin-left: 16px; } }

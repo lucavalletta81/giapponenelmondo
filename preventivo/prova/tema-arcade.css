@@ -1,0 +1,312 @@
+/* =========================================================================
+   TEMA ARCADE — il gioco sopra il tema pixel (29-31/08/2026).
+   tema-pixel.css resta la base (colori, bordi, ombre): qui c'è solo la parte
+   di GIOCO — HUD col costo vivo, sequenza d'ingresso, conteggio di fine
+   livello, cursore, comandi. Tutto scopato sotto data-tema="pixel" tranne
+   #intro e #fine-livello, che sono overlay e vivono solo in tema arcade.
+   Regola fissa: niente transizioni morbide, tutto steps(1).
+   ========================================================================= */
+
+/* -------------------------------------------------------------- HUD ----- */
+body[data-tema="pixel"] #hud {
+  display: flex; align-items: center; gap: 14px;
+  border: 3px solid #1E2A47; background: #FFF9E8;
+  box-shadow: 4px 4px 0 #1E2A47;
+  padding: 8px 12px; margin: 0 0 14px;
+  font-family: 'Press Start 2P', monospace; font-size: 11px; color: #1E2A47;
+}
+body:not([data-tema="pixel"]) #hud { display: none; }
+body[data-tema="pixel"] #hud img { image-rendering: pixelated; }
+body[data-tema="pixel"] #hud .hud-mondo { letter-spacing: 1px; }
+body[data-tema="pixel"] #hud .hud-costo {
+  display: flex; align-items: center; gap: 8px; margin-left: auto;
+}
+body[data-tema="pixel"] #hud .hud-costo > b { font-size: 14px; }
+body[data-tema="pixel"] #hud .hud-costo > b.lampo { animation: hud-lampo .15s steps(1); }
+@keyframes hud-lampo { 0% { background: #F7C948; } 100% { background: none; } }
+body[data-tema="pixel"] #hud .hud-margine {
+  display: flex; flex-direction: column; gap: 3px; align-items: flex-start;
+}
+body[data-tema="pixel"] #hud .hud-margine i { font-style: normal; font-size: 8px; color: #5B5F78; white-space: nowrap; }
+body[data-tema="pixel"] #hud .hud-margine u {
+  text-decoration: none; display: block; width: 64px; height: 5px;
+  border: 1px solid #1E2A47; background: #F7E6BF;
+}
+body[data-tema="pixel"] #hud .hud-margine u b {
+  display: block; height: 100%; background: #E0392B; width: 100%;
+}
+body[data-tema="pixel"] #hud #hud-audio {
+  font-family: 'Press Start 2P', monospace; font-size: 9px;
+  border: 2px solid #1E2A47; background: #F7E6BF; color: #1E2A47;
+  box-shadow: 2px 2px 0 #1E2A47; padding: 5px 8px; cursor: pointer;
+}
+body[data-tema="pixel"] #hud #hud-audio:active { box-shadow: none; transform: translate(2px, 2px); }
+
+/* ------------------------------------------------------------ INTRO ----- */
+#intro, #intro *, #fine-livello, #fine-livello *, #hud, #hud * { box-sizing: border-box; }
+#intro {
+  position: fixed; inset: 0; z-index: 999;
+  background: #FBEFD2;
+  background-image:
+    linear-gradient(rgba(30,42,71,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,42,71,.045) 1px, transparent 1px);
+  background-size: 8px 8px;
+  font-family: 'Press Start 2P', monospace; color: #1E2A47;
+  overflow: hidden; cursor: pointer;
+}
+#intro.in-via { display: none; }
+#intro .in-loading {
+  position: absolute; top: 44%; left: 50%; transform: translateX(-50%);
+  font-size: 18px; letter-spacing: 2px;
+}
+#intro .in-punti::after {
+  content: ""; animation: in-punti 1s steps(1) infinite;
+}
+@keyframes in-punti {
+  0% { content: ""; } 25% { content: "."; } 50% { content: ".."; } 75% { content: "..."; }
+}
+#intro .in-scena { position: absolute; inset: 0; }
+#intro .in-suolo {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 96px;
+  background: url("img/arcade-mattone.png"); background-size: 48px 48px;
+  image-rendering: pixelated; border-top: 3px solid #1E2A47;
+  animation: in-suolo .25s steps(4) both;
+}
+@keyframes in-suolo { from { transform: translateY(100%); } to { transform: translateY(0); } }
+#intro img { image-rendering: pixelated; }
+#intro .in-blocco {
+  position: absolute; bottom: 290px; left: 50%; margin-left: -32px; z-index: 3;
+}
+/* la sorpresa che si alza dal blocco, alla Mario: parte dietro, sale sopra */
+#intro .in-sorpresa {
+  position: absolute; bottom: 296px; left: 50%; margin-left: -48px; z-index: 2;
+}
+#intro .in-sorpresa.in-sboccia { animation: in-sboccia .5s steps(8) both; }
+@keyframes in-sboccia { from { transform: translateY(0); } to { transform: translateY(-116px); } }
+#intro .in-blocco.in-botta { animation: in-botta .25s steps(2); }
+@keyframes in-botta { 0% { transform: translateY(0); } 40% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
+#intro .in-moneta {
+  position: absolute; bottom: 322px; left: 50%; margin-left: -20px;
+}
+#intro .in-moneta.in-vola { animation: in-vola .3s steps(4) both; }
+@keyframes in-vola { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-70px); opacity: 0; } }
+/* Tokyo è lo sfondo di tutta la scena, appoggiata sul suolo */
+#intro .in-tokyo {
+  position: absolute; bottom: 96px; left: 0;
+  width: 100%; height: auto; z-index: 0;
+}
+/* l'aereo attraversa il cielo, da sinistra a destra, a scatti */
+#intro .in-aereo {
+  position: absolute; top: 12%; left: 0;
+  animation: in-aereo 11s steps(60) infinite;
+}
+@keyframes in-aereo {
+  from { transform: translateX(-110px); }
+  to   { transform: translateX(calc(100vw + 110px)); }
+}
+#intro .in-omino {
+  position: absolute; bottom: 96px; left: 50%; margin-left: -32px;
+  transform: translateX(-46vw); z-index: 4;
+}
+#intro .in-omino.in-cammina { transition: transform 1.5s linear; transform: translateX(0); }
+#intro .in-omino.in-posato { transform: translateX(0); }
+#intro .in-omino.in-salto { animation: in-salto .36s steps(6) both; }
+@keyframes in-salto {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(0) translateY(-80px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+#intro .in-dialogo {
+  position: absolute; left: 50%; top: 18%; transform: translateX(-50%);
+  width: min(560px, calc(100vw - 40px));
+  border: 3px solid #1E2A47; background: #FFF9E8;
+  box-shadow: 6px 6px 0 #1E2A47; padding: 22px 24px 18px;
+  cursor: pointer;
+}
+#intro .in-testo {
+  font-family: 'Press Start 2P', monospace; font-size: 13px; line-height: 2;
+  white-space: pre-wrap; margin: 0; color: #1E2A47; min-height: 78px;
+}
+#intro .in-avanti {
+  position: absolute; right: 14px; bottom: 8px; font-size: 12px;
+  animation: in-lampeggia 0.8s steps(1) infinite;
+}
+@keyframes in-lampeggia { 0% { opacity: 1; } 50% { opacity: 0; } }
+#intro .in-inizia {
+  display: block; margin: 14px 0 0 auto;
+  font-family: 'Press Start 2P', monospace; font-size: 12px;
+  border: 3px solid #1E2A47; background: #E0392B; color: #fff;
+  box-shadow: 3px 3px 0 #1E2A47; padding: 10px 16px; cursor: pointer;
+}
+#intro .in-inizia:active { box-shadow: none; transform: translate(3px, 3px); }
+/* display:block vincerebbe su [hidden]: va ribadito */
+#intro .in-inizia[hidden], #intro [hidden] { display: none !important; }
+#intro .in-skip {
+  position: absolute; top: 14px; right: 14px;
+  font-family: 'Press Start 2P', monospace; font-size: 9px;
+  border: 2px solid #1E2A47; background: #FFF9E8; color: #5B5F78;
+  box-shadow: 2px 2px 0 #1E2A47; padding: 6px 9px; cursor: pointer;
+}
+
+/* --------------------------------------------- CONTEGGIO FINE LIVELLO --- */
+#fine-livello {
+  position: fixed; inset: 0; z-index: 998;
+  background: rgba(30, 42, 71, .82); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Press Start 2P', monospace; color: #FFF9E8;
+}
+#fine-livello.via { display: none; }
+#fine-livello .fl-box { width: min(420px, calc(100vw - 48px)); }
+#fine-livello .fl-titolo {
+  font-size: 22px; color: #F7C948; text-shadow: 3px 3px 0 #1E2A47;
+  text-align: center; margin-bottom: 26px; letter-spacing: 2px;
+}
+#fine-livello .fl-voci div {
+  display: flex; justify-content: space-between; font-size: 12px;
+  padding: 6px 2px; border-bottom: 1px dashed rgba(255, 249, 232, .3);
+}
+#fine-livello .fl-tot {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 18px; padding-top: 12px; border-top: 3px solid #F7C948;
+  font-size: 13px;
+}
+#fine-livello .fl-tot b { font-size: 18px; color: #F7C948; }
+#fine-livello .fl-tot span { font-size: 8px; color: #8B8FA8; }
+#fine-livello .fl-skip {
+  margin-top: 30px; text-align: center; font-size: 8px; color: #8B8FA8;
+}
+
+/* ------------------------------------------------- CURSORE E COMANDI ---- */
+/* il cursore che scatta: contorno giallo pieno, nessuna transizione */
+body[data-tema="pixel"] .carta:focus-visible {
+  outline: 4px solid #F7C948; outline-offset: 0;
+}
+body[data-tema="pixel"] .carta { transition: none !important; }
+/* il comando disabilitato a righe diagonali, non smorto */
+body[data-tema="pixel"] button:disabled {
+  opacity: 1; color: #5B5F78;
+  background: repeating-linear-gradient(45deg, #F7E6BF 0 6px, #FBEFD2 6px 12px);
+  cursor: not-allowed;
+}
+
+/* ------------------------------- verificato / stimato, senza colore ----- */
+body[data-tema="pixel"] .tag {
+  border: 1px dashed #1E2A47; border-radius: 0;
+}
+body[data-tema="pixel"] .tag::before { content: "□ "; }
+body[data-tema="pixel"] .tag.ok { border-style: solid; }
+body[data-tema="pixel"] .tag.ok::before { content: "■ "; }
+
+/* -------------------------------------------- telefono: barra comandi --- */
+body[data-tema="pixel"] #hud .hud-mondo,
+body[data-tema="pixel"] #hud .hud-costo > b,
+body[data-tema="pixel"] #hud #hud-audio { white-space: nowrap; }
+@media (max-width: 480px) {
+  body[data-tema="pixel"] #hud .hud-margine u { display: none; }
+  body[data-tema="pixel"] #hud { gap: 8px; padding: 8px 10px; }
+}
+@media (max-width: 720px) {
+  body[data-tema="pixel"] #comandi {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    margin: 0; padding: 10px 14px;
+    background: #FFF9E8; border-top: 3px solid #1E2A47;
+    box-shadow: 0 -4px 0 rgba(30, 42, 71, .25);
+    display: flex; gap: 10px; justify-content: space-between;
+  }
+  body[data-tema="pixel"] #wizard { padding-bottom: 76px; }
+  body[data-tema="pixel"] #hud { font-size: 9px; gap: 8px; }
+  body[data-tema="pixel"] #hud .hud-costo > b { font-size: 12px; }
+  #intro .in-testo { font-size: 11px; }
+}
+
+/* --------------------------------------------------- reduced motion ----- */
+@media (prefers-reduced-motion: reduce) {
+  #intro *, #fine-livello *, body[data-tema="pixel"] #hud * {
+    animation: none !important; transition: none !important;
+  }
+}
+
+
+/* ------------------------------------------------- LA MASCOTTE ----------- */
+/* L'omino resta in pagina (solo tema arcade, schermi larghi): sta in basso a
+   destra e ogni tanto cambia occupazione — aspetta, mangia un ramen, un
+   dango, torna dallo shopping. Un click lo fa cambiare subito. */
+body[data-tema="pixel"] #mascotte {
+  position: fixed; left: 6%; bottom: 8px; z-index: 40;
+  image-rendering: pixelated; cursor: pointer;
+}
+body:not([data-tema="pixel"]) #mascotte { display: none; }
+@media (max-width: 900px) { body[data-tema="pixel"] #mascotte { display: none; } }
+@media (prefers-reduced-motion: reduce) { #mascotte { animation: none !important; } }
+
+
+/* le monetine dell'HUD: saltano su dalla cifra quando il conto cresce */
+body[data-tema="pixel"] #hud .hud-costo { position: relative; }
+body[data-tema="pixel"] .hud-moneta-vola {
+  position: absolute; top: -4px; pointer-events: none;
+  animation: hud-moneta .6s steps(6) both;
+}
+@keyframes hud-moneta {
+  from { transform: translateY(0); opacity: 1; }
+  to   { transform: translateY(-34px); opacity: 0; }
+}
+
+
+/* ===================================================== LA MAPPA GIOCO ==== */
+/* Non è scopata sotto data-tema: si può guardare anche dal vestito piatto,
+   col bottone di scambio. Il fondo è disegnato a tessere, le icone ci
+   stanno sopra e si dimensionano da sole (app.js, mgMisura). */
+.mappa-doppia { margin: 18px 0; }
+.mappa-gioco, .mappa-doppia .mappa-vera { margin: 0; }
+.mg-quadro {
+  position: relative; width: 100%; max-width: 760px; margin: 0 auto;
+  border: 3px solid #1E2A47; box-shadow: 5px 5px 0 #1E2A47; background: #2B67B3;
+  overflow: hidden;
+}
+.mg-terra { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.mg-vie { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mg-vie circle { fill: #FFF9E8; stroke: #1E2A47; stroke-width: 1.6; }
+
+.mg-nodo {
+  position: absolute; transform: translate(-50%, -50%);
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  width: 6%;      /* la vera la mette app.js: è la larghezza dell'icona */
+}
+.mg-ico { position: relative; display: block; width: 100%; }
+.mg-ico img.mg-base { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.mg-badge {
+  position: absolute; right: -24%; bottom: 46%; width: 42%; height: auto;
+  image-rendering: pixelated;
+  filter: drop-shadow(1px 1px 0 #1E2A47);
+}
+.mg-eti {
+  font-family: 'Press Start 2P', monospace; font-size: 8px; line-height: 1.5;
+  white-space: nowrap; background: #FFF9E8; color: #1E2A47;
+  border: 2px solid #1E2A47; box-shadow: 2px 2px 0 #1E2A47; padding: 3px 5px;
+  font-weight: 400;
+}
+.mg-eti span { display: block; font-size: 7px; color: #5B5F78; margin-top: 2px; }
+.mg-nodo.base .mg-eti { background: #E0392B; color: #FFF9E8; }
+.mg-nodo.base .mg-eti span { color: #FFE3B8; }
+/* le mete non scelte restano visibili ma spente, come i livelli non aperti */
+.mg-nodo:not(.on) { opacity: .6; transform: translate(-50%, -50%) scale(.78); }
+.mg-nodo:not(.on) .mg-base { filter: grayscale(.75); }
+.mg-nodo:not(.on) .mg-eti { background: #F7E6BF; color: #5B5F78; box-shadow: none; }
+/* le mete accese respirano, come le icone di un mondo da giocare */
+.mg-nodo.on .mg-ico { animation: mg-respira 1.4s steps(2) infinite; }
+@keyframes mg-respira { 0% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+
+.mappa-scambia { text-align: center; margin: 12px 0 0; }
+.mappa-scambia .mappa-stile {
+  font-family: 'Press Start 2P', monospace; font-size: 9px; cursor: pointer;
+  border: 3px solid #1E2A47; background: #F7C948; color: #1E2A47;
+  box-shadow: 3px 3px 0 #1E2A47; padding: 9px 14px; border-radius: 0;
+}
+.mappa-scambia .mappa-stile:active { box-shadow: none; transform: translate(3px, 3px); }
+
+@media (max-width: 620px) {
+  .mg-eti { font-size: 6px; padding: 2px 3px; }
+  .mg-eti span { display: none; }
+
+}
+@media (prefers-reduced-motion: reduce) { .mg-nodo.on .mg-ico { animation: none; } }

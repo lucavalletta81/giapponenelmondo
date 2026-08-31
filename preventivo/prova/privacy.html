@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy — Tokyo Budget Lab · Giappone nel Mondo</title>
+  <meta name="description" content="Privacy dello strumento che stima quanto costa un viaggio in Giappone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .servizio { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; line-height: 1.7; }
+    .servizio h1 { margin-bottom: 4px; }
+    .servizio h2 { margin-top: 34px; font-size: 1.15rem; }
+    .servizio .occhiello { color: #8a8578; font-size: .9rem; margin-top: 0; }
+    .servizio li { margin-bottom: 8px; }
+    .servizio .torna { display: inline-block; margin-top: 36px; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-jp">日本</span>
+        <span class="logo-text">Giappone nel Mondo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#podcast">Podcast</a></li>
+        <li><a href="/#video">Video</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/strumenti.html">Strumenti</a></li>
+        <li><a href="/preventivo/">Preventivo</a></li>
+        <li><a href="/dashboard.html" class="btn-dash">Dashboard →</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#podcast">Podcast</a>
+      <a href="/#video">Video</a>
+      <a href="/#about">About</a>
+      <a href="/strumenti.html">Strumenti</a>
+      <a href="/preventivo/">Preventivo</a>
+      <a href="/dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="servizio">
+<h1>Privacy</h1>
+<p class="occhiello">Aggiornata il 31 agosto 2026</p>
+
+<h2>La versione corta</h2>
+<p>Questo strumento non ti chiede niente e non manda niente da nessuna parte. Le risposte che dai
+al questionario restano nel tuo browser, il preventivo è calcolato dal tuo computer, e quando
+chiudi la pagina non resta traccia da nessuna parte se non nel tuo browser.</p>
+
+<h2>Che cosa succede davvero quando lo usi</h2>
+<ul>
+  <li><b>Le tue risposte</b> (interessi, date, quante persone, che stile di viaggio) vivono nella
+      memoria della pagina. Non partono verso nessun server: il calcolo avviene dentro il browser,
+      con un listino di prezzi scaricato insieme alla pagina.</li>
+  <li><b>Nessun account, nessuna email.</b> Non c'è iscrizione, non c'è modulo di contatto, non
+      c'è newsletter dentro lo strumento.</li>
+  <li><b>Nessun cookie di profilazione, nessun tracciamento pubblicitario.</b> Lo strumento non
+      carica pixel, non ha analytics propri, non ha bottoni social che ti seguono.</li>
+  <li><b>Memoria locale del browser</b> (<code>localStorage</code>): ci teniamo tre cose minime —
+      quale grafica hai scelto, se l'audio è acceso, se hai già visto la scenetta d'ingresso.
+      Stanno sul tuo dispositivo, le cancelli svuotando i dati del sito.</li>
+  <li><b>Il PDF</b> che scarichi è costruito dal tuo browser. Non passa da noi.</li>
+</ul>
+
+<h2>Quello che non controlliamo, e che è giusto tu sappia</h2>
+<ul>
+  <li>Il sito è servito da <b>GitHub Pages</b>. Come ogni server web, l'infrastruttura registra le
+      richieste (indirizzo IP, orario, pagina) per motivi tecnici e di sicurezza: è una raccolta
+      che avviene fuori dalle nostre mani e su cui non abbiamo accesso né controllo.</li>
+  <li>I <b>caratteri tipografici</b> arrivano da Google Fonts: il tuo browser fa una richiesta ai
+      server di Google, che vede l'IP da cui arriva.</li>
+  <li>Le <b>tessere della mappa reale</b> sono immagini già salvate nel sito: guardarle non
+      contatta nessun servizio esterno.</li>
+</ul>
+
+<h2>I prezzi</h2>
+<p>I prezzi che vedi sono raccolti in anticipo da noi (Google Flights, Google Hotels, siti
+ufficiali dei musei e delle ferrovie) e salvati nel sito come un listino. Quando usi lo strumento
+<b>non interroghiamo nessun servizio in tempo reale</b>: nessuno, fuori da qui, sa che stai
+facendo un preventivo per il Giappone.</p>
+
+<h2>Diritti e contatti</h2>
+<p>Non trattiamo dati personali attraverso questo strumento, quindi non c'è un archivio da cui
+farti cancellare. Per qualunque domanda: <a href="/#about">i contatti del sito</a>.</p>
+
+    <a class="torna" href="/preventivo/">&larr; Torna al preventivo</a>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
+      <p class="footer-copy">&copy; 2026 giapponenelmondo.com</p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 22/08/2026<!--/STAMP--></p>
+    </div>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
+</body>
+</html>

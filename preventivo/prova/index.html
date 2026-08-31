@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tokyo Budget Lab — quanto costa un viaggio a Tokyo · Giappone nel Mondo</title>
+  <meta name="description" content="Rispondi a sette domande e ottieni un itinerario su misura con la stima di quanto costa: volo, treni, alloggio, cibo, ingressi. Compreso il conto vero del Japan Rail Pass." />
+  <meta property="og:title" content="Quanto costa un viaggio in Giappone" />
+  <meta property="og:description" content="Un itinerario su misura e la stima del costo, costruiti sui tuoi interessi. Nessuna AI: il conto è tutto in chiaro." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://giapponenelmondo.com/preventivo/" />
+  <link rel="canonical" href="https://giapponenelmondo.com/preventivo/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="tema.css?v=202608311643" />
+  <link rel="stylesheet" href="tema-pixel.css?v=202608311643" />
+  <link rel="stylesheet" href="tema-arcade.css?v=202608311643" />
+  <link rel="stylesheet" href="app.css?v=202608311643" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-jp">日本</span>
+        <span class="logo-text">Giappone nel Mondo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#podcast">Podcast</a></li>
+        <li><a href="/#video">Video</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/strumenti.html">Strumenti</a></li>
+        <li><a href="/preventivo/">Preventivo</a></li>
+        <li><a href="/dashboard.html" class="btn-dash">Dashboard →</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#podcast">Podcast</a>
+      <a href="/#video">Video</a>
+      <a href="/#about">About</a>
+      <a href="/strumenti.html">Strumenti</a>
+      <a href="/preventivo/">Preventivo</a>
+      <a href="/dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="prev">
+<div class="pv-layout"><!-- pv-layout -->
+
+  <aside class="pv-lato">
+    <a class="pv-logo" href="./" aria-label="Tokyo Budget Lab">
+      <svg class="pv-torii" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M6 12 Q32 4 58 12 L58 18 L6 18 Z"/>
+        <rect x="12" y="18" width="6" height="42" rx="1"/>
+        <rect x="46" y="18" width="6" height="42" rx="1"/>
+        <rect x="9" y="27" width="46" height="5" rx="1"/>
+        <rect x="29" y="18" width="6" height="9"/>
+      </svg>
+      <span class="pv-nome"><b>Tokyo</b><br>Budget Lab</span>
+    </a>
+    <p class="pv-tagline">Quanto costa davvero<br>il tuo viaggio in Giappone</p>
+
+    <ol class="pv-passi" id="pv-passi" aria-label="I passi del questionario"></ol>
+
+    <div class="pv-fiducia">
+      <p class="pv-fiducia-t"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5.2 3.4 10 8 11 4.6-1 8-5.8 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        Trasparente.<br>Senza commissioni.</p>
+      <p>Volo e alloggio letti da Google Flights e Google Hotels, cambio della BCE.
+        <span id="pv-data-prezzi"></span></p>
+    </div>
+  </aside>
+
+  <div class="pv-main">
+
+    <div class="pv-testa">
+      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o arcade">
+        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Arcade</span>
+      </button>
+    </div>
+
+    <div class="pv-avviso">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v7M12 7v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <p><b>Prima versione: solo Tokyo.</b> Volo e alloggio sono prezzi veri, letti da Google Flights e
+      Google Hotels e rinfrescati regolarmente; anche il cambio euro/yen è quello della BCE del giorno.
+      Anche i biglietti dei treni e i biglietti d'ingresso sono verificati alla fonte, uno per uno.
+      Restano stime i voli dentro il Giappone, i due traghetti e quanto si spende per mangiare: in
+      fondo al risultato è scritto voce per voce cosa è reale e cosa no. Le altre città arrivano dopo. Usalo per farti
+      un'idea e per capire quali leve spostano il costo, non per prenotare. Nessun dato che inserisci
+      esce da questa pagina: il calcolo avviene nel tuo browser.</p>
+    </div>
+
+    <!-- ================================================== QUESTIONARIO ==== -->
+    <div id="wizard" class="pv-scheda">
+
+      <nav id="barra"><span id="barra-testo"></span><div id="barra-riga"><div id="barra-fill"></div></div></nav>
+
+      <!-- Gli interessi vengono PRIMA di tutto: sono il cuore del servizio,
+           e sono loro a decidere l'itinerario, non le date. -->
+      <section class="passo largo" data-id="interessi">
+        <div class="campo">
+          <h2><span class="n"></span>Cosa ti interessa davvero</h2>
+          <p class="nota">Scegline da 3 a 6. Sono queste a decidere l'itinerario, non le date.</p>
+          <div id="interessi" class="carte interessi"></div>
+          <p class="errore" id="err-interessi" hidden>Scegline almeno due.</p>
+        </div>
+      </section>
+
+      <!-- (dinamico) -->
+      <section class="passo" data-id="rami" hidden>
+        <figure class="illu"><img src="img/passo-precisiamo.webp" data-img="passo-precisiamo.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Precisiamo</h2>
+          <p class="nota">Per ogni cosa che hai scelto, dimmi che taglio darle. Ogni risposta
+          riordina i luoghi: chi ha il dettaglio che hai chiesto passa davanti a chi ha solo
+          l'argomento giusto. Puoi anche saltarle tutte.</p>
+          <div id="rami"></div>
+        </div>
+      </section>
+
+      <section class="passo" data-id="chi" hidden>
+        <figure class="illu"><img src="img/passo-chi-parte.webp" data-img="passo-chi-parte.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Chi parte, e da dove</h2>
+          <label>Aeroporto di partenza
+            <select id="partenza"></select>
+          </label>
+          <div class="riga">
+            <label>Adulti <input type="number" id="adulti" value="2" min="1" max="10"></label>
+            <label>Bambini (0-11) <input type="number" id="bambini" value="0" min="0" max="8"></label>
+          </div>
+          <p class="nota">I bambini contano circa il 65% di un adulto: volo quasi pieno, cibo e ingressi ridotti, letto condiviso.</p>
+        </div>
+      </section>
+
+      <section class="passo" data-id="quando" hidden>
+        <figure class="illu"><img src="img/passo-quando.webp" data-img="passo-quando.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Quando</h2>
+          <p class="nota">La stagione è la leva più potente sul prezzo: fra la settimana più cara e la più economica
+          ballano centinaia di euro a persona, a parità di tutto il resto.</p>
+          <div id="stagioni" class="carte"></div>
+        </div>
+      </section>
+
+      <section class="passo" data-id="ritmo" hidden>
+        <figure class="illu"><img src="img/passo-ritmo.webp" data-img="passo-ritmo.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Quanto a lungo, e con che ritmo</h2>
+          <label>Giorni totali, volo compreso: <output id="giorni-out">14</output>
+            <input type="range" id="giorni" min="5" max="30" value="14">
+          </label>
+          <fieldset id="ritmo">
+            <legend>Ritmo</legend>
+            <label><input type="radio" name="ritmo" value="lento"> <b>Lento</b> — poche basi, tempo di stare fermi</label>
+            <label><input type="radio" name="ritmo" value="medio" checked> <b>Medio</b> — vedi molto senza correre</label>
+            <label><input type="radio" name="ritmo" value="veloce"> <b>Veloce</b> — tanti posti, valigia sempre in mano</label>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="passo" data-id="giastato" hidden>
+        <figure class="illu"><img src="img/passo-gia-stato.webp" data-img="passo-gia-stato.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Ci sei già stato?</h2>
+          <fieldset id="primavolta">
+            <legend>&nbsp;</legend>
+            <label><input type="radio" name="pv" value="si" checked> È la prima volta in Giappone</label>
+            <label><input type="radio" name="pv" value="no"> Ci sono già stato</label>
+          </fieldset>
+          <div id="giavisti-box" hidden>
+            <p class="nota">Spunta quello che hai già visto: il motore lo toglie dall'itinerario e ti manda altrove.</p>
+            <div id="giavisti" class="carte fitte"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solo quando il giro tocca più città: a Tokyo e nelle gite in giornata
+           non si vola, quindi la domanda non cambierebbe niente e non si fa. -->
+      <section class="passo" data-id="spostamenti" data-solo-multi hidden>
+        <figure class="illu"><img src="img/passo-voli-interni.webp" data-img="passo-voli-interni.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Spostamenti dentro il Giappone</h2>
+          <fieldset>
+            <legend>Voli interni</legend>
+            <label><input type="radio" name="voli" value="si" checked> Va bene prendere aerei dentro il Giappone</label>
+            <label><input type="radio" name="voli" value="no"> Preferisco solo treni</label>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="passo" data-id="stile" hidden>
+        <figure class="illu"><img src="img/passo-viaggiatore.webp" data-img="passo-viaggiatore.webp" alt="" width="640" height="640"></figure>
+        <div class="campo">
+          <h2><span class="n"></span>Che tipo di viaggiatore sei</h2>
+          <fieldset id="stile">
+            <legend>&nbsp;</legend>
+            <label><input type="radio" name="stile" value="essenziale"> <b>Il minimo</b> — volo al prezzo più basso, ostello, konbini e gyudon</label>
+            <label><input type="radio" name="stile" value="equilibrato" checked> <b>Normale</b> — economy con uno scalo, business hotel, si mangia bene</label>
+            <label><input type="radio" name="stile" value="comodo"> <b>Senza pensieri</b> — business a bordo, hotel di categoria, cene vere</label>
+          </fieldset>
+          <p class="nota">Vedrai comunque tutti e tre i livelli affiancati: questo decide quale evidenziare. La zona dove dormire la scegliamo noi, prendendo la mediana delle zone di Tokyo per la fascia che hai scelto: nel risultato puoi spostarti sulla più economica o sulla più cara con un clic.</p>
+        </div>
+      </section>
+
+      <div id="comandi">
+        <button id="indietro" type="button">Indietro</button>
+        <button id="avanti" type="button">Avanti <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+
+    <!-- ===================================================== RISULTATO ==== -->
+    <div id="risultato" class="pv-scheda" hidden></div>
+
+    <footer class="pv-piede">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5.2 3.4 10 8 11 4.6-1 8-5.8 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> I tuoi dati restano nel tuo browser</span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Volo e alloggio da prezzi reali</span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7l-3 7h6l-3-7zm14 0-3 7h6l-3-7zM7 7h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Le stime sono dichiarate stime</span>
+      <a href="#" id="pv-rivedi">rivedi l'intro</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="termini.html">Termini d'uso</a>
+    </footer>
+
+  </div>
+</div><!-- /pv-layout -->
+    <a href="/" class="back-link">&larr; Torna al sito</a>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
+      <p class="footer-copy">&copy; 2026 giapponenelmondo.com &mdash; tutti i diritti riservati</p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 22/08/2026<!--/STAMP--></p>
+    </div>
+  </footer>
+
+  <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
+  <script src="dati.js?v=202608311643"></script>
+  <script src="prezzi.js?v=202608311643"></script>
+  <script src="motore.js?v=202608311643"></script>
+  <script src="pdf.js?v=202608311643"></script>
+  <script src="app.js?v=202608311643"></script>
+  <script src="suoni.js?v=202608311643"></script>
+  <script src="hud.js?v=202608311643"></script>
+  <script src="intro.js?v=202608311643"></script>
+  <script src="mascotte.js?v=202608311643"></script>
+</body>
+</html>
