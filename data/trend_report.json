@@ -1,578 +1,1158 @@
 {
-  "generated_at": "2026-08-24",
+  "generated_at": "2026-08-31",
   "total_clusters": 5,
-  "total_videos": 24,
-  "date_range_start": "2026-08-17",
-  "date_range_end": "2026-08-24",
+  "total_videos": 37,
+  "date_range_start": "2026-08-25",
+  "date_range_end": "2026-08-31",
   "sections": {
     "emergenti": [
       {
         "label": 4,
-        "score": 1.4837,
+        "score": 1.4214,
         "keywords": [
-          "works",
-          "english",
-          "twitch",
           "manga",
-          "works nariwai",
-          "nariwai naokichi"
+          "compra",
+          "altro",
+          "kirio",
+          "twitch",
+          "works"
         ],
-        "item_count": 6,
-        "total_views": 57908,
+        "item_count": 10,
+        "total_views": 149892,
         "velocity": 1.0,
         "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-17",
-        "last_seen": "2026-08-24",
+        "diversity": 0.708,
+        "first_seen": "2026-08-24",
+        "last_seen": "2026-08-31",
         "sentinel_clusters": [
           "japan_native",
-          "anime_manga_pop"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
-          "it",
-          "ja"
+          "ja",
+          "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.8063,
-          "casual": 0.704
+          "narrativo": 0.8475,
+          "casual": 0.7156
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.806,
+        "affinity_best_score": 0.848,
         "items_by_lang": {
           "it": [
             {
-              "title": "Il capolavoro del grafico di Naruto Color",
-              "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-              "source": "Caverna di Platone",
-              "date": "2026-08-17",
-              "views": 6385,
-              "likes": 265,
-              "duration_secs": 105
+              "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+              "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-28",
+              "views": 13850,
+              "likes": 340,
+              "duration_secs": 864
             },
             {
-              "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-              "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+              "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+              "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
               "source": "Caverna di Platone",
-              "date": "2026-08-22",
-              "views": 1629,
-              "likes": 57,
-              "duration_secs": 4587
+              "date": "2026-08-30",
+              "views": 6601,
+              "likes": 116,
+              "duration_secs": 2832
             },
             {
-              "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-              "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+              "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+              "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
               "source": "Caverna di Platone",
-              "date": "2026-08-19",
-              "views": 1431,
-              "likes": 93,
-              "duration_secs": 1466
+              "date": "2026-08-29",
+              "views": 5375,
+              "likes": 79,
+              "duration_secs": 1425
             }
           ],
           "ja": [
             {
-              "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-              "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+              "title": "絵が下手に見える！よくある失敗例   ！！",
+              "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
               "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-20",
-              "views": 24400,
-              "likes": 1424,
-              "duration_secs": 902
-            },
-            {
-              "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-              "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-22",
-              "views": 23574,
-              "likes": 1251,
-              "duration_secs": 1100
+              "date": "2026-08-27",
+              "views": 105337,
+              "likes": 1778,
+              "duration_secs": 1555
             }
           ]
         },
         "top_items": [
           {
-            "title": "Il capolavoro del grafico di Naruto Color",
-            "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-            "source": "Caverna di Platone",
-            "date": "2026-08-17",
-            "views": 6385,
-            "likes": 265,
-            "duration_secs": 105
+            "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+            "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-28",
+            "views": 13850,
+            "likes": 340,
+            "duration_secs": 864
           },
           {
-            "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-            "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+            "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+            "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
             "source": "Caverna di Platone",
-            "date": "2026-08-22",
-            "views": 1629,
-            "likes": 57,
-            "duration_secs": 4587
+            "date": "2026-08-30",
+            "views": 6601,
+            "likes": 116,
+            "duration_secs": 2832
           },
           {
-            "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-            "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+            "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+            "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
             "source": "Caverna di Platone",
-            "date": "2026-08-19",
-            "views": 1431,
-            "likes": 93,
-            "duration_secs": 1466
+            "date": "2026-08-29",
+            "views": 5375,
+            "likes": 79,
+            "duration_secs": 1425
           },
           {
-            "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-            "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+            "title": "絵が下手に見える！よくある失敗例   ！！",
+            "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-20",
-            "views": 24400,
-            "likes": 1424,
-            "duration_secs": 902
-          },
-          {
-            "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-            "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-22",
-            "views": 23574,
-            "likes": 1251,
-            "duration_secs": 1100
-          }
-        ]
-      },
-      {
-        "label": 1,
-        "score": 0.5971,
-        "keywords": [
-          "japanese",
-          "step",
-          "kanji",
-          "imparare kanji",
-          "imparare",
-          "miei step"
-        ],
-        "item_count": 3,
-        "total_views": 10125,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-18",
-        "last_seen": "2026-08-22",
-        "sentinel_clusters": [
-          "viaggio",
-          "japan_native"
-        ],
-        "languages": [
-          "it",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6039,
-          "casual": 0.6697
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.67,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "I miei step per imparare i kanji giapponesi",
-              "url": "https://www.youtube.com/watch?v=b2eQMZ-a_1o",
-              "source": "Ti Va Di Giappare?",
-              "date": "2026-08-21",
-              "views": 949,
-              "likes": 56,
-              "duration_secs": 84
-            },
-            {
-              "title": "Stai pronunciando male il giapponese? Partiamo da ZERO",
-              "url": "https://www.youtube.com/watch?v=PiMSNsuIkH8",
-              "source": "Ti Va Di Giappare?",
-              "date": "2026-08-22",
-              "views": 402,
-              "likes": 38,
-              "duration_secs": 343
-            }
-          ],
-          "ja": [
-            {
-              "title": "Duolingo Mispronounces Japanese for 10 Minutes Straight",
-              "url": "https://www.youtube.com/watch?v=d6_R09_NfOE",
-              "source": "That Japanese Man Yuta",
-              "date": "2026-08-18",
-              "views": 8774,
-              "likes": 456,
-              "duration_secs": 650
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "I miei step per imparare i kanji giapponesi",
-            "url": "https://www.youtube.com/watch?v=b2eQMZ-a_1o",
-            "source": "Ti Va Di Giappare?",
-            "date": "2026-08-21",
-            "views": 949,
-            "likes": 56,
-            "duration_secs": 84
-          },
-          {
-            "title": "Stai pronunciando male il giapponese? Partiamo da ZERO",
-            "url": "https://www.youtube.com/watch?v=PiMSNsuIkH8",
-            "source": "Ti Va Di Giappare?",
-            "date": "2026-08-22",
-            "views": 402,
-            "likes": 38,
-            "duration_secs": 343
-          },
-          {
-            "title": "Duolingo Mispronounces Japanese for 10 Minutes Straight",
-            "url": "https://www.youtube.com/watch?v=d6_R09_NfOE",
-            "source": "That Japanese Man Yuta",
-            "date": "2026-08-18",
-            "views": 8774,
-            "likes": 456,
-            "duration_secs": 650
-          }
-        ]
-      },
-      {
-        "label": 3,
-        "score": 0.5024,
-        "keywords": [
-          "try",
-          "sora attention",
-          "sora",
-          "album try",
-          "album",
-          "attention album"
-        ],
-        "item_count": 8,
-        "total_views": 311087,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-18",
-        "last_seen": "2026-08-24",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6637,
-          "casual": 0.6449
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.664,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "Feeling the burn of a sumo",
-              "url": "https://www.youtube.com/watch?v=1JsGC4SWxQA",
-              "source": "The Anime Man",
-              "date": "2026-08-21",
-              "views": 23550,
-              "likes": 1411,
-              "duration_secs": 62
-            }
-          ],
-          "ja": [
-            {
-              "title": "Dumb Japanese Streamer Gets Stopped By Yakuzas",
-              "url": "https://www.youtube.com/watch?v=Aj1Bjz4lkdE",
-              "source": "Sora The Troll",
-              "date": "2026-08-20",
-              "views": 206790,
-              "likes": 7407,
-              "duration_secs": 38
-            },
-            {
-              "title": "American donut shop run by Japanese people in Japan is hilarious",
-              "url": "https://www.youtube.com/watch?v=4wpWPr4GYSg",
-              "source": "Sora The Troll",
-              "date": "2026-08-19",
-              "views": 28411,
-              "likes": 1451,
-              "duration_secs": 26
-            },
-            {
-              "title": "Japanese Girl Gets Influenced By American Culture",
-              "url": "https://www.youtube.com/watch?v=dRpssbNkL94",
-              "source": "Sora The Troll",
-              "date": "2026-08-23",
-              "views": 17620,
-              "likes": 1156,
-              "duration_secs": 27
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Feeling the burn of a sumo",
-            "url": "https://www.youtube.com/watch?v=1JsGC4SWxQA",
-            "source": "The Anime Man",
-            "date": "2026-08-21",
-            "views": 23550,
-            "likes": 1411,
-            "duration_secs": 62
-          },
-          {
-            "title": "Dumb Japanese Streamer Gets Stopped By Yakuzas",
-            "url": "https://www.youtube.com/watch?v=Aj1Bjz4lkdE",
-            "source": "Sora The Troll",
-            "date": "2026-08-20",
-            "views": 206790,
-            "likes": 7407,
-            "duration_secs": 38
-          },
-          {
-            "title": "American donut shop run by Japanese people in Japan is hilarious",
-            "url": "https://www.youtube.com/watch?v=4wpWPr4GYSg",
-            "source": "Sora The Troll",
-            "date": "2026-08-19",
-            "views": 28411,
-            "likes": 1451,
-            "duration_secs": 26
-          },
-          {
-            "title": "Japanese Girl Gets Influenced By American Culture",
-            "url": "https://www.youtube.com/watch?v=dRpssbNkL94",
-            "source": "Sora The Troll",
-            "date": "2026-08-23",
-            "views": 17620,
-            "likes": 1156,
-            "duration_secs": 27
+            "date": "2026-08-27",
+            "views": 105337,
+            "likes": 1778,
+            "duration_secs": 1555
           }
         ]
       },
       {
         "label": 0,
-        "score": 0.4332,
+        "score": 1.1355,
         "keywords": [
-          "maglietta",
-          "calze",
-          "film",
-          "meme",
-          "cinese così",
-          "cinese"
+          "spettacolo",
+          "comedy",
+          "teatro standup",
+          "teatro",
+          "spettacolo comedy",
+          "standup"
         ],
-        "item_count": 4,
-        "total_views": 79101,
+        "item_count": 6,
+        "total_views": 824270,
         "velocity": 1.0,
         "novelty": 1.0,
         "diversity": 0.292,
-        "first_seen": "2026-08-18",
-        "last_seen": "2026-08-21",
+        "first_seen": "2026-08-25",
+        "last_seen": "2026-08-31",
         "sentinel_clusters": [
-          "videogiochi"
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.4932,
+          "casual": 0.4142
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.493,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "l'importante è che sia moscia solo la ERRE",
+              "url": "https://www.youtube.com/watch?v=mHxcrmv-Kas",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-26",
+              "views": 572063,
+              "likes": 26884,
+              "duration_secs": 43
+            },
+            {
+              "title": "è bello quando il tuo lavoro viene apprezzato all'estero!",
+              "url": "https://www.youtube.com/watch?v=wCB5QoCzBYU",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-25",
+              "views": 157542,
+              "likes": 4925,
+              "duration_secs": 58
+            },
+            {
+              "title": "qualcuno pensa di avere una BELLA VOCE?",
+              "url": "https://www.youtube.com/watch?v=pv1vGwoiE4o",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-28",
+              "views": 38478,
+              "likes": 2527,
+              "duration_secs": 42
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "l'importante è che sia moscia solo la ERRE",
+            "url": "https://www.youtube.com/watch?v=mHxcrmv-Kas",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-26",
+            "views": 572063,
+            "likes": 26884,
+            "duration_secs": 43
+          },
+          {
+            "title": "è bello quando il tuo lavoro viene apprezzato all'estero!",
+            "url": "https://www.youtube.com/watch?v=wCB5QoCzBYU",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-25",
+            "views": 157542,
+            "likes": 4925,
+            "duration_secs": 58
+          },
+          {
+            "title": "qualcuno pensa di avere una BELLA VOCE?",
+            "url": "https://www.youtube.com/watch?v=pv1vGwoiE4o",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-28",
+            "views": 38478,
+            "likes": 2527,
+            "duration_secs": 42
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 1.1136,
+        "keywords": [
+          "euro",
+          "gamberi",
+          "mappa",
+          "del",
+          "usa international",
+          "international"
+        ],
+        "item_count": 6,
+        "total_views": 455653,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.875,
+        "first_seen": "2026-08-26",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "japan_native",
+          "expat_japan_en",
+          "vita_giappone"
+        ],
+        "languages": [
+          "ja",
+          "en",
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6445,
+          "casual": 0.7139
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.714,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Mappa gratis del Giappone!",
+              "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+              "source": "Marco Togni",
+              "date": "2026-08-27",
+              "views": 11379,
+              "likes": 706,
+              "duration_secs": 63
+            },
+            {
+              "title": "Mangio gamberi a Tokyo: quanto costa?",
+              "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+              "source": "Marco Togni",
+              "date": "2026-08-30",
+              "views": 7451,
+              "likes": 405,
+              "duration_secs": 110
+            },
+            {
+              "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+              "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+              "source": "Marco Togni",
+              "date": "2026-08-28",
+              "views": 6687,
+              "likes": 300,
+              "duration_secs": 56
+            }
+          ],
+          "en": [
+            {
+              "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+              "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+              "source": "Paolo from Tokyo",
+              "date": "2026-08-28",
+              "views": 423489,
+              "likes": 6712,
+              "duration_secs": 635
+            }
+          ],
+          "ja": [
+            {
+              "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+              "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
+              "source": "Sora The Troll",
+              "date": "2026-08-31",
+              "views": 0,
+              "likes": 19,
+              "duration_secs": 0
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Mappa gratis del Giappone!",
+            "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+            "source": "Marco Togni",
+            "date": "2026-08-27",
+            "views": 11379,
+            "likes": 706,
+            "duration_secs": 63
+          },
+          {
+            "title": "Mangio gamberi a Tokyo: quanto costa?",
+            "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+            "source": "Marco Togni",
+            "date": "2026-08-30",
+            "views": 7451,
+            "likes": 405,
+            "duration_secs": 110
+          },
+          {
+            "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+            "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+            "source": "Marco Togni",
+            "date": "2026-08-28",
+            "views": 6687,
+            "likes": 300,
+            "duration_secs": 56
+          },
+          {
+            "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+            "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+            "source": "Paolo from Tokyo",
+            "date": "2026-08-28",
+            "views": 423489,
+            "likes": 6712,
+            "duration_secs": 635
+          },
+          {
+            "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+            "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
+            "source": "Sora The Troll",
+            "date": "2026-08-31",
+            "views": 0,
+            "likes": 19,
+            "duration_secs": 0
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.6949,
+        "keywords": [
+          "vita",
+          "vivere",
+          "della vita",
+          "della",
+          "trasferirsi",
+          "italia"
+        ],
+        "item_count": 3,
+        "total_views": 99450,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-08-29",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "vita_giappone"
         ],
         "languages": [
           "it"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7197,
-          "casual": 0.5494
+          "narrativo": 0.5492,
+          "casual": 0.7175
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.72,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.718,
         "items_by_lang": {
           "it": [
             {
-              "title": "MovieBlog- 1099: Recensione La Fine di Oak Street",
-              "url": "https://www.youtube.com/watch?v=gEr_uZ03bYw",
-              "source": "Victorlaszlo88",
-              "date": "2026-08-18",
-              "views": 34090,
-              "likes": 1425,
-              "duration_secs": 2304
+              "title": "Vivere in Giappone: il lato negativo",
+              "url": "https://www.youtube.com/watch?v=rw_dIhgPlWw",
+              "source": "Marco Togni",
+              "date": "2026-08-30",
+              "views": 91871,
+              "likes": 2167,
+              "duration_secs": 60
             },
             {
-              "title": "Il film animato cinese così brutto da incassare per il meme",
-              "url": "https://www.youtube.com/watch?v=DrxDyyI569U",
-              "source": "Victorlaszlo88",
-              "date": "2026-08-20",
-              "views": 22776,
-              "likes": 1238,
-              "duration_secs": 84
+              "title": "Vivere in Giappone: stipendi e costo della vita",
+              "url": "https://www.youtube.com/watch?v=XIsvGRGPA6g",
+              "source": "Marco Togni",
+              "date": "2026-08-31",
+              "views": 5392,
+              "likes": 257,
+              "duration_secs": 60
             },
             {
-              "title": "MovieBlog- 1101: Recensione Oceania",
-              "url": "https://www.youtube.com/watch?v=SuUFS46FJTo",
-              "source": "Victorlaszlo88",
-              "date": "2026-08-21",
-              "views": 12257,
-              "likes": 599,
-              "duration_secs": 2106
+              "title": "Conviene ancora trasferirsi in Giappone? Lavoro, sacrifici e felicità ",
+              "url": "https://www.youtube.com/watch?v=3WL_Xk_QabE",
+              "source": "Calabrese in Oriente",
+              "date": "2026-08-29",
+              "views": 2187,
+              "likes": 82,
+              "duration_secs": 781
             }
           ]
         },
         "top_items": [
           {
-            "title": "MovieBlog- 1099: Recensione La Fine di Oak Street",
-            "url": "https://www.youtube.com/watch?v=gEr_uZ03bYw",
-            "source": "Victorlaszlo88",
-            "date": "2026-08-18",
-            "views": 34090,
-            "likes": 1425,
-            "duration_secs": 2304
+            "title": "Vivere in Giappone: il lato negativo",
+            "url": "https://www.youtube.com/watch?v=rw_dIhgPlWw",
+            "source": "Marco Togni",
+            "date": "2026-08-30",
+            "views": 91871,
+            "likes": 2167,
+            "duration_secs": 60
           },
           {
-            "title": "Il film animato cinese così brutto da incassare per il meme",
-            "url": "https://www.youtube.com/watch?v=DrxDyyI569U",
-            "source": "Victorlaszlo88",
-            "date": "2026-08-20",
-            "views": 22776,
-            "likes": 1238,
-            "duration_secs": 84
+            "title": "Vivere in Giappone: stipendi e costo della vita",
+            "url": "https://www.youtube.com/watch?v=XIsvGRGPA6g",
+            "source": "Marco Togni",
+            "date": "2026-08-31",
+            "views": 5392,
+            "likes": 257,
+            "duration_secs": 60
           },
           {
-            "title": "MovieBlog- 1101: Recensione Oceania",
-            "url": "https://www.youtube.com/watch?v=SuUFS46FJTo",
-            "source": "Victorlaszlo88",
-            "date": "2026-08-21",
-            "views": 12257,
-            "likes": 599,
-            "duration_secs": 2106
+            "title": "Conviene ancora trasferirsi in Giappone? Lavoro, sacrifici e felicità ",
+            "url": "https://www.youtube.com/watch?v=3WL_Xk_QabE",
+            "source": "Calabrese in Oriente",
+            "date": "2026-08-29",
+            "views": 2187,
+            "likes": 82,
+            "duration_secs": 781
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.6103,
+        "keywords": [
+          "use",
+          "japanese",
+          "attention",
+          "attention album",
+          "sora attention",
+          "album try"
+        ],
+        "item_count": 12,
+        "total_views": 280753,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.875,
+        "first_seen": "2026-08-25",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
+          "anime_pop_en"
+        ],
+        "languages": [
+          "ja",
+          "en",
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6979,
+          "casual": 0.6484
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.698,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+              "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+              "source": "Lucilla Jiggly",
+              "date": "2026-08-25",
+              "views": 14498,
+              "likes": 549,
+              "duration_secs": 1673
+            }
+          ],
+          "en": [
+            {
+              "title": "The Epidemic of Pathetic Anime Girls",
+              "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+              "source": "Gigguk",
+              "date": "2026-08-31",
+              "views": 34619,
+              "likes": 3995,
+              "duration_secs": 1699
+            },
+            {
+              "title": "Get the men in too",
+              "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+              "source": "The Anime Man",
+              "date": "2026-08-25",
+              "views": 19182,
+              "likes": 293,
+              "duration_secs": 33
+            },
+            {
+              "title": "How he joined Nintendo",
+              "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+              "source": "The Anime Man",
+              "date": "2026-08-27",
+              "views": 17042,
+              "likes": 570,
+              "duration_secs": 28
+            }
+          ],
+          "ja": [
+            {
+              "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+              "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+              "source": "Sora The Troll",
+              "date": "2026-08-28",
+              "views": 83740,
+              "likes": 1362,
+              "duration_secs": 694
+            },
+            {
+              "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+              "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+              "source": "Sora The Troll",
+              "date": "2026-08-25",
+              "views": 29467,
+              "likes": 1383,
+              "duration_secs": 33
+            },
+            {
+              "title": "Japanese girls walk outside almost half naked here",
+              "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+              "source": "Sora The Troll",
+              "date": "2026-08-27",
+              "views": 22649,
+              "likes": 613,
+              "duration_secs": 25
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+            "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+            "source": "Lucilla Jiggly",
+            "date": "2026-08-25",
+            "views": 14498,
+            "likes": 549,
+            "duration_secs": 1673
+          },
+          {
+            "title": "The Epidemic of Pathetic Anime Girls",
+            "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+            "source": "Gigguk",
+            "date": "2026-08-31",
+            "views": 34619,
+            "likes": 3995,
+            "duration_secs": 1699
+          },
+          {
+            "title": "Get the men in too",
+            "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+            "source": "The Anime Man",
+            "date": "2026-08-25",
+            "views": 19182,
+            "likes": 293,
+            "duration_secs": 33
+          },
+          {
+            "title": "How he joined Nintendo",
+            "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+            "source": "The Anime Man",
+            "date": "2026-08-27",
+            "views": 17042,
+            "likes": 570,
+            "duration_secs": 28
+          },
+          {
+            "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+            "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+            "source": "Sora The Troll",
+            "date": "2026-08-28",
+            "views": 83740,
+            "likes": 1362,
+            "duration_secs": 694
+          },
+          {
+            "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+            "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+            "source": "Sora The Troll",
+            "date": "2026-08-25",
+            "views": 29467,
+            "likes": 1383,
+            "duration_secs": 33
+          },
+          {
+            "title": "Japanese girls walk outside almost half naked here",
+            "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+            "source": "Sora The Troll",
+            "date": "2026-08-27",
+            "views": 22649,
+            "likes": 613,
+            "duration_secs": 25
           }
         ]
       }
     ],
     "crescita": [],
-    "cross_source": [],
-    "affinita": [
+    "cross_source": [
       {
         "label": 4,
-        "score": 1.4837,
+        "score": 1.4214,
         "keywords": [
-          "works",
-          "english",
-          "twitch",
           "manga",
-          "works nariwai",
-          "nariwai naokichi"
+          "compra",
+          "altro",
+          "kirio",
+          "twitch",
+          "works"
         ],
-        "item_count": 6,
-        "total_views": 57908,
+        "item_count": 10,
+        "total_views": 149892,
         "velocity": 1.0,
         "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-17",
-        "last_seen": "2026-08-24",
+        "diversity": 0.708,
+        "first_seen": "2026-08-24",
+        "last_seen": "2026-08-31",
         "sentinel_clusters": [
           "japan_native",
-          "anime_manga_pop"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
-          "it",
-          "ja"
+          "ja",
+          "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.8063,
-          "casual": 0.704
+          "narrativo": 0.8475,
+          "casual": 0.7156
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.806,
+        "affinity_best_score": 0.848,
         "items_by_lang": {
           "it": [
             {
-              "title": "Il capolavoro del grafico di Naruto Color",
-              "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-              "source": "Caverna di Platone",
-              "date": "2026-08-17",
-              "views": 6385,
-              "likes": 265,
-              "duration_secs": 105
+              "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+              "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-28",
+              "views": 13850,
+              "likes": 340,
+              "duration_secs": 864
             },
             {
-              "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-              "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+              "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+              "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
               "source": "Caverna di Platone",
-              "date": "2026-08-22",
-              "views": 1629,
-              "likes": 57,
-              "duration_secs": 4587
+              "date": "2026-08-30",
+              "views": 6601,
+              "likes": 116,
+              "duration_secs": 2832
             },
             {
-              "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-              "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+              "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+              "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
               "source": "Caverna di Platone",
-              "date": "2026-08-19",
-              "views": 1431,
-              "likes": 93,
-              "duration_secs": 1466
+              "date": "2026-08-29",
+              "views": 5375,
+              "likes": 79,
+              "duration_secs": 1425
             }
           ],
           "ja": [
             {
-              "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-              "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+              "title": "絵が下手に見える！よくある失敗例   ！！",
+              "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
               "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-20",
-              "views": 24400,
-              "likes": 1424,
-              "duration_secs": 902
-            },
-            {
-              "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-              "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-22",
-              "views": 23574,
-              "likes": 1251,
-              "duration_secs": 1100
+              "date": "2026-08-27",
+              "views": 105337,
+              "likes": 1778,
+              "duration_secs": 1555
             }
           ]
         },
         "top_items": [
           {
-            "title": "Il capolavoro del grafico di Naruto Color",
-            "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-            "source": "Caverna di Platone",
-            "date": "2026-08-17",
-            "views": 6385,
-            "likes": 265,
-            "duration_secs": 105
+            "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+            "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-28",
+            "views": 13850,
+            "likes": 340,
+            "duration_secs": 864
           },
           {
-            "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-            "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+            "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+            "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
             "source": "Caverna di Platone",
-            "date": "2026-08-22",
-            "views": 1629,
-            "likes": 57,
-            "duration_secs": 4587
+            "date": "2026-08-30",
+            "views": 6601,
+            "likes": 116,
+            "duration_secs": 2832
           },
           {
-            "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-            "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+            "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+            "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
             "source": "Caverna di Platone",
-            "date": "2026-08-19",
-            "views": 1431,
-            "likes": 93,
-            "duration_secs": 1466
+            "date": "2026-08-29",
+            "views": 5375,
+            "likes": 79,
+            "duration_secs": 1425
           },
           {
-            "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-            "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+            "title": "絵が下手に見える！よくある失敗例   ！！",
+            "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-20",
-            "views": 24400,
-            "likes": 1424,
-            "duration_secs": 902
+            "date": "2026-08-27",
+            "views": 105337,
+            "likes": 1778,
+            "duration_secs": 1555
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 1.1136,
+        "keywords": [
+          "euro",
+          "gamberi",
+          "mappa",
+          "del",
+          "usa international",
+          "international"
+        ],
+        "item_count": 6,
+        "total_views": 455653,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.875,
+        "first_seen": "2026-08-26",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "japan_native",
+          "expat_japan_en",
+          "vita_giappone"
+        ],
+        "languages": [
+          "ja",
+          "en",
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6445,
+          "casual": 0.7139
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.714,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Mappa gratis del Giappone!",
+              "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+              "source": "Marco Togni",
+              "date": "2026-08-27",
+              "views": 11379,
+              "likes": 706,
+              "duration_secs": 63
+            },
+            {
+              "title": "Mangio gamberi a Tokyo: quanto costa?",
+              "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+              "source": "Marco Togni",
+              "date": "2026-08-30",
+              "views": 7451,
+              "likes": 405,
+              "duration_secs": 110
+            },
+            {
+              "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+              "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+              "source": "Marco Togni",
+              "date": "2026-08-28",
+              "views": 6687,
+              "likes": 300,
+              "duration_secs": 56
+            }
+          ],
+          "en": [
+            {
+              "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+              "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+              "source": "Paolo from Tokyo",
+              "date": "2026-08-28",
+              "views": 423489,
+              "likes": 6712,
+              "duration_secs": 635
+            }
+          ],
+          "ja": [
+            {
+              "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+              "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
+              "source": "Sora The Troll",
+              "date": "2026-08-31",
+              "views": 0,
+              "likes": 19,
+              "duration_secs": 0
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Mappa gratis del Giappone!",
+            "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+            "source": "Marco Togni",
+            "date": "2026-08-27",
+            "views": 11379,
+            "likes": 706,
+            "duration_secs": 63
           },
           {
-            "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-            "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
+            "title": "Mangio gamberi a Tokyo: quanto costa?",
+            "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+            "source": "Marco Togni",
+            "date": "2026-08-30",
+            "views": 7451,
+            "likes": 405,
+            "duration_secs": 110
+          },
+          {
+            "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+            "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+            "source": "Marco Togni",
+            "date": "2026-08-28",
+            "views": 6687,
+            "likes": 300,
+            "duration_secs": 56
+          },
+          {
+            "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+            "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+            "source": "Paolo from Tokyo",
+            "date": "2026-08-28",
+            "views": 423489,
+            "likes": 6712,
+            "duration_secs": 635
+          },
+          {
+            "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+            "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
+            "source": "Sora The Troll",
+            "date": "2026-08-31",
+            "views": 0,
+            "likes": 19,
+            "duration_secs": 0
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.6103,
+        "keywords": [
+          "use",
+          "japanese",
+          "attention",
+          "attention album",
+          "sora attention",
+          "album try"
+        ],
+        "item_count": 12,
+        "total_views": 280753,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.875,
+        "first_seen": "2026-08-25",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
+          "anime_pop_en"
+        ],
+        "languages": [
+          "ja",
+          "en",
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6979,
+          "casual": 0.6484
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.698,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+              "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+              "source": "Lucilla Jiggly",
+              "date": "2026-08-25",
+              "views": 14498,
+              "likes": 549,
+              "duration_secs": 1673
+            }
+          ],
+          "en": [
+            {
+              "title": "The Epidemic of Pathetic Anime Girls",
+              "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+              "source": "Gigguk",
+              "date": "2026-08-31",
+              "views": 34619,
+              "likes": 3995,
+              "duration_secs": 1699
+            },
+            {
+              "title": "Get the men in too",
+              "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+              "source": "The Anime Man",
+              "date": "2026-08-25",
+              "views": 19182,
+              "likes": 293,
+              "duration_secs": 33
+            },
+            {
+              "title": "How he joined Nintendo",
+              "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+              "source": "The Anime Man",
+              "date": "2026-08-27",
+              "views": 17042,
+              "likes": 570,
+              "duration_secs": 28
+            }
+          ],
+          "ja": [
+            {
+              "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+              "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+              "source": "Sora The Troll",
+              "date": "2026-08-28",
+              "views": 83740,
+              "likes": 1362,
+              "duration_secs": 694
+            },
+            {
+              "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+              "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+              "source": "Sora The Troll",
+              "date": "2026-08-25",
+              "views": 29467,
+              "likes": 1383,
+              "duration_secs": 33
+            },
+            {
+              "title": "Japanese girls walk outside almost half naked here",
+              "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+              "source": "Sora The Troll",
+              "date": "2026-08-27",
+              "views": 22649,
+              "likes": 613,
+              "duration_secs": 25
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+            "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+            "source": "Lucilla Jiggly",
+            "date": "2026-08-25",
+            "views": 14498,
+            "likes": 549,
+            "duration_secs": 1673
+          },
+          {
+            "title": "The Epidemic of Pathetic Anime Girls",
+            "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+            "source": "Gigguk",
+            "date": "2026-08-31",
+            "views": 34619,
+            "likes": 3995,
+            "duration_secs": 1699
+          },
+          {
+            "title": "Get the men in too",
+            "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+            "source": "The Anime Man",
+            "date": "2026-08-25",
+            "views": 19182,
+            "likes": 293,
+            "duration_secs": 33
+          },
+          {
+            "title": "How he joined Nintendo",
+            "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+            "source": "The Anime Man",
+            "date": "2026-08-27",
+            "views": 17042,
+            "likes": 570,
+            "duration_secs": 28
+          },
+          {
+            "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+            "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+            "source": "Sora The Troll",
+            "date": "2026-08-28",
+            "views": 83740,
+            "likes": 1362,
+            "duration_secs": 694
+          },
+          {
+            "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+            "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+            "source": "Sora The Troll",
+            "date": "2026-08-25",
+            "views": 29467,
+            "likes": 1383,
+            "duration_secs": 33
+          },
+          {
+            "title": "Japanese girls walk outside almost half naked here",
+            "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+            "source": "Sora The Troll",
+            "date": "2026-08-27",
+            "views": 22649,
+            "likes": 613,
+            "duration_secs": 25
+          }
+        ]
+      }
+    ],
+    "affinita": [
+      {
+        "label": 4,
+        "score": 1.4214,
+        "keywords": [
+          "manga",
+          "compra",
+          "altro",
+          "kirio",
+          "twitch",
+          "works"
+        ],
+        "item_count": 10,
+        "total_views": 149892,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.708,
+        "first_seen": "2026-08-24",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "japan_native",
+          "anime_manga_pop",
+          "vita_giappone"
+        ],
+        "languages": [
+          "ja",
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.8475,
+          "casual": 0.7156
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.848,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+              "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-28",
+              "views": 13850,
+              "likes": 340,
+              "duration_secs": 864
+            },
+            {
+              "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+              "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
+              "source": "Caverna di Platone",
+              "date": "2026-08-30",
+              "views": 6601,
+              "likes": 116,
+              "duration_secs": 2832
+            },
+            {
+              "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+              "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
+              "source": "Caverna di Platone",
+              "date": "2026-08-29",
+              "views": 5375,
+              "likes": 79,
+              "duration_secs": 1425
+            }
+          ],
+          "ja": [
+            {
+              "title": "絵が下手に見える！よくある失敗例   ！！",
+              "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-08-27",
+              "views": 105337,
+              "likes": 1778,
+              "duration_secs": 1555
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+            "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-28",
+            "views": 13850,
+            "likes": 340,
+            "duration_secs": 864
+          },
+          {
+            "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+            "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
+            "source": "Caverna di Platone",
+            "date": "2026-08-30",
+            "views": 6601,
+            "likes": 116,
+            "duration_secs": 2832
+          },
+          {
+            "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+            "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
+            "source": "Caverna di Platone",
+            "date": "2026-08-29",
+            "views": 5375,
+            "likes": 79,
+            "duration_secs": 1425
+          },
+          {
+            "title": "絵が下手に見える！よくある失敗例   ！！",
+            "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-22",
-            "views": 23574,
-            "likes": 1251,
-            "duration_secs": 1100
+            "date": "2026-08-27",
+            "views": 105337,
+            "likes": 1778,
+            "duration_secs": 1555
           }
         ]
       }
@@ -580,440 +1160,612 @@
     "anomalie": [
       {
         "label": 4,
-        "score": 1.4837,
+        "score": 1.4214,
         "keywords": [
-          "works",
-          "english",
-          "twitch",
           "manga",
-          "works nariwai",
-          "nariwai naokichi"
+          "compra",
+          "altro",
+          "kirio",
+          "twitch",
+          "works"
         ],
-        "item_count": 6,
-        "total_views": 57908,
+        "item_count": 10,
+        "total_views": 149892,
         "velocity": 1.0,
         "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-17",
-        "last_seen": "2026-08-24",
+        "diversity": 0.708,
+        "first_seen": "2026-08-24",
+        "last_seen": "2026-08-31",
         "sentinel_clusters": [
           "japan_native",
-          "anime_manga_pop"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
-          "it",
-          "ja"
+          "ja",
+          "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.8063,
-          "casual": 0.704
+          "narrativo": 0.8475,
+          "casual": 0.7156
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.806,
+        "affinity_best_score": 0.848,
         "items_by_lang": {
           "it": [
             {
-              "title": "Il capolavoro del grafico di Naruto Color",
-              "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-              "source": "Caverna di Platone",
-              "date": "2026-08-17",
-              "views": 6385,
-              "likes": 265,
-              "duration_secs": 105
+              "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+              "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-08-28",
+              "views": 13850,
+              "likes": 340,
+              "duration_secs": 864
             },
             {
-              "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-              "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+              "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+              "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
               "source": "Caverna di Platone",
-              "date": "2026-08-22",
-              "views": 1629,
-              "likes": 57,
-              "duration_secs": 4587
+              "date": "2026-08-30",
+              "views": 6601,
+              "likes": 116,
+              "duration_secs": 2832
             },
             {
-              "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-              "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+              "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+              "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
               "source": "Caverna di Platone",
-              "date": "2026-08-19",
-              "views": 1431,
-              "likes": 93,
-              "duration_secs": 1466
+              "date": "2026-08-29",
+              "views": 5375,
+              "likes": 79,
+              "duration_secs": 1425
             }
           ],
           "ja": [
             {
-              "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-              "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+              "title": "絵が下手に見える！よくある失敗例   ！！",
+              "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
               "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-20",
-              "views": 24400,
-              "likes": 1424,
-              "duration_secs": 902
-            },
-            {
-              "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-              "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-08-22",
-              "views": 23574,
-              "likes": 1251,
-              "duration_secs": 1100
+              "date": "2026-08-27",
+              "views": 105337,
+              "likes": 1778,
+              "duration_secs": 1555
             }
           ]
         },
         "top_items": [
           {
-            "title": "Il capolavoro del grafico di Naruto Color",
-            "url": "https://www.youtube.com/watch?v=fgfHCPNy0qc",
-            "source": "Caverna di Platone",
-            "date": "2026-08-17",
-            "views": 6385,
-            "likes": 265,
-            "duration_secs": 105
+            "title": "L'ANIMAZIONE GIAPPONESE È PEGGIORATA? MEGLIO PRIMA o ADESSO?",
+            "url": "https://www.youtube.com/watch?v=nHM-khNyVVc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-08-28",
+            "views": 13850,
+            "likes": 340,
+            "duration_secs": 864
           },
           {
-            "title": "COMMENTO TUTTI I VIDEO DI GABRIELE DELL'OTTO SU BERSERK",
-            "url": "https://www.youtube.com/watch?v=KdKEn1L6FV0",
+            "title": "Un altro pacco da Mangayo con dentro il 100% di conflitto d'interesse per me",
+            "url": "https://www.youtube.com/watch?v=7oN7Psa6CzY",
             "source": "Caverna di Platone",
-            "date": "2026-08-22",
-            "views": 1629,
-            "likes": 57,
-            "duration_secs": 4587
+            "date": "2026-08-30",
+            "views": 6601,
+            "likes": 116,
+            "duration_secs": 2832
           },
           {
-            "title": "Ho ricevuto solo affetto e attenzioni sotto forma di regali",
-            "url": "https://www.youtube.com/watch?v=2cFT0ABEhug",
+            "title": "40+ Giocattoli e Sorpresine e 1 Libro su Darth Vader",
+            "url": "https://www.youtube.com/watch?v=aIShW2f2zkM",
             "source": "Caverna di Platone",
-            "date": "2026-08-19",
-            "views": 1431,
-            "likes": 93,
-            "duration_secs": 1466
+            "date": "2026-08-29",
+            "views": 5375,
+            "likes": 79,
+            "duration_secs": 1425
           },
           {
-            "title": "【必見】見せ場から逃げるの禁止！！【きまぐれ添削249】",
-            "url": "https://www.youtube.com/watch?v=8tqJVYetoR8",
+            "title": "絵が下手に見える！よくある失敗例   ！！",
+            "url": "https://www.youtube.com/watch?v=PL7jKd8bSF0",
             "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-20",
-            "views": 24400,
-            "likes": 1424,
-            "duration_secs": 902
+            "date": "2026-08-27",
+            "views": 105337,
+            "likes": 1778,
+            "duration_secs": 1555
+          }
+        ]
+      },
+      {
+        "label": 0,
+        "score": 1.1355,
+        "keywords": [
+          "spettacolo",
+          "comedy",
+          "teatro standup",
+          "teatro",
+          "spettacolo comedy",
+          "standup"
+        ],
+        "item_count": 6,
+        "total_views": 824270,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-08-25",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.4932,
+          "casual": 0.4142
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.493,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "l'importante è che sia moscia solo la ERRE",
+              "url": "https://www.youtube.com/watch?v=mHxcrmv-Kas",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-26",
+              "views": 572063,
+              "likes": 26884,
+              "duration_secs": 43
+            },
+            {
+              "title": "è bello quando il tuo lavoro viene apprezzato all'estero!",
+              "url": "https://www.youtube.com/watch?v=wCB5QoCzBYU",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-25",
+              "views": 157542,
+              "likes": 4925,
+              "duration_secs": 58
+            },
+            {
+              "title": "qualcuno pensa di avere una BELLA VOCE?",
+              "url": "https://www.youtube.com/watch?v=pv1vGwoiE4o",
+              "source": "Maurizio Merluzzo",
+              "date": "2026-08-28",
+              "views": 38478,
+              "likes": 2527,
+              "duration_secs": 42
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "l'importante è che sia moscia solo la ERRE",
+            "url": "https://www.youtube.com/watch?v=mHxcrmv-Kas",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-26",
+            "views": 572063,
+            "likes": 26884,
+            "duration_secs": 43
           },
           {
-            "title": "【描かずに上達！？】練習してないのに、人より上手くなっちゃう方法とは！？",
-            "url": "https://www.youtube.com/watch?v=CxwP1jc6MPk",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-08-22",
-            "views": 23574,
-            "likes": 1251,
-            "duration_secs": 1100
+            "title": "è bello quando il tuo lavoro viene apprezzato all'estero!",
+            "url": "https://www.youtube.com/watch?v=wCB5QoCzBYU",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-25",
+            "views": 157542,
+            "likes": 4925,
+            "duration_secs": 58
+          },
+          {
+            "title": "qualcuno pensa di avere una BELLA VOCE?",
+            "url": "https://www.youtube.com/watch?v=pv1vGwoiE4o",
+            "source": "Maurizio Merluzzo",
+            "date": "2026-08-28",
+            "views": 38478,
+            "likes": 2527,
+            "duration_secs": 42
           }
         ]
       },
       {
         "label": 1,
-        "score": 0.5971,
+        "score": 1.1136,
         "keywords": [
-          "japanese",
-          "step",
-          "kanji",
-          "imparare kanji",
-          "imparare",
-          "miei step"
+          "euro",
+          "gamberi",
+          "mappa",
+          "del",
+          "usa international",
+          "international"
         ],
-        "item_count": 3,
-        "total_views": 10125,
+        "item_count": 6,
+        "total_views": 455653,
         "velocity": 1.0,
         "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-18",
-        "last_seen": "2026-08-22",
+        "diversity": 0.875,
+        "first_seen": "2026-08-26",
+        "last_seen": "2026-08-31",
         "sentinel_clusters": [
-          "viaggio",
-          "japan_native"
+          "japan_native",
+          "expat_japan_en",
+          "vita_giappone"
         ],
         "languages": [
-          "it",
-          "ja"
+          "ja",
+          "en",
+          "it"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6039,
-          "casual": 0.6697
+          "narrativo": 0.6445,
+          "casual": 0.7139
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.67,
+        "affinity_best_score": 0.714,
         "items_by_lang": {
           "it": [
             {
-              "title": "I miei step per imparare i kanji giapponesi",
-              "url": "https://www.youtube.com/watch?v=b2eQMZ-a_1o",
-              "source": "Ti Va Di Giappare?",
-              "date": "2026-08-21",
-              "views": 949,
-              "likes": 56,
-              "duration_secs": 84
+              "title": "Mappa gratis del Giappone!",
+              "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+              "source": "Marco Togni",
+              "date": "2026-08-27",
+              "views": 11379,
+              "likes": 706,
+              "duration_secs": 63
             },
             {
-              "title": "Stai pronunciando male il giapponese? Partiamo da ZERO",
-              "url": "https://www.youtube.com/watch?v=PiMSNsuIkH8",
-              "source": "Ti Va Di Giappare?",
-              "date": "2026-08-22",
-              "views": 402,
-              "likes": 38,
-              "duration_secs": 343
+              "title": "Mangio gamberi a Tokyo: quanto costa?",
+              "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+              "source": "Marco Togni",
+              "date": "2026-08-30",
+              "views": 7451,
+              "likes": 405,
+              "duration_secs": 110
+            },
+            {
+              "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+              "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+              "source": "Marco Togni",
+              "date": "2026-08-28",
+              "views": 6687,
+              "likes": 300,
+              "duration_secs": 56
             }
           ],
-          "ja": [
-            {
-              "title": "Duolingo Mispronounces Japanese for 10 Minutes Straight",
-              "url": "https://www.youtube.com/watch?v=d6_R09_NfOE",
-              "source": "That Japanese Man Yuta",
-              "date": "2026-08-18",
-              "views": 8774,
-              "likes": 456,
-              "duration_secs": 650
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "I miei step per imparare i kanji giapponesi",
-            "url": "https://www.youtube.com/watch?v=b2eQMZ-a_1o",
-            "source": "Ti Va Di Giappare?",
-            "date": "2026-08-21",
-            "views": 949,
-            "likes": 56,
-            "duration_secs": 84
-          },
-          {
-            "title": "Stai pronunciando male il giapponese? Partiamo da ZERO",
-            "url": "https://www.youtube.com/watch?v=PiMSNsuIkH8",
-            "source": "Ti Va Di Giappare?",
-            "date": "2026-08-22",
-            "views": 402,
-            "likes": 38,
-            "duration_secs": 343
-          },
-          {
-            "title": "Duolingo Mispronounces Japanese for 10 Minutes Straight",
-            "url": "https://www.youtube.com/watch?v=d6_R09_NfOE",
-            "source": "That Japanese Man Yuta",
-            "date": "2026-08-18",
-            "views": 8774,
-            "likes": 456,
-            "duration_secs": 650
-          }
-        ]
-      },
-      {
-        "label": 3,
-        "score": 0.5024,
-        "keywords": [
-          "try",
-          "sora attention",
-          "sora",
-          "album try",
-          "album",
-          "attention album"
-        ],
-        "item_count": 8,
-        "total_views": 311087,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.583,
-        "first_seen": "2026-08-18",
-        "last_seen": "2026-08-24",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6637,
-          "casual": 0.6449
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.664,
-        "items_by_lang": {
           "en": [
             {
-              "title": "Feeling the burn of a sumo",
-              "url": "https://www.youtube.com/watch?v=1JsGC4SWxQA",
-              "source": "The Anime Man",
-              "date": "2026-08-21",
-              "views": 23550,
-              "likes": 1411,
-              "duration_secs": 62
+              "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+              "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+              "source": "Paolo from Tokyo",
+              "date": "2026-08-28",
+              "views": 423489,
+              "likes": 6712,
+              "duration_secs": 635
             }
           ],
           "ja": [
             {
-              "title": "Dumb Japanese Streamer Gets Stopped By Yakuzas",
-              "url": "https://www.youtube.com/watch?v=Aj1Bjz4lkdE",
+              "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+              "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
               "source": "Sora The Troll",
-              "date": "2026-08-20",
-              "views": 206790,
-              "likes": 7407,
-              "duration_secs": 38
-            },
-            {
-              "title": "American donut shop run by Japanese people in Japan is hilarious",
-              "url": "https://www.youtube.com/watch?v=4wpWPr4GYSg",
-              "source": "Sora The Troll",
-              "date": "2026-08-19",
-              "views": 28411,
-              "likes": 1451,
-              "duration_secs": 26
-            },
-            {
-              "title": "Japanese Girl Gets Influenced By American Culture",
-              "url": "https://www.youtube.com/watch?v=dRpssbNkL94",
-              "source": "Sora The Troll",
-              "date": "2026-08-23",
-              "views": 17620,
-              "likes": 1156,
-              "duration_secs": 27
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Feeling the burn of a sumo",
-            "url": "https://www.youtube.com/watch?v=1JsGC4SWxQA",
-            "source": "The Anime Man",
-            "date": "2026-08-21",
-            "views": 23550,
-            "likes": 1411,
-            "duration_secs": 62
-          },
-          {
-            "title": "Dumb Japanese Streamer Gets Stopped By Yakuzas",
-            "url": "https://www.youtube.com/watch?v=Aj1Bjz4lkdE",
-            "source": "Sora The Troll",
-            "date": "2026-08-20",
-            "views": 206790,
-            "likes": 7407,
-            "duration_secs": 38
-          },
-          {
-            "title": "American donut shop run by Japanese people in Japan is hilarious",
-            "url": "https://www.youtube.com/watch?v=4wpWPr4GYSg",
-            "source": "Sora The Troll",
-            "date": "2026-08-19",
-            "views": 28411,
-            "likes": 1451,
-            "duration_secs": 26
-          },
-          {
-            "title": "Japanese Girl Gets Influenced By American Culture",
-            "url": "https://www.youtube.com/watch?v=dRpssbNkL94",
-            "source": "Sora The Troll",
-            "date": "2026-08-23",
-            "views": 17620,
-            "likes": 1156,
-            "duration_secs": 27
-          }
-        ]
-      }
-    ],
-    "altri": [
-      {
-        "label": 2,
-        "score": 0.3285,
-        "keywords": [
-          "beach",
-          "tts",
-          "well",
-          "tts driving",
-          "try tjhese",
-          "try"
-        ],
-        "item_count": 3,
-        "total_views": 21890,
-        "velocity": 1.0,
-        "novelty": 1.0,
-        "diversity": 0.292,
-        "first_seen": "2026-08-20",
-        "last_seen": "2026-08-24",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5523,
-          "casual": 0.619
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.619,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "Going To Japan's WORST Beach That Has Gangs And Foreigners Hitting On Japanese Girls...?????",
-              "url": "https://www.youtube.com/watch?v=FnPd1MpswlI",
-              "source": "Sora The Troll",
-              "date": "2026-08-23",
-              "views": 15950,
-              "likes": 491,
-              "duration_secs": 19067
-            },
-            {
-              "title": "Sora got reported and he ended his stream early in this one",
-              "url": "https://www.youtube.com/watch?v=6a9kxZshbkU",
-              "source": "Sora The Troll",
-              "date": "2026-08-20",
-              "views": 5940,
-              "likes": 278,
-              "duration_secs": 9797
-            },
-            {
-              "title": "\"Bye To Japan\"... As To Foreigners ACTUALLY Having To Leave Japan Entirely",
-              "url": "https://www.youtube.com/watch?v=hGIxMVaLqwU",
-              "source": "Sora The Troll",
-              "date": "2026-08-24",
+              "date": "2026-08-31",
               "views": 0,
-              "likes": 11,
+              "likes": 19,
               "duration_secs": 0
             }
           ]
         },
         "top_items": [
           {
-            "title": "Going To Japan's WORST Beach That Has Gangs And Foreigners Hitting On Japanese Girls...?????",
-            "url": "https://www.youtube.com/watch?v=FnPd1MpswlI",
-            "source": "Sora The Troll",
-            "date": "2026-08-23",
-            "views": 15950,
-            "likes": 491,
-            "duration_secs": 19067
+            "title": "Mappa gratis del Giappone!",
+            "url": "https://www.youtube.com/watch?v=O0_ZluQ0Eso",
+            "source": "Marco Togni",
+            "date": "2026-08-27",
+            "views": 11379,
+            "likes": 706,
+            "duration_secs": 63
           },
           {
-            "title": "Sora got reported and he ended his stream early in this one",
-            "url": "https://www.youtube.com/watch?v=6a9kxZshbkU",
-            "source": "Sora The Troll",
-            "date": "2026-08-20",
-            "views": 5940,
-            "likes": 278,
-            "duration_secs": 9797
+            "title": "Mangio gamberi a Tokyo: quanto costa?",
+            "url": "https://www.youtube.com/watch?v=VUdarcYn6uI",
+            "source": "Marco Togni",
+            "date": "2026-08-30",
+            "views": 7451,
+            "likes": 405,
+            "duration_secs": 110
           },
           {
-            "title": "\"Bye To Japan\"... As To Foreigners ACTUALLY Having To Leave Japan Entirely",
-            "url": "https://www.youtube.com/watch?v=hGIxMVaLqwU",
+            "title": "Millefoglie a Tokyo: 15 euro ben spesi",
+            "url": "https://www.youtube.com/watch?v=Om0GhF0K9ds",
+            "source": "Marco Togni",
+            "date": "2026-08-28",
+            "views": 6687,
+            "likes": 300,
+            "duration_secs": 56
+          },
+          {
+            "title": "What Japan’s $500 Private Shinkansen Supreme Class Train Cabin is like",
+            "url": "https://www.youtube.com/watch?v=f5oN7cPeb4c",
+            "source": "Paolo from Tokyo",
+            "date": "2026-08-28",
+            "views": 423489,
+            "likes": 6712,
+            "duration_secs": 635
+          },
+          {
+            "title": "Going To Tokyo's FOREIGNER TOWN To See Japanese People's Reactions",
+            "url": "https://www.youtube.com/watch?v=tmWmZnx6TmM",
             "source": "Sora The Troll",
-            "date": "2026-08-24",
+            "date": "2026-08-31",
             "views": 0,
-            "likes": 11,
+            "likes": 19,
             "duration_secs": 0
           }
         ]
+      },
+      {
+        "label": 2,
+        "score": 0.6949,
+        "keywords": [
+          "vita",
+          "vivere",
+          "della vita",
+          "della",
+          "trasferirsi",
+          "italia"
+        ],
+        "item_count": 3,
+        "total_views": 99450,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.292,
+        "first_seen": "2026-08-29",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.5492,
+          "casual": 0.7175
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.718,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Vivere in Giappone: il lato negativo",
+              "url": "https://www.youtube.com/watch?v=rw_dIhgPlWw",
+              "source": "Marco Togni",
+              "date": "2026-08-30",
+              "views": 91871,
+              "likes": 2167,
+              "duration_secs": 60
+            },
+            {
+              "title": "Vivere in Giappone: stipendi e costo della vita",
+              "url": "https://www.youtube.com/watch?v=XIsvGRGPA6g",
+              "source": "Marco Togni",
+              "date": "2026-08-31",
+              "views": 5392,
+              "likes": 257,
+              "duration_secs": 60
+            },
+            {
+              "title": "Conviene ancora trasferirsi in Giappone? Lavoro, sacrifici e felicità ",
+              "url": "https://www.youtube.com/watch?v=3WL_Xk_QabE",
+              "source": "Calabrese in Oriente",
+              "date": "2026-08-29",
+              "views": 2187,
+              "likes": 82,
+              "duration_secs": 781
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Vivere in Giappone: il lato negativo",
+            "url": "https://www.youtube.com/watch?v=rw_dIhgPlWw",
+            "source": "Marco Togni",
+            "date": "2026-08-30",
+            "views": 91871,
+            "likes": 2167,
+            "duration_secs": 60
+          },
+          {
+            "title": "Vivere in Giappone: stipendi e costo della vita",
+            "url": "https://www.youtube.com/watch?v=XIsvGRGPA6g",
+            "source": "Marco Togni",
+            "date": "2026-08-31",
+            "views": 5392,
+            "likes": 257,
+            "duration_secs": 60
+          },
+          {
+            "title": "Conviene ancora trasferirsi in Giappone? Lavoro, sacrifici e felicità ",
+            "url": "https://www.youtube.com/watch?v=3WL_Xk_QabE",
+            "source": "Calabrese in Oriente",
+            "date": "2026-08-29",
+            "views": 2187,
+            "likes": 82,
+            "duration_secs": 781
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.6103,
+        "keywords": [
+          "use",
+          "japanese",
+          "attention",
+          "attention album",
+          "sora attention",
+          "album try"
+        ],
+        "item_count": 12,
+        "total_views": 280753,
+        "velocity": 1.0,
+        "novelty": 1.0,
+        "diversity": 0.875,
+        "first_seen": "2026-08-25",
+        "last_seen": "2026-08-31",
+        "sentinel_clusters": [
+          "anime_manga_pop",
+          "japan_native",
+          "anime_pop_en"
+        ],
+        "languages": [
+          "ja",
+          "en",
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6979,
+          "casual": 0.6484
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.698,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+              "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+              "source": "Lucilla Jiggly",
+              "date": "2026-08-25",
+              "views": 14498,
+              "likes": 549,
+              "duration_secs": 1673
+            }
+          ],
+          "en": [
+            {
+              "title": "The Epidemic of Pathetic Anime Girls",
+              "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+              "source": "Gigguk",
+              "date": "2026-08-31",
+              "views": 34619,
+              "likes": 3995,
+              "duration_secs": 1699
+            },
+            {
+              "title": "Get the men in too",
+              "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+              "source": "The Anime Man",
+              "date": "2026-08-25",
+              "views": 19182,
+              "likes": 293,
+              "duration_secs": 33
+            },
+            {
+              "title": "How he joined Nintendo",
+              "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+              "source": "The Anime Man",
+              "date": "2026-08-27",
+              "views": 17042,
+              "likes": 570,
+              "duration_secs": 28
+            }
+          ],
+          "ja": [
+            {
+              "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+              "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+              "source": "Sora The Troll",
+              "date": "2026-08-28",
+              "views": 83740,
+              "likes": 1362,
+              "duration_secs": 694
+            },
+            {
+              "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+              "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+              "source": "Sora The Troll",
+              "date": "2026-08-25",
+              "views": 29467,
+              "likes": 1383,
+              "duration_secs": 33
+            },
+            {
+              "title": "Japanese girls walk outside almost half naked here",
+              "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+              "source": "Sora The Troll",
+              "date": "2026-08-27",
+              "views": 22649,
+              "likes": 613,
+              "duration_secs": 25
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Intervista a SharkL: innamorarsi di una ragazza anime",
+            "url": "https://www.youtube.com/watch?v=YVva3TBwPXU",
+            "source": "Lucilla Jiggly",
+            "date": "2026-08-25",
+            "views": 14498,
+            "likes": 549,
+            "duration_secs": 1673
+          },
+          {
+            "title": "The Epidemic of Pathetic Anime Girls",
+            "url": "https://www.youtube.com/watch?v=SpXAN8QrDuU",
+            "source": "Gigguk",
+            "date": "2026-08-31",
+            "views": 34619,
+            "likes": 3995,
+            "duration_secs": 1699
+          },
+          {
+            "title": "Get the men in too",
+            "url": "https://www.youtube.com/watch?v=VKwGiOI6180",
+            "source": "The Anime Man",
+            "date": "2026-08-25",
+            "views": 19182,
+            "likes": 293,
+            "duration_secs": 33
+          },
+          {
+            "title": "How he joined Nintendo",
+            "url": "https://www.youtube.com/watch?v=wWE5Ix2PkP4",
+            "source": "The Anime Man",
+            "date": "2026-08-27",
+            "views": 17042,
+            "likes": 570,
+            "duration_secs": 28
+          },
+          {
+            "title": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+            "url": "https://www.youtube.com/watch?v=hVNkuTR8KkA",
+            "source": "Sora The Troll",
+            "date": "2026-08-28",
+            "views": 83740,
+            "likes": 1362,
+            "duration_secs": 694
+          },
+          {
+            "title": "Dumb Japanese Streamer Makes A Japanese Girl Cry On Stream",
+            "url": "https://www.youtube.com/watch?v=cY52n_741HU",
+            "source": "Sora The Troll",
+            "date": "2026-08-25",
+            "views": 29467,
+            "likes": 1383,
+            "duration_secs": 33
+          },
+          {
+            "title": "Japanese girls walk outside almost half naked here",
+            "url": "https://www.youtube.com/watch?v=1HnNuTX8G78",
+            "source": "Sora The Troll",
+            "date": "2026-08-27",
+            "views": 22649,
+            "likes": 613,
+            "duration_secs": 25
+          }
+        ]
       }
-    ]
+    ],
+    "altri": []
   }
 }
