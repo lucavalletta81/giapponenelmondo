@@ -22,6 +22,11 @@ body[data-tema="pixel"] #hud .hud-costo {
   display: flex; align-items: center; gap: 8px; margin-left: auto;
 }
 body[data-tema="pixel"] #hud .hud-costo > b { font-size: 14px; }
+body[data-tema="pixel"] #hud .hud-parziale {
+  font-style: normal; font-size: 7px; color: #5B5F78; letter-spacing: .5px;
+  align-self: flex-end; margin: 0 0 2px -4px; white-space: nowrap;
+}
+body[data-tema="pixel"] #hud .hud-parziale[hidden] { display: none; }
 body[data-tema="pixel"] #hud .hud-costo > b.lampo { animation: hud-lampo .15s steps(1); }
 @keyframes hud-lampo { 0% { background: #F7C948; } 100% { background: none; } }
 body[data-tema="pixel"] #hud .hud-margine {

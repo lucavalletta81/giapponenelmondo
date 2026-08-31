@@ -15,10 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="tema.css?v=202608311643" />
-  <link rel="stylesheet" href="tema-pixel.css?v=202608311643" />
-  <link rel="stylesheet" href="tema-arcade.css?v=202608311643" />
-  <link rel="stylesheet" href="app.css?v=202608311643" />
+  <link rel="stylesheet" href="tema.css?v=202608311647" />
+  <link rel="stylesheet" href="tema-pixel.css?v=202608311647" />
+  <link rel="stylesheet" href="tema-arcade.css?v=202608311647" />
+  <link rel="stylesheet" href="app.css?v=202608311647" />
 </head>
 <body>
 
@@ -105,9 +105,10 @@
       <section class="passo largo" data-id="interessi">
         <div class="campo">
           <h2><span class="n"></span>Cosa ti interessa davvero</h2>
-          <p class="nota">Scegline da 3 a 6. Sono queste a decidere l'itinerario, non le date.</p>
+          <p class="nota">Scegline almeno 2; il punto giusto sta fra 3 e 6. Sono queste a decidere
+          l'itinerario, non le date.</p>
           <div id="interessi" class="carte interessi"></div>
-          <p class="errore" id="err-interessi" hidden>Scegline almeno due.</p>
+          <p class="errore" id="err-interessi" hidden>Serve almeno un paio di interessi: sono loro a costruire l'itinerario.</p>
         </div>
       </section>
 
@@ -134,7 +135,7 @@
             <label>Adulti <input type="number" id="adulti" value="2" min="1" max="10"></label>
             <label>Bambini (0-11) <input type="number" id="bambini" value="0" min="0" max="8"></label>
           </div>
-          <p class="nota">I bambini contano circa il 65% di un adulto: volo quasi pieno, cibo e ingressi ridotti, letto condiviso.</p>
+          <p class="nota">In questa simulazione un bambino pesa il 65% di un adulto: volo quasi pieno, cibo e ingressi ridotti, letto condiviso. È l'assunzione del nostro modello, non una tariffa: quella vera dipende da età e compagnia.</p>
         </div>
       </section>
 
@@ -240,14 +241,14 @@
   </footer>
 
   <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-  <script src="dati.js?v=202608311643"></script>
-  <script src="prezzi.js?v=202608311643"></script>
-  <script src="motore.js?v=202608311643"></script>
-  <script src="pdf.js?v=202608311643"></script>
-  <script src="app.js?v=202608311643"></script>
-  <script src="suoni.js?v=202608311643"></script>
-  <script src="hud.js?v=202608311643"></script>
-  <script src="intro.js?v=202608311643"></script>
-  <script src="mascotte.js?v=202608311643"></script>
+  <script src="dati.js?v=202608311647"></script>
+  <script src="prezzi.js?v=202608311647"></script>
+  <script src="motore.js?v=202608311647"></script>
+  <script src="pdf.js?v=202608311647"></script>
+  <script src="app.js?v=202608311647"></script>
+  <script src="suoni.js?v=202608311647"></script>
+  <script src="hud.js?v=202608311647"></script>
+  <script src="intro.js?v=202608311647"></script>
+  <script src="mascotte.js?v=202608311647"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ function monta() {
   el.innerHTML =
     '<span class="hud-mondo" id="hud-mondo">MONDO 1-1</span>' +
     '<span class="hud-costo"><img src="' + im("arcade-moneta1.png") + '" alt="" width="20" height="20">' +
-      '<b id="hud-cifra">–</b>' +
+      '<b id="hud-cifra">–</b><i class="hud-parziale" id="hud-parziale">conto parziale</i>' +
       '<span class="hud-margine"><i id="hud-piu">± …</i><u id="hud-barra"><b id="hud-barra-fill"></b></u></span>' +
     '</span>' +
     '<button type="button" id="hud-audio" aria-label="Suoni on/off">' +
@@ -97,6 +97,11 @@ function aggiorna() {
   mostrato = v;
   /* MONDO x-y: x fisso 1, y = passo corrente */
   $("#hud-mondo").textContent = p.risultato ? "COURSE CLEAR" : "MONDO 1-" + (p.n + 1);
+  /* finché si risponde, quello NON è il prezzo del viaggio: è quanto se ne
+     conosce finora. Dirlo evita che qualcuno legga 2.700 alla terza domanda
+     e pensi che il viaggio costi 2.700. */
+  var par = $("#hud-parziale");
+  if (par) par.hidden = !!p.risultato;
 }
 
 /* le monetine che saltano su dal contatore quando la cifra cresce */
