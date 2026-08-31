@@ -498,16 +498,35 @@ function camere(input) {
    rincaro è MISURATO (data/prezzi.js → alloggi_weekend, coppie feriale/
    venerdì/sabato sulle stesse celle). Se la misura non c'è, non si corregge
    niente: meglio un numero prudente che un numero inventato. */
-function fattoreWeekend() {
+function fattoreWeekend(notti, dataVolo) {
   var P = window.PREZZI, w = P && P.alloggi_weekend;
-  if (!w || !w.venerdi || !w.sabato) return 1;
-  return (5 + w.venerdi + w.sabato) / 7;
+  if (!w || !w.venerdi || !w.sabato) return { f: 1, ven: 0, sab: 0, vero: false };
+
+  /* Se sappiamo QUANDO si parte — e lo sappiamo, quando il volo è un prezzo
+     vero: porta la sua data — si contano i venerdì e i sabati veri del
+     soggiorno invece di spalmare una media. La prima notte in Giappone è
+     quella dopo l'arrivo: sull'Europa-Tokyo si atterra il giorno dopo. */
+  if (dataVolo && notti > 0) {
+    var d = new Date(dataVolo + "T00:00:00");
+    if (!isNaN(d.getTime())) {
+      d.setDate(d.getDate() + 1);
+      var ven = 0, sab = 0;
+      for (var i = 0; i < notti; i++) {
+        var g = d.getDay();                 /* 5 = venerdì, 6 = sabato */
+        if (g === 5) ven++; else if (g === 6) sab++;
+        d.setDate(d.getDate() + 1);
+      }
+      return { f: ((notti - ven - sab) + ven * w.venerdi + sab * w.sabato) / notti,
+               ven: ven, sab: sab, vero: true };
+    }
+  }
+  /* senza una data (volo stimato): il valore atteso, una notte su sette */
+  return { f: (5 + w.venerdi + w.sabato) / 7, ven: notti / 7, sab: notti / 7, vero: false };
 }
 
 function calcolaLivello(input, itin, treni, stileKey) {
   var st = stagione(input.stagione), stile = STILI[stileKey];
   var nCamere = camere(input);
-  var fWeek = fattoreWeekend();
   var teste = (input.adulti || 1) + (input.bambini || 0) * 0.65;
 
   /* --- alloggio: prezzo VERO a notte per zona e fascia, se ce l'abbiamo.
@@ -517,6 +536,9 @@ function calcolaLivello(input, itin, treni, stileKey) {
   var zona = input.zona || null;                 /* null = la decidiamo noi */
   var reale = zona ? alloggioReale(zona, stile.alloggio, input.stagione)
                    : alloggioAuto(stile.alloggio, input.stagione);
+  var vAnticipo = voloReale(input.partenza, input.stagione, stile.volo);
+  var week = fattoreWeekend(itin.ggGiappone, vAnticipo && vAnticipo.out);
+  var fWeek = week.f;
   if (reale) {
     notti = itin.ggGiappone;
     alloggio = null;                              /* in euro, non in yen */
@@ -586,7 +608,7 @@ function calcolaLivello(input, itin, treni, stileKey) {
   var persone = teste;
   return {
     stile: stileKey, nome: stile.nome,
-    camere: nCamere, weekend: fWeek,
+    camere: nCamere, weekend: fWeek, weekend_notti: week,
     volo_fonte: v || null,
     alloggio_fonte: alloggioFonte,
     zona: zona,

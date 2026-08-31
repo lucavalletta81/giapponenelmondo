@@ -78,9 +78,14 @@ function eu(n) { return Math.round(n).toLocaleString("it-IT") + " €"; }
 function spiegaWeekend(liv) {
   var w = window.PREZZI && window.PREZZI.alloggi_weekend;
   if (!w || !liv.weekend || liv.weekend <= 1.001) return "";
+  var n = liv.weekend_notti || {};
+  var quante = n.vero
+    ? (n.ven + (n.ven === 1 ? " venerdì" : " venerdì") + " e " + n.sab +
+       (n.sab === 1 ? " sabato" : " sabati") + " veri del tuo soggiorno")
+    : "una notte su sette ciascuno, perché su queste date il volo è stimato e non sappiamo i giorni esatti";
   return ", più il rincaro di venerdì e sabato (misurato: ×" +
     String(w.venerdi).replace(".", ",") + " e ×" + String(w.sabato).replace(".", ",") +
-    ", una notte su sette ciascuno, +" + Math.round((liv.weekend - 1) * 100) + "% sul soggiorno)";
+    ", applicato a " + quante + ": +" + Math.round((liv.weekend - 1) * 100) + "% sul soggiorno)";
 }
 function eu0(n) { return M.arrotonda(n, 10).toLocaleString("it-IT") + " €"; }
 function yen(n) { return Math.round(n).toLocaleString("it-IT") + " ¥"; }
