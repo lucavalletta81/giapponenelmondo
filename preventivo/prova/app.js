@@ -193,6 +193,34 @@ function disegnaSpalla(corrente) {
    è questo che dà la sensazione del colloquio invece che del modulo.
    Un blocco per ogni interesse scelto, e dentro solo i rami che a Tokyo
    hanno davvero dei luoghi: una scelta che non cambia niente non si offre. */
+/* Le serie da pellegrinaggio, divise in due mazzi quando il giro è solo
+   Tokyo: quelle raggiungibili e quelle che in questa prima versione restano
+   fuori. Mostrarle tutte come scegliibili significherebbe promettere
+   Takayama o Fukuoka dentro un preventivo che tocca solo Tokyo. */
+function serieAmazzo() {
+  var vicine = [];
+  if (S.soloTokyo) vicine = ["tokyo"].concat(M.GITE);
+  var qui = [], lontane = [];
+  D.anime.forEach(function (a) {
+    var citta = a.luoghi.map(function (l) { return M.luogo(l).citta; });
+    var uniq = citta.filter(function (v, k) { return citta.indexOf(v) === k; });
+    var nomi = uniq.map(function (c) { return M.citta(c).nome; }).join(", ");
+    var raggiungibile = !S.soloTokyo || uniq.some(function (c) { return vicine.indexOf(c) !== -1; });
+    (raggiungibile ? qui : lontane).push(
+      '<div class="carta' + (raggiungibile ? "" : " fuori") +
+      (S.anime.indexOf(a.id) !== -1 && raggiungibile ? " on" : "") + '"' +
+      (raggiungibile ? ' data-serie-id="' + a.id + '"' : ' aria-disabled="true"') +
+      "><b>" + esc(a.nome) + "</b><span>" + esc(nomi) + "</span></div>");
+  });
+  var h = '<div class="carte fitte" data-serie="1">' + qui.join("") + "</div>";
+  if (lontane.length)
+    h += '<p class="nota">Queste altre serie stanno fuori dalla portata di un giro su Tokyo, ' +
+      "e in questa prima versione non entrano nel preventivo: le lascio qui perché tu sappia " +
+      "dove sono, non perché tu le possa scegliere.</p>" +
+      '<div class="carte fitte spente">' + lontane.join("") + "</div>";
+  return h;
+}
+
 function preparaRamo() {
   var h = [];
   S.interessi.forEach(function (id) {
@@ -202,13 +230,7 @@ function preparaRamo() {
       h.push('<div class="ramo"><h3>' + esc(i.nome) + "</h3>" +
         '<p class="nota">Quali serie vuoi vedere dal vivo. Il pellegrinaggio (聖地巡礼, ' +
         "<i>seichi junrei</i>) cambia la rotta: alcuni luoghi sono lontani dai giri classici.</p>" +
-        '<div class="carte fitte" data-serie="1">' + D.anime.map(function (a) {
-          var dove = a.luoghi.map(function (l) { return M.citta(M.luogo(l).citta).nome; });
-          var uniq = dove.filter(function (v, k) { return dove.indexOf(v) === k; });
-          return '<div class="carta' + (S.anime.indexOf(a.id) !== -1 ? " on" : "") +
-            '" data-serie-id="' + a.id + '"><b>' + esc(a.nome) + "</b><span>" +
-            esc(uniq.join(", ")) + "</span></div>";
-        }).join("") + "</div></div>");
+        serieAmazzo() + "</div>");
       return;
     }
     var rami = M.ramiDisponibili(id, S.soloTokyo);

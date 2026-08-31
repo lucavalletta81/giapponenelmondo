@@ -326,3 +326,9 @@ body[data-tema="pixel"] .conta-preventivi {
 }
 body[data-tema="pixel"] .conta-preventivi b { color: #E0392B; font-weight: 400; }
 #conta-piede { opacity: .85; }
+
+
+/* le serie di pellegrinaggio fuori portata: si vedono, non si scelgono */
+.carte.spente { opacity: .55; }
+.carte .carta.fuori { cursor: not-allowed; filter: grayscale(.5); }
+body[data-tema="pixel"] .carte .carta.fuori { box-shadow: none; }
