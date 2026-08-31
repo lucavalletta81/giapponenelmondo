@@ -318,8 +318,13 @@ function disegna(r, comp) {
       '<div class="piccolo">gruppo di ' + persone + ": <b>" + eu0(l.gruppo) + "</b></div></div>");
   });
   h.push("</div>");
+  var percMargine = Math.max(15, r.attendibilita.perc_importo || 15);
+  var euroMargine = M.arrotonda(liv.perPersona * percMargine / 100, 10);
   h.push('<p class="nota">Clicca una colonna per cambiare il livello di riferimento. ' +
-    "Il numero è un intervallo travestito da cifra: consideralo ±15%.</p>");
+    "Il numero è un intervallo travestito da cifra: <b>± " + percMargine + "%</b>, cioè circa " +
+    eu(euroMargine) + " a persona. Non è un margine di cortesia: è esattamente la quota di " +
+    "questo preventivo che <b>non</b> viene da un prezzo verificato alla fonte — la trovi " +
+    "spiegata in fondo, voce per voce. Se scende quella, scende il margine.</p>");
   h.push('<p class="conta-preventivi" id="conta-preventivi" hidden></p>');
 
   /* --- la prosa --------------------------------------------------------- */
