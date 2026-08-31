@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-28 09:01",
-  "summary": "Settimana ancora sostanzialmente piatta. L'unico segnale degno di nota è il cluster expat_japan_en in inglese (+14 delta), trainato da Tokyo Lens con due video sul minimalismo estremo e sullo studio/living space retrò. In italiano non emerge nulla di nuovo: anime_manga_pop domina ma è saturo e non è territorio di Luca. Un solo trend genuino supportato dai dati.",
+  "generated_at": "2026-08-31 19:03",
+  "summary": "Settimana dominata dal cluster viaggio (delta +70 IT) che però è territorio dei travel creator, non di Luca. In EN il cluster expat_japan_en cresce ancora (+24) con due filoni distinti: il lusso Shinkansen e lo spazio/identità a Tokyo. In JP nessun segnale editorialmente nuovo. Un solo trend genuino emerge dai dati: il Shinkansen Supreme Class, cavalcato in EN da Paolo from Tokyo con due video ravvicinati, ancora assente in italiano e coerente con l'angolatura culturale-narrativa del canale.",
   "overview": {
     "IT": {
-      "trend_count": 0,
+      "trend_count": 1,
       "youtube_videos_analyzed": 10,
       "gap_IT_EN_count": 1,
-      "delta_trend_count": 0
+      "delta_trend_count": 1
     },
     "EN": {
       "trend_count": 1,
@@ -22,54 +22,54 @@
   "demand": {
     "IT": [
       {
-        "keyword": "anime_manga_pop",
-        "volume": 100,
-        "delta": "flat",
-        "delta_value": 0,
-        "source": "youtube_velocity"
-      },
-      {
         "keyword": "viaggio",
-        "volume": 30,
-        "delta": "down",
-        "delta_value": -47,
+        "volume": 100,
+        "delta": "up",
+        "delta_value": 70,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "vita_giappone",
-        "volume": 23,
-        "delta": "down",
-        "delta_value": -40,
+        "keyword": "anime_manga_pop",
+        "volume": 95,
+        "delta": "flat",
+        "delta_value": -5,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 17,
+        "volume": 27,
+        "delta": "up",
+        "delta_value": 10,
+        "source": "youtube_velocity"
+      },
+      {
+        "keyword": "vita_giappone",
+        "volume": 27,
         "delta": "flat",
-        "delta_value": -3,
+        "delta_value": 4,
         "source": "youtube_velocity"
       }
     ],
     "EN": [
       {
-        "keyword": "anime_pop_en",
+        "keyword": "expat_japan_en",
         "volume": 100,
-        "delta": "flat",
-        "delta_value": 0,
+        "delta": "up",
+        "delta_value": 24,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "expat_japan_en",
-        "volume": 76,
-        "delta": "up",
-        "delta_value": 14,
+        "keyword": "anime_pop_en",
+        "volume": 56,
+        "delta": "down",
+        "delta_value": -44,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 17,
-        "delta": "flat",
-        "delta_value": 1,
+        "volume": 3,
+        "delta": "down",
+        "delta_value": -14,
         "source": "youtube_velocity"
       }
     ],
@@ -86,111 +86,107 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Vivere piccolo a Tokyo: lo spazio come scelta identitaria",
+      "title": "Shinkansen Supreme Class: il lusso come rituale giapponese",
       "category": "Sociale/Culturale",
-      "urgency": "Media",
-      "coerenza": 5,
-      "saturazione_IT": 2,
+      "urgency": "Alta",
+      "coerenza": 7,
+      "saturazione_IT": 1,
       "saturazione_EN": 6,
-      "saturazione_JP": 3,
+      "saturazione_JP": 2,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Vive in 20 mq a Tokyo da 2 anni. Ha scelto lui.",
-      "video_title": "Vivere in 20 mq a Tokyo: minimalismo o ideologia?",
-      "podcast_title": "Lo spazio come ribellione: il Giappone che sceglie di vivere piccolo",
-      "angolatura": "Non il minimalismo estetico da Pinterest, ma la scelta politica e identitaria di rinunciare allo spazio in una città che lo nega a tutti — e cosa dice di noi.",
-      "timing": "Prossimo mese",
-      "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema concettuale, nessun visual esclusivo disponibile, si presta alla narrazione lunga.",
+      "thumbnail_hook": "500 dollari per un treno. Ma in Giappone non e solo un viaggio — e un rito.",
+      "video_title": "Il treno da 500€: cosa dice di noi il lusso secondo il Giappone",
+      "podcast_title": "Shinkansen Supreme Class: quando il lusso diventa cerimonia",
+      "angolatura": "Non una recensione del treno, ma un'analisi culturale: perche in Giappone il lusso e fatto di silenzio, spazio e servizio invisibile — non di ostentazione.",
+      "timing": "Entro 2 settimane",
+      "formato_consigliato": "Entrambi",
+      "motivazione_formato": "Video per impatto visivo del mezzo; podcast per approfondimento culturale sul lusso come estetica.",
       "struttura_atti": [
-        "Atto I: Tokyo Lens torna sul suo minimalista estremo 2 anni dopo — cosa è cambiato, cosa no, e perché il pubblico EN continua a guardare.",
-        "Atto II: Lo spazio minimo in Giappone non è solo estetica — è risposta alla crisi immobiliare, alla solitudine, al consumismo. Chi sceglie di vivere in poco: studenti, single, anziani, expat.",
-        "Atto III: E in Italia? Il minimalismo giapponese importato è spesso vuoto — cosa succederebbe se capissimo davvero cosa significa rinunciare allo spazio per scelta e non per necessità."
+        "Atto I: La scena — cosa trovi entrando in Supreme Class. Dettagli sensoriali, il silenzio, il servizio. Contrasto col viaggio 'normale'.",
+        "Atto II: Il contesto — il Giappone e il lusso discreto. Omotenashi, il concetto di ma (vuoto/spazio), la cultura del non-eccesso ostentato. Perche 500 dollari qui non comprano status ma esperienza.",
+        "Atto III: Lo specchio — cosa ci dice questo treno del modo giapponese di concepire qualita, tempo e cura. E cosa possiamo leggere nella sua esistenza sulla societa giapponese del 2025."
       ],
-      "coverage_IT": "Quasi nulla in italiano: il minimalismo giapponese viene trattato come estetica decorativa, mai come fenomeno sociale.",
-      "opportunita_IT": "Luca può essere il primo in italiano a trattare il tema con profondità sociologica, sfruttando il delta EN in crescita come onda da anticipare.",
+      "coverage_IT": "Nessun creator italiano di cultura giapponese ha trattato il tema. Solo eventuali travel vlogger superficiali.",
+      "opportunita_IT": "Finestra aperta: due video EN usciti in 14 giorni sullo stesso soggetto segnalano domanda consolidata. In italiano e territorio vergine con angolatura culturale.",
       "esempi_EN": [
         {
-          "titolo": "Japan's Most EXTREME Minimalist 2 Years Later",
-          "url": "https://youtube.com/watch?v=BpqYEWbkFYw"
+          "titolo": "What Japan's $500 Private Shinkansen Supreme Class Train Cabin is like",
+          "url": "https://youtube.com/watch?v=f5oN7cPeb4c"
         },
         {
-          "titolo": "Building a TINY (Retro) Room in my Tokyo Japan YT Studio",
-          "url": "https://youtube.com/watch?v=M-JR3ON5uJ8"
+          "titolo": "Is this $500 Shinkansen Supreme Class Train Seat Worth it?",
+          "url": "https://youtube.com/watch?v=ZIeqqf1NRVM"
         }
       ],
-      "angolo_EN": "In EN si punta sulla curiosità voyeuristica dello spazio fisico. In IT si può puntare sul perché culturale e politico.",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run sul tema spazio/minimalismo.",
+      "angolo_EN": "EN tratta il tema come recensione/esperienza. Luca puo possedere l'angolo culturale-antropologico, ancora libero.",
+      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run sul tema Shinkansen o lusso ferroviario.",
       "esempi_JP": [],
-      "utilita_JP": "Nessun esempio JP disponibile in questa run. Monitorare nelle prossime sessioni."
+      "utilita_JP": "JP non fornisce segnale utile questa settimana. Fonti esterne (JR, stampa JP) per ricerca primaria."
     }
   ],
   "trends_EN": [
     {
-      "title": "Minimalismo estremo in Giappone: follow-up narrativo",
+      "title": "Shinkansen Supreme Class: il lusso estremo nei treni JP",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
-      "volume_EN": 76,
-      "volume_IT": 23,
+      "volume_EN": 100,
+      "volume_IT": 0,
       "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens pubblica un follow-up a 2 anni sul minimalismo estremo: formato 'dove sono finiti' con alta trazione. In IT il cluster vita_giappone e' a -40. Finestra aperta: 2-4 settimane prima che arrivi qualche canale italiano travel.",
-      "connessione_canale": "Il tema minimalismo era gia' in radar (score 6, saturazione bassa). Il follow-up di Tokyo Lens e' il gancio narrativo per rilanciarlo con angolo identitario, non lifestyle."
+      "perche_monitorarlo": "Due video di Paolo from Tokyo sullo stesso prodotto (Supreme Class a 500$) in 14 giorni: segnale editoriale forte. In italiano il tema lusso-ferroviario giapponese è assente. Finestra stimata 4-6 settimane prima che i travel creator IT lo scoprano.",
+      "connessione_canale": "Angolo non travel: il treno come spazio sociale e culturale giapponese, erede della cultura del servizio e del 'ma' dello spazio privato in pubblico."
     },
     {
-      "title": "Expat in Giappone: lo studio come spazio rituale",
-      "category": "Estetica/Visiva",
+      "title": "Tokyo Lens e lo spazio come identità: il ritiro minimalista",
+      "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
-      "volume_EN": 76,
-      "volume_IT": 23,
+      "volume_EN": 100,
+      "volume_IT": 0,
       "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens costruisce una stanza retro nel suo studio Tokyo: trend expat_japan_en in risalita (+14). In IT nessuno tratta lo spazio fisico dell'expat come oggetto culturale. Finestra: 3-6 settimane.",
-      "connessione_canale": "Si collega all'episodio Showa fisico e ai mercatini: lo studio retro e' una forma di collezionismo identitario, non arredamento."
+      "perche_monitorarlo": "Tokyo Lens con tre video in 14 giorni (stanza distrutta, minimalista estremo 2 anni dopo, studio retrò tiny): cluster coerente su spazio-identità-scelta di vita. In italiano trattato solo marginalmente. Già monitorato come 'vivere piccolo' ma il frame 'spazio come studio creativo' è angolo nuovo.",
+      "connessione_canale": "Collegabile all'episodio Konbini (spazio compresso come filosofia) e al tema spopolamento: chi sceglie il piccolo vs chi subisce il vuoto."
     }
   ],
   "trends_JP": [
     {
-      "title": "Illustrazione digitale e i suoi errori tipici / 絵が下手に見える失敗例",
-      "category": "Estetica/Visiva",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Bassa",
-      "segnale": "Naoki Saito pubblica su errori comuni nel disegno digitale: segnale di cultura visiva nativa, non fenomeno sociale. Interessa artisti e appassionati JP.",
-      "utilita_canale": "Scarsa per il formato narrativo di Luca. Utile solo se si costruisse un episodio sull'estetica manga come standard visivo culturale, non tecnico.",
-      "esempi_JP": [
-        {
-          "titolo": "絵が下手に見える！よくある失敗例 ！！",
-          "url": "https://youtube.com/watch?v=PL7jKd8bSF0"
-        }
-      ]
-    },
-    {
-      "title": "Kimono Mom e il matcha: il Giappone tradizionale per export / 伝統のグローバル化",
+      "title": "MrBeast in Giappone: il fenomeno globale vs le regole locali / MrBeastの日本での状況",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Kimono Mom lancia il proprio matcha brandizzato e un tour estivo: creator JP che costruiscono economia della tradizione per pubblico internazionale. Fenomeno di soft export dal basso.",
-      "utilita_canale": "Angolo interessante: chi decide cosa e' 'autentico' del Giappone quando e' un creator a venderlo. Collegabile al tema Showa come eredita' contesa.",
+      "segnale": "Sora The Troll produce contenuto in inglese per audience globale usando dinamiche giapponesi come filtro critico. Il caso MrBeast in JP diventa specchio delle regole non scritte sulla fama e lo spazio pubblico in Giappone.",
+      "utilita_canale": "Angolo narrativo: come il Giappone reagisce all'invasione dell'hype globale. Tema 'regole invisibili' già caro al canale, declinabile senza essere travel.",
       "esempi_JP": [
         {
-          "titolo": "Our Matcha Is Finally Here!🍵🌸#kimonomom #matcha",
-          "url": "https://youtube.com/watch?v=hVqRk0ZX2sI"
-        },
+          "titolo": "MrBeast's Situation In Japan Is ACTUALLY Insane",
+          "url": "https://youtube.com/watch?v=hVNkuTR8KkA"
+        }
+      ]
+    },
+    {
+      "title": "Il carnevale Samba di Asakusa: il Brasile dentro Tokyo / 浅草サンバカーニバル",
+      "category": "Sociale/Culturale",
+      "volume_JP": 100,
+      "delta_JP": "flat",
+      "rilevanza": "Media",
+      "segnale": "Il Carnevale Samba di Asakusa 2026 documentato da Sora The Troll: evento annuale che porta 500.000 persone in uno dei quartieri più 'tradizionali' di Tokyo. Paradosso culturale irrisolto.",
+      "utilita_canale": "Tema identità giapponese contaminata: il Giappone che assorbe culture straniere in modo silenzioso e le fa proprie. Collegabile al tema diaspora brasiliana in JP (Nikkeijin), poco trattato in italiano.",
+      "esempi_JP": [
         {
-          "titolo": "Our two-month summer adventure | UMAMI TOUR 2026",
-          "url": "https://youtube.com/watch?v=8g_HbYMX2mg"
+          "titolo": "Tokyo Asakusa Samba Carnival 2026",
+          "url": "https://youtube.com/watch?v=_rtad2Mk3OE"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "expat_japan_en: delta +14, monitorare se accelera oltre 80 nelle prossime 2 run",
-    "Tokyo Lens studio retro: verificare se il format 'spazio fisico come identita'' genera imitatori EN o IT",
-    "vita_giappone IT a -40: controllare se il cluster si stabilizza o continua a perdere, segnala possibile spazio editoriale libero",
-    "Kimono Mom economy: seguire se altri creator JP nativi lanciano prodotti fisici, potrebbe diventare episodio sul Giappone che si vende da solo"
+    "Paolo from Tokyo: terzo video su Supreme Class o lusso ferroviario? Confermerebbe trend editoriale organizzato, non casuale.",
+    "Tokyo Lens: il cluster spazio-identità continua o era picco isolato? Guardare se il quarto video rompe il pattern.",
+    "Sora The Troll sul caso MrBeast: genera reazioni da creator giapponesi nativi? Indicatore di dibattito culturale reale.",
+    "Cluster anime_pop_en: delta -44 in EN, flat in IT. Monitorare se il crollo EN anticipa saturazione IT nei prossimi 30 giorni."
   ],
   "warnings": []
 }

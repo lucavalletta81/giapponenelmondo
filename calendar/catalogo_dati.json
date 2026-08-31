@@ -1,6 +1,6 @@
 {
  "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
- "aggiornato": "2026-08-26",
+ "aggiornato": "2026-08-28",
  "fatti": [
   {
    "titolo": "5 oggetti fondamentali",
@@ -49,28 +49,6 @@
   }
  ],
  "items": [
-  {
-   "id": "giappone_ricco",
-   "titolo": "Perché il Giappone è ricco",
-   "cluster": "societa",
-   "stato": "da_fare",
-   "effort": 1,
-   "fit": 8,
-   "tipo": "acquisizione",
-   "nota": "DOMANDA MISURATA (27/08/26, valida_tema.py): Nova Lectio 425k views con lo stesso titolo, Geopop 624k, Erikottero 20k recente sul mito che crolla; mediana comparabili IT 43k. EN: 1,5-2,5M sui big. Tema vivo, formato studio.",
-   "tipologia": "studio",
-   "durata_min": 15,
-   "durata_max": 20,
-   "necessita": [
-    "si gira in studio",
-    "ricerca economica",
-    "grafiche dati"
-   ],
-   "stagione": "nessuna",
-   "trend": "alto",
-   "origine": "piano 22/07/2026",
-   "score": 11.0
-  },
   {
    "id": "libri_foto_tokyo",
    "titolo": "Dove comprare libri fotografici a Tokyo",
@@ -135,6 +113,28 @@
    "trend": "nullo",
    "origine": "piano 22/07/2026",
    "score": 9.0
+  },
+  {
+   "id": "giappone_ricco",
+   "titolo": "Perché il Giappone è ricco",
+   "cluster": "societa",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 8,
+   "tipo": "acquisizione",
+   "nota": "DOMANDA MISURATA (27/08/26, valida_tema.py): Nova Lectio 425k views con lo stesso titolo, Geopop 624k, Erikottero 20k recente sul mito che crolla; mediana comparabili IT 43k. EN: 1,5-2,5M sui big. Tema vivo, formato studio.",
+   "tipologia": "studio",
+   "durata_min": 15,
+   "durata_max": 20,
+   "necessita": [
+    "si gira in studio",
+    "ricerca economica",
+    "grafiche dati"
+   ],
+   "stagione": "nessuna",
+   "trend": "basso",
+   "origine": "piano 22/07/2026",
+   "score": 8.5
   },
   {
    "id": "noroi",
