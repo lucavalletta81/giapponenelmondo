@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-31 19:03",
-  "summary": "Settimana dominata dal cluster viaggio (delta +70 IT) che però è territorio dei travel creator, non di Luca. In EN il cluster expat_japan_en cresce ancora (+24) con due filoni distinti: il lusso Shinkansen e lo spazio/identità a Tokyo. In JP nessun segnale editorialmente nuovo. Un solo trend genuino emerge dai dati: il Shinkansen Supreme Class, cavalcato in EN da Paolo from Tokyo con due video ravvicinati, ancora assente in italiano e coerente con l'angolatura culturale-narrativa del canale.",
+  "generated_at": "2026-09-04 09:01",
+  "summary": "Settimana dominata dal cluster anime_manga_pop in IT (volume 100, flat) con Maurizio Merluzzo che macina contenuti autoreferenziali senza aprire spazio a nuovi temi giapponesi. In EN segnale forte su anime_pop_en (+44 delta) con Gigguk e Trash Taste che tematizzano le 'anime girls patetiche' e il turning 30 della generazione anime. In JP il segnale più interessante viene dai canali di illustrazione (Naoki Saito: depressione, errori comuni, miglioramento) ma è troppo di nicchia per un'uscita autonoma. Un solo trend genuino emerge dai dati EN con gap IT reale.",
   "overview": {
     "IT": {
       "trend_count": 1,
       "youtube_videos_analyzed": 10,
       "gap_IT_EN_count": 1,
-      "delta_trend_count": 1
+      "delta_trend_count": 0
     },
     "EN": {
-      "trend_count": 1,
+      "trend_count": 3,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 1
     },
     "JP": {
-      "signal_count": 0,
+      "signal_count": 1,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -22,44 +22,44 @@
   "demand": {
     "IT": [
       {
-        "keyword": "viaggio",
-        "volume": 100,
-        "delta": "up",
-        "delta_value": 70,
-        "source": "youtube_velocity"
-      },
-      {
         "keyword": "anime_manga_pop",
-        "volume": 95,
+        "volume": 100,
         "delta": "flat",
-        "delta_value": -5,
+        "delta_value": 5,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "videogiochi",
-        "volume": 27,
-        "delta": "up",
-        "delta_value": 10,
+        "keyword": "viaggio",
+        "volume": 46,
+        "delta": "down",
+        "delta_value": -54,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 27,
-        "delta": "flat",
-        "delta_value": 4,
+        "volume": 21,
+        "delta": "down",
+        "delta_value": -6,
+        "source": "youtube_velocity"
+      },
+      {
+        "keyword": "videogiochi",
+        "volume": 20,
+        "delta": "down",
+        "delta_value": -7,
         "source": "youtube_velocity"
       }
     ],
     "EN": [
       {
-        "keyword": "expat_japan_en",
+        "keyword": "anime_pop_en",
         "volume": 100,
         "delta": "up",
-        "delta_value": 24,
+        "delta_value": 44,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "anime_pop_en",
+        "keyword": "expat_japan_en",
         "volume": 56,
         "delta": "down",
         "delta_value": -44,
@@ -67,9 +67,9 @@
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 3,
-        "delta": "down",
-        "delta_value": -14,
+        "volume": 11,
+        "delta": "up",
+        "delta_value": 8,
         "source": "youtube_velocity"
       }
     ],
@@ -86,107 +86,127 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Shinkansen Supreme Class: il lusso come rituale giapponese",
+      "title": "Anime girls 'patetiche': il femminile che consola e disturba",
       "category": "Sociale/Culturale",
       "urgency": "Alta",
-      "coerenza": 7,
+      "coerenza": 8,
       "saturazione_IT": 1,
       "saturazione_EN": 6,
       "saturazione_JP": 2,
-      "delta_coerenza": "up",
+      "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "500 dollari per un treno. Ma in Giappone non e solo un viaggio — e un rito.",
-      "video_title": "Il treno da 500€: cosa dice di noi il lusso secondo il Giappone",
-      "podcast_title": "Shinkansen Supreme Class: quando il lusso diventa cerimonia",
-      "angolatura": "Non una recensione del treno, ma un'analisi culturale: perche in Giappone il lusso e fatto di silenzio, spazio e servizio invisibile — non di ostentazione.",
+      "thumbnail_hook": "Perché le anime girls 'rotte' sono diventate il personaggio più amato — e più discusso — degli ultimi anni",
+      "video_title": "L'anime girl patetica: perché il Giappone ci propone donne da salvare",
+      "podcast_title": "Patetica, fragile, irresistibile: il femminile nell'anime contemporaneo",
+      "angolatura": "Non recensione ma analisi culturale: cosa dice del Giappone (e di noi) il successo dei personaggi femminili costruiti sulla fragilità e sulla dipendenza emotiva",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Video per impatto visivo del mezzo; podcast per approfondimento culturale sul lusso come estetica.",
+      "motivazione_formato": "Video per la forza visiva dei clip anime; podcast per l'approfondimento culturale senza spoiler",
       "struttura_atti": [
-        "Atto I: La scena — cosa trovi entrando in Supreme Class. Dettagli sensoriali, il silenzio, il servizio. Contrasto col viaggio 'normale'.",
-        "Atto II: Il contesto — il Giappone e il lusso discreto. Omotenashi, il concetto di ma (vuoto/spazio), la cultura del non-eccesso ostentato. Perche 500 dollari qui non comprano status ma esperienza.",
-        "Atto III: Lo specchio — cosa ci dice questo treno del modo giapponese di concepire qualita, tempo e cura. E cosa possiamo leggere nella sua esistenza sulla societa giapponese del 2025."
+        "Atto I: cos'è il trope della 'pathetic anime girl' — esempi concreti, dalla tsundere alla yandere alla 'damage girl', e perché Gigguk ci ha fatto un video da milioni di view",
+        "Atto II: radici culturali giapponesi — il concetto di kawaii come controllo sociale, il moe come mercato, e cosa succede quando la fragilità diventa estetica di consumo",
+        "Atto III: lo specchio su di noi — perché questo archetipo funziona anche in Occidente, cosa ci dice del desiderio maschile e del mercato degli anime, e dove sta andando il femminile nell'animazione giapponese recente"
       ],
-      "coverage_IT": "Nessun creator italiano di cultura giapponese ha trattato il tema. Solo eventuali travel vlogger superficiali.",
-      "opportunita_IT": "Finestra aperta: due video EN usciti in 14 giorni sullo stesso soggetto segnalano domanda consolidata. In italiano e territorio vergine con angolatura culturale.",
+      "coverage_IT": "Assente: nessun creator italiano ha affrontato questo angolo critico-culturale sul femminile nell'anime",
+      "opportunita_IT": "Primo in italiano su un tema che in EN ha già trazione forte (+44 delta anime_pop_en): finestra di 2-3 settimane prima che i grandi canali IT di anime lo replicino in modo superficiale",
       "esempi_EN": [
         {
-          "titolo": "What Japan's $500 Private Shinkansen Supreme Class Train Cabin is like",
-          "url": "https://youtube.com/watch?v=f5oN7cPeb4c"
+          "titolo": "The Epidemic of Pathetic Anime Girls",
+          "url": "https://youtube.com/watch?v=SpXAN8QrDuU"
         },
         {
-          "titolo": "Is this $500 Shinkansen Supreme Class Train Seat Worth it?",
-          "url": "https://youtube.com/watch?v=ZIeqqf1NRVM"
+          "titolo": "We're All 30 Now! | Trash Taste #323",
+          "url": "https://youtube.com/watch?v=KVjsCG1z15c"
         }
       ],
-      "angolo_EN": "EN tratta il tema come recensione/esperienza. Luca puo possedere l'angolo culturale-antropologico, ancora libero.",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run sul tema Shinkansen o lusso ferroviario.",
-      "esempi_JP": [],
-      "utilita_JP": "JP non fornisce segnale utile questa settimana. Fonti esterne (JR, stampa JP) per ricerca primaria."
+      "angolo_EN": "Gigguk critica il trope; Trash Taste lo racconta come generazione — Luca può fare la sintesi culturale profonda che manca",
+      "segnale_JP": "Naoki Saito tratta la salute mentale degli illustratori JP: segnale indiretto su pressione creativa e identità nell'industria anime/manga",
+      "esempi_JP": [
+        {
+          "titolo": "イラストレーターが鬱になりやすい理由は...!?",
+          "url": "https://youtube.com/watch?v=6rMOH_1CpaI"
+        }
+      ],
+      "utilita_JP": "Contestualizza la pressione creativa giapponese che produce certi archetipi: materiale per l'Atto II"
     }
   ],
   "trends_EN": [
     {
-      "title": "Shinkansen Supreme Class: il lusso estremo nei treni JP",
+      "title": "Anime girls passive: il dibattito sul personaggio femminile",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 0,
+      "volume_IT": 100,
       "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Due video di Paolo from Tokyo sullo stesso prodotto (Supreme Class a 500$) in 14 giorni: segnale editoriale forte. In italiano il tema lusso-ferroviario giapponese è assente. Finestra stimata 4-6 settimane prima che i travel creator IT lo scoprano.",
-      "connessione_canale": "Angolo non travel: il treno come spazio sociale e culturale giapponese, erede della cultura del servizio e del 'ma' dello spazio privato in pubblico."
+      "perche_monitorarlo": "Gigguk lancia un video critico sulle 'pathetic anime girls' mentre anime_pop_en sale +44. In IT il cluster anime è saturo ma su pop-culture generica, non su critica di genere e rappresentazione femminile. Finestra: 2-4 settimane prima che qualcuno in italiano ci arrivi.",
+      "connessione_canale": "Collegabile a Jirai-kei e Toyoko Kids già trattati: il personaggio femminile fragile come archetipo culturale giapponese, non solo estetico."
     },
     {
-      "title": "Tokyo Lens e lo spazio come identità: il ritiro minimalista",
+      "title": "Odaiba dopo Gundam: cosa resta di un simbolo urbano",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 56,
+      "volume_IT": 21,
+      "delta_EN": "down",
+      "gap_IT": "Medio",
+      "perche_monitorarlo": "Sora The Troll esplora Odaiba dopo la rimozione del Gundam: tema della perdita di iconografia urbana e identità del quartiere. In IT nessun creator ha trattato Odaiba come soggetto narrativo-culturale. Segnale ancora basso ma carico di potenziale angolare.",
+      "connessione_canale": "Lega Showa come eredità contesa e Haikyo: luoghi che cambiano significato quando il simbolo che li definisce scompare."
+    },
+    {
+      "title": "Trash Taste e i 30 anni: l identita degli expat-otaku cresciuti",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
       "volume_EN": 100,
-      "volume_IT": 0,
+      "volume_IT": 100,
       "delta_EN": "up",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens con tre video in 14 giorni (stanza distrutta, minimalista estremo 2 anni dopo, studio retrò tiny): cluster coerente su spazio-identità-scelta di vita. In italiano trattato solo marginalmente. Già monitorato come 'vivere piccolo' ma il frame 'spazio come studio creativo' è angolo nuovo.",
-      "connessione_canale": "Collegabile all'episodio Konbini (spazio compresso come filosofia) e al tema spopolamento: chi sceglie il piccolo vs chi subisce il vuoto."
+      "gap_IT": "Medio",
+      "perche_monitorarlo": "Trash Taste pubblica due episodi ravvicinati su identita, eta e integrazione in Giappone. Il tema 'chi e diventato la generazione che amava l anime' e ancora non narrativizzato in italiano in chiave sociologica. Finestra: 3-6 settimane.",
+      "connessione_canale": "Connette Visual Kei e Toyoko Kids: cosa resta di una subcultura quando chi la viveva invecchia e si radica in Giappone come expat."
     }
   ],
   "trends_JP": [
     {
-      "title": "MrBeast in Giappone: il fenomeno globale vs le regole locali / MrBeastの日本での状況",
+      "title": "Salute mentale degli illustratori / イラストレーターのメンタルヘルス",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Sora The Troll produce contenuto in inglese per audience globale usando dinamiche giapponesi come filtro critico. Il caso MrBeast in JP diventa specchio delle regole non scritte sulla fama e lo spazio pubblico in Giappone.",
-      "utilita_canale": "Angolo narrativo: come il Giappone reagisce all'invasione dell'hype globale. Tema 'regole invisibili' già caro al canale, declinabile senza essere travel.",
+      "segnale": "Naoki Saito pubblica tre video ravvicinati: uno sulla depressione negli illustratori professionisti, due su errori tecnici comuni. Segnale di un discorso nativo sul benessere psicologico dei creativi digitali giapponesi.",
+      "utilita_canale": "Angolo narrativo su pressione produttiva e identita del creativo in Giappone: collega industria manga, karoshi e cultura del perfezionismo senza essere travel.",
       "esempi_JP": [
         {
-          "titolo": "MrBeast's Situation In Japan Is ACTUALLY Insane",
-          "url": "https://youtube.com/watch?v=hVNkuTR8KkA"
+          "titolo": "イラストレーターが鬱になりやすい理由は...!?",
+          "url": "https://youtube.com/watch?v=6rMOH_1CpaI"
+        },
+        {
+          "titolo": "絵が下手に見える！よくある失敗例 ！！",
+          "url": "https://youtube.com/watch?v=PL7jKd8bSF0"
         }
       ]
     },
     {
-      "title": "Il carnevale Samba di Asakusa: il Brasile dentro Tokyo / 浅草サンバカーニバル",
+      "title": "Citta pro-stranieri vs zone chiuse a Tokyo / 外国人歓迎vs排除の街",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Media",
-      "segnale": "Il Carnevale Samba di Asakusa 2026 documentato da Sora The Troll: evento annuale che porta 500.000 persone in uno dei quartieri più 'tradizionali' di Tokyo. Paradosso culturale irrisolto.",
-      "utilita_canale": "Tema identità giapponese contaminata: il Giappone che assorbe culture straniere in modo silenzioso e le fa proprie. Collegabile al tema diaspora brasiliana in JP (Nikkeijin), poco trattato in italiano.",
+      "rilevanza": "Alta",
+      "segnale": "Sora The Troll mappa la polarizzazione geografica di Tokyo tra zone apertissime agli stranieri e aree esplicitamente ostili: tema nativo di xenofobia urbana e turismo di massa.",
+      "utilita_canale": "Materiale denso per un episodio su overtourism e identita locale giapponese: si aggancia al filone spopolamento e alla tensione tra Giappone reale e Giappone immaginato.",
       "esempi_JP": [
         {
-          "titolo": "Tokyo Asakusa Samba Carnival 2026",
-          "url": "https://youtube.com/watch?v=_rtad2Mk3OE"
+          "titolo": "Going To Japan's Most FOREIGNER WELCOMING Anime City To MOST ANTI FOREINER City In TOKYO",
+          "url": "https://youtube.com/watch?v=CQnYj-u-pL8"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Paolo from Tokyo: terzo video su Supreme Class o lusso ferroviario? Confermerebbe trend editoriale organizzato, non casuale.",
-    "Tokyo Lens: il cluster spazio-identità continua o era picco isolato? Guardare se il quarto video rompe il pattern.",
-    "Sora The Troll sul caso MrBeast: genera reazioni da creator giapponesi nativi? Indicatore di dibattito culturale reale.",
-    "Cluster anime_pop_en: delta -44 in EN, flat in IT. Monitorare se il crollo EN anticipa saturazione IT nei prossimi 30 giorni."
+    "Gigguk anime girls pathetic: verificare se il dibattito sulla rappresentazione femminile nell anime genera video risposta in EN e prime reazioni in IT",
+    "Odaiba post-Gundam: monitorare se altri creator EN o JP riprendono il tema della perdita di iconografia urbana a Tokyo",
+    "Salute mentale creativi JP: osservare se il filone di Naoki Saito si espande ad altri canali nativi o genera crossover con creator EN",
+    "Polarizzazione xenofobia urbana Tokyo: tracciare se il formato citta-welcoming-vs-chiuse diventa formato replicato o rimane isolato a Sora The Troll"
   ],
   "warnings": []
 }

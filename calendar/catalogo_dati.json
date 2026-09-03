@@ -1,6 +1,6 @@
 {
  "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
- "aggiornato": "2026-08-28",
+ "aggiornato": "2026-08-31",
  "fatti": [
   {
    "titolo": "5 oggetti fondamentali",
@@ -132,9 +132,9 @@
     "grafiche dati"
    ],
    "stagione": "nessuna",
-   "trend": "basso",
+   "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.5
+   "score": 8.0
   },
   {
    "id": "noroi",
