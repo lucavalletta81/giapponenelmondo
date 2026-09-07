@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-04 09:01",
-  "summary": "Settimana dominata dal cluster anime_manga_pop in IT (volume 100, flat) con Maurizio Merluzzo che macina contenuti autoreferenziali senza aprire spazio a nuovi temi giapponesi. In EN segnale forte su anime_pop_en (+44 delta) con Gigguk e Trash Taste che tematizzano le 'anime girls patetiche' e il turning 30 della generazione anime. In JP il segnale più interessante viene dai canali di illustrazione (Naoki Saito: depressione, errori comuni, miglioramento) ma è troppo di nicchia per un'uscita autonoma. Un solo trend genuino emerge dai dati EN con gap IT reale.",
+  "generated_at": "2026-09-07 19:01",
+  "summary": "Settimana dominata dal cluster viaggio IT (volume 100, delta +54) con Human Safari che spinge contenuti slow-lifestyle fuori dal Giappone. Il cluster anime_manga_pop IT crolla (-18) mentre Maurizio Merluzzo gira contenuti autoreferenziali. In EN segnale forte su expat_japan_en (+44) con Tokyo Lens che esplora accessibilità e spazio urbano — angolo completamente assente in italiano. Un solo trend genuino emerge dai dati con gap IT reale.",
   "overview": {
     "IT": {
       "trend_count": 1,
       "youtube_videos_analyzed": 10,
       "gap_IT_EN_count": 1,
-      "delta_trend_count": 0
+      "delta_trend_count": 1
     },
     "EN": {
-      "trend_count": 3,
+      "trend_count": 1,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 1
     },
     "JP": {
-      "signal_count": 1,
+      "signal_count": 0,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -22,29 +22,29 @@
   "demand": {
     "IT": [
       {
-        "keyword": "anime_manga_pop",
+        "keyword": "viaggio",
         "volume": 100,
-        "delta": "flat",
-        "delta_value": 5,
+        "delta": "up",
+        "delta_value": 54,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "viaggio",
-        "volume": 46,
+        "keyword": "anime_manga_pop",
+        "volume": 82,
         "delta": "down",
-        "delta_value": -54,
+        "delta_value": -18,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 21,
-        "delta": "down",
-        "delta_value": -6,
+        "volume": 17,
+        "delta": "flat",
+        "delta_value": -4,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 20,
+        "volume": 13,
         "delta": "down",
         "delta_value": -7,
         "source": "youtube_velocity"
@@ -52,24 +52,24 @@
     ],
     "EN": [
       {
-        "keyword": "anime_pop_en",
+        "keyword": "expat_japan_en",
         "volume": 100,
         "delta": "up",
         "delta_value": 44,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "expat_japan_en",
-        "volume": 56,
+        "keyword": "anime_pop_en",
+        "volume": 65,
         "delta": "down",
-        "delta_value": -44,
+        "delta_value": -35,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 11,
-        "delta": "up",
-        "delta_value": 8,
+        "volume": 6,
+        "delta": "flat",
+        "delta_value": -5,
         "source": "youtube_velocity"
       }
     ],
@@ -86,127 +86,92 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Anime girls 'patetiche': il femminile che consola e disturba",
+      "title": "Giappone accessibile: la disabilità come lente urbana",
       "category": "Sociale/Culturale",
-      "urgency": "Alta",
-      "coerenza": 8,
+      "urgency": "Media",
+      "coerenza": 7,
       "saturazione_IT": 1,
-      "saturazione_EN": 6,
+      "saturazione_EN": 4,
       "saturazione_JP": 2,
-      "delta_coerenza": "flat",
+      "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Perché le anime girls 'rotte' sono diventate il personaggio più amato — e più discusso — degli ultimi anni",
-      "video_title": "L'anime girl patetica: perché il Giappone ci propone donne da salvare",
-      "podcast_title": "Patetica, fragile, irresistibile: il femminile nell'anime contemporaneo",
-      "angolatura": "Non recensione ma analisi culturale: cosa dice del Giappone (e di noi) il successo dei personaggi femminili costruiti sulla fragilità e sulla dipendenza emotiva",
-      "timing": "Entro 2 settimane",
-      "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Video per la forza visiva dei clip anime; podcast per l'approfondimento culturale senza spoiler",
+      "thumbnail_hook": "Tokyo è davvero la città più accessibile del mondo? La risposta è più scomoda di così.",
+      "video_title": "Giappone accessibile: cosa succede quando Tokyo incontra una sedia a rotelle",
+      "podcast_title": "Tokyo e la disabilità: la città perfetta ha un problema nascosto",
+      "angolatura": "Usare l accessibilità come scanner critico del design urbano giapponese: cosa rivela sulle contraddizioni tra immagine pubblica e realtà quotidiana.",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "Tema denso e narrativo, richiede voce e analisi — non immagini spettacolari.",
       "struttura_atti": [
-        "Atto I: cos'è il trope della 'pathetic anime girl' — esempi concreti, dalla tsundere alla yandere alla 'damage girl', e perché Gigguk ci ha fatto un video da milioni di view",
-        "Atto II: radici culturali giapponesi — il concetto di kawaii come controllo sociale, il moe come mercato, e cosa succede quando la fragilità diventa estetica di consumo",
-        "Atto III: lo specchio su di noi — perché questo archetipo funziona anche in Occidente, cosa ci dice del desiderio maschile e del mercato degli anime, e dove sta andando il femminile nell'animazione giapponese recente"
+        "Atto I: Tokyo viene costantemente celebrata come modello urbano — ma da chi? Introduzione al paradosso dell accessibilità giapponese tra barriere architettoniche storiche e innovazione recente.",
+        "Atto II: Il video di Tokyo Lens come caso studio — 24 ore in sedia a rotelle nella città — rivela infrastrutture pensate per il turista ideale, non per il corpo reale. Il concetto di 'sho ga nai' applicato alla disabilità.",
+        "Atto III: Il Giappone ha investito enormemente per le Paralimpiadi 2021, ma il cambiamento è stato superficiale o strutturale? La disabilità come specchio della pressione alla conformità nella società giapponese."
       ],
-      "coverage_IT": "Assente: nessun creator italiano ha affrontato questo angolo critico-culturale sul femminile nell'anime",
-      "opportunita_IT": "Primo in italiano su un tema che in EN ha già trazione forte (+44 delta anime_pop_en): finestra di 2-3 settimane prima che i grandi canali IT di anime lo replicino in modo superficiale",
+      "coverage_IT": "Zero copertura in italiano — il tema disabilità e Giappone urbano è completamente assente nel panorama dei canali sentinella IT.",
+      "opportunita_IT": "Luca può essere il primo in italiano su un angolo sociale che in EN sta emergendo — con una prospettiva critica che va oltre il semplice reportage di viaggio.",
       "esempi_EN": [
         {
-          "titolo": "The Epidemic of Pathetic Anime Girls",
-          "url": "https://youtube.com/watch?v=SpXAN8QrDuU"
-        },
-        {
-          "titolo": "We're All 30 Now! | Trash Taste #323",
-          "url": "https://youtube.com/watch?v=KVjsCG1z15c"
+          "titolo": "We Spent 24h Making Tokyo Wheelchair-Life FUN",
+          "url": "https://youtube.com/watch?v=dUwrd7fG5sc"
         }
       ],
-      "angolo_EN": "Gigguk critica il trope; Trash Taste lo racconta come generazione — Luca può fare la sintesi culturale profonda che manca",
-      "segnale_JP": "Naoki Saito tratta la salute mentale degli illustratori JP: segnale indiretto su pressione creativa e identità nell'industria anime/manga",
-      "esempi_JP": [
-        {
-          "titolo": "イラストレーターが鬱になりやすい理由は...!?",
-          "url": "https://youtube.com/watch?v=6rMOH_1CpaI"
-        }
-      ],
-      "utilita_JP": "Contestualizza la pressione creativa giapponese che produce certi archetipi: materiale per l'Atto II"
+      "angolo_EN": "Tokyo Lens affronta il tema in chiave esperienziale e positiva — spazio per un angolo più critico e strutturale in italiano.",
+      "segnale_JP": "Nessun segnale diretto nei video JP di questa run — tema trattato sporadicamente in giapponese su canali governativi, non creator.",
+      "esempi_JP": [],
+      "utilita_JP": "Nessun esempio JP disponibile in questa run — ricerca autonoma consigliata su canali barriera-free giapponesi."
     }
   ],
   "trends_EN": [
     {
-      "title": "Anime girls passive: il dibattito sul personaggio femminile",
+      "title": "Expat in Giappone: accessibilità e disabilità urbana",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 100,
+      "volume_IT": 17,
+      "delta_EN": "up",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Tokyo Lens dedica un video a rendere divertente la vita in sedia a rotelle a Tokyo: tema quasi assente in IT. L'accessibilità urbana giapponese è un angolo civile e narrativo aperto, con finestra di 4-8 settimane prima che arrivi in italiano.",
+      "connessione_canale": "Si lega alla linea 'vita in Giappone' già esplorata con Konbini e Toyoko Kids: il Giappone come sistema, non solo estetica."
+    },
+    {
+      "title": "Il Giappone visto dai giapponesi: lo straniero come specchio",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 100,
+      "volume_IT": 17,
       "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Gigguk lancia un video critico sulle 'pathetic anime girls' mentre anime_pop_en sale +44. In IT il cluster anime è saturo ma su pop-culture generica, non su critica di genere e rappresentazione femminile. Finestra: 2-4 settimane prima che qualcuno in italiano ci arrivi.",
-      "connessione_canale": "Collegabile a Jirai-kei e Toyoko Kids già trattati: il personaggio femminile fragile come archetipo culturale giapponese, non solo estetico."
-    },
-    {
-      "title": "Odaiba dopo Gundam: cosa resta di un simbolo urbano",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 56,
-      "volume_IT": 21,
-      "delta_EN": "down",
-      "gap_IT": "Medio",
-      "perche_monitorarlo": "Sora The Troll esplora Odaiba dopo la rimozione del Gundam: tema della perdita di iconografia urbana e identità del quartiere. In IT nessun creator ha trattato Odaiba come soggetto narrativo-culturale. Segnale ancora basso ma carico di potenziale angolare.",
-      "connessione_canale": "Lega Showa come eredità contesa e Haikyo: luoghi che cambiano significato quando il simbolo che li definisce scompare."
-    },
-    {
-      "title": "Trash Taste e i 30 anni: l identita degli expat-otaku cresciuti",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 100,
-      "delta_EN": "up",
-      "gap_IT": "Medio",
-      "perche_monitorarlo": "Trash Taste pubblica due episodi ravvicinati su identita, eta e integrazione in Giappone. Il tema 'chi e diventato la generazione che amava l anime' e ancora non narrativizzato in italiano in chiave sociologica. Finestra: 3-6 settimane.",
-      "connessione_canale": "Connette Visual Kei e Toyoko Kids: cosa resta di una subcultura quando chi la viveva invecchia e si radica in Giappone come expat."
+      "perche_monitorarlo": "Sora The Troll produce contenuti in EN/JP su come i giapponesi percepiscono i creator stranieri (Abroad in Japan). Meta-livello quasi inesistente in IT: chi racconta il Giappone ai giapponesi, e cosa ne pensano loro? Finestra stretta: 2-4 settimane.",
+      "connessione_canale": "Collegamento diretto al tema 'Il Giappone che si documenta dall'interno': ribaltare il punto di vista è il move narrativo perfetto per Luca."
     }
   ],
   "trends_JP": [
     {
-      "title": "Salute mentale degli illustratori / イラストレーターのメンタルヘルス",
+      "title": "Il malessere dell'illustratore: 絵師と鬱",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Naoki Saito pubblica tre video ravvicinati: uno sulla depressione negli illustratori professionisti, due su errori tecnici comuni. Segnale di un discorso nativo sul benessere psicologico dei creativi digitali giapponesi.",
-      "utilita_canale": "Angolo narrativo su pressione produttiva e identita del creativo in Giappone: collega industria manga, karoshi e cultura del perfezionismo senza essere travel.",
+      "segnale": "Naoki Saito pubblica tre video ravvicinati su depressione degli illustratori, errori comuni e 'qualità del disegno che scompare migliorando': segnale di un disagio professionale strutturato nel mondo creativo giapponese.",
+      "utilita_canale": "Angolo inedito in IT: il lato oscuro dell'industria creativa giapponese, tra pressione produttiva e identità artistica. Si inserisce nel solco del J-Horror sociale già trattato.",
       "esempi_JP": [
         {
           "titolo": "イラストレーターが鬱になりやすい理由は...!?",
           "url": "https://youtube.com/watch?v=6rMOH_1CpaI"
         },
         {
-          "titolo": "絵が下手に見える！よくある失敗例 ！！",
-          "url": "https://youtube.com/watch?v=PL7jKd8bSF0"
-        }
-      ]
-    },
-    {
-      "title": "Citta pro-stranieri vs zone chiuse a Tokyo / 外国人歓迎vs排除の街",
-      "category": "Sociale/Culturale",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Alta",
-      "segnale": "Sora The Troll mappa la polarizzazione geografica di Tokyo tra zone apertissime agli stranieri e aree esplicitamente ostili: tema nativo di xenofobia urbana e turismo di massa.",
-      "utilita_canale": "Materiale denso per un episodio su overtourism e identita locale giapponese: si aggancia al filone spopolamento e alla tensione tra Giappone reale e Giappone immaginato.",
-      "esempi_JP": [
-        {
-          "titolo": "Going To Japan's Most FOREIGNER WELCOMING Anime City To MOST ANTI FOREINER City In TOKYO",
-          "url": "https://youtube.com/watch?v=CQnYj-u-pL8"
+          "titolo": "上手くなると消えがちな『絵の良さ』について。",
+          "url": "https://youtube.com/watch?v=ASRbXbbLXfM"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Gigguk anime girls pathetic: verificare se il dibattito sulla rappresentazione femminile nell anime genera video risposta in EN e prime reazioni in IT",
-    "Odaiba post-Gundam: monitorare se altri creator EN o JP riprendono il tema della perdita di iconografia urbana a Tokyo",
-    "Salute mentale creativi JP: osservare se il filone di Naoki Saito si espande ad altri canali nativi o genera crossover con creator EN",
-    "Polarizzazione xenofobia urbana Tokyo: tracciare se il formato citta-welcoming-vs-chiuse diventa formato replicato o rimane isolato a Sora The Troll"
+    "Tokyo Lens: altri video su accessibilità/disabilità in Giappone — se sale è tema editoriale maturo",
+    "Sora The Troll: volume e frequenza su percezione giapponese degli stranieri creator — possibile episodio autonomo",
+    "Naoki Saito: se il cluster illustrazione/disagio creativo continua, valutare episodio sul burnout nell'industria creativa JP",
+    "Cluster viaggio IT (delta +54): monitorare se Human Safari o simili aprono angoli giapponesi sfruttabili o restano generici"
   ],
   "warnings": []
 }
