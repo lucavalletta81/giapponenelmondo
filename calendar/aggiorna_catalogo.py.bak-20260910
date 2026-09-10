@@ -56,58 +56,21 @@ def norm(s):
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "_", norm(s)).strip("_")[:40]
 
-ANALISI_DIR = os.path.join(LOG_DIR, "analisi")   # un JSON per run (scritto da agent.py dal 10/09/2026)
-
-def trend_radar():
-    """Trend per report, dall'archivio JSON: [[{title, testo, gap, coerenza, categoria}, ...], ...].
-    Prima fonte: logs/analisi/*.json (IT + EN). Fallback: i titoli IT nei log testuali."""
+def titoli_radar():
+    """Titoli dei trend IT, raggruppati per report: [[titoli del report 1], [report 2], ...]."""
     report = []
-    files = [f for f in sorted(glob.glob(os.path.join(ANALISI_DIR, "*.json")), reverse=True)
-             if os.path.basename(f)[:10] >= MIN_DATA][:FINESTRA]
-    for f in files:
-        try: an = json.load(open(f))
-        except Exception: continue
-        voci = []
-        for t in an.get("trends_IT", []):
-            voci.append(dict(title=t.get("title", ""), categoria=t.get("category", ""),
-                             testo=" ".join(str(t.get(k, "")) for k in ("title", "angolatura", "video_title", "podcast_title", "opportunita_IT")),
-                             gap=t.get("gap_IT_EN", ""), coerenza=t.get("coerenza", 0), sat=t.get("saturazione_IT", 10), mercato="IT"))
-        for t in an.get("trends_EN", []):
-            voci.append(dict(title=t.get("title", ""), categoria=t.get("category", ""),
-                             testo=" ".join(str(t.get(k, "")) for k in ("title", "perche_monitorarlo", "connessione_canale")),
-                             gap=t.get("gap_IT", ""), coerenza=0, sat=10, mercato="EN"))
-        if voci: report.append(voci)
-    if report:
-        return report
-    # fallback: log testuali (solo titoli IT)
     logs = [f for f in sorted(glob.glob(os.path.join(LOG_DIR, "agent_*.log")), reverse=True)
             if os.path.basename(f)[6:16] >= MIN_DATA]
     for f in logs[:FINESTRA]:
-        blocco, voci = False, []
+        blocco, titoli = False, []
         for line in open(f, errors="ignore"):
             if "SINTESI FINALE" in line: blocco = True; continue
             if blocco:
                 m = re.match(r"\s+\d\.\s+\[.*?\]\s+(.+)", line)
-                if m: voci.append(dict(title=m.group(1).strip(), testo=m.group(1).strip(), categoria="", gap="", coerenza=0, sat=10, mercato="IT"))
+                if m: titoli.append(m.group(1).strip())
                 elif line.strip().startswith("═"): blocco = False
-        if voci: report.append(voci)
+        if titoli: report.append(titoli)
     return report
-
-def titoli_radar():
-    return [[v["title"] for v in r] for r in trend_radar()]
-
-STOP_PAROLE = set("""giappone giapponese giapponesi japan della dello delle degli nella nelle come sono stato
-    stata anni ancora senza sempre quando cosa perche mondo video storia dopo prima oltre contro tra fra
-    tokyo essere questo questa quello quella molto anche tutto tutti fatto fare vita città citta""".split())
-
-def parole(testo):
-    return {w for w in re.findall(r"[a-z]{5,}", norm(testo)) if w not in STOP_PAROLE}
-
-def match_aperto(voce, trend):
-    """Quante parole-chiave del trend compaiono nel titolo/nota della voce (matching aperto, non lista fissa)."""
-    p_voce = parole(voce["titolo"] + " " + voce.get("nota", ""))
-    p_trend = parole(trend["testo"])
-    return len(p_voce & p_trend)
 
 def main():
     cat = json.load(open(CAT))
@@ -138,17 +101,12 @@ def main():
     def livello(n):
         return "alto" if n >= SOGLIA_ALTO else "medio" if n >= SOGLIA_MEDIO else "basso" if n else "nullo"
 
-    trend_rep = trend_radar()
     for it in cat["items"]:
         hay = norm(it["titolo"] + " " + it.get("nota", ""))
         best = 0
         for tema, (_, kw_cat, _) in TEMI.items():
             if any(k in hay for k in kw_cat):
                 best = max(best, ricorrenze[tema])
-        # matching APERTO: in quanti report c'è un trend che condivide >=2 parole-chiave con la voce
-        n_aperto = sum(1 for r in trend_rep if any(match_aperto(it, t) >= 2 for t in r))
-        best = max(best, n_aperto)
-        it["radar_match"] = [t["title"] for r in trend_rep for t in r if match_aperto(it, t) >= 2][:3]
         # una voce non toccata dai temi del radar non viene declassata sotto "basso"
         nuovo = livello(best)
         if best == 0 and it.get("trend") in ("medio", "alto"):
@@ -200,25 +158,6 @@ def main():
             origine=f"radar trend {datetime.date.today():%d/%m/%Y}"))
         esistenti.add(slug(titolo))
         print(f"[catalogo] nuova proposta dal radar: {titolo}")
-
-    # 3-bis. proposte dai trend ARCHIVIATI (qualsiasi tema, non solo i 7 mappati)
-    for r in trend_rep:
-        for t in r:
-            forte = t["mercato"] == "IT" and (t.get("coerenza", 0) >= 7) and (t.get("gap") == "Alto" or t.get("sat", 10) <= 2)
-            if not forte or not t["title"]:
-                continue
-            if any(match_aperto(i, t) >= 2 for i in cat["items"]):
-                continue
-            sid = slug(t["title"])
-            if sid in esistenti:
-                continue
-            cat["items"].append(dict(
-                id=sid, titolo=t["title"], cluster="societa", stato="proposta", effort=1, fit=6, tipo="acquisizione",
-                nota=f"Proposta dal radar (coerenza {t.get('coerenza')}/10, sat IT {t.get('sat')}/10, gap {t.get('gap')}). Categoria: {t.get('categoria')}. Domanda IT da misurare con valida_tema.py prima di produrre.",
-                tipologia="studio", durata_min=12, durata_max=18, necessita=["si gira in studio", "ricerca"],
-                stagione="nessuna", trend="medio", origine=f"radar trend {datetime.date.today():%d/%m/%Y}"))
-            esistenti.add(sid)
-            print(f"[catalogo] nuova proposta dal radar (aperta): {t['title']}")
 
     # 4. ricalcolo punteggio e ordinamento
     for it in cat["items"]:

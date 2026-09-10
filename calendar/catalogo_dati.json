@@ -1,6 +1,6 @@
 {
  "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
- "aggiornato": "2026-09-07",
+ "aggiornato": "2026-09-10",
  "fatti": [
   {
    "titolo": "5 oggetti fondamentali",
@@ -69,7 +69,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 9.5
+   "score": 9.5,
+   "radar_match": []
   },
   {
    "id": "nikon_museum",
@@ -91,7 +92,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 9.0
+   "score": 9.0,
+   "radar_match": []
   },
   {
    "id": "fotografia_film",
@@ -112,7 +114,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 9.0
+   "score": 9.0,
+   "radar_match": []
   },
   {
    "id": "giappone_ricco",
@@ -134,7 +137,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "noroi",
@@ -156,7 +160,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "battle_royale",
@@ -178,7 +183,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "grandi_fotografi",
@@ -200,7 +206,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "fotografa_giapponese",
@@ -222,7 +229,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "cannibale_kyoto",
@@ -244,7 +252,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "murders_disturbing",
@@ -266,7 +275,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
   },
   {
    "id": "catturata_20anni",
@@ -287,7 +297,29 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 8.0
+   "score": 8.0,
+   "radar_match": []
+  },
+  {
+   "id": "giappone_accessibile_la_disabilita_come_",
+   "titolo": "Giappone accessibile: la disabilità come lente urbana",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Proposta dal radar (coerenza 7/10, sat IT 1/10, gap Alto). Categoria: Sociale/Culturale. Domanda IT da misurare con valida_tema.py prima di produrre.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca"
+   ],
+   "stagione": "nessuna",
+   "trend": "medio",
+   "origine": "radar trend 10/09/2026",
+   "score": 7.5
   },
   {
    "id": "storia_canon",
@@ -309,7 +341,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "storia_sega",
@@ -331,7 +364,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "young_homeless",
@@ -353,7 +387,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "fukushima",
@@ -376,7 +411,8 @@
    "stagione": "settembre",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "bullismo_anni80",
@@ -398,7 +434,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "sailor_censura",
@@ -420,7 +457,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "scams_10",
@@ -441,7 +479,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "cosa_sapere",
@@ -462,7 +501,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "toriyama",
@@ -484,7 +524,8 @@
    "stagione": "1 marzo",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "ghost_shell",
@@ -506,7 +547,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 7.0
+   "score": 7.0,
+   "radar_match": []
   },
   {
    "id": "akiya",
@@ -528,7 +570,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "haikyo",
@@ -550,7 +593,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "showa_nostalgia",
@@ -572,7 +616,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "spopolamento",
@@ -594,7 +639,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "kisaragi",
@@ -615,7 +661,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "famicom",
@@ -637,7 +684,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "netflix_3film",
@@ -658,7 +706,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "metabolismo",
@@ -680,7 +729,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "video_girl_ai",
@@ -702,7 +752,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "cibo_giappone",
@@ -724,7 +775,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "5cose_non_servono",
@@ -745,7 +797,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "natale_capodanno",
@@ -766,7 +819,8 @@
    "stagione": "dicembre",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "ado",
@@ -787,7 +841,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "anime_famosi",
@@ -808,7 +863,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "storia_asics",
@@ -830,7 +886,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "nakamura_led",
@@ -851,7 +908,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 6.0
+   "score": 6.0,
+   "radar_match": []
   },
   {
    "id": "inunaki",
@@ -874,7 +932,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.5
+   "score": 5.5,
+   "radar_match": []
   },
   {
    "id": "geografia_tokyo",
@@ -896,7 +955,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.5
+   "score": 5.5,
+   "radar_match": []
   },
   {
    "id": "akihabara_5cose",
@@ -918,7 +978,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "sorayama",
@@ -939,7 +1000,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "puroresu",
@@ -961,7 +1023,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "sara_resoconto",
@@ -982,7 +1045,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "memento_giapponese",
@@ -1003,7 +1067,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "hokkaido_extra",
@@ -1024,7 +1089,8 @@
    "stagione": "da gen 2027",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 5.0
+   "score": 5.0,
+   "radar_match": []
   },
   {
    "id": "iceberg_movie",
@@ -1046,7 +1112,8 @@
    "stagione": "halloween",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 4.5
+   "score": 4.5,
+   "radar_match": []
   },
   {
    "id": "dieci_canali",
@@ -1067,7 +1134,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 4.0
+   "score": 4.0,
+   "radar_match": []
   },
   {
    "id": "manga_roma",
@@ -1089,7 +1157,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 3.0
+   "score": 3.0,
+   "radar_match": []
   },
   {
    "id": "qa_community",
@@ -1110,7 +1179,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 3.0
+   "score": 3.0,
+   "radar_match": []
   },
   {
    "id": "sake_omotenashi",
@@ -1132,7 +1202,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 1.5
+   "score": 1.5,
+   "radar_match": []
   },
   {
    "id": "annachiara",
@@ -1154,7 +1225,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 1.5
+   "score": 1.5,
+   "radar_match": []
   },
   {
    "id": "jvan_finale",
@@ -1177,7 +1249,8 @@
    "stagione": "nessuna",
    "trend": "nullo",
    "origine": "piano 22/07/2026",
-   "score": 0.5
+   "score": 0.5,
+   "radar_match": []
   }
  ],
  "labels": {

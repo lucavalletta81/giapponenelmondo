@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-07 19:01",
-  "summary": "Settimana dominata dal cluster viaggio IT (volume 100, delta +54) con Human Safari che spinge contenuti slow-lifestyle fuori dal Giappone. Il cluster anime_manga_pop IT crolla (-18) mentre Maurizio Merluzzo gira contenuti autoreferenziali. In EN segnale forte su expat_japan_en (+44) con Tokyo Lens che esplora accessibilità e spazio urbano — angolo completamente assente in italiano. Un solo trend genuino emerge dai dati con gap IT reale.",
+  "generated_at": "2026-09-11 09:02",
+  "summary": "Settimana dominata dall'inversione rispetto alla sessione precedente: il cluster anime_manga_pop IT esplode a volume 100 con delta +18, mentre il viaggio crolla a 55 (-45). I contenuti IT sono però quasi tutti autoreferenziali (Merluzzo) o fuori tema Giappone. In EN emerge un segnale editoriale forte su anime e identità femminile (Gigguk) ancora assente in italiano. Segnali JP deboli ma presenti su sicurezza femminile in Giappone.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 2,
       "youtube_videos_analyzed": 10,
       "gap_IT_EN_count": 1,
       "delta_trend_count": 1
     },
     "EN": {
-      "trend_count": 1,
+      "trend_count": 3,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 1
     },
     "JP": {
-      "signal_count": 0,
+      "signal_count": 2,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -22,31 +22,31 @@
   "demand": {
     "IT": [
       {
-        "keyword": "viaggio",
+        "keyword": "anime_manga_pop",
         "volume": 100,
         "delta": "up",
-        "delta_value": 54,
+        "delta_value": 18,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "anime_manga_pop",
-        "volume": 82,
+        "keyword": "viaggio",
+        "volume": 55,
         "delta": "down",
-        "delta_value": -18,
-        "source": "youtube_velocity"
-      },
-      {
-        "keyword": "vita_giappone",
-        "volume": 17,
-        "delta": "flat",
-        "delta_value": -4,
+        "delta_value": -45,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
         "volume": 13,
-        "delta": "down",
-        "delta_value": -7,
+        "delta": "flat",
+        "delta_value": 0,
+        "source": "youtube_velocity"
+      },
+      {
+        "keyword": "vita_giappone",
+        "volume": 13,
+        "delta": "flat",
+        "delta_value": -4,
         "source": "youtube_velocity"
       }
     ],
@@ -54,22 +54,22 @@
       {
         "keyword": "expat_japan_en",
         "volume": 100,
-        "delta": "up",
-        "delta_value": 44,
+        "delta": "flat",
+        "delta_value": 0,
         "source": "youtube_velocity"
       },
       {
         "keyword": "anime_pop_en",
         "volume": 65,
-        "delta": "down",
-        "delta_value": -35,
+        "delta": "flat",
+        "delta_value": 0,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
         "volume": 6,
         "delta": "flat",
-        "delta_value": -5,
+        "delta_value": 0,
         "source": "youtube_velocity"
       }
     ],
@@ -86,92 +86,144 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Giappone accessibile: la disabilità come lente urbana",
+      "title": "Anime girls 'patetiche': il femminile che consola e disturba",
       "category": "Sociale/Culturale",
-      "urgency": "Media",
-      "coerenza": 7,
+      "urgency": "Alta",
+      "coerenza": 8,
       "saturazione_IT": 1,
-      "saturazione_EN": 4,
-      "saturazione_JP": 2,
+      "saturazione_EN": 7,
+      "saturazione_JP": 3,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Tokyo è davvero la città più accessibile del mondo? La risposta è più scomoda di così.",
-      "video_title": "Giappone accessibile: cosa succede quando Tokyo incontra una sedia a rotelle",
-      "podcast_title": "Tokyo e la disabilità: la città perfetta ha un problema nascosto",
-      "angolatura": "Usare l accessibilità come scanner critico del design urbano giapponese: cosa rivela sulle contraddizioni tra immagine pubblica e realtà quotidiana.",
-      "timing": "Prossimo mese",
-      "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema denso e narrativo, richiede voce e analisi — non immagini spettacolari.",
+      "thumbnail_hook": "Perché l'anime che ami di più racconta una ragazza che non riesce a stare in piedi?",
+      "video_title": "Il femminile 'patetico' negli anime: consolazione o problema?",
+      "podcast_title": "Anime e debolezza femminile: perché ci fa sentire meglio",
+      "angolatura": "Non una critica femminista ma un'analisi antropologica: cosa dice di noi il fatto che vogliamo personaggi femminili che soffrono senza resistere?",
+      "timing": "Entro 2 settimane",
+      "formato_consigliato": "Entrambi",
+      "motivazione_formato": "Tema denso: il video cattura l'estetica, il podcast permette la riflessione lunga",
       "struttura_atti": [
-        "Atto I: Tokyo viene costantemente celebrata come modello urbano — ma da chi? Introduzione al paradosso dell accessibilità giapponese tra barriere architettoniche storiche e innovazione recente.",
-        "Atto II: Il video di Tokyo Lens come caso studio — 24 ore in sedia a rotelle nella città — rivela infrastrutture pensate per il turista ideale, non per il corpo reale. Il concetto di 'sho ga nai' applicato alla disabilità.",
-        "Atto III: Il Giappone ha investito enormemente per le Paralimpiadi 2021, ma il cambiamento è stato superficiale o strutturale? La disabilità come specchio della pressione alla conformità nella società giapponese."
+        "Atto I: Il fenomeno — cosa si intende per 'patetico' nell'animazione giapponese moderna, esempi concreti di personaggi e serie",
+        "Atto II: La radice culturale — il concetto di 'kawaisou' (pietà) come attrattore emotivo nel pubblico giapponese e globale, il link con jirai-kei già trattato",
+        "Atto III: Lo specchio — cosa cerca chi consuma questi contenuti, il confine tra empatia e proiezione, il dibattito aperto in EN e silenzio in IT"
       ],
-      "coverage_IT": "Zero copertura in italiano — il tema disabilità e Giappone urbano è completamente assente nel panorama dei canali sentinella IT.",
-      "opportunita_IT": "Luca può essere il primo in italiano su un angolo sociale che in EN sta emergendo — con una prospettiva critica che va oltre il semplice reportage di viaggio.",
+      "coverage_IT": "Zero copertura in italiano: il tema esiste solo nella critica anime EN, completamente scoperto per il pubblico IT",
+      "opportunita_IT": "Luca ha già trattato jirai-kei: questo è il capitolo successivo naturale, con un aggancio diretto alla community che conosce già il contesto",
       "esempi_EN": [
         {
-          "titolo": "We Spent 24h Making Tokyo Wheelchair-Life FUN",
+          "titolo": "The Epidemic of Pathetic Anime Girls",
+          "url": "https://youtube.com/watch?v=SpXAN8QrDuU"
+        }
+      ],
+      "angolo_EN": "Gigguk inquadra il fenomeno come epidemia estetica da diagnosticare, tono critico e ironico",
+      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run, ma il tema è originato da produzioni JP native",
+      "esempi_JP": [],
+      "utilita_JP": "I dati JP non offrono esempi diretti: il segnale va cercato nelle piattaforme native JP nella prossima run"
+    },
+    {
+      "title": "La sicurezza delle donne in Giappone: mito e realtà",
+      "category": "Sociale/Culturale",
+      "urgency": "Media",
+      "coerenza": 5,
+      "saturazione_IT": 2,
+      "saturazione_EN": 5,
+      "saturazione_JP": 6,
+      "delta_coerenza": "flat",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "Il Giappone è davvero il paese più sicuro per le donne? La risposta è più complicata di così",
+      "video_title": "Donne e sicurezza in Giappone: il mito che il Giappone non vuole sfatare",
+      "podcast_title": "Il Giappone sicuro per le donne: verità, omissioni e strutture invisibili",
+      "angolatura": "Non il solito 'sì/no' da expat: analisi delle strutture sociali (chikan, denunce non presentate, vagoni separati) come sintomo di un problema che lo Stato gestisce senza risolverlo",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "Tema delicato e sfumato: il podcast permette profondità senza rischio di semplificazione visiva",
+      "struttura_atti": [
+        "Atto I: Il mito — perché l'Occidente percepisce il Giappone come paradiso di sicurezza per le donne, le fonti di questa narrazione",
+        "Atto II: I dati e le strutture — statistiche su molestie, il sistema dei vagoni separati come ammissione implicita, il fenomeno del chikan e la cultura del silenzio",
+        "Atto III: Chi rompe il silenzio — voci giapponesi che iniziano a parlarne, il cambio generazionale post-MeToo e cosa rimane irrisolto"
+      ],
+      "coverage_IT": "Raro in italiano, trattato quasi solo nel contesto travel o expat senza profondità analitica",
+      "opportunita_IT": "Angolo strutturale e culturale completamente libero in IT: il pubblico 25-45 di Luca è pronto per questa complessità",
+      "esempi_EN": [
+        {
+          "titolo": "She Tried the Future of Wheelchairs in Tokyo",
           "url": "https://youtube.com/watch?v=dUwrd7fG5sc"
         }
       ],
-      "angolo_EN": "Tokyo Lens affronta il tema in chiave esperienziale e positiva — spazio per un angolo più critico e strutturale in italiano.",
-      "segnale_JP": "Nessun segnale diretto nei video JP di questa run — tema trattato sporadicamente in giapponese su canali governativi, non creator.",
-      "esempi_JP": [],
-      "utilita_JP": "Nessun esempio JP disponibile in questa run — ricerca autonoma consigliata su canali barriera-free giapponesi."
+      "angolo_EN": "In EN il tema sicurezza corporea a Tokyo emerge lateralmente, non ancora trattato frontalmente come questione di genere",
+      "segnale_JP": "TAKASHii from Japan pubblica direttamente 'Is Japan Really Safe For Women?' — segnale nativo che il tema sta emergendo anche internamente",
+      "esempi_JP": [
+        {
+          "titolo": "Is Japan Really Safe For Women?",
+          "url": "https://youtube.com/watch?v=zHDE3oAmvsI"
+        }
+      ],
+      "utilita_JP": "Il video JP conferma che il tema è sentito anche dall'interno: fonte diretta per citazioni e dati nella narrazione"
     }
   ],
   "trends_EN": [
     {
-      "title": "Expat in Giappone: accessibilità e disabilità urbana",
+      "title": "Il corpo femminile e l'anime patetic girl: estetica della resa",
+      "category": "Estetica/Visiva",
+      "urgency_radar": "Caldo",
+      "volume_EN": 65,
+      "volume_IT": 100,
+      "delta_EN": "flat",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Gigguk esplora l'archetipo dell'anime girl patetica come fenomeno estetico-emotivo di massa. In IT il cluster anime vola ma i competitor fanno doppiaggio e gossip, non analisi culturale. Finestra: 2-4 settimane prima che qualcuno in IT ci arrivi.",
+      "connessione_canale": "Collegamento diretto a Jirai-kei e al femminile fragile già trattato: questo e' il corrispettivo animated, stesso substrato psicologico."
+    },
+    {
+      "title": "Ramen shop dal vivo: il Giappone come posto dove si lavora",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
       "volume_EN": 100,
-      "volume_IT": 17,
-      "delta_EN": "up",
+      "volume_IT": 13,
+      "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens dedica un video a rendere divertente la vita in sedia a rotelle a Tokyo: tema quasi assente in IT. L'accessibilità urbana giapponese è un angolo civile e narrativo aperto, con finestra di 4-8 settimane prima che arrivi in italiano.",
-      "connessione_canale": "Si lega alla linea 'vita in Giappone' già esplorata con Konbini e Toyoko Kids: il Giappone come sistema, non solo estetica."
-    },
-    {
-      "title": "Il Giappone visto dai giapponesi: lo straniero come specchio",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Caldo",
-      "volume_EN": 100,
-      "volume_IT": 17,
-      "delta_EN": "up",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Sora The Troll produce contenuti in EN/JP su come i giapponesi percepiscono i creator stranieri (Abroad in Japan). Meta-livello quasi inesistente in IT: chi racconta il Giappone ai giapponesi, e cosa ne pensano loro? Finestra stretta: 2-4 settimane.",
-      "connessione_canale": "Collegamento diretto al tema 'Il Giappone che si documenta dall'interno': ribaltare il punto di vista è il move narrativo perfetto per Luca."
+      "perche_monitorarlo": "Paolo from Tokyo porta lo spettatore dietro il bancone di una ramen shop locale, frame completamente diverso dal viaggio-consumo. In IT vita_giappone e' piatta e i canali expat trattano il Giappone come scenografia. Angolo lavoro-quotidiano ancora libero.",
+      "connessione_canale": "Linea editoriale konbini e vita ordinaria: stesso approccio etnografico applicato alla ristorazione locale, narrativo e non turistico."
     }
   ],
   "trends_JP": [
     {
-      "title": "Il malessere dell'illustratore: 絵師と鬱",
+      "title": "Il corpo che smette di nascondersi / 体を隠すのをやめた",
+      "category": "Sociale/Culturale",
+      "volume_JP": 100,
+      "delta_JP": "flat",
+      "rilevanza": "Alta",
+      "segnale": "Kimono Mom pubblica un video sul corpo femminile e l'accettazione di se', angolo raro nel contesto culturale giapponese dove la discrezione corporea e' norma sociale profonda.",
+      "utilita_canale": "Lente per raccontare il rapporto Giappone-corpo femminile: vergogna, standard estetici, haji. Collegabile a Jirai-kei e femminile fragile gia' trattati.",
+      "esempi_JP": [
+        {
+          "titolo": "This Japanese Mom Stopped Hiding Her Body",
+          "url": "https://youtube.com/watch?v=qUzspoLH7d8"
+        }
+      ]
+    },
+    {
+      "title": "Il Giappone che truffa i turisti / 外国人ぼったくりエリア",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Naoki Saito pubblica tre video ravvicinati su depressione degli illustratori, errori comuni e 'qualità del disegno che scompare migliorando': segnale di un disagio professionale strutturato nel mondo creativo giapponese.",
-      "utilita_canale": "Angolo inedito in IT: il lato oscuro dell'industria creativa giapponese, tra pressione produttiva e identità artistica. Si inserisce nel solco del J-Horror sociale già trattato.",
+      "segnale": "Sora The Troll esplora zone di Tokyo note per truffare stranieri, fingendosi turista. Segnale di un Giappone che fa i conti con l'overtourism e il doppio standard locale-ospite.",
+      "utilita_canale": "Angolo non banale sull'overtourism: non il turista scomodo ma il sistema che lo sfrutta. Narrativa sociologica con tensione morale, distante dal travel-vlog.",
       "esempi_JP": [
         {
-          "titolo": "イラストレーターが鬱になりやすい理由は...!?",
-          "url": "https://youtube.com/watch?v=6rMOH_1CpaI"
-        },
-        {
-          "titolo": "上手くなると消えがちな『絵の良さ』について。",
-          "url": "https://youtube.com/watch?v=ASRbXbbLXfM"
+          "titolo": "I'm in Tokyo's BIGGEST Foreigner-Scamming Area Acting Like a Foreigner LOLOLOLOLOLOLOLO",
+          "url": "https://youtube.com/watch?v=AP_ZeXe9LoU"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Tokyo Lens: altri video su accessibilità/disabilità in Giappone — se sale è tema editoriale maturo",
-    "Sora The Troll: volume e frequenza su percezione giapponese degli stranieri creator — possibile episodio autonomo",
-    "Naoki Saito: se il cluster illustrazione/disagio creativo continua, valutare episodio sul burnout nell'industria creativa JP",
-    "Cluster viaggio IT (delta +54): monitorare se Human Safari o simili aprono angoli giapponesi sfruttabili o restano generici"
+    "Verificare se il tema anime-girl-patetica (Gigguk) genera repliche o risposta in IT entro 7 giorni: finestra di primo ingresso ancora aperta",
+    "Osservare se Tokyo Lens continua il filone accessibilita'-disabilita' dopo i 3 video consecutivi: possibile serie in corso con angolo narrativo da importare in IT",
+    "Monitorare Sora The Troll e TAKASHii for Japan su sicurezza e doppio standard locale-straniero: segnale ricorrente che potrebbe indicare un ciclo editoriale nativo",
+    "Tenere d'occhio il cluster viaggio IT (ora in forte calo -45): se rimbalza nelle prossime 2 settimane e' effetto stagionale, non strutturale"
   ],
   "warnings": []
 }
