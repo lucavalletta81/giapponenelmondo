@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780.0" height="890.0" font-family="Helvetica,Arial" font-size="13">
+<rect width="780.0" height="890.0" fill="white"/>
+<rect x="60" y="60.0" width="660.0" height="770.0" fill="#f4f4f2" stroke="#333" stroke-width="3"/>
+<line x1="82.0" y1="104.00000000000004" x2="698.0" y2="104.00000000000004" stroke="#222" stroke-width="6"/>
+<text x="390.0" y="96.00000000000004" text-anchor="middle">FONDALE (nessun marker)</text>
+<rect x="225.0" y="159.00000000000006" width="330" height="330" fill="#e6e0c8" stroke="#a09060" stroke-dasharray="6 4"/>
+<text x="230.5" y="483.00000000000006" fill="#7a6a30">tappeto ChArUco/AprilTag + nastro casuale 3x3 m</text>
+<rect x="222.25" y="464.25000000000006" width="27.5" height="27.5" fill="#222"/>
+<rect x="530.25" y="464.25000000000006" width="27.5" height="27.5" fill="#222"/>
+<rect x="222.25" y="156.25" width="27.5" height="27.5" fill="#222"/>
+<rect x="530.25" y="156.25" width="27.5" height="27.5" fill="#222"/>
+<circle cx="390.0" cy="324.00000000000006" r="110.0" fill="#ffe680" fill-opacity="0.5" stroke="#b09000" stroke-width="2"/>
+<text x="390.0" y="328.00000000000006" text-anchor="middle" font-weight="bold">BALLERINA · Ø2 m</text>
+<polygon points="118.30000000000001,412.0 320.63130577382543,46.23225579083833 496.9823506755296,588.984963448467" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="221.7,555.0 165.2662369601346,98.67635346263242 673.128569414777,467.65993636292734" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="390.0,610.0 104.65801539748384,304.54304423847634 675.3419846025162,304.54304423847634" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="558.3,555.0 106.87143058522307,467.65993636292734 614.7337630398654,98.67635346263242" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="661.6999999999999,412.0 283.0176493244704,588.984963448467 459.36869422617457,46.23225579083833" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="390.0,478.0 131.69041393877478,201.48107162641003 648.3095860612252,201.48107162641003" fill="#2b7fd6" fill-opacity="0.10" stroke="#2b7fd6" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="112.8,720.0 274.30853404277264,125.54983940505613 616.1612573744393,364.91769323940736" fill="#e07b1a" fill-opacity="0.10" stroke="#e07b1a" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="667.1999999999999,720.0 163.8387426255607,364.91769323940736 505.69146595722736,125.54983940505613" fill="#e07b1a" fill-opacity="0.10" stroke="#e07b1a" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="243.7,773.9 237.8925061052479,168.92787418372546 603.9920548584159,287.8808283556088" fill="#c8304c" fill-opacity="0.10" stroke="#c8304c" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="536.3,773.9 176.00794514158406,287.8808283556088 542.1074938947521,168.92787418372546" fill="#c8304c" fill-opacity="0.10" stroke="#c8304c" stroke-opacity="0.5" stroke-width="1"/>
+<polygon points="390.0,808.0 236.01192642997785,210.42148365407795 543.9880735700222,210.42148365407795" fill="#e07b1a" fill-opacity="0.10" stroke="#e07b1a" stroke-opacity="0.5" stroke-width="1"/>
+<circle cx="118.30000000000001" cy="412.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="118.30000000000001" y="398.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP1_wide_L72  3mm (19 eq) · h 1.15 m · tilt -3°</text>
+<circle cx="221.7" cy="555.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="221.7" y="541.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP2_wide_L36  3mm (19 eq) · h 2.35 m · tilt -29°</text>
+<circle cx="390.0" cy="610.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="390.0" y="596.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP3_wide_C  3mm (19 eq) · h 1.15 m · tilt -3°</text>
+<circle cx="558.3" cy="555.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="558.3" y="541.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP4_wide_R36  3mm (19 eq) · h 2.35 m · tilt -29°</text>
+<circle cx="661.6999999999999" cy="412.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="661.6999999999999" y="398.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP5_wide_R72  3mm (19 eq) · h 1.15 m · tilt -3°</text>
+<circle cx="390.0" cy="478.0" r="9" fill="#2b7fd6" stroke="black" stroke-width="1.5"/>
+<text x="390.0" y="464.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b7fd6">GP6_wide_top  3mm (19 eq) · h 2.65 m · tilt -51°</text>
+<circle cx="112.8" cy="720.0" r="9" fill="#e07b1a" stroke="black" stroke-width="1.5"/>
+<text x="112.8" y="744.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#e07b1a">A7S_face_L  50mm (50 eq) · h 1.60 m · tilt -2°</text>
+<circle cx="667.1999999999999" cy="720.0" r="9" fill="#e07b1a" stroke="black" stroke-width="1.5"/>
+<text x="667.1999999999999" y="744.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#e07b1a">NIKON_face_R  50mm (50 eq) · h 1.60 m · tilt -2°</text>
+<circle cx="243.7" cy="773.9" r="9" fill="#c8304c" stroke="black" stroke-width="1.5"/>
+<text x="243.7" y="797.9" text-anchor="middle" font-size="11" font-weight="bold" fill="#c8304c">FUJI_feet_L  35mm (54 eq) · h 0.55 m · tilt -3°</text>
+<circle cx="536.3" cy="773.9" r="9" fill="#c8304c" stroke="black" stroke-width="1.5"/>
+<text x="536.3" y="797.9" text-anchor="middle" font-size="11" font-weight="bold" fill="#c8304c">A6500_feet_R  35mm (54 eq) · h 0.55 m · tilt -3°</text>
+<circle cx="390.0" cy="808.0" r="9" fill="#e07b1a" stroke="black" stroke-width="1.5"/>
+<text x="390.0" y="832.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#e07b1a">LUNA_face_C  19mm (70 eq) · h 1.70 m · tilt -3°</text>
+<text x="390.0" y="860.0" text-anchor="middle" fill="#555">larghezza studio 6.0 m · profondita 7.0 m · soffitto 2.8 m (ASSUNZIONI, da misurare)</text>
+<text x="64" y="50.0" fill="#555" font-size="12">Blu = grandangolari vicine (ancore) · Arancio = volto (tele) · Rosso = piedi (tele)</text>
+</svg>
