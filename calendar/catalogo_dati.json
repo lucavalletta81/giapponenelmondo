@@ -1,6 +1,6 @@
 {
  "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
- "aggiornato": "2026-09-10",
+ "aggiornato": "2026-09-11",
  "fatti": [
   {
    "titolo": "5 oggetti fondamentali",
@@ -301,27 +301,6 @@
    "radar_match": []
   },
   {
-   "id": "giappone_accessibile_la_disabilita_come_",
-   "titolo": "Giappone accessibile: la disabilità come lente urbana",
-   "cluster": "societa",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 6,
-   "tipo": "acquisizione",
-   "nota": "Proposta dal radar (coerenza 7/10, sat IT 1/10, gap Alto). Categoria: Sociale/Culturale. Domanda IT da misurare con valida_tema.py prima di produrre.",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
-   "necessita": [
-    "si gira in studio",
-    "ricerca"
-   ],
-   "stagione": "nessuna",
-   "trend": "medio",
-   "origine": "radar trend 10/09/2026",
-   "score": 7.5
-  },
-  {
    "id": "storia_canon",
    "titolo": "Come il Giappone si è preso la fotografia mondiale (ex Storia di CANON)",
    "cluster": "fotografia",
@@ -549,6 +528,31 @@
    "origine": "piano 22/07/2026",
    "score": 7.0,
    "radar_match": []
+  },
+  {
+   "id": "giappone_accessibile_la_disabilita_come_",
+   "titolo": "Giappone accessibile: la disabilità come lente urbana",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Proposta dal radar (coerenza 7/10, sat IT 1/10, gap Alto). Categoria: Sociale/Culturale. Domanda IT da misurare con valida_tema.py prima di produrre.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca"
+   ],
+   "stagione": "nessuna",
+   "trend": "basso",
+   "origine": "radar trend 10/09/2026",
+   "score": 6.5,
+   "radar_match": [
+    "Giappone accessibile: la disabilità come lente urbana",
+    "Expat in Giappone: accessibilità e disabilità urbana"
+   ]
   },
   {
    "id": "akiya",
@@ -1138,6 +1142,30 @@
    "radar_match": []
   },
   {
+   "id": "qa_community",
+   "titolo": "Domande e risposte con la community",
+   "cluster": "community",
+   "stato": "da_fare",
+   "effort": 1,
+   "fit": 3,
+   "tipo": "cuore",
+   "nota": "leggero; meglio quando il canale cresce",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 20,
+   "necessita": [
+    "si gira in studio",
+    "serve raccolta domande prima"
+   ],
+   "stagione": "nessuna",
+   "trend": "basso",
+   "origine": "piano 22/07/2026",
+   "score": 3.5,
+   "radar_match": [
+    "Anime girls 'patetiche': il femminile che consola e disturba"
+   ]
+  },
+  {
    "id": "manga_roma",
    "titolo": "Intervista al negozio di manga più famoso di Roma",
    "cluster": "community",
@@ -1153,28 +1181,6 @@
     "girato disponibile",
     "montaggio medio",
     "liberatoria ospite"
-   ],
-   "stagione": "nessuna",
-   "trend": "nullo",
-   "origine": "piano 22/07/2026",
-   "score": 3.0,
-   "radar_match": []
-  },
-  {
-   "id": "qa_community",
-   "titolo": "Domande e risposte con la community",
-   "cluster": "community",
-   "stato": "da_fare",
-   "effort": 1,
-   "fit": 3,
-   "tipo": "cuore",
-   "nota": "leggero; meglio quando il canale cresce",
-   "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 20,
-   "necessita": [
-    "si gira in studio",
-    "serve raccolta domande prima"
    ],
    "stagione": "nessuna",
    "trend": "nullo",

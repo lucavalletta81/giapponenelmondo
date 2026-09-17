@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-09 10:00",
-  "passed": 11,
+  "checked_at": "2026-09-16 10:00",
+  "passed": 10,
   "total": 11,
   "results": [
     {
@@ -26,12 +26,12 @@
     {
       "name": "Dati report — JSON valido",
       "ok": true,
-      "detail": "generato 2026-09-07 19:01 (overview ok)"
+      "detail": "generato 2026-09-11 09:02 (overview ok)"
     },
     {
       "name": "Dati report — freschezza",
       "ok": true,
-      "detail": "1 giorni fa"
+      "detail": "5 giorni fa"
     },
     {
       "name": "YouTube — feed video",
@@ -55,8 +55,8 @@
     },
     {
       "name": "Git — locale allineato a GitHub",
-      "ok": true,
-      "detail": "in sync"
+      "ok": false,
+      "detail": "ci sono commit non pushati"
     }
   ]
 }
