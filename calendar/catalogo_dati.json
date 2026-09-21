@@ -1,6 +1,6 @@
 {
  "note": "Base dati calendario editoriale GnM — generato 22/07/2026 da analisi canale + CSV idee Luca. fit = resa attesa dai dati del canale (1-10). effort = 1 facile (podcast/talking head), 2 medio (montaggio girato), 3 pesante. stato: fatto | girato | mezzo_fatto | da_fare. tipo: acquisizione | cuore | reputazione.",
- "aggiornato": "2026-09-11",
+ "aggiornato": "2026-09-18",
  "fatti": [
   {
    "titolo": "5 oggetti fondamentali",
@@ -90,10 +90,12 @@
     "archivio foto/immagini"
    ],
    "stagione": "nessuna",
-   "trend": "nullo",
+   "trend": "basso",
    "origine": "piano 22/07/2026",
-   "score": 9.0,
-   "radar_match": []
+   "score": 9.5,
+   "radar_match": [
+    "Copyright strike e YouTube: il caos legale nel Giappone digitale"
+   ]
   },
   {
    "id": "fotografia_film",
@@ -299,6 +301,32 @@
    "origine": "piano 22/07/2026",
    "score": 8.0,
    "radar_match": []
+  },
+  {
+   "id": "giappone_accessibile_la_disabilita_come_",
+   "titolo": "Giappone accessibile: la disabilità come lente urbana",
+   "cluster": "societa",
+   "stato": "proposta",
+   "effort": 1,
+   "fit": 6,
+   "tipo": "acquisizione",
+   "nota": "Proposta dal radar (coerenza 7/10, sat IT 1/10, gap Alto). Categoria: Sociale/Culturale. Domanda IT da misurare con valida_tema.py prima di produrre.",
+   "tipologia": "studio",
+   "durata_min": 12,
+   "durata_max": 18,
+   "necessita": [
+    "si gira in studio",
+    "ricerca"
+   ],
+   "stagione": "nessuna",
+   "trend": "medio",
+   "origine": "radar trend 10/09/2026",
+   "score": 7.5,
+   "radar_match": [
+    "Tokyo e la disabilità: la città del futuro che esclude",
+    "Giappone accessibile: la sedia a rotelle come lente urbana",
+    "Giappone accessibile: la disabilità come lente urbana"
+   ]
   },
   {
    "id": "storia_canon",
@@ -530,28 +558,27 @@
    "radar_match": []
   },
   {
-   "id": "giappone_accessibile_la_disabilita_come_",
-   "titolo": "Giappone accessibile: la disabilità come lente urbana",
-   "cluster": "societa",
+   "id": "kisaragi",
+   "titolo": "Kisaragi Station: l'horror giapponese nato solo su internet",
+   "cluster": "jhorror",
    "stato": "proposta",
    "effort": 1,
    "fit": 6,
    "tipo": "acquisizione",
-   "nota": "Proposta dal radar (coerenza 7/10, sat IT 1/10, gap Alto). Categoria: Sociale/Culturale. Domanda IT da misurare con valida_tema.py prima di produrre.",
+   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
    "tipologia": "studio",
-   "durata_min": 12,
-   "durata_max": 18,
+   "durata_min": 10,
+   "durata_max": 15,
    "necessita": [
     "si gira in studio",
-    "ricerca"
+    "ricerca leggende urbane"
    ],
-   "stagione": "nessuna",
+   "stagione": "halloween",
    "trend": "basso",
-   "origine": "radar trend 10/09/2026",
+   "origine": "radar pre-fix (evidenza viziata)",
    "score": 6.5,
    "radar_match": [
-    "Giappone accessibile: la disabilità come lente urbana",
-    "Expat in Giappone: accessibilità e disabilità urbana"
+    "Copyright strike e YouTube: il caos legale nel Giappone digitale"
    ]
   },
   {
@@ -641,28 +668,6 @@
     "mappe/grafiche"
    ],
    "stagione": "nessuna",
-   "trend": "nullo",
-   "origine": "radar pre-fix (evidenza viziata)",
-   "score": 6.0,
-   "radar_match": []
-  },
-  {
-   "id": "kisaragi",
-   "titolo": "Kisaragi Station: l'horror giapponese nato solo su internet",
-   "cluster": "jhorror",
-   "stato": "proposta",
-   "effort": 1,
-   "fit": 6,
-   "tipo": "acquisizione",
-   "nota": "Idea nata dal vecchio radar (poi scoperto circolare: cercava solo questi temi). Resta un tema forte nel mercato EN, ma la 'ricorrenza nei report' NON era una prova. Resa stimata, non misurata.",
-   "tipologia": "studio",
-   "durata_min": 10,
-   "durata_max": 15,
-   "necessita": [
-    "si gira in studio",
-    "ricerca leggende urbane"
-   ],
-   "stagione": "halloween",
    "trend": "nullo",
    "origine": "radar pre-fix (evidenza viziata)",
    "score": 6.0,

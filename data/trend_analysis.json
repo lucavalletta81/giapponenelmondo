@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-18 09:01",
-  "summary": "Settimana di consolidamento senza esplosioni nette. Il cluster anime_manga_pop IT resta dominante ma flat, con contenuti quasi tutti fuori tema Giappone (Merluzzo su Disney/Wolverine). In EN emerge un segnale ripetuto e preciso su accessibilità urbana Tokyo (tre video Tokyo Lens in 14 giorni) ancora totalmente assente in italiano — è l'unico gap IT-EN con segnale reale e multiplo. Videogiochi cresce in velocità (+19) ma senza contenuto giapponese specifico nei dati.",
+  "generated_at": "2026-09-21 19:02",
+  "summary": "Settimana dominata dal viaggio in IT (volume 100, delta +79) ma senza contenuto giapponese specifico nei top video — pura esplosione travel generica. In EN il cluster expat_japan resta solido con due segnali narrativi distinti: la nostalgia Showa come fenomeno urbano congelato e il disinganno sul Giappone ideale. Nessuna esplosione nuova e autonoma: si identificano 2 trend reali sostenuti dai dati, il resto è rumore.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 2,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 1,
+      "gap_IT_EN_count": 2,
       "delta_trend_count": 1
     },
     "EN": {
-      "trend_count": 2,
+      "trend_count": 4,
       "youtube_videos_analyzed": 10,
-      "delta_trend_count": 1
+      "delta_trend_count": 2
     },
     "JP": {
-      "signal_count": 1,
+      "signal_count": 2,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -22,31 +22,31 @@
   "demand": {
     "IT": [
       {
-        "keyword": "anime_manga_pop",
+        "keyword": "viaggio",
         "volume": 100,
-        "delta": "flat",
-        "delta_value": 0,
+        "delta": "up",
+        "delta_value": 79,
+        "source": "youtube_velocity"
+      },
+      {
+        "keyword": "anime_manga_pop",
+        "volume": 87,
+        "delta": "down",
+        "delta_value": -13,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 32,
-        "delta": "up",
-        "delta_value": 19,
-        "source": "youtube_velocity"
-      },
-      {
-        "keyword": "viaggio",
         "volume": 21,
         "delta": "down",
-        "delta_value": -34,
+        "delta_value": -11,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 16,
+        "volume": 15,
         "delta": "flat",
-        "delta_value": 3,
+        "delta_value": -1,
         "source": "youtube_velocity"
       }
     ],
@@ -60,16 +60,16 @@
       },
       {
         "keyword": "anime_pop_en",
-        "volume": 29,
-        "delta": "down",
-        "delta_value": -36,
+        "volume": 48,
+        "delta": "up",
+        "delta_value": 19,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 7,
+        "volume": 2,
         "delta": "flat",
-        "delta_value": 1,
+        "delta_value": -5,
         "source": "youtube_velocity"
       }
     ],
@@ -86,126 +86,164 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Tokyo e la disabilità: la città del futuro che esclude",
+      "title": "Il Giappone degli anni '80 congelato: le città Showa che non vogliono cambiare",
       "category": "Sociale/Culturale",
       "urgency": "Alta",
-      "coerenza": 7,
-      "saturazione_IT": 1,
+      "coerenza": 8,
+      "saturazione_IT": 2,
       "saturazione_EN": 6,
+      "saturazione_JP": 4,
+      "delta_coerenza": "up",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Alto",
+      "thumbnail_hook": "Questa città giapponese ha rifiutato il 2025. Benvenuto negli anni '80.",
+      "video_title": "Il Giappone congelato negli anni '80: le città che hanno detto no al futuro",
+      "podcast_title": "Showa forever: i luoghi giapponesi che vivono ancora nel passato",
+      "angolatura": "Non nostalgia come estetica da export, ma scelta collettiva di comunità reali che resistono attivamente alla modernizzazione — il contrario del Giappone tech.",
+      "timing": "Entro 2 settimane",
+      "formato_consigliato": "Entrambi",
+      "motivazione_formato": "Visuale per l estetica Showa, podcast per la profondità sociologica della scelta identitaria.",
+      "struttura_atti": [
+        "Atto I: Esiste una città giapponese dove il tempo si è fermato agli anni '80 — non per abbandono, ma per scelta consapevole della comunità.",
+        "Atto II: Cosa significa resistere alla modernizzazione in un Paese ossessionato dall efficienza? Chi sono le persone che scelgono di vivere fuori dal tempo e cosa ci dicono del Giappone reale.",
+        "Atto III: La nostalgia Showa non è solo estetica vintage da export: è un conflitto identitario aperto tra ciò che il Giappone vuole essere e ciò che non riesce a lasciarsi alle spalle."
+      ],
+      "coverage_IT": "Showa trattata quasi sempre come nostalgia estetica o lista di oggetti. L angolo sociologico sulla resistenza urbana è assente.",
+      "opportunita_IT": "Primo in italiano a leggere la Showa non come moda retrò ma come atto politico collettivo — aggancia il delta viaggio IT senza essere travel.",
+      "esempi_EN": [
+        {
+          "titolo": "Inside the Japanese Town Stuck Living in the 1980s",
+          "url": "https://youtube.com/watch?v=2d3NsFfWVGo"
+        }
+      ],
+      "angolo_EN": "Abroad in Japan tratta il fenomeno come curiosità visiva. Manca la lettura sociologica e il punto di vista critico.",
+      "segnale_JP": "Kimono Mom e TAKASHii mostrano la tensione tra vita quotidiana tradizionale e pressione della modernità, senza nominarla esplicitamente.",
+      "esempi_JP": [
+        {
+          "titolo": "Two months away from my family | Japanese mom | Small business owner",
+          "url": "https://youtube.com/watch?v=Kge7801OB-w"
+        }
+      ],
+      "utilita_JP": "Fonte per texture autentica della quotidianità fuori dal circuito metropolitano moderno."
+    },
+    {
+      "title": "Il Giappone che non esiste: smontare le bugie che tutti raccontano",
+      "category": "Sociale/Culturale",
+      "urgency": "Media",
+      "coerenza": 7,
+      "saturazione_IT": 3,
+      "saturazione_EN": 5,
       "saturazione_JP": 2,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Tokyo è la città più accessibile del mondo. O forse no.",
-      "video_title": "Tokyo è davvero accessibile? La città perfetta che lascia indietro qualcuno",
-      "podcast_title": "La città del futuro e chi non riesce a entrarci",
-      "angolatura": "Non il solito 'Giappone modello': tre episodi reali mostrano dove il design urbano giapponese fallisce e cosa rivela di una società ossessionata dall'efficienza",
-      "timing": "Entro 2 settimane",
-      "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Video per l'impatto visivo urbano, podcast per la profondità critica sociale",
+      "thumbnail_hook": "Ti hanno mentito sul Giappone. Anche i tuoi creator preferiti.",
+      "video_title": "Vi hanno mentito sul Giappone: le leggende che il web ha costruito e nessuno smonta",
+      "podcast_title": "Il Giappone immaginario: da dove vengono i miti che tutti ripetono",
+      "angolatura": "Non debunking polemico ma archeologia del mito: tracciare l origine precisa di ogni leggenda popolare sul Giappone e capire perché serve a chi la racconta.",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "L analisi delle origini culturali di un mito richiede narrazione lunga — è materia da podcast di profondità, non da video clip.",
       "struttura_atti": [
-        "Atto I: Tokyo come mito dell'accessibilità — cosa dicono le classifiche internazionali e perché ci crediamo",
-        "Atto II: Tre storie concrete (sedia a rotelle nei treni, marciapiedi a gradini, bagni nascosti) — dove il sistema inceppa",
-        "Atto III: Cosa rivela questo fallimento sulla società giapponese: il corpo normativo come standard invisibile del Giappone moderno"
+        "Atto I: Il Giappone del web non esiste — è una costruzione collettiva fatta di immagini selezionate, aneddoti decontestualizzati e proiezioni occidentali che si autoalimentano.",
+        "Atto II: Tre o quattro miti specifici e verificabili — sicurezza totale, ordine sociale perfetto, tecnologia ovunque, gente sempre gentile — smontati con fonti native e dati reali.",
+        "Atto III: Perché continuiamo a volere questo Giappone falso? Cosa dice di noi, non del Giappone, il bisogno collettivo di credere a quella versione."
       ],
-      "coverage_IT": "Tema assente in italiano. Nessun canale IT ha toccato accessibilità urbana Tokyo negli ultimi 60 giorni.",
-      "opportunita_IT": "Primo in italiano su un tema già esploso in EN con tre video in due settimane dallo stesso canale — segnale editoriale forte e replicabile",
+      "coverage_IT": "Contenuti IT sul Giappone tendono a replicare i miti, non a interrogarli. Il meta-sguardo critico è quasi assente.",
+      "opportunita_IT": "Posiziona Luca come voce critica autorevole nel panorama IT — differenziazione netta dai canali travel e dai replicatori di stereotipi.",
       "esempi_EN": [
         {
-          "titolo": "She Tried the Future of Wheelchairs in Tokyo",
-          "url": "https://youtube.com/watch?v=dUwrd7fG5sc"
-        },
-        {
-          "titolo": "Tokyo Almost Destroyed her Wheelchair",
-          "url": "https://youtube.com/watch?v=aCJRxTNn0h0"
-        },
-        {
-          "titolo": "Testing out RARE Wheelchairs in Tokyo with @sherryberryjp",
-          "url": "https://youtube.com/watch?v=6chI-BVFzoQ"
+          "titolo": "You've Been Lied to About Japan",
+          "url": "https://youtube.com/watch?v=eo0N-G-yEtM"
         }
       ],
-      "angolo_EN": "Tokyo Lens dedica tre video consecutivi alla stessa creator in sedia a rotelle: segnale di serie editoriale, non episodio singolo",
-      "segnale_JP": "Nessun segnale diretto nei dati JP questa run. Il tema esiste in forma implicita nel dibattito su spazio urbano.",
-      "esempi_JP": [],
-      "utilita_JP": "Assente nei dati JP di questa run — tema guidato da prospettiva esterna, angolo autentico"
+      "angolo_EN": "Abroad in Japan usa il frame del debunking come click, senza profondità antropologica. Lo spazio per una versione più densa esiste.",
+      "segnale_JP": "TAKASHii entra nel distretto a luci rosse di Tokyo — segnale che i creator nativi mostrano il Giappone scomodo che il web occidentale taglia.",
+      "esempi_JP": [
+        {
+          "titolo": "Inside Tokyo's Red Light District",
+          "url": "https://youtube.com/watch?v=Td_Gdk56vSg"
+        }
+      ],
+      "utilita_JP": "Fornisce materiale autentico sul Giappone non patinato da usare come controprova narrativa nell episodio."
     }
   ],
   "trends_EN": [
     {
-      "title": "Il Giappone ha mentito: sfatare i miti dell'expat experience",
+      "title": "Il Giappone degli anni '80 che non vuole morire",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 16,
+      "volume_IT": 15,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Abroad in Japan pubblica 'You've Been Lied to About Japan' con risposta diretta da canali JP (Sora The Troll). Loop critico attivo in EN, assente in IT. Finestra 3-4 settimane prima che arrivi.",
-      "connessione_canale": "Luca ha trattato Toyoko Kids e konbini come specchi distorti: stesso frame critico applicato all'immaginario expat mainstream."
+      "perche_monitorarlo": "Abroad in Japan pubblica un video su una città bloccata negli anni '80 con forte trazione. In IT il cluster vita_giappone è piatto (15) e nessun canale tratta nostalgia urbana Showa con profondità. Finestra: 4-8 settimane prima che arrivi in italiano come viaggio.",
+      "connessione_canale": "Collegamento diretto agli episodi Showa già prodotti: angolo inedito, la Showa come presente cristallizzato, non solo memoria."
     },
     {
-      "title": "Giappone accessibile: la sedia a rotelle come lente urbana",
-      "category": "Sociale/Culturale",
+      "title": "L'anime che ha traumatizzato una generazione",
+      "category": "Cinema/J-Horror",
       "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 16,
-      "delta_EN": "flat",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens ha pubblicato tre video consecutivi con @sherryberryjp su accessibilità e carrozzine innovative. Cluster coerente e inatteso in EN, zero copertura IT. Finestra aperta ma non urgentissima.",
-      "connessione_canale": "Tema nei radar ultimi 60gg ma mai prodotto: ora ha video EN multipli a supporto, il segnale si è consolidato abbastanza da giustificare l'episodio."
-    },
-    {
-      "title": "Copyright strike e YouTube: il caos legale nel Giappone digitale",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 16,
-      "delta_EN": "flat",
+      "volume_EN": 48,
+      "volume_IT": 87,
+      "delta_EN": "up",
       "gap_IT": "Medio",
-      "perche_monitorarlo": "Sora The Troll affronta il regime dei copyright strike su YouTube in Giappone come fenomeno culturale-legale specifico. Tema tecnico ma con angolo narrativo forte: nessun canale IT l'ha trattato con profondità.",
-      "connessione_canale": "Tangente alla serie J-Horror e glitch: la censura digitale come forma moderna di 'maledizione'. Angolo originale per il pubblico 25-45 colto."
+      "perche_monitorarlo": "Gigguk cavalca il filone 'anime del trauma collettivo' con buona velocity (+19 EN). In IT anime_manga_pop è saturo ma su contenuti Disney/Pixar, non giapponesi. Il gap specifico su anime traumatici JP resta libero per un canale con profondità narrativa.",
+      "connessione_canale": "Vicino agli episodi su J-Horror e femminile disturbante: si può trattare l'anime traumatico come estensione della stessa poetica dell'orrore quotidiano."
+    },
+    {
+      "title": "Il Giappone di cui ti hanno mentito: i miti smontati",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 100,
+      "volume_IT": 15,
+      "delta_EN": "flat",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Abroad in Japan usa il frame 'ti hanno mentito sul Giappone' con volume massimo. In IT questo approccio critico e smitizzante è quasi assente: viaggio domina ma con contenuto acritico. Finestra: 6-10 settimane, rischio che arrivi come clickbait prima che come analisi.",
+      "connessione_canale": "Perfetto per il tono di Luca: narrativo, con punto di vista, senza paura della complessità. Potrebbe essere un episodio-manifesto del canale."
     }
   ],
   "trends_JP": [
     {
-      "title": "Il corpo della madre giapponese: vergogna e riappropriazione / 日本人母親の身体と自己受容",
+      "title": "La madre giapponese che si documenta: maternità e piccola impresa / 日本のお母さんの自己記録",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Kimono Mom pubblica video su madre giapponese che smette di nascondere il proprio corpo postpartum. Segnale isolato ma coerente con dibattito body image in JP.",
-      "utilita_canale": "Angolo inedito su pressione estetica femminile in Giappone, diverso dalla sicurezza stradale già trattata. Base per episodio su corpo e identità femminile nipponica.",
+      "segnale": "Kimono Mom pubblica in 14 giorni tre video su gravidanza, preparazione postpartum e assenza dalla famiglia per lavoro: maternità giapponese contemporanea narrata dall'interno, con tensione lavoro-cura.",
+      "utilita_canale": "Fonte primaria per episodio su maternità e pressione sociale in Giappone: tema non ancora toccato dal canale, con materiale nativo ricco e autentico.",
       "esempi_JP": [
         {
-          "titolo": "This Japanese Mom Stopped Hiding Her Body",
-          "url": "https://youtube.com/watch?v=qUzspoLH7d8"
+          "titolo": "Meal prepping for Postpartum in My Final Month of Pregnancy",
+          "url": "https://youtube.com/watch?v=2eYJ4pJzXlo"
+        },
+        {
+          "titolo": "Two months away from my family | Japanese mom | Small business owner",
+          "url": "https://youtube.com/watch?v=Kge7801OB-w"
         }
       ]
     },
     {
-      "title": "L'illustratore e le relazioni tossiche: chi disegna male va tagliato fuori? / 絵が下手な友人との関係",
-      "category": "Sociale/Culturale",
+      "title": "Disegnare in Giappone: la critica come cura / 日本のイラスト添削文化",
+      "category": "Estetica/Visiva",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Bassa",
-      "segnale": "Naoki Saito pubblica due video su dinamiche relazionali tra artisti: tagliare amici 'scarsi' e abitudini che bloccano il disegno. Micro-community creativa JP molto attiva.",
-      "utilita_canale": "Segnale troppo di nicchia per un episodio standalone, ma utile come materiale secondario su cultura del perfezionismo e isolamento creativo in Giappone.",
+      "segnale": "Naoki Saito pubblica video di correzione illustrazioni e gestione relazioni tossiche tra artisti: nicchia tecnica ma rivela una cultura della critica artistica giapponese molto codificata e gerarchica.",
+      "utilita_canale": "Segnale debole per ora, ma utile come fonte se si produce un episodio su estetica visiva giapponese o sulla cultura dell'apprendimento artistico in Giappone.",
       "esempi_JP": [
         {
-          "titolo": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
-          "url": "https://youtube.com/watch?v=S_iXFEU1SK8"
-        },
-        {
-          "titolo": "【NG習慣】コレやってると、絵が描けなくなります。",
-          "url": "https://youtube.com/watch?v=Y7_7GCySD1M"
+          "titolo": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
+          "url": "https://youtube.com/watch?v=HA6Y8w491uM"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Loop critico Abroad in Japan / Sora The Troll: verificare se altri canali JP replicano la risposta o se il dibattito si estende a media tradizionali",
-    "Cluster accessibilità Tokyo Lens: controllare se il formato 'disabilità come lente urbana' viene replicato da altri canali EN o se rimane esperimento isolato",
-    "Copyright strike JP su YouTube: monitorare se Sora The Troll o altri producono follow-up con dati o casi concreti che rafforzino l'angolo narrativo",
-    "Body image femminile JP: verificare se Kimono Mom o canali affini pubblicano altri episodi che confermino il cluster o rimanga video singolo senza continuità"
+    "Abroad in Japan: verificare se il frame 'miti smontati sul Giappone' genera altri upload o replica in canali minori EN — segnale di onda in consolidamento",
+    "Gigguk e Trash Taste: monitorare se il filone 'anime del trauma' o 'gusti orribili del passato' genera contenuti IT specifici su titoli giapponesi, non solo occidentali",
+    "Kimono Mom: terzo upload in 14 giorni su maternità — se continua indica serialità editoriale su tema, non episodio singolo",
+    "Cluster viaggio IT: delta +79 dominante ma contenuto quasi tutto non-Giappone — monitorare se qualche canale IT entra sul Giappone anni 80 o Showa con frame viaggi, segnalerebbe saturazione imminente"
   ],
   "warnings": []
 }
