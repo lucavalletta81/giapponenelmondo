@@ -4,21 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Tokyo Budget Lab — quanto costa un viaggio a Tokyo · Giappone nel Mondo</title>
-  <meta name="description" content="Rispondi a sette domande e ottieni un itinerario su misura con la stima di quanto costa: volo, treni, alloggio, cibo, ingressi. Compreso il conto vero del Japan Rail Pass." />
-  <meta property="og:title" content="Quanto costa un viaggio in Giappone" />
-  <meta property="og:description" content="Un itinerario su misura e la stima del costo, costruiti sui tuoi interessi. Nessuna AI: il conto è tutto in chiaro." />
+  <title>Giapponemetro: quanto costa davvero un viaggio a Tokyo · Giappone nel Mondo</title>
+  <meta name="description" content="Sette domande e sai quanto costa il tuo viaggio a Tokyo, su tre fasce. Volo, alloggio, treni e ingressi sono prezzi veri, con la fonte e la data. Compreso il conto del Japan Rail Pass." />
+  <meta name="theme-color" content="#FBEFD2" />
+  <meta property="og:title" content="Giapponemetro: quanto costa davvero il tuo viaggio in Giappone" />
+  <meta property="og:description" content="Sette domande, tre fasce di prezzo, un itinerario sui tuoi interessi. Prezzi veri con fonte e data, stime dichiarate stime." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Giappone nel Mondo" />
   <meta property="og:url" content="https://giapponenelmondo.com/preventivo/" />
+  <meta property="og:image" content="https://giapponenelmondo.com/preventivo/img/anteprima.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Giapponemetro: l'omino pixel sotto il blocco, con Tokyo sullo sfondo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://giapponenelmondo.com/preventivo/img/anteprima.png" />
+  <link rel="icon" type="image/png" href="img/icona.png" />
+  <link rel="apple-touch-icon" href="img/icona-180.png" />
   <link rel="canonical" href="https://giapponenelmondo.com/preventivo/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Pixelify+Sans:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="font/press-start-2p-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="font/zen-maru-gothic-500-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="tema.css?v=202608312021" />
-  <link rel="stylesheet" href="tema-pixel.css?v=202608312021" />
-  <link rel="stylesheet" href="tema-arcade.css?v=202608312021" />
-  <link rel="stylesheet" href="app.css?v=202608312021" />
+  <link rel="stylesheet" href="tema.css?v=202609280149" />
+  <link rel="stylesheet" href="tema-pixel.css?v=202609280149" />
+  <link rel="stylesheet" href="tema-arcade.css?v=202609280149" />
+  <link rel="stylesheet" href="restyle.css?v=202609280149" />
+  <link rel="stylesheet" href="app.css?v=202609280149" />
 </head>
 <body>
 
@@ -54,7 +68,7 @@
 <div class="pv-layout"><!-- pv-layout -->
 
   <aside class="pv-lato">
-    <a class="pv-logo" href="./" aria-label="Tokyo Budget Lab">
+    <a class="pv-logo" href="./" aria-label="Giapponemetro">
       <svg class="pv-torii" viewBox="0 0 64 64" aria-hidden="true">
         <path d="M6 12 Q32 4 58 12 L58 18 L6 18 Z"/>
         <rect x="12" y="18" width="6" height="42" rx="1"/>
@@ -62,7 +76,7 @@
         <rect x="9" y="27" width="46" height="5" rx="1"/>
         <rect x="29" y="18" width="6" height="9"/>
       </svg>
-      <span class="pv-nome"><b>Tokyo</b><br>Budget Lab</span>
+      <span class="pv-nome"><b>Giappone</b><br>metro</span>
     </a>
     <p class="pv-tagline">Quanto costa davvero<br>il tuo viaggio in Giappone</p>
 
@@ -78,22 +92,16 @@
 
   <div class="pv-main">
 
-    <div class="pv-testa">
-      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o arcade">
-        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Arcade</span>
-      </button>
-    </div>
-
-    <div class="pv-avviso">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v7M12 7v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <p><b>Prima versione: solo Tokyo.</b> Volo e alloggio sono prezzi veri, letti da Google Flights e
-      Google Hotels e rinfrescati regolarmente; anche il cambio euro/yen è quello della BCE del giorno.
-      Anche i biglietti dei treni e i biglietti d'ingresso sono verificati alla fonte, uno per uno.
-      Restano stime i voli dentro il Giappone, i due traghetti e quanto si spende per mangiare: in
-      fondo al risultato è scritto voce per voce cosa è reale e cosa no. Le altre città arrivano dopo. Usalo per farti
-      un'idea e per capire quali leve spostano il costo, non per prenotare. Nessun dato che inserisci
+    <details class="pv-avviso" id="pv-avviso">
+      <summary>Prima versione: solo Tokyo. Come leggere i prezzi</summary>
+      <p>Volo e alloggio sono prezzi veri, letti da Google Flights e Google Hotels; il cambio
+      euro/yen è il tasso di riferimento della BCE. La data di ogni lettura è scritta nel risultato,
+      accanto al prezzo. Anche i biglietti dei treni, la tassa di soggiorno e i biglietti d'ingresso
+      sono verificati alla fonte, uno per uno. Restano stime la metropolitana e quanto si spende per
+      mangiare: nel risultato è scritto voce per voce cosa è reale e cosa no. Usalo per farti
+      un'idea e per capire quali leve spostano il costo, non per prenotare. Nessuna risposta che dai
       esce da questa pagina: il calcolo avviene nel tuo browser.</p>
-    </div>
+    </details>
 
     <!-- ================================================== QUESTIONARIO ==== -->
     <div id="wizard" class="pv-scheda">
@@ -158,9 +166,9 @@
           </label>
           <fieldset id="ritmo">
             <legend>Ritmo</legend>
-            <label><input type="radio" name="ritmo" value="lento"> <b>Lento</b> — poche basi, tempo di stare fermi</label>
-            <label><input type="radio" name="ritmo" value="medio" checked> <b>Medio</b> — vedi molto senza correre</label>
-            <label><input type="radio" name="ritmo" value="veloce"> <b>Veloce</b> — tanti posti, valigia sempre in mano</label>
+            <label><input type="radio" name="ritmo" value="lento"> <b>Lento</b>: poche basi, tempo di stare fermi</label>
+            <label><input type="radio" name="ritmo" value="medio" checked> <b>Medio</b>: vedi molto senza correre</label>
+            <label><input type="radio" name="ritmo" value="veloce"> <b>Veloce</b>: tanti posti, valigia sempre in mano</label>
           </fieldset>
         </div>
       </section>
@@ -201,9 +209,9 @@
           <h2><span class="n"></span>Che tipo di viaggiatore sei</h2>
           <fieldset id="stile">
             <legend>&nbsp;</legend>
-            <label><input type="radio" name="stile" value="essenziale"> <b>Il minimo</b> — volo al prezzo più basso, ostello, konbini e gyudon</label>
-            <label><input type="radio" name="stile" value="equilibrato" checked> <b>Normale</b> — economy con uno scalo, business hotel, si mangia bene</label>
-            <label><input type="radio" name="stile" value="comodo"> <b>Senza pensieri</b> — business a bordo, hotel di categoria, cene vere</label>
+            <label><input type="radio" name="stile" value="essenziale"> <b>Il minimo</b>: volo al prezzo più basso, ostello, konbini e gyudon</label>
+            <label><input type="radio" name="stile" value="equilibrato" checked> <b>Normale</b>: economy con uno scalo, business hotel, si mangia bene</label>
+            <label><input type="radio" name="stile" value="comodo"> <b>Senza pensieri</b>: business a bordo, hotel di categoria, cene vere</label>
           </fieldset>
           <p class="nota">Vedrai comunque tutti e tre i livelli affiancati: questo decide quale evidenziare. La zona dove dormire la scegliamo noi, prendendo la mediana delle zone di Tokyo per la fascia che hai scelto: nel risultato puoi spostarti sulla più economica o sulla più cara con un clic.</p>
         </div>
@@ -223,6 +231,9 @@
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Volo e alloggio da prezzi reali</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7l-3 7h6l-3-7zm14 0-3 7h6l-3-7zM7 7h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Le stime sono dichiarate stime</span>
       <span id="conta-piede"></span>
+      <button type="button" class="pv-tema" id="pv-tema" aria-label="Cambia grafica: piatta o arcade">
+        <span class="on" data-tema="piatto">Flat</span><span data-tema="pixel">Arcade</span>
+      </button>
       <a href="#" id="pv-rivedi">rivedi l'intro</a>
       <a href="privacy.html">Privacy</a>
       <a href="termini.html">Termini d'uso</a>
@@ -237,20 +248,21 @@
     <div class="container footer-inner">
       <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
       <p class="footer-copy">&copy; 2026 giapponenelmondo.com &mdash; tutti i diritti riservati</p>
-      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 25/09/2026 09:02<!--/STAMP--></p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 27/09/2026 14:49<!--/STAMP--></p>
     </div>
   </footer>
 
   <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
-  <script src="dati.js?v=202608312021"></script>
-  <script src="prezzi.js?v=202608312021"></script>
-  <script src="motore.js?v=202608312021"></script>
-  <script src="pdf.js?v=202608312021"></script>
-  <script src="app.js?v=202608312021"></script>
-  <script src="suoni.js?v=202608312021"></script>
-  <script src="hud.js?v=202608312021"></script>
-  <script src="intro.js?v=202608312021"></script>
-  <script src="mascotte.js?v=202608312021"></script>
-  <script src="contatore.js?v=202608312021"></script>
+  <script src="dati.js?v=202609280149"></script>
+  <script src="prezzi.js?v=202609280149"></script>
+  <script src="motore.js?v=202609280149"></script>
+  <script src="pdf.js?v=202609280149"></script>
+  <script src="condividi.js?v=202609280149"></script>
+  <script src="contatore.js?v=202609280149"></script>
+  <script src="app.js?v=202609280149"></script>
+  <script src="suoni.js?v=202609280149"></script>
+  <script src="hud.js?v=202609280149"></script>
+  <script src="intro.js?v=202609280149"></script>
+  <script src="mascotte.js?v=202609280149"></script>
 </body>
 </html>

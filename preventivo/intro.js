@@ -16,7 +16,7 @@ var $ = function (s, r) { return (r || document).querySelector(s); };
 var im = function (n) { return (window.PV_IMG && window.PV_IMG[n]) || ("img/" + n); };
 
 var DIALOGO =
-  "Quanto può costare davvero\nil tuo viaggio in Giappone?\nOtto domande per portarti con\nconsapevolezza nel Sol Levante.";
+  "Quanto può costare davvero\nil tuo viaggio in Giappone?\nSette domande per portarti con\nconsapevolezza nel Sol Levante.";
 
 /* Cosa può uscire dal blocco: l'elemento narrativo delle icone interessi.
    Fuori le astrazioni che non "escono" da un blocco (onsen, insolito,
@@ -207,7 +207,10 @@ function primaVolta() {
 }
 function temaArcade() { return document.body.getAttribute("data-tema") === "pixel"; }
 
-function forse() { if (!vivo && temaArcade() && primaVolta()) parte(); }
+/* chi arriva con un preventivo già dentro il link vuole il numero, non la scenetta */
+function conPreventivo() { return /[#&]g=/.test(location.hash || ""); }
+
+function forse() { if (!vivo && temaArcade() && primaVolta() && !conPreventivo()) parte(); }
 
 if (document.readyState === "loading")
   document.addEventListener("DOMContentLoaded", function () { setTimeout(forse, 30); });

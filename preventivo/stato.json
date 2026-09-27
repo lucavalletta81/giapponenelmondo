@@ -1,0 +1,16 @@
+{
+ "letto": {
+  "voli": "2026-09-28",
+  "alloggi": "2026-09-28"
+ },
+ "generato": "2026-09-28T01:45:59+13:00",
+ "cambio": "2026-09-25",
+ "pubblicato": "202609280149",
+ "giro": {
+  "inizio": "2026-09-27T14:48:57+02:00",
+  "copia_db": "prezzi-20260927-1448.db",
+  "letture": "saltate (--senza-letture)",
+  "esito": "ok",
+  "fine": "2026-09-27T14:48:57+02:00"
+ }
+}

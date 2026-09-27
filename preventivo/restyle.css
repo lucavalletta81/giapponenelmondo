@@ -1,0 +1,417 @@
+/* =========================================================================
+   RESTYLE — 28/09/2026. Si carica per ultimo e sta sopra i tre temi.
+
+   Da dove nasce: la review e i tre revisori esterni hanno detto la stessa
+   cosa. Il vestito era stato disegnato dal desktop e dall'ingresso, e il
+   punto in cui il servizio consegna valore — il risultato, su telefono —
+   era quello disegnato peggio. Qui si parte da lì:
+
+   1. nella prima schermata di un telefono ci sono le tre fasce, la data dei
+      prezzi e la quota verificata;
+   2. tutto il resto resta, in sezioni che si aprono;
+   3. il carattere a pixel è la voce del GIOCO (HUD, cifre, etichette corte);
+      la voce del SERVIZIO è un carattere che si legge.
+
+   I caratteri stanno nel sito (font/), non su un servizio esterno.
+   ========================================================================= */
+
+/* ------------------------------------------------------------ caratteri -- */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url("font/inter-400-800-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url("font/inter-400-800-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Press Start 2P'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("font/press-start-2p-400-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Press Start 2P'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("font/press-start-2p-400-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Zen Maru Gothic'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("font/zen-maru-gothic-500-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Zen Maru Gothic'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("font/zen-maru-gothic-500-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Zen Maru Gothic'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("font/zen-maru-gothic-700-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Zen Maru Gothic'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("font/zen-maru-gothic-700-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* La voce del servizio nel tema arcade: gotico arrotondato, quello dei manuali
+   e delle scatole dei giochi giapponesi. Pixelify Sans esce dal testo. */
+.pv-layout[data-tema="pixel"] {
+  --pv-font: 'Zen Maru Gothic', 'Inter', -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px; font-weight: 500; line-height: 1.6;
+}
+.pv-layout[data-tema="pixel"] b, .pv-layout[data-tema="pixel"] strong { font-weight: 700; }
+/* l'ombra sul nome a 12 px lo sdoppiava: si leggeva male */
+.pv-layout[data-tema="pixel"] .pv-nome b { text-shadow: none; font-weight: 400; }
+.pv-layout[data-tema="pixel"] .nota { font-size: 15px; }
+.pv-layout[data-tema="pixel"] .carta span { font-size: 14px; line-height: 1.45; }
+.pv-layout[data-tema="pixel"] .pv-tagline,
+.pv-layout[data-tema="pixel"] .pv-passi li,
+.pv-layout[data-tema="pixel"] .pv-fiducia { font-family: var(--pv-font); }
+.pv-layout[data-tema="pixel"] input[type=number], .pv-layout[data-tema="pixel"] input[type=text],
+.pv-layout[data-tema="pixel"] select { font-family: var(--pv-font); font-weight: 500; }
+/* il piede era tutto a pixel a 8 px: non si leggeva */
+.pv-layout[data-tema="pixel"] .pv-piede { font-family: var(--pv-font); font-size: 13px; line-height: 1.5; }
+#fine-livello .fl-skip, #intro .in-skip { font-size: 10px; }
+
+/* una cosa sola per tutti: niente scorrimento laterale della pagina */
+.pv-layout { overflow-x: clip; }
+.pv-main { overflow-wrap: anywhere; }
+.pv-layout a.link, .pv-piede a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ------------------------------------------------- l'avviso richiudibile -- */
+.pv-layout details.pv-avviso {
+  display: block; padding: 0; margin: 0 0 18px; border-radius: var(--pv-raggio);
+  background: var(--pv-rosso-w); border: 1px solid var(--pv-rosso-b); color: inherit;
+}
+.pv-layout details.pv-avviso[hidden] { display: none; }
+.pv-layout details.pv-avviso > summary {
+  list-style: none; cursor: pointer; padding: 11px 16px; min-height: 44px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  font-size: .92rem; font-weight: 600; color: var(--pv-ink);
+}
+.pv-layout details.pv-avviso > summary::-webkit-details-marker { display: none; }
+.pv-layout details.pv-avviso > summary::after { content: "+"; font-weight: 700; flex: none; }
+.pv-layout details.pv-avviso[open] > summary::after { content: "–"; }
+.pv-layout details.pv-avviso > p { padding: 0 16px 14px; margin: 0; font-size: .93rem; line-height: 1.6; max-width: 80ch; }
+.pv-layout[data-tema="pixel"] details.pv-avviso { border: 3px solid var(--pv-ink); box-shadow: var(--pv-ombra); }
+.pv-layout[data-tema="pixel"] details.pv-avviso > summary { font-family: var(--pv-font); font-weight: 700; font-size: 15px; line-height: 1.4; }
+
+/* l'interruttore dei due vestiti è sceso nel piede */
+.pv-piede { align-items: center; }
+.pv-piede .pv-tema { order: 9; }
+
+/* ========================================================= IL RISULTATO == */
+#risultato.pv-scheda { padding-top: 22px; }
+.ris-testa { margin: 0 0 14px; }
+.ris-listino {
+  display: flex; align-items: center; gap: 8px; margin: 0 0 10px !important; max-width: none !important;
+  font-size: .86rem; line-height: 1.35 !important; color: var(--pv-muto);
+  padding: 8px 12px; border: 1px dashed var(--pv-linea2); background: var(--pv-fondo);
+  border-radius: var(--pv-raggio);
+}
+.ris-listino > span { flex: 1; min-width: 0; }
+.ris-listino a { flex: none; font-weight: 600; color: var(--pv-ink); text-decoration: underline; text-underline-offset: 3px; padding: 6px 0; }
+.ris-listino.vecchio, .ris-listino.scaduto, .ris-listino.ignoto { background: #FDE3DF; color: #5E1A13; border-color: #5E1A13; }
+.ris-listino.attenzione { background: #FEF7E6; color: #5B430C; }
+.ris-ctx { margin: 0 0 12px !important; font-size: .9rem; line-height: 1.45 !important; color: var(--pv-muto); max-width: none !important; }
+.ris-ctx b { color: var(--pv-ink); font-size: 1rem; }
+
+/* il quadratino: pieno = verificato, tratteggiato = stima, metà = in parte */
+.q {
+  display: inline-block; flex: none; width: 12px; height: 12px; border: 2px solid var(--pv-ink);
+  vertical-align: -1px; margin-right: 6px; background: var(--pv-ink);
+}
+.q.no { background: transparent; border-style: dashed; }
+.q.mezzo { background: linear-gradient(90deg, var(--pv-ink) 50%, transparent 50%); }
+.q.vuoto { visibility: hidden; }
+
+/* le tre fasce: impilate, come tre slot di salvataggio */
+.colonne.slot { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; margin: 0; }
+.colonne.slot .prezzo { padding: 12px 16px; display: flex; flex-direction: column; gap: 3px; }
+.colonne.slot .prezzo:focus-visible { outline: 3px solid var(--pv-rosso); outline-offset: 2px; }
+.slot-riga { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.colonne.slot .prezzo .slot-nome {
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-muto); font-weight: 600;
+}
+.colonne.slot .prezzo .cifra { margin: 0; font-size: 1.45rem; white-space: nowrap; }
+.colonne.slot .prezzo.on .cifra { font-size: 2.1rem; }
+.colonne.slot .prezzo .piccolo { font-size: .84rem; }
+.slot-margine { font-size: .84rem; font-weight: 600; color: var(--pv-ink); margin-top: 6px; }
+.barra-vs { display: flex; height: 14px; border: 2px solid var(--pv-ink); background: var(--pv-carta); margin-top: 6px; }
+.barra-vs b { display: block; background: var(--pv-ink); }
+.barra-vs u { display: block; flex: 1; text-decoration: none;
+  background: repeating-linear-gradient(135deg, transparent 0 4px, rgba(15,26,36,.28) 4px 8px); }
+.barra-leg { display: flex; justify-content: space-between; gap: 10px; font-size: .8rem; color: var(--pv-testo); margin-top: 5px; }
+.ris-testa.vecchio .prezzo { border-style: dashed; }
+
+.pv-layout[data-tema="pixel"] .colonne.slot .prezzo .slot-nome { font-family: var(--pv-font-px); font-size: 9px; letter-spacing: 0; color: var(--pv-ink); line-height: 1.6; }
+.pv-layout[data-tema="pixel"] .colonne.slot .prezzo .cifra { font-family: var(--pv-font-px); font-size: 16px; margin: 0; }
+.pv-layout[data-tema="pixel"] .colonne.slot .prezzo.on .cifra { font-size: 24px; }
+.pv-layout[data-tema="pixel"] .colonne.slot .prezzo.on { border-color: var(--pv-rosso); box-shadow: var(--pv-ombra); background: #FDE3B0; }
+.pv-layout[data-tema="pixel"] .slot-margine { font-family: var(--pv-font-px); font-size: 9px; line-height: 1.7; font-weight: 400; }
+.pv-layout[data-tema="pixel"] .barra-vs u { background: repeating-linear-gradient(135deg, var(--pv-carta) 0 4px, var(--pv-giallo) 4px 8px); }
+.pv-layout[data-tema="pixel"] .ris-listino { border: 2px dashed var(--pv-ink); background: var(--pv-carta); color: var(--pv-testo); }
+.pv-layout[data-tema="pixel"] .ris-listino.vecchio,
+.pv-layout[data-tema="pixel"] .ris-listino.scaduto,
+.pv-layout[data-tema="pixel"] .ris-listino.ignoto { background: #FDE3DF; color: #5E1A13; }
+.pv-layout[data-tema="pixel"] .ris-testa.vecchio .prezzo { border-style: dashed; }
+
+/* su schermo largo le tre fasce tornano affiancate */
+@media (min-width: 861px) {
+  .colonne.slot { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+  .slot-riga { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .colonne.slot .prezzo { padding: 16px 18px; }
+}
+
+/* ---------------------------------------------------------- l'indice ----- */
+.ris-indice {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 8px 0; margin: 0 0 8px;
+  position: sticky; top: var(--nav-h, 0px); z-index: 30; background: var(--pv-carta);
+  border-bottom: 1px solid var(--pv-linea);
+}
+.ris-indice::-webkit-scrollbar { display: none; }
+.ris-indice a {
+  flex: none; display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px;
+  border: 1px solid var(--pv-linea2); border-radius: 100px; font-size: .82rem; font-weight: 600;
+  color: var(--pv-ink); background: var(--pv-carta); white-space: nowrap;
+}
+.ris-indice a:hover, .ris-indice a:focus-visible { border-color: var(--pv-ink); background: var(--pv-fondo); }
+.pv-layout[data-tema="pixel"] .ris-indice { border-bottom: 3px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .ris-indice a {
+  font-family: var(--pv-font-px); font-size: 8px; font-weight: 400; text-transform: uppercase;
+  border: 2px solid var(--pv-ink); border-radius: 0; box-shadow: 2px 2px 0 var(--pv-ink); margin-bottom: 3px;
+}
+.pv-layout[data-tema="pixel"] .ris-indice a:hover { background: var(--pv-giallo); }
+
+/* --------------------------------------------------------- le sezioni ---- */
+.pv-layout details.sez { padding: 0; margin: 10px 0; overflow: visible; }
+.pv-layout details.sez > summary {
+  list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 52px; padding: 8px 16px; cursor: pointer;
+}
+.pv-layout details.sez > summary::-webkit-details-marker { display: none; }
+.pv-layout details.sez > summary::after { content: "+"; flex: none; font-weight: 700; font-size: 1.1rem; color: var(--pv-ink); }
+.pv-layout details.sez[open] > summary::after { content: "–"; }
+.pv-layout details.sez[open] > summary { border-bottom: 1px solid var(--pv-linea); }
+.sez-t { flex: none; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--pv-ink); }
+.sez-k { flex: 1; min-width: 0; text-align: right; font-size: .88rem; font-weight: 500; color: var(--pv-muto); line-height: 1.35; }
+.sez-c { padding: 14px 16px 16px; }
+.sez-c > :first-child { margin-top: 0; }
+.sez-c > :last-child { margin-bottom: 0; }
+.pv-layout[data-tema="pixel"] details.sez > summary { font-family: var(--pv-font); font-size: 16px; line-height: 1.4; }
+.pv-layout[data-tema="pixel"] details.sez[open] > summary { border-bottom: 2px dashed var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .sez-t { font-family: var(--pv-font-px); font-size: 10px; letter-spacing: 0; font-weight: 400; line-height: 1.6; }
+.pv-layout[data-tema="pixel"] .sez-k { font-size: 14px; color: var(--pv-testo); }
+/* i dettagli dentro una sezione: più leggeri della sezione che li contiene */
+.pv-layout .sez-c details { box-shadow: none; margin: 10px 0 0; padding: 0; }
+.pv-layout .sez-c details > summary { padding: 12px 14px; min-height: 44px; display: flex; align-items: center; font-family: var(--pv-font); font-size: .92rem; font-weight: 700; }
+.pv-layout .sez-c details > .tabella-wrap, .pv-layout .sez-c details > p { margin: 0; padding: 0 14px 12px; }
+.pv-layout[data-tema="pixel"] .sez-c details { box-shadow: none; }
+.pv-layout[data-tema="pixel"] .sez-c details > summary { font-family: var(--pv-font); font-size: 15px; }
+
+/* la prosa: è qui che il carattere deve reggere */
+.prosa p { font-size: 1rem; line-height: 1.65 !important; max-width: 68ch !important; margin: 0 0 12px !important; }
+.prosa p.nota { font-size: .92rem; }
+
+/* le voci: schede, non una tabella */
+.voci { border-top: 1px solid var(--pv-linea); }
+.voce {
+  display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; column-gap: 6px; row-gap: 2px;
+  align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--pv-linea);
+}
+.voce .q { margin: 0; align-self: center; }
+.voce-n { font-weight: 700; color: var(--pv-ink); }
+.voce-c { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--pv-ink); }
+.voce-s { grid-column: 2 / 4; font-size: .87rem; line-height: 1.5; color: var(--pv-muto); }
+.voce.tot { border-top: 2px solid var(--pv-ink); border-bottom: none; }
+.voce.tot .voce-c { font-size: 1.15rem; }
+.legenda { font-size: .82rem !important; color: var(--pv-muto); display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: center; margin: 10px 0 14px !important; }
+.legenda .q { margin-right: 5px; }
+.pv-layout[data-tema="pixel"] .voce, .pv-layout[data-tema="pixel"] .voci { border-color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .voce { border-bottom-style: dashed; border-bottom-width: 1px; }
+.pv-layout[data-tema="pixel"] .voce-c { font-family: var(--pv-font-px); font-size: 11px; font-weight: 400; }
+.pv-layout[data-tema="pixel"] .voce.tot .voce-c { font-size: 14px; }
+.pv-layout[data-tema="pixel"] .voce.tot { border-top: 3px solid var(--pv-ink); }
+.pv-layout[data-tema="pixel"] .voce-s { color: var(--pv-testo); font-size: 14px; }
+
+/* le leve */
+.compromesso { min-height: 52px; }
+.compromesso > span:first-child { min-width: 0; }
+.compromesso:focus-visible { outline: 3px solid var(--pv-rosso); outline-offset: 2px; }
+.pv-layout[data-tema="pixel"] .compromesso { font-size: 15px; }
+.pv-layout[data-tema="pixel"] .compromesso .d { font-size: 11px; }
+.sez-c .manopole { margin: 14px 0 0; }
+
+/* il confronto sta dentro la sua sezione: via la cornice doppia */
+.sez-c .confronto { border: none !important; box-shadow: none !important; padding: 0; margin: 0; background: transparent; }
+.pv-layout[data-tema="pixel"] .confronto .r.testa .eti,
+.pv-layout[data-tema="pixel"] .confronto .r.sep .l { font-size: 8px; line-height: 1.6; }
+.pv-layout[data-tema="pixel"] .confronto .r .l { color: var(--pv-testo); }
+
+/* i giorni */
+.giorno .n { margin-right: 6px; }
+.giorno li.serie { list-style: none; position: relative; }
+.giorno li.serie::before {
+  content: ""; position: absolute; left: -19px; top: .42em; width: 12px; height: 9px;
+  border: 2px solid var(--pv-rosso); box-shadow: 0 3px 0 -1px var(--pv-rosso);
+}
+.pv-layout[data-tema="pixel"] .giorno .n { font-size: 9px; }
+.pv-layout[data-tema="pixel"] .giorno ul { font-size: 15px; }
+.mappa-doppia { margin: 0 0 14px; }
+.mappa-vera { max-width: 100%; }
+
+/* etichette verificato / stima: a 6,5 px non si leggevano */
+.pv-layout[data-tema="pixel"] .tag { font-family: var(--pv-font); font-size: 12px; font-weight: 700; text-transform: none; letter-spacing: 0; padding: 1px 6px; margin-left: 0; white-space: nowrap; }
+
+/* tabelle */
+#risultato table.impila { font-size: .88rem; }
+.pv-layout[data-tema="pixel"] #risultato th { font-family: var(--pv-font); font-size: 12px; font-weight: 700; text-transform: none; letter-spacing: 0; }
+
+/* il menu Salva e i comandi del risultato */
+.salva-menu {
+  display: grid; gap: 8px; margin: 18px 0 0; padding: 14px; border: 1px solid var(--pv-linea2);
+  border-radius: var(--pv-raggio); background: var(--pv-fondo);
+}
+.salva-menu[hidden] { display: none; }
+.salva-menu button, .salva-menu #stampa { width: 100%; min-height: 48px; text-align: left; padding: 0 16px; }
+.salva-menu .nota { margin: 0; }
+.salva-menu .nota:empty { display: none; }
+.pv-layout[data-tema="pixel"] .salva-menu { border: 3px solid var(--pv-ink); box-shadow: var(--pv-ombra); background: var(--pv-carta); }
+.pv-layout[data-tema="pixel"] .salva-menu button { font-family: var(--pv-font); font-size: 15px; font-weight: 700; background: var(--pv-carta); }
+#salva { background: var(--pv-ink); color: #fff; border-color: var(--pv-ink); }
+.pv-layout[data-tema="pixel"] #salva { background: var(--pv-rosso); color: #fff; }
+.pv-layout[data-tema="pixel"] #stampa { background: var(--pv-carta); color: var(--pv-ink); }
+
+/* la mascotte resta nella spalla: non passa più sopra il testo */
+@media (min-width: 901px) {
+  .pv-layout[data-tema="pixel"] .pv-lato { padding-bottom: 92px; }
+}
+
+/* ================================================================ HUD ==== */
+body[data-tema="pixel"] #hud { min-width: 0; flex-wrap: nowrap; }
+body[data-tema="pixel"] #hud .hud-costo { min-width: 0; }
+
+/* il cielo della stagione: la striscia dell'HUD e della testa del risultato */
+body[data-tema="pixel"][data-cielo="primavera"] #hud { background: #FCE1E6; }
+body[data-tema="pixel"][data-cielo="estate"] #hud { background: #CFEAF7; }
+body[data-tema="pixel"][data-cielo="autunno"] #hud { background: #FAD9B5; }
+body[data-tema="pixel"][data-cielo="inverno"] #hud { background: #E6EEF6; }
+
+/* il Maneki: una riga, in basso, sopra la barra dei comandi */
+#maneki {
+  position: fixed; right: 16px; bottom: 16px; z-index: 60; max-width: min(380px, calc(100vw - 32px));
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+  background: #FFF9E8; color: #1E2A47; border: 3px solid #1E2A47; box-shadow: 4px 4px 0 #1E2A47;
+  font-family: 'Zen Maru Gothic', 'Inter', sans-serif; font-weight: 500; font-size: 15px; line-height: 1.4;
+}
+#maneki[hidden] { display: none; }
+#maneki img { flex: none; width: 44px; height: auto; image-rendering: pixelated; }
+#maneki p { margin: 0; flex: 1; }
+#maneki button {
+  flex: none; width: 36px; height: 36px; border: 2px solid #1E2A47; background: #F7C948; color: #1E2A47;
+  font-size: 18px; line-height: 1; cursor: pointer; padding: 0;
+}
+@media (max-width: 860px) { #maneki { left: 12px; right: 12px; bottom: calc(74px + env(safe-area-inset-bottom, 0px)); max-width: none; } }
+
+/* =========================================================== TELEFONO ==== */
+@media (max-width: 860px) {
+  .pv-main { padding: 10px 12px 24px; }
+  .pv-scheda { padding: 16px 14px 18px; }
+  #risultato.pv-scheda { padding: 12px 12px 16px; }
+  .pv-lato { padding: 10px 12px 8px; gap: 8px; }
+  .pv-torii { width: 30px; height: 30px; }
+  .pv-layout[data-tema="pixel"] .pv-nome { font-size: 10px; }
+  .pv-layout[data-tema="pixel"] .pv-nome b { text-shadow: none; }
+  .pv-logo { min-height: 44px; }
+  /* il dettaglio lungo di ogni interesse su telefono gonfiava il passo 1 a
+     cinquemila pixel: lo stesso testo arriva al passo dopo, per i soli scelti */
+  .carte.interessi .carta .aiuto { display: none; }
+  .pv-piede a, .pv-piede .pv-tema { min-height: 44px; display: inline-flex; align-items: center; }
+  .pv-layout[data-tema="pixel"] .pv-tema span { padding: 12px 10px; }
+  .ris-listino a { min-height: 44px; display: inline-flex; align-items: center; }
+  /* la riga dei passi: i numeri già fatti si toccano, il testo sta sotto nella barra */
+  .pv-passi li .pallino { width: 30px; height: 30px; }
+  .pv-layout[data-tema="pixel"] .pv-passi li .pallino { width: 30px; height: 30px; font-size: 9px; }
+  .pv-passi li.on .testo { display: none; }
+  .pv-layout details.pv-avviso { margin-bottom: 12px; }
+  .pv-layout[data-tema="pixel"] h2 { font-size: 12px; line-height: 1.8; }
+  /* l'illustrazione del passo scende a francobollo, accanto al titolo: a tutta
+     larghezza spingeva la domanda oltre la prima schermata */
+  .passo { position: relative; gap: 0; }
+  .illu, .pv-layout[data-tema="pixel"] .illu {
+    position: absolute; right: 0; top: -4px; width: 60px; padding: 3px; border-radius: 10px;
+    box-shadow: 2px 2px 0 var(--pv-ink);
+  }
+  .pv-layout:not([data-tema="pixel"]) .illu { box-shadow: none; }
+  .passo:not(.largo) h2 { padding-right: 72px; min-height: 60px; }
+  #barra { margin-bottom: 16px; }
+
+  /* l'HUD: cifra e margine, niente che esca dal bordo */
+  /* su due righe: sopra dove sei e l'audio, sotto la cifra col suo margine */
+  body[data-tema="pixel"] #hud { padding: 6px 10px 8px; gap: 4px 8px; margin-bottom: 10px; font-size: 9px; flex-wrap: wrap; justify-content: space-between; }
+  body[data-tema="pixel"] #hud .hud-costo { order: 3; flex: 1 0 100%; margin-left: 0; }
+  body[data-tema="pixel"] #hud .hud-margine { margin-left: auto; }
+  body[data-tema="pixel"] #hud .hud-mondo { letter-spacing: 0; }
+  body[data-tema="pixel"] #hud .hud-parziale { display: none; }
+  body[data-tema="pixel"] #hud .hud-margine u { display: none; }
+  body[data-tema="pixel"] #hud .hud-costo { gap: 6px; }
+  body[data-tema="pixel"] #hud .hud-costo img { width: 16px; height: 16px; }
+  body[data-tema="pixel"] #hud #hud-audio { padding: 6px 8px; font-size: 8px; min-height: 40px; }
+
+  /* i campi: a 16 px il telefono non ingrandisce la pagina quando si scrive */
+  .pv-layout input[type=number], .pv-layout input[type=text], .pv-layout select { font-size: 16px; min-height: 48px; }
+  .pv-layout fieldset label { display: block; position: relative; padding: 10px 0 10px 32px; margin: 2px 0; min-height: 44px; }
+  .pv-layout fieldset label input[type=radio] { position: absolute; left: 2px; top: 13px; margin: 0; width: 18px; height: 18px; }
+  .carte { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .carte.fitte { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .carta { min-height: 48px; }
+
+  /* la barra dei comandi, fissa in basso: una riga sola */
+  body[data-tema="pixel"] #comandi, .pv-layout #comandi {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; margin: 0;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+    background: var(--pv-carta, #FFF9E8); border-top: 1px solid var(--pv-linea2);
+    display: flex; flex-wrap: nowrap; gap: 8px;
+  }
+  body[data-tema="pixel"] #comandi { border-top: 3px solid #1E2A47; box-shadow: none; }
+  .pv-layout #comandi button { flex: 1 1 0; min-width: 0; min-height: 46px; padding: 0 8px; white-space: nowrap; }
+  .pv-layout[data-tema="pixel"] #comandi button { font-size: 9px; box-shadow: 2px 2px 0 var(--pv-ink); }
+  #avanti span { display: none; }
+  #wizard, body[data-tema="pixel"] #wizard { padding-bottom: 18px; }
+  .pv-main { padding-bottom: 86px; }
+  .salva-menu { position: fixed; left: 12px; right: 12px; bottom: calc(72px + env(safe-area-inset-bottom, 0px)); z-index: 51; margin: 0; }
+
+  .ris-indice { margin-left: -12px; margin-right: -12px; padding-left: 12px; padding-right: 12px; }
+  .pv-layout details.sez > summary { padding: 8px 12px; }
+  .sez-c { padding: 12px; }
+  .sez-k { font-size: .84rem; }
+  .pv-piede { gap: 8px 18px; font-size: 12px; }
+}
+
+/* le tabelle si impilano: ogni cella porta la sua etichetta, niente scorrimento laterale */
+@media (max-width: 620px) {
+  #risultato .tabella-wrap { overflow-x: visible; }
+  #risultato table.impila, #risultato table.impila tbody, #risultato table.impila tr,
+  #risultato table.impila td { display: block; width: 100%; }
+  #risultato table.impila { border: none !important; background: transparent; }
+  #risultato table.impila tr:first-child { display: none; }          /* la riga delle intestazioni */
+  #risultato table.impila tr { border-bottom: 1px solid var(--pv-linea2); padding: 8px 0; }
+  #risultato table.impila tr:last-child { border-bottom: none; }
+  #risultato table.impila td {
+    border: none !important; padding: 2px 0; text-align: left !important; white-space: normal !important;
+    display: flex; gap: 10px; justify-content: space-between; align-items: baseline;
+  }
+  #risultato table.impila td::before {
+    content: attr(data-l); flex: none; font-size: .78rem; color: var(--pv-muto); font-weight: 700;
+  }
+  #risultato table.impila td:first-child { font-weight: 700; color: var(--pv-ink); display: block; }
+  #risultato table.impila td:first-child::before { content: none; }
+  #risultato table.impila td[colspan]::before { content: none; }
+  .confronto .r.testa select { font-size: 16px; min-height: 44px; }
+  .confronto .esito button { width: 100%; min-height: 46px; }
+}
+
+@media (max-width: 380px) {
+  .pv-layout[data-tema="pixel"] .colonne.slot .prezzo.on .cifra { font-size: 20px; }
+  .pv-layout[data-tema="pixel"] .colonne.slot .prezzo .cifra { font-size: 14px; }
+  .pv-layout[data-tema="pixel"] #comandi button { font-size: 8px; }
+  body[data-tema="pixel"] #hud .hud-mondo { font-size: 8px; }
+}
+
+/* la scenetta d'ingresso su telefono: il dialogo non deve toccare i bordi */
+@media (max-width: 720px) {
+  #intro .in-dialogo { top: 12%; padding: 16px 16px 14px; }
+  #intro .in-testo { font-size: 10px; line-height: 2; min-height: 0; }
+  #intro .in-inizia { min-height: 44px; }
+  #intro .in-skip { min-height: 36px; }
+  #intro .in-blocco { bottom: 250px; }
+  #intro .in-sorpresa { bottom: 256px; }
+  #intro .in-moneta { bottom: 282px; }
+}
+
+@media print {
+  .ris-indice, .salva-menu, #hud, #mascotte { display: none !important; }
+  .pv-layout details.sez > .sez-c { display: block; }
+}
+
+.mappa-scambia .mappa-stile { min-height: 44px; }

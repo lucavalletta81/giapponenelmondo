@@ -132,7 +132,21 @@ function alloggioAuto(fascia, stagioneId) {
     zone: righe.length, strutture: strutture,
     economica: righe[0], cara: righe[righe.length - 1],
     min: righe[0].min, max: righe[righe.length - 1].max,
-    campione: strutture, esempio: righe[0].esempio, letto: righe[0].letto,
+    campione: strutture, esempio: righe[0].esempio,
+    /* La data della mediana: quella entro cui è stata letta ALMENO LA METÀ delle
+       zone che la compongono. La più recente sarebbe barare (basta una zona
+       riletta per sembrare freschi); la più vecchia pure, al contrario: una
+       zona sola rimasta indietro farebbe sembrare vecchio un numero che per
+       nove decimi è di ieri. Quante sono rimaste indietro si dice a parte. */
+    letto: (function () {
+      var d = righe.map(function (x) { return x.letto; }).filter(Boolean).sort().reverse();
+      return d.length ? d[Math.floor((d.length - 1) / 2)] : null;
+    })(),
+    indietro: (function () {
+      var d = righe.map(function (x) { return x.letto; }).filter(Boolean).sort().reverse();
+      var rif = d.length ? d[Math.floor((d.length - 1) / 2)] : null;
+      return d.filter(function (x) { return x < rif; }).length;
+    })(),
     elenco: righe
   };
 }
@@ -524,6 +538,23 @@ function fattoreWeekend(notti, dataVolo) {
   return { f: (5 + w.venerdi + w.sabato) / 7, ven: notti / 7, sab: notti / 7, vero: false };
 }
 
+/* La tassa di soggiorno di Tokyo (宿泊税). Fonte: Ufficio tributi del Governo
+   metropolitano, tax.metro.tokyo.lg.jp/kazei/leisure/shuk/ — letta il
+   28/09/2026. Si paga a persona e a notte, sul prezzo della sola camera:
+     fino al 31/03/2027  sotto 10.000 ¥ niente · 10.000-14.999 ¥ 100 ¥ · da 15.000 ¥ 200 ¥
+     dal  01/04/2027     sotto 13.000 ¥ niente · da 13.000 ¥ il 3% del prezzo
+   La regola si sceglie sulla data del soggiorno, non su quella di oggi. */
+var TASSA_TOKYO = {
+  fonte: "tax.metro.tokyo.lg.jp", verificato: "2026-09-28", cambia: "2027-04-01"
+};
+function tassaSoggiorno(yenPersonaNotte, dataSoggiorno) {
+  var nuova = !!dataSoggiorno && dataSoggiorno >= TASSA_TOKYO.cambia;
+  if (nuova) return yenPersonaNotte >= 13000 ? Math.round(yenPersonaNotte * 0.03) : 0;
+  if (yenPersonaNotte >= 15000) return 200;
+  if (yenPersonaNotte >= 10000) return 100;
+  return 0;
+}
+
 function calcolaLivello(input, itin, treni, stileKey) {
   var st = stagione(input.stagione), stile = STILI[stileKey];
   var nCamere = camere(input);
@@ -599,6 +630,20 @@ function calcolaLivello(input, itin, treni, stileKey) {
      gruppo (perPersona × teste) resta il prezzo vero delle camere */
   var alloggioGruppo = alloggioFonte ? alloggioFonte.eur * notti * nCamere * fWeek
                                      : eur(alloggio);
+  /* la tassa di soggiorno: solo sul prezzo vero di Tokyo, dove sappiamo quanto
+     costa la camera. Si calcola sul prezzo a testa, la pagano tutti gli ospiti. */
+  var tassa = null;
+  if (alloggioFonte) {
+    var ospiti = (input.adulti || 1) + (input.bambini || 0);
+    var yenTesta = alloggioFonte.eur * fWeek * cambio().v * nCamere / ospiti;
+    var quando = (vAnticipo && vAnticipo.out) || null;
+    var yenNotte = tassaSoggiorno(yenTesta, quando);
+    tassa = { yen_notte: yenNotte, ospiti: ospiti, notti: notti,
+              eur: eur(yenNotte * ospiti * notti),
+              regola: quando && quando >= TASSA_TOKYO.cambia ? "nuova" : "attuale",
+              fonte: TASSA_TOKYO.fonte, verificato: TASSA_TOKYO.verificato };
+    alloggioGruppo += tassa.eur;
+  }
   var alloggioEur = alloggioGruppo / teste;
   var perPersona = volo + extra
     + eur(vociYen.trasporti) + alloggioEur + eur(vociYen.cibo) + eur(vociYen.attivita);
@@ -608,7 +653,7 @@ function calcolaLivello(input, itin, treni, stileKey) {
   var persone = teste;
   return {
     stile: stileKey, nome: stile.nome,
-    camere: nCamere, weekend: fWeek, weekend_notti: week,
+    camere: nCamere, weekend: fWeek, weekend_notti: week, tassa: tassa,
     volo_fonte: v || null,
     alloggio_fonte: alloggioFonte,
     zona: zona,
@@ -946,7 +991,7 @@ function prosa(r) {
       af.economica.nome + " sta a " + af.economica.eur + " euro a notte, " +
       af.cara.nome + " a " + af.cara.eur + ". Su " + liv.notti + " notti sono " +
       arrotonda((af.cara.eur - af.economica.eur) * liv.notti * (liv.camere || 1)) + " euro di differenza sul soggiorno: " +
-      "le leve qui sotto te la fanno vedere.");
+      "le leve te la fanno vedere.");
   } else if (af) {
     p.push("Anche l'alloggio è vero: " + af.eur + " euro a notte è la mediana di " + af.campione +
       " strutture che Google Hotels elenca " + aZona(liv.zona) + " in quella fascia e in quelle date" +
@@ -961,7 +1006,7 @@ function prosa(r) {
     if (g <= i.budgetMax) p.push("Rientra nel budget che hai indicato (" + i.budgetMax + " euro), con " +
       arrotonda(i.budgetMax - g) + " euro di margine.");
     else p.push("Sfora il budget di " + arrotonda(g - i.budgetMax) +
-      " euro. Guarda i compromessi qui sotto: la leva più efficace è di solito la stagione, non i giorni.");
+      " euro. Guarda le leve: la più efficace è di solito la stagione, non i giorni.");
   }
   return p;
 }

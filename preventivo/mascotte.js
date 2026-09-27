@@ -19,8 +19,9 @@ var ATTIVITA = [
   ["arcade-g-saluta1.png","arcade-g-saluta2.png"],
   ["arcade-g-buste.png",  "arcade-g-idle.png"]
 ];
-/* dove può piazzarsi (percento della larghezza finestra) */
-var SPOT = [6, 22, 40, 58, 76, 90];
+/* dove può piazzarsi: pixel dal bordo sinistro, tutti DENTRO la spalla (264 px).
+   Prima girava per tutta la finestra e finiva sopra il testo del risultato. */
+var SPOT = [14, 52, 90, 128, 166, 200];
 
 var el = null, spot = 0, attivita = -1, frame = 0;
 var timerFrame = null, timerPasso = null, timerCambio = null, ultimoN = -1;
@@ -54,9 +55,9 @@ function cammina() {
   spot = nuovo;
   var versoSinistra = a < da;
   el.style.transform = versoSinistra ? "scaleX(-1)" : "";
-  var durata = Math.abs(a - da) * 55;      /* ~55 ms per punto percentuale */
+  var durata = Math.abs(a - da) * 14;      /* ~14 ms per pixel */
   el.style.transition = "left " + durata + "ms linear";
-  el.style.left = a + "%";
+  el.style.left = a + "px";
   var f = 0;
   timerPasso = setInterval(function () {
     f = 1 - f;
@@ -76,7 +77,7 @@ function monta() {
   el.width = 48;
   el.alt = "";
   el.title = "clic per fargli cambiare idea";
-  el.style.left = SPOT[0] + "%";
+  el.style.left = SPOT[0] + "px";
   el.src = im("arcade-g-idle.png");
   el.onclick = function () { cammina(); if (window.SUONI) SUONI.fai("blip"); };
   document.body.appendChild(el);

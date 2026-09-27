@@ -73,7 +73,7 @@ var STILE = `
   .pagina2 { break-before:page; }
 `;
 
-function euro(n) { return Math.round(n).toLocaleString("it-IT") + " €"; }
+function euro(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " €"; }
 
 /* Tutto quello che entra nel documento passa da qui. Nel preventivo finiscono
    nomi di alberghi e di compagnie RASCHIATI da Google: oggi ce ne sono tre con
@@ -89,7 +89,7 @@ function esc(t) {
    niente, altrimenti carta e schermo potrebbero dire numeri diversi. */
 function componi(d) {
   var h = [];
-  h.push('<div class="cop"><div class="occhiello">Tokyo Budget Lab · Giappone nel Mondo</div>' +
+  h.push('<div class="cop"><div class="occhiello">Giapponemetro · Giappone nel Mondo</div>' +
     "<h1>" + esc(d.titolo) + "</h1>" +
     '<div class="sotto">' + esc(d.sottotitolo) + "</div>" +
     '<div class="quando">' + esc(d.quando) + "</div></div>");

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy — Tokyo Budget Lab · Giappone nel Mondo</title>
+  <title>Privacy · Giapponemetro · Giappone nel Mondo</title>
   <meta name="description" content="Privacy dello strumento che stima quanto costa un viaggio in Giappone." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
@@ -48,13 +48,14 @@
 
   <main class="servizio">
 <h1>Privacy</h1>
-<p class="occhiello">Aggiornata il 31 agosto 2026</p>
+<p class="occhiello">Aggiornata il 28 settembre 2026</p>
 
 <h2>La versione corta</h2>
 <p>Questo strumento non ti chiede niente. Le risposte che dai al questionario restano nel tuo
 browser, il preventivo è calcolato dal tuo computer, e quando chiudi la pagina non resta traccia
-da nessuna parte se non nel tuo browser. L'unica cosa che esce è un «+1» al contatore pubblico
-dei preventivi fatti — nessun dato tuo, solo il numero che sale.</p>
+da nessuna parte se non nel tuo browser. L'unica cosa che esce sono dei «+1»: uno al contatore
+dei preventivi fatti, e uno per ogni tappa del questionario che passi. Nessun dato tuo, solo
+numeri che salgono.</p>
 
 <h2>Che cosa succede davvero quando lo usi</h2>
 <ul>
@@ -68,13 +69,22 @@ dei preventivi fatti — nessun dato tuo, solo il numero che sale.</p>
   <li><b>Memoria locale del browser</b> (<code>localStorage</code>): ci teniamo tre cose minime —
       quale grafica hai scelto, se l'audio è acceso, se hai già visto la scenetta d'ingresso.
       Stanno sul tuo dispositivo, le cancelli svuotando i dati del sito.</li>
-  <li><b>Il PDF</b> che scarichi è costruito dal tuo browser. Non passa da noi.</li>
+  <li><b>Il PDF e l'immagine</b> che salvi sono costruiti dal tuo browser. Non passano da noi.</li>
+  <li><b>Il link del preventivo.</b> Quando copi il link, le tue risposte finiscono dentro
+      l'indirizzo, nella parte dopo il cancelletto (<code>#</code>). Quella parte il browser
+      <b>non la manda a nessun server</b>: la legge solo la pagina, sul dispositivo di chi apre il
+      link. Chi riceve il link vede le risposte che hai dato: mandalo a chi vuoi tu.</li>
   <li><b>Il contatore dei preventivi.</b> Quando arrivi al risultato, la pagina chiede a un
       contatore pubblico (<code>abacus.jasoncameron.dev</code>) di aumentare di uno e gli chiede
-      indietro il totale, che vedi scritto in fondo. Parte solo quel «+1»: non le tue risposte,
-      non il preventivo, nessun identificativo, nessun cookie. Serve a noi per sapere se lo
-      strumento viene usato, e a te per sapere quanti l'hanno usato prima. Come per ogni chiamata
+      indietro il totale. Parte solo quel «+1»: non le tue risposte,
+      non il preventivo, nessun identificativo, nessun cookie. Come per ogni chiamata
       a un server, quel servizio vede l'indirizzo IP da cui arriva la richiesta.</li>
+  <li><b>Le tappe.</b> Allo stesso contatore, e nello stesso modo, la pagina manda un «+1» per
+      ogni tappa: l'arrivo, ciascuno dei passi del questionario, il risultato, e quando salvi
+      l'immagine, il link o il PDF. Ogni tappa conta una volta sola per visita. Serve a una cosa:
+      sapere a quale domanda la gente si ferma, per sistemarla. I contatori sono <b>separati
+      l'uno dall'altro</b>: si sa quante persone sono arrivate al passo 4, non quali, e non c'è
+      modo di ricostruire il percorso di una persona.</li>
 </ul>
 
 <h2>Quello che non controlliamo, e che è giusto tu sappia</h2>
@@ -82,15 +92,17 @@ dei preventivi fatti — nessun dato tuo, solo il numero che sale.</p>
   <li>Il sito è servito da <b>GitHub Pages</b>. Come ogni server web, l'infrastruttura registra le
       richieste (indirizzo IP, orario, pagina) per motivi tecnici e di sicurezza: è una raccolta
       che avviene fuori dalle nostre mani e su cui non abbiamo accesso né controllo.</li>
-  <li>I <b>caratteri tipografici</b> arrivano da Google Fonts: il tuo browser fa una richiesta ai
-      server di Google, che vede l'IP da cui arriva.</li>
+  <li>I <b>caratteri tipografici</b> dello strumento stanno dentro il sito: per mostrarli non si
+      chiama nessuno. La barra in alto, che è quella di tutto il sito, prende i suoi da Google
+      Fonts: il tuo browser fa una richiesta ai server di Google, che vede l'IP da cui arriva.</li>
   <li>Le <b>tessere della mappa reale</b> sono immagini già salvate nel sito: guardarle non
       contatta nessun servizio esterno.</li>
 </ul>
 
 <h2>I prezzi</h2>
-<p>I prezzi che vedi sono raccolti in anticipo da noi (Google Flights, Google Hotels, siti
-ufficiali dei musei e delle ferrovie) e salvati nel sito come un listino. Quando usi lo strumento
+<p>I prezzi che vedi sono raccolti in anticipo da noi, una volta alla settimana (Google Flights,
+Google Hotels, siti ufficiali dei musei, delle ferrovie e dell'ufficio tributi di Tokyo) e salvati
+nel sito come un listino. Quando usi lo strumento
 <b>non interroghiamo nessun servizio in tempo reale</b>: nessuno, fuori da qui, sa che stai
 facendo un preventivo per il Giappone.</p>
 
@@ -104,7 +116,7 @@ farti cancellare. Per qualunque domanda: <a href="/#about">i contatti del sito</
     <div class="container footer-inner">
       <p class="footer-logo"><span class="logo-jp">日本</span> Giappone nel Mondo</p>
       <p class="footer-copy">&copy; 2026 giapponenelmondo.com</p>
-      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 22/08/2026<!--/STAMP--></p>
+      <p class="footer-copy" style="opacity:.55;font-size:.78rem"><!--STAMP-->Aggiornato il 27/09/2026 14:49<!--/STAMP--></p>
     </div>
   </footer>
   <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>

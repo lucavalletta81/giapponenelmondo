@@ -324,6 +324,9 @@ body[data-tema="pixel"] .conta-preventivi {
   border: 2px dashed #1E2A47; background: #FFF9E8; padding: 8px 10px;
   display: inline-block;
 }
+/* display:inline-block vincerebbe su [hidden]: se il contatore non risponde
+   il riquadro non deve restare vuoto a schermo */
+.conta-preventivi[hidden] { display: none !important; }
 body[data-tema="pixel"] .conta-preventivi b { color: #E0392B; font-weight: 400; }
 #conta-piede { opacity: .85; }
 

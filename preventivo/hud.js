@@ -12,6 +12,7 @@
 var $ = function (s, r) { return (r || document).querySelector(s); };
 var im = function (n) { return (window.PV_IMG && window.PV_IMG[n]) || ("img/" + n); };
 var mostrato = -1;         /* l'ultimo valore disegnato, per lo scatto */
+function num(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
 var timerScatto = null, timerCalcolo = null;
 
 function attivo() { return document.body.getAttribute("data-tema") === "pixel"; }
@@ -43,7 +44,7 @@ function scatta(da, a) {
   timerScatto = setInterval(function () {
     k++;
     var v = k >= passi ? a : Math.round(da + (a - da) * k / passi);
-    cifra.textContent = Math.round(v).toLocaleString("it-IT") + " €";
+    cifra.textContent = num(v) + " €";
     if (window.SUONI) SUONI.fai("tick");
     if (k >= passi) { clearInterval(timerScatto); timerScatto = null; }
   }, 45);
@@ -73,7 +74,9 @@ function aggiorna() {
 
   var v, quota = 1;
   if (p.risultato) {
-    v = liv.perPersona;
+    /* la stessa cifra che sta nella scheda: arrotondata alla decina. Due
+       numeri diversi per lo stesso totale erano 3029 qui e 3030 lì. */
+    v = Math.round(liv.perPersona / 10) * 10;
   } else {
     var chiavi = [];
     for (var k = 0; k <= Math.min(p.raggiunto, p.ids.length - 1); k++)
@@ -85,11 +88,13 @@ function aggiorna() {
   /* il margine onesto: la quota non verificata dell'importo, mai sotto il 15%
      dichiarato in pagina — applicata alla parte già in tabella */
   var perc = Math.max(15, r.attendibilita.perc_importo || 15);
-  var piu = Math.round(v * perc / 100 / 10) * 10;
-  $("#hud-piu").textContent = v > 0 ? "±" + piu.toLocaleString("it-IT") + " €" : "si parte da qui";
+  /* al risultato il margine è quello della scheda, calcolato sul totale non
+     arrotondato: due cifre diverse per lo stesso margine non devono esistere */
+  var piu = Math.round((p.risultato ? liv.perPersona : v) * perc / 100 / 10) * 10;
+  $("#hud-piu").textContent = v > 0 ? "±" + num(piu) + " €" : "si parte da qui";
   $("#hud-barra-fill").style.width = (v > 0 ? Math.min(100, perc) : 0) + "%";
   if (mostrato < 0) {
-    $("#hud-cifra").textContent = Math.round(v).toLocaleString("it-IT") + " €";
+    $("#hud-cifra").textContent = num(v) + " €";
   } else if (Math.round(v) !== Math.round(mostrato)) {
     if (v > mostrato) monete(Math.min(4, 1 + Math.round(quota * 3)));
     scatta(mostrato, v);
@@ -163,17 +168,19 @@ window.PV_FINE_LIVELLO = function (r, stile) {
   });
   (function voce() {
     if (!vivo) return;
-    if (i >= ordine.length) { setTimeout(chiudi, 1400); return; }
+    if (i >= ordine.length) { setTimeout(chiudi, 800); return; }
     var k = ordine[i][0], v = Math.round(liv.voci[k] || 0);
     tot += v;
     var riga = document.createElement("div");
     riga.innerHTML = "<span>" + ordine[i][1] + "</span><b>" +
-      v.toLocaleString("it-IT") + " €</b>";
+      num(v) + " €</b>";
     box.appendChild(riga);
-    $("#fl-tot").textContent = tot.toLocaleString("it-IT") + " €";
+    $("#fl-tot").textContent = num(tot) + " €";
     if (window.SUONI) SUONI.fai("coin");
     i++;
-    setTimeout(voce, 260);
+    /* il conteggio dura un secondo e mezzo in tutto: prima erano più di tre,
+       e stavano davanti al numero che uno era venuto a cercare */
+    setTimeout(voce, 110);
   })();
 };
 
