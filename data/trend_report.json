@@ -1,29 +1,215 @@
 {
-  "generated_at": "2026-09-21",
-  "total_clusters": 9,
-  "total_videos": 47,
-  "date_range_start": "2026-09-07",
-  "date_range_end": "2026-09-21",
+  "generated_at": "2026-09-28",
+  "total_clusters": 8,
+  "total_videos": 51,
+  "date_range_start": "2026-09-14",
+  "date_range_end": "2026-09-28",
   "sections": {
-    "emergenti": [
+    "emergenti": [],
+    "crescita": [
       {
-        "label": 1,
-        "score": 0.4731,
+        "label": 7,
+        "score": 0.8787,
+        "keywords": [
+          "twitch",
+          "manga",
+          "dragon ball",
+          "dragon",
+          "ball",
+          "collezionare"
+        ],
+        "item_count": 15,
+        "total_views": 117719,
+        "velocity": 0.679,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-09-14",
+        "last_seen": "2026-09-28",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7802,
+          "casual": 0.6699
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.78,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
+              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
+              "source": "Caverna di Platone",
+              "date": "2026-09-17",
+              "views": 21154,
+              "likes": 424,
+              "duration_secs": 1589
+            },
+            {
+              "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
+              "url": "https://www.youtube.com/watch?v=IeJM0lQ5uZQ",
+              "source": "Caverna di Platone",
+              "date": "2026-09-22",
+              "views": 15172,
+              "likes": 238,
+              "duration_secs": 2348
+            },
+            {
+              "title": "BERSERK SPIEGATO FACILE",
+              "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+              "source": "Caverna di Platone",
+              "date": "2026-09-19",
+              "views": 9885,
+              "likes": 253,
+              "duration_secs": 3329
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
+            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
+            "source": "Caverna di Platone",
+            "date": "2026-09-17",
+            "views": 21154,
+            "likes": 424,
+            "duration_secs": 1589
+          },
+          {
+            "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
+            "url": "https://www.youtube.com/watch?v=IeJM0lQ5uZQ",
+            "source": "Caverna di Platone",
+            "date": "2026-09-22",
+            "views": 15172,
+            "likes": 238,
+            "duration_secs": 2348
+          },
+          {
+            "title": "BERSERK SPIEGATO FACILE",
+            "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+            "source": "Caverna di Platone",
+            "date": "2026-09-19",
+            "views": 9885,
+            "likes": 253,
+            "duration_secs": 3329
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.4564,
+        "keywords": [
+          "use",
+          "copyright",
+          "fair",
+          "fair use",
+          "anime",
+          "used owned"
+        ],
+        "item_count": 5,
+        "total_views": 137661,
+        "velocity": 0.7,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-17",
+        "last_seen": "2026-09-26",
+        "sentinel_clusters": [
+          "anime_pop_en"
+        ],
+        "languages": [
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.711,
+          "casual": 0.6753
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.711,
+        "items_by_lang": {
+          "en": [
+            {
+              "title": "Japanese Audience VS American Audience",
+              "url": "https://www.youtube.com/watch?v=s3M_B1cCEHk",
+              "source": "The Anime Man",
+              "date": "2026-09-24",
+              "views": 59250,
+              "likes": 983,
+              "duration_secs": 32
+            },
+            {
+              "title": "It's Niche... But It's Still Bad...",
+              "url": "https://www.youtube.com/watch?v=hbuxBkTgWRs",
+              "source": "The Anime Man",
+              "date": "2026-09-22",
+              "views": 24679,
+              "likes": 493,
+              "duration_secs": 32
+            },
+            {
+              "title": "Sumos Train On Pushing??",
+              "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
+              "source": "The Anime Man",
+              "date": "2026-09-17",
+              "views": 24162,
+              "likes": 665,
+              "duration_secs": 39
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Japanese Audience VS American Audience",
+            "url": "https://www.youtube.com/watch?v=s3M_B1cCEHk",
+            "source": "The Anime Man",
+            "date": "2026-09-24",
+            "views": 59250,
+            "likes": 983,
+            "duration_secs": 32
+          },
+          {
+            "title": "It's Niche... But It's Still Bad...",
+            "url": "https://www.youtube.com/watch?v=hbuxBkTgWRs",
+            "source": "The Anime Man",
+            "date": "2026-09-22",
+            "views": 24679,
+            "likes": 493,
+            "duration_secs": 32
+          },
+          {
+            "title": "Sumos Train On Pushing??",
+            "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
+            "source": "The Anime Man",
+            "date": "2026-09-17",
+            "views": 24162,
+            "likes": 665,
+            "duration_secs": 39
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.4119,
         "keywords": [
           "manga",
           "compra",
           "altro",
           "kirio",
-          "mettilo preferiti",
-          "preferiti"
+          "preferiti",
+          "puoi"
         ],
-        "item_count": 3,
-        "total_views": 92279,
+        "item_count": 4,
+        "total_views": 9901,
         "velocity": 1.0,
-        "novelty": 1.0,
+        "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-21",
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-27",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -32,11 +218,195 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6507,
-          "casual": 0.5422
+          "narrativo": 0.7658,
+          "casual": 0.6687
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.651,
+        "affinity_best_score": 0.766,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
+              "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
+              "source": "Kirio1984",
+              "date": "2026-09-19",
+              "views": 3667,
+              "likes": 63,
+              "duration_secs": 609
+            },
+            {
+              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
+              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
+              "source": "Kirio1984",
+              "date": "2026-09-20",
+              "views": 3204,
+              "likes": 42,
+              "duration_secs": 517
+            },
+            {
+              "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
+              "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
+              "source": "Kirio1984",
+              "date": "2026-09-26",
+              "views": 1669,
+              "likes": 41,
+              "duration_secs": 422
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
+            "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
+            "source": "Kirio1984",
+            "date": "2026-09-19",
+            "views": 3667,
+            "likes": 63,
+            "duration_secs": 609
+          },
+          {
+            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
+            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
+            "source": "Kirio1984",
+            "date": "2026-09-20",
+            "views": 3204,
+            "likes": 42,
+            "duration_secs": 517
+          },
+          {
+            "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
+            "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
+            "source": "Kirio1984",
+            "date": "2026-09-26",
+            "views": 1669,
+            "likes": 41,
+            "duration_secs": 422
+          }
+        ]
+      },
+      {
+        "label": 4,
+        "score": 0.4009,
+        "keywords": [
+          "anime",
+          "manga",
+          "otaku",
+          "animeshorts",
+          "anime manga",
+          "sconosciuti"
+        ],
+        "item_count": 7,
+        "total_views": 13290,
+        "velocity": 0.929,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-17",
+        "last_seen": "2026-09-27",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7994,
+          "casual": 0.6707
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.799,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
+              "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-09-24",
+              "views": 3183,
+              "likes": 208,
+              "duration_secs": 177
+            },
+            {
+              "title": "La mostra di manga e anime più figa di Tokyo?",
+              "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+              "source": "Kirio1984",
+              "date": "2026-09-22",
+              "views": 2685,
+              "likes": 25,
+              "duration_secs": 147
+            },
+            {
+              "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
+              "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-09-26",
+              "views": 1839,
+              "likes": 72,
+              "duration_secs": 78
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
+            "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-09-24",
+            "views": 3183,
+            "likes": 208,
+            "duration_secs": 177
+          },
+          {
+            "title": "La mostra di manga e anime più figa di Tokyo?",
+            "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+            "source": "Kirio1984",
+            "date": "2026-09-22",
+            "views": 2685,
+            "likes": 25,
+            "duration_secs": 147
+          },
+          {
+            "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
+            "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-09-26",
+            "views": 1839,
+            "likes": 72,
+            "duration_secs": 78
+          }
+        ]
+      },
+      {
+        "label": 1,
+        "score": 0.3636,
+        "keywords": [
+          "manga",
+          "compra",
+          "altro",
+          "kirio",
+          "mettilo",
+          "preferiti"
+        ],
+        "item_count": 4,
+        "total_views": 92582,
+        "velocity": 0.833,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-14",
+        "last_seen": "2026-09-28",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6554,
+          "casual": 0.5421
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.655,
         "items_by_lang": {
           "it": [
             {
@@ -49,6 +419,15 @@
               "duration_secs": 26624
             },
             {
+              "title": "ANNUNCI MANGA E ALTRE NEWS",
+              "url": "https://www.youtube.com/watch?v=vjnG_RxDMH4",
+              "source": "Kirio1984",
+              "date": "2026-09-28",
+              "views": 303,
+              "likes": 10,
+              "duration_secs": 5931
+            },
+            {
               "title": "INIZIA UNA NUOVA SETTIMANA!",
               "url": "https://www.youtube.com/watch?v=fbCJ5AkzkGw",
               "source": "Kirio1984",
@@ -56,15 +435,6 @@
               "views": 104,
               "likes": 6,
               "duration_secs": 6184
-            },
-            {
-              "title": "NEW WEEK, STARTING NOW!",
-              "url": "https://www.youtube.com/watch?v=cKs2E0iO1Xs",
-              "source": "Kirio1984",
-              "date": "2026-09-21",
-              "views": 80,
-              "likes": 5,
-              "duration_secs": 0
             }
           ]
         },
@@ -79,6 +449,15 @@
             "duration_secs": 26624
           },
           {
+            "title": "ANNUNCI MANGA E ALTRE NEWS",
+            "url": "https://www.youtube.com/watch?v=vjnG_RxDMH4",
+            "source": "Kirio1984",
+            "date": "2026-09-28",
+            "views": 303,
+            "likes": 10,
+            "duration_secs": 5931
+          },
+          {
             "title": "INIZIA UNA NUOVA SETTIMANA!",
             "url": "https://www.youtube.com/watch?v=fbCJ5AkzkGw",
             "source": "Kirio1984",
@@ -86,918 +465,27 @@
             "views": 104,
             "likes": 6,
             "duration_secs": 6184
-          },
-          {
-            "title": "NEW WEEK, STARTING NOW!",
-            "url": "https://www.youtube.com/watch?v=cKs2E0iO1Xs",
-            "source": "Kirio1984",
-            "date": "2026-09-21",
-            "views": 80,
-            "likes": 5,
-            "duration_secs": 0
-          }
-        ]
-      }
-    ],
-    "crescita": [
-      {
-        "label": 7,
-        "score": 0.7677,
-        "keywords": [
-          "twitch",
-          "manga",
-          "caverna",
-          "dragon ball",
-          "dragon",
-          "ball"
-        ],
-        "item_count": 15,
-        "total_views": 119555,
-        "velocity": 0.5,
-        "novelty": 0.5,
-        "diversity": 0.417,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-20",
-        "sentinel_clusters": [
-          "anime_manga_pop",
-          "vita_giappone"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.7865,
-          "casual": 0.6782
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.786,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-              "source": "Caverna di Platone",
-              "date": "2026-09-17",
-              "views": 21154,
-              "likes": 424,
-              "duration_secs": 1589
-            },
-            {
-              "title": "IL PROBLEMA DEL DOPPIAGGIO ITALIANO DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=srpgSggGODc",
-              "source": "Caverna di Platone",
-              "date": "2026-09-09",
-              "views": 18812,
-              "likes": 409,
-              "duration_secs": 1939
-            },
-            {
-              "title": "COSA LEGGERE DI SPIDER-MAN?",
-              "url": "https://www.youtube.com/watch?v=ncOVEaQR6fA",
-              "source": "Caverna di Platone",
-              "date": "2026-09-08",
-              "views": 12047,
-              "likes": 284,
-              "duration_secs": 1153
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-            "source": "Caverna di Platone",
-            "date": "2026-09-17",
-            "views": 21154,
-            "likes": 424,
-            "duration_secs": 1589
-          },
-          {
-            "title": "IL PROBLEMA DEL DOPPIAGGIO ITALIANO DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=srpgSggGODc",
-            "source": "Caverna di Platone",
-            "date": "2026-09-09",
-            "views": 18812,
-            "likes": 409,
-            "duration_secs": 1939
-          },
-          {
-            "title": "COSA LEGGERE DI SPIDER-MAN?",
-            "url": "https://www.youtube.com/watch?v=ncOVEaQR6fA",
-            "source": "Caverna di Platone",
-            "date": "2026-09-08",
-            "views": 12047,
-            "likes": 284,
-            "duration_secs": 1153
           }
         ]
       },
-      {
-        "label": 2,
-        "score": 0.6786,
-        "keywords": [
-          "dolci",
-          "uji",
-          "matcha",
-          "store japantravel",
-          "sandwich convenience",
-          "japantravel"
-        ],
-        "item_count": 4,
-        "total_views": 51157,
-        "velocity": 0.625,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-20",
-        "sentinel_clusters": [
-          "vita_giappone",
-          "japan_native"
-        ],
-        "languages": [
-          "it",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.5978,
-          "casual": 0.5827
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.598,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Dolci giapponesi che sembrano pastelli",
-              "url": "https://www.youtube.com/watch?v=jq7trhbtig4",
-              "source": "Marco Togni",
-              "date": "2026-09-10",
-              "views": 6391,
-              "likes": 203,
-              "duration_secs": 58
-            },
-            {
-              "title": "Assaggiare il budino giapponese all'hoji-cha",
-              "url": "https://www.youtube.com/watch?v=AWYuvln0SFw",
-              "source": "Marco Togni",
-              "date": "2026-09-13",
-              "views": 2399,
-              "likes": 160,
-              "duration_secs": 52
-            },
-            {
-              "title": "Assaggio dolci giapponesi: il matcha di Uji",
-              "url": "https://www.youtube.com/watch?v=5vudLYAHSG0",
-              "source": "Marco Togni",
-              "date": "2026-09-08",
-              "views": 1874,
-              "likes": 101,
-              "duration_secs": 60
-            }
-          ],
-          "ja": [
-            {
-              "title": "Japanese Egg Sandwich at convenience store! #japantravel",
-              "url": "https://www.youtube.com/watch?v=987LlVjoUKE",
-              "source": "Kimono Mom",
-              "date": "2026-09-20",
-              "views": 40493,
-              "likes": 1800,
-              "duration_secs": 51
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Dolci giapponesi che sembrano pastelli",
-            "url": "https://www.youtube.com/watch?v=jq7trhbtig4",
-            "source": "Marco Togni",
-            "date": "2026-09-10",
-            "views": 6391,
-            "likes": 203,
-            "duration_secs": 58
-          },
-          {
-            "title": "Assaggiare il budino giapponese all'hoji-cha",
-            "url": "https://www.youtube.com/watch?v=AWYuvln0SFw",
-            "source": "Marco Togni",
-            "date": "2026-09-13",
-            "views": 2399,
-            "likes": 160,
-            "duration_secs": 52
-          },
-          {
-            "title": "Assaggio dolci giapponesi: il matcha di Uji",
-            "url": "https://www.youtube.com/watch?v=5vudLYAHSG0",
-            "source": "Marco Togni",
-            "date": "2026-09-08",
-            "views": 1874,
-            "likes": 101,
-            "duration_secs": 60
-          },
-          {
-            "title": "Japanese Egg Sandwich at convenience store! #japantravel",
-            "url": "https://www.youtube.com/watch?v=987LlVjoUKE",
-            "source": "Kimono Mom",
-            "date": "2026-09-20",
-            "views": 40493,
-            "likes": 1800,
-            "duration_secs": 51
-          }
-        ]
-      },
-      {
-        "label": 5,
-        "score": 0.542,
-        "keywords": [
-          "use",
-          "fair",
-          "fair use",
-          "copyright",
-          "supporting",
-          "support shiz"
-        ],
-        "item_count": 6,
-        "total_views": 148162,
-        "velocity": 0.5,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-19",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en",
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7086,
-          "casual": 0.6833
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.709,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "Sumos Train On Pushing??",
-              "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
-              "source": "The Anime Man",
-              "date": "2026-09-17",
-              "views": 24162,
-              "likes": 665,
-              "duration_secs": 39
-            },
-            {
-              "title": "If I wasn't a YouTuber...",
-              "url": "https://www.youtube.com/watch?v=1L2HKw8y9eE",
-              "source": "The Anime Man",
-              "date": "2026-09-19",
-              "views": 15049,
-              "likes": 499,
-              "duration_secs": 32
-            },
-            {
-              "title": "THIS Is How She Approaches Singing",
-              "url": "https://www.youtube.com/watch?v=jL758cKTX6I",
-              "source": "The Anime Man",
-              "date": "2026-09-10",
-              "views": 10277,
-              "likes": 188,
-              "duration_secs": 32
-            }
-          ],
-          "ja": [
-            {
-              "title": "The Copyright Strike Situation On YouTube Is ACTUALLY Crazy In Japan",
-              "url": "https://www.youtube.com/watch?v=1T7wHHxSiBo",
-              "source": "Sora The Troll",
-              "date": "2026-09-12",
-              "views": 86038,
-              "likes": 1640,
-              "duration_secs": 667
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Sumos Train On Pushing??",
-            "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
-            "source": "The Anime Man",
-            "date": "2026-09-17",
-            "views": 24162,
-            "likes": 665,
-            "duration_secs": 39
-          },
-          {
-            "title": "If I wasn't a YouTuber...",
-            "url": "https://www.youtube.com/watch?v=1L2HKw8y9eE",
-            "source": "The Anime Man",
-            "date": "2026-09-19",
-            "views": 15049,
-            "likes": 499,
-            "duration_secs": 32
-          },
-          {
-            "title": "THIS Is How She Approaches Singing",
-            "url": "https://www.youtube.com/watch?v=jL758cKTX6I",
-            "source": "The Anime Man",
-            "date": "2026-09-10",
-            "views": 10277,
-            "likes": 188,
-            "duration_secs": 32
-          },
-          {
-            "title": "The Copyright Strike Situation On YouTube Is ACTUALLY Crazy In Japan",
-            "url": "https://www.youtube.com/watch?v=1T7wHHxSiBo",
-            "source": "Sora The Troll",
-            "date": "2026-09-12",
-            "views": 86038,
-            "likes": 1640,
-            "duration_secs": 667
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.3812,
-        "keywords": [
-          "manga",
-          "altro",
-          "compra",
-          "kirio",
-          "puoi",
-          "com"
-        ],
-        "item_count": 3,
-        "total_views": 8768,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-20",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.8019,
-          "casual": 0.6876
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.802,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "NANA, URASAWA E LE NOVITÀ PLANET MANGA: COSA COMPRARE A OTTOBRE?",
-              "url": "https://www.youtube.com/watch?v=rwoEhfF1Ch4",
-              "source": "Kirio1984",
-              "date": "2026-09-08",
-              "views": 3264,
-              "likes": 70,
-              "duration_secs": 531
-            },
-            {
-              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-              "source": "Kirio1984",
-              "date": "2026-09-20",
-              "views": 3204,
-              "likes": 42,
-              "duration_secs": 517
-            },
-            {
-              "title": "QUESTI MANGA LI PROMUOVO… MA UNO MI HA UN PO' DELUSO",
-              "url": "https://www.youtube.com/watch?v=Tpkejh46iU4",
-              "source": "Kirio1984",
-              "date": "2026-09-12",
-              "views": 2300,
-              "likes": 36,
-              "duration_secs": 679
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "NANA, URASAWA E LE NOVITÀ PLANET MANGA: COSA COMPRARE A OTTOBRE?",
-            "url": "https://www.youtube.com/watch?v=rwoEhfF1Ch4",
-            "source": "Kirio1984",
-            "date": "2026-09-08",
-            "views": 3264,
-            "likes": 70,
-            "duration_secs": 531
-          },
-          {
-            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-            "source": "Kirio1984",
-            "date": "2026-09-20",
-            "views": 3204,
-            "likes": 42,
-            "duration_secs": 517
-          },
-          {
-            "title": "QUESTI MANGA LI PROMUOVO… MA UNO MI HA UN PO' DELUSO",
-            "url": "https://www.youtube.com/watch?v=Tpkejh46iU4",
-            "source": "Kirio1984",
-            "date": "2026-09-12",
-            "views": 2300,
-            "likes": 36,
-            "duration_secs": 679
-          }
-        ]
-      },
-      {
-        "label": 4,
-        "score": 0.3636,
-        "keywords": [
-          "anime",
-          "manga",
-          "otaku",
-          "otaku animeedit",
-          "film",
-          "animeedit"
-        ],
-        "item_count": 4,
-        "total_views": 6345,
-        "velocity": 0.75,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-12",
-        "last_seen": "2026-09-18",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.8008,
-          "casual": 0.653
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.801,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Un altro manga leggendario che non finirà mai!",
-              "url": "https://www.youtube.com/watch?v=K1etd29MaSY",
-              "source": "Kirio1984",
-              "date": "2026-09-12",
-              "views": 1898,
-              "likes": 67,
-              "duration_secs": 84
-            },
-            {
-              "title": "Anime VERAMENTE sconosciuti - parte 3 #anime #manga #otaku #anime",
-              "url": "https://www.youtube.com/watch?v=1RP_Lv2cDUE",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-17",
-              "views": 1596,
-              "likes": 89,
-              "duration_secs": 90
-            },
-            {
-              "title": "Film da vedere almeno 10 volte nella vita - Parte 1 #anime #manga #otaku #animeedit",
-              "url": "https://www.youtube.com/watch?v=aZEG1sPd6qY",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-12",
-              "views": 1443,
-              "likes": 50,
-              "duration_secs": 66
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Un altro manga leggendario che non finirà mai!",
-            "url": "https://www.youtube.com/watch?v=K1etd29MaSY",
-            "source": "Kirio1984",
-            "date": "2026-09-12",
-            "views": 1898,
-            "likes": 67,
-            "duration_secs": 84
-          },
-          {
-            "title": "Anime VERAMENTE sconosciuti - parte 3 #anime #manga #otaku #anime",
-            "url": "https://www.youtube.com/watch?v=1RP_Lv2cDUE",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-17",
-            "views": 1596,
-            "likes": 89,
-            "duration_secs": 90
-          },
-          {
-            "title": "Film da vedere almeno 10 volte nella vita - Parte 1 #anime #manga #otaku #animeedit",
-            "url": "https://www.youtube.com/watch?v=aZEG1sPd6qY",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-12",
-            "views": 1443,
-            "likes": 50,
-            "duration_secs": 66
-          }
-        ]
-      },
-      {
-        "label": 3,
-        "score": 0.2423,
-        "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
-        ],
-        "item_count": 4,
-        "total_views": 275181,
-        "velocity": 0.75,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-10",
-        "last_seen": "2026-09-19",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6556,
-          "casual": 0.5618
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.656,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
-              "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-17",
-              "views": 105360,
-              "likes": 1380,
-              "duration_secs": 1027
-            },
-            {
-              "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
-              "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-19",
-              "views": 82867,
-              "likes": 1472,
-              "duration_secs": 921
-            },
-            {
-              "title": "【きまぐれ添削244】 心をギュっと掴む方法は...！？",
-              "url": "https://www.youtube.com/watch?v=SZMf7COkAdI",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-10",
-              "views": 71404,
-              "likes": 1426,
-              "duration_secs": 1063
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
-            "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-17",
-            "views": 105360,
-            "likes": 1380,
-            "duration_secs": 1027
-          },
-          {
-            "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
-            "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-19",
-            "views": 82867,
-            "likes": 1472,
-            "duration_secs": 921
-          },
-          {
-            "title": "【きまぐれ添削244】 心をギュっと掴む方法は...！？",
-            "url": "https://www.youtube.com/watch?v=SZMf7COkAdI",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-10",
-            "views": 71404,
-            "likes": 1426,
-            "duration_secs": 1063
-          }
-        ]
-      }
-    ],
-    "cross_source": [],
-    "affinita": [
-      {
-        "label": 7,
-        "score": 0.7677,
-        "keywords": [
-          "twitch",
-          "manga",
-          "caverna",
-          "dragon ball",
-          "dragon",
-          "ball"
-        ],
-        "item_count": 15,
-        "total_views": 119555,
-        "velocity": 0.5,
-        "novelty": 0.5,
-        "diversity": 0.417,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-20",
-        "sentinel_clusters": [
-          "anime_manga_pop",
-          "vita_giappone"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.7865,
-          "casual": 0.6782
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.786,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-              "source": "Caverna di Platone",
-              "date": "2026-09-17",
-              "views": 21154,
-              "likes": 424,
-              "duration_secs": 1589
-            },
-            {
-              "title": "IL PROBLEMA DEL DOPPIAGGIO ITALIANO DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=srpgSggGODc",
-              "source": "Caverna di Platone",
-              "date": "2026-09-09",
-              "views": 18812,
-              "likes": 409,
-              "duration_secs": 1939
-            },
-            {
-              "title": "COSA LEGGERE DI SPIDER-MAN?",
-              "url": "https://www.youtube.com/watch?v=ncOVEaQR6fA",
-              "source": "Caverna di Platone",
-              "date": "2026-09-08",
-              "views": 12047,
-              "likes": 284,
-              "duration_secs": 1153
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-            "source": "Caverna di Platone",
-            "date": "2026-09-17",
-            "views": 21154,
-            "likes": 424,
-            "duration_secs": 1589
-          },
-          {
-            "title": "IL PROBLEMA DEL DOPPIAGGIO ITALIANO DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=srpgSggGODc",
-            "source": "Caverna di Platone",
-            "date": "2026-09-09",
-            "views": 18812,
-            "likes": 409,
-            "duration_secs": 1939
-          },
-          {
-            "title": "COSA LEGGERE DI SPIDER-MAN?",
-            "url": "https://www.youtube.com/watch?v=ncOVEaQR6fA",
-            "source": "Caverna di Platone",
-            "date": "2026-09-08",
-            "views": 12047,
-            "likes": 284,
-            "duration_secs": 1153
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.3812,
-        "keywords": [
-          "manga",
-          "altro",
-          "compra",
-          "kirio",
-          "puoi",
-          "com"
-        ],
-        "item_count": 3,
-        "total_views": 8768,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-08",
-        "last_seen": "2026-09-20",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.8019,
-          "casual": 0.6876
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.802,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "NANA, URASAWA E LE NOVITÀ PLANET MANGA: COSA COMPRARE A OTTOBRE?",
-              "url": "https://www.youtube.com/watch?v=rwoEhfF1Ch4",
-              "source": "Kirio1984",
-              "date": "2026-09-08",
-              "views": 3264,
-              "likes": 70,
-              "duration_secs": 531
-            },
-            {
-              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-              "source": "Kirio1984",
-              "date": "2026-09-20",
-              "views": 3204,
-              "likes": 42,
-              "duration_secs": 517
-            },
-            {
-              "title": "QUESTI MANGA LI PROMUOVO… MA UNO MI HA UN PO' DELUSO",
-              "url": "https://www.youtube.com/watch?v=Tpkejh46iU4",
-              "source": "Kirio1984",
-              "date": "2026-09-12",
-              "views": 2300,
-              "likes": 36,
-              "duration_secs": 679
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "NANA, URASAWA E LE NOVITÀ PLANET MANGA: COSA COMPRARE A OTTOBRE?",
-            "url": "https://www.youtube.com/watch?v=rwoEhfF1Ch4",
-            "source": "Kirio1984",
-            "date": "2026-09-08",
-            "views": 3264,
-            "likes": 70,
-            "duration_secs": 531
-          },
-          {
-            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-            "source": "Kirio1984",
-            "date": "2026-09-20",
-            "views": 3204,
-            "likes": 42,
-            "duration_secs": 517
-          },
-          {
-            "title": "QUESTI MANGA LI PROMUOVO… MA UNO MI HA UN PO' DELUSO",
-            "url": "https://www.youtube.com/watch?v=Tpkejh46iU4",
-            "source": "Kirio1984",
-            "date": "2026-09-12",
-            "views": 2300,
-            "likes": 36,
-            "duration_secs": 679
-          }
-        ]
-      },
-      {
-        "label": 4,
-        "score": 0.3636,
-        "keywords": [
-          "anime",
-          "manga",
-          "otaku",
-          "otaku animeedit",
-          "film",
-          "animeedit"
-        ],
-        "item_count": 4,
-        "total_views": 6345,
-        "velocity": 0.75,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-12",
-        "last_seen": "2026-09-18",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.8008,
-          "casual": 0.653
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.801,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Un altro manga leggendario che non finirà mai!",
-              "url": "https://www.youtube.com/watch?v=K1etd29MaSY",
-              "source": "Kirio1984",
-              "date": "2026-09-12",
-              "views": 1898,
-              "likes": 67,
-              "duration_secs": 84
-            },
-            {
-              "title": "Anime VERAMENTE sconosciuti - parte 3 #anime #manga #otaku #anime",
-              "url": "https://www.youtube.com/watch?v=1RP_Lv2cDUE",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-17",
-              "views": 1596,
-              "likes": 89,
-              "duration_secs": 90
-            },
-            {
-              "title": "Film da vedere almeno 10 volte nella vita - Parte 1 #anime #manga #otaku #animeedit",
-              "url": "https://www.youtube.com/watch?v=aZEG1sPd6qY",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-12",
-              "views": 1443,
-              "likes": 50,
-              "duration_secs": 66
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Un altro manga leggendario che non finirà mai!",
-            "url": "https://www.youtube.com/watch?v=K1etd29MaSY",
-            "source": "Kirio1984",
-            "date": "2026-09-12",
-            "views": 1898,
-            "likes": 67,
-            "duration_secs": 84
-          },
-          {
-            "title": "Anime VERAMENTE sconosciuti - parte 3 #anime #manga #otaku #anime",
-            "url": "https://www.youtube.com/watch?v=1RP_Lv2cDUE",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-17",
-            "views": 1596,
-            "likes": 89,
-            "duration_secs": 90
-          },
-          {
-            "title": "Film da vedere almeno 10 volte nella vita - Parte 1 #anime #manga #otaku #animeedit",
-            "url": "https://www.youtube.com/watch?v=aZEG1sPd6qY",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-12",
-            "views": 1443,
-            "likes": 50,
-            "duration_secs": 66
-          }
-        ]
-      }
-    ],
-    "anomalie": [],
-    "altri": [
       {
         "label": 0,
-        "score": 0.2408,
+        "score": 0.3039,
         "keywords": [
           "maglietta",
           "calze",
-          "vlaszlo calze",
           "walls",
-          "ulteriore",
+          "vlaszlo",
+          "usate",
           "ulteriore paio"
         ],
-        "item_count": 5,
-        "total_views": 196526,
-        "velocity": 0.4,
+        "item_count": 9,
+        "total_views": 428865,
+        "velocity": 0.722,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-07",
-        "last_seen": "2026-09-16",
+        "first_seen": "2026-09-14",
+        "last_seen": "2026-09-27",
         "sentinel_clusters": [
           "videogiochi"
         ],
@@ -1006,11 +494,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.613,
-          "casual": 0.4358
+          "narrativo": 0.6333,
+          "casual": 0.4302
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.613,
+        "affinity_best_score": 0.633,
         "items_by_lang": {
           "it": [
             {
@@ -1023,22 +511,22 @@
               "duration_secs": 1003
             },
             {
-              "title": "LA CLASSIFICA: Tutti i film di Resident Evil dal peggiore al migliore",
-              "url": "https://www.youtube.com/watch?v=2BWqO8weQzc",
+              "title": "Monster: La Storia di Lizzie Borden: Un mezzo disastro",
+              "url": "https://www.youtube.com/watch?v=0kqXShp9rLM",
               "source": "Victorlaszlo88",
-              "date": "2026-09-15",
-              "views": 40750,
-              "likes": 902,
-              "duration_secs": 2597
+              "date": "2026-09-23",
+              "views": 75328,
+              "likes": 1296,
+              "duration_secs": 2828
             },
             {
-              "title": "Lanterns 1X04: Tante rivelazioni!",
-              "url": "https://www.youtube.com/watch?v=EXxfor49YIQ",
+              "title": "Avengers Endgame Extra: Le scene post credits spiegate",
+              "url": "https://www.youtube.com/watch?v=3tQOWu0PtEY",
               "source": "Victorlaszlo88",
-              "date": "2026-09-07",
-              "views": 29848,
-              "likes": 847,
-              "duration_secs": 1776
+              "date": "2026-09-25",
+              "views": 70209,
+              "likes": 1367,
+              "duration_secs": 1122
             }
           ]
         },
@@ -1053,57 +541,353 @@
             "duration_secs": 1003
           },
           {
-            "title": "LA CLASSIFICA: Tutti i film di Resident Evil dal peggiore al migliore",
-            "url": "https://www.youtube.com/watch?v=2BWqO8weQzc",
+            "title": "Monster: La Storia di Lizzie Borden: Un mezzo disastro",
+            "url": "https://www.youtube.com/watch?v=0kqXShp9rLM",
             "source": "Victorlaszlo88",
-            "date": "2026-09-15",
-            "views": 40750,
-            "likes": 902,
-            "duration_secs": 2597
+            "date": "2026-09-23",
+            "views": 75328,
+            "likes": 1296,
+            "duration_secs": 2828
           },
           {
-            "title": "Lanterns 1X04: Tante rivelazioni!",
-            "url": "https://www.youtube.com/watch?v=EXxfor49YIQ",
+            "title": "Avengers Endgame Extra: Le scene post credits spiegate",
+            "url": "https://www.youtube.com/watch?v=3tQOWu0PtEY",
             "source": "Victorlaszlo88",
-            "date": "2026-09-07",
-            "views": 29848,
-            "likes": 847,
-            "duration_secs": 1776
+            "date": "2026-09-25",
+            "views": 70209,
+            "likes": 1367,
+            "duration_secs": 1122
+          }
+        ]
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
+      {
+        "label": 7,
+        "score": 0.8787,
+        "keywords": [
+          "twitch",
+          "manga",
+          "dragon ball",
+          "dragon",
+          "ball",
+          "collezionare"
+        ],
+        "item_count": 15,
+        "total_views": 117719,
+        "velocity": 0.679,
+        "novelty": 0.5,
+        "diversity": 0.417,
+        "first_seen": "2026-09-14",
+        "last_seen": "2026-09-28",
+        "sentinel_clusters": [
+          "vita_giappone",
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7802,
+          "casual": 0.6699
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.78,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
+              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
+              "source": "Caverna di Platone",
+              "date": "2026-09-17",
+              "views": 21154,
+              "likes": 424,
+              "duration_secs": 1589
+            },
+            {
+              "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
+              "url": "https://www.youtube.com/watch?v=IeJM0lQ5uZQ",
+              "source": "Caverna di Platone",
+              "date": "2026-09-22",
+              "views": 15172,
+              "likes": 238,
+              "duration_secs": 2348
+            },
+            {
+              "title": "BERSERK SPIEGATO FACILE",
+              "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+              "source": "Caverna di Platone",
+              "date": "2026-09-19",
+              "views": 9885,
+              "likes": 253,
+              "duration_secs": 3329
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
+            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
+            "source": "Caverna di Platone",
+            "date": "2026-09-17",
+            "views": 21154,
+            "likes": 424,
+            "duration_secs": 1589
+          },
+          {
+            "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
+            "url": "https://www.youtube.com/watch?v=IeJM0lQ5uZQ",
+            "source": "Caverna di Platone",
+            "date": "2026-09-22",
+            "views": 15172,
+            "likes": 238,
+            "duration_secs": 2348
+          },
+          {
+            "title": "BERSERK SPIEGATO FACILE",
+            "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+            "source": "Caverna di Platone",
+            "date": "2026-09-19",
+            "views": 9885,
+            "likes": 253,
+            "duration_secs": 3329
           }
         ]
       },
       {
         "label": 6,
-        "score": 0.1554,
+        "score": 0.4119,
         "keywords": [
-          "well tts",
-          "well",
-          "tts driving",
-          "tts",
-          "try tjhese",
-          "try"
+          "manga",
+          "compra",
+          "altro",
+          "kirio",
+          "preferiti",
+          "puoi"
         ],
-        "item_count": 3,
-        "total_views": 75638,
-        "velocity": 0.167,
+        "item_count": 4,
+        "total_views": 9901,
+        "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-10",
-        "last_seen": "2026-09-17",
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-27",
         "sentinel_clusters": [
-          "japan_native"
+          "anime_manga_pop"
         ],
         "languages": [
-          "ja"
+          "it"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.5791,
-          "casual": 0.6416
+          "narrativo": 0.7658,
+          "casual": 0.6687
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.766,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
+              "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
+              "source": "Kirio1984",
+              "date": "2026-09-19",
+              "views": 3667,
+              "likes": 63,
+              "duration_secs": 609
+            },
+            {
+              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
+              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
+              "source": "Kirio1984",
+              "date": "2026-09-20",
+              "views": 3204,
+              "likes": 42,
+              "duration_secs": 517
+            },
+            {
+              "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
+              "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
+              "source": "Kirio1984",
+              "date": "2026-09-26",
+              "views": 1669,
+              "likes": 41,
+              "duration_secs": 422
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
+            "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
+            "source": "Kirio1984",
+            "date": "2026-09-19",
+            "views": 3667,
+            "likes": 63,
+            "duration_secs": 609
+          },
+          {
+            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
+            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
+            "source": "Kirio1984",
+            "date": "2026-09-20",
+            "views": 3204,
+            "likes": 42,
+            "duration_secs": 517
+          },
+          {
+            "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
+            "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
+            "source": "Kirio1984",
+            "date": "2026-09-26",
+            "views": 1669,
+            "likes": 41,
+            "duration_secs": 422
+          }
+        ]
+      },
+      {
+        "label": 4,
+        "score": 0.4009,
+        "keywords": [
+          "anime",
+          "manga",
+          "otaku",
+          "animeshorts",
+          "anime manga",
+          "sconosciuti"
+        ],
+        "item_count": 7,
+        "total_views": 13290,
+        "velocity": 0.929,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-17",
+        "last_seen": "2026-09-27",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7994,
+          "casual": 0.6707
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.799,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
+              "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-09-24",
+              "views": 3183,
+              "likes": 208,
+              "duration_secs": 177
+            },
+            {
+              "title": "La mostra di manga e anime più figa di Tokyo?",
+              "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+              "source": "Kirio1984",
+              "date": "2026-09-22",
+              "views": 2685,
+              "likes": 25,
+              "duration_secs": 147
+            },
+            {
+              "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
+              "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-09-26",
+              "views": 1839,
+              "likes": 72,
+              "duration_secs": 78
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
+            "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-09-24",
+            "views": 3183,
+            "likes": 208,
+            "duration_secs": 177
+          },
+          {
+            "title": "La mostra di manga e anime più figa di Tokyo?",
+            "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+            "source": "Kirio1984",
+            "date": "2026-09-22",
+            "views": 2685,
+            "likes": 25,
+            "duration_secs": 147
+          },
+          {
+            "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
+            "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-09-26",
+            "views": 1839,
+            "likes": 72,
+            "duration_secs": 78
+          }
+        ]
+      }
+    ],
+    "anomalie": [],
+    "altri": [
+      {
+        "label": 5,
+        "score": 0.302,
+        "keywords": [
+          "well tts",
+          "well",
+          "tjhese",
+          "tools",
+          "try tjhese",
+          "try"
+        ],
+        "item_count": 4,
+        "total_views": 82679,
+        "velocity": 0.25,
+        "novelty": 0.5,
+        "diversity": 0.583,
+        "first_seen": "2026-09-14",
+        "last_seen": "2026-09-23",
+        "sentinel_clusters": [
+          "expat_japan_en",
+          "japan_native"
+        ],
+        "languages": [
+          "ja",
+          "en"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6725,
+          "casual": 0.7249
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.642,
+        "affinity_best_score": 0.725,
         "items_by_lang": {
+          "en": [
+            {
+              "title": "You’ve Been Lied to About Japan",
+              "url": "https://www.youtube.com/watch?v=eo0N-G-yEtM",
+              "source": "Abroad in Japan",
+              "date": "2026-09-14",
+              "views": 35182,
+              "likes": 5208,
+              "duration_secs": 1207
+            }
+          ],
           "ja": [
             {
               "title": "Going to Japan's CURSED Ghost Town Where Foreigners Are Mysteriously Blocked",
@@ -1115,15 +899,6 @@
               "duration_secs": 20956
             },
             {
-              "title": "I'm in Tokyo's BIGGEST Foreigner-Scamming Area Acting Like a Foreigner LOLOLOLOLOLOLOLO",
-              "url": "https://www.youtube.com/watch?v=AP_ZeXe9LoU",
-              "source": "Sora The Troll",
-              "date": "2026-09-10",
-              "views": 28141,
-              "likes": 361,
-              "duration_secs": 23521
-            },
-            {
               "title": "@AbroadinJapan, You've been lied to about Japan....??",
               "url": "https://www.youtube.com/watch?v=aDqkU90FRAI",
               "source": "Sora The Troll",
@@ -1131,10 +906,28 @@
               "views": 16992,
               "likes": 316,
               "duration_secs": 7543
+            },
+            {
+              "title": "The Japanese Cult Stalking Situation And How I Got Injured",
+              "url": "https://www.youtube.com/watch?v=hMgm1zFCrUk",
+              "source": "Sora The Troll",
+              "date": "2026-09-23",
+              "views": 0,
+              "likes": 52,
+              "duration_secs": 0
             }
           ]
         },
         "top_items": [
+          {
+            "title": "You’ve Been Lied to About Japan",
+            "url": "https://www.youtube.com/watch?v=eo0N-G-yEtM",
+            "source": "Abroad in Japan",
+            "date": "2026-09-14",
+            "views": 35182,
+            "likes": 5208,
+            "duration_secs": 1207
+          },
           {
             "title": "Going to Japan's CURSED Ghost Town Where Foreigners Are Mysteriously Blocked",
             "url": "https://www.youtube.com/watch?v=kq4drAAdJpg",
@@ -1145,15 +938,6 @@
             "duration_secs": 20956
           },
           {
-            "title": "I'm in Tokyo's BIGGEST Foreigner-Scamming Area Acting Like a Foreigner LOLOLOLOLOLOLOLO",
-            "url": "https://www.youtube.com/watch?v=AP_ZeXe9LoU",
-            "source": "Sora The Troll",
-            "date": "2026-09-10",
-            "views": 28141,
-            "likes": 361,
-            "duration_secs": 23521
-          },
-          {
             "title": "@AbroadinJapan, You've been lied to about Japan....??",
             "url": "https://www.youtube.com/watch?v=aDqkU90FRAI",
             "source": "Sora The Troll",
@@ -1161,6 +945,107 @@
             "views": 16992,
             "likes": 316,
             "duration_secs": 7543
+          },
+          {
+            "title": "The Japanese Cult Stalking Situation And How I Got Injured",
+            "url": "https://www.youtube.com/watch?v=hMgm1zFCrUk",
+            "source": "Sora The Troll",
+            "date": "2026-09-23",
+            "views": 0,
+            "likes": 52,
+            "duration_secs": 0
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.1565,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 3,
+        "total_views": 279807,
+        "velocity": 0.167,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-17",
+        "last_seen": "2026-09-24",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6542,
+          "casual": 0.5652
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.654,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
+              "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-09-17",
+              "views": 105360,
+              "likes": 1380,
+              "duration_secs": 1027
+            },
+            {
+              "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
+              "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-09-24",
+              "views": 91580,
+              "likes": 1464,
+              "duration_secs": 1020
+            },
+            {
+              "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
+              "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-09-19",
+              "views": 82867,
+              "likes": 1472,
+              "duration_secs": 921
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
+            "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-09-17",
+            "views": 105360,
+            "likes": 1380,
+            "duration_secs": 1027
+          },
+          {
+            "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
+            "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-09-24",
+            "views": 91580,
+            "likes": 1464,
+            "duration_secs": 1020
+          },
+          {
+            "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
+            "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-09-19",
+            "views": 82867,
+            "likes": 1472,
+            "duration_secs": 921
           }
         ]
       }
