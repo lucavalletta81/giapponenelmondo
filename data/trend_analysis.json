@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-25 09:02",
-  "summary": "Settimana dominata dall'esplosione anime/manga/pop in IT (volume 100, delta +13) con un cluster videogiochi in forte risalita (delta +30). Il viaggio crolla (-41), confermando il segnale della sessione precedente. In EN persiste il blocco expat_japan con due segnali narrativi distinti su anime traumatici e ricezione culturale comparata. I dati sostengono 3 trend reali: uno sul gaming nipponico come fenomeno critico-culturale, uno sull'anime come trauma generazionale, uno sulla ricezione comparata pubblico giapponese vs occidentale.",
+  "generated_at": "2026-09-28 19:01",
+  "summary": "Settimana sostanzialmente piatta: anime_manga_pop IT rimane a volume massimo ma delta zero, tutti gli altri cluster calano. In EN il blocco expat_japan regge flat. I dati di questa run non generano segnali nuovi rispetto allo storico degli ultimi 60 giorni: l'unico polo di attività rilevante è il cluster animazione italiana/nostalgia (Rai Gulp, Pinocchio fascista, film brutti) che emerge come fenomeno editoriale distinto e non ancora coperto da Giappone nel Mondo.",
   "overview": {
     "IT": {
-      "trend_count": 3,
+      "trend_count": 1,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 2,
-      "delta_trend_count": 2
+      "gap_IT_EN_count": 0,
+      "delta_trend_count": 0
     },
     "EN": {
-      "trend_count": 3,
+      "trend_count": 0,
       "youtube_videos_analyzed": 10,
-      "delta_trend_count": 1
+      "delta_trend_count": 0
     },
     "JP": {
-      "signal_count": 1,
+      "signal_count": 0,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -24,29 +24,29 @@
       {
         "keyword": "anime_manga_pop",
         "volume": 100,
-        "delta": "up",
-        "delta_value": 13,
+        "delta": "flat",
+        "delta_value": 0,
         "source": "youtube_velocity"
       },
       {
         "keyword": "viaggio",
-        "volume": 59,
+        "volume": 30,
         "delta": "down",
-        "delta_value": -41,
+        "delta_value": -29,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 51,
-        "delta": "up",
-        "delta_value": 30,
+        "volume": 27,
+        "delta": "down",
+        "delta_value": -24,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 32,
-        "delta": "up",
-        "delta_value": 17,
+        "volume": 20,
+        "delta": "down",
+        "delta_value": -12,
         "source": "youtube_velocity"
       }
     ],
@@ -60,14 +60,14 @@
       },
       {
         "keyword": "anime_pop_en",
-        "volume": 51,
-        "delta": "flat",
-        "delta_value": 3,
+        "volume": 42,
+        "delta": "down",
+        "delta_value": -9,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 3,
+        "volume": 4,
         "delta": "flat",
         "delta_value": 1,
         "source": "youtube_velocity"
@@ -86,205 +86,109 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Videogiochi giapponesi come critica: The Duskbloods e il bordello creativo",
-      "category": "Gaming/Retro",
-      "urgency": "Alta",
-      "coerenza": 8,
-      "saturazione_IT": 3,
-      "saturazione_EN": 5,
-      "saturazione_JP": 4,
-      "delta_coerenza": "up",
-      "delta_sat_IT": "flat",
-      "gap_IT_EN": "Alto",
-      "thumbnail_hook": "The Duskbloods: un bordello creativo o il futuro del game design giapponese?",
-      "video_title": "The Duskbloods e il caos creativo: il Giappone reinventa ancora le regole",
-      "podcast_title": "Il bordello creativo: quando il game design giapponese sfida tutto",
-      "angolatura": "Usare The Duskbloods come pretesto per raccontare come i grandi studi JP usino il caos creativo come metodo — non bug, ma sistema.",
-      "timing": "Entro 2 settimane",
-      "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Il titolo e' attuale, il tema piu' profondo funziona in podcast narrativo lungo.",
-      "struttura_atti": [
-        "Atto I: presentare The Duskbloods e la reazione polarizzata della community italiana — il 'bordello' come primo impatto",
-        "Atto II: contestualizzare nella tradizione JP del kaos creativo istituzionalizzato — da Nintendo a FromSoftware, il disordine come firma",
-        "Atto III: domanda aperta — il pubblico occidentale e' pronto a seguire il ritmo creativo giapponese o vuole solo comfort?"
-      ],
-      "coverage_IT": "Sabaku no Maiku ha toccato il titolo in modo diretto ma senza approfondimento culturale strutturato.",
-      "opportunita_IT": "Nessun canale italiano ha ancora trattato The Duskbloods come fenomeno culturale JP — la finestra e' aperta ora, prima del lancio.",
-      "esempi_EN": [],
-      "angolo_EN": "In EN il gaming JP e' trattato come notizia, non come cultura — gap narrativo enorme.",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run, ma il cluster videogiochi IT e' il piu' in crescita delta (+30).",
-      "esempi_JP": [],
-      "utilita_JP": "Utile come fonte primaria di reazioni native al titolo, non come benchmark editoriale."
-    },
-    {
-      "title": "L'anime che ha traumatizzato una generazione: il lato oscuro dell'animazione JP",
-      "category": "Cinema/J-Horror",
-      "urgency": "Alta",
-      "coerenza": 8,
-      "saturazione_IT": 2,
-      "saturazione_EN": 7,
-      "saturazione_JP": 5,
-      "delta_coerenza": "up",
-      "delta_sat_IT": "flat",
-      "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Non era per bambini. L'anime che ti ha segnato e che nessuno in Italia osa ancora analizzare.",
-      "video_title": "L'anime che ha traumatizzato una generazione: cosa ci ha fatto davvero l'animazione JP",
-      "podcast_title": "Trauma animato: gli anime che il Giappone sapeva essere troppo per noi",
-      "angolatura": "Non una lista di anime dark, ma un'analisi di perche' il sistema JP produceva contenuti psicologicamente estremi per un pubblico giovane — intenzionalmente.",
-      "timing": "Entro 2 settimane",
-      "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Il tema e' narrativo e nostalgico — funziona sia come video emotivo che come podcast riflessivo.",
-      "struttura_atti": [
-        "Atto I: il trauma come memoria collettiva — quali anime hanno segnato generazioni in IT e JP e perche' il ricordo e' cosi' vivido",
-        "Atto II: il sistema produttivo JP degli anni '80-'90 che non aveva filtri per il pubblico giovane — la filosofia del 'cresceranno'",
-        "Atto III: oggi quella generazione e' adulta — come quel trauma ha formato il gusto estetico e la tolleranza per la complessita' narrativa"
-      ],
-      "coverage_IT": "In IT il tema anime dark e' trattato solo come lista o curiosita', mai come analisi culturale strutturata.",
-      "opportunita_IT": "Gigguk ha esploso il tema in EN con grande traction — in IT e' completamente libero e il cluster anime e' al massimo volume.",
-      "esempi_EN": [
-        {
-          "titolo": "This Anime Traumatized A Generation",
-          "url": "https://youtube.com/watch?v=EB9Y2wMsR6g"
-        }
-      ],
-      "angolo_EN": "Gigguk punta sul singolo titolo — l'angolo IT puo' essere sistemico e culturale, piu' profondo.",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run.",
-      "esempi_JP": [],
-      "utilita_JP": "Fonte per reazioni native e titoli specifici non citati in EN."
-    },
-    {
-      "title": "Pubblico giapponese vs pubblico occidentale: due modi opposti di guardare l'anime",
-      "category": "Sociale/Culturale",
+      "title": "Quando i cartoni erano 'brutti': nostalgia critica dell'animazione",
+      "category": "Culturale/Nostalgia",
       "urgency": "Media",
-      "coerenza": 7,
-      "saturazione_IT": 2,
-      "saturazione_EN": 6,
-      "saturazione_JP": 4,
-      "delta_coerenza": "up",
-      "delta_sat_IT": "flat",
-      "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Lo stesso anime, due reazioni opposte: cosa vede il Giappone che noi non vediamo mai?",
-      "video_title": "Giappone vs Occidente: come guardiamo l'anime in modo completamente diverso",
-      "podcast_title": "Due pubblici, un anime: il gap culturale che nessuno spiega in italiano",
-      "angolatura": "Partire dal confronto audience JP/US di The Anime Man per aprire un tema piu' grande: l'anime e' un medium JP esportato o un linguaggio globale autonomo?",
+      "coerenza": 6,
+      "saturazione_IT": 6,
+      "saturazione_EN": 3,
+      "saturazione_JP": 1,
+      "delta_coerenza": "new",
+      "delta_sat_IT": "up",
+      "gap_IT_EN": "Basso",
+      "thumbnail_hook": "I cartoni 'brutti' che amavamo — e cosa ci dicono del Giappone che li esportava",
+      "video_title": "Perché i cartoni giapponesi sembravano brutti — e perché li amavamo lo stesso",
+      "podcast_title": "L'animazione 'sbagliata': quando il Giappone ci mandava gli scarti (o no?)",
+      "angolatura": "Non nostalgia per nostalgia: usare la chiusura di Rai Gulp e il dibattito sui film brutti come lente per leggere come il Giappone usava l'export animazione come soft power economico, non culturale.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "Il tema e' analitico e comparativo — il podcast permette sviluppo argomentativo senza necessita' di montaggio visivo.",
+      "motivazione_formato": "Tema da ragionamento lungo, il pubblico 25-45 vuole analisi non clip.",
       "struttura_atti": [
-        "Atto I: il caso concreto — stessa serie, reazioni opposte in JP e in Occidente, esempi recenti misurabili",
-        "Atto II: le radici culturali della divergenza — contesto sociale JP, il ruolo del manga come precursore, la decodifica diversa dei codici visivi",
-        "Atto III: la domanda scomoda — stiamo davvero capendo l'anime o stiamo proiettando la nostra cultura su un medium che non ci appartiene?"
+        "Atto I: Rai Gulp chiude — flashback su come l'animazione giapponese arrivava in Italia, chi la comprava e perché era economica",
+        "Atto II: I '10 film d'animazione più brutti' come fenomeno critico — cosa rende 'brutto' un cartone e chi decideva gli standard estetici",
+        "Atto III: Il Giappone non mandava i suoi capolavori, mandava il prodotto seriale — e questo ha plasmato un'intera generazione italiana inconsapevolmente"
       ],
-      "coverage_IT": "Tema completamente assente in italiano come analisi strutturata — al massimo appare in commenti o forum.",
-      "opportunita_IT": "The Anime Man ha due video su questo tema nelle ultime 2 settimane — segnale chiaro di interesse EN non ancora intercettato in IT.",
-      "esempi_EN": [
-        {
-          "titolo": "Japanese Audience VS American Audience",
-          "url": "https://youtube.com/watch?v=s3M_B1cCEHk"
-        }
-      ],
-      "angolo_EN": "The Anime Man tratta il tema come confronto pop — l'angolo IT puo' essere piu' antropologico e meno enterteinment.",
-      "segnale_JP": "Il canale Naoki Saito tocca marginalmente il tema della ricezione del proprio lavoro creativo — segnale debole ma coerente.",
-      "esempi_JP": [
-        {
-          "titolo": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
-          "url": "https://youtube.com/watch?v=fyC-88J1zeg"
-        }
-      ],
-      "utilita_JP": "Utile come prospettiva nativa sulla ricezione del proprio output creativo — angolo interno al sistema."
+      "coverage_IT": "151eG e Merluzzo coprono il lato nostalgico/pop, nessuno fa l'analisi strutturale del sistema di export JP.",
+      "opportunita_IT": "Luca può occupare l'angolo analitico-culturale sul meccanismo industriale giapponese dietro l'animazione export anni 80-90, assente in IT.",
+      "esempi_EN": [],
+      "angolo_EN": "In EN non esiste copertura di questo specifico fenomeno italo-giapponese.",
+      "segnale_JP": "Nessun segnale diretto dai dati JP di questa run su animazione export.",
+      "esempi_JP": [],
+      "utilita_JP": "I dati JP di questa run non offrono materiale utile per questo tema."
     }
   ],
   "trends_EN": [
     {
-      "title": "Il Giappone degli anni '80 congelato: le città Showa",
+      "title": "Il Giappone degli artigiani invisibili: vite di mestiere",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 2,
+      "volume_IT": 20,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Abroad in Japan ha pubblicato due video sul tema in 14 giorni, uno dei quali esplicitamente sulle città bloccate negli anni '80. In IT il tema è quasi vergine. Finestra: 4-8 settimane prima della saturazione.",
-      "connessione_canale": "Diretto collegamento alla Showa Era già trattata: angolo urbano-antropologico inedito, non nostalgia ma congelamento identitario."
+      "perche_monitorarlo": "Paolo from Tokyo esplora la venditrice ambulante di tofu come figura scomparsa: mestieri arcaici ancora in vita. In EN questo format 'day in the life' di figure di nicchia genera altissimo engagement. In IT assente. Finestra: 2-4 settimane.",
+      "connessione_canale": "Luca ha trattato il konbini come rito quotidiano. I mestieri ambulanti sono il rovescio: economia invisibile che resiste alla modernita."
     },
     {
-      "title": "Anime che hanno traumatizzato una generazione",
-      "category": "Cinema/J-Horror",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 51,
-      "volume_IT": 100,
-      "delta_EN": "flat",
-      "gap_IT": "Basso",
-      "perche_monitorarlo": "Gigguk ha un video diretto su questo frame. In IT anime_manga_pop è a volume 100 con delta +13, ma i video italiani restano su quiz e pop leggero. L'angolo trauma/psicologia è ancora libero in IT.",
-      "connessione_canale": "Ponte naturale con J-Horror e il femminile disturbante già trattati: l'anime come vettore di shock generazionale, non intrattenimento neutro."
-    },
-    {
-      "title": "Il Giappone che mente a sé stesso: narrative ufficiali vs realtà",
+      "title": "Il Giappone che mente: smontare i miti piu duri",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
       "volume_EN": 100,
-      "volume_IT": 3,
+      "volume_IT": 20,
+      "delta_EN": "flat",
+      "gap_IT": "Medio",
+      "perche_monitorarlo": "Abroad in Japan con 'You ve Been Lied to About Japan' cavalca il format debunking applicato alla cultura JP. Gia rilevato come segnale 60 giorni fa ma non ancora declinato in IT con angolo narrativo approfondito. Risalita del segnale giustifica monitoraggio.",
+      "connessione_canale": "Complementare agli episodi su Toyoko Kids e Jirai-kei: anche li Luca ha smontato narrazioni esterne semplificate sul Giappone."
+    },
+    {
+      "title": "Scuola giapponese: le specializzazioni estreme",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 100,
+      "volume_IT": 20,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Abroad in Japan pubblica 'You've Been Lied to About Japan', Tokyo Lens affronta il fallimento del pilot training: due angoli distinti ma stesso meta-tema del disinganno. In IT quasi nulla. Tema già rilevato ma non ancora saturato in IT.",
-      "connessione_canale": "Evoluzione del tema già segnalato nelle sessioni precedenti: ora con casi concreti e personali, non solo debunking astratto."
+      "perche_monitorarlo": "Paolo from Tokyo segue uno studente di liceo nautico militare: la scuola JP come istituzione totale con curricula impensabili in occidente. In IT quasi assente come angolo narrativo. Tema ampio con finestra lunga.",
+      "connessione_canale": "La scuola come microcosmo sociale e istituzione formante dell identita: affianca i temi di conformismo e pressione sociale gia esplorati nel canale."
     }
   ],
   "trends_JP": [
     {
-      "title": "Maternità documentata: gravidanza e postpartum come contenuto quotidiano / 妊娠・産後のドキュメンタリー日常",
+      "title": "L addio e il ritorno: transizioni pubbliche dei creator JP / さようならと再出発",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Kimono Mom domina il cluster JP con tre video consecutivi su gravidanza, meal prep postpartum e vita familiare. Formato diary con alto coinvolgimento emotivo.",
-      "utilita_canale": "Angolo sociologico: come il Giappone racconta la maternità online vs stigma sociale della donna-madre invisibile. Connessione con temi di genere già esplorati.",
+      "segnale": "Kimono Mom domina i dati JP con un video 'Thank you and Goodbye' virale: i creator giapponesi gestiscono pubblicamente le transizioni di vita come gravidanza, malattia, pausa. Fenomeno di parasocial intimacy nativo JP.",
+      "utilita_canale": "Angolo meta-culturale: come i creator JP costruiscono comunita emotiva attorno alle transizioni di vita, diverso dal creator occidentale.",
       "esempi_JP": [
         {
-          "titolo": "Meal prepping for Postpartum in My Final Month of Pregnancy",
-          "url": "https://youtube.com/watch?v=2eYJ4pJzXlo"
-        },
-        {
-          "titolo": "He's the reason why i enjoy this pregnancy",
-          "url": "https://youtube.com/watch?v=Ym8DeVkQ2Oo"
+          "titolo": "Thank you and Goodbye",
+          "url": "https://youtube.com/watch?v=JPUBshXQ4jE"
         }
       ]
     },
     {
-      "title": "Illustrazione e algoritmo: perché il disegno buono non riceve like / 絵にいいねがつかない問題",
-      "category": "Estetica/Visiva",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Alta",
-      "segnale": "Naoki Saito apre un canale secondario per indagare perché illustrazioni curate non ottengono engagement. Tema meta-creativo: l'artista giapponese vs piattaforma.",
-      "utilita_canale": "Finestra sulla crisi dell'illustratore professionista nell'era algoritmica in Giappone. Connessione con cultura visiva, manga e identità creativa giapponese. Angolo inedito in IT.",
-      "esempi_JP": [
-        {
-          "titolo": "頑張って描いた絵に『いいね』がつきません！なぜ…！？",
-          "url": "https://youtube.com/watch?v=fyC-88J1zeg"
-        }
-      ]
-    },
-    {
-      "title": "Kabukicho dall'interno: il distretto a luci rosse raccontato senza filtri / 歌舞伎町の内側",
+      "title": "Il distretto a luci rosse di Tokyo raccontato dall interno / 東京の歓楽街",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Alta",
-      "segnale": "TAKASHii from Japan esplora Kabukicho con formato immersivo. Segnale di interesse nativo per autonarrazione dei quartieri 'proibiti' senza frame turistico.",
-      "utilita_canale": "Collegamento diretto a Toyoko Kids e subculture urbane già trattate. Angolo: economia sommersa e geografia del desiderio a Tokyo. Alta aderenza al tono del canale.",
+      "segnale": "TAKASHii from Japan entra nel red light district di Tokyo con sguardo documentaristico. In JP questo tipo di contenuto esiste come esplorazione urbana e sociologica, non come sensazionalismo.",
+      "utilita_canale": "Luca ha trattato Toyoko Kids e sottobosco giovanile. Il kabukicho e simili come ecosistemi sociali complessi e' angolo narrativo aperto in IT.",
       "esempi_JP": [
         {
-          "titolo": "Inside Tokyo's Red Light District",
+          "titolo": "Inside Tokyo s Red Light District",
           "url": "https://youtube.com/watch?v=Td_Gdk56vSg"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Anime trauma generazionale in IT: verificare se canali italiani adottano il frame psicologico o restano su pop leggero",
-    "Illustrazione vs algoritmo: cercare voci italiane sul disagio creativo dei mangaka e illustratori digitali giapponesi",
-    "Kabukicho e distretto del desiderio: monitorare se il tema sale in EN con angolo sociologico, finestra di arrivo in IT stimata 3-6 settimane",
-    "Videogiochi IT (delta +30): cluster in forte crescita ma senza contenuto giapponese specifico — verificare se emerge titolo JP come catalizzatore editoriale"
+    "Kimono Mom goodbye: verificare se il canale chiude o si trasforma, potenziale angolo su burnout creator JP e gestione pubblica della fine",
+    "Abroad in Japan 'town stuck in 1980s': sovrapposizione con tema Showa gia esplorato, monitorare se arriva declinazione nuova in EN con angolo sociologico inedito",
+    "fotografia_japan EN: volume bassissimo (4) ma stabile, verificare se emerge come nuovo cluster narrativo nelle prossime settimane",
+    "anime_manga_pop IT resta a 100 flat: monitorare se il cluster si specializza su sottogeneri specifici che aprono nicchie non ancora saturate dai competitor italiani"
   ],
   "warnings": []
 }
