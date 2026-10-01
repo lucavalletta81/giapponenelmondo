@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-28 19:01",
-  "summary": "Settimana sostanzialmente piatta: anime_manga_pop IT rimane a volume massimo ma delta zero, tutti gli altri cluster calano. In EN il blocco expat_japan regge flat. I dati di questa run non generano segnali nuovi rispetto allo storico degli ultimi 60 giorni: l'unico polo di attività rilevante è il cluster animazione italiana/nostalgia (Rai Gulp, Pinocchio fascista, film brutti) che emerge come fenomeno editoriale distinto e non ancora coperto da Giappone nel Mondo.",
+  "generated_at": "2026-10-02 09:01",
+  "summary": "Settimana ancora piatta: nessun segnale nuovo emergente rispetto alla run precedente. Il cluster anime_manga_pop IT resta a volume massimo ma completamente flat, con contenuti orientati alla nostalgia animazione occidentale già rilevata 14 giorni fa. L'unico micro-segnale degno di nota è il cluster videogiochi IT in leggera crescita (+7), ma i video campione non hanno angolatura giapponese. In EN il blocco expat regge flat con due segnali di vita quotidiana nativa (tofu cart, marine high school) che potrebbero preannunciare un rinnovato interesse per il Giappone 'non turistico'.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 0,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 0,
+      "gap_IT_EN_count": 1,
       "delta_trend_count": 0
     },
     "EN": {
-      "trend_count": 0,
+      "trend_count": 1,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 0
     },
@@ -29,24 +29,24 @@
         "source": "youtube_velocity"
       },
       {
-        "keyword": "viaggio",
-        "volume": 30,
-        "delta": "down",
-        "delta_value": -29,
+        "keyword": "videogiochi",
+        "volume": 34,
+        "delta": "up",
+        "delta_value": 7,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "videogiochi",
-        "volume": 27,
-        "delta": "down",
-        "delta_value": -24,
+        "keyword": "viaggio",
+        "volume": 26,
+        "delta": "flat",
+        "delta_value": -4,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 20,
+        "volume": 14,
         "delta": "down",
-        "delta_value": -12,
+        "delta_value": -6,
         "source": "youtube_velocity"
       }
     ],
@@ -60,7 +60,7 @@
       },
       {
         "keyword": "anime_pop_en",
-        "volume": 42,
+        "volume": 33,
         "delta": "down",
         "delta_value": -9,
         "source": "youtube_velocity"
@@ -69,7 +69,7 @@
         "keyword": "fotografia_japan",
         "volume": 4,
         "delta": "flat",
-        "delta_value": 1,
+        "delta_value": 0,
         "source": "youtube_velocity"
       }
     ],
@@ -86,109 +86,101 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Quando i cartoni erano 'brutti': nostalgia critica dell'animazione",
-      "category": "Culturale/Nostalgia",
-      "urgency": "Media",
-      "coerenza": 6,
-      "saturazione_IT": 6,
-      "saturazione_EN": 3,
-      "saturazione_JP": 1,
-      "delta_coerenza": "new",
-      "delta_sat_IT": "up",
-      "gap_IT_EN": "Basso",
-      "thumbnail_hook": "I cartoni 'brutti' che amavamo — e cosa ci dicono del Giappone che li esportava",
-      "video_title": "Perché i cartoni giapponesi sembravano brutti — e perché li amavamo lo stesso",
-      "podcast_title": "L'animazione 'sbagliata': quando il Giappone ci mandava gli scarti (o no?)",
-      "angolatura": "Non nostalgia per nostalgia: usare la chiusura di Rai Gulp e il dibattito sui film brutti come lente per leggere come il Giappone usava l'export animazione come soft power economico, non culturale.",
+      "title": "Il Giappone quotidiano invisibile: mestieri e rituali che nessuno racconta",
+      "category": "Sociale/Culturale",
+      "urgency": "Bassa",
+      "coerenza": 4,
+      "saturazione_IT": 2,
+      "saturazione_EN": 5,
+      "saturazione_JP": 7,
+      "delta_coerenza": "flat",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "La signora del tofu esce alle 5 di mattina. Ogni giorno. Da 40 anni.",
+      "video_title": "Il mestiere che sparisce: un giorno con la venditrice di tofu ambulante",
+      "podcast_title": "Mestieri invisibili: il Giappone che lavora prima dell alba",
+      "angolatura": "Non il Giappone da cartolina ma quello delle persone che lo tengono in piedi ogni giorno: mestieri micro, rituali silenziosi, dignita del lavoro ordinario.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema da ragionamento lungo, il pubblico 25-45 vuole analisi non clip.",
+      "motivazione_formato": "Narrazione lenta e immersiva, si presta piu al podcast che al video senza riprese proprie",
       "struttura_atti": [
-        "Atto I: Rai Gulp chiude — flashback su come l'animazione giapponese arrivava in Italia, chi la comprava e perché era economica",
-        "Atto II: I '10 film d'animazione più brutti' come fenomeno critico — cosa rende 'brutto' un cartone e chi decideva gli standard estetici",
-        "Atto III: Il Giappone non mandava i suoi capolavori, mandava il prodotto seriale — e questo ha plasmato un'intera generazione italiana inconsapevolmente"
+        "Atto I: Il suono del carretto alle 5 — chi sono i lavoratori ambulanti giapponesi oggi e perche stanno sparendo",
+        "Atto II: Il sistema che li sostiene — licenze, rotte ereditarie, clienti fedeli da generazioni; la fiducia come infrastruttura sociale",
+        "Atto III: Quando sparisce il carretto — cosa perdiamo quando scompare un mestiere e perche in Giappone si tenta di conservarlo"
       ],
-      "coverage_IT": "151eG e Merluzzo coprono il lato nostalgico/pop, nessuno fa l'analisi strutturale del sistema di export JP.",
-      "opportunita_IT": "Luca può occupare l'angolo analitico-culturale sul meccanismo industriale giapponese dietro l'animazione export anni 80-90, assente in IT.",
-      "esempi_EN": [],
-      "angolo_EN": "In EN non esiste copertura di questo specifico fenomeno italo-giapponese.",
-      "segnale_JP": "Nessun segnale diretto dai dati JP di questa run su animazione export.",
-      "esempi_JP": [],
-      "utilita_JP": "I dati JP di questa run non offrono materiale utile per questo tema."
+      "coverage_IT": "Pressoché nulla: nessun canale italiano ha affrontato la quotidianita lavorativa giapponese non-turistica in modo narrativo",
+      "opportunita_IT": "Finestra aperta: in EN Paolo from Tokyo e Abroad in Japan ci girano attorno ma senza approfondimento; in italiano e territorio vergine con forte potenziale narrativo",
+      "esempi_EN": [
+        {
+          "titolo": "What a Day with a Japanese Tofu Cart Lady is like",
+          "url": "https://youtube.com/watch?v=UeDOP2XufYM"
+        },
+        {
+          "titolo": "Day in the Life of a Japanese Marine High School Student",
+          "url": "https://youtube.com/watch?v=XycscoJS3YM"
+        }
+      ],
+      "angolo_EN": "In EN si tratta come slice-of-life visivo; in IT si puo trasformare in saggio culturale sul lavoro e l identita",
+      "segnale_JP": "Kimono Mom copre la quotidianita domestica giapponese con forte engagement: segnale che il pubblico risponde al vissuto ordinario",
+      "esempi_JP": [
+        {
+          "titolo": "Japanese Postpartum Meals (Hospital Food)",
+          "url": "https://youtube.com/watch?v=JypqalyLh3Q"
+        }
+      ],
+      "utilita_JP": "Conferma che il quotidiano non-spettacolare genera engagement anche su pubblico nativo"
     }
   ],
   "trends_EN": [
     {
-      "title": "Il Giappone degli artigiani invisibili: vite di mestiere",
+      "title": "Il Giappone degli anni '80 congelato: le città Showa",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 20,
+      "volume_IT": 14,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Paolo from Tokyo esplora la venditrice ambulante di tofu come figura scomparsa: mestieri arcaici ancora in vita. In EN questo format 'day in the life' di figure di nicchia genera altissimo engagement. In IT assente. Finestra: 2-4 settimane.",
-      "connessione_canale": "Luca ha trattato il konbini come rito quotidiano. I mestieri ambulanti sono il rovescio: economia invisibile che resiste alla modernita."
+      "perche_monitorarlo": "Abroad in Japan pubblica ora un video su una città giapponese ferma agli anni '80: tema già forte in EN con milioni di view su cluster expat. In IT nessuno lo ha ancora trattato con angolo narrativo-culturale. Finestra: 4-8 settimane prima che arrivi la copertura italiana.",
+      "connessione_canale": "Diretto aggancio ai temi Showa e Haikyo già esplorati dal canale: angolo narrativo nuovo è la città-museo vivente, non abbandonata ma congelata per scelta."
     },
     {
-      "title": "Il Giappone che mente: smontare i miti piu duri",
+      "title": "Vita quotidiana estrema: tofu cart lady e marine school",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
       "volume_EN": 100,
-      "volume_IT": 20,
+      "volume_IT": 14,
       "delta_EN": "flat",
       "gap_IT": "Medio",
-      "perche_monitorarlo": "Abroad in Japan con 'You ve Been Lied to About Japan' cavalca il format debunking applicato alla cultura JP. Gia rilevato come segnale 60 giorni fa ma non ancora declinato in IT con angolo narrativo approfondito. Risalita del segnale giustifica monitoraggio.",
-      "connessione_canale": "Complementare agli episodi su Toyoko Kids e Jirai-kei: anche li Luca ha smontato narrazioni esterne semplificate sul Giappone."
-    },
-    {
-      "title": "Scuola giapponese: le specializzazioni estreme",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 20,
-      "delta_EN": "flat",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Paolo from Tokyo segue uno studente di liceo nautico militare: la scuola JP come istituzione totale con curricula impensabili in occidente. In IT quasi assente come angolo narrativo. Tema ampio con finestra lunga.",
-      "connessione_canale": "La scuola come microcosmo sociale e istituzione formante dell identita: affianca i temi di conformismo e pressione sociale gia esplorati nel canale."
+      "perche_monitorarlo": "Paolo from Tokyo esplora mestieri e ambienti scolastici ultra-specifici del Giappone. In IT il cluster vita_giappone è a -6 delta: ma l'angolo antropologico-mestieri è distinto dal travel generico e non ancora coperto da canali culturali italiani seri.",
+      "connessione_canale": "Si collega al filone vita_giappone del canale ma con taglio etnografico: il mestiere come rituale culturale giapponese, non come curiosità turistica."
     }
   ],
   "trends_JP": [
     {
-      "title": "L addio e il ritorno: transizioni pubbliche dei creator JP / さようならと再出発",
+      "title": "Maternità e postparto in Giappone / 産後ケアと日本の出産文化",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Kimono Mom domina i dati JP con un video 'Thank you and Goodbye' virale: i creator giapponesi gestiscono pubblicamente le transizioni di vita come gravidanza, malattia, pausa. Fenomeno di parasocial intimacy nativo JP.",
-      "utilita_canale": "Angolo meta-culturale: come i creator JP costruiscono comunita emotiva attorno alle transizioni di vita, diverso dal creator occidentale.",
+      "segnale": "Kimono Mom domina i dati JP con 5 video consecutivi su gravidanza, postparto, cibo ospedaliero e identità materna. Segnale di interesse nativo su maternità come performance culturale.",
+      "utilita_canale": "Possibile episodio su come il Giappone tratta il corpo della madre: ospedali, pasti rituali, pressione sociale. Angolo sociale non ancora trattato in IT da canali culturali.",
       "esempi_JP": [
         {
-          "titolo": "Thank you and Goodbye",
-          "url": "https://youtube.com/watch?v=JPUBshXQ4jE"
-        }
-      ]
-    },
-    {
-      "title": "Il distretto a luci rosse di Tokyo raccontato dall interno / 東京の歓楽街",
-      "category": "Sociale/Culturale",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Alta",
-      "segnale": "TAKASHii from Japan entra nel red light district di Tokyo con sguardo documentaristico. In JP questo tipo di contenuto esiste come esplorazione urbana e sociologica, non come sensazionalismo.",
-      "utilita_canale": "Luca ha trattato Toyoko Kids e sottobosco giovanile. Il kabukicho e simili come ecosistemi sociali complessi e' angolo narrativo aperto in IT.",
-      "esempi_JP": [
+          "titolo": "Japanese Postpartum Meals (Hospital Food)",
+          "url": "https://youtube.com/watch?v=JypqalyLh3Q"
+        },
         {
-          "titolo": "Inside Tokyo s Red Light District",
-          "url": "https://youtube.com/watch?v=Td_Gdk56vSg"
+          "titolo": "Why This Japanese Mom Doesn't Need Maternity Clothes",
+          "url": "https://youtube.com/watch?v=sIDkI5ZlFlI"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Kimono Mom goodbye: verificare se il canale chiude o si trasforma, potenziale angolo su burnout creator JP e gestione pubblica della fine",
-    "Abroad in Japan 'town stuck in 1980s': sovrapposizione con tema Showa gia esplorato, monitorare se arriva declinazione nuova in EN con angolo sociologico inedito",
-    "fotografia_japan EN: volume bassissimo (4) ma stabile, verificare se emerge come nuovo cluster narrativo nelle prossime settimane",
-    "anime_manga_pop IT resta a 100 flat: monitorare se il cluster si specializza su sottogeneri specifici che aprono nicchie non ancora saturate dai competitor italiani"
+    "Abroad in Japan: monitorare follow-up sulla città Showa congelata, verificare se altri canali EN replicano il format",
+    "Cluster vita_giappone IT: delta a -6, verificare se la discesa continua o rimbalza con contenuti di nicchia etnografica",
+    "Kimono Mom JP: osservare se il ciclo maternità si esaurisce o evolve verso temi di identità femminile giapponese post-parto",
+    "Asmongold e influenza JP: Sora The Troll segnala crossover gaming-cultura JP in EN, monitorare se il fenomeno produce contenuto nativo giapponese reattivo"
   ],
   "warnings": []
 }
