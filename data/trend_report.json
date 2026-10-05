@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-09-28",
-  "total_clusters": 8,
-  "total_videos": 51,
-  "date_range_start": "2026-09-14",
-  "date_range_end": "2026-09-28",
+  "generated_at": "2026-10-05",
+  "total_clusters": 7,
+  "total_videos": 53,
+  "date_range_start": "2026-09-22",
+  "date_range_end": "2026-10-04",
   "sections": {
     "emergenti": [],
     "crescita": [
       {
-        "label": 7,
-        "score": 0.8787,
+        "label": 5,
+        "score": 0.8747,
         "keywords": [
           "twitch",
           "manga",
-          "dragon ball",
           "dragon",
           "ball",
+          "dragon ball",
           "collezionare"
         ],
         "item_count": 15,
-        "total_views": 117719,
-        "velocity": 0.679,
+        "total_views": 137683,
+        "velocity": 0.667,
         "novelty": 0.5,
         "diversity": 0.417,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-28",
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-10-05",
         "sentinel_clusters": [
-          "vita_giappone",
-          "anime_manga_pop"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
           "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7802,
-          "casual": 0.6699
+          "narrativo": 0.7873,
+          "casual": 0.6719
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.78,
+        "affinity_best_score": 0.787,
         "items_by_lang": {
           "it": [
             {
-              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-              "source": "Caverna di Platone",
-              "date": "2026-09-17",
-              "views": 21154,
-              "likes": 424,
-              "duration_secs": 1589
+              "title": "Shinkansen in prima classe? #giappone #giapponese #treni",
+              "url": "https://www.youtube.com/watch?v=fdLzoVWBWOo",
+              "source": "Vivi Giappone",
+              "date": "2026-09-29",
+              "views": 32263,
+              "likes": 467,
+              "duration_secs": 76
             },
             {
               "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
@@ -60,25 +60,25 @@
               "duration_secs": 2348
             },
             {
-              "title": "BERSERK SPIEGATO FACILE",
-              "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+              "title": "Dragon Ball Super al Burger King",
+              "url": "https://www.youtube.com/watch?v=7POKr4nqFAU",
               "source": "Caverna di Platone",
-              "date": "2026-09-19",
-              "views": 9885,
-              "likes": 253,
-              "duration_secs": 3329
+              "date": "2026-09-25",
+              "views": 9297,
+              "likes": 177,
+              "duration_secs": 1270
             }
           ]
         },
         "top_items": [
           {
-            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-            "source": "Caverna di Platone",
-            "date": "2026-09-17",
-            "views": 21154,
-            "likes": 424,
-            "duration_secs": 1589
+            "title": "Shinkansen in prima classe? #giappone #giapponese #treni",
+            "url": "https://www.youtube.com/watch?v=fdLzoVWBWOo",
+            "source": "Vivi Giappone",
+            "date": "2026-09-29",
+            "views": 32263,
+            "likes": 467,
+            "duration_secs": 76
           },
           {
             "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
@@ -90,34 +90,149 @@
             "duration_secs": 2348
           },
           {
-            "title": "BERSERK SPIEGATO FACILE",
-            "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+            "title": "Dragon Ball Super al Burger King",
+            "url": "https://www.youtube.com/watch?v=7POKr4nqFAU",
             "source": "Caverna di Platone",
-            "date": "2026-09-19",
-            "views": 9885,
-            "likes": 253,
-            "duration_secs": 3329
+            "date": "2026-09-25",
+            "views": 9297,
+            "likes": 177,
+            "duration_secs": 1270
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.5426,
+        "keywords": [
+          "phrases",
+          "phrases coming",
+          "japanese phrases",
+          "japanese",
+          "coming",
+          "sushi"
+        ],
+        "item_count": 4,
+        "total_views": 31893,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.708,
+        "first_seen": "2026-09-23",
+        "last_seen": "2026-10-04",
+        "sentinel_clusters": [
+          "viaggio",
+          "vita_giappone",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6821,
+          "casual": 0.8326
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.833,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+              "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-04",
+              "views": 1961,
+              "likes": 70,
+              "duration_secs": 949
+            },
+            {
+              "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+              "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+              "source": "Ti Va Di Giappare?",
+              "date": "2026-09-23",
+              "views": 1934,
+              "likes": 53,
+              "duration_secs": 33
+            },
+            {
+              "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+              "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-02",
+              "views": 1883,
+              "likes": 88,
+              "duration_secs": 1184
+            }
+          ],
+          "ja": [
+            {
+              "title": "Japanese phrases you should know when coming to Japan",
+              "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+              "source": "TAKASHii from Japan",
+              "date": "2026-09-24",
+              "views": 26115,
+              "likes": 923,
+              "duration_secs": 53
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+            "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-04",
+            "views": 1961,
+            "likes": 70,
+            "duration_secs": 949
+          },
+          {
+            "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+            "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+            "source": "Ti Va Di Giappare?",
+            "date": "2026-09-23",
+            "views": 1934,
+            "likes": 53,
+            "duration_secs": 33
+          },
+          {
+            "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+            "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-02",
+            "views": 1883,
+            "likes": 88,
+            "duration_secs": 1184
+          },
+          {
+            "title": "Japanese phrases you should know when coming to Japan",
+            "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+            "source": "TAKASHii from Japan",
+            "date": "2026-09-24",
+            "views": 26115,
+            "likes": 923,
+            "duration_secs": 53
           }
         ]
       },
       {
         "label": 3,
-        "score": 0.4564,
+        "score": 0.5413,
         "keywords": [
           "use",
-          "copyright",
           "fair",
+          "copyright",
           "fair use",
           "anime",
-          "used owned"
+          "use tips"
         ],
-        "item_count": 5,
-        "total_views": 137661,
-        "velocity": 0.7,
+        "item_count": 8,
+        "total_views": 181592,
+        "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-17",
-        "last_seen": "2026-09-26",
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-10-05",
         "sentinel_clusters": [
           "anime_pop_en"
         ],
@@ -126,11 +241,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.711,
-          "casual": 0.6753
+          "narrativo": 0.7164,
+          "casual": 0.6562
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.711,
+        "affinity_best_score": 0.716,
         "items_by_lang": {
           "en": [
             {
@@ -143,6 +258,15 @@
               "duration_secs": 32
             },
             {
+              "title": "Tattoo culture in Japan is strange...",
+              "url": "https://www.youtube.com/watch?v=trB-44DO1r0",
+              "source": "The Anime Man",
+              "date": "2026-10-03",
+              "views": 36233,
+              "likes": 723,
+              "duration_secs": 28
+            },
+            {
               "title": "It's Niche... But It's Still Bad...",
               "url": "https://www.youtube.com/watch?v=hbuxBkTgWRs",
               "source": "The Anime Man",
@@ -150,15 +274,6 @@
               "views": 24679,
               "likes": 493,
               "duration_secs": 32
-            },
-            {
-              "title": "Sumos Train On Pushing??",
-              "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
-              "source": "The Anime Man",
-              "date": "2026-09-17",
-              "views": 24162,
-              "likes": 665,
-              "duration_secs": 39
             }
           ]
         },
@@ -173,6 +288,15 @@
             "duration_secs": 32
           },
           {
+            "title": "Tattoo culture in Japan is strange...",
+            "url": "https://www.youtube.com/watch?v=trB-44DO1r0",
+            "source": "The Anime Man",
+            "date": "2026-10-03",
+            "views": 36233,
+            "likes": 723,
+            "duration_secs": 28
+          },
+          {
             "title": "It's Niche... But It's Still Bad...",
             "url": "https://www.youtube.com/watch?v=hbuxBkTgWRs",
             "source": "The Anime Man",
@@ -180,128 +304,27 @@
             "views": 24679,
             "likes": 493,
             "duration_secs": 32
-          },
-          {
-            "title": "Sumos Train On Pushing??",
-            "url": "https://www.youtube.com/watch?v=27W9mjfq0IA",
-            "source": "The Anime Man",
-            "date": "2026-09-17",
-            "views": 24162,
-            "likes": 665,
-            "duration_secs": 39
           }
         ]
       },
       {
         "label": 6,
-        "score": 0.4119,
+        "score": 0.3646,
         "keywords": [
           "manga",
-          "compra",
+          "contenuti",
           "altro",
+          "del",
           "kirio",
-          "preferiti",
           "puoi"
         ],
-        "item_count": 4,
-        "total_views": 9901,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-19",
-        "last_seen": "2026-09-27",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7658,
-          "casual": 0.6687
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.766,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
-              "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
-              "source": "Kirio1984",
-              "date": "2026-09-19",
-              "views": 3667,
-              "likes": 63,
-              "duration_secs": 609
-            },
-            {
-              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-              "source": "Kirio1984",
-              "date": "2026-09-20",
-              "views": 3204,
-              "likes": 42,
-              "duration_secs": 517
-            },
-            {
-              "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
-              "source": "Kirio1984",
-              "date": "2026-09-26",
-              "views": 1669,
-              "likes": 41,
-              "duration_secs": 422
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
-            "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
-            "source": "Kirio1984",
-            "date": "2026-09-19",
-            "views": 3667,
-            "likes": 63,
-            "duration_secs": 609
-          },
-          {
-            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-            "source": "Kirio1984",
-            "date": "2026-09-20",
-            "views": 3204,
-            "likes": 42,
-            "duration_secs": 517
-          },
-          {
-            "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
-            "source": "Kirio1984",
-            "date": "2026-09-26",
-            "views": 1669,
-            "likes": 41,
-            "duration_secs": 422
-          }
-        ]
-      },
-      {
-        "label": 4,
-        "score": 0.4009,
-        "keywords": [
-          "anime",
-          "manga",
-          "otaku",
-          "animeshorts",
-          "anime manga",
-          "sconosciuti"
-        ],
         "item_count": 7,
-        "total_views": 13290,
-        "velocity": 0.929,
+        "total_views": 14498,
+        "velocity": 0.786,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-17",
-        "last_seen": "2026-09-27",
+        "first_seen": "2026-09-23",
+        "last_seen": "2026-10-04",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -310,182 +333,90 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7994,
-          "casual": 0.6707
+          "narrativo": 0.7468,
+          "casual": 0.6341
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.799,
+        "affinity_best_score": 0.747,
         "items_by_lang": {
           "it": [
             {
-              "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
-              "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-24",
-              "views": 3183,
-              "likes": 208,
-              "duration_secs": 177
-            },
-            {
-              "title": "La mostra di manga e anime più figa di Tokyo?",
-              "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+              "title": "Novità, delusioni e sorprese - I MANGA CHE HO LETTO A SETTEMBRE 2026",
+              "url": "https://www.youtube.com/watch?v=kcP_ZWBaOc4",
               "source": "Kirio1984",
-              "date": "2026-09-22",
-              "views": 2685,
-              "likes": 25,
-              "duration_secs": 147
+              "date": "2026-10-02",
+              "views": 3418,
+              "likes": 77,
+              "duration_secs": 1135
             },
             {
-              "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
-              "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-26",
-              "views": 1839,
-              "likes": 72,
-              "duration_secs": 78
+              "title": "STAR COMICS E GLI ALTRI EDITORI: LE NOVITÀ MANGA DI OTTOBRE 2026",
+              "url": "https://www.youtube.com/watch?v=IIF0jMqxPjo",
+              "source": "Kirio1984",
+              "date": "2026-09-23",
+              "views": 2821,
+              "likes": 80,
+              "duration_secs": 407
+            },
+            {
+              "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
+              "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
+              "source": "Kirio1984",
+              "date": "2026-10-04",
+              "views": 1931,
+              "likes": 49,
+              "duration_secs": 456
             }
           ]
         },
         "top_items": [
           {
-            "title": "Cose che mi sono rotto di sentire- Parte 2 #anime #manga #animeshorts #animeedit",
-            "url": "https://www.youtube.com/watch?v=pQiMdclmbaE",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-24",
-            "views": 3183,
-            "likes": 208,
-            "duration_secs": 177
-          },
-          {
-            "title": "La mostra di manga e anime più figa di Tokyo?",
-            "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
+            "title": "Novità, delusioni e sorprese - I MANGA CHE HO LETTO A SETTEMBRE 2026",
+            "url": "https://www.youtube.com/watch?v=kcP_ZWBaOc4",
             "source": "Kirio1984",
-            "date": "2026-09-22",
-            "views": 2685,
-            "likes": 25,
-            "duration_secs": 147
+            "date": "2026-10-02",
+            "views": 3418,
+            "likes": 77,
+            "duration_secs": 1135
           },
           {
-            "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
-            "url": "https://www.youtube.com/watch?v=jyWldFy9T9k",
-            "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-26",
-            "views": 1839,
-            "likes": 72,
-            "duration_secs": 78
-          }
-        ]
-      },
-      {
-        "label": 1,
-        "score": 0.3636,
-        "keywords": [
-          "manga",
-          "compra",
-          "altro",
-          "kirio",
-          "mettilo",
-          "preferiti"
-        ],
-        "item_count": 4,
-        "total_views": 92582,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-28",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6554,
-          "casual": 0.5421
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.655,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "IL VIDEO D'EMERGENZA 🚨",
-              "url": "https://www.youtube.com/watch?v=LwzRmeuCd7A",
-              "source": "151eG",
-              "date": "2026-09-19",
-              "views": 92095,
-              "likes": 3026,
-              "duration_secs": 26624
-            },
-            {
-              "title": "ANNUNCI MANGA E ALTRE NEWS",
-              "url": "https://www.youtube.com/watch?v=vjnG_RxDMH4",
-              "source": "Kirio1984",
-              "date": "2026-09-28",
-              "views": 303,
-              "likes": 10,
-              "duration_secs": 5931
-            },
-            {
-              "title": "INIZIA UNA NUOVA SETTIMANA!",
-              "url": "https://www.youtube.com/watch?v=fbCJ5AkzkGw",
-              "source": "Kirio1984",
-              "date": "2026-09-14",
-              "views": 104,
-              "likes": 6,
-              "duration_secs": 6184
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "IL VIDEO D'EMERGENZA 🚨",
-            "url": "https://www.youtube.com/watch?v=LwzRmeuCd7A",
-            "source": "151eG",
-            "date": "2026-09-19",
-            "views": 92095,
-            "likes": 3026,
-            "duration_secs": 26624
-          },
-          {
-            "title": "ANNUNCI MANGA E ALTRE NEWS",
-            "url": "https://www.youtube.com/watch?v=vjnG_RxDMH4",
+            "title": "STAR COMICS E GLI ALTRI EDITORI: LE NOVITÀ MANGA DI OTTOBRE 2026",
+            "url": "https://www.youtube.com/watch?v=IIF0jMqxPjo",
             "source": "Kirio1984",
-            "date": "2026-09-28",
-            "views": 303,
-            "likes": 10,
-            "duration_secs": 5931
+            "date": "2026-09-23",
+            "views": 2821,
+            "likes": 80,
+            "duration_secs": 407
           },
           {
-            "title": "INIZIA UNA NUOVA SETTIMANA!",
-            "url": "https://www.youtube.com/watch?v=fbCJ5AkzkGw",
+            "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
+            "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
             "source": "Kirio1984",
-            "date": "2026-09-14",
-            "views": 104,
-            "likes": 6,
-            "duration_secs": 6184
+            "date": "2026-10-04",
+            "views": 1931,
+            "likes": 49,
+            "duration_secs": 456
           }
         ]
       },
       {
         "label": 0,
-        "score": 0.3039,
+        "score": 0.2922,
         "keywords": [
           "maglietta",
           "calze",
-          "walls",
-          "vlaszlo",
-          "usate",
-          "ulteriore paio"
+          "acquisto aggiungete",
+          "aggiungete",
+          "tema nerd",
+          "aggiungete ulteriore"
         ],
-        "item_count": 9,
-        "total_views": 428865,
-        "velocity": 0.722,
+        "item_count": 10,
+        "total_views": 488721,
+        "velocity": 0.65,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-27",
+        "first_seen": "2026-09-21",
+        "last_seen": "2026-10-03",
         "sentinel_clusters": [
           "videogiochi"
         ],
@@ -494,21 +425,21 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6333,
-          "casual": 0.4302
+          "narrativo": 0.6511,
+          "casual": 0.4427
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.633,
+        "affinity_best_score": 0.651,
         "items_by_lang": {
           "it": [
             {
-              "title": "Sydney Sweeney e Ed Sheeran: Due polemiche, una gogna",
-              "url": "https://www.youtube.com/watch?v=OchtUM0Pr_Q",
+              "title": "Roast in Peace: perchè funziona",
+              "url": "https://www.youtube.com/watch?v=9dBCJM-jfZ0",
               "source": "Victorlaszlo88",
-              "date": "2026-09-16",
-              "views": 78773,
-              "likes": 1588,
-              "duration_secs": 1003
+              "date": "2026-09-29",
+              "views": 82692,
+              "likes": 1130,
+              "duration_secs": 1567
             },
             {
               "title": "Monster: La Storia di Lizzie Borden: Un mezzo disastro",
@@ -532,13 +463,13 @@
         },
         "top_items": [
           {
-            "title": "Sydney Sweeney e Ed Sheeran: Due polemiche, una gogna",
-            "url": "https://www.youtube.com/watch?v=OchtUM0Pr_Q",
+            "title": "Roast in Peace: perchè funziona",
+            "url": "https://www.youtube.com/watch?v=9dBCJM-jfZ0",
             "source": "Victorlaszlo88",
-            "date": "2026-09-16",
-            "views": 78773,
-            "likes": 1588,
-            "duration_secs": 1003
+            "date": "2026-09-29",
+            "views": 82692,
+            "likes": 1130,
+            "duration_secs": 1567
           },
           {
             "title": "Monster: La Storia di Lizzie Borden: Un mezzo disastro",
@@ -559,52 +490,260 @@
             "duration_secs": 1122
           }
         ]
+      },
+      {
+        "label": 1,
+        "score": 0.2803,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 3,
+        "total_views": 226220,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-09-24",
+        "last_seen": "2026-10-03",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6699,
+          "casual": 0.5694
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.67,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
+              "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-09-24",
+              "views": 91580,
+              "likes": 1464,
+              "duration_secs": 1020
+            },
+            {
+              "title": "絵が､めっちゃ上達する人の共通点とは…！？",
+              "url": "https://www.youtube.com/watch?v=Ojt15uEuTiE",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-10-03",
+              "views": 83561,
+              "likes": 1685,
+              "duration_secs": 1055
+            },
+            {
+              "title": "キャラクターが背景に埋もれてしまう問題【きまぐれ添削251】",
+              "url": "https://www.youtube.com/watch?v=tZAkg1NqsRc",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-10-01",
+              "views": 51079,
+              "likes": 842,
+              "duration_secs": 832
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
+            "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-09-24",
+            "views": 91580,
+            "likes": 1464,
+            "duration_secs": 1020
+          },
+          {
+            "title": "絵が､めっちゃ上達する人の共通点とは…！？",
+            "url": "https://www.youtube.com/watch?v=Ojt15uEuTiE",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-10-03",
+            "views": 83561,
+            "likes": 1685,
+            "duration_secs": 1055
+          },
+          {
+            "title": "キャラクターが背景に埋もれてしまう問題【きまぐれ添削251】",
+            "url": "https://www.youtube.com/watch?v=tZAkg1NqsRc",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-10-01",
+            "views": 51079,
+            "likes": 842,
+            "duration_secs": 832
+          }
+        ]
       }
     ],
-    "cross_source": [],
+    "cross_source": [
+      {
+        "label": 2,
+        "score": 0.5426,
+        "keywords": [
+          "phrases",
+          "phrases coming",
+          "japanese phrases",
+          "japanese",
+          "coming",
+          "sushi"
+        ],
+        "item_count": 4,
+        "total_views": 31893,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.708,
+        "first_seen": "2026-09-23",
+        "last_seen": "2026-10-04",
+        "sentinel_clusters": [
+          "viaggio",
+          "vita_giappone",
+          "japan_native"
+        ],
+        "languages": [
+          "it",
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6821,
+          "casual": 0.8326
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.833,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+              "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-04",
+              "views": 1961,
+              "likes": 70,
+              "duration_secs": 949
+            },
+            {
+              "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+              "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+              "source": "Ti Va Di Giappare?",
+              "date": "2026-09-23",
+              "views": 1934,
+              "likes": 53,
+              "duration_secs": 33
+            },
+            {
+              "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+              "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-02",
+              "views": 1883,
+              "likes": 88,
+              "duration_secs": 1184
+            }
+          ],
+          "ja": [
+            {
+              "title": "Japanese phrases you should know when coming to Japan",
+              "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+              "source": "TAKASHii from Japan",
+              "date": "2026-09-24",
+              "views": 26115,
+              "likes": 923,
+              "duration_secs": 53
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+            "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-04",
+            "views": 1961,
+            "likes": 70,
+            "duration_secs": 949
+          },
+          {
+            "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+            "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+            "source": "Ti Va Di Giappare?",
+            "date": "2026-09-23",
+            "views": 1934,
+            "likes": 53,
+            "duration_secs": 33
+          },
+          {
+            "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+            "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-02",
+            "views": 1883,
+            "likes": 88,
+            "duration_secs": 1184
+          },
+          {
+            "title": "Japanese phrases you should know when coming to Japan",
+            "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+            "source": "TAKASHii from Japan",
+            "date": "2026-09-24",
+            "views": 26115,
+            "likes": 923,
+            "duration_secs": 53
+          }
+        ]
+      }
+    ],
     "affinita": [
       {
-        "label": 7,
-        "score": 0.8787,
+        "label": 5,
+        "score": 0.8747,
         "keywords": [
           "twitch",
           "manga",
-          "dragon ball",
           "dragon",
           "ball",
+          "dragon ball",
           "collezionare"
         ],
         "item_count": 15,
-        "total_views": 117719,
-        "velocity": 0.679,
+        "total_views": 137683,
+        "velocity": 0.667,
         "novelty": 0.5,
         "diversity": 0.417,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-28",
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-10-05",
         "sentinel_clusters": [
-          "vita_giappone",
-          "anime_manga_pop"
+          "anime_manga_pop",
+          "vita_giappone"
         ],
         "languages": [
           "it"
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7802,
-          "casual": 0.6699
+          "narrativo": 0.7873,
+          "casual": 0.6719
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.78,
+        "affinity_best_score": 0.787,
         "items_by_lang": {
           "it": [
             {
-              "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-              "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-              "source": "Caverna di Platone",
-              "date": "2026-09-17",
-              "views": 21154,
-              "likes": 424,
-              "duration_secs": 1589
+              "title": "Shinkansen in prima classe? #giappone #giapponese #treni",
+              "url": "https://www.youtube.com/watch?v=fdLzoVWBWOo",
+              "source": "Vivi Giappone",
+              "date": "2026-09-29",
+              "views": 32263,
+              "likes": 467,
+              "duration_secs": 76
             },
             {
               "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
@@ -616,25 +755,25 @@
               "duration_secs": 2348
             },
             {
-              "title": "BERSERK SPIEGATO FACILE",
-              "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+              "title": "Dragon Ball Super al Burger King",
+              "url": "https://www.youtube.com/watch?v=7POKr4nqFAU",
               "source": "Caverna di Platone",
-              "date": "2026-09-19",
-              "views": 9885,
-              "likes": 253,
-              "duration_secs": 3329
+              "date": "2026-09-25",
+              "views": 9297,
+              "likes": 177,
+              "duration_secs": 1270
             }
           ]
         },
         "top_items": [
           {
-            "title": "IACONO E MONETA SVELANO IL CONTRATTO TOEI DRAGON BALL DAIMA",
-            "url": "https://www.youtube.com/watch?v=8H3xznUKuD0",
-            "source": "Caverna di Platone",
-            "date": "2026-09-17",
-            "views": 21154,
-            "likes": 424,
-            "duration_secs": 1589
+            "title": "Shinkansen in prima classe? #giappone #giapponese #treni",
+            "url": "https://www.youtube.com/watch?v=fdLzoVWBWOo",
+            "source": "Vivi Giappone",
+            "date": "2026-09-29",
+            "views": 32263,
+            "likes": 467,
+            "duration_secs": 76
           },
           {
             "title": "DRAGON BALL DAIMA 🐉 VALE LA PENA COLLEZIONARE LE CARTE PANINI?",
@@ -646,126 +785,149 @@
             "duration_secs": 2348
           },
           {
-            "title": "BERSERK SPIEGATO FACILE",
-            "url": "https://www.youtube.com/watch?v=jaTjlx6Iohs",
+            "title": "Dragon Ball Super al Burger King",
+            "url": "https://www.youtube.com/watch?v=7POKr4nqFAU",
             "source": "Caverna di Platone",
-            "date": "2026-09-19",
-            "views": 9885,
-            "likes": 253,
-            "duration_secs": 3329
+            "date": "2026-09-25",
+            "views": 9297,
+            "likes": 177,
+            "duration_secs": 1270
           }
         ]
       },
       {
-        "label": 6,
-        "score": 0.4119,
+        "label": 2,
+        "score": 0.5426,
         "keywords": [
-          "manga",
-          "compra",
-          "altro",
-          "kirio",
-          "preferiti",
-          "puoi"
+          "phrases",
+          "phrases coming",
+          "japanese phrases",
+          "japanese",
+          "coming",
+          "sushi"
         ],
         "item_count": 4,
-        "total_views": 9901,
-        "velocity": 1.0,
+        "total_views": 31893,
+        "velocity": 0.75,
         "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-19",
-        "last_seen": "2026-09-27",
+        "diversity": 0.708,
+        "first_seen": "2026-09-23",
+        "last_seen": "2026-10-04",
         "sentinel_clusters": [
-          "anime_manga_pop"
+          "viaggio",
+          "vita_giappone",
+          "japan_native"
         ],
         "languages": [
-          "it"
+          "it",
+          "ja"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7658,
-          "casual": 0.6687
+          "narrativo": 0.6821,
+          "casual": 0.8326
         },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.766,
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.833,
         "items_by_lang": {
           "it": [
             {
-              "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
-              "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
-              "source": "Kirio1984",
-              "date": "2026-09-19",
-              "views": 3667,
-              "likes": 63,
-              "duration_secs": 609
+              "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+              "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-04",
+              "views": 1961,
+              "likes": 70,
+              "duration_secs": 949
             },
             {
-              "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-              "source": "Kirio1984",
-              "date": "2026-09-20",
-              "views": 3204,
-              "likes": 42,
-              "duration_secs": 517
+              "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+              "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+              "source": "Ti Va Di Giappare?",
+              "date": "2026-09-23",
+              "views": 1934,
+              "likes": 53,
+              "duration_secs": 33
             },
             {
-              "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
-              "source": "Kirio1984",
-              "date": "2026-09-26",
-              "views": 1669,
-              "likes": 41,
-              "duration_secs": 422
+              "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+              "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-02",
+              "views": 1883,
+              "likes": 88,
+              "duration_secs": 1184
+            }
+          ],
+          "ja": [
+            {
+              "title": "Japanese phrases you should know when coming to Japan",
+              "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+              "source": "TAKASHii from Japan",
+              "date": "2026-09-24",
+              "views": 26115,
+              "likes": 923,
+              "duration_secs": 53
             }
           ]
         },
         "top_items": [
           {
-            "title": "QUESTI MANGA LI CONTINUO O LI MOLLO?",
-            "url": "https://www.youtube.com/watch?v=YSufHVZJYpM",
-            "source": "Kirio1984",
-            "date": "2026-09-19",
-            "views": 3667,
-            "likes": 63,
-            "duration_secs": 609
+            "title": "La mia prima volta in GIAPPONE è stata un DISASTRO: vi racconto tutto",
+            "url": "https://www.youtube.com/watch?v=XJg80LlP1GQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-04",
+            "views": 1961,
+            "likes": 70,
+            "duration_secs": 949
           },
           {
-            "title": "IL MANGA PIÙ ATTESO DELL’ANNO È ARRIVATO! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=loJv7uAyYuc",
-            "source": "Kirio1984",
-            "date": "2026-09-20",
-            "views": 3204,
-            "likes": 42,
-            "duration_secs": 517
+            "title": "Curiosità assurde sul giapponese! SUSHI IKURA",
+            "url": "https://www.youtube.com/watch?v=a0JwNfFaDNM",
+            "source": "Ti Va Di Giappare?",
+            "date": "2026-09-23",
+            "views": 1934,
+            "likes": 53,
+            "duration_secs": 33
           },
           {
-            "title": "NUOVI MANGA DA LEGGERE! 😱 Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=4dEvOg9D2aw",
-            "source": "Kirio1984",
-            "date": "2026-09-26",
-            "views": 1669,
-            "likes": 41,
-            "duration_secs": 422
+            "title": "ATTENZIONE al CETRIOLO giapponese | cosa devi sapere prima di sposarti un giapponese ",
+            "url": "https://www.youtube.com/watch?v=OFTJ5rCg9RA",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-02",
+            "views": 1883,
+            "likes": 88,
+            "duration_secs": 1184
+          },
+          {
+            "title": "Japanese phrases you should know when coming to Japan",
+            "url": "https://www.youtube.com/watch?v=KZYikYolVbI",
+            "source": "TAKASHii from Japan",
+            "date": "2026-09-24",
+            "views": 26115,
+            "likes": 923,
+            "duration_secs": 53
           }
         ]
       },
       {
         "label": 4,
-        "score": 0.4009,
+        "score": 0.2372,
         "keywords": [
           "anime",
-          "manga",
-          "otaku",
           "animeshorts",
-          "anime manga",
-          "sconosciuti"
+          "manga",
+          "animeedit",
+          "animeedits",
+          "anime manga"
         ],
-        "item_count": 7,
-        "total_views": 13290,
-        "velocity": 0.929,
+        "item_count": 6,
+        "total_views": 10362,
+        "velocity": 0.167,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-17",
-        "last_seen": "2026-09-27",
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-09-30",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -774,11 +936,11 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7994,
-          "casual": 0.6707
+          "narrativo": 0.7685,
+          "casual": 0.631
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.799,
+        "affinity_best_score": 0.768,
         "items_by_lang": {
           "it": [
             {
@@ -791,13 +953,13 @@
               "duration_secs": 177
             },
             {
-              "title": "La mostra di manga e anime più figa di Tokyo?",
-              "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
-              "source": "Kirio1984",
-              "date": "2026-09-22",
-              "views": 2685,
-              "likes": 25,
-              "duration_secs": 147
+              "title": "Film anime indimenticabili - Parte 3 #anime #manga #animeedit #animeshorts #animeedits",
+              "url": "https://www.youtube.com/watch?v=v2wL0aJ8dYk",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-09-29",
+              "views": 1924,
+              "likes": 157,
+              "duration_secs": 114
             },
             {
               "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
@@ -821,13 +983,13 @@
             "duration_secs": 177
           },
           {
-            "title": "La mostra di manga e anime più figa di Tokyo?",
-            "url": "https://www.youtube.com/watch?v=VQxzf9jBiSI",
-            "source": "Kirio1984",
-            "date": "2026-09-22",
-            "views": 2685,
-            "likes": 25,
-            "duration_secs": 147
+            "title": "Film anime indimenticabili - Parte 3 #anime #manga #animeedit #animeshorts #animeedits",
+            "url": "https://www.youtube.com/watch?v=v2wL0aJ8dYk",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-09-29",
+            "views": 1924,
+            "likes": 157,
+            "duration_secs": 114
           },
           {
             "title": "Anime sconosciuti che dobresti vedere - Parte 4 #anime #manga #otaku #animeshorts",
@@ -842,213 +1004,6 @@
       }
     ],
     "anomalie": [],
-    "altri": [
-      {
-        "label": 5,
-        "score": 0.302,
-        "keywords": [
-          "well tts",
-          "well",
-          "tjhese",
-          "tools",
-          "try tjhese",
-          "try"
-        ],
-        "item_count": 4,
-        "total_views": 82679,
-        "velocity": 0.25,
-        "novelty": 0.5,
-        "diversity": 0.583,
-        "first_seen": "2026-09-14",
-        "last_seen": "2026-09-23",
-        "sentinel_clusters": [
-          "expat_japan_en",
-          "japan_native"
-        ],
-        "languages": [
-          "ja",
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6725,
-          "casual": 0.7249
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.725,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "You’ve Been Lied to About Japan",
-              "url": "https://www.youtube.com/watch?v=eo0N-G-yEtM",
-              "source": "Abroad in Japan",
-              "date": "2026-09-14",
-              "views": 35182,
-              "likes": 5208,
-              "duration_secs": 1207
-            }
-          ],
-          "ja": [
-            {
-              "title": "Going to Japan's CURSED Ghost Town Where Foreigners Are Mysteriously Blocked",
-              "url": "https://www.youtube.com/watch?v=kq4drAAdJpg",
-              "source": "Sora The Troll",
-              "date": "2026-09-14",
-              "views": 30505,
-              "likes": 440,
-              "duration_secs": 20956
-            },
-            {
-              "title": "@AbroadinJapan, You've been lied to about Japan....??",
-              "url": "https://www.youtube.com/watch?v=aDqkU90FRAI",
-              "source": "Sora The Troll",
-              "date": "2026-09-17",
-              "views": 16992,
-              "likes": 316,
-              "duration_secs": 7543
-            },
-            {
-              "title": "The Japanese Cult Stalking Situation And How I Got Injured",
-              "url": "https://www.youtube.com/watch?v=hMgm1zFCrUk",
-              "source": "Sora The Troll",
-              "date": "2026-09-23",
-              "views": 0,
-              "likes": 52,
-              "duration_secs": 0
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "You’ve Been Lied to About Japan",
-            "url": "https://www.youtube.com/watch?v=eo0N-G-yEtM",
-            "source": "Abroad in Japan",
-            "date": "2026-09-14",
-            "views": 35182,
-            "likes": 5208,
-            "duration_secs": 1207
-          },
-          {
-            "title": "Going to Japan's CURSED Ghost Town Where Foreigners Are Mysteriously Blocked",
-            "url": "https://www.youtube.com/watch?v=kq4drAAdJpg",
-            "source": "Sora The Troll",
-            "date": "2026-09-14",
-            "views": 30505,
-            "likes": 440,
-            "duration_secs": 20956
-          },
-          {
-            "title": "@AbroadinJapan, You've been lied to about Japan....??",
-            "url": "https://www.youtube.com/watch?v=aDqkU90FRAI",
-            "source": "Sora The Troll",
-            "date": "2026-09-17",
-            "views": 16992,
-            "likes": 316,
-            "duration_secs": 7543
-          },
-          {
-            "title": "The Japanese Cult Stalking Situation And How I Got Injured",
-            "url": "https://www.youtube.com/watch?v=hMgm1zFCrUk",
-            "source": "Sora The Troll",
-            "date": "2026-09-23",
-            "views": 0,
-            "likes": 52,
-            "duration_secs": 0
-          }
-        ]
-      },
-      {
-        "label": 2,
-        "score": 0.1565,
-        "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
-        ],
-        "item_count": 3,
-        "total_views": 279807,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-17",
-        "last_seen": "2026-09-24",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6542,
-          "casual": 0.5652
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.654,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
-              "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-17",
-              "views": 105360,
-              "likes": 1380,
-              "duration_secs": 1027
-            },
-            {
-              "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
-              "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-24",
-              "views": 91580,
-              "likes": 1464,
-              "duration_secs": 1020
-            },
-            {
-              "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
-              "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-09-19",
-              "views": 82867,
-              "likes": 1472,
-              "duration_secs": 921
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "【悩み】仲良しでも、絵が下手な奴との関係性を切ってしまいます。",
-            "url": "https://www.youtube.com/watch?v=S_iXFEU1SK8",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-17",
-            "views": 105360,
-            "likes": 1380,
-            "duration_secs": 1027
-          },
-          {
-            "title": "【原因究明】頑張って描いた絵に『いいね』がつきません！なぜ…！？",
-            "url": "https://www.youtube.com/watch?v=fyC-88J1zeg",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-24",
-            "views": 91580,
-            "likes": 1464,
-            "duration_secs": 1020
-          },
-          {
-            "title": "絵が、完成に見えない理由は！？【きまぐれ添削246】2",
-            "url": "https://www.youtube.com/watch?v=HA6Y8w491uM",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-09-19",
-            "views": 82867,
-            "likes": 1472,
-            "duration_secs": 921
-          }
-        ]
-      }
-    ]
+    "altri": []
   }
 }

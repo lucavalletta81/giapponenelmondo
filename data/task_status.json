@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-09-28T17:25:40Z",
+  "last_updated": "2026-10-05T17:58:56Z",
   "tasks": [
     {
       "id": "yt_ingest",
       "name": "YouTube Ingestion",
       "schedule": "Ogni 12h",
-      "last_run": "2026-09-28T17:24:59Z",
+      "last_run": "2026-10-05T17:58:17Z",
       "status": "ok",
       "metrics": {
-        "inserted": 77,
-        "skipped": 0
+        "inserted": 61,
+        "skipped": 1
       }
     },
     {
       "id": "rd_ingest",
       "name": "Reddit Ingestion",
       "schedule": "Ogni 6h",
-      "last_run": "2026-09-28T17:24:59Z",
+      "last_run": "2026-10-05T17:58:17Z",
       "status": "disabled",
       "metrics": {
         "inserted": 0
@@ -26,40 +26,40 @@
       "id": "embed",
       "name": "Embedding",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-09-28T17:25:35Z",
+      "last_run": "2026-10-05T17:58:52Z",
       "status": "ok",
       "metrics": {
-        "items_processed": 77
+        "items_processed": 61
       }
     },
     {
       "id": "cluster",
       "name": "Clustering",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-09-28T17:25:39Z",
+      "last_run": "2026-10-05T17:58:56Z",
       "status": "ok",
       "metrics": {
-        "clusters_found": 8
+        "clusters_found": 7
       }
     },
     {
       "id": "score",
       "name": "Scoring",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-09-28T17:25:39Z",
+      "last_run": "2026-10-05T17:58:56Z",
       "status": "ok",
       "metrics": {
-        "top_score": 0.8787
+        "top_score": 0.8747
       }
     },
     {
       "id": "report",
       "name": "Report generazione",
       "schedule": "Lunedì 11:00",
-      "last_run": "2026-09-28T17:25:39Z",
+      "last_run": "2026-10-05T17:58:56Z",
       "status": "ok",
       "metrics": {
-        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-09-28.md"
+        "path": "/home/runner/work/trend-discovery/trend-discovery/reports/2026-10-05.md"
       }
     },
     {
