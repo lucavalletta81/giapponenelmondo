@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05 19:01",
-  "summary": "Settimana ancora piatta sul fronte italiano: nessun segnale genuinamente nuovo rispetto alle run precedenti. L'unico dato in movimento è anime_pop_en in inglese (+42 delta), trainato da The Anime Man su tatuaggi in Giappone e confronto pubblico JP vs occidentale — angolature già schedate nello storico. I dati JP sono dominati da un unico canale (Kimono Mom, contenuti maternità) senza rilevanza editoriale per Luca. Si segnala un solo trend candidato, con cautela.",
+  "generated_at": "2026-10-09 09:01",
+  "summary": "Settimana sostanzialmente piatta anche in questa run. Il segnale più forte resta anime_pop_en in inglese (volume 100, +25 delta), con video che toccano la cultura del tatuaggio in Giappone e il confronto JP/occidentale — ma entrambi gli angoli sono già nello storico. Il cluster IT è dominato da anime/manga generico senza nuove punte. I dati JP sono ancora monopolizzati da Kimono Mom (maternità, nessuna rilevanza editoriale). Un unico trend candidato emerge con segnale sufficiente e angolatura non ancora schedula.",
   "overview": {
     "IT": {
       "trend_count": 1,
@@ -30,46 +30,39 @@
       },
       {
         "keyword": "videogiochi",
-        "volume": 58,
-        "delta": "up",
-        "delta_value": 24,
+        "volume": 39,
+        "delta": "down",
+        "delta_value": -19,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 11,
-        "delta": "flat",
-        "delta_value": -3,
-        "source": "youtube_velocity"
-      },
-      {
-        "keyword": "viaggio",
-        "volume": 0,
+        "volume": 4,
         "delta": "down",
-        "delta_value": -26,
+        "delta_value": -7,
         "source": "youtube_velocity"
       }
     ],
     "EN": [
       {
-        "keyword": "expat_japan_en",
+        "keyword": "anime_pop_en",
         "volume": 100,
-        "delta": "flat",
-        "delta_value": 0,
+        "delta": "up",
+        "delta_value": 25,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "anime_pop_en",
-        "volume": 75,
-        "delta": "up",
-        "delta_value": 42,
+        "keyword": "expat_japan_en",
+        "volume": 37,
+        "delta": "down",
+        "delta_value": -63,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 7,
-        "delta": "flat",
-        "delta_value": 3,
+        "volume": 1,
+        "delta": "down",
+        "delta_value": -6,
         "source": "youtube_velocity"
       }
     ],
@@ -86,107 +79,118 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Tatuaggi in Giappone: il corpo proibito tra yakuza e turismo",
-      "category": "Sociale/Culturale",
+      "title": "Perdere soldi in Giappone: i negozi-trappola dell'otaku economy",
+      "category": "Estetica/Visiva",
       "urgency": "Media",
       "coerenza": 5,
       "saturazione_IT": 2,
-      "saturazione_EN": 5,
-      "saturazione_JP": 6,
+      "saturazione_EN": 6,
+      "saturazione_JP": 1,
       "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
-      "gap_IT_EN": "Medio",
-      "thumbnail_hook": "In Giappone il tuo tatuaggio può rovinarti la vacanza — e non è uno scherzo",
-      "video_title": "Tatuaggi in Giappone: perché il corpo tatuato è ancora illegale nell'anima",
-      "podcast_title": "Il corpo proibito: tatuaggi, yakuza e il Giappone che non ti lascia entrare",
-      "angolatura": "Non un vademecum turistico, ma una lettura culturale: il tatuaggio come confine sociale, dalla yakuza al turista inconsapevole, fino al dibattito interno giapponese sulla liberalizzazione",
+      "gap_IT_EN": "Alto",
+      "thumbnail_hook": "Sono entrato con 10 euro. Sono uscito con zero.",
+      "video_title": "Il negozio giapponese che ti svuota il conto (e capisci perché)",
+      "podcast_title": "Otaku economy: perché i negozi JP sono progettati per farti spendere tutto",
+      "angolatura": "Non travel, non haul: analisi del design psicologico e culturale dei negozi otaku come sistema di cattura del desiderio.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Il tema regge visivamente (immagini, estetica) e in profondità narrativa per podcast",
+      "motivazione_formato": "Il video regge sulla componente visiva; il podcast approfondisce l'economia del desiderio.",
       "struttura_atti": [
-        "Atto I: perché in Giappone il tatuaggio è ancora stigma — origini yakuza, onsen, piscine, sento",
-        "Atto II: il paradosso turistico — milioni di stranieri tatuati entrano in Giappone, le regole cambiano o si ignorano?",
-        "Atto III: il Giappone che cambia — artisti del tatuaggio giapponesi, il movimento per la legalizzazione, irezumi come arte"
+        "Atto I: CDawgVA perde 2000 dollari — non è stupidità, è design. Come funziona la logica dello store JP.",
+        "Atto II: Anatomia del negozio otaku — gatcha, edizioni limitate, spazio fisico compresso, senso di scarsità artificiale.",
+        "Atto III: Cosa ci dice di noi: perché il pubblico occidentale è più vulnerabile, e cosa rimane dopo la spesa."
       ],
-      "coverage_IT": "Quasi assente in italiano: trattato solo in articoli di blog travel generici, nessun approfondimento culturale su YouTube IT",
-      "opportunita_IT": "Luca può essere il primo canale italiano a trattarlo con angolatura culturale invece che turistica, sfruttando il gap rispetto a EN",
+      "coverage_IT": "Nessun canale italiano ha trattato l'economia psicologica dei negozi otaku con approccio analitico.",
+      "opportunita_IT": "Primo in italiano su un angolo che unisce cultura pop, economia comportamentale e Giappone — assente nello spazio IT.",
       "esempi_EN": [
         {
-          "titolo": "Tattoo culture in Japan is strange...",
-          "url": "https://youtube.com/watch?v=trB-44DO1r0"
+          "titolo": "I Lost $2,000 in Japan's Most Insane Store | Ft. @AbroadinJapan",
+          "url": "https://youtube.com/watch?v=4uWHYf79sts"
         }
       ],
-      "angolo_EN": "The Anime Man tratta il tema in chiave personale/aneddotica — manca la lettura storica e sociale profonda",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run — il dibattito esiste ma non emerge nel campione disponibile",
+      "angolo_EN": "CDawgVA tratta il tema come avventura comica; manca l'analisi strutturale del perché accade.",
+      "segnale_JP": "Nessun segnale rilevante nei dati JP di questa run — angolo pensato per lettura occidentale del fenomeno.",
       "esempi_JP": [],
-      "utilita_JP": "Nessun esempio JP disponibile nei dati correnti — ricerca diretta consigliata prima della produzione"
+      "utilita_JP": "Non applicabile: il fenomeno è rilevante come esperienza del visitatore, non del nativo."
     }
   ],
   "trends_EN": [
     {
-      "title": "Tatuaggi in Giappone: tra stigma yakuza e nuova accettazione",
+      "title": "Cultura tatuaggi JP: il corpo tra yakuza e turismo 2.0",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
-      "volume_EN": 75,
+      "volume_EN": 100,
       "volume_IT": 0,
       "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "The Anime Man esplora la cultura del tatuaggio JP in un cluster anime_pop_en in forte crescita (+42). Il tema stigma/yakuza/cambiamento generazionale e quasi assente in italiano. Finestra 4-8 settimane prima che arrivi in IT.",
-      "connessione_canale": "Ponte naturale con episodi su subculture (Jirai-kei, Visual Kei): il corpo come superficie identitaria e politica in Giappone."
+      "perche_monitorarlo": "The Anime Man torna sul tema tatuaggi JP con angolatura nuova (strangeness culturale, non solo divieto). Delta EN +25, volume massimo. In IT il tema era stato scheda 60gg fa ma mai sviluppato. Finestra: 2-3 settimane prima che arrivi in italiano.",
+      "connessione_canale": "Luca ha trattato Jirai-kei e corpi devianti nel sociale JP: i tatuaggi sono la versione adulta dello stesso tabù identitario."
     },
     {
-      "title": "Pubblico JP vs pubblico EN: due modi di consumare l anime",
-      "category": "Cinema/J-Horror",
+      "title": "Anime store folli: l'economia del collezionismo estremo",
+      "category": "Estetica/Visiva",
       "urgency_radar": "Tiepido",
-      "volume_EN": 75,
-      "volume_IT": 0,
+      "volume_EN": 100,
+      "volume_IT": 100,
       "delta_EN": "up",
       "gap_IT": "Medio",
-      "perche_monitorarlo": "The Anime Man pubblica 'Japanese Audience VS American Audience' in un cluster in forte risalita. Il tema era gia nei 60 giorni MA il delta EN +42 segnala nuova energia: potrebbe essere il momento giusto per un angolo piu approfondito in IT.",
-      "connessione_canale": "Gia rilevato in passato ma mai prodotto: il gap rimane, il segnale torna piu forte. Angolo consigliato: antropologia dello spettatore, non semplice confronto."
+      "perche_monitorarlo": "CDawgVA + Abroad in Japan firmano un collab su store JP e spese folli. Angolatura EN: l'economia del collezionismo come dipendenza culturale. In IT anime_manga_pop è flat: nessuno ha ancora trattato il lato economico-psicologico degli store. Gap di angolatura, non di volume.",
+      "connessione_canale": "Collegabile all'episodio Konbini e alla logica JP del consumo rituale. L'identità attraverso l'oggetto comprato."
+    },
+    {
+      "title": "Trash Taste e la cultura del giudizio: chi decide cos'e' trash?",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Freddo",
+      "volume_EN": 100,
+      "volume_IT": 0,
+      "delta_EN": "up",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Due episodi Trash Taste in 14 giorni sul giudizio estetico dell'anime e del gusto. In EN domina la meta-riflessione su chi costruisce il canone pop JP. In IT assente. Segnale debole ma coerente: potenziale episodio teorico sulla critica culturale dell'anime come fenomeno di potere.",
+      "connessione_canale": "Luca ha trattato il pubblico JP vs occidentale come frame. Trash Taste è la versione anglofona dello stesso conflitto: chi possiede il gusto?"
     }
   ],
   "trends_JP": [
     {
-      "title": "Maternita giapponese in esilio / 海外出産する日本人母",
+      "title": "Maternità in movimento: il corpo gravido fuori dal Giappone / 妊娠と海外生活",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Media",
-      "segnale": "Kimono Mom domina il cluster JP con una serie coerente su gravidanza, parto e postparto di una madre giapponese a Los Angeles: pasti ospedalieri, routine, addii. Narrazione intima del sistema medico JP vs USA.",
-      "utilita_canale": "Angolo possibile: il sistema del postparto giapponese (satogaeri bunben) come istituzione culturale sparita. Non travel, non expat: antropologia della cura.",
+      "rilevanza": "Bassa",
+      "segnale": "Kimono Mom domina i dati JP con 5 video sulla gravidanza a LA. Fenomeno di diaspora femminile JP che partorisce all'estero per scelta o necessità. Nessun segnale di trend nativo allargato.",
+      "utilita_canale": "Angolatura possibile: le donne giapponesi che scelgono di partorire fuori dal Giappone come sintomo del sistema sanitario e sociale JP. Troppo specifico per ora.",
       "esempi_JP": [
         {
-          "titolo": "Japanese Postpartum Meals (Hospital Food)",
-          "url": "https://youtube.com/watch?v=JypqalyLh3Q"
+          "titolo": "9 Months Pregnant in LA | Japanese Mom Morning Routine",
+          "url": "https://youtube.com/watch?v=tW-hvAn5RIg"
         },
         {
-          "titolo": "Why This Japanese Mom Doesn't Need Maternity Clothes",
-          "url": "https://youtube.com/watch?v=sIDkI5ZlFlI"
+          "titolo": "Our Last Days as a Family of Three",
+          "url": "https://youtube.com/watch?v=O8PvqUwZQUk"
         }
       ]
     },
     {
-      "title": "Asmongold e il Giappone: quando l Occidente digitale colonizza la cultura JP",
-      "category": "Gaming/Retro",
+      "title": "Illustrazione e autodidattica JP: i libri che formano gli artisti / イラスト上達本",
+      "category": "Estetica/Visiva",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Sora The Troll pubblica un video sull influenza di Asmongold (streamer USA) sul pubblico JP: fenomeno di reverse cultural import che cresce nel cluster nativo.",
-      "utilita_canale": "Collegamento diretto al cluster videogiochi IT in crescita (+24). Angolo originale: come i creator occidentali stanno riscrivendo il rapporto tra fan giapponesi e propria cultura pop.",
+      "segnale": "Naoki Saito consiglia 5 libri per migliorare nell'illustrazione JP. Segnale isolato ma coerente con ecosistema creativo nativo: la formazione artistica come pratica culturale strutturata.",
+      "utilita_canale": "Potenziale episodio su come il Giappone forma i suoi illustratori: scuole, manuali, cultura del miglioramento continuo. Collegabile all'estetica manga e al Visual Kei già trattato.",
       "esempi_JP": [
         {
-          "titolo": "Asmongold's Influence On Japan Has Gotten ACTUALLY Insane",
-          "url": "https://youtube.com/watch?v=idr8krn5600"
+          "titolo": "【おすすめ】イラスト上達のための本 5選",
+          "url": "https://youtube.com/watch?v=eEM7hM6f7Ho"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Tatuaggio JP: monitorare se altri canali EN oltre The Anime Man raccolgono il tema nelle prossime 2 settimane",
-    "Cluster videogiochi IT (+24): verificare se emergono video con angolatura giapponese esplicita, finora assente",
-    "Kimono Mom satogaeri bunben: cercare in JP contenuti analoghi su postparto e sistema di cura familiare tradizionale",
-    "Asmongold-Japan reverse import: monitorare se il tema si espande in EN o rimane fenomeno nativo JP isolato"
+    "Tatuaggi JP in EN: verificare se altri canali EN si aggiungono a The Anime Man o rimane segnale isolato",
+    "CDawgVA x Abroad in Japan collab: monitorare view-velocity nei prossimi 7gg per capire se l'angolatura economia-collezionismo decolla",
+    "expat_japan_en delta -63: crollo strutturale o rimbalzo? Verificare se Abroad in Japan recupera con il video ciclismo 2000km",
+    "Naoki Saito illustrazione JP: cercare altri creator JP nativi sullo stesso tema nelle prossime run per confermare cluster emergente"
   ],
   "warnings": []
 }
