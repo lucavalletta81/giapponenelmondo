@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-12 19:01",
-  "summary": "Settimana con segnali deboli e nessuna rottura rispetto alla run precedente. Il cluster IT è ancora dominato da anime/manga generico piatto; vita_giappone sale di +11 ma su volume bassissimo (15). Il segnale più interessante viene dall'incrocio EN expat (+6, volume 43) con un video Erikottero su Nagasaki — angolatura scuola/memoria che non è ancora nello storico italiano. Un solo trend sostenuto dai dati emerge con certezza.",
+  "generated_at": "2026-10-16 09:02",
+  "summary": "Settimana sostanzialmente piatta sul mercato italiano: anime/manga resta dominante e saturo, videogiochi sale di +15 ma con contenuti non pertinenti alla nicchia JP. Il segnale più solido continua a venire dall'incrocio EN expat (volume 53, +10) con contenuti che esplorano il Giappone quotidiano in chiave esperienziale e fisica — ciclismo estremo, appartamenti minuscoli, rituali del mattino. In italiano queste angolature restano quasi scoperte. Due trend emergono con sufficiente base dati; il resto è rumore.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 2,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 1,
+      "gap_IT_EN_count": 2,
       "delta_trend_count": 1
     },
     "EN": {
-      "trend_count": 1,
+      "trend_count": 3,
       "youtube_videos_analyzed": 10,
       "delta_trend_count": 1
     },
     "JP": {
-      "signal_count": 0,
+      "signal_count": 1,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -30,16 +30,16 @@
       },
       {
         "keyword": "videogiochi",
-        "volume": 28,
-        "delta": "down",
-        "delta_value": -11,
+        "volume": 43,
+        "delta": "up",
+        "delta_value": 15,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 15,
-        "delta": "up",
-        "delta_value": 11,
+        "volume": 10,
+        "delta": "flat",
+        "delta_value": -5,
         "source": "youtube_velocity"
       }
     ],
@@ -53,16 +53,16 @@
       },
       {
         "keyword": "expat_japan_en",
-        "volume": 43,
+        "volume": 53,
         "delta": "up",
-        "delta_value": 6,
+        "delta_value": 10,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 1,
+        "volume": 4,
         "delta": "flat",
-        "delta_value": 0,
+        "delta_value": 3,
         "source": "youtube_velocity"
       }
     ],
@@ -79,92 +79,159 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "La scuola giapponese come luogo della memoria",
+      "title": "Il Giappone a piedi: corpo, fatica e paesaggio come metodo",
       "category": "Sociale/Culturale",
-      "urgency": "Media",
-      "coerenza": 6,
+      "urgency": "Alta",
+      "coerenza": 7,
       "saturazione_IT": 2,
-      "saturazione_EN": 5,
-      "saturazione_JP": 3,
+      "saturazione_EN": 6,
+      "saturazione_JP": 2,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Sono tornata nella mia scuola giapponese dopo anni — non era come la ricordavo",
-      "video_title": "La scuola giapponese: rituale, memoria e il peso di crescere in Giappone",
-      "podcast_title": "Dentro la scuola giapponese: regole, corpo e identità che restano",
-      "angolatura": "La scuola giapponese non come sistema didattico ma come spazio di formazione del sé — club, cerimonie, uniformi, il corpo che obbedisce e ricorda",
-      "timing": "Prossimo mese",
-      "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Il tema regge sia la narrazione visiva (luoghi, uniformi) sia il podcast riflessivo",
+      "thumbnail_hook": "2.000 km in bici attraverso il Giappone. Non è un viaggio. E' una resa dei conti.",
+      "video_title": "Ho attraversato il Giappone a piedi (e quasi non ce la facevo)",
+      "podcast_title": "Il corpo come bussola: attraversare il Giappone nel silenzio",
+      "angolatura": "Il Giappone non come destinazione turistica ma come spazio fisico che trasforma chi lo attraversa lentamente — la fatica come lente culturale, non come sfida sportiva.",
+      "timing": "Entro 2 settimane",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "Senza footage proprio, il podcast narrativo regge meglio l angolatura filosofica",
       "struttura_atti": [
-        "Atto I: Tornare nella propria ex scuola in Giappone — cosa resta fisicamente e cosa è cambiato",
-        "Atto II: La scuola giapponese come macchina di conformità: club obbligatori, uniformi, cerimonie del corpo — cosa forma davvero lo studente",
-        "Atto III: Il peso della memoria scolastica nella cultura JP adulta — perché i manga e gli anime tornano sempre lì"
+        "Atto I: perche il Giappone si presta all attraversamento lento — infrastruttura, ritmo, silenzio del paesaggio rurale",
+        "Atto II: cosa succede al corpo e alla mente dopo settimane di movimento — il Giappone che non appare nelle guide emerge solo a piedi o in bici",
+        "Atto III: il viaggio fisico come contraddizione culturale in un paese ossessionato dall efficienza — cosa significa rallentare in una societa che corre"
       ],
-      "coverage_IT": "Quasi assente: la scuola JP è trattata solo di passaggio in video travel o anime — mai come oggetto culturale autonomo",
-      "opportunita_IT": "Luca può entrare primo con una lettura profonda: la scuola non come curiosità esotica ma come laboratorio di identità collettiva giapponese",
+      "coverage_IT": "Quasi assente: il viaggio lento in Giappone e trattato come travel content, mai come tema culturale narrativo",
+      "opportunita_IT": "Nessun canale italiano ha ancora trattato l attraversamento fisico del Giappone come chiave interpretativa della cultura — gap ampio e angolatura originale rispetto ai competitor",
       "esempi_EN": [
         {
-          "titolo": "Vi porto nella mia ex scuola a Nagasaki KWASSUI High School",
-          "url": "https://youtube.com/watch?v=Jwc6cDPxADM"
+          "titolo": "I Cycled 2,000km Across Japan (It Almost Broke Me)",
+          "url": "https://youtube.com/watch?v=qywl88BjtUc"
         }
       ],
-      "angolo_EN": "Gli expat raccontano la scuola JP in chiave nostalgia personale — Luca può farne analisi culturale",
-      "segnale_JP": "Nessun segnale diretto dai dati JP di questa run — cluster Kimono Mom non pertinente",
+      "angolo_EN": "Abroad in Japan usa la fatica fisica come hook emotivo, ma resta nel registro dell avventura personale",
+      "segnale_JP": "Nessun segnale diretto nei dati JP questa run — il tema e guidato interamente dal mercato EN expat",
       "esempi_JP": [],
-      "utilita_JP": "Il dato JP non supporta il trend questa settimana — utile solo come fonte secondaria di ricerca"
+      "utilita_JP": "Non applicabile questa run: segnale assente nel dataset JP"
+    },
+    {
+      "title": "Vivere in 20 metri quadri: lo spazio minimo come scelta o costrizione",
+      "category": "Sociale/Culturale",
+      "urgency": "Media",
+      "coerenza": 6,
+      "saturazione_IT": 3,
+      "saturazione_EN": 7,
+      "saturazione_JP": 4,
+      "delta_coerenza": "flat",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "5 appartamenti a Tokyo. Tutti sotto i 20 metri quadri. Tutti abitati davvero.",
+      "video_title": "5 appartamenti minuscoli a Tokyo: liberta o prigione?",
+      "podcast_title": "Lo spazio minimo: il Giappone che ha reinventato il concetto di casa",
+      "angolatura": "Non il minimalismo estetico gia trattato, ma la domanda politica ed economica: vivere piccolo e una scelta identitaria o una risposta alla crisi abitativa? Le due letture coesistono e si contraddicono.",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Entrambi",
+      "motivazione_formato": "Il video regge sul visivo degli spazi; il podcast approfondisce la dimensione socioeconomica",
+      "struttura_atti": [
+        "Atto I: la storia dell appartamento minuscolo in Giappone — dalle capsule hotel agli akiya, come si e arrivati a normalizzare lo spazio ridotto",
+        "Atto II: chi sceglie davvero e chi e costretto — differenza tra il giovane creativo che celebra il wabi-sabi e il lavoratore precario senza alternative",
+        "Atto III: cosa esporta questa estetica in Occidente e cosa invece non si puo esportare — il rischio di romanticizzare la poverta abitativa"
+      ],
+      "coverage_IT": "Il minimalismo giapponese e stato trattato in chiave estetica; l angolatura economica e critica e ancora libera in italiano",
+      "opportunita_IT": "La sovrapposizione tra crisi abitativa italiana e appartamenti minuscoli giapponesi crea un ponte narrativo potente e non ancora sfruttato",
+      "esempi_EN": [
+        {
+          "titolo": "Inside 5 of Japans TINIEST Apartments",
+          "url": "https://youtube.com/watch?v=cnJKMHvijnU"
+        }
+      ],
+      "angolo_EN": "Tokyo Lens tratta il tema in chiave curiosita visiva senza analisi critica — la profondita narrativa e ancora disponibile",
+      "segnale_JP": "Kimono Mom mostra quotidianita domestica giapponese ma senza angolatura critica sullo spazio — segnale indiretto, non diretto",
+      "esempi_JP": [
+        {
+          "titolo": "Teaching My Husband My Morning Matcha Ritual",
+          "url": "https://youtube.com/watch?v=rl_W8hkEY4U"
+        }
+      ],
+      "utilita_JP": "Utile per documentare la normalita domestica JP come contrasto all angolatura critica occidentale"
     }
   ],
   "trends_EN": [
     {
-      "title": "Cultura del tatuaggio in Giappone: corpo e tabù",
+      "title": "Cicloturismo estremo in Giappone: il viaggio come rottura",
       "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
-      "volume_EN": 100,
-      "volume_IT": 0,
-      "delta_EN": "flat",
+      "volume_EN": 53,
+      "volume_IT": 10,
+      "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "The Anime Man ha pubblicato 'Tattoo culture in Japan is strange...' nel cluster anime_pop_en (volume 100). L'angolo corpo-identità-esclusione sociale non è stato ancora trattato in IT con profondità narrativa. Finestra: 2-4 settimane prima che arrivi qualche creator IT.",
-      "connessione_canale": "Collegabile all'episodio J-Horror e corpo femminile, e al filone identità visiva (Visual Kei, Jirai-kei). Il tatuaggio come confine sociale giapponese è angolo culturale forte."
+      "perche_monitorarlo": "Abroad in Japan ha pubblicato un video su 2000km in bici che sta cavalcando la crescita del cluster expat_en (+10). Il format 'sfida fisica in Giappone come metafora' non esiste in italiano. Finestra: 4-8 settimane prima che arrivi.",
+      "connessione_canale": "Ponte naturale con episodi su spopolamento e haikyo: il viaggio lento rivela il Giappone invisibile che Luca racconta."
     },
     {
-      "title": "Expat in Giappone: il trauma della rinascita culturale",
+      "title": "Tatuaggi in Giappone: il corpo proibito tra yakuza e turismo",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
-      "volume_EN": 43,
-      "volume_IT": 15,
+      "volume_EN": 53,
+      "volume_IT": 10,
       "delta_EN": "up",
       "gap_IT": "Medio",
-      "perche_monitorarlo": "Paolo from Tokyo con 'What Reborn in your Mother's Womb in Japan is like' e Abroad in Japan con il ciclo da 2000km mostrano che il filone expat EN sta spostandosi verso esperienze limite e rituali di appartenenza. In IT il cluster vita_giappone è a 15 e in salita (+11): finestra di 3-6 settimane.",
-      "connessione_canale": "Luca ha già trattato Toyoko Kids e vita urbana. L'angolo 'rinascita' o 'trasformazione identitaria' degli stranieri in Giappone è inedito nel canale e nel panorama IT."
+      "perche_monitorarlo": "The Anime Man ha pubblicato 'Tattoo culture in Japan is strange' nel cluster expat_en in crescita. Il tema e gia nei 60 giorni IT ma con angolatura diversa: qui il focus e il corpo come oggetto di regole sociali, non turismo. Monitorare se il delta EN sale ancora.",
+      "connessione_canale": "Gia trattato in lista storica IT: segnale da non riproporre salvo forte risalita, ma utile per aggiornare l angolatura verso il corpo come spazio normato."
+    },
+    {
+      "title": "Vivere in 20mq a Tokyo: lo spazio come identita radicale",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 53,
+      "volume_IT": 10,
+      "delta_EN": "up",
+      "gap_IT": "Medio",
+      "perche_monitorarlo": "Tokyo Lens ha pubblicato due video back-to-back su appartamenti micro e shopping economico, segnale di serializzazione del tema. In IT 'vivere piccolo' e gia nello storico ma il frame del risparmio forzato vs scelta identitaria non e stato esplorato. Finestra: 6 settimane.",
+      "connessione_canale": "Collegamento diretto a episodio 'Vivere piccolo a Tokyo: lo spazio come scelta identitaria' gia in lista: angolatura nuova possibile, non replica."
     }
   ],
   "trends_JP": [
     {
-      "title": "Maternità in Giappone: il parto come evento pubblico / 日本の出産文化とSNS発信",
+      "title": "Il rituale del parto in Giappone / 日本の出産リチュアル",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Bassa",
-      "segnale": "Kimono Mom monopolizza i dati JP con 6 video sul parto imminente (indurre il travaglio, ultima giornata da famiglia di tre). Fenomeno di life-vlogging materno giapponese-internazionale, nessuna profondità culturale nativa emersa.",
-      "utilita_canale": "Segnale troppo verticale su un solo canale lifestyle. Non produce angolo editoriale per Luca senza dati aggiuntivi da canali JP nativi.",
+      "segnale": "Kimono Mom domina il campione JP con una serializzazione densa sul parto imminente: cibo, rituali, attesa. Fenomeno di life-content familiare, non un trend culturale nuovo.",
+      "utilita_canale": "Scarsa per Luca: il format e vlog personale, non analisi culturale. Unico angolo possibile e il confronto tra maternita JP e aspettative sociali, ma il segnale e debole.",
       "esempi_JP": [
-        {
-          "titolo": "Last Day as a Family of Three",
-          "url": "https://youtube.com/watch?v=PAVCgYvKrkw"
-        },
         {
           "titolo": "10 Things I Tried to Induce Labor",
           "url": "https://youtube.com/watch?v=V4QdwupYkFY"
+        },
+        {
+          "titolo": "Last Day as a Family of Three",
+          "url": "https://youtube.com/watch?v=PAVCgYvKrkw"
+        }
+      ]
+    },
+    {
+      "title": "Illustratori digitali JP: la mentalita del successo / 成功するイラストレーターの思考法",
+      "category": "Estetica/Visiva",
+      "volume_JP": 100,
+      "delta_JP": "flat",
+      "rilevanza": "Media",
+      "segnale": "Naoki Saito pubblica contenuto meta sulle mentalita degli illustratori di successo. Nicchia professionale JP molto attiva, non ancora radar in IT.",
+      "utilita_canale": "Possibile angolo: l industria dell illustrazione JP come sistema culturale, non solo estetica. Collegamento a Visual Kei e alla produzione visiva come identita.",
+      "esempi_JP": [
+        {
+          "titolo": "こう考えてる絵師は、知らず知らずに成功しちゃいます。",
+          "url": "https://youtube.com/watch?v=PNfJpKR-qc8"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Tatuaggio in Giappone: verificare se altri creator EN o IT pubblicano dopo The Anime Man — se sì, urgency sale a critica",
-    "vita_giappone IT: delta +11 questa run, monitorare se supera 20 nella prossima — potrebbe aprire finestra editoriale concreta",
-    "expat_japan_en: Abroad in Japan ha pubblicato video da 2000km in bici — controllare se il format 'impresa fisica in Giappone' genera imitatori EN nelle prossime 2 settimane",
-    "Dati JP: cluster japan_native ancora monopolizzato da Kimono Mom. Serve allargare i canali sentinella JP a creator nativi (es. lifestyle urbano, seishun, shakai mondai) per avere segnale utile"
+    "Delta expat_EN: se sale oltre +15 il cluster diventa priorita editoriale immediata per cicloturismo e micro-living",
+    "Erikottero e canali expat IT su Nagasaki/scuole: il segnale scuola-memoria della run precedente ha coerenza 6, verificare se altri canali IT lo replicano",
+    "Naoki Saito JP: se il canale serializza sul tema mentalita-illustratori, valutare episodio su industria visiva JP come sistema culturale",
+    "Cluster videogiochi IT a +15: monitorare se emergono titoli JP specifici o rimane generico occidentale senza opportunita per Luca"
   ],
   "warnings": []
 }

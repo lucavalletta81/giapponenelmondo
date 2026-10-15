@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-07 10:00",
-  "passed": 10,
+  "checked_at": "2026-10-14 10:00",
+  "passed": 9,
   "total": 11,
   "results": [
     {
@@ -30,8 +30,8 @@
     },
     {
       "name": "Dati report — freschezza",
-      "ok": true,
-      "detail": "5 giorni fa"
+      "ok": false,
+      "detail": "12 giorni fa"
     },
     {
       "name": "YouTube — feed video",
