@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-19",
   "total_clusters": 9,
-  "total_videos": 62,
-  "date_range_start": "2026-09-29",
-  "date_range_end": "2026-10-11",
+  "total_videos": 59,
+  "date_range_start": "2026-10-05",
+  "date_range_end": "2026-10-18",
   "sections": {
     "emergenti": [],
     "crescita": [
       {
-        "label": 6,
-        "score": 0.863,
+        "label": 7,
+        "score": 0.8612,
         "keywords": [
           "twitch",
           "manga",
           "dragon",
-          "ball",
           "dragon ball",
-          "comprare"
+          "ball",
+          "beerus"
         ],
         "item_count": 15,
-        "total_views": 110119,
+        "total_views": 136441,
         "velocity": 0.679,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-28",
-        "last_seen": "2026-10-12",
+        "first_seen": "2026-10-05",
+        "last_seen": "2026-10-19",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -33,13 +33,31 @@
         ],
         "has_mover": true,
         "affinity": {
-          "narrativo": 0.7724,
-          "casual": 0.6539
+          "narrativo": 0.7666,
+          "casual": 0.6476
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.772,
+        "affinity_best_score": 0.767,
         "items_by_lang": {
           "it": [
+            {
+              "title": "DRAGON BALL SUPER BEERUS EP 1 RECENSIONE",
+              "url": "https://www.youtube.com/watch?v=v6plViLOEOQ",
+              "source": "Caverna di Platone",
+              "date": "2026-10-17",
+              "views": 24049,
+              "likes": 569,
+              "duration_secs": 1576
+            },
+            {
+              "title": "NON SI MERITA QUESTE CARTE EPPURE LE SBUSTA",
+              "url": "https://www.youtube.com/watch?v=gB1VuVH1FS4",
+              "source": "Caverna di Platone",
+              "date": "2026-10-14",
+              "views": 15477,
+              "likes": 164,
+              "duration_secs": 1572
+            },
             {
               "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
               "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
@@ -48,28 +66,28 @@
               "views": 12829,
               "likes": 249,
               "duration_secs": 1417
-            },
-            {
-              "title": "COME STA ANDANDO LA MIA VITA A CUNEO?",
-              "url": "https://www.youtube.com/watch?v=WWqTE0jl0h8",
-              "source": "Caverna di Platone",
-              "date": "2026-10-07",
-              "views": 10727,
-              "likes": 228,
-              "duration_secs": 686
-            },
-            {
-              "title": "DRAGON BALL SUPER BEERUS LEAK DAL NEW YORK COMIC CON E ASPETTATIVE",
-              "url": "https://www.youtube.com/watch?v=uujtEjsr8ps",
-              "source": "Caverna di Platone",
-              "date": "2026-10-10",
-              "views": 9816,
-              "likes": 244,
-              "duration_secs": 832
             }
           ]
         },
         "top_items": [
+          {
+            "title": "DRAGON BALL SUPER BEERUS EP 1 RECENSIONE",
+            "url": "https://www.youtube.com/watch?v=v6plViLOEOQ",
+            "source": "Caverna di Platone",
+            "date": "2026-10-17",
+            "views": 24049,
+            "likes": 569,
+            "duration_secs": 1576
+          },
+          {
+            "title": "NON SI MERITA QUESTE CARTE EPPURE LE SBUSTA",
+            "url": "https://www.youtube.com/watch?v=gB1VuVH1FS4",
+            "source": "Caverna di Platone",
+            "date": "2026-10-14",
+            "views": 15477,
+            "likes": 164,
+            "duration_secs": 1572
+          },
           {
             "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
             "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
@@ -78,908 +96,211 @@
             "views": 12829,
             "likes": 249,
             "duration_secs": 1417
-          },
-          {
-            "title": "COME STA ANDANDO LA MIA VITA A CUNEO?",
-            "url": "https://www.youtube.com/watch?v=WWqTE0jl0h8",
-            "source": "Caverna di Platone",
-            "date": "2026-10-07",
-            "views": 10727,
-            "likes": 228,
-            "duration_secs": 686
-          },
-          {
-            "title": "DRAGON BALL SUPER BEERUS LEAK DAL NEW YORK COMIC CON E ASPETTATIVE",
-            "url": "https://www.youtube.com/watch?v=uujtEjsr8ps",
-            "source": "Caverna di Platone",
-            "date": "2026-10-10",
-            "views": 9816,
-            "likes": 244,
-            "duration_secs": 832
           }
         ]
       },
       {
-        "label": 2,
-        "score": 0.5921,
+        "label": 4,
+        "score": 0.5308,
         "keywords": [
-          "meraviglioso",
-          "vita",
-          "della",
-          "anni",
-          "day trip",
-          "day"
+          "use",
+          "fair use",
+          "fair",
+          "copyright",
+          "made",
+          "allowance"
         ],
-        "item_count": 11,
-        "total_views": 94078,
-        "velocity": 0.682,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-09-30",
-        "last_seen": "2026-10-10",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_manga_pop",
-          "vita_giappone"
-        ],
-        "languages": [
-          "ja",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7036,
-          "casual": 0.8585
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.859,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-              "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-09",
-              "views": 21050,
-              "likes": 805,
-              "duration_secs": 1280
-            },
-            {
-              "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-              "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-02",
-              "views": 13757,
-              "likes": 621,
-              "duration_secs": 986
-            },
-            {
-              "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-              "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-              "source": "Calabrese in Oriente",
-              "date": "2026-10-10",
-              "views": 6575,
-              "likes": 128,
-              "duration_secs": 895
-            }
-          ],
-          "ja": [
-            {
-              "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-              "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-              "source": "Sora The Troll",
-              "date": "2026-10-08",
-              "views": 30693,
-              "likes": 606,
-              "duration_secs": 18557
-            },
-            {
-              "title": "Day trip destinations from Tokyo",
-              "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-              "source": "TAKASHii from Japan",
-              "date": "2026-10-10",
-              "views": 9780,
-              "likes": 447,
-              "duration_secs": 36
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-            "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-09",
-            "views": 21050,
-            "likes": 805,
-            "duration_secs": 1280
-          },
-          {
-            "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-            "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-02",
-            "views": 13757,
-            "likes": 621,
-            "duration_secs": 986
-          },
-          {
-            "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-            "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-            "source": "Calabrese in Oriente",
-            "date": "2026-10-10",
-            "views": 6575,
-            "likes": 128,
-            "duration_secs": 895
-          },
-          {
-            "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-            "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-            "source": "Sora The Troll",
-            "date": "2026-10-08",
-            "views": 30693,
-            "likes": 606,
-            "duration_secs": 18557
-          },
-          {
-            "title": "Day trip destinations from Tokyo",
-            "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-            "source": "TAKASHii from Japan",
-            "date": "2026-10-10",
-            "views": 9780,
-            "likes": 447,
-            "duration_secs": 36
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.4146,
-        "keywords": [
-          "manga",
-          "contenuti",
-          "puoi",
-          "altro",
-          "kirio",
-          "del"
-        ],
-        "item_count": 3,
-        "total_views": 5944,
+        "item_count": 4,
+        "total_views": 18627,
         "velocity": 1.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-10-04",
-        "last_seen": "2026-10-11",
+        "first_seen": "2026-10-05",
+        "last_seen": "2026-10-19",
         "sentinel_clusters": [
-          "anime_manga_pop"
+          "anime_pop_en"
         ],
         "languages": [
-          "it"
+          "en"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7884,
-          "casual": 0.6913
+          "narrativo": 0.6508,
+          "casual": 0.6101
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.788,
+        "affinity_best_score": 0.651,
         "items_by_lang": {
-          "it": [
+          "en": [
             {
-              "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
-              "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
-              "source": "Kirio1984",
-              "date": "2026-10-09",
-              "views": 2385,
-              "likes": 55,
-              "duration_secs": 436
+              "title": "Why sing with different accents?",
+              "url": "https://www.youtube.com/watch?v=LgrMTrb57zg",
+              "source": "The Anime Man",
+              "date": "2026-10-16",
+              "views": 15532,
+              "likes": 337,
+              "duration_secs": 33
             },
             {
-              "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
-              "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
-              "source": "Kirio1984",
-              "date": "2026-10-04",
-              "views": 1931,
-              "likes": 49,
-              "duration_secs": 456
+              "title": "THIS Is What  Pro Singer Listens To",
+              "url": "https://www.youtube.com/watch?v=S2BauAZRGe4",
+              "source": "The Anime Man",
+              "date": "2026-10-12",
+              "views": 2428,
+              "likes": 114,
+              "duration_secs": 31
             },
             {
-              "title": "UN PACCO PIENO DI MANGA IMPERDIBILI! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=rqaORL3cWlo",
-              "source": "Kirio1984",
-              "date": "2026-10-11",
-              "views": 1628,
-              "likes": 51,
-              "duration_secs": 590
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
-            "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
-            "source": "Kirio1984",
-            "date": "2026-10-09",
-            "views": 2385,
-            "likes": 55,
-            "duration_secs": 436
-          },
-          {
-            "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
-            "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
-            "source": "Kirio1984",
-            "date": "2026-10-04",
-            "views": 1931,
-            "likes": 49,
-            "duration_secs": 456
-          },
-          {
-            "title": "UN PACCO PIENO DI MANGA IMPERDIBILI! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=rqaORL3cWlo",
-            "source": "Kirio1984",
-            "date": "2026-10-11",
-            "views": 1628,
-            "likes": 51,
-            "duration_secs": 590
-          }
-        ]
-      },
-      {
-        "label": 1,
-        "score": 0.2859,
-        "keywords": [
-          "maglietta",
-          "calze",
-          "vlaszlo calze",
-          "vlaszlo",
-          "calze pagate",
-          "usate"
-        ],
-        "item_count": 11,
-        "total_views": 439091,
-        "velocity": 0.591,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-28",
-        "last_seen": "2026-10-11",
-        "sentinel_clusters": [
-          "videogiochi"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6961,
-          "casual": 0.4992
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.696,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "Roast in Peace: perchè funziona",
-              "url": "https://www.youtube.com/watch?v=9dBCJM-jfZ0",
-              "source": "Victorlaszlo88",
-              "date": "2026-09-29",
-              "views": 82692,
-              "likes": 1130,
-              "duration_secs": 1567
-            },
-            {
-              "title": "MovieBlog- 1106: Recensione Naza",
-              "url": "https://www.youtube.com/watch?v=fLLYdbEOY58",
-              "source": "Victorlaszlo88",
-              "date": "2026-09-30",
-              "views": 47371,
-              "likes": 1148,
-              "duration_secs": 2393
-            },
-            {
-              "title": "Lanterns 1X08: Che finale CLAMOROSO!",
-              "url": "https://www.youtube.com/watch?v=TBsVwMRU9DA",
-              "source": "Victorlaszlo88",
+              "title": "Working The Nintendo Help Line",
+              "url": "https://www.youtube.com/watch?v=0stFPGuZaT0",
+              "source": "The Anime Man",
               "date": "2026-10-05",
-              "views": 45115,
-              "likes": 1299,
-              "duration_secs": 2364
+              "views": 385,
+              "likes": 28,
+              "duration_secs": 47
             }
           ]
         },
         "top_items": [
           {
-            "title": "Roast in Peace: perchè funziona",
-            "url": "https://www.youtube.com/watch?v=9dBCJM-jfZ0",
-            "source": "Victorlaszlo88",
-            "date": "2026-09-29",
-            "views": 82692,
-            "likes": 1130,
-            "duration_secs": 1567
+            "title": "Why sing with different accents?",
+            "url": "https://www.youtube.com/watch?v=LgrMTrb57zg",
+            "source": "The Anime Man",
+            "date": "2026-10-16",
+            "views": 15532,
+            "likes": 337,
+            "duration_secs": 33
           },
           {
-            "title": "MovieBlog- 1106: Recensione Naza",
-            "url": "https://www.youtube.com/watch?v=fLLYdbEOY58",
-            "source": "Victorlaszlo88",
-            "date": "2026-09-30",
-            "views": 47371,
-            "likes": 1148,
-            "duration_secs": 2393
+            "title": "THIS Is What  Pro Singer Listens To",
+            "url": "https://www.youtube.com/watch?v=S2BauAZRGe4",
+            "source": "The Anime Man",
+            "date": "2026-10-12",
+            "views": 2428,
+            "likes": 114,
+            "duration_secs": 31
           },
           {
-            "title": "Lanterns 1X08: Che finale CLAMOROSO!",
-            "url": "https://www.youtube.com/watch?v=TBsVwMRU9DA",
-            "source": "Victorlaszlo88",
+            "title": "Working The Nintendo Help Line",
+            "url": "https://www.youtube.com/watch?v=0stFPGuZaT0",
+            "source": "The Anime Man",
             "date": "2026-10-05",
-            "views": 45115,
-            "likes": 1299,
-            "duration_secs": 2364
-          }
-        ]
-      },
-      {
-        "label": 3,
-        "score": 0.254,
-        "keywords": [
-          "works",
-          "english",
-          "works nariwai",
-          "nariwai",
-          "nariwai naokichi",
-          "naokichi works"
-        ],
-        "item_count": 3,
-        "total_views": 185596,
-        "velocity": 0.833,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-10-01",
-        "last_seen": "2026-10-10",
-        "sentinel_clusters": [
-          "japan_native"
-        ],
-        "languages": [
-          "ja"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.6491,
-          "casual": 0.5463
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.649,
-        "items_by_lang": {
-          "ja": [
-            {
-              "title": "絵が､めっちゃ上達する人の共通点とは…！？",
-              "url": "https://www.youtube.com/watch?v=Ojt15uEuTiE",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-10-03",
-              "views": 83561,
-              "likes": 1685,
-              "duration_secs": 1055
-            },
-            {
-              "title": "キャラクターが背景に埋もれてしまう問題【きまぐれ添削251】",
-              "url": "https://www.youtube.com/watch?v=tZAkg1NqsRc",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-10-01",
-              "views": 51079,
-              "likes": 842,
-              "duration_secs": 832
-            },
-            {
-              "title": "【もっとおしゃれに！】絵が垢抜けない時の対処法とは...！？【きまぐれ添削252】",
-              "url": "https://www.youtube.com/watch?v=yDEzxqz1HHo",
-              "source": "Naoki Saito Illust Channel 2",
-              "date": "2026-10-10",
-              "views": 50956,
-              "likes": 900,
-              "duration_secs": 1055
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "絵が､めっちゃ上達する人の共通点とは…！？",
-            "url": "https://www.youtube.com/watch?v=Ojt15uEuTiE",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-10-03",
-            "views": 83561,
-            "likes": 1685,
-            "duration_secs": 1055
-          },
-          {
-            "title": "キャラクターが背景に埋もれてしまう問題【きまぐれ添削251】",
-            "url": "https://www.youtube.com/watch?v=tZAkg1NqsRc",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-10-01",
-            "views": 51079,
-            "likes": 842,
-            "duration_secs": 832
-          },
-          {
-            "title": "【もっとおしゃれに！】絵が垢抜けない時の対処法とは...！？【きまぐれ添削252】",
-            "url": "https://www.youtube.com/watch?v=yDEzxqz1HHo",
-            "source": "Naoki Saito Illust Channel 2",
-            "date": "2026-10-10",
-            "views": 50956,
-            "likes": 900,
-            "duration_secs": 1055
-          }
-        ]
-      }
-    ],
-    "cross_source": [
-      {
-        "label": 2,
-        "score": 0.5921,
-        "keywords": [
-          "meraviglioso",
-          "vita",
-          "della",
-          "anni",
-          "day trip",
-          "day"
-        ],
-        "item_count": 11,
-        "total_views": 94078,
-        "velocity": 0.682,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-09-30",
-        "last_seen": "2026-10-10",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_manga_pop",
-          "vita_giappone"
-        ],
-        "languages": [
-          "ja",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7036,
-          "casual": 0.8585
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.859,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-              "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-09",
-              "views": 21050,
-              "likes": 805,
-              "duration_secs": 1280
-            },
-            {
-              "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-              "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-02",
-              "views": 13757,
-              "likes": 621,
-              "duration_secs": 986
-            },
-            {
-              "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-              "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-              "source": "Calabrese in Oriente",
-              "date": "2026-10-10",
-              "views": 6575,
-              "likes": 128,
-              "duration_secs": 895
-            }
-          ],
-          "ja": [
-            {
-              "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-              "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-              "source": "Sora The Troll",
-              "date": "2026-10-08",
-              "views": 30693,
-              "likes": 606,
-              "duration_secs": 18557
-            },
-            {
-              "title": "Day trip destinations from Tokyo",
-              "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-              "source": "TAKASHii from Japan",
-              "date": "2026-10-10",
-              "views": 9780,
-              "likes": 447,
-              "duration_secs": 36
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-            "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-09",
-            "views": 21050,
-            "likes": 805,
-            "duration_secs": 1280
-          },
-          {
-            "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-            "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-02",
-            "views": 13757,
-            "likes": 621,
-            "duration_secs": 986
-          },
-          {
-            "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-            "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-            "source": "Calabrese in Oriente",
-            "date": "2026-10-10",
-            "views": 6575,
-            "likes": 128,
-            "duration_secs": 895
-          },
-          {
-            "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-            "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-            "source": "Sora The Troll",
-            "date": "2026-10-08",
-            "views": 30693,
-            "likes": 606,
-            "duration_secs": 18557
-          },
-          {
-            "title": "Day trip destinations from Tokyo",
-            "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-            "source": "TAKASHii from Japan",
-            "date": "2026-10-10",
-            "views": 9780,
-            "likes": 447,
-            "duration_secs": 36
-          }
-        ]
-      }
-    ],
-    "affinita": [
-      {
-        "label": 6,
-        "score": 0.863,
-        "keywords": [
-          "twitch",
-          "manga",
-          "dragon",
-          "ball",
-          "dragon ball",
-          "comprare"
-        ],
-        "item_count": 15,
-        "total_views": 110119,
-        "velocity": 0.679,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-28",
-        "last_seen": "2026-10-12",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": true,
-        "affinity": {
-          "narrativo": 0.7724,
-          "casual": 0.6539
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.772,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
-              "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
-              "source": "Caverna di Platone",
-              "date": "2026-10-11",
-              "views": 12829,
-              "likes": 249,
-              "duration_secs": 1417
-            },
-            {
-              "title": "COME STA ANDANDO LA MIA VITA A CUNEO?",
-              "url": "https://www.youtube.com/watch?v=WWqTE0jl0h8",
-              "source": "Caverna di Platone",
-              "date": "2026-10-07",
-              "views": 10727,
-              "likes": 228,
-              "duration_secs": 686
-            },
-            {
-              "title": "DRAGON BALL SUPER BEERUS LEAK DAL NEW YORK COMIC CON E ASPETTATIVE",
-              "url": "https://www.youtube.com/watch?v=uujtEjsr8ps",
-              "source": "Caverna di Platone",
-              "date": "2026-10-10",
-              "views": 9816,
-              "likes": 244,
-              "duration_secs": 832
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
-            "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
-            "source": "Caverna di Platone",
-            "date": "2026-10-11",
-            "views": 12829,
-            "likes": 249,
-            "duration_secs": 1417
-          },
-          {
-            "title": "COME STA ANDANDO LA MIA VITA A CUNEO?",
-            "url": "https://www.youtube.com/watch?v=WWqTE0jl0h8",
-            "source": "Caverna di Platone",
-            "date": "2026-10-07",
-            "views": 10727,
-            "likes": 228,
-            "duration_secs": 686
-          },
-          {
-            "title": "DRAGON BALL SUPER BEERUS LEAK DAL NEW YORK COMIC CON E ASPETTATIVE",
-            "url": "https://www.youtube.com/watch?v=uujtEjsr8ps",
-            "source": "Caverna di Platone",
-            "date": "2026-10-10",
-            "views": 9816,
-            "likes": 244,
-            "duration_secs": 832
-          }
-        ]
-      },
-      {
-        "label": 2,
-        "score": 0.5921,
-        "keywords": [
-          "meraviglioso",
-          "vita",
-          "della",
-          "anni",
-          "day trip",
-          "day"
-        ],
-        "item_count": 11,
-        "total_views": 94078,
-        "velocity": 0.682,
-        "novelty": 0.5,
-        "diversity": 0.708,
-        "first_seen": "2026-09-30",
-        "last_seen": "2026-10-10",
-        "sentinel_clusters": [
-          "japan_native",
-          "anime_manga_pop",
-          "vita_giappone"
-        ],
-        "languages": [
-          "ja",
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7036,
-          "casual": 0.8585
-        },
-        "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.859,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-              "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-09",
-              "views": 21050,
-              "likes": 805,
-              "duration_secs": 1280
-            },
-            {
-              "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-              "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-              "source": "Tommaso In Giappone",
-              "date": "2026-10-02",
-              "views": 13757,
-              "likes": 621,
-              "duration_secs": 986
-            },
-            {
-              "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-              "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-              "source": "Calabrese in Oriente",
-              "date": "2026-10-10",
-              "views": 6575,
-              "likes": 128,
-              "duration_secs": 895
-            }
-          ],
-          "ja": [
-            {
-              "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-              "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-              "source": "Sora The Troll",
-              "date": "2026-10-08",
-              "views": 30693,
-              "likes": 606,
-              "duration_secs": 18557
-            },
-            {
-              "title": "Day trip destinations from Tokyo",
-              "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-              "source": "TAKASHii from Japan",
-              "date": "2026-10-10",
-              "views": 9780,
-              "likes": 447,
-              "duration_secs": 36
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
-            "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-09",
-            "views": 21050,
-            "likes": 805,
-            "duration_secs": 1280
-          },
-          {
-            "title": "COSA C'È SOTTO I BINARI A TOKYO? DA SHINBASHI A GINZA",
-            "url": "https://www.youtube.com/watch?v=q0N6dK6hU7o",
-            "source": "Tommaso In Giappone",
-            "date": "2026-10-02",
-            "views": 13757,
-            "likes": 621,
-            "duration_secs": 986
-          },
-          {
-            "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
-            "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
-            "source": "Calabrese in Oriente",
-            "date": "2026-10-10",
-            "views": 6575,
-            "likes": 128,
-            "duration_secs": 895
-          },
-          {
-            "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
-            "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
-            "source": "Sora The Troll",
-            "date": "2026-10-08",
-            "views": 30693,
-            "likes": 606,
-            "duration_secs": 18557
-          },
-          {
-            "title": "Day trip destinations from Tokyo",
-            "url": "https://www.youtube.com/watch?v=YcqtfLUIb1Y",
-            "source": "TAKASHii from Japan",
-            "date": "2026-10-10",
-            "views": 9780,
-            "likes": 447,
-            "duration_secs": 36
-          }
-        ]
-      },
-      {
-        "label": 8,
-        "score": 0.4146,
-        "keywords": [
-          "manga",
-          "contenuti",
-          "puoi",
-          "altro",
-          "kirio",
-          "del"
-        ],
-        "item_count": 3,
-        "total_views": 5944,
-        "velocity": 1.0,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-10-04",
-        "last_seen": "2026-10-11",
-        "sentinel_clusters": [
-          "anime_manga_pop"
-        ],
-        "languages": [
-          "it"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7884,
-          "casual": 0.6913
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.788,
-        "items_by_lang": {
-          "it": [
-            {
-              "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
-              "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
-              "source": "Kirio1984",
-              "date": "2026-10-09",
-              "views": 2385,
-              "likes": 55,
-              "duration_secs": 436
-            },
-            {
-              "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
-              "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
-              "source": "Kirio1984",
-              "date": "2026-10-04",
-              "views": 1931,
-              "likes": 49,
-              "duration_secs": 456
-            },
-            {
-              "title": "UN PACCO PIENO DI MANGA IMPERDIBILI! 😱 | Unboxing Mangaverse",
-              "url": "https://www.youtube.com/watch?v=rqaORL3cWlo",
-              "source": "Kirio1984",
-              "date": "2026-10-11",
-              "views": 1628,
-              "likes": 51,
-              "duration_secs": 590
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
-            "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
-            "source": "Kirio1984",
-            "date": "2026-10-09",
-            "views": 2385,
-            "likes": 55,
-            "duration_secs": 436
-          },
-          {
-            "title": "UN PACCO ENORME DI MANGAVERSE! 😱 Guardate cosa c’era dentro...",
-            "url": "https://www.youtube.com/watch?v=8TBI8CJeaek",
-            "source": "Kirio1984",
-            "date": "2026-10-04",
-            "views": 1931,
-            "likes": 49,
-            "duration_secs": 456
-          },
-          {
-            "title": "UN PACCO PIENO DI MANGA IMPERDIBILI! 😱 | Unboxing Mangaverse",
-            "url": "https://www.youtube.com/watch?v=rqaORL3cWlo",
-            "source": "Kirio1984",
-            "date": "2026-10-11",
-            "views": 1628,
-            "likes": 51,
-            "duration_secs": 590
+            "views": 385,
+            "likes": 28,
+            "duration_secs": 47
           }
         ]
       },
       {
         "label": 5,
-        "score": 0.2678,
+        "score": 0.4453,
         "keywords": [
-          "anime",
-          "animeedit",
-          "animeshorts",
-          "animeedit animeshorts",
-          "animeshorts animeedits",
-          "animeedits"
+          "vita",
+          "della",
+          "pensava",
+          "madre",
+          "pensava madre",
+          "vita vitaallestero"
         ],
-        "item_count": 5,
-        "total_views": 8336,
-        "velocity": 0.3,
+        "item_count": 7,
+        "total_views": 46270,
+        "velocity": 0.786,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-29",
-        "last_seen": "2026-10-09",
+        "first_seen": "2026-10-08",
+        "last_seen": "2026-10-18",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.668,
+          "casual": 0.8256
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.826,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
+              "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
+              "source": "Tommaso In Giappone",
+              "date": "2026-10-09",
+              "views": 21050,
+              "likes": 805,
+              "duration_secs": 1280
+            },
+            {
+              "title": "IL GIAPPONE HA CAMBIATO LE MIE ABITUDINI?",
+              "url": "https://www.youtube.com/watch?v=ZRhIYrG-XNc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-10-16",
+              "views": 10260,
+              "likes": 419,
+              "duration_secs": 904
+            },
+            {
+              "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
+              "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-10",
+              "views": 6575,
+              "likes": 128,
+              "duration_secs": 895
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
+            "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
+            "source": "Tommaso In Giappone",
+            "date": "2026-10-09",
+            "views": 21050,
+            "likes": 805,
+            "duration_secs": 1280
+          },
+          {
+            "title": "IL GIAPPONE HA CAMBIATO LE MIE ABITUDINI?",
+            "url": "https://www.youtube.com/watch?v=ZRhIYrG-XNc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-10-16",
+            "views": 10260,
+            "likes": 419,
+            "duration_secs": 904
+          },
+          {
+            "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
+            "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-10",
+            "views": 6575,
+            "likes": 128,
+            "duration_secs": 895
+          }
+        ]
+      },
+      {
+        "label": 8,
+        "score": 0.3782,
+        "keywords": [
+          "manga",
+          "contenuti",
+          "del",
+          "kirio",
+          "anime",
+          "altro"
+        ],
+        "item_count": 6,
+        "total_views": 14425,
+        "velocity": 0.833,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-07",
+        "last_seen": "2026-10-18",
         "sentinel_clusters": [
           "anime_manga_pop"
         ],
@@ -988,11 +309,103 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.7902,
-          "casual": 0.6564
+          "narrativo": 0.7769,
+          "casual": 0.6785
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.79,
+        "affinity_best_score": 0.777,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "20€ PER QUESTO MANGA?! 😱 Le NOVITÀ Planet Manga di NOVEMBRE",
+              "url": "https://www.youtube.com/watch?v=NtUUzTnEILs",
+              "source": "Kirio1984",
+              "date": "2026-10-07",
+              "views": 3666,
+              "likes": 71,
+              "duration_secs": 432
+            },
+            {
+              "title": "QUALI MANGA MERITANO DAVVERO DI ESSERE LETTI? 📚",
+              "url": "https://www.youtube.com/watch?v=md34SGXmC-s",
+              "source": "Kirio1984",
+              "date": "2026-10-17",
+              "views": 3197,
+              "likes": 52,
+              "duration_secs": 907
+            },
+            {
+              "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
+              "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
+              "source": "Kirio1984",
+              "date": "2026-10-09",
+              "views": 2385,
+              "likes": 55,
+              "duration_secs": 436
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "20€ PER QUESTO MANGA?! 😱 Le NOVITÀ Planet Manga di NOVEMBRE",
+            "url": "https://www.youtube.com/watch?v=NtUUzTnEILs",
+            "source": "Kirio1984",
+            "date": "2026-10-07",
+            "views": 3666,
+            "likes": 71,
+            "duration_secs": 432
+          },
+          {
+            "title": "QUALI MANGA MERITANO DAVVERO DI ESSERE LETTI? 📚",
+            "url": "https://www.youtube.com/watch?v=md34SGXmC-s",
+            "source": "Kirio1984",
+            "date": "2026-10-17",
+            "views": 3197,
+            "likes": 52,
+            "duration_secs": 907
+          },
+          {
+            "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
+            "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
+            "source": "Kirio1984",
+            "date": "2026-10-09",
+            "views": 2385,
+            "likes": 55,
+            "duration_secs": 436
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.3331,
+        "keywords": [
+          "anime",
+          "animeshorts",
+          "animeedit",
+          "vedere",
+          "animeedit animeshorts",
+          "anime animeedit"
+        ],
+        "item_count": 5,
+        "total_views": 8661,
+        "velocity": 0.6,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-06",
+        "last_seen": "2026-10-17",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.809,
+          "casual": 0.6838
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.809,
         "items_by_lang": {
           "it": [
             {
@@ -1005,15 +418,6 @@
               "duration_secs": 109
             },
             {
-              "title": "Film anime indimenticabili - Parte 3 #anime #manga #animeedit #animeshorts #animeedits",
-              "url": "https://www.youtube.com/watch?v=v2wL0aJ8dYk",
-              "source": "Italo Scanniello - Anime & Manga",
-              "date": "2026-09-29",
-              "views": 1924,
-              "likes": 157,
-              "duration_secs": 114
-            },
-            {
               "title": "Anime Veramente Sconosciuti che non sapevi di voler vedere - Parte 5 #anime #animeedit #animeshorts",
               "url": "https://www.youtube.com/watch?v=VzZTNxdcrek",
               "source": "Italo Scanniello - Anime & Manga",
@@ -1021,6 +425,15 @@
               "views": 1730,
               "likes": 72,
               "duration_secs": 71
+            },
+            {
+              "title": "Anime davvero sconosciuti da vedere assolutamente -Parte 5 #anime #animeshorts #animeedit",
+              "url": "https://www.youtube.com/watch?v=PMX8C1I6Pyo",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-10-13",
+              "views": 1676,
+              "likes": 95,
+              "duration_secs": 81
             }
           ]
         },
@@ -1035,13 +448,559 @@
             "duration_secs": 109
           },
           {
-            "title": "Film anime indimenticabili - Parte 3 #anime #manga #animeedit #animeshorts #animeedits",
-            "url": "https://www.youtube.com/watch?v=v2wL0aJ8dYk",
+            "title": "Anime Veramente Sconosciuti che non sapevi di voler vedere - Parte 5 #anime #animeedit #animeshorts",
+            "url": "https://www.youtube.com/watch?v=VzZTNxdcrek",
             "source": "Italo Scanniello - Anime & Manga",
-            "date": "2026-09-29",
-            "views": 1924,
-            "likes": 157,
-            "duration_secs": 114
+            "date": "2026-10-07",
+            "views": 1730,
+            "likes": 72,
+            "duration_secs": 71
+          },
+          {
+            "title": "Anime davvero sconosciuti da vedere assolutamente -Parte 5 #anime #animeshorts #animeedit",
+            "url": "https://www.youtube.com/watch?v=PMX8C1I6Pyo",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-10-13",
+            "views": 1676,
+            "likes": 95,
+            "duration_secs": 81
+          }
+        ]
+      },
+      {
+        "label": 2,
+        "score": 0.2752,
+        "keywords": [
+          "works",
+          "english",
+          "works nariwai",
+          "nariwai",
+          "nariwai naokichi",
+          "naokichi works"
+        ],
+        "item_count": 4,
+        "total_views": 233203,
+        "velocity": 1.0,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-10",
+        "last_seen": "2026-10-18",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6092,
+          "casual": 0.5196
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.609,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "こう考えてる絵師は、知らず知らずに成功しちゃいます。",
+              "url": "https://www.youtube.com/watch?v=PNfJpKR-qc8",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-10-15",
+              "views": 90956,
+              "likes": 1923,
+              "duration_secs": 1269
+            },
+            {
+              "title": "【もっとおしゃれに！】絵が垢抜けない時の対処法とは...！？【きまぐれ添削252】",
+              "url": "https://www.youtube.com/watch?v=yDEzxqz1HHo",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-10-10",
+              "views": 50956,
+              "likes": 900,
+              "duration_secs": 1055
+            },
+            {
+              "title": "顔が崩れると絵が下手に見える理由とは...！？",
+              "url": "https://www.youtube.com/watch?v=r4YyDe-fsiA",
+              "source": "Naoki Saito Illust Channel 2",
+              "date": "2026-10-18",
+              "views": 47518,
+              "likes": 1356,
+              "duration_secs": 68
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "こう考えてる絵師は、知らず知らずに成功しちゃいます。",
+            "url": "https://www.youtube.com/watch?v=PNfJpKR-qc8",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-10-15",
+            "views": 90956,
+            "likes": 1923,
+            "duration_secs": 1269
+          },
+          {
+            "title": "【もっとおしゃれに！】絵が垢抜けない時の対処法とは...！？【きまぐれ添削252】",
+            "url": "https://www.youtube.com/watch?v=yDEzxqz1HHo",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-10-10",
+            "views": 50956,
+            "likes": 900,
+            "duration_secs": 1055
+          },
+          {
+            "title": "顔が崩れると絵が下手に見える理由とは...！？",
+            "url": "https://www.youtube.com/watch?v=r4YyDe-fsiA",
+            "source": "Naoki Saito Illust Channel 2",
+            "date": "2026-10-18",
+            "views": 47518,
+            "likes": 1356,
+            "duration_secs": 68
+          }
+        ]
+      },
+      {
+        "label": 3,
+        "score": 0.2426,
+        "keywords": [
+          "japanese",
+          "tts driving",
+          "well tts",
+          "tools car",
+          "try",
+          "try tjhese"
+        ],
+        "item_count": 4,
+        "total_views": 82473,
+        "velocity": 0.75,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-06",
+        "last_seen": "2026-10-19",
+        "sentinel_clusters": [
+          "japan_native"
+        ],
+        "languages": [
+          "ja"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.6302,
+          "casual": 0.6593
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.659,
+        "items_by_lang": {
+          "ja": [
+            {
+              "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
+              "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
+              "source": "Sora The Troll",
+              "date": "2026-10-08",
+              "views": 30693,
+              "likes": 606,
+              "duration_secs": 18557
+            },
+            {
+              "title": "I Actually got jumped by yakuzas in this stream in tokyo",
+              "url": "https://www.youtube.com/watch?v=VUo_-pnyrKI",
+              "source": "Sora The Troll",
+              "date": "2026-10-06",
+              "views": 29034,
+              "likes": 441,
+              "duration_secs": 10459
+            },
+            {
+              "title": "Japanese Locals Gave This Place 1 Star Reviews Because It's ''DANGEROUS'' So Let's Visit There LOLOL",
+              "url": "https://www.youtube.com/watch?v=TWRCUOVYuGY",
+              "source": "Sora The Troll",
+              "date": "2026-10-14",
+              "views": 22746,
+              "likes": 363,
+              "duration_secs": 18512
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Japanese Locals Believe This Place is ACTUALLY Scary, So Let's Visit There LOLOL",
+            "url": "https://www.youtube.com/watch?v=oOuoST5SdIA",
+            "source": "Sora The Troll",
+            "date": "2026-10-08",
+            "views": 30693,
+            "likes": 606,
+            "duration_secs": 18557
+          },
+          {
+            "title": "I Actually got jumped by yakuzas in this stream in tokyo",
+            "url": "https://www.youtube.com/watch?v=VUo_-pnyrKI",
+            "source": "Sora The Troll",
+            "date": "2026-10-06",
+            "views": 29034,
+            "likes": 441,
+            "duration_secs": 10459
+          },
+          {
+            "title": "Japanese Locals Gave This Place 1 Star Reviews Because It's ''DANGEROUS'' So Let's Visit There LOLOL",
+            "url": "https://www.youtube.com/watch?v=TWRCUOVYuGY",
+            "source": "Sora The Troll",
+            "date": "2026-10-14",
+            "views": 22746,
+            "likes": 363,
+            "duration_secs": 18512
+          }
+        ]
+      }
+    ],
+    "cross_source": [],
+    "affinita": [
+      {
+        "label": 7,
+        "score": 0.8612,
+        "keywords": [
+          "twitch",
+          "manga",
+          "dragon",
+          "dragon ball",
+          "ball",
+          "beerus"
+        ],
+        "item_count": 15,
+        "total_views": 136441,
+        "velocity": 0.679,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-05",
+        "last_seen": "2026-10-19",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": true,
+        "affinity": {
+          "narrativo": 0.7666,
+          "casual": 0.6476
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.767,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "DRAGON BALL SUPER BEERUS EP 1 RECENSIONE",
+              "url": "https://www.youtube.com/watch?v=v6plViLOEOQ",
+              "source": "Caverna di Platone",
+              "date": "2026-10-17",
+              "views": 24049,
+              "likes": 569,
+              "duration_secs": 1576
+            },
+            {
+              "title": "NON SI MERITA QUESTE CARTE EPPURE LE SBUSTA",
+              "url": "https://www.youtube.com/watch?v=gB1VuVH1FS4",
+              "source": "Caverna di Platone",
+              "date": "2026-10-14",
+              "views": 15477,
+              "likes": 164,
+              "duration_secs": 1572
+            },
+            {
+              "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
+              "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
+              "source": "Caverna di Platone",
+              "date": "2026-10-11",
+              "views": 12829,
+              "likes": 249,
+              "duration_secs": 1417
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "DRAGON BALL SUPER BEERUS EP 1 RECENSIONE",
+            "url": "https://www.youtube.com/watch?v=v6plViLOEOQ",
+            "source": "Caverna di Platone",
+            "date": "2026-10-17",
+            "views": 24049,
+            "likes": 569,
+            "duration_secs": 1576
+          },
+          {
+            "title": "NON SI MERITA QUESTE CARTE EPPURE LE SBUSTA",
+            "url": "https://www.youtube.com/watch?v=gB1VuVH1FS4",
+            "source": "Caverna di Platone",
+            "date": "2026-10-14",
+            "views": 15477,
+            "likes": 164,
+            "duration_secs": 1572
+          },
+          {
+            "title": "DRAGON BALL SUPER BEERUS 1 - Reaction con Minutaggio e Voto",
+            "url": "https://www.youtube.com/watch?v=GmjuONp8QHc",
+            "source": "Caverna di Platone",
+            "date": "2026-10-11",
+            "views": 12829,
+            "likes": 249,
+            "duration_secs": 1417
+          }
+        ]
+      },
+      {
+        "label": 5,
+        "score": 0.4453,
+        "keywords": [
+          "vita",
+          "della",
+          "pensava",
+          "madre",
+          "pensava madre",
+          "vita vitaallestero"
+        ],
+        "item_count": 7,
+        "total_views": 46270,
+        "velocity": 0.786,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-08",
+        "last_seen": "2026-10-18",
+        "sentinel_clusters": [
+          "vita_giappone"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.668,
+          "casual": 0.8256
+        },
+        "affinity_best_tipo": "casual",
+        "affinity_best_score": 0.826,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
+              "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
+              "source": "Tommaso In Giappone",
+              "date": "2026-10-09",
+              "views": 21050,
+              "likes": 805,
+              "duration_secs": 1280
+            },
+            {
+              "title": "IL GIAPPONE HA CAMBIATO LE MIE ABITUDINI?",
+              "url": "https://www.youtube.com/watch?v=ZRhIYrG-XNc",
+              "source": "Tommaso In Giappone",
+              "date": "2026-10-16",
+              "views": 10260,
+              "likes": 419,
+              "duration_secs": 904
+            },
+            {
+              "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
+              "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
+              "source": "Calabrese in Oriente",
+              "date": "2026-10-10",
+              "views": 6575,
+              "likes": 128,
+              "duration_secs": 895
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "SE DOVESSI TRASFERIRMI OGGI IN GIAPPONE, LO RIFAREI?",
+            "url": "https://www.youtube.com/watch?v=PoyAkHq3BqU",
+            "source": "Tommaso In Giappone",
+            "date": "2026-10-09",
+            "views": 21050,
+            "likes": 805,
+            "duration_secs": 1280
+          },
+          {
+            "title": "IL GIAPPONE HA CAMBIATO LE MIE ABITUDINI?",
+            "url": "https://www.youtube.com/watch?v=ZRhIYrG-XNc",
+            "source": "Tommaso In Giappone",
+            "date": "2026-10-16",
+            "views": 10260,
+            "likes": 419,
+            "duration_secs": 904
+          },
+          {
+            "title": "IL GIAPPONE NON CI VUOLE PIÙ? LA VERITÀ DI CHI CI VIVE DA 12 ANNI",
+            "url": "https://www.youtube.com/watch?v=hB6U2ZqYhJQ",
+            "source": "Calabrese in Oriente",
+            "date": "2026-10-10",
+            "views": 6575,
+            "likes": 128,
+            "duration_secs": 895
+          }
+        ]
+      },
+      {
+        "label": 8,
+        "score": 0.3782,
+        "keywords": [
+          "manga",
+          "contenuti",
+          "del",
+          "kirio",
+          "anime",
+          "altro"
+        ],
+        "item_count": 6,
+        "total_views": 14425,
+        "velocity": 0.833,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-07",
+        "last_seen": "2026-10-18",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.7769,
+          "casual": 0.6785
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.777,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "20€ PER QUESTO MANGA?! 😱 Le NOVITÀ Planet Manga di NOVEMBRE",
+              "url": "https://www.youtube.com/watch?v=NtUUzTnEILs",
+              "source": "Kirio1984",
+              "date": "2026-10-07",
+              "views": 3666,
+              "likes": 71,
+              "duration_secs": 432
+            },
+            {
+              "title": "QUALI MANGA MERITANO DAVVERO DI ESSERE LETTI? 📚",
+              "url": "https://www.youtube.com/watch?v=md34SGXmC-s",
+              "source": "Kirio1984",
+              "date": "2026-10-17",
+              "views": 3197,
+              "likes": 52,
+              "duration_secs": 907
+            },
+            {
+              "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
+              "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
+              "source": "Kirio1984",
+              "date": "2026-10-09",
+              "views": 2385,
+              "likes": 55,
+              "duration_secs": 436
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "20€ PER QUESTO MANGA?! 😱 Le NOVITÀ Planet Manga di NOVEMBRE",
+            "url": "https://www.youtube.com/watch?v=NtUUzTnEILs",
+            "source": "Kirio1984",
+            "date": "2026-10-07",
+            "views": 3666,
+            "likes": 71,
+            "duration_secs": 432
+          },
+          {
+            "title": "QUALI MANGA MERITANO DAVVERO DI ESSERE LETTI? 📚",
+            "url": "https://www.youtube.com/watch?v=md34SGXmC-s",
+            "source": "Kirio1984",
+            "date": "2026-10-17",
+            "views": 3197,
+            "likes": 52,
+            "duration_secs": 907
+          },
+          {
+            "title": "MANGA INTERROTTI, CLASSICI E FINALI! 📚 I MANGA CHE HO LETTO QUESTA SETTIMANA",
+            "url": "https://www.youtube.com/watch?v=UrW5aAycHeE",
+            "source": "Kirio1984",
+            "date": "2026-10-09",
+            "views": 2385,
+            "likes": 55,
+            "duration_secs": 436
+          }
+        ]
+      },
+      {
+        "label": 6,
+        "score": 0.3331,
+        "keywords": [
+          "anime",
+          "animeshorts",
+          "animeedit",
+          "vedere",
+          "animeedit animeshorts",
+          "anime animeedit"
+        ],
+        "item_count": 5,
+        "total_views": 8661,
+        "velocity": 0.6,
+        "novelty": 0.5,
+        "diversity": 0.292,
+        "first_seen": "2026-10-06",
+        "last_seen": "2026-10-17",
+        "sentinel_clusters": [
+          "anime_manga_pop"
+        ],
+        "languages": [
+          "it"
+        ],
+        "has_mover": false,
+        "affinity": {
+          "narrativo": 0.809,
+          "casual": 0.6838
+        },
+        "affinity_best_tipo": "narrativo",
+        "affinity_best_score": 0.809,
+        "items_by_lang": {
+          "it": [
+            {
+              "title": "Film da vedere assolutamente - Parte 4 #anime #animeedit #animeshorts #animeedits #animes",
+              "url": "https://www.youtube.com/watch?v=UpDa8WX78As",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-10-06",
+              "views": 2299,
+              "likes": 171,
+              "duration_secs": 109
+            },
+            {
+              "title": "Anime Veramente Sconosciuti che non sapevi di voler vedere - Parte 5 #anime #animeedit #animeshorts",
+              "url": "https://www.youtube.com/watch?v=VzZTNxdcrek",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-10-07",
+              "views": 1730,
+              "likes": 72,
+              "duration_secs": 71
+            },
+            {
+              "title": "Anime davvero sconosciuti da vedere assolutamente -Parte 5 #anime #animeshorts #animeedit",
+              "url": "https://www.youtube.com/watch?v=PMX8C1I6Pyo",
+              "source": "Italo Scanniello - Anime & Manga",
+              "date": "2026-10-13",
+              "views": 1676,
+              "likes": 95,
+              "duration_secs": 81
+            }
+          ]
+        },
+        "top_items": [
+          {
+            "title": "Film da vedere assolutamente - Parte 4 #anime #animeedit #animeshorts #animeedits #animes",
+            "url": "https://www.youtube.com/watch?v=UpDa8WX78As",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-10-06",
+            "views": 2299,
+            "likes": 171,
+            "duration_secs": 109
           },
           {
             "title": "Anime Veramente Sconosciuti che non sapevi di voler vedere - Parte 5 #anime #animeedit #animeshorts",
@@ -1051,6 +1010,15 @@
             "views": 1730,
             "likes": 72,
             "duration_secs": 71
+          },
+          {
+            "title": "Anime davvero sconosciuti da vedere assolutamente -Parte 5 #anime #animeshorts #animeedit",
+            "url": "https://www.youtube.com/watch?v=PMX8C1I6Pyo",
+            "source": "Italo Scanniello - Anime & Manga",
+            "date": "2026-10-13",
+            "views": 1676,
+            "likes": 95,
+            "duration_secs": 81
           }
         ]
       }
@@ -1058,207 +1026,115 @@
     "anomalie": [],
     "altri": [
       {
-        "label": 4,
-        "score": 0.3814,
+        "label": 1,
+        "score": 0.2641,
         "keywords": [
-          "use",
-          "fair",
-          "fair use",
-          "copyright",
-          "made",
-          "use tips"
+          "maglietta",
+          "calze",
+          "biglietti spettacolo",
+          "spettacolo criticoni",
+          "spettacolo",
+          "criticoni"
         ],
-        "item_count": 7,
-        "total_views": 96016,
-        "velocity": 0.429,
+        "item_count": 11,
+        "total_views": 534120,
+        "velocity": 0.455,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-29",
-        "last_seen": "2026-10-12",
+        "first_seen": "2026-10-05",
+        "last_seen": "2026-10-16",
         "sentinel_clusters": [
-          "anime_pop_en"
-        ],
-        "languages": [
-          "en"
-        ],
-        "has_mover": false,
-        "affinity": {
-          "narrativo": 0.7174,
-          "casual": 0.6552
-        },
-        "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.717,
-        "items_by_lang": {
-          "en": [
-            {
-              "title": "Tattoo culture in Japan is strange...",
-              "url": "https://www.youtube.com/watch?v=trB-44DO1r0",
-              "source": "The Anime Man",
-              "date": "2026-10-03",
-              "views": 36233,
-              "likes": 723,
-              "duration_secs": 28
-            },
-            {
-              "title": "\"Mew Wasn't Supposed To Be Found\"",
-              "url": "https://www.youtube.com/watch?v=-UKhO1WOY1o",
-              "source": "The Anime Man",
-              "date": "2026-09-29",
-              "views": 22507,
-              "likes": 584,
-              "duration_secs": 27
-            },
-            {
-              "title": "Myth And Roid's Own Favorite Song",
-              "url": "https://www.youtube.com/watch?v=ROSbvwdcNbs",
-              "source": "The Anime Man",
-              "date": "2026-10-03",
-              "views": 16184,
-              "likes": 738,
-              "duration_secs": 50
-            }
-          ]
-        },
-        "top_items": [
-          {
-            "title": "Tattoo culture in Japan is strange...",
-            "url": "https://www.youtube.com/watch?v=trB-44DO1r0",
-            "source": "The Anime Man",
-            "date": "2026-10-03",
-            "views": 36233,
-            "likes": 723,
-            "duration_secs": 28
-          },
-          {
-            "title": "\"Mew Wasn't Supposed To Be Found\"",
-            "url": "https://www.youtube.com/watch?v=-UKhO1WOY1o",
-            "source": "The Anime Man",
-            "date": "2026-09-29",
-            "views": 22507,
-            "likes": 584,
-            "duration_secs": 27
-          },
-          {
-            "title": "Myth And Roid's Own Favorite Song",
-            "url": "https://www.youtube.com/watch?v=ROSbvwdcNbs",
-            "source": "The Anime Man",
-            "date": "2026-10-03",
-            "views": 16184,
-            "likes": 738,
-            "duration_secs": 50
-          }
-        ]
-      },
-      {
-        "label": 7,
-        "score": 0.2196,
-        "keywords": [
-          "manga",
-          "contenuti",
-          "del",
-          "kirio",
-          "altro",
-          "anime"
-        ],
-        "item_count": 3,
-        "total_views": 7529,
-        "velocity": 0.167,
-        "novelty": 0.5,
-        "diversity": 0.292,
-        "first_seen": "2026-09-30",
-        "last_seen": "2026-10-08",
-        "sentinel_clusters": [
-          "anime_manga_pop"
+          "videogiochi"
         ],
         "languages": [
           "it"
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.6217,
-          "casual": 0.5424
+          "narrativo": 0.7337,
+          "casual": 0.5416
         },
         "affinity_best_tipo": "narrativo",
-        "affinity_best_score": 0.622,
+        "affinity_best_score": 0.734,
         "items_by_lang": {
           "it": [
             {
-              "title": "Novità, delusioni e sorprese - I MANGA CHE HO LETTO A SETTEMBRE 2026",
-              "url": "https://www.youtube.com/watch?v=kcP_ZWBaOc4",
-              "source": "Kirio1984",
-              "date": "2026-10-02",
-              "views": 3418,
-              "likes": 77,
-              "duration_secs": 1135
+              "title": "MovieBlog- 1110: Recensione Mammina",
+              "url": "https://www.youtube.com/watch?v=WlO-GDtExFw",
+              "source": "Victorlaszlo88",
+              "date": "2026-10-12",
+              "views": 180761,
+              "likes": 4651,
+              "duration_secs": 2102
             },
             {
-              "title": "5 MANGA CHE HO AMATO A SETTEMBRE! 😱 UNO È INEDITO IN ITALIA!",
-              "url": "https://www.youtube.com/watch?v=FuTfG7COWog",
-              "source": "Kirio1984",
-              "date": "2026-10-08",
-              "views": 2247,
-              "likes": 57,
-              "duration_secs": 363
+              "title": "Lanterns 1X08: Che finale CLAMOROSO!",
+              "url": "https://www.youtube.com/watch?v=TBsVwMRU9DA",
+              "source": "Victorlaszlo88",
+              "date": "2026-10-05",
+              "views": 45115,
+              "likes": 1299,
+              "duration_secs": 2364
             },
             {
-              "title": "MANGA DA NON PERDERE A OTTOBRE! I miei consigli",
-              "url": "https://www.youtube.com/watch?v=jSgWUDoOzxM",
-              "source": "Kirio1984",
-              "date": "2026-09-30",
-              "views": 1864,
-              "likes": 74,
-              "duration_secs": 467
+              "title": "Carrie: Una serie che reinterpreta bene il personaggio",
+              "url": "https://www.youtube.com/watch?v=sMH7t_mctdI",
+              "source": "Victorlaszlo88",
+              "date": "2026-10-13",
+              "views": 41646,
+              "likes": 708,
+              "duration_secs": 2138
             }
           ]
         },
         "top_items": [
           {
-            "title": "Novità, delusioni e sorprese - I MANGA CHE HO LETTO A SETTEMBRE 2026",
-            "url": "https://www.youtube.com/watch?v=kcP_ZWBaOc4",
-            "source": "Kirio1984",
-            "date": "2026-10-02",
-            "views": 3418,
-            "likes": 77,
-            "duration_secs": 1135
+            "title": "MovieBlog- 1110: Recensione Mammina",
+            "url": "https://www.youtube.com/watch?v=WlO-GDtExFw",
+            "source": "Victorlaszlo88",
+            "date": "2026-10-12",
+            "views": 180761,
+            "likes": 4651,
+            "duration_secs": 2102
           },
           {
-            "title": "5 MANGA CHE HO AMATO A SETTEMBRE! 😱 UNO È INEDITO IN ITALIA!",
-            "url": "https://www.youtube.com/watch?v=FuTfG7COWog",
-            "source": "Kirio1984",
-            "date": "2026-10-08",
-            "views": 2247,
-            "likes": 57,
-            "duration_secs": 363
+            "title": "Lanterns 1X08: Che finale CLAMOROSO!",
+            "url": "https://www.youtube.com/watch?v=TBsVwMRU9DA",
+            "source": "Victorlaszlo88",
+            "date": "2026-10-05",
+            "views": 45115,
+            "likes": 1299,
+            "duration_secs": 2364
           },
           {
-            "title": "MANGA DA NON PERDERE A OTTOBRE! I miei consigli",
-            "url": "https://www.youtube.com/watch?v=jSgWUDoOzxM",
-            "source": "Kirio1984",
-            "date": "2026-09-30",
-            "views": 1864,
-            "likes": 74,
-            "duration_secs": 467
+            "title": "Carrie: Una serie che reinterpreta bene il personaggio",
+            "url": "https://www.youtube.com/watch?v=sMH7t_mctdI",
+            "source": "Victorlaszlo88",
+            "date": "2026-10-13",
+            "views": 41646,
+            "likes": 708,
+            "duration_secs": 2138
           }
         ]
       },
       {
         "label": 0,
-        "score": 0.1337,
+        "score": 0.0993,
         "keywords": [
-          "japanese",
-          "mom",
-          "japanese mom",
-          "bbq",
-          "bring labor",
-          "bring"
+          "labor",
+          "induce",
+          "induce labor",
+          "tried",
+          "tried induce",
+          "bbq bring"
         ],
-        "item_count": 4,
-        "total_views": 1614957,
-        "velocity": 0.125,
+        "item_count": 3,
+        "total_views": 752919,
+        "velocity": 0.0,
         "novelty": 0.5,
         "diversity": 0.292,
-        "first_seen": "2026-09-29",
-        "last_seen": "2026-10-06",
+        "first_seen": "2026-10-06",
+        "last_seen": "2026-10-09",
         "sentinel_clusters": [
           "japan_native"
         ],
@@ -1267,22 +1143,13 @@
         ],
         "has_mover": false,
         "affinity": {
-          "narrativo": 0.4117,
-          "casual": 0.4564
+          "narrativo": 0.2443,
+          "casual": 0.2657
         },
         "affinity_best_tipo": "casual",
-        "affinity_best_score": 0.456,
+        "affinity_best_score": 0.266,
         "items_by_lang": {
           "ja": [
-            {
-              "title": "9 Months Pregnant in LA | Japanese Mom Morning Routine",
-              "url": "https://www.youtube.com/watch?v=tW-hvAn5RIg",
-              "source": "Kimono Mom",
-              "date": "2026-10-01",
-              "views": 728107,
-              "likes": 34870,
-              "duration_secs": 87
-            },
             {
               "title": "Eating Japanese BBQ to Bring on Labor!🤞",
               "url": "https://www.youtube.com/watch?v=XSssTmo-vlM",
@@ -1293,26 +1160,26 @@
               "duration_secs": 36
             },
             {
-              "title": "Why This Japanese Mom Doesn’t Need Maternity Clothes",
-              "url": "https://www.youtube.com/watch?v=sIDkI5ZlFlI",
+              "title": "Trying Spicy Food to Naturally Induce Labor",
+              "url": "https://www.youtube.com/watch?v=Yg1UczV32NE",
               "source": "Kimono Mom",
-              "date": "2026-09-29",
-              "views": 283354,
-              "likes": 14909,
-              "duration_secs": 51
+              "date": "2026-10-08",
+              "views": 219746,
+              "likes": 7893,
+              "duration_secs": 26
+            },
+            {
+              "title": "10 Things I Tried to Induce Labor🤰🤷😮‍💨",
+              "url": "https://www.youtube.com/watch?v=V4QdwupYkFY",
+              "source": "Kimono Mom",
+              "date": "2026-10-09",
+              "views": 174367,
+              "likes": 7620,
+              "duration_secs": 38
             }
           ]
         },
         "top_items": [
-          {
-            "title": "9 Months Pregnant in LA | Japanese Mom Morning Routine",
-            "url": "https://www.youtube.com/watch?v=tW-hvAn5RIg",
-            "source": "Kimono Mom",
-            "date": "2026-10-01",
-            "views": 728107,
-            "likes": 34870,
-            "duration_secs": 87
-          },
           {
             "title": "Eating Japanese BBQ to Bring on Labor!🤞",
             "url": "https://www.youtube.com/watch?v=XSssTmo-vlM",
@@ -1323,13 +1190,22 @@
             "duration_secs": 36
           },
           {
-            "title": "Why This Japanese Mom Doesn’t Need Maternity Clothes",
-            "url": "https://www.youtube.com/watch?v=sIDkI5ZlFlI",
+            "title": "Trying Spicy Food to Naturally Induce Labor",
+            "url": "https://www.youtube.com/watch?v=Yg1UczV32NE",
             "source": "Kimono Mom",
-            "date": "2026-09-29",
-            "views": 283354,
-            "likes": 14909,
-            "duration_secs": 51
+            "date": "2026-10-08",
+            "views": 219746,
+            "likes": 7893,
+            "duration_secs": 26
+          },
+          {
+            "title": "10 Things I Tried to Induce Labor🤰🤷😮‍💨",
+            "url": "https://www.youtube.com/watch?v=V4QdwupYkFY",
+            "source": "Kimono Mom",
+            "date": "2026-10-09",
+            "views": 174367,
+            "likes": 7620,
+            "duration_secs": 38
           }
         ]
       }
