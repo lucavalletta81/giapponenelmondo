@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-19 19:01",
-  "summary": "Settimana dominata da un segnale forte e chiaro: expat_japan_en schizza a +47 in inglese mentre in italiano resta territorio quasi vergine. I contenuti EN analizzati mostrano un focus preciso su Tokyo fisica e materiale — negozi che chiudono, appartamenti minuscoli, rituali alimentari. In italiano anime/manga continua a saturare senza novità rilevanti; emerge un solo trend nuovo supportato dai dati, con un secondo segnale debole ma verificabile.",
+  "generated_at": "2026-10-23 09:02",
+  "summary": "Settimana caratterizzata da una forte accelerazione anime/pop in inglese (+45) mentre in italiano il cluster resta saturo ma statico. Il segnale più interessante emerge da Trash Taste con un episodio dedicato al live action di One Piece e uno sulla 'whimsy' come concetto estetico — temi narrativi con potenziale alto e copertura italiana quasi nulla. Sul fronte expat_EN il crollo (-60) conferma esaurimento del filone 'vita quotidiana a Tokyo'. Settimana con segnali moderati: 2 trend solidi, 1 terzo debole ma verificabile.",
   "overview": {
     "IT": {
-      "trend_count": 1,
+      "trend_count": 2,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 1,
+      "gap_IT_EN_count": 2,
       "delta_trend_count": 0
     },
     "EN": {
@@ -30,46 +30,46 @@
       },
       {
         "keyword": "viaggio",
-        "volume": 53,
-        "delta": "flat",
-        "delta_value": 0,
+        "volume": 31,
+        "delta": "down",
+        "delta_value": -22,
         "source": "youtube_velocity"
       },
       {
         "keyword": "videogiochi",
-        "volume": 17,
-        "delta": "down",
-        "delta_value": -26,
+        "volume": 20,
+        "delta": "flat",
+        "delta_value": 3,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
         "volume": 7,
         "delta": "flat",
-        "delta_value": -3,
+        "delta_value": 0,
         "source": "youtube_velocity"
       }
     ],
     "EN": [
       {
-        "keyword": "expat_japan_en",
+        "keyword": "anime_pop_en",
         "volume": 100,
         "delta": "up",
-        "delta_value": 47,
+        "delta_value": 45,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "anime_pop_en",
-        "volume": 55,
+        "keyword": "expat_japan_en",
+        "volume": 40,
         "delta": "down",
-        "delta_value": -45,
+        "delta_value": -60,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 2,
+        "volume": 1,
         "delta": "flat",
-        "delta_value": -2,
+        "delta_value": -1,
         "source": "youtube_velocity"
       }
     ],
@@ -86,86 +86,142 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Tokyo che sparisce: i luoghi fisici condannati a chiudere",
-      "category": "Sociale/Culturale",
+      "title": "One Piece live action: come si rompe la maledizione",
+      "category": "Cinema/J-Horror",
       "urgency": "Alta",
       "coerenza": 8,
       "saturazione_IT": 2,
-      "saturazione_EN": 6,
-      "saturazione_JP": 4,
+      "saturazione_EN": 7,
+      "saturazione_JP": 3,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "L unico negozio di tecnologia vintage di Tokyo ha chiuso per sempre. Nessuno lo ha raccontato in italiano.",
-      "video_title": "Il negozio che ha resistito 80 anni a Tokyo. Poi è arrivato il progresso.",
-      "podcast_title": "Akihabara sparisce: i luoghi fisici di Tokyo condannati dal tempo",
-      "angolatura": "Non nostalgia generica ma autopsia di un ecosistema: cosa muore quando chiude un negozio storico di Tokyo e cosa dice del Giappone che verrà.",
+      "thumbnail_hook": "Il live action giapponese era condannato a fallire. Poi è arrivato One Piece.",
+      "video_title": "Come One Piece ha rotto la maledizione dei live action anime",
+      "podcast_title": "One Piece e la maledizione: perché tutti gli altri hanno fallito",
+      "angolatura": "Non celebrare il successo ma analizzare il metodo: cosa ha fatto diversamente One Piece rispetto a Dragon Ball Evolution, Death Note, Cowboy Bebop",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Video per immagini dei luoghi; podcast per approfondimento sociologico sulla perdita urbana.",
+      "motivazione_formato": "Argomento narrativo denso — regge sia come video con clip sia come podcast argomentativo",
       "struttura_atti": [
-        "Atto I: il negozio come personaggio — storia, clienti fissi, oggetti invendibili e irripetibili",
-        "Atto II: la pressione esterna — immobiliare, turismo, generazione post-Showa che non compra fisico",
-        "Atto III: cosa rimane dopo — il vuoto urbano, i sostituti digitali, la memoria collettiva che nessuno custodisce"
+        "Atto I: il cimitero dei live action anime — Dragon Ball, Death Note, Cowboy Bebop: perché tutti hanno fallito e cosa li accomuna",
+        "Atto II: il metodo One Piece — il coinvolgimento di Oda, la scelta del cast, la fedeltà emotiva vs fedeltà letterale alla fonte",
+        "Atto III: è replicabile? Cosa ci dice questo successo sul futuro degli adattamenti e sul rapporto Oriente-Occidente nell animazione"
       ],
-      "coverage_IT": "Quasi zero: la perdita di luoghi fisici giapponesi non è mai stata trattata come tema autonomo in italiano.",
-      "opportunita_IT": "Primo in italiano su un filone che in EN sta esplodendo (+47 expat_japan_en): angolatura narrativa su lutto urbano e identità commerciale giapponese.",
+      "coverage_IT": "Quasi assente in italiano: menzioni sparute ma nessun video analitico strutturato sul perché funziona",
+      "opportunita_IT": "Finestra aperta: il tema esplode in EN con un episodio Trash Taste dedicato (330), in italiano è territorio vergine per un approccio critico-narrativo",
       "esempi_EN": [
         {
-          "titolo": "And With This... Tokyo s OLDEST Tiny Tech Shop is Gone Forever...",
-          "url": "https://youtube.com/watch?v=NVStTbUu8kI"
+          "titolo": "How One Piece Broke the Live Action Curse (ft. Steve Maeda) | Trash Taste #330",
+          "url": "https://youtube.com/watch?v=TVirSGmhFGM"
         }
       ],
-      "angolo_EN": "Tokyo Lens usa il negozio che chiude come detonatore emotivo per parlare di trasformazione urbana accelerata.",
-      "segnale_JP": "Nessun video JP direttamente pertinente nei dati di questa run; segnale arriva esclusivamente dal mercato EN.",
+      "angolo_EN": "Trash Taste intervista Steve Maeda, showrunner, analizzando le scelte produttive dall interno",
+      "segnale_JP": "TAKASHii from Japan monitora cosa guardano i giapponesi nel 2026 — contesto utile per capire la ricezione nativa",
+      "esempi_JP": [
+        {
+          "titolo": "What Anime Do Japanese Watch in 2026?",
+          "url": "https://youtube.com/watch?v=BbYRPSDdpBs"
+        }
+      ],
+      "utilita_JP": "Capire se One Piece live action è percepito diversamente dal pubblico giapponese vs occidentale"
+    },
+    {
+      "title": "La Whimsy è morta: quando l estetica del capriccio scompare",
+      "category": "Estetica/Visiva",
+      "urgency": "Media",
+      "coerenza": 7,
+      "saturazione_IT": 1,
+      "saturazione_EN": 5,
+      "saturazione_JP": 2,
+      "delta_coerenza": "up",
+      "delta_sat_IT": "flat",
+      "gap_IT_EN": "Alto",
+      "thumbnail_hook": "C era un tempo in cui tutto era strano, colorato, senza senso. Poi qualcosa è cambiato.",
+      "video_title": "La morte della Whimsy: il Giappone e la fine dell estetica del capriccio",
+      "podcast_title": "Whimsy: quando il Giappone smette di essere bizzarro",
+      "angolatura": "Usare il concetto anglofono di whimsy come lente per leggere la cultura pop giapponese — da Harajuku anni 90 all appiattimento estetico contemporaneo",
+      "timing": "Prossimo mese",
+      "formato_consigliato": "Podcast",
+      "motivazione_formato": "Tema concettuale e filosofico, non visivo — si presta alla narrazione parlata con profondità argomentativa",
+      "struttura_atti": [
+        "Atto I: cos era la whimsy giapponese — Harajuku, Decora, Fairy Kei, la bizzarria come identità e non come costume",
+        "Atto II: cosa l ha uccisa — l algoritmo che premia la leggibilità, il turismo che ha museificato la stranezza, il capitalismo che ha commodificato il kawaii",
+        "Atto III: sopravvive qualcosa? Cercare le sacche di resistenza nell underground contemporaneo — e cosa ci dice della società giapponese di oggi"
+      ],
+      "coverage_IT": "Tema completamente assente in italiano — il concetto di whimsy non è mai stato affrontato come chiave di lettura culturale",
+      "opportunita_IT": "Trash Taste apre il dibattito in EN con un episodio dedicato (+45 delta anime_pop_en): finestra temporale di 2-4 settimane prima che arrivi in italiano",
+      "esempi_EN": [
+        {
+          "titolo": "Is Whimsy Dead? | Trash Taste #329",
+          "url": "https://youtube.com/watch?v=_lmjYbGjhI4"
+        }
+      ],
+      "angolo_EN": "Trash Taste discute la morte della whimsy come fenomeno culturale globale con radici giapponesi",
+      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run — il tema è per ora occidentale nella sua formulazione",
       "esempi_JP": [],
-      "utilita_JP": "Assente in questa run: non forzare riferimenti JP non presenti nei dati."
+      "utilita_JP": "Monitorare nelle prossime run se emerge dibattito nativo sul declino dell estetica alternativa"
     }
   ],
   "trends_EN": [
     {
-      "title": "Il negozio come trappola: perdere soldi nell'otaku economy",
-      "category": "Sociale/Culturale",
-      "urgency_radar": "Caldo",
-      "volume_EN": 55,
-      "volume_IT": 7,
-      "delta_EN": "down",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "CDawgVA + Abroad in Japan portano il format 'quanto ho speso' a centinaia di migliaia di view in EN. In IT il tema non ha ancora un trattamento narrativo serio — solo haul. Il delta EN è in calo ma il volume resta alto: finestra di 2-4 settimane.",
-      "connessione_canale": "Episodio già rilevato 60gg fa ('Perdere soldi in Giappone') ma mai prodotto: i dati EN confermano che il tema tiene."
-    },
-    {
-      "title": "Tokyo che sparisce: i negozi storici condannati dalla modernità",
-      "category": "Sociale/Culturale",
+      "title": "One Piece live action: come si rompe la maledizione",
+      "category": "Cinema/J-Horror",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 7,
+      "volume_IT": 100,
       "delta_EN": "up",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens documenta la chiusura dell'ultimo negozio di tech vintage a Akihabara con tono elegico — non nostalgia turistica ma critica urbana. In IT assente. expat_japan_en a +47: segnale forte, finestra aperta ora.",
-      "connessione_canale": "Si aggancia a Haikyo, Showa congelata e Akiya già trattati: lo stesso sguardo sulle rovine del quotidiano, applicato al commercio urbano."
+      "gap_IT": "Medio",
+      "perche_monitorarlo": "Trash Taste #330 con lo showrunner Steve Maeda analizza il caso One Piece come modello di adattamento riuscito. In IT il tema live action esiste ma è trattato in modo superficiale o polemico. Finestra: 4-6 settimane prima che diventi saturato.",
+      "connessione_canale": "Luca ha già trattato J-Horror e cultura pop JP: un episodio sul perché i live action giapponesi falliscono quasi sempre sarebbe un naturale approfondimento critico."
     },
     {
-      "title": "Appartamenti minimi a Tokyo: estetica e sopravvivenza",
+      "title": "Whimsy is dead: la fine dell'estetica stravagante",
       "category": "Estetica/Visiva",
       "urgency_radar": "Tiepido",
       "volume_EN": 100,
       "volume_IT": 7,
       "delta_EN": "up",
-      "gap_IT": "Medio",
-      "perche_monitorarlo": "Tokyo Lens pubblica un secondo video sugli appartamenti tiny in 14 giorni — segnale di serialità voluta. In IT il tema era stato rilevato ma non è mai esploso. Il gap si sta chiudendo lentamente: 3-6 settimane.",
-      "connessione_canale": "Tema già monitorato ('Vivere in 20 mq') e mai prodotto: la doppia uscita EN è un invito a non aspettare oltre."
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Trash Taste #329 apre una riflessione sul declino dell'estetica 'whimsical' nella cultura pop e nell'animazione. In IT questo dibattito culturale non esiste ancora come formato autonomo. Finestra stimata: 6-10 settimane.",
+      "connessione_canale": "Collegabile agli episodi su Visual Kei e Jirai-kei: l'estetica come identità generazionale che nasce, si radicalizza e muore."
+    },
+    {
+      "title": "Yatai e ramen cart: l'ultimo cibo di strada sopravvissuto",
+      "category": "Sociale/Culturale",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 40,
+      "volume_IT": 7,
+      "delta_EN": "flat",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "Paolo from Tokyo documenta l'unico yatai ramen rimasto a Shibuya. Il tema del cibo di strada regolamentato fino all'estinzione è già presente in EN ma assente in IT come narrazione culturale, non travel. Finestra: 8-12 settimane.",
+      "connessione_canale": "Affianca il filone 'Tokyo che sparisce' già avviato: lo yatai non è cibo, è uno spazio sociale che la regolamentazione urbana sta eliminando."
     }
   ],
   "trends_JP": [
     {
-      "title": "Famiglia allargata come spettacolo intimo / 家族の増加をVlogで見せる文化",
+      "title": "Cosa guardano davvero i giapponesi: anime 2026 / 2026年に日本人が見るアニメ",
+      "category": "Sociale/Culturale",
+      "volume_JP": 100,
+      "delta_JP": "flat",
+      "rilevanza": "Alta",
+      "segnale": "TAKASHii from Japan pubblica un video sulle preferenze anime del pubblico nativo nel 2026: un dato primario sul gap tra consumo JP e percezione occidentale dell'animazione giapponese.",
+      "utilita_canale": "Fonte diretta per smontare la narrazione occidentale sull'anime JP: quali titoli dominano in patria vs quali esportiamo come 'giapponesi' in Italia.",
+      "esempi_JP": [
+        {
+          "titolo": "What Anime Do Japanese Watch in 2026?",
+          "url": "https://youtube.com/watch?v=BbYRPSDdpBs"
+        }
+      ]
+    },
+    {
+      "title": "Kimono Mom e la famiglia allargata come format / きものママの家族vlog",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "Kimono Mom domina i dati JP con un ciclo narrativo sulla nascita del secondo figlio — 5 video in 14 giorni. Non intrattenimento: documentazione rituale della vita familiare come contenuto.",
-      "utilita_canale": "Potenziale per un episodio sul vlog familiare giapponese come forma culturale: pudore, cura, esposizione del privato come atto pubblico in Giappone.",
+      "segnale": "Kimono Mom produce tre episodi consecutivi su nascita del secondo figlio e dinamiche familiari: un format di intimità domestica JP che accumula alta velocità di view nel periodo analizzato.",
+      "utilita_canale": "Utile come caso studio: la famiglia giapponese raccontata dall'interno, lontana dallo stereotipo. Possibile episodio su maternità e ruoli di genere in JP attraverso il medium vlog.",
       "esempi_JP": [
         {
           "titolo": "My First Baby Meets Her Baby Sister for the First Time",
@@ -178,26 +234,26 @@
       ]
     },
     {
-      "title": "Insegnare a disegnare in Giappone: il metodo dell'illustratore / 顔の崩れと絵の上手さの関係",
+      "title": "Il disegno come disciplina: la critica all'illustrazione JP / きまぐれ添削",
       "category": "Estetica/Visiva",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Bassa",
-      "segnale": "Naoki Saito pubblica tutorial tecnici sull'illustrazione anime con approccio analitico — 'perché il viso sbagliato rende il disegno brutto'. Nicchia ma consistente nel tempo.",
-      "utilita_canale": "Aggancio debole al canale: tema troppo tecnico per il formato narrativo di Luca. Da scartare salvo episodio specifico sull'estetica dell'anime come disciplina.",
+      "rilevanza": "Media",
+      "segnale": "Naoki Saito pubblica una puntata della serie 'correzione improvvisata' sul disegno anatomico: format di critica tecnica al disegno manga/illustrazione con altissimo engagement nativo.",
+      "utilita_canale": "Angolo originale sull'industria manga vista dall'interno: non il prodotto finito ma la formazione, la critica tecnica, la cultura della correzione come pratica educativa JP.",
       "esempi_JP": [
         {
-          "titolo": "顔が崩れると絵が下手に見える理由とは...！？",
-          "url": "https://youtube.com/watch?v=r4YyDe-fsiA"
+          "titolo": "デッサン崩れが致命的な欠陥になる場合があります。【きまぐれ添削247】",
+          "url": "https://youtube.com/watch?v=r8NhAxCddYY"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "expat_japan_en: confermare se il delta +47 regge o era spike puntuale — decide se aprire una finestra editoriale sul Giappone quotidiano",
-    "Tokyo Lens serialità negozi storici: terzo video in arrivo? Confermerebbe un trend editoriale intenzionale da anticipare in IT",
-    "anime_pop_en a -45: verificare se il calo continua o rimbalza dopo One Piece live action — cambia la strategia sull'anime come argomento",
-    "Kimono Mom: il ciclo narrativo sulla nascita si chiude — osservare se il canale vira verso contenuti culturali JP espliciti utili come fonte primaria"
+    "Live action JP: monitorare se il caso One Piece genera dibattito critico in IT nelle prossime 2 settimane, prima della saturazione",
+    "Whimsy/estetica stravagante: verificare se altri canali EN riprendono il tema di Trash Taste #329 come segnale di tendenza più ampia",
+    "Anime nativo JP 2026: incrociare i titoli citati da TAKASHii con il radar IT per identificare gap di copertura editoriale",
+    "Yatai e spazio pubblico urbano: osservare se Paolo from Tokyo o Tokyo Lens producono altri contenuti sulla regolamentazione del cibo di strada come prosieguo del filone"
   ],
   "warnings": []
 }

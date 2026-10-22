@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-14 10:00",
-  "passed": 9,
+  "checked_at": "2026-10-21 10:00",
+  "passed": 7,
   "total": 11,
   "results": [
     {
@@ -31,12 +31,12 @@
     {
       "name": "Dati report — freschezza",
       "ok": false,
-      "detail": "12 giorni fa"
+      "detail": "19 giorni fa"
     },
     {
       "name": "YouTube — feed video",
-      "ok": true,
-      "detail": "status=ok · 10 video"
+      "ok": false,
+      "detail": "HTTP 403"
     },
     {
       "name": "Regressione rss2json (&count assente)",
@@ -45,8 +45,8 @@
     },
     {
       "name": "Feed dashboard (Japan Times)",
-      "ok": true,
-      "detail": "HTTP 200"
+      "ok": false,
+      "detail": "HTTP 403"
     },
     {
       "name": "Redirect vecchi link (404.html)",
