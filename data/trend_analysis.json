@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23 09:02",
-  "summary": "Settimana caratterizzata da una forte accelerazione anime/pop in inglese (+45) mentre in italiano il cluster resta saturo ma statico. Il segnale più interessante emerge da Trash Taste con un episodio dedicato al live action di One Piece e uno sulla 'whimsy' come concetto estetico — temi narrativi con potenziale alto e copertura italiana quasi nulla. Sul fronte expat_EN il crollo (-60) conferma esaurimento del filone 'vita quotidiana a Tokyo'. Settimana con segnali moderati: 2 trend solidi, 1 terzo debole ma verificabile.",
+  "generated_at": "2026-10-26 19:02",
+  "summary": "Settimana editorialmente piatta: il cluster anime/manga domina in IT e EN ma resta saturo e statico. Il segnale più interessante arriva da EN con Trash Taste che spinge forte su isekai e live action anime come generi in ritorno — tema già rilevato in parte ma con angolatura nuova sull'isekai come renaissance. Dal lato JP, un segnale debole ma originale emerge attorno a Hololive/VTuber come fenomeno culturale con dimensioni sociali. Nessun segnale forte nuovo: 2 trend sostenibili, il terzo è borderline.",
   "overview": {
     "IT": {
       "trend_count": 2,
@@ -11,10 +11,10 @@
     "EN": {
       "trend_count": 3,
       "youtube_videos_analyzed": 10,
-      "delta_trend_count": 1
+      "delta_trend_count": 0
     },
     "JP": {
-      "signal_count": 1,
+      "signal_count": 2,
       "youtube_videos_analyzed": 6,
       "delta_signal_count": 0
     }
@@ -29,24 +29,24 @@
         "source": "youtube_velocity"
       },
       {
-        "keyword": "viaggio",
-        "volume": 31,
-        "delta": "down",
-        "delta_value": -22,
+        "keyword": "videogiochi",
+        "volume": 24,
+        "delta": "flat",
+        "delta_value": 4,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "videogiochi",
-        "volume": 20,
-        "delta": "flat",
-        "delta_value": 3,
+        "keyword": "viaggio",
+        "volume": 21,
+        "delta": "down",
+        "delta_value": -10,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 7,
+        "volume": 5,
         "delta": "flat",
-        "delta_value": 0,
+        "delta_value": -2,
         "source": "youtube_velocity"
       }
     ],
@@ -54,22 +54,22 @@
       {
         "keyword": "anime_pop_en",
         "volume": 100,
-        "delta": "up",
-        "delta_value": 45,
+        "delta": "flat",
+        "delta_value": 0,
         "source": "youtube_velocity"
       },
       {
         "keyword": "expat_japan_en",
-        "volume": 40,
-        "delta": "down",
-        "delta_value": -60,
+        "volume": 35,
+        "delta": "flat",
+        "delta_value": -5,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 1,
+        "volume": 4,
         "delta": "flat",
-        "delta_value": -1,
+        "delta_value": 3,
         "source": "youtube_velocity"
       }
     ],
@@ -86,127 +86,147 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "One Piece live action: come si rompe la maledizione",
+      "title": "Isekai: il genere che si credeva morto è tornato a dominare",
       "category": "Cinema/J-Horror",
-      "urgency": "Alta",
-      "coerenza": 8,
-      "saturazione_IT": 2,
+      "urgency": "Media",
+      "coerenza": 7,
+      "saturazione_IT": 3,
       "saturazione_EN": 7,
-      "saturazione_JP": 3,
+      "saturazione_JP": 6,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Il live action giapponese era condannato a fallire. Poi è arrivato One Piece.",
-      "video_title": "Come One Piece ha rotto la maledizione dei live action anime",
-      "podcast_title": "One Piece e la maledizione: perché tutti gli altri hanno fallito",
-      "angolatura": "Non celebrare il successo ma analizzare il metodo: cosa ha fatto diversamente One Piece rispetto a Dragon Ball Evolution, Death Note, Cowboy Bebop",
+      "thumbnail_hook": "Il genere che tutti odiavano ha vinto. Di nuovo.",
+      "video_title": "Isekai è tornato: come un genere 'morto' ha conquistato il 2025",
+      "podcast_title": "Isekai Renaissance: perché il genere sopravvive a tutto",
+      "angolatura": "Non un elogio dell'isekai ma un'analisi di perché il pubblico continua a tornare a formule che si credono esaurite — cicli culturali del consumo anime.",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Argomento narrativo denso — regge sia come video con clip sia come podcast argomentativo",
+      "motivazione_formato": "Tema discorsivo ideale per podcast, ma le clip anime reggono bene il video.",
       "struttura_atti": [
-        "Atto I: il cimitero dei live action anime — Dragon Ball, Death Note, Cowboy Bebop: perché tutti hanno fallito e cosa li accomuna",
-        "Atto II: il metodo One Piece — il coinvolgimento di Oda, la scelta del cast, la fedeltà emotiva vs fedeltà letterale alla fonte",
-        "Atto III: è replicabile? Cosa ci dice questo successo sul futuro degli adattamenti e sul rapporto Oriente-Occidente nell animazione"
+        "Atto I: La 'morte' dell'isekai — quando critici e fan decretarono la saturazione del genere tra 2019 e 2022",
+        "Atto II: Il ritorno — quali titoli hanno riacceso l'interesse e cosa è cambiato nella formula narrativa",
+        "Atto III: Il ciclo infinito — perché certi generi anime non muoiono mai e cosa dice questo del pubblico che li consuma"
       ],
-      "coverage_IT": "Quasi assente in italiano: menzioni sparute ma nessun video analitico strutturato sul perché funziona",
-      "opportunita_IT": "Finestra aperta: il tema esplode in EN con un episodio Trash Taste dedicato (330), in italiano è territorio vergine per un approccio critico-narrativo",
+      "coverage_IT": "Quasi nulla: qualche video di ranking anime generico, nessuna analisi critica del ciclo isekai in italiano.",
+      "opportunita_IT": "Primo canale italiano a trattare l'isekai non come guilty pleasure ma come fenomeno sociologico dei consumi pop — angolatura critica libera.",
       "esempi_EN": [
         {
-          "titolo": "How One Piece Broke the Live Action Curse (ft. Steve Maeda) | Trash Taste #330",
-          "url": "https://youtube.com/watch?v=TVirSGmhFGM"
+          "titolo": "Isekai is SO Back | Trash Taste #331",
+          "url": "https://youtube.com/watch?v=pdq5vmfSeMA"
         }
       ],
-      "angolo_EN": "Trash Taste intervista Steve Maeda, showrunner, analizzando le scelte produttive dall interno",
-      "segnale_JP": "TAKASHii from Japan monitora cosa guardano i giapponesi nel 2026 — contesto utile per capire la ricezione nativa",
+      "angolo_EN": "Trash Taste tratta il tema con tono celebrativo e aneddotico — manca l'analisi critica dei meccanismi culturali.",
+      "segnale_JP": "TAKASHii from Japan documenta cosa guardano davvero i giapponesi nel 2026, con isekai ancora centrale.",
       "esempi_JP": [
         {
           "titolo": "What Anime Do Japanese Watch in 2026?",
           "url": "https://youtube.com/watch?v=BbYRPSDdpBs"
         }
       ],
-      "utilita_JP": "Capire se One Piece live action è percepito diversamente dal pubblico giapponese vs occidentale"
+      "utilita_JP": "Dà la prospettiva nativa: cosa piace in JP vs cosa esporta EN, scarto editoriale utile."
     },
     {
-      "title": "La Whimsy è morta: quando l estetica del capriccio scompare",
-      "category": "Estetica/Visiva",
+      "title": "VTuber e Hololive: la pop star virtuale che il Giappone ha già normalizzato",
+      "category": "Sociale/Culturale",
       "urgency": "Media",
-      "coerenza": 7,
-      "saturazione_IT": 1,
+      "coerenza": 6,
+      "saturazione_IT": 2,
       "saturazione_EN": 5,
-      "saturazione_JP": 2,
-      "delta_coerenza": "up",
+      "saturazione_JP": 8,
+      "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
-      "gap_IT_EN": "Alto",
-      "thumbnail_hook": "C era un tempo in cui tutto era strano, colorato, senza senso. Poi qualcosa è cambiato.",
-      "video_title": "La morte della Whimsy: il Giappone e la fine dell estetica del capriccio",
-      "podcast_title": "Whimsy: quando il Giappone smette di essere bizzarro",
-      "angolatura": "Usare il concetto anglofono di whimsy come lente per leggere la cultura pop giapponese — da Harajuku anni 90 all appiattimento estetico contemporaneo",
+      "gap_IT_EN": "Medio",
+      "thumbnail_hook": "In Giappone le pop star virtuali sono reali. Noi non lo sappiamo ancora.",
+      "video_title": "Hololive: perché le idol virtuali stanno sostituendo quelle in carne e ossa",
+      "podcast_title": "VTuber: quando un avatar vale più di una persona reale",
+      "angolatura": "Non spiegare cos'è un VTuber ma indagare cosa dice di noi una cultura che preferisce una presenza virtuale incarnata a una reale — il corpo come problema.",
       "timing": "Prossimo mese",
       "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema concettuale e filosofico, non visivo — si presta alla narrazione parlata con profondità argomentativa",
+      "motivazione_formato": "Tema filosofico e culturale denso — il podcast permette la profondità necessaria senza dipendere da clip.",
       "struttura_atti": [
-        "Atto I: cos era la whimsy giapponese — Harajuku, Decora, Fairy Kei, la bizzarria come identità e non come costume",
-        "Atto II: cosa l ha uccisa — l algoritmo che premia la leggibilità, il turismo che ha museificato la stranezza, il capitalismo che ha commodificato il kawaii",
-        "Atto III: sopravvive qualcosa? Cercare le sacche di resistenza nell underground contemporaneo — e cosa ci dice della società giapponese di oggi"
+        "Atto I: Cosa è esploso — la situazione Hololive in Giappone nel 2025-2026 descritta con dati concreti di seguito, biglietti esauriti, merchandise sold out",
+        "Atto II: Il corpo nascosto — perché un avatar 2D genera attaccamento emotivo più forte di una idol tradizionale e cosa dice dell'economia dell'identità giapponese",
+        "Atto III: L'Occidente è pronto? — differenza di ricezione tra JP e IT/EN, e cosa arriva (o non arriva) nella traduzione culturale"
       ],
-      "coverage_IT": "Tema completamente assente in italiano — il concetto di whimsy non è mai stato affrontato come chiave di lettura culturale",
-      "opportunita_IT": "Trash Taste apre il dibattito in EN con un episodio dedicato (+45 delta anime_pop_en): finestra temporale di 2-4 settimane prima che arrivi in italiano",
+      "coverage_IT": "Praticamente assente: qualche menzione superficiale in video gaming, nessuna analisi culturale seria in italiano.",
+      "opportunita_IT": "Finestra aperta totalmente — nessun canale italiano ha trattato Hololive come fenomeno culturale, solo come curiosità tech o gaming.",
       "esempi_EN": [
         {
-          "titolo": "Is Whimsy Dead? | Trash Taste #329",
-          "url": "https://youtube.com/watch?v=_lmjYbGjhI4"
+          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
+          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
         }
       ],
-      "angolo_EN": "Trash Taste discute la morte della whimsy come fenomeno culturale globale con radici giapponesi",
-      "segnale_JP": "Nessun segnale diretto nei dati JP di questa run — il tema è per ora occidentale nella sua formulazione",
-      "esempi_JP": [],
-      "utilita_JP": "Monitorare nelle prossime run se emerge dibattito nativo sul declino dell estetica alternativa"
+      "angolo_EN": "Sora The Troll copre la notizia con tono reattivo — manca la cornice antropologica e culturale più ampia.",
+      "segnale_JP": "Il canale JP segnala una situazione Hololive definita 'insane' — crescita rapida e inaspettata anche per osservatori nativi.",
+      "esempi_JP": [
+        {
+          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
+          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
+        }
+      ],
+      "utilita_JP": "Conferma che il fenomeno non è nicchia nerd ma mainstream JP — legittima la copertura editoriale."
     }
   ],
   "trends_EN": [
     {
-      "title": "One Piece live action: come si rompe la maledizione",
+      "title": "Isekai nel 2025: il genere che non riesce a morire",
       "category": "Cinema/J-Horror",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
       "volume_IT": 100,
-      "delta_EN": "up",
+      "delta_EN": "flat",
       "gap_IT": "Medio",
-      "perche_monitorarlo": "Trash Taste #330 con lo showrunner Steve Maeda analizza il caso One Piece come modello di adattamento riuscito. In IT il tema live action esiste ma è trattato in modo superficiale o polemico. Finestra: 4-6 settimane prima che diventi saturato.",
-      "connessione_canale": "Luca ha già trattato J-Horror e cultura pop JP: un episodio sul perché i live action giapponesi falliscono quasi sempre sarebbe un naturale approfondimento critico."
+      "perche_monitorarlo": "Trash Taste dedica un episodio all'isekai come ritorno dominante. In IT il cluster anime e saturo ma l'angolo critico-narrativo sull'isekai come formula ciclica quasi assente. Finestra: 2-4 settimane prima che arrivi in IT.",
+      "connessione_canale": "Luca ha gia trattato pubblico JP vs occidentale: l'isekai come specchio dei desideri d'evasione e del rapporto JP col lavoro e identita e l'estensione naturale."
     },
     {
-      "title": "Whimsy is dead: la fine dell'estetica stravagante",
-      "category": "Estetica/Visiva",
-      "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 7,
-      "delta_EN": "up",
-      "gap_IT": "Alto",
-      "perche_monitorarlo": "Trash Taste #329 apre una riflessione sul declino dell'estetica 'whimsical' nella cultura pop e nell'animazione. In IT questo dibattito culturale non esiste ancora come formato autonomo. Finestra stimata: 6-10 settimane.",
-      "connessione_canale": "Collegabile agli episodi su Visual Kei e Jirai-kei: l'estetica come identità generazionale che nasce, si radicalizza e muore."
-    },
-    {
-      "title": "Yatai e ramen cart: l'ultimo cibo di strada sopravvissuto",
+      "title": "L'ultimo negozio di Akihabara: quando chiude un'era fisica",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
-      "volume_EN": 40,
-      "volume_IT": 7,
+      "volume_EN": 35,
+      "volume_IT": 5,
       "delta_EN": "flat",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Paolo from Tokyo documenta l'unico yatai ramen rimasto a Shibuya. Il tema del cibo di strada regolamentato fino all'estinzione è già presente in EN ma assente in IT come narrazione culturale, non travel. Finestra: 8-12 settimane.",
-      "connessione_canale": "Affianca il filone 'Tokyo che sparisce' già avviato: lo yatai non è cibo, è uno spazio sociale che la regolamentazione urbana sta eliminando."
+      "perche_monitorarlo": "Tokyo Lens documenta la chiusura del piu vecchio negozio tech di Tokyo. Il filone 'luoghi fisici che spariscono' ha trazione EN (due video Tokyo Lens negli ultimi 14 gg). In IT quasi zero copertura narrativa. Finestra: 3-6 settimane.",
+      "connessione_canale": "Collegamento diretto all'episodio gia prodotto su Tokyo che sparisce: si puo approfondire l'angolo Akihabara come ecosistema culturale in estinzione, non solo travel."
+    },
+    {
+      "title": "One Piece live action: la formula che ha funzionato davvero",
+      "category": "Cinema/J-Horror",
+      "urgency_radar": "Tiepido",
+      "volume_EN": 100,
+      "volume_IT": 100,
+      "delta_EN": "flat",
+      "gap_IT": "Basso",
+      "perche_monitorarlo": "Trash Taste ospita lo showrunner di One Piece live action. Il tema era gia nei radar precedenti ma con un angolo tecnico-produttivo (intervista insider) che in IT non e stato ancora sviluppato. Attenzione: saturazione in avvicinamento.",
+      "connessione_canale": "Sessione precedente aveva segnalato questo trend con coerenza 8. Il nuovo video aggiunge l'angolo 'come si rompe la maledizione dal punto di vista di chi l'ha fatto': diverso e piu profondo."
     }
   ],
   "trends_JP": [
     {
-      "title": "Cosa guardano davvero i giapponesi: anime 2026 / 2026年に日本人が見るアニメ",
+      "title": "Hololive oltre il virtuale: VTuber come fenomeno culturale di massa / ホロライブの文化的影響",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Alta",
-      "segnale": "TAKASHii from Japan pubblica un video sulle preferenze anime del pubblico nativo nel 2026: un dato primario sul gap tra consumo JP e percezione occidentale dell'animazione giapponese.",
-      "utilita_canale": "Fonte diretta per smontare la narrazione occidentale sull'anime JP: quali titoli dominano in patria vs quali esportiamo come 'giapponesi' in Italia.",
+      "segnale": "Sora The Troll segnala che la situazione Hololive in Giappone e 'insane': i VTuber stanno uscendo dal nicho e diventando mainstream culturale con implicazioni sociali ampie.",
+      "utilita_canale": "Luca non ha mai trattato i VTuber come fenomeno sociologico giapponese. Angolo possibile: identita, anonimato, parasociale — piu profondo del semplice 'cosa sono i VTuber'.",
+      "esempi_JP": [
+        {
+          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
+          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
+        }
+      ]
+    },
+    {
+      "title": "Cosa guarda davvero il Giappone nel 2026 / 2026年、日本人が見ているアニメ",
+      "category": "Sociale/Culturale",
+      "volume_JP": 100,
+      "delta_JP": "flat",
+      "rilevanza": "Media",
+      "segnale": "TAKASHii from Japan risponde alla domanda su quali anime guardano i giapponesi nel 2026: segnale di curiosita reciproca su come il pubblico interno consuma rispetto all'immagine esportata.",
+      "utilita_canale": "Connessione diretta all'episodio 'Pubblico giapponese vs occidentale': aggiornamento 2026 con dati freschi dal canale nativo. Utile come fact-checking di percezioni diffuse.",
       "esempi_JP": [
         {
           "titolo": "What Anime Do Japanese Watch in 2026?",
@@ -215,45 +235,26 @@
       ]
     },
     {
-      "title": "Kimono Mom e la famiglia allargata come format / きものママの家族vlog",
+      "title": "Il disegnatore che si arrabbia: creativita e rispetto in Giappone / なおきブチキレ事件",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Media",
-      "segnale": "Kimono Mom produce tre episodi consecutivi su nascita del secondo figlio e dinamiche familiari: un format di intimità domestica JP che accumula alta velocità di view nel periodo analizzato.",
-      "utilita_canale": "Utile come caso studio: la famiglia giapponese raccontata dall'interno, lontana dallo stereotipo. Possibile episodio su maternità e ruoli di genere in JP attraverso il medium vlog.",
+      "rilevanza": "Bassa",
+      "segnale": "Naoki Saito, illustratore noto, perde la pazienza con domande irrispettose del pubblico online. Microepisodio che tocca il tema del rapporto creatore-fan in JP.",
+      "utilita_canale": "Segnale debole per un episodio standalone, ma utile come caso studio nell'ambito di un contenuto piu ampio su creativita, rispetto e cultura del feedback in Giappone.",
       "esempi_JP": [
         {
-          "titolo": "My First Baby Meets Her Baby Sister for the First Time",
-          "url": "https://youtube.com/watch?v=L0mYqxZC_6M"
-        },
-        {
-          "titolo": "Last Day as a Family of Three",
-          "url": "https://youtube.com/watch?v=PAVCgYvKrkw"
-        }
-      ]
-    },
-    {
-      "title": "Il disegno come disciplina: la critica all'illustrazione JP / きまぐれ添削",
-      "category": "Estetica/Visiva",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Media",
-      "segnale": "Naoki Saito pubblica una puntata della serie 'correzione improvvisata' sul disegno anatomico: format di critica tecnica al disegno manga/illustrazione con altissimo engagement nativo.",
-      "utilita_canale": "Angolo originale sull'industria manga vista dall'interno: non il prodotto finito ma la formazione, la critica tecnica, la cultura della correzione come pratica educativa JP.",
-      "esempi_JP": [
-        {
-          "titolo": "デッサン崩れが致命的な欠陥になる場合があります。【きまぐれ添削247】",
-          "url": "https://youtube.com/watch?v=r8NhAxCddYY"
+          "titolo": "【ブラック注意】舐めた質問に、さすがのなおきもブチキレてしまいました。",
+          "url": "https://youtube.com/watch?v=1j13b5oY9Yk"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Live action JP: monitorare se il caso One Piece genera dibattito critico in IT nelle prossime 2 settimane, prima della saturazione",
-    "Whimsy/estetica stravagante: verificare se altri canali EN riprendono il tema di Trash Taste #329 come segnale di tendenza più ampia",
-    "Anime nativo JP 2026: incrociare i titoli citati da TAKASHii con il radar IT per identificare gap di copertura editoriale",
-    "Yatai e spazio pubblico urbano: osservare se Paolo from Tokyo o Tokyo Lens producono altri contenuti sulla regolamentazione del cibo di strada come prosieguo del filone"
+    "Trash Taste: monitorare se l'angolo isekai genera video-risposta in IT nei prossimi 7 giorni — se non arrivano, finestra aperta per Luca",
+    "Tokyo Lens chiusura negozi fisici: verificare se altri canali expat EN riprendono il tema o se resta isolato — soglia: 2+ video indipendenti = trend confermato",
+    "VTuber Hololive mainstream JP: cercare segnali di copertura in IT nei prossimi 14 giorni — il tema e vergine e potrebbe esplodere rapidamente",
+    "Kimono Mom family vlog: due video consecutivi su famiglia e maternita — monitorare se indica un filone 'famiglia giapponese reale' in crescita su JP, potenziale angolo sociologico per Luca"
   ],
   "warnings": []
 }
