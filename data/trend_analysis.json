@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-26 19:02",
-  "summary": "Settimana editorialmente piatta: il cluster anime/manga domina in IT e EN ma resta saturo e statico. Il segnale più interessante arriva da EN con Trash Taste che spinge forte su isekai e live action anime come generi in ritorno — tema già rilevato in parte ma con angolatura nuova sull'isekai come renaissance. Dal lato JP, un segnale debole ma originale emerge attorno a Hololive/VTuber come fenomeno culturale con dimensioni sociali. Nessun segnale forte nuovo: 2 trend sostenibili, il terzo è borderline.",
+  "generated_at": "2026-10-30 09:02",
+  "summary": "Settimana dominata da un segnale forte e inatteso: expat_japan_en esplode in inglese (+65 delta) con contenuti sulla sparizione fisica di Tokyo — negozi storici, luoghi condannati, uomini dimenticati dalla città. In italiano questo filone è completamente assente. Il cluster anime/manga IT resta piatto e saturo. Segnale JP debole ma interessante: illustrazione digitale professionale come tema nativo. Un solo trend forte emerge con chiarezza; un secondo sostenibile ma meno urgente.",
   "overview": {
     "IT": {
       "trend_count": 2,
       "youtube_videos_analyzed": 10,
-      "gap_IT_EN_count": 2,
+      "gap_IT_EN_count": 1,
       "delta_trend_count": 0
     },
     "EN": {
       "trend_count": 3,
       "youtube_videos_analyzed": 10,
-      "delta_trend_count": 0
+      "delta_trend_count": 1
     },
     "JP": {
       "signal_count": 2,
@@ -30,46 +30,46 @@
       },
       {
         "keyword": "videogiochi",
-        "volume": 24,
+        "volume": 20,
         "delta": "flat",
-        "delta_value": 4,
+        "delta_value": -4,
         "source": "youtube_velocity"
       },
       {
         "keyword": "viaggio",
-        "volume": 21,
+        "volume": 10,
         "delta": "down",
-        "delta_value": -10,
+        "delta_value": -11,
         "source": "youtube_velocity"
       },
       {
         "keyword": "vita_giappone",
-        "volume": 5,
+        "volume": 2,
         "delta": "flat",
-        "delta_value": -2,
+        "delta_value": -3,
         "source": "youtube_velocity"
       }
     ],
     "EN": [
       {
-        "keyword": "anime_pop_en",
+        "keyword": "expat_japan_en",
         "volume": 100,
-        "delta": "flat",
-        "delta_value": 0,
+        "delta": "up",
+        "delta_value": 65,
         "source": "youtube_velocity"
       },
       {
-        "keyword": "expat_japan_en",
-        "volume": 35,
-        "delta": "flat",
-        "delta_value": -5,
+        "keyword": "anime_pop_en",
+        "volume": 75,
+        "delta": "down",
+        "delta_value": -25,
         "source": "youtube_velocity"
       },
       {
         "keyword": "fotografia_japan",
-        "volume": 4,
+        "volume": 2,
         "delta": "flat",
-        "delta_value": 3,
+        "delta_value": -2,
         "source": "youtube_velocity"
       }
     ],
@@ -86,175 +86,164 @@
   "demand_source": "youtube_velocity",
   "trends_IT": [
     {
-      "title": "Isekai: il genere che si credeva morto è tornato a dominare",
-      "category": "Cinema/J-Horror",
-      "urgency": "Media",
-      "coerenza": 7,
-      "saturazione_IT": 3,
+      "title": "Tokyo che scompare: i luoghi e le persone dimenticate",
+      "category": "Sociale/Culturale",
+      "urgency": "Alta",
+      "coerenza": 8,
+      "saturazione_IT": 1,
       "saturazione_EN": 7,
-      "saturazione_JP": 6,
+      "saturazione_JP": 3,
       "delta_coerenza": "up",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Alto",
-      "thumbnail_hook": "Il genere che tutti odiavano ha vinto. Di nuovo.",
-      "video_title": "Isekai è tornato: come un genere 'morto' ha conquistato il 2025",
-      "podcast_title": "Isekai Renaissance: perché il genere sopravvive a tutto",
-      "angolatura": "Non un elogio dell'isekai ma un'analisi di perché il pubblico continua a tornare a formule che si credono esaurite — cicli culturali del consumo anime.",
+      "thumbnail_hook": "Il negozio più vecchio di Akihabara ha chiuso. Nessuno in Italia ne ha parlato.",
+      "video_title": "Tokyo sta sparendo: i luoghi e le persone che la città ha abbandonato",
+      "podcast_title": "La Tokyo che non esiste più: sparizione, memoria e abbandono urbano",
+      "angolatura": "Non la nostalgia turistica, ma la sparizione come sintomo sociale: chi costruì Tokyo e chi essa ha lasciato indietro — dagli shop di Akihabara agli uomini invisibili.",
       "timing": "Entro 2 settimane",
       "formato_consigliato": "Entrambi",
-      "motivazione_formato": "Tema discorsivo ideale per podcast, ma le clip anime reggono bene il video.",
+      "motivazione_formato": "Video per impatto visivo dei luoghi; podcast per la dimensione umana e sociologica.",
       "struttura_atti": [
-        "Atto I: La 'morte' dell'isekai — quando critici e fan decretarono la saturazione del genere tra 2019 e 2022",
-        "Atto II: Il ritorno — quali titoli hanno riacceso l'interesse e cosa è cambiato nella formula narrativa",
-        "Atto III: Il ciclo infinito — perché certi generi anime non muoiono mai e cosa dice questo del pubblico che li consuma"
+        "Atto I: Il negozio di tech più antico di Tokyo chiude — un fatto, una fotografia, un simbolo.",
+        "Atto II: Chi sono le persone che costruirono questi luoghi? L'uomo che edificò Tokyo e che la città ha dimenticato.",
+        "Atto III: La sparizione fisica come meccanismo culturale giapponese — cosa rimane quando il luogo scompare?"
       ],
-      "coverage_IT": "Quasi nulla: qualche video di ranking anime generico, nessuna analisi critica del ciclo isekai in italiano.",
-      "opportunita_IT": "Primo canale italiano a trattare l'isekai non come guilty pleasure ma come fenomeno sociologico dei consumi pop — angolatura critica libera.",
+      "coverage_IT": "Tema assente in italiano: nessun canale sentinella IT ha toccato la sparizione urbana di Tokyo come chiave narrativa.",
+      "opportunita_IT": "Finestra aperta e ampia: Tokyo Lens e Abroad in Japan coprono il tema in EN con view-velocity alta, in IT nessuno. Vantaggio first-mover totale.",
       "esempi_EN": [
         {
-          "titolo": "Isekai is SO Back | Trash Taste #331",
-          "url": "https://youtube.com/watch?v=pdq5vmfSeMA"
+          "titolo": "And With This... Tokyo's OLDEST Tiny Tech Shop is Gone Forever...",
+          "url": "https://youtube.com/watch?v=NVStTbUu8kI"
+        },
+        {
+          "titolo": "This Man Built Tokyo (and then it left him behind)",
+          "url": "https://youtube.com/watch?v=aRQiHHign_8"
         }
       ],
-      "angolo_EN": "Trash Taste tratta il tema con tono celebrativo e aneddotico — manca l'analisi critica dei meccanismi culturali.",
-      "segnale_JP": "TAKASHii from Japan documenta cosa guardano davvero i giapponesi nel 2026, con isekai ancora centrale.",
+      "angolo_EN": "Tokyo Lens costruisce una narrativa di perdita e memoria urbana con forte carica emotiva e documentaristica.",
+      "segnale_JP": "Segnale nativo debole ma coerente: i luoghi fisici di Tokyo come Akihabara vivono una ristrutturazione accelerata documentata da creator JP.",
       "esempi_JP": [
         {
-          "titolo": "What Anime Do Japanese Watch in 2026?",
-          "url": "https://youtube.com/watch?v=BbYRPSDdpBs"
+          "titolo": "Inside the craziest bar in Tokyo.@Klook_USA",
+          "url": "https://youtube.com/watch?v=Vzk603N-26o"
         }
       ],
-      "utilita_JP": "Dà la prospettiva nativa: cosa piace in JP vs cosa esporta EN, scarto editoriale utile."
+      "utilita_JP": "Conferma che i luoghi fisici tokyoiti sono sotto pressione anche nella narrazione nativa JP."
     },
     {
-      "title": "VTuber e Hololive: la pop star virtuale che il Giappone ha già normalizzato",
-      "category": "Sociale/Culturale",
+      "title": "Disegnare in Giappone: il mestiere dell'illustratore digitale",
+      "category": "Estetica/Visiva",
       "urgency": "Media",
-      "coerenza": 6,
+      "coerenza": 5,
       "saturazione_IT": 2,
-      "saturazione_EN": 5,
-      "saturazione_JP": 8,
+      "saturazione_EN": 3,
+      "saturazione_JP": 6,
       "delta_coerenza": "flat",
       "delta_sat_IT": "flat",
       "gap_IT_EN": "Medio",
-      "thumbnail_hook": "In Giappone le pop star virtuali sono reali. Noi non lo sappiamo ancora.",
-      "video_title": "Hololive: perché le idol virtuali stanno sostituendo quelle in carne e ossa",
-      "podcast_title": "VTuber: quando un avatar vale più di una persona reale",
-      "angolatura": "Non spiegare cos'è un VTuber ma indagare cosa dice di noi una cultura che preferisce una presenza virtuale incarnata a una reale — il corpo come problema.",
+      "thumbnail_hook": "Ecco come lavora davvero un illustratore professionista giapponese nel 2026.",
+      "video_title": "L'illustratore digitale giapponese: setup, metodo e mercato nel 2026",
+      "podcast_title": "Disegnare per il Giappone: il mestiere dell'illustratore digitale tra manga e commissioni",
+      "angolatura": "Non un tutorial, ma un racconto antropologico: come il Giappone ha professionalizzato l'illustrazione digitale e cosa significa viverla come lavoro quotidiano.",
       "timing": "Prossimo mese",
-      "formato_consigliato": "Podcast",
-      "motivazione_formato": "Tema filosofico e culturale denso — il podcast permette la profondità necessaria senza dipendere da clip.",
+      "formato_consigliato": "Video",
+      "motivazione_formato": "Il setup visivo e il processo creativo richiedono immagini; il podcast perderebbe l'impatto centrale.",
       "struttura_atti": [
-        "Atto I: Cosa è esploso — la situazione Hololive in Giappone nel 2025-2026 descritta con dati concreti di seguito, biglietti esauriti, merchandise sold out",
-        "Atto II: Il corpo nascosto — perché un avatar 2D genera attaccamento emotivo più forte di una idol tradizionale e cosa dice dell'economia dell'identità giapponese",
-        "Atto III: L'Occidente è pronto? — differenza di ricezione tra JP e IT/EN, e cosa arriva (o non arriva) nella traduzione culturale"
+        "Atto I: Il video di Naoki Saito come documento — un professionista che apre il suo spazio di lavoro al pubblico.",
+        "Atto II: Cosa significa essere illustratore digitale in Giappone nel 2026 — mercato, committenti, strumenti.",
+        "Atto III: Il confine tra arte, artigianato e industria nell'illustrazione JP — dove finisce la passione e inizia il lavoro."
       ],
-      "coverage_IT": "Praticamente assente: qualche menzione superficiale in video gaming, nessuna analisi culturale seria in italiano.",
-      "opportunita_IT": "Finestra aperta totalmente — nessun canale italiano ha trattato Hololive come fenomeno culturale, solo come curiosità tech o gaming.",
+      "coverage_IT": "Quasi assente in italiano con angolatura professionale/antropologica; presente solo come tutorial tecnico su canali generalisti.",
+      "opportunita_IT": "Segnale JP nativo documentato; pubblico IT appassionato di manga e illustrazione pronto a un approfondimento culturale, non tecnico.",
       "esempi_EN": [
         {
-          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
-          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
+          "titolo": "I Can't Stop Thinking About Angel's Egg",
+          "url": "https://youtube.com/watch?v=VbtLmAa-DaQ"
         }
       ],
-      "angolo_EN": "Sora The Troll copre la notizia con tono reattivo — manca la cornice antropologica e culturale più ampia.",
-      "segnale_JP": "Il canale JP segnala una situazione Hololive definita 'insane' — crescita rapida e inaspettata anche per osservatori nativi.",
+      "angolo_EN": "The Anime Man tocca l'animazione d'autore come oggetto culturale; l'illustrazione professionale resta scoperta in EN.",
+      "segnale_JP": "Naoki Saito pubblica il suo setup professionale aggiornato al 2026 — contenuto nativo diretto dal settore.",
       "esempi_JP": [
         {
-          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
-          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
+          "titolo": "プロのデジタル作画環境、公開します【2026年版】",
+          "url": "https://youtube.com/watch?v=UemH943t4cc"
         }
       ],
-      "utilita_JP": "Conferma che il fenomeno non è nicchia nerd ma mainstream JP — legittima la copertura editoriale."
+      "utilita_JP": "Fonte primaria diretta: un professionista JP documenta il proprio metodo — materiale grezzo per una narrazione culturale IT."
     }
   ],
   "trends_EN": [
     {
-      "title": "Isekai nel 2025: il genere che non riesce a morire",
-      "category": "Cinema/J-Horror",
+      "title": "Expat Giappone: la vita vera oltre il viaggio",
+      "category": "Sociale/Culturale",
       "urgency_radar": "Caldo",
       "volume_EN": 100,
-      "volume_IT": 100,
-      "delta_EN": "flat",
-      "gap_IT": "Medio",
-      "perche_monitorarlo": "Trash Taste dedica un episodio all'isekai come ritorno dominante. In IT il cluster anime e saturo ma l'angolo critico-narrativo sull'isekai come formula ciclica quasi assente. Finestra: 2-4 settimane prima che arrivi in IT.",
-      "connessione_canale": "Luca ha gia trattato pubblico JP vs occidentale: l'isekai come specchio dei desideri d'evasione e del rapporto JP col lavoro e identita e l'estensione naturale."
+      "volume_IT": 2,
+      "delta_EN": "up",
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "expat_japan_en esplode a +65 in EN con titoli su treni notturni, yatai ramen, Tokyo che cambia. In IT vita_giappone è a 2 e scende. Finestra aperta: 4-8 settimane prima che arrivi rumore italiano.",
+      "connessione_canale": "Luca ha già trattato Konbini e mestieri invisibili: l'angolazione expat quotidiana è adiacente ma mai esplorata in chiave narrativa profonda."
     },
     {
-      "title": "L'ultimo negozio di Akihabara: quando chiude un'era fisica",
+      "title": "Tokyo che si cancella: i luoghi condannati a sparire",
       "category": "Sociale/Culturale",
       "urgency_radar": "Tiepido",
-      "volume_EN": 35,
-      "volume_IT": 5,
-      "delta_EN": "flat",
+      "volume_EN": 100,
+      "volume_IT": 2,
+      "delta_EN": "up",
       "gap_IT": "Alto",
-      "perche_monitorarlo": "Tokyo Lens documenta la chiusura del piu vecchio negozio tech di Tokyo. Il filone 'luoghi fisici che spariscono' ha trazione EN (due video Tokyo Lens negli ultimi 14 gg). In IT quasi zero copertura narrativa. Finestra: 3-6 settimane.",
-      "connessione_canale": "Collegamento diretto all'episodio gia prodotto su Tokyo che sparisce: si puo approfondire l'angolo Akihabara come ecosistema culturale in estinzione, non solo travel."
+      "perche_monitorarlo": "Tokyo Lens pubblica due video forti su negozi storici chiusi e uomini dimenticati dalla città moderna. Tema lutto urbano con forte trazione EN. In IT quasi assente nonostante il tema sia universale.",
+      "connessione_canale": "Tema adiacente a 'Tokyo che sparisce' già nel radar 60gg: se c'è stata evoluzione narrativa in EN, Luca può fare la versione italiana più densa e riflessiva."
     },
     {
-      "title": "One Piece live action: la formula che ha funzionato davvero",
+      "title": "Angel's Egg e l'anime che non si spiega",
       "category": "Cinema/J-Horror",
       "urgency_radar": "Tiepido",
-      "volume_EN": 100,
-      "volume_IT": 100,
+      "volume_EN": 75,
+      "volume_IT": 0,
       "delta_EN": "flat",
-      "gap_IT": "Basso",
-      "perche_monitorarlo": "Trash Taste ospita lo showrunner di One Piece live action. Il tema era gia nei radar precedenti ma con un angolo tecnico-produttivo (intervista insider) che in IT non e stato ancora sviluppato. Attenzione: saturazione in avvicinamento.",
-      "connessione_canale": "Sessione precedente aveva segnalato questo trend con coerenza 8. Il nuovo video aggiunge l'angolo 'come si rompe la maledizione dal punto di vista di chi l'ha fatto': diverso e piu profondo."
+      "gap_IT": "Alto",
+      "perche_monitorarlo": "The Anime Man dedica un video ad Angel's Egg in un momento in cui anime_pop_en scende: segno che il pubblico cerca profondità, non hype. In IT il film è quasi sconosciuto. Finestra: 6-10 settimane.",
+      "connessione_canale": "Perfetto per Luca: anime ermetico, anni 80, Oshii prima di Ghost in the Shell. Incrocia nostalgia critica dell'animazione e J-Horror visivo già trattati."
     }
   ],
   "trends_JP": [
     {
-      "title": "Hololive oltre il virtuale: VTuber come fenomeno culturale di massa / ホロライブの文化的影響",
-      "category": "Sociale/Culturale",
+      "title": "Illustrazione digitale professionale in Giappone / プロのデジタル作画",
+      "category": "Estetica/Visiva",
       "volume_JP": 100,
       "delta_JP": "flat",
-      "rilevanza": "Alta",
-      "segnale": "Sora The Troll segnala che la situazione Hololive in Giappone e 'insane': i VTuber stanno uscendo dal nicho e diventando mainstream culturale con implicazioni sociali ampie.",
-      "utilita_canale": "Luca non ha mai trattato i VTuber come fenomeno sociologico giapponese. Angolo possibile: identita, anonimato, parasociale — piu profondo del semplice 'cosa sono i VTuber'.",
+      "rilevanza": "Media",
+      "segnale": "Naoki Saito pubblica il suo setup professionale 2026: workflow, tablet, software. Contenuto tecnico ma con forte componente culturale sul mestiere dell'illustratore JP.",
+      "utilita_canale": "Angolatura possibile: il disegnatore professionista in Giappone come figura culturale, tra industria manga e mercato digitale globale. Non tutorial, ma racconto.",
       "esempi_JP": [
         {
-          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
-          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
+          "titolo": "プロのデジタル作画環境、公開します【2026年版】",
+          "url": "https://youtube.com/watch?v=UemH943t4cc"
         }
       ]
     },
     {
-      "title": "Cosa guarda davvero il Giappone nel 2026 / 2026年、日本人が見ているアニメ",
+      "title": "Hololive come fatto sociale: oltre il VTuber / ホロライブの社会現象",
       "category": "Sociale/Culturale",
       "volume_JP": 100,
       "delta_JP": "flat",
       "rilevanza": "Media",
-      "segnale": "TAKASHii from Japan risponde alla domanda su quali anime guardano i giapponesi nel 2026: segnale di curiosita reciproca su come il pubblico interno consuma rispetto all'immagine esportata.",
-      "utilita_canale": "Connessione diretta all'episodio 'Pubblico giapponese vs occidentale': aggiornamento 2026 con dati freschi dal canale nativo. Utile come fact-checking di percezioni diffuse.",
+      "segnale": "Sora The Troll descrive la situazione Hololive in Giappone come 'insane': le VTuber hanno raggiunto una penetrazione culturale che va oltre il fandom e tocca media mainstream.",
+      "utilita_canale": "VTuber era già nel radar 60gg ma il segnale JP ora mostra una dimensione sociale nuova: non fandom ma normalizzazione di massa. Aggiornamento possibile con angolo sociologico.",
       "esempi_JP": [
         {
-          "titolo": "What Anime Do Japanese Watch in 2026?",
-          "url": "https://youtube.com/watch?v=BbYRPSDdpBs"
-        }
-      ]
-    },
-    {
-      "title": "Il disegnatore che si arrabbia: creativita e rispetto in Giappone / なおきブチキレ事件",
-      "category": "Sociale/Culturale",
-      "volume_JP": 100,
-      "delta_JP": "flat",
-      "rilevanza": "Bassa",
-      "segnale": "Naoki Saito, illustratore noto, perde la pazienza con domande irrispettose del pubblico online. Microepisodio che tocca il tema del rapporto creatore-fan in JP.",
-      "utilita_canale": "Segnale debole per un episodio standalone, ma utile come caso studio nell'ambito di un contenuto piu ampio su creativita, rispetto e cultura del feedback in Giappone.",
-      "esempi_JP": [
-        {
-          "titolo": "【ブラック注意】舐めた質問に、さすがのなおきもブチキレてしまいました。",
-          "url": "https://youtube.com/watch?v=1j13b5oY9Yk"
+          "titolo": "The Hololive Member Situation In Japan Is ACTUALLY Insane Now",
+          "url": "https://youtube.com/watch?v=Tq32nnYdwIc"
         }
       ]
     }
   ],
   "monitor_next_week": [
-    "Trash Taste: monitorare se l'angolo isekai genera video-risposta in IT nei prossimi 7 giorni — se non arrivano, finestra aperta per Luca",
-    "Tokyo Lens chiusura negozi fisici: verificare se altri canali expat EN riprendono il tema o se resta isolato — soglia: 2+ video indipendenti = trend confermato",
-    "VTuber Hololive mainstream JP: cercare segnali di copertura in IT nei prossimi 14 giorni — il tema e vergine e potrebbe esplodere rapidamente",
-    "Kimono Mom family vlog: due video consecutivi su famiglia e maternita — monitorare se indica un filone 'famiglia giapponese reale' in crescita su JP, potenziale angolo sociologico per Luca"
+    "expat_japan_en: verificare se il delta +65 tiene o era spike isolato — decide se aprire produzione",
+    "Angel's Egg / anime ermetico anni 80: monitorare view-velocity su The Anime Man nei prossimi 7gg",
+    "Hololive JP mainstream: cercare segnali su canali news o talk JP che ne parlino fuori dal fandom",
+    "anime_pop_en a -25: capire se il calo premia i contenuti di qualita o affossa tutto il cluster"
   ],
   "warnings": []
 }
