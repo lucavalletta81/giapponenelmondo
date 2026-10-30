@@ -1,19 +1,19 @@
 {
  "letto": {
-  "voli": "2026-10-12",
-  "alloggi": "2026-10-12"
+  "voli": "2026-10-30",
+  "alloggi": "2026-10-30"
  },
- "generato": "2026-10-12T06:27:18+02:00",
- "cambio": "2026-10-09",
- "pubblicato": "202610121727",
+ "generato": "2026-10-30T06:17:52+01:00",
+ "cambio": "2026-10-29",
+ "pubblicato": "202610301820",
  "giro": {
-  "inizio": "2026-10-12T04:07:02+02:00",
-  "copia_db": "prezzi-20261012-0407.db",
-  "voli": 133,
-  "alloggi": 317,
+  "inizio": "2026-10-30T04:07:00+01:00",
+  "copia_db": "prezzi-20261030-0407.db",
+  "voli": 158,
+  "alloggi": 336,
   "treni_cambiati": 1,
-  "quarantena": 106,
+  "quarantena": 52,
   "esito": "ok",
-  "fine": "2026-10-12T06:27:24+02:00"
+  "fine": "2026-10-30T06:20:34+01:00"
  }
 }
