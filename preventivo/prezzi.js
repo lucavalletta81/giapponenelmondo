@@ -1,10 +1,10 @@
 /* GENERATO da raccolta/esporta.py — non modificare a mano.
    Prezzi VERI da Google Flights e Google Hotels. */
 window.PREZZI = {
- "generato": "2026-11-01T00:09:48+01:00",
+ "generato": "2026-11-02T00:07:15+01:00",
  "letto": {
-  "voli": "2026-10-31",
-  "alloggi": "2026-10-31"
+  "voli": "2026-11-01",
+  "alloggi": "2026-11-01"
  },
  "fresche": {
   "voli": {
@@ -12,7 +12,7 @@ window.PREZZI = {
    "totale": 207
   },
   "alloggi": {
-   "fresche": 342,
+   "fresche": 343,
    "totale": 364
   }
  },
@@ -36,11 +36,11 @@ window.PREZZI = {
   "alloggi": 5
  },
  "alloggi_weekend": {
-  "venerdi": 1.097,
-  "sabato": 1.26,
-  "coppie": 102,
+  "venerdi": 1.104,
+  "sabato": 1.372,
+  "coppie": 101,
   "anticipo_max": 120,
-  "letto": "2026-10-31",
+  "letto": "2026-11-01",
   "nota": "mediana del rapporto fra la stessa camera di venerdì/sabato e la stessa camera infrasettimanale, sulle celle lette a meno di 120 giorni dalla data"
  },
  "zone": [
@@ -104,7 +104,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1175,
@@ -112,7 +112,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 580,
      "dove": "and.: Helsinki 2h50 · rit.: Helsinki 9h40",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 5000,
@@ -120,7 +120,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -128,7 +128,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 975,
@@ -136,7 +136,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1175,
@@ -144,7 +144,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 580,
      "dove": "and.: Helsinki 2h50 · rit.: Helsinki 9h40",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1450,
@@ -165,12 +165,12 @@ window.PREZZI = {
    },
    "apr1": {
     "economico": {
-     "eur": 1000,
-     "esatto": 993,
+     "eur": 950,
+     "esatto": 952,
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Etihad Airways",
      "min_and": 1845,
@@ -178,7 +178,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 860,
      "dove": "and.: Abu Dhabi 14h20 · rit.: Abu Dhabi 1h55",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 4200,
@@ -186,7 +186,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -194,23 +194,23 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1075,
-     "esatto": 1080,
+     "eur": 950,
+     "esatto": 952,
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 990,
-     "min_rit": 1130,
+     "compagnia": "Etihad Airways",
+     "min_and": 1845,
+     "min_rit": 1165,
      "scali": 1,
-     "scalo_peggio": 160,
-     "dove": "and.: Francoforte sul Meno 1h40 · rit.: Francoforte sul Meno 2h40",
-     "letto": "2026-10-31"
+     "scalo_peggio": 860,
+     "dove": "and.: Abu Dhabi 14h20 · rit.: Abu Dhabi 1h55",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2425,
@@ -218,7 +218,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -226,17 +226,17 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "cap": {
     "economico": {
-     "eur": 1400,
-     "esatto": 1409,
+     "eur": 1425,
+     "esatto": 1418,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "T'way Air",
      "min_and": 1155,
@@ -244,7 +244,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 815,
      "dove": "and.: Seul 4h55 · rit.: Abu Dhabi 13h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 5700,
@@ -252,7 +252,7 @@ window.PREZZI = {
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 735,
@@ -260,15 +260,15 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1400,
-     "esatto": 1409,
+     "eur": 1425,
+     "esatto": 1418,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "T'way Air",
      "min_and": 1155,
@@ -276,7 +276,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 815,
      "dove": "and.: Seul 4h55 · rit.: Abu Dhabi 13h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2425,
@@ -284,7 +284,7 @@ window.PREZZI = {
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 735,
@@ -292,7 +292,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "dic": {
@@ -364,11 +364,11 @@ window.PREZZI = {
    "feb": {
     "economico": {
      "eur": 750,
-     "esatto": 752,
+     "esatto": 760,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Etihad Airways",
      "min_and": 1045,
@@ -376,7 +376,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 105,
      "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h30",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 4600,
@@ -396,11 +396,11 @@ window.PREZZI = {
     },
     "normale": {
      "eur": 750,
-     "esatto": 752,
+     "esatto": 760,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Etihad Airways",
      "min_and": 1045,
@@ -408,23 +408,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 105,
      "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h30",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1575,
-     "esatto": 1570,
+     "eur": 2000,
+     "esatto": 1992,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "PREMIUM_ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 1620,
-     "min_rit": 1220,
-     "scali": 1,
-     "scalo_peggio": 655,
-     "dove": "and.: Londra 10h55 (notte) · rit.: Londra 2h45",
-     "letto": "2026-10-31"
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-11-01"
     }
    },
    "gen": {
@@ -434,7 +434,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 925,
@@ -442,23 +442,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 100,
      "dove": "and.: Seul 1h30 · rit.: Seul 1h40",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 2500,
-     "esatto": 2493,
+     "eur": 3850,
+     "esatto": 3850,
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 74,
+     "anticipo": 72,
      "classe": "BUSINESS",
-     "compagnia": "Finnair",
-     "min_and": 1185,
-     "min_rit": 1200,
-     "scali": 1,
-     "scalo_peggio": 205,
-     "dove": "and.: Helsinki 2h20 · rit.: Helsinki 3h25",
-     "letto": "2026-10-30"
+     "compagnia": "Alitalia",
+     "min_and": 735,
+     "min_rit": 905,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 675,
@@ -466,7 +466,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 925,
@@ -474,15 +474,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 100,
      "dove": "and.: Seul 1h30 · rit.: Seul 1h40",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1425,
-     "esatto": 1432,
+     "eur": 1300,
+     "esatto": 1307,
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 735,
@@ -490,25 +490,25 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gw": {
     "economico": {
-     "eur": 925,
-     "esatto": 917,
+     "eur": 950,
+     "esatto": 948,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
-     "compagnia": "Etihad Airways",
-     "min_and": 1090,
-     "min_rit": 1165,
+     "compagnia": "Qatar Airways",
+     "min_and": 1215,
+     "min_rit": 1260,
      "scali": 1,
-     "scalo_peggio": 115,
-     "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h55",
-     "letto": "2026-10-31"
+     "scalo_peggio": 280,
+     "dove": "and.: Doha 4h40 · rit.: Doha 4h05 (notte)",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 4200,
@@ -516,7 +516,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -524,31 +524,31 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 925,
-     "esatto": 917,
+     "eur": 950,
+     "esatto": 948,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
-     "compagnia": "Etihad Airways",
-     "min_and": 1090,
-     "min_rit": 1165,
+     "compagnia": "Qatar Airways",
+     "min_and": 1215,
+     "min_rit": 1260,
      "scali": 1,
-     "scalo_peggio": 115,
-     "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h55",
-     "letto": "2026-10-31"
+     "scalo_peggio": 280,
+     "dove": "and.: Doha 4h40 · rit.: Doha 4h05 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1525,
-     "esatto": 1532,
+     "eur": 1575,
+     "esatto": 1577,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -556,7 +556,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lug": {
@@ -566,7 +566,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1745,
@@ -574,7 +574,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 910,
      "dove": "and.: Istanbul 15h10 (notte) · rit.: Istanbul 3h05",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3525,
@@ -582,7 +582,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -590,7 +590,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 950,
@@ -598,7 +598,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 970,
@@ -606,7 +606,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 185,
      "dove": "and.: Istanbul 2h20 (notte) · rit.: Istanbul 3h05",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1875,
@@ -614,7 +614,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -622,49 +622,17 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mag": {
     "economico": {
-     "eur": 875,
-     "esatto": 881,
+     "eur": 775,
+     "esatto": 783,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
-     "classe": "ECONOMY",
-     "compagnia": "Qatar Airways",
-     "min_and": 1485,
-     "min_rit": 1190,
-     "scali": 1,
-     "scalo_peggio": 550,
-     "dove": "and.: Doha 9h10 (notte) · rit.: Doha 2h35",
-     "letto": "2026-10-31"
-    },
-    "lusso": {
-     "eur": 4200,
-     "esatto": 4198,
-     "out": "2027-05-19",
-     "ret": "2027-06-02",
-     "notti": 14,
-     "anticipo": 199,
-     "classe": "BUSINESS",
-     "compagnia": "Alitalia",
-     "min_and": 750,
-     "min_rit": 885,
-     "scali": 0,
-     "scalo_peggio": 0,
-     "dove": null,
-     "letto": "2026-10-31"
-    },
-    "normale": {
-     "eur": 875,
-     "esatto": 881,
-     "out": "2027-05-19",
-     "ret": "2027-06-02",
-     "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
      "compagnia": "Qatar Airways",
      "min_and": 1110,
@@ -672,7 +640,39 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 175,
      "dove": "and.: Doha 2h55 · rit.: Doha 2h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
+    },
+    "lusso": {
+     "eur": 4200,
+     "esatto": 4198,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 198,
+     "classe": "BUSINESS",
+     "compagnia": "Alitalia",
+     "min_and": 750,
+     "min_rit": 885,
+     "scali": 0,
+     "scalo_peggio": 0,
+     "dove": null,
+     "letto": "2026-11-01"
+    },
+    "normale": {
+     "eur": 775,
+     "esatto": 783,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 198,
+     "classe": "ECONOMY",
+     "compagnia": "Qatar Airways",
+     "min_and": 1110,
+     "min_rit": 1190,
+     "scali": 1,
+     "scalo_peggio": 175,
+     "dove": "and.: Doha 2h55 · rit.: Doha 2h35",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2000,
@@ -680,7 +680,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -688,7 +688,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mar": {
@@ -698,15 +698,15 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Qatar Airways",
      "min_and": 1140,
-     "min_rit": 1715,
+     "min_rit": 1310,
      "scali": 1,
-     "scalo_peggio": 605,
-     "dove": "and.: Doha 4h10 · rit.: Doha 10h05 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 250,
+     "dove": "and.: Doha 4h10 · rit.: Doha 3h20 (notte)",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 5700,
@@ -714,7 +714,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 130,
+     "anticipo": 128,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 735,
@@ -722,7 +722,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 925,
@@ -730,31 +730,31 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Qatar Airways",
      "min_and": 1140,
-     "min_rit": 1715,
+     "min_rit": 1310,
      "scali": 1,
-     "scalo_peggio": 605,
-     "dove": "and.: Doha 4h10 · rit.: Doha 10h05 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 250,
+     "dove": "and.: Doha 4h10 · rit.: Doha 3h20 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1650,
-     "esatto": 1642,
+     "eur": 1675,
+     "esatto": 1665,
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1185,
-     "min_rit": 1220,
+     "min_rit": 2015,
      "scali": 1,
-     "scalo_peggio": 165,
-     "dove": "and.: Helsinki 2h20 · rit.: Londra 2h45",
-     "letto": "2026-10-31"
+     "scalo_peggio": 1005,
+     "dove": "and.: Helsinki 2h20 · rit.: Helsinki 16h45 (notte)",
+     "letto": "2026-11-01"
     }
    },
    "nov": {
@@ -830,7 +830,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1130,
@@ -838,7 +838,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1110,
      "dove": "and.: Istanbul 5h05 · rit.: Istanbul 18h30 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 5000,
@@ -857,20 +857,20 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "normale": {
-     "eur": 1200,
-     "esatto": 1196,
+     "eur": 1125,
+     "esatto": 1136,
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
-     "min_and": 935,
+     "min_and": 1130,
      "min_rit": 2075,
      "scali": 1,
      "scalo_peggio": 1110,
-     "dove": "and.: Istanbul 1h45 · rit.: Istanbul 18h30 (notte)",
-     "letto": "2026-10-31"
+     "dove": "and.: Istanbul 5h05 · rit.: Istanbul 18h30 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2425,
@@ -878,7 +878,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 750,
@@ -886,7 +886,7 @@ window.PREZZI = {
      "scali": 0,
      "scalo_peggio": 0,
      "dove": null,
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ott": {
@@ -964,7 +964,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -972,7 +972,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2500,
@@ -980,7 +980,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "BUSINESS",
      "compagnia": "LOT Polish Airlines",
      "min_and": 1850,
@@ -988,7 +988,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 970,
      "dove": "and.: Varsavia 16h10 (notte) · rit.: Varsavia 13h20 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 950,
@@ -996,7 +996,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -1004,7 +1004,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1425,
@@ -1012,7 +1012,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 1850,
@@ -1020,25 +1020,25 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 970,
      "dove": "and.: Varsavia 16h10 (notte) · rit.: Varsavia 13h20 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "apr1": {
     "economico": {
-     "eur": 925,
-     "esatto": 932,
+     "eur": 1025,
+     "esatto": 1035,
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Cathay Pacific",
-     "min_and": 1220,
+     "min_and": 1075,
      "min_rit": 1305,
      "scali": 1,
-     "scalo_peggio": 265,
-     "dove": "and.: Hong Kong 4h25 · rit.: Hong Kong 3h40 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 220,
+     "dove": "and.: Hong Kong 2h00 · rit.: Hong Kong 3h40 (notte)",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3450,
@@ -1046,7 +1046,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "BUSINESS",
      "compagnia": "Finnair",
      "min_and": 1195,
@@ -1054,23 +1054,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 210,
      "dove": "and.: Helsinki 3h30 · rit.: Helsinki 2h50",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 925,
-     "esatto": 932,
+     "eur": 1025,
+     "esatto": 1035,
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Cathay Pacific",
-     "min_and": 1220,
+     "min_and": 1075,
      "min_rit": 1305,
      "scali": 1,
-     "scalo_peggio": 265,
-     "dove": "and.: Hong Kong 4h25 · rit.: Hong Kong 3h40 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 220,
+     "dove": "and.: Hong Kong 2h00 · rit.: Hong Kong 3h40 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1725,
@@ -1078,7 +1078,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Swiss International Air Lines",
      "min_and": 1220,
@@ -1086,17 +1086,17 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 370,
      "dove": "and.: Zurigo 6h10 · rit.: Francoforte sul Meno 3h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "cap": {
     "economico": {
-     "eur": 1425,
-     "esatto": 1415,
+     "eur": 1475,
+     "esatto": 1475,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 1515,
@@ -1104,31 +1104,31 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 610,
      "dove": "and.: Varsavia 10h10 · rit.: Varsavia 1h45",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 2725,
-     "esatto": 2731,
+     "eur": 2750,
+     "esatto": 2743,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "BUSINESS",
      "compagnia": "Lufthansa Cargo",
-     "min_and": 925,
-     "min_rit": 1825,
+     "min_and": 1780,
+     "min_rit": 1805,
      "scali": 1,
-     "scalo_peggio": 890,
-     "dove": "and.: Francoforte sul Meno 1h20 · rit.: Monaco di Baviera 14h50 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 960,
+     "dove": "and.: Monaco di Baviera 16h00 (notte) · rit.: Francoforte sul Meno 14h25 (notte)",
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1425,
-     "esatto": 1415,
+     "eur": 1475,
+     "esatto": 1475,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 950,
@@ -1136,7 +1136,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 105,
      "dove": "and.: Varsavia 0h55 · rit.: Varsavia 1h45",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2050,
@@ -1144,7 +1144,7 @@ window.PREZZI = {
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "British Airways",
      "min_and": 1265,
@@ -1152,7 +1152,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 305,
      "dove": "and.: Londra 5h05 · rit.: Londra 1h50",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "dic": {
@@ -1228,7 +1228,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1730,
@@ -1236,7 +1236,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 870,
      "dove": "and.: Istanbul 14h30 (notte) · rit.: Istanbul 2h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2475,
@@ -1244,7 +1244,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "BUSINESS",
      "compagnia": "Finnair",
      "min_and": 1170,
@@ -1252,7 +1252,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 240,
      "dove": "and.: Helsinki 2h30 · rit.: Helsinki 4h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 800,
@@ -1260,7 +1260,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1015,
@@ -1268,7 +1268,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 160,
      "dove": "and.: Istanbul 2h40 (notte) · rit.: Istanbul 2h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1425,
@@ -1276,7 +1276,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1155,
@@ -1284,7 +1284,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 180,
      "dove": "and.: Helsinki 2h45 · rit.: Helsinki 3h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gen": {
@@ -1294,7 +1294,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 1125,
@@ -1302,7 +1302,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 445,
      "dove": "and.: Seul 4h55 · rit.: Seul 7h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2400,
@@ -1310,7 +1310,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "BUSINESS",
      "compagnia": "Finnair",
      "min_and": 1170,
@@ -1318,7 +1318,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 240,
      "dove": "and.: Helsinki 3h00 · rit.: Helsinki 4h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 675,
@@ -1326,7 +1326,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 1125,
@@ -1334,7 +1334,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 445,
      "dove": "and.: Seul 4h55 · rit.: Seul 7h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1450,
@@ -1342,7 +1342,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1170,
@@ -1350,7 +1350,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 180,
      "dove": "and.: Helsinki 3h00 · rit.: Helsinki 1h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gw": {
@@ -1360,7 +1360,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -1368,15 +1368,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 3000,
-     "esatto": 3009,
+     "eur": 3125,
+     "esatto": 3120,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "BUSINESS",
      "compagnia": "Etihad Airways",
      "min_and": 1085,
@@ -1384,7 +1384,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 115,
      "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h55",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 875,
@@ -1392,7 +1392,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -1400,7 +1400,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1625,
@@ -1408,7 +1408,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1195,
@@ -1416,7 +1416,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 300,
      "dove": "and.: Helsinki 3h30 · rit.: Londra 5h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lug": {
@@ -1426,7 +1426,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1250,
@@ -1434,7 +1434,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 400,
      "dove": "and.: Istanbul 6h40 (notte) · rit.: Istanbul 3h05",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3000,
@@ -1442,7 +1442,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "BUSINESS",
      "compagnia": "Turkish Airlines",
      "min_and": 1150,
@@ -1450,15 +1450,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 305,
      "dove": "and.: Istanbul 5h05 · rit.: Istanbul 3h05",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 975,
-     "esatto": 985,
+     "eur": 1000,
+     "esatto": 993,
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Etihad Airways",
      "min_and": 1085,
@@ -1466,7 +1466,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 115,
      "dove": "and.: Abu Dhabi 1h45 · rit.: Abu Dhabi 1h55",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1625,
@@ -1474,7 +1474,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1195,
@@ -1482,17 +1482,17 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 300,
      "dove": "and.: Helsinki 3h30 · rit.: Londra 5h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mag": {
     "economico": {
      "eur": 875,
-     "esatto": 884,
+     "esatto": 875,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1150,
@@ -1500,7 +1500,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 615,
      "dove": "and.: Helsinki 2h45 · rit.: Helsinki 10h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2900,
@@ -1508,7 +1508,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "BUSINESS",
      "compagnia": "LOT Polish Airlines",
      "min_and": 960,
@@ -1516,15 +1516,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 95,
      "dove": "and.: Varsavia 1h20 · rit.: Varsavia 1h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 875,
-     "esatto": 884,
+     "esatto": 875,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1150,
@@ -1532,7 +1532,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 615,
      "dove": "and.: Helsinki 2h45 · rit.: Helsinki 10h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1525,
@@ -1540,7 +1540,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1150,
@@ -1548,7 +1548,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 165,
      "dove": "and.: Helsinki 2h45 · rit.: Helsinki 1h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mar": {
@@ -1558,7 +1558,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 1125,
@@ -1566,7 +1566,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 445,
      "dove": "and.: Seul 4h55 · rit.: Seul 7h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2875,
@@ -1574,7 +1574,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "BUSINESS",
      "compagnia": "Finnair",
      "min_and": 1170,
@@ -1582,7 +1582,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 615,
      "dove": "and.: Helsinki 2h30 · rit.: Londra 10h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 775,
@@ -1590,7 +1590,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Korean Air",
      "min_and": 1125,
@@ -1598,7 +1598,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 445,
      "dove": "and.: Seul 4h55 · rit.: Seul 7h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1625,
@@ -1606,7 +1606,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1170,
@@ -1614,7 +1614,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 150,
      "dove": "and.: Helsinki 2h30 · rit.: Helsinki 1h25",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "nov": {
@@ -1690,7 +1690,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -1698,23 +1698,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 3050,
-     "esatto": 3048,
+     "eur": 2875,
+     "esatto": 2873,
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "BUSINESS",
      "compagnia": "Finnair",
      "min_and": 1195,
-     "min_rit": 1125,
+     "min_rit": 1300,
      "scali": 1,
-     "scalo_peggio": 210,
-     "dove": "and.: Helsinki 3h30 · rit.: Helsinki 2h50",
-     "letto": "2026-10-31"
+     "scalo_peggio": 295,
+     "dove": "and.: Helsinki 3h30 · rit.: Londra 4h55",
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1000,
@@ -1722,7 +1722,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "EVA Air",
      "min_and": 1090,
@@ -1730,7 +1730,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 430,
      "dove": "and.: Taipei 1h50 · rit.: Taipei 7h10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1700,
@@ -1738,7 +1738,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1150,
@@ -1746,7 +1746,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 165,
      "dove": "and.: Helsinki 2h45 · rit.: Helsinki 1h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ott": {
@@ -1824,31 +1824,31 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1215,
-     "min_rit": 1550,
+     "min_rit": 1695,
      "scali": 1,
-     "scalo_peggio": 525,
-     "dove": "and.: Helsinki 3h30 · rit.: Londra 8h45",
-     "letto": "2026-10-31"
+     "scalo_peggio": 715,
+     "dove": "and.: Helsinki 3h30 · rit.: Helsinki 11h55",
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 3700,
-     "esatto": 3691,
+     "eur": 2800,
+     "esatto": 2788,
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "BUSINESS",
-     "compagnia": "Finnair",
-     "min_and": 1170,
-     "min_rit": 1620,
+     "compagnia": "Lufthansa Cargo",
+     "min_and": 1145,
+     "min_rit": 1200,
      "scali": 1,
-     "scalo_peggio": 640,
-     "dove": "and.: Helsinki 2h45 · rit.: Helsinki 10h40",
-     "letto": "2026-10-31"
+     "scalo_peggio": 240,
+     "dove": "and.: Francoforte sul Meno 4h00 · rit.: Francoforte sul Meno 3h15",
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1200,
@@ -1856,7 +1856,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1215,
@@ -1864,7 +1864,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 525,
      "dove": "and.: Helsinki 3h30 · rit.: Londra 8h45",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1725,
@@ -1872,15 +1872,15 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1240,
-     "min_rit": 1035,
+     "min_rit": 1200,
      "scali": 1,
      "scalo_peggio": 355,
-     "dove": "and.: Francoforte sul Meno 5h55 · rit.: Vienna 1h00",
-     "letto": "2026-10-31"
+     "dove": "and.: Francoforte sul Meno 5h55 · rit.: Francoforte sul Meno 3h15",
+     "letto": "2026-11-01"
     }
    },
    "apr1": {
@@ -1890,7 +1890,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1225,
@@ -1898,7 +1898,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 335,
      "dove": "and.: Francoforte sul Meno 5h35 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3300,
@@ -1906,7 +1906,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "BUSINESS",
      "compagnia": "British Airways",
      "min_and": 1215,
@@ -1914,7 +1914,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 635,
      "dove": "and.: Londra 3h20 · rit.: Londra 10h35 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1100,
@@ -1922,7 +1922,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1225,
@@ -1930,7 +1930,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 335,
      "dove": "and.: Francoforte sul Meno 5h35 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1675,
@@ -1938,7 +1938,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "British Airways",
      "min_and": 2420,
@@ -1946,17 +1946,17 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1420,
      "dove": "and.: Londra 23h40 (notte) · rit.: Londra 14h40 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "cap": {
     "economico": {
-     "eur": 1550,
-     "esatto": 1553,
+     "eur": 1625,
+     "esatto": 1628,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1240,
@@ -1964,7 +1964,7 @@ window.PREZZI = {
      "scali": 2,
      "scalo_peggio": 220,
      "dove": "and.: Roma 3h40; Varsavia 0h50 · rit.: Varsavia 2h30; Roma 2h30",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2750,
@@ -1972,7 +1972,7 @@ window.PREZZI = {
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "BUSINESS",
      "compagnia": "Air VIA",
      "min_and": 1700,
@@ -1980,15 +1980,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 995,
      "dove": "and.: Monaco di Baviera 14h10 (notte) · rit.: Francoforte sul Meno 16h35 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1725,
-     "esatto": 1733,
+     "eur": 1675,
+     "esatto": 1673,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 970,
@@ -1996,23 +1996,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 160,
      "dove": "and.: Istanbul 2h40 (notte) · rit.: Istanbul 2h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 2050,
-     "esatto": 2056,
+     "eur": 2475,
+     "esatto": 2476,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "PREMIUM_ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 2095,
-     "min_rit": 1125,
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1040,
      "scali": 1,
-     "scalo_peggio": 1110,
-     "dove": "and.: Londra 18h30 (notte) · rit.: Londra 1h30",
-     "letto": "2026-10-31"
+     "scalo_peggio": 460,
+     "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
+     "letto": "2026-11-01"
     }
    },
    "dic": {
@@ -2088,7 +2088,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1250,
@@ -2096,15 +2096,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 460,
      "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 2700,
-     "esatto": 2692,
+     "eur": 2800,
+     "esatto": 2793,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "BUSINESS",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1180,
@@ -2112,7 +2112,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 290,
      "dove": "and.: Francoforte sul Meno 4h25 · rit.: Monaco di Baviera 4h50",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 850,
@@ -2120,7 +2120,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 960,
@@ -2128,41 +2128,41 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 170,
      "dove": "and.: Roma 2h50 · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1750,
-     "esatto": 1755,
+     "eur": 1825,
+     "esatto": 1814,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
-     "min_and": 1945,
+     "min_and": 1815,
      "min_rit": 2230,
      "scali": 1,
      "scalo_peggio": 1250,
-     "dove": "and.: Milano 18h05 (notte) · rit.: Francoforte sul Meno 20h50 (notte)",
-     "letto": "2026-10-31"
+     "dove": "and.: Milano 15h55 (notte) · rit.: Francoforte sul Meno 20h50 (notte)",
+     "letto": "2026-11-01"
     }
    },
    "gen": {
     "economico": {
      "eur": 850,
-     "esatto": 851,
+     "esatto": 839,
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 1180,
-     "min_rit": 1280,
-     "scali": 1,
-     "scalo_peggio": 290,
-     "dove": "and.: Francoforte sul Meno 4h25 · rit.: Monaco di Baviera 4h50",
-     "letto": "2026-10-31"
+     "compagnia": "Vueling",
+     "min_and": 1770,
+     "min_rit": 1655,
+     "scali": 2,
+     "scalo_peggio": 490,
+     "dove": "and.: Barcellona 8h10; Doha 3h40 · rit.: Doha 2h20 (notte); Barcellona 3h30",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2650,
@@ -2170,7 +2170,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "BUSINESS",
      "compagnia": "Alitalia",
      "min_and": 1900,
@@ -2178,7 +2178,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1105,
      "dove": "and.: Roma 18h25 (notte) · rit.: Milano 7h55",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 850,
@@ -2186,7 +2186,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1180,
@@ -2194,7 +2194,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 290,
      "dove": "and.: Francoforte sul Meno 4h25 · rit.: Monaco di Baviera 4h50",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1325,
@@ -2202,7 +2202,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1250,
@@ -2210,223 +2210,223 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 460,
      "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gw": {
     "economico": {
-     "eur": 1025,
-     "esatto": 1034,
+     "eur": 1000,
+     "esatto": 1005,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
-     "min_and": 960,
-     "min_rit": 1075,
+     "min_and": 1145,
+     "min_rit": 1200,
      "scali": 1,
-     "scalo_peggio": 115,
-     "dove": "and.: Monaco di Baviera 1h55 · rit.: Francoforte sul Meno 1h40",
-     "letto": "2026-10-31"
+     "scalo_peggio": 240,
+     "dove": "and.: Francoforte sul Meno 4h00 · rit.: Francoforte sul Meno 3h15",
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 3225,
-     "esatto": 3228,
+     "eur": 3525,
+     "esatto": 3520,
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "BUSINESS",
-     "compagnia": "Swiss International Air Lines",
-     "min_and": 1000,
-     "min_rit": 1100,
-     "scali": 1,
-     "scalo_peggio": 120,
-     "dove": "and.: Zurigo 1h45 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-31"
-    },
-    "normale": {
-     "eur": 1025,
-     "esatto": 1034,
-     "out": "2027-04-28",
-     "ret": "2027-05-12",
-     "notti": 14,
-     "anticipo": 178,
-     "classe": "ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 960,
-     "min_rit": 1015,
-     "scali": 1,
-     "scalo_peggio": 115,
-     "dove": "and.: Monaco di Baviera 1h55 · rit.: Roma 1h15",
-     "letto": "2026-10-31"
-    },
-    "premium": {
-     "eur": 1725,
-     "esatto": 1729,
-     "out": "2027-04-28",
-     "ret": "2027-05-12",
-     "notti": 14,
-     "anticipo": 178,
-     "classe": "PREMIUM_ECONOMY",
-     "compagnia": "Austrian Airlines",
-     "min_and": 960,
-     "min_rit": 1100,
-     "scali": 1,
-     "scalo_peggio": 120,
-     "dove": "and.: Vienna 2h00 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-31"
-    }
-   },
-   "lug": {
-    "economico": {
-     "eur": 1000,
-     "esatto": 1000,
-     "out": "2027-07-07",
-     "ret": "2027-07-21",
-     "notti": 14,
-     "anticipo": 248,
-     "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1225,
      "min_rit": 1080,
      "scali": 1,
      "scalo_peggio": 410,
      "dove": "and.: Istanbul 6h50 (notte) · rit.: Istanbul 2h30",
-     "letto": "2026-10-31"
-    },
-    "lusso": {
-     "eur": 3300,
-     "esatto": 3311,
-     "out": "2027-07-07",
-     "ret": "2027-07-21",
-     "notti": 14,
-     "anticipo": 248,
-     "classe": "BUSINESS",
-     "compagnia": "Alitalia",
-     "min_and": 965,
-     "min_rit": 1015,
-     "scali": 1,
-     "scalo_peggio": 160,
-     "dove": "and.: Roma 2h40 · rit.: Roma 1h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1000,
-     "esatto": 1000,
+     "esatto": 997,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 177,
+     "classe": "ECONOMY",
+     "compagnia": "Austrian Airlines",
+     "min_and": 960,
+     "min_rit": 1720,
+     "scali": 1,
+     "scalo_peggio": 755,
+     "dove": "and.: Vienna 2h00 · rit.: Zurigo 12h35 (notte)",
+     "letto": "2026-11-01"
+    },
+    "premium": {
+     "eur": 1600,
+     "esatto": 1596,
+     "out": "2027-04-28",
+     "ret": "2027-05-12",
+     "notti": 14,
+     "anticipo": 177,
+     "classe": "PREMIUM_ECONOMY",
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1015,
+     "scali": 1,
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h15",
+     "letto": "2026-11-01"
+    }
+   },
+   "lug": {
+    "economico": {
+     "eur": 925,
+     "esatto": 931,
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
-     "min_and": 930,
-     "min_rit": 1080,
+     "min_and": 1215,
+     "min_rit": 1750,
      "scali": 1,
-     "scalo_peggio": 150,
-     "dove": "and.: Istanbul 2h00 · rit.: Istanbul 2h30",
-     "letto": "2026-10-31"
+     "scalo_peggio": 805,
+     "dove": "and.: Istanbul 6h40 (notte) · rit.: Istanbul 13h25 (notte)",
+     "letto": "2026-11-01"
+    },
+    "lusso": {
+     "eur": 3275,
+     "esatto": 3273,
+     "out": "2027-07-07",
+     "ret": "2027-07-21",
+     "notti": 14,
+     "anticipo": 247,
+     "classe": "BUSINESS",
+     "compagnia": "Lufthansa Cargo",
+     "min_and": 1145,
+     "min_rit": 1015,
+     "scali": 1,
+     "scalo_peggio": 240,
+     "dove": "and.: Francoforte sul Meno 4h00 · rit.: Roma 1h15",
+     "letto": "2026-11-01"
+    },
+    "normale": {
+     "eur": 925,
+     "esatto": 931,
+     "out": "2027-07-07",
+     "ret": "2027-07-21",
+     "notti": 14,
+     "anticipo": 247,
+     "classe": "ECONOMY",
+     "compagnia": "Turkish Airlines",
+     "min_and": 920,
+     "min_rit": 1750,
+     "scali": 1,
+     "scalo_peggio": 805,
+     "dove": "and.: Istanbul 1h50 · rit.: Istanbul 13h25 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1725,
-     "esatto": 1736,
+     "esatto": 1729,
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "PREMIUM_ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 1240,
-     "min_rit": 1075,
+     "compagnia": "Austrian Airlines",
+     "min_and": 960,
+     "min_rit": 1100,
      "scali": 1,
-     "scalo_peggio": 355,
-     "dove": "and.: Francoforte sul Meno 5h55 · rit.: Francoforte sul Meno 1h40",
-     "letto": "2026-10-31"
+     "scalo_peggio": 120,
+     "dove": "and.: Vienna 2h00 · rit.: Francoforte sul Meno 2h00",
+     "letto": "2026-11-01"
     }
    },
    "mag": {
     "economico": {
-     "eur": 1025,
-     "esatto": 1037,
+     "eur": 1050,
+     "esatto": 1061,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 200,
+     "anticipo": 198,
      "classe": "ECONOMY",
-     "compagnia": "Austrian Airlines",
-     "min_and": 960,
-     "min_rit": 1100,
+     "compagnia": "Alitalia",
+     "min_and": 1250,
+     "min_rit": 1015,
      "scali": 1,
-     "scalo_peggio": 120,
-     "dove": "and.: Vienna 2h00 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-30"
+     "scalo_peggio": 450,
+     "dove": "and.: Roma 7h30 · rit.: Roma 1h15",
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 3225,
-     "esatto": 3228,
+     "eur": 3525,
+     "esatto": 3520,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "BUSINESS",
-     "compagnia": "Swiss International Air Lines",
-     "min_and": 1000,
-     "min_rit": 1720,
+     "compagnia": "Turkish Airlines",
+     "min_and": 1225,
+     "min_rit": 1080,
      "scali": 1,
-     "scalo_peggio": 755,
-     "dove": "and.: Zurigo 1h45 · rit.: Zurigo 12h35 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 410,
+     "dove": "and.: Istanbul 6h50 (notte) · rit.: Istanbul 2h30",
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1025,
-     "esatto": 1037,
+     "eur": 1000,
+     "esatto": 1007,
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
+     "compagnia": "Lufthansa Cargo",
+     "min_and": 1225,
+     "min_rit": 1100,
+     "scali": 1,
+     "scalo_peggio": 335,
+     "dove": "and.: Francoforte sul Meno 5h35 · rit.: Francoforte sul Meno 2h00",
+     "letto": "2026-11-01"
+    },
+    "premium": {
+     "eur": 2075,
+     "esatto": 2064,
+     "out": "2027-05-19",
+     "ret": "2027-06-02",
+     "notti": 14,
+     "anticipo": 198,
+     "classe": "PREMIUM_ECONOMY",
      "compagnia": "Austrian Airlines",
      "min_and": 960,
      "min_rit": 1100,
      "scali": 1,
      "scalo_peggio": 120,
      "dove": "and.: Vienna 2h00 · rit.: Francoforte sul Meno 2h00",
-     "letto": "2026-10-31"
-    },
-    "premium": {
-     "eur": 1650,
-     "esatto": 1652,
-     "out": "2027-05-19",
-     "ret": "2027-06-02",
-     "notti": 14,
-     "anticipo": 199,
-     "classe": "PREMIUM_ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 1215,
-     "min_rit": 1205,
-     "scali": 1,
-     "scalo_peggio": 200,
-     "dove": "and.: Londra 3h20 · rit.: Londra 2h30",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mar": {
     "economico": {
-     "eur": 1175,
-     "esatto": 1176,
+     "eur": 1150,
+     "esatto": 1161,
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Alitalia",
-     "min_and": 1255,
+     "min_and": 2180,
      "min_rit": 1040,
-     "scali": 2,
-     "scalo_peggio": 265,
-     "dove": "and.: Milano 1h45; Roma 4h25 · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "scali": 1,
+     "scalo_peggio": 1390,
+     "dove": "and.: Roma 23h10 (notte) · rit.: Roma 1h20",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 4100,
@@ -2434,7 +2434,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "BUSINESS",
      "compagnia": "Swiss International Air Lines",
      "min_and": 975,
@@ -2442,15 +2442,15 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1060,
      "dove": "and.: Zurigo 1h10 · rit.: Zurigo 17h40 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1250,
-     "esatto": 1258,
+     "esatto": 1259,
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 1125,
@@ -2458,23 +2458,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 310,
      "dove": "and.: Istanbul 5h10 · rit.: Istanbul 1h30",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1750,
-     "esatto": 1739,
+     "esatto": 1761,
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "PREMIUM_ECONOMY",
-     "compagnia": "Air VIA",
-     "min_and": 1840,
+     "compagnia": "Alitalia",
+     "min_and": 2180,
      "min_rit": 1040,
      "scali": 1,
-     "scalo_peggio": 1000,
-     "dove": "and.: Monaco di Baviera 16h40 (notte) · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "scalo_peggio": 1390,
+     "dove": "and.: Roma 23h10 (notte) · rit.: Roma 1h20",
+     "letto": "2026-11-01"
     }
    },
    "nov": {
@@ -2529,68 +2529,68 @@ window.PREZZI = {
    },
    "obon": {
     "economico": {
+     "eur": 1350,
+     "esatto": 1347,
+     "out": "2027-08-10",
+     "ret": "2027-08-24",
+     "notti": 14,
+     "anticipo": 281,
+     "classe": "ECONOMY",
+     "compagnia": "Finnair",
+     "min_and": 2100,
+     "min_rit": 1095,
+     "scali": 1,
+     "scalo_peggio": 1095,
+     "dove": "and.: Helsinki 18h15 · rit.: Helsinki 1h25",
+     "letto": "2026-11-01"
+    },
+    "lusso": {
+     "eur": 3025,
+     "esatto": 3026,
+     "out": "2027-08-10",
+     "ret": "2027-08-24",
+     "notti": 14,
+     "anticipo": 281,
+     "classe": "BUSINESS",
+     "compagnia": "Turkish Airlines",
+     "min_and": 980,
+     "min_rit": 1750,
+     "scali": 1,
+     "scalo_peggio": 805,
+     "dove": "and.: Istanbul 2h50 · rit.: Istanbul 13h25 (notte)",
+     "letto": "2026-11-01"
+    },
+    "normale": {
      "eur": 1150,
      "esatto": 1151,
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 980,
-     "min_rit": 1480,
+     "min_rit": 1750,
      "scali": 1,
-     "scalo_peggio": 535,
-     "dove": "and.: Istanbul 2h50 · rit.: Istanbul 8h55",
-     "letto": "2026-10-31"
-    },
-    "lusso": {
-     "eur": 3225,
-     "esatto": 3231,
-     "out": "2027-08-10",
-     "ret": "2027-08-24",
-     "notti": 14,
-     "anticipo": 282,
-     "classe": "BUSINESS",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 1235,
-     "min_rit": 1200,
-     "scali": 1,
-     "scalo_peggio": 320,
-     "dove": "and.: Francoforte sul Meno 5h20 · rit.: Francoforte sul Meno 3h15",
-     "letto": "2026-10-31"
-    },
-    "normale": {
-     "eur": 1425,
-     "esatto": 1429,
-     "out": "2027-08-10",
-     "ret": "2027-08-24",
-     "notti": 14,
-     "anticipo": 282,
-     "classe": "ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 1215,
-     "min_rit": 1205,
-     "scali": 1,
-     "scalo_peggio": 200,
-     "dove": "and.: Londra 3h20 · rit.: Londra 2h30",
-     "letto": "2026-10-31"
+     "scalo_peggio": 805,
+     "dove": "and.: Istanbul 2h50 · rit.: Istanbul 13h25 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 1825,
-     "esatto": 1815,
+     "eur": 1775,
+     "esatto": 1777,
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "PREMIUM_ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 1215,
-     "min_rit": 1205,
+     "compagnia": "Austrian Airlines",
+     "min_and": 960,
+     "min_rit": 1100,
      "scali": 1,
-     "scalo_peggio": 200,
-     "dove": "and.: Londra 3h20 · rit.: Londra 2h30",
-     "letto": "2026-10-31"
+     "scalo_peggio": 120,
+     "dove": "and.: Vienna 2h00 · rit.: Francoforte sul Meno 2h00",
+     "letto": "2026-11-01"
     }
    },
    "ott": {
@@ -2663,20 +2663,20 @@ window.PREZZI = {
   "vce": {
    "ago": {
     "economico": {
-     "eur": 1100,
-     "esatto": 1112,
+     "eur": 1175,
+     "esatto": 1170,
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 1635,
-     "min_rit": 1200,
+     "compagnia": "Turkish Airlines",
+     "min_and": 975,
+     "min_rit": 1735,
      "scali": 1,
-     "scalo_peggio": 755,
-     "dove": "and.: Francoforte sul Meno 12h35 · rit.: Francoforte sul Meno 3h55",
-     "letto": "2026-10-31"
+     "scalo_peggio": 785,
+     "dove": "and.: Istanbul 2h35 · rit.: Istanbul 13h05 (notte)",
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2900,
@@ -2684,7 +2684,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "BUSINESS",
      "compagnia": "British Airways",
      "min_and": 1755,
@@ -2692,23 +2692,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 810,
      "dove": "and.: Londra 13h30 (notte) · rit.: Helsinki 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 1150,
-     "esatto": 1160,
+     "eur": 1175,
+     "esatto": 1170,
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "ECONOMY",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 950,
-     "min_rit": 1200,
+     "compagnia": "Turkish Airlines",
+     "min_and": 975,
+     "min_rit": 1735,
      "scali": 1,
-     "scalo_peggio": 235,
-     "dove": "and.: Francoforte sul Meno 1h45 · rit.: Francoforte sul Meno 3h55",
-     "letto": "2026-10-31"
+     "scalo_peggio": 785,
+     "dove": "and.: Istanbul 2h35 · rit.: Istanbul 13h05 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1725,
@@ -2716,7 +2716,7 @@ window.PREZZI = {
      "out": "2027-08-19",
      "ret": "2027-09-02",
      "notti": 14,
-     "anticipo": 291,
+     "anticipo": 290,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Austrian Airlines",
      "min_and": 1130,
@@ -2724,7 +2724,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 325,
      "dove": "and.: Vienna 5h25 · rit.: Vienna 3h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "apr1": {
@@ -2734,7 +2734,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 1185,
@@ -2742,7 +2742,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 335,
      "dove": "and.: Francoforte sul Meno 5h35 · rit.: Zurigo 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3550,
@@ -2750,7 +2750,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "BUSINESS",
      "compagnia": "Swiss International Air Lines",
      "min_and": 1160,
@@ -2758,7 +2758,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 305,
      "dove": "and.: Zurigo 5h05 · rit.: Zurigo 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1100,
@@ -2766,7 +2766,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 935,
@@ -2774,7 +2774,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 200,
      "dove": "and.: Francoforte sul Meno 1h25 · rit.: Zurigo 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1725,
@@ -2782,7 +2782,7 @@ window.PREZZI = {
      "out": "2027-04-07",
      "ret": "2027-04-21",
      "notti": 14,
-     "anticipo": 157,
+     "anticipo": 156,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Swiss International Air Lines",
      "min_and": 1160,
@@ -2790,17 +2790,17 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 305,
      "dove": "and.: Zurigo 5h05 · rit.: Francoforte sul Meno 3h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "cap": {
     "economico": {
-     "eur": 1325,
-     "esatto": 1322,
+     "eur": 1350,
+     "esatto": 1357,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 995,
@@ -2808,31 +2808,31 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 155,
      "dove": "and.: Varsavia 1h55 · rit.: Varsavia 1h30; Monaco di Baviera 2h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
-     "eur": 2750,
-     "esatto": 2743,
+     "eur": 3300,
+     "esatto": 3306,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "BUSINESS",
      "compagnia": "Lufthansa Cargo",
-     "min_and": 1765,
-     "min_rit": 1200,
+     "min_and": 1185,
+     "min_rit": 1105,
      "scali": 1,
-     "scalo_peggio": 890,
-     "dove": "and.: Francoforte sul Meno 14h50 (notte) · rit.: Monaco di Baviera 4h35",
-     "letto": "2026-10-31"
+     "scalo_peggio": 335,
+     "dove": "and.: Francoforte sul Meno 5h35 · rit.: Francoforte sul Meno 2h45",
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1625,
-     "esatto": 1634,
+     "esatto": 1621,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "ECONOMY",
      "compagnia": "KLM",
      "min_and": 1275,
@@ -2840,23 +2840,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1165,
      "dove": "and.: Amsterdam 5h40 · rit.: Amsterdam 19h25 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
-     "eur": 2050,
-     "esatto": 2044,
+     "eur": 1575,
+     "esatto": 1569,
      "out": "2026-12-27",
      "ret": "2027-01-10",
      "notti": 14,
-     "anticipo": 56,
+     "anticipo": 55,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "British Airways",
      "min_and": 1600,
-     "min_rit": 1195,
+     "min_rit": 1925,
      "scali": 1,
-     "scalo_peggio": 615,
-     "dove": "and.: Londra 10h15 · rit.: Londra 2h45",
-     "letto": "2026-10-31"
+     "scalo_peggio": 885,
+     "dove": "and.: Londra 10h15 · rit.: Londra 14h45 (notte)",
+     "letto": "2026-11-01"
     }
    },
    "dic": {
@@ -2927,44 +2927,12 @@ window.PREZZI = {
    },
    "feb": {
     "economico": {
-     "eur": 825,
-     "esatto": 820,
-     "out": "2027-02-10",
-     "ret": "2027-02-24",
-     "notti": 14,
-     "anticipo": 101,
-     "classe": "ECONOMY",
-     "compagnia": "British Airways",
-     "min_and": 1300,
-     "min_rit": 1825,
-     "scali": 1,
-     "scalo_peggio": 785,
-     "dove": "and.: Londra 5h25 · rit.: Londra 13h05 (notte)",
-     "letto": "2026-10-31"
-    },
-    "lusso": {
-     "eur": 2750,
-     "esatto": 2749,
-     "out": "2027-02-10",
-     "ret": "2027-02-24",
-     "notti": 14,
-     "anticipo": 101,
-     "classe": "BUSINESS",
-     "compagnia": "Lufthansa Cargo",
-     "min_and": 1065,
-     "min_rit": 1105,
-     "scali": 1,
-     "scalo_peggio": 190,
-     "dove": "and.: Francoforte sul Meno 3h10 · rit.: Francoforte sul Meno 2h45",
-     "letto": "2026-10-31"
-    },
-    "normale": {
      "eur": 850,
      "esatto": 848,
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "ECONOMY",
      "compagnia": "Air Dolomiti",
      "min_and": 955,
@@ -2972,7 +2940,39 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 275,
      "dove": "and.: Monaco di Baviera 2h25 · rit.: Monaco di Baviera 4h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
+    },
+    "lusso": {
+     "eur": 2750,
+     "esatto": 2749,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 100,
+     "classe": "BUSINESS",
+     "compagnia": "Lufthansa Cargo",
+     "min_and": 1065,
+     "min_rit": 1105,
+     "scali": 1,
+     "scalo_peggio": 190,
+     "dove": "and.: Francoforte sul Meno 3h10 · rit.: Francoforte sul Meno 2h45",
+     "letto": "2026-11-01"
+    },
+    "normale": {
+     "eur": 850,
+     "esatto": 848,
+     "out": "2027-02-10",
+     "ret": "2027-02-24",
+     "notti": 14,
+     "anticipo": 100,
+     "classe": "ECONOMY",
+     "compagnia": "Air Dolomiti",
+     "min_and": 955,
+     "min_rit": 1200,
+     "scali": 1,
+     "scalo_peggio": 275,
+     "dove": "and.: Monaco di Baviera 2h25 · rit.: Monaco di Baviera 4h35",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1550,
@@ -2980,7 +2980,7 @@ window.PREZZI = {
      "out": "2027-02-10",
      "ret": "2027-02-24",
      "notti": 14,
-     "anticipo": 101,
+     "anticipo": 100,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "British Airways",
      "min_and": 1775,
@@ -2988,7 +2988,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 835,
      "dove": "and.: Londra 13h55 (notte) · rit.: Londra 2h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gen": {
@@ -2998,7 +2998,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 905,
@@ -3006,7 +3006,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 840,
      "dove": "and.: Istanbul 1h10 · rit.: Istanbul 14h00 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2700,
@@ -3014,7 +3014,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "BUSINESS",
      "compagnia": "Air Dolomiti",
      "min_and": 1095,
@@ -3022,7 +3022,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 295,
      "dove": "and.: Monaco di Baviera 4h55 · rit.: Francoforte sul Meno 4h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 850,
@@ -3030,7 +3030,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "ECONOMY",
      "compagnia": "Air Dolomiti",
      "min_and": 955,
@@ -3038,7 +3038,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 255,
      "dove": "and.: Monaco di Baviera 2h25 · rit.: Francoforte sul Meno 4h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1225,
@@ -3046,7 +3046,7 @@ window.PREZZI = {
      "out": "2027-01-13",
      "ret": "2027-01-27",
      "notti": 14,
-     "anticipo": 73,
+     "anticipo": 72,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1265,
@@ -3054,7 +3054,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 460,
      "dove": "and.: Roma 7h40 · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "gw": {
@@ -3064,7 +3064,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
      "compagnia": "British Airways",
      "min_and": 1600,
@@ -3072,7 +3072,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 655,
      "dove": "and.: Londra 10h55 (notte) · rit.: Londra 2h00",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3200,
@@ -3080,7 +3080,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "BUSINESS",
      "compagnia": "Swiss International Air Lines",
      "min_and": 1160,
@@ -3088,7 +3088,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 305,
      "dove": "and.: Zurigo 5h05 · rit.: Zurigo 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1025,
@@ -3096,7 +3096,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "ECONOMY",
      "compagnia": "Austrian Airlines",
      "min_and": 895,
@@ -3104,7 +3104,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 200,
      "dove": "and.: Vienna 1h30 · rit.: Zurigo 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1575,
@@ -3112,7 +3112,7 @@ window.PREZZI = {
      "out": "2027-04-28",
      "ret": "2027-05-12",
      "notti": 14,
-     "anticipo": 178,
+     "anticipo": 177,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1270,
@@ -3120,7 +3120,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 450,
      "dove": "and.: Roma 7h30 · rit.: Roma 1h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lug": {
@@ -3130,7 +3130,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 970,
@@ -3138,7 +3138,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 795,
      "dove": "and.: Istanbul 2h25 (notte) · rit.: Istanbul 13h15 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 2900,
@@ -3146,7 +3146,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "BUSINESS",
      "compagnia": "British Airways",
      "min_and": 1615,
@@ -3154,23 +3154,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 710,
      "dove": "and.: Londra 11h10 (notte) · rit.: Helsinki 11h50",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
-     "eur": 950,
-     "esatto": 958,
+     "eur": 1000,
+     "esatto": 1008,
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
-     "min_and": 970,
-     "min_rit": 1755,
+     "min_and": 980,
+     "min_rit": 1085,
      "scali": 1,
-     "scalo_peggio": 795,
-     "dove": "and.: Istanbul 2h25 (notte) · rit.: Istanbul 13h15 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 155,
+     "dove": "and.: Istanbul 2h35 (notte) · rit.: Istanbul 2h20",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1625,
@@ -3178,7 +3178,7 @@ window.PREZZI = {
      "out": "2027-07-07",
      "ret": "2027-07-21",
      "notti": 14,
-     "anticipo": 248,
+     "anticipo": 247,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Finnair",
      "min_and": 1260,
@@ -3186,7 +3186,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 290,
      "dove": "and.: Helsinki 4h50 · rit.: Londra 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mag": {
@@ -3196,7 +3196,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 975,
@@ -3204,7 +3204,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 195,
      "dove": "and.: Varsavia 1h40 · rit.: Varsavia 3h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3300,
@@ -3212,7 +3212,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "BUSINESS",
      "compagnia": "British Airways",
      "min_and": 1130,
@@ -3220,7 +3220,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 200,
      "dove": "and.: Londra 2h35 · rit.: Londra 3h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 900,
@@ -3228,7 +3228,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 975,
@@ -3236,7 +3236,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 195,
      "dove": "and.: Varsavia 1h40 · rit.: Varsavia 3h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1375,
@@ -3244,7 +3244,7 @@ window.PREZZI = {
      "out": "2027-05-19",
      "ret": "2027-06-02",
      "notti": 14,
-     "anticipo": 199,
+     "anticipo": 198,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1935,
@@ -3252,7 +3252,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1110,
      "dove": "and.: Roma 18h30 (notte) · rit.: Roma 1h15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "mar": {
@@ -3262,7 +3262,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Air Dolomiti",
      "min_and": 1095,
@@ -3270,7 +3270,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 295,
      "dove": "and.: Monaco di Baviera 4h55 · rit.: Monaco di Baviera 4h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3575,
@@ -3278,7 +3278,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "BUSINESS",
      "compagnia": "Swiss International Air Lines",
      "min_and": 985,
@@ -3286,7 +3286,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 765,
      "dove": "and.: Zurigo 1h50 · rit.: Zurigo 12h45 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1150,
@@ -3294,7 +3294,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "ECONOMY",
      "compagnia": "Lufthansa Cargo",
      "min_and": 960,
@@ -3302,7 +3302,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 275,
      "dove": "and.: Francoforte sul Meno 1h50 · rit.: Monaco di Baviera 4h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 2050,
@@ -3310,7 +3310,7 @@ window.PREZZI = {
      "out": "2027-03-10",
      "ret": "2027-03-24",
      "notti": 14,
-     "anticipo": 129,
+     "anticipo": 128,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "Alitalia",
      "min_and": 1915,
@@ -3318,7 +3318,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1105,
      "dove": "and.: Roma 18h25 (notte) · rit.: Roma 1h20",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "nov": {
@@ -3394,7 +3394,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 2160,
@@ -3402,7 +3402,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1340,
      "dove": "and.: Istanbul 22h20 (notte) · rit.: Istanbul 17h40 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lusso": {
      "eur": 3100,
@@ -3410,7 +3410,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "BUSINESS",
      "compagnia": "Turkish Airlines",
      "min_and": 975,
@@ -3418,23 +3418,23 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1060,
      "dove": "and.: Istanbul 2h35 · rit.: Istanbul 17h40 (notte)",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "normale": {
      "eur": 1100,
-     "esatto": 1110,
+     "esatto": 1109,
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "ECONOMY",
      "compagnia": "Turkish Airlines",
      "min_and": 975,
-     "min_rit": 2010,
+     "min_rit": 1755,
      "scali": 1,
-     "scalo_peggio": 1060,
-     "dove": "and.: Istanbul 2h35 · rit.: Istanbul 17h40 (notte)",
-     "letto": "2026-10-31"
+     "scalo_peggio": 795,
+     "dove": "and.: Istanbul 2h35 · rit.: Istanbul 13h15 (notte)",
+     "letto": "2026-11-01"
     },
     "premium": {
      "eur": 1750,
@@ -3442,7 +3442,7 @@ window.PREZZI = {
      "out": "2027-08-10",
      "ret": "2027-08-24",
      "notti": 14,
-     "anticipo": 282,
+     "anticipo": 281,
      "classe": "PREMIUM_ECONOMY",
      "compagnia": "LOT Polish Airlines",
      "min_and": 2305,
@@ -3450,7 +3450,7 @@ window.PREZZI = {
      "scali": 1,
      "scalo_peggio": 1445,
      "dove": "and.: Varsavia 24h05 (notte) · rit.: Varsavia 10h35",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ott": {
@@ -3525,286 +3525,286 @@ window.PREZZI = {
   "akihabara": {
    "business": {
     "ago": {
-     "eur": 70,
-     "mediana": 72,
-     "min": 39,
-     "max": 388,
-     "campione": 38,
-     "esempio": "Belken Hotel - Kanda",
+     "eur": 80,
+     "mediana": 78,
+     "min": 46,
+     "max": 389,
+     "campione": 36,
+     "esempio": "1 notte, tasse e commissioni incluse",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 110,
-     "mediana": 111,
+     "eur": 115,
+     "mediana": 114,
      "min": 60,
-     "max": 263,
-     "campione": 35,
-     "esempio": "Hotel Livemax Asakusabashi-Ekimae",
+     "max": 264,
+     "campione": 36,
+     "esempio": "Hotel Livemax",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 95,
-     "mediana": 95,
-     "min": 54,
-     "max": 137,
-     "campione": 36,
+     "eur": 90,
+     "mediana": 91,
+     "min": 55,
+     "max": 145,
+     "campione": 37,
      "esempio": "Hotel Linden",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 80,
-     "mediana": 79,
+     "eur": 85,
+     "mediana": 83,
      "min": 31,
-     "max": 126,
+     "max": 122,
      "campione": 37,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 75,
-     "mediana": 74,
+     "mediana": 73,
      "min": 30,
-     "max": 135,
-     "campione": 36,
+     "max": 136,
+     "campione": 35,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 70,
-     "mediana": 68,
-     "min": 34,
+     "mediana": 70,
+     "min": 40,
      "max": 100,
-     "campione": 36,
-     "esempio": "Belken Hotel - Kanda",
+     "campione": 35,
+     "esempio": "Hotel Livemax Asakusabashi-Ekimae",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 60,
-     "mediana": 61,
-     "min": 45,
+     "mediana": 62,
+     "min": 46,
      "max": 156,
-     "campione": 38,
-     "esempio": "Belken Hotel - Kanda",
+     "campione": 37,
+     "esempio": "Hotel Livemax Asakusabashi-Ekimae",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 75,
      "mediana": 75,
-     "min": 46,
-     "max": 421,
-     "campione": 37,
-     "esempio": "Under Railway Hotel Akihabara",
+     "min": 39,
+     "max": 190,
+     "campione": 35,
+     "esempio": "CAFE/MINIMAL HOTEL OUR OUR",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 80,
-     "mediana": 80,
+     "mediana": 79,
      "min": 40,
-     "max": 271,
-     "campione": 37,
+     "max": 156,
+     "campione": 27,
      "esempio": "Nine Hours Woman Kanda",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 80,
-     "mediana": 80,
-     "min": 32,
-     "max": 200,
-     "campione": 37,
+     "mediana": 82,
+     "min": 31,
+     "max": 201,
+     "campione": 36,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 110,
-     "mediana": 108,
-     "min": 65,
-     "max": 129,
+     "eur": 105,
+     "mediana": 103,
+     "min": 70,
+     "max": 158,
      "campione": 9,
      "esempio": "Hotel Livemax Asakusabashi-Ekimae",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 65,
-     "mediana": 64,
-     "min": 35,
-     "max": 388,
-     "campione": 35,
-     "esempio": "Belken Hotel - Kanda",
+     "mediana": 66,
+     "min": 43,
+     "max": 246,
+     "campione": 34,
+     "esempio": "CAFE/MINIMAL HOTEL OUR OUR",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 110,
-     "mediana": 108,
-     "min": 65,
+     "eur": 105,
+     "mediana": 103,
+     "min": 70,
      "max": 129,
      "campione": 9,
      "esempio": "Hotel Livemax Asakusabashi-Ekimae",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 70,
-     "mediana": 71,
-     "min": 38,
-     "max": 245,
-     "campione": 34,
+     "eur": 80,
+     "mediana": 78,
+     "min": 39,
+     "max": 246,
+     "campione": 32,
      "esempio": "CAFE/MINIMAL HOTEL OUR OUR",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
-     "eur": 125,
-     "mediana": 127,
-     "min": 39,
-     "max": 357,
+     "eur": 145,
+     "mediana": 146,
+     "min": 49,
+     "max": 358,
      "campione": 19,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Manga Art Hotel",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 195,
-     "mediana": 193,
-     "min": 73,
-     "max": 303,
+     "eur": 205,
+     "mediana": 207,
+     "min": 113,
+     "max": 304,
      "campione": 19,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "MIDORI.so NIHONBASHI",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 125,
      "mediana": 124,
-     "min": 56,
-     "max": 320,
+     "min": 81,
+     "max": 305,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Manga Art Hotel",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 125,
-     "mediana": 126,
-     "min": 47,
-     "max": 203,
+     "eur": 130,
+     "mediana": 129,
+     "min": 80,
+     "max": 204,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Hotel Resol - Akihabara",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 110,
      "mediana": 108,
-     "min": 44,
-     "max": 319,
+     "min": 66,
+     "max": 321,
      "campione": 20,
      "esempio": "Belken Hotel - Kanda",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 105,
      "mediana": 106,
-     "min": 34,
-     "max": 199,
+     "min": 51,
+     "max": 200,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Via Inn Akihabara",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 120,
-     "mediana": 120,
-     "min": 45,
-     "max": 326,
+     "mediana": 121,
+     "min": 57,
+     "max": 327,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "APA Hotel Akihabara North",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 130,
-     "mediana": 132,
-     "min": 53,
-     "max": 234,
-     "campione": 19,
-     "esempio": "Belken Hotel - Kanda",
+     "eur": 125,
+     "mediana": 124,
+     "min": 64,
+     "max": 235,
+     "campione": 20,
+     "esempio": "Manga Art Hotel",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 145,
-     "mediana": 144,
-     "min": 56,
-     "max": 349,
+     "mediana": 145,
+     "min": 75,
+     "max": 344,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Manga Art Hotel",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 130,
-     "mediana": 131,
-     "min": 51,
-     "max": 272,
+     "eur": 135,
+     "mediana": 136,
+     "min": 79,
+     "max": 235,
      "campione": 20,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Best Western Hotel Fino Tokyo Akihabara",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 160,
-     "mediana": 158,
+     "eur": 170,
+     "mediana": 170,
      "min": 109,
-     "max": 405,
+     "max": 408,
      "campione": 20,
      "esempio": "Hotel Resol Stay Akihabara",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
-     "eur": 130,
-     "mediana": 129,
-     "min": 35,
-     "max": 342,
-     "campione": 19,
+     "eur": 110,
+     "mediana": 112,
+     "min": 55,
+     "max": 343,
+     "campione": 20,
      "esempio": "Belken Hotel - Kanda",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 160,
-     "mediana": 158,
+     "eur": 170,
+     "mediana": 170,
      "min": 109,
-     "max": 405,
+     "max": 408,
      "campione": 20,
      "esempio": "Hotel Resol Stay Akihabara",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 135,
-     "mediana": 136,
-     "min": 53,
-     "max": 174,
+     "eur": 130,
+     "mediana": 130,
+     "min": 65,
+     "max": 162,
      "campione": 18,
-     "esempio": "Belken Hotel - Kanda",
+     "esempio": "Hop Inn Tokyo Ueno",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
@@ -3823,144 +3823,144 @@ window.PREZZI = {
   "asakusa": {
    "business": {
     "ago": {
-     "eur": 75,
-     "mediana": 77,
+     "eur": 70,
+     "mediana": 69,
      "min": 50,
-     "max": 137,
+     "max": 135,
      "campione": 23,
      "esempio": "VESSEL INN ASAKUSA TSUKUBA EXPRESS",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 115,
-     "mediana": 113,
-     "min": 63,
-     "max": 241,
-     "campione": 24,
+     "eur": 110,
+     "mediana": 110,
+     "min": 64,
+     "max": 183,
+     "campione": 21,
      "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 85,
      "mediana": 87,
      "min": 45,
-     "max": 119,
-     "campione": 27,
+     "max": 201,
+     "campione": 25,
      "esempio": "ACE INN ASAKUSA",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 65,
-     "mediana": 64,
-     "min": 35,
-     "max": 124,
-     "campione": 24,
-     "esempio": "unito ASAKUSA",
+     "mediana": 66,
+     "min": 36,
+     "max": 125,
+     "campione": 25,
+     "esempio": "Sakura Hostel Asakusa",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 70,
-     "mediana": 71,
+     "eur": 75,
+     "mediana": 74,
      "min": 30,
-     "max": 124,
+     "max": 125,
      "campione": 22,
      "esempio": "Hotel + Hostel Tokyo Asakusa 2",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 60,
-     "mediana": 60,
+     "eur": 65,
+     "mediana": 64,
      "min": 34,
      "max": 107,
      "campione": 24,
      "esempio": "Hotel + Hostel Tokyo Asakusa 2",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 60,
-     "mediana": 62,
+     "eur": 65,
+     "mediana": 63,
      "min": 44,
      "max": 114,
-     "campione": 24,
+     "campione": 25,
      "esempio": "Hotel + Hostel Tokyo Asakusa 2",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 75,
-     "mediana": 74,
+     "eur": 70,
+     "mediana": 72,
      "min": 37,
-     "max": 112,
+     "max": 101,
      "campione": 24,
      "esempio": "Hotel + Hostel Tokyo Asakusa 2",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 85,
-     "mediana": 83,
+     "eur": 80,
+     "mediana": 82,
      "min": 31,
-     "max": 129,
-     "campione": 23,
+     "max": 148,
+     "campione": 22,
      "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 75,
-     "mediana": 76,
+     "eur": 80,
+     "mediana": 81,
      "min": 51,
-     "max": 126,
+     "max": 124,
      "campione": 22,
      "esempio": "Hotel + Hostel Tokyo Asakusa 2",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 75,
-     "mediana": 77,
-     "min": 29,
-     "max": 204,
+     "mediana": 75,
+     "min": 30,
+     "max": 222,
      "campione": 25,
      "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 75,
-     "mediana": 77,
-     "min": 50,
-     "max": 112,
-     "campione": 23,
-     "esempio": "APA Hotel Asakusa-Eki-mae",
+     "mediana": 74,
+     "min": 51,
+     "max": 109,
+     "campione": 24,
+     "esempio": "VESSEL INN ASAKUSA TSUKUBA EXPRESS",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 75,
-     "mediana": 77,
-     "min": 29,
-     "max": 208,
+     "mediana": 75,
+     "min": 30,
+     "max": 222,
      "campione": 25,
      "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 85,
-     "mediana": 85,
-     "min": 64,
-     "max": 136,
+     "mediana": 83,
+     "min": 65,
+     "max": 137,
      "campione": 23,
      "esempio": "unito ASAKUSA",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
@@ -4069,72 +4069,72 @@ window.PREZZI = {
     "ago": {
      "eur": 60,
      "mediana": 61,
-     "min": 33,
+     "min": 37,
      "max": 82,
      "campione": 11,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 65,
-     "mediana": 63,
+     "eur": 55,
+     "mediana": 56,
      "min": 38,
-     "max": 147,
-     "campione": 18,
+     "max": 77,
+     "campione": 15,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 70,
-     "mediana": 69,
+     "eur": 65,
+     "mediana": 66,
      "min": 56,
      "max": 96,
-     "campione": 16,
+     "campione": 14,
      "esempio": "Hostel Wasabi Asakusa",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 45,
-     "mediana": 43,
+     "mediana": 45,
      "min": 33,
-     "max": 72,
-     "campione": 20,
+     "max": 116,
+     "campione": 29,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 55,
      "mediana": 53,
      "min": 33,
-     "max": 65,
+     "max": 66,
      "campione": 19,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 40,
-     "mediana": 40,
+     "mediana": 42,
      "min": 33,
-     "max": 68,
-     "campione": 21,
+     "max": 61,
+     "campione": 20,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 55,
      "mediana": 56,
      "min": 33,
      "max": 81,
-     "campione": 13,
+     "campione": 15,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 60,
@@ -4144,67 +4144,67 @@ window.PREZZI = {
      "campione": 11,
      "esempio": "Hotel Plus Hostel Tokyo Asakusa 1",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 40,
-     "mediana": 38,
-     "min": 33,
-     "max": 76,
-     "campione": 13,
-     "esempio": "plat hostel keikyu asakusa station",
+     "mediana": 42,
+     "min": 31,
+     "max": 103,
+     "campione": 18,
+     "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 50,
-     "mediana": 50,
+     "eur": 45,
+     "mediana": 45,
      "min": 30,
-     "max": 232,
-     "campione": 18,
+     "max": 76,
+     "campione": 17,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 50,
-     "mediana": 51,
+     "eur": 45,
+     "mediana": 46,
      "min": 30,
-     "max": 113,
+     "max": 92,
      "campione": 19,
      "esempio": "TOKYO-W-inn Asakusa",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 60,
      "mediana": 61,
      "min": 33,
-     "max": 82,
-     "campione": 11,
+     "max": 63,
+     "campione": 9,
      "esempio": "plat hostel keikyu asakusa station",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 50,
-     "mediana": 51,
+     "eur": 35,
+     "mediana": 37,
      "min": 30,
-     "max": 91,
-     "campione": 19,
-     "esempio": "TOKYO-W-inn Asakusa",
+     "max": 98,
+     "campione": 24,
+     "esempio": "Sakura Hostel Asakusa",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 75,
-     "mediana": 77,
-     "min": 65,
-     "max": 123,
-     "campione": 14,
-     "esempio": "RESOL POSHTEL TOKYO ASAKUSA",
+     "eur": 65,
+     "mediana": 66,
+     "min": 62,
+     "max": 89,
+     "campione": 7,
+     "esempio": "DAIN HOSTEL 2",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    }
   },
@@ -4212,337 +4212,337 @@ window.PREZZI = {
    "business": {
     "ago": {
      "eur": 105,
-     "mediana": 103,
-     "min": 72,
+     "mediana": 106,
+     "min": 73,
      "max": 179,
-     "campione": 23,
+     "campione": 22,
      "esempio": "VIA INN Higashi Ginza",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 170,
-     "mediana": 168,
-     "min": 82,
-     "max": 406,
-     "campione": 22,
-     "esempio": "Livemax Higashi Ginza",
+     "eur": 165,
+     "mediana": 163,
+     "min": 113,
+     "max": 408,
+     "campione": 23,
+     "esempio": "Hotel Abest Ginza Kyobashi",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 135,
-     "mediana": 135,
+     "mediana": 136,
      "min": 94,
-     "max": 255,
-     "campione": 25,
+     "max": 248,
+     "campione": 27,
      "esempio": "Hotel Ginza Daiei",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 105,
-     "mediana": 104,
+     "mediana": 105,
      "min": 74,
-     "max": 178,
+     "max": 179,
      "campione": 24,
      "esempio": "Comfybed Ginza",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 110,
-     "mediana": 111,
+     "mediana": 109,
      "min": 56,
-     "max": 172,
-     "campione": 25,
+     "max": 171,
+     "campione": 23,
      "esempio": "Livemax Higashi Ginza",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 95,
-     "mediana": 94,
+     "mediana": 93,
      "min": 43,
-     "max": 153,
+     "max": 154,
      "campione": 24,
      "esempio": "Livemax Higashi Ginza",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 110,
-     "mediana": 109,
-     "min": 44,
-     "max": 172,
-     "campione": 27,
+     "eur": 95,
+     "mediana": 93,
+     "min": 49,
+     "max": 174,
+     "campione": 28,
      "esempio": "Livemax Higashi Ginza",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 115,
      "mediana": 114,
-     "min": 85,
-     "max": 172,
+     "min": 86,
+     "max": 173,
      "campione": 24,
      "esempio": "Quintessa Hotel Tokyo Ginza",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 125,
-     "mediana": 126,
+     "eur": 135,
+     "mediana": 134,
      "min": 65,
-     "max": 236,
-     "campione": 23,
+     "max": 237,
+     "campione": 22,
      "esempio": "Livemax Higashi Ginza",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 110,
-     "mediana": 111,
-     "min": 55,
-     "max": 217,
+     "eur": 115,
+     "mediana": 115,
+     "min": 58,
+     "max": 228,
      "campione": 25,
      "esempio": "Livemax Higashi Ginza",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 150,
-     "mediana": 148,
-     "min": 96,
-     "max": 566,
-     "campione": 23,
-     "esempio": "Hotel Abest Ginza Kyobashi",
+     "eur": 160,
+     "mediana": 161,
+     "min": 86,
+     "max": 393,
+     "campione": 22,
+     "esempio": "VIA INN Higashi Ginza",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 90,
-     "mediana": 88,
-     "min": 52,
-     "max": 159,
-     "campione": 28,
-     "esempio": "APA Hotel Ginza Shintomicho-Ekimae",
+     "mediana": 90,
+     "min": 61,
+     "max": 163,
+     "campione": 22,
+     "esempio": "Sotetsu Fresa Inn Shimbashi Hibiyaguchi",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 150,
-     "mediana": 148,
-     "min": 96,
-     "max": 566,
-     "campione": 23,
-     "esempio": "Hotel Abest Ginza Kyobashi",
+     "eur": 160,
+     "mediana": 161,
+     "min": 86,
+     "max": 393,
+     "campione": 22,
+     "esempio": "VIA INN Higashi Ginza",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 115,
      "mediana": 114,
-     "min": 58,
-     "max": 191,
-     "campione": 23,
-     "esempio": "Livemax Higashi Ginza",
+     "min": 70,
+     "max": 192,
+     "campione": 22,
+     "esempio": "Tabist銀座",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
-     "eur": 235,
-     "mediana": 234,
-     "min": 103,
-     "max": 2511,
-     "campione": 23,
+     "eur": 300,
+     "mediana": 298,
+     "min": 104,
+     "max": 2518,
+     "campione": 24,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 435,
-     "mediana": 435,
-     "min": 214,
-     "max": 3942,
+     "eur": 420,
+     "mediana": 420,
+     "min": 202,
+     "max": 3956,
      "campione": 26,
      "esempio": "Dai-ichi Hotel Tokyo",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 330,
-     "mediana": 330,
-     "min": 219,
-     "max": 3582,
+     "eur": 375,
+     "mediana": 377,
+     "min": 223,
+     "max": 3596,
      "campione": 26,
      "esempio": "The Royal Park Hotel Tokyo Shiodome",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 300,
-     "mediana": 298,
+     "eur": 365,
+     "mediana": 365,
      "min": 132,
-     "max": 2004,
-     "campione": 25,
+     "max": 2014,
+     "campione": 26,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 370,
-     "mediana": 368,
-     "min": 127,
-     "max": 1362,
+     "eur": 315,
+     "mediana": 316,
+     "min": 125,
+     "max": 1367,
      "campione": 26,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 270,
      "mediana": 270,
-     "min": 117,
-     "max": 1366,
+     "min": 119,
+     "max": 1367,
      "campione": 25,
-     "esempio": "TSUKI Tokyo",
+     "esempio": "Agora Tokyo Ginza",
      "notte": "2027-01-13",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 300,
-     "mediana": 302,
-     "min": 184,
-     "max": 1649,
+     "eur": 275,
+     "mediana": 276,
+     "min": 174,
+     "max": 1654,
      "campione": 26,
      "esempio": "Dai-ichi Hotel Tokyo",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 235,
-     "mediana": 234,
+     "eur": 225,
+     "mediana": 226,
      "min": 114,
-     "max": 1579,
-     "campione": 25,
+     "max": 1583,
+     "campione": 24,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 355,
-     "mediana": 357,
-     "min": 175,
-     "max": 1938,
-     "campione": 26,
-     "esempio": "Dai-ichi Hotel Tokyo",
+     "eur": 330,
+     "mediana": 330,
+     "min": 88,
+     "max": 1942,
+     "campione": 25,
+     "esempio": "Hotel Musse Ginza Meitetsu",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 300,
-     "mediana": 299,
+     "mediana": 301,
      "min": 164,
-     "max": 2509,
+     "max": 2518,
      "campione": 26,
-     "esempio": "Agora Tokyo Ginza",
+     "esempio": "Dai-ichi Hotel Tokyo",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 500,
      "mediana": 498,
-     "min": 145,
-     "max": 3224,
+     "min": 150,
+     "max": 3236,
      "campione": 26,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
-     "eur": 265,
-     "mediana": 264,
-     "min": 101,
-     "max": 2478,
-     "campione": 24,
+     "eur": 235,
+     "mediana": 234,
+     "min": 103,
+     "max": 2518,
+     "campione": 23,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 500,
      "mediana": 498,
-     "min": 145,
-     "max": 3224,
+     "min": 150,
+     "max": 3236,
      "campione": 26,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 235,
-     "mediana": 234,
+     "mediana": 235,
      "min": 132,
-     "max": 2509,
+     "max": 2518,
      "campione": 23,
      "esempio": "Agora Tokyo Ginza",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
     "ago": {
      "eur": 60,
-     "mediana": 59,
-     "min": 59,
-     "max": 222,
+     "mediana": 60,
+     "min": 60,
+     "max": 223,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 65,
      "mediana": 67,
      "min": 67,
-     "max": 323,
+     "max": 255,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 120,
-     "mediana": 118,
+     "eur": 115,
+     "mediana": 114,
      "min": 94,
-     "max": 245,
-     "campione": 20,
+     "max": 271,
+     "campione": 5,
      "esempio": "Anshin Oyado Tokyo Man Shimbashi",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 85,
-     "mediana": 83,
+     "mediana": 84,
      "min": 83,
-     "max": 160,
+     "max": 165,
      "campione": 5,
-     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
+     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 60,
      "mediana": 62,
-     "min": 54,
-     "max": 202,
+     "min": 62,
+     "max": 160,
      "campione": 5,
-     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
+     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 55,
@@ -4552,87 +4552,87 @@ window.PREZZI = {
      "campione": 5,
      "esempio": "Anshin Oyado Tokyo Man Shimbashi",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 65,
      "mediana": 67,
-     "min": 57,
-     "max": 190,
+     "min": 67,
+     "max": 152,
      "campione": 5,
-     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
+     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 60,
-     "mediana": 59,
-     "min": 59,
-     "max": 212,
+     "mediana": 60,
+     "min": 60,
+     "max": 213,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 60,
      "mediana": 61,
      "min": 61,
-     "max": 168,
+     "max": 169,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 65,
      "mediana": 65,
-     "min": 52,
-     "max": 282,
+     "min": 65,
+     "max": 224,
      "campione": 5,
-     "esempio": "Anshin Oyado Tokyo Man Shimbashi",
+     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 90,
      "mediana": 88,
      "min": 55,
-     "max": 162,
+     "max": 170,
      "campione": 7,
      "esempio": "Tengcle stay 5th floor",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
-     "eur": 75,
-     "mediana": 75,
-     "min": 52,
-     "max": 109,
-     "campione": 28,
-     "esempio": "APA Hotel Ginza Shintomicho-Ekimae",
+     "eur": 60,
+     "mediana": 60,
+     "min": 60,
+     "max": 218,
+     "campione": 5,
+     "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 90,
      "mediana": 88,
      "min": 55,
-     "max": 162,
+     "max": 170,
      "campione": 7,
      "esempio": "Tengcle stay 5th floor",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 65,
      "mediana": 63,
      "min": 63,
-     "max": 184,
+     "max": 146,
      "campione": 5,
      "esempio": "Anshinoyado Tokyo Woman Ginza Shiodome",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    }
   },
@@ -4641,530 +4641,530 @@ window.PREZZI = {
     "ago": {
      "eur": 80,
      "mediana": 81,
-     "min": 44,
-     "max": 310,
-     "campione": 17,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "min": 45,
+     "max": 278,
+     "campione": 16,
+     "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 105,
-     "mediana": 105,
-     "min": 47,
-     "max": 389,
-     "campione": 27,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "mediana": 106,
+     "min": 44,
+     "max": 390,
+     "campione": 26,
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 85,
-     "mediana": 84,
+     "eur": 90,
+     "mediana": 91,
      "min": 39,
-     "max": 130,
-     "campione": 30,
+     "max": 131,
+     "campione": 31,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 60,
      "mediana": 58,
-     "min": 34,
-     "max": 105,
-     "campione": 31,
+     "min": 35,
+     "max": 112,
+     "campione": 32,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 70,
-     "mediana": 72,
+     "eur": 75,
+     "mediana": 74,
      "min": 39,
      "max": 99,
      "campione": 30,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 60,
      "mediana": 58,
      "min": 38,
-     "max": 90,
+     "max": 85,
      "campione": 30,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 65,
-     "mediana": 63,
+     "mediana": 64,
      "min": 44,
-     "max": 212,
+     "max": 213,
      "campione": 27,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 70,
-     "mediana": 71,
-     "min": 47,
-     "max": 349,
+     "mediana": 70,
+     "min": 45,
+     "max": 319,
      "campione": 20,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 70,
-     "mediana": 71,
-     "min": 47,
-     "max": 265,
+     "mediana": 72,
+     "min": 48,
+     "max": 266,
      "campione": 20,
      "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 60,
-     "mediana": 61,
-     "min": 40,
+     "eur": 65,
+     "mediana": 64,
+     "min": 41,
      "max": 103,
      "campione": 30,
-     "esempio": "Hotel Florida",
+     "esempio": "Tabist Hotel Aurora Ikebukuro",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 80,
      "mediana": 78,
-     "min": 42,
-     "max": 230,
-     "campione": 29,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "min": 38,
+     "max": 235,
+     "campione": 28,
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 80,
      "mediana": 81,
-     "min": 44,
-     "max": 326,
+     "min": 55,
+     "max": 284,
      "campione": 15,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 80,
      "mediana": 78,
-     "min": 42,
-     "max": 230,
-     "campione": 29,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "min": 38,
+     "max": 235,
+     "campione": 28,
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 80,
-     "mediana": 78,
+     "mediana": 80,
      "min": 47,
-     "max": 95,
-     "campione": 10,
+     "max": 112,
+     "campione": 13,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
      "eur": 90,
      "mediana": 91,
-     "min": 54,
-     "max": 310,
+     "min": 55,
+     "max": 325,
      "campione": 14,
      "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 140,
-     "mediana": 140,
-     "min": 61,
-     "max": 389,
-     "campione": 18,
+     "eur": 135,
+     "mediana": 136,
+     "min": 62,
+     "max": 390,
+     "campione": 19,
      "esempio": "Kimi Ryokan",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 145,
-     "mediana": 144,
-     "min": 66,
-     "max": 432,
+     "mediana": 143,
+     "min": 70,
+     "max": 435,
      "campione": 20,
      "esempio": "Kimi Ryokan",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 95,
-     "mediana": 96,
+     "eur": 100,
+     "mediana": 98,
      "min": 44,
-     "max": 276,
+     "max": 280,
      "campione": 20,
-     "esempio": "Hotel Tijuna Inn",
+     "esempio": "Petit Bali Ikebukuro",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 110,
-     "mediana": 112,
-     "min": 56,
-     "max": 285,
+     "mediana": 109,
+     "min": 57,
+     "max": 287,
      "campione": 19,
-     "esempio": "Kimi Ryokan",
+     "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 110,
-     "mediana": 110,
-     "min": 49,
-     "max": 239,
+     "eur": 115,
+     "mediana": 114,
+     "min": 50,
+     "max": 247,
      "campione": 20,
      "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 95,
-     "mediana": 95,
+     "eur": 90,
+     "mediana": 90,
      "min": 46,
-     "max": 285,
-     "campione": 18,
+     "max": 287,
+     "campione": 19,
      "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 90,
      "mediana": 91,
      "min": 51,
-     "max": 349,
+     "max": 325,
      "campione": 15,
      "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 120,
-     "mediana": 122,
-     "min": 66,
-     "max": 324,
-     "campione": 16,
-     "esempio": "Toyoko Inn Ikebukuro Kitaguchi 1",
+     "eur": 110,
+     "mediana": 110,
+     "min": 69,
+     "max": 287,
+     "campione": 14,
+     "esempio": "Dai-Ichi Inn Ikebukuro",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 105,
-     "mediana": 103,
-     "min": 56,
-     "max": 285,
-     "campione": 19,
+     "eur": 100,
+     "mediana": 102,
+     "min": 59,
+     "max": 287,
+     "campione": 18,
      "esempio": "Kimi Ryokan",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 95,
-     "mediana": 95,
-     "min": 50,
-     "max": 230,
-     "campione": 17,
-     "esempio": "Hotel Bali Bali",
+     "eur": 115,
+     "mediana": 113,
+     "min": 44,
+     "max": 235,
+     "campione": 19,
+     "esempio": "Petit Bali Ikebukuro",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 85,
      "mediana": 87,
-     "min": 45,
-     "max": 326,
-     "campione": 15,
+     "min": 46,
+     "max": 287,
+     "campione": 14,
      "esempio": "KOKO HOTEL Ikebukuro East",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 110,
-     "mediana": 110,
+     "eur": 115,
+     "mediana": 113,
      "min": 44,
-     "max": 230,
-     "campione": 20,
+     "max": 235,
+     "campione": 19,
      "esempio": "Petit Bali Ikebukuro",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 105,
-     "mediana": 103,
+     "eur": 100,
+     "mediana": 102,
      "min": 47,
-     "max": 324,
-     "campione": 12,
+     "max": 325,
+     "campione": 13,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
     "ago": {
      "eur": 65,
-     "mediana": 63,
-     "min": 44,
+     "mediana": 65,
+     "min": 45,
      "max": 95,
-     "campione": 14,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "campione": 13,
+     "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 75,
-     "mediana": 76,
-     "min": 47,
-     "max": 444,
+     "mediana": 75,
+     "min": 44,
+     "max": 446,
      "campione": 17,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 60,
-     "mediana": 62,
+     "eur": 70,
+     "mediana": 70,
      "min": 39,
-     "max": 115,
-     "campione": 24,
+     "max": 120,
+     "campione": 26,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 55,
-     "mediana": 53,
-     "min": 34,
-     "max": 96,
+     "mediana": 56,
+     "min": 35,
+     "max": 97,
      "campione": 33,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 65,
-     "mediana": 66,
+     "mediana": 63,
      "min": 39,
      "max": 99,
-     "campione": 32,
+     "campione": 28,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 55,
      "mediana": 56,
      "min": 38,
-     "max": 83,
+     "max": 87,
      "campione": 32,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 65,
-     "mediana": 63,
+     "eur": 60,
+     "mediana": 62,
      "min": 44,
      "max": 116,
      "campione": 24,
      "esempio": "Kankokukan Business Hotel",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 65,
      "mediana": 63,
      "min": 45,
-     "max": 88,
+     "max": 89,
      "campione": 14,
      "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 65,
-     "mediana": 64,
-     "min": 47,
-     "max": 104,
+     "mediana": 63,
+     "min": 48,
+     "max": 105,
      "campione": 15,
      "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 60,
-     "mediana": 60,
-     "min": 40,
+     "mediana": 62,
+     "min": 41,
      "max": 99,
-     "campione": 31,
-     "esempio": "Hotel Florida",
+     "campione": 30,
+     "esempio": "Tabist Hotel Aurora Ikebukuro",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 45,
-     "mediana": 46,
-     "min": 42,
+     "eur": 60,
+     "mediana": 60,
+     "min": 38,
      "max": 95,
-     "campione": 24,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "campione": 22,
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 55,
      "mediana": 57,
-     "min": 44,
-     "max": 88,
-     "campione": 11,
+     "min": 55,
+     "max": 89,
+     "campione": 12,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 45,
-     "mediana": 45,
-     "min": 42,
-     "max": 99,
-     "campione": 23,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "eur": 60,
+     "mediana": 60,
+     "min": 38,
+     "max": 95,
+     "campione": 22,
+     "esempio": "Kankokukan Business Hotel",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 50,
-     "mediana": 50,
+     "eur": 55,
+     "mediana": 54,
      "min": 47,
      "max": 95,
-     "campione": 6,
+     "campione": 8,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    }
   },
   "marunouchi": {
    "business": {
     "ago": {
-     "eur": 95,
-     "mediana": 93,
+     "eur": 100,
+     "mediana": 102,
      "min": 70,
-     "max": 165,
-     "campione": 31,
+     "max": 307,
+     "campione": 22,
      "esempio": "Hotel Villa Fontaine Tokyo Hatchobori",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 160,
      "mediana": 162,
      "min": 73,
-     "max": 471,
+     "max": 473,
      "campione": 24,
      "esempio": "Livemax Tokyo Shintomicho Hotel",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 120,
-     "mediana": 122,
+     "eur": 125,
+     "mediana": 126,
      "min": 70,
-     "max": 627,
-     "campione": 23,
+     "max": 629,
+     "campione": 22,
      "esempio": "J Hotel Tokyo Geo",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 100,
-     "mediana": 98,
-     "min": 49,
-     "max": 542,
+     "eur": 95,
+     "mediana": 97,
+     "min": 50,
+     "max": 549,
      "campione": 24,
      "esempio": "J Hotel Tokyo Geo",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 90,
-     "mediana": 90,
-     "min": 62,
-     "max": 323,
-     "campione": 24,
+     "eur": 85,
+     "mediana": 84,
+     "min": 61,
+     "max": 324,
+     "campione": 25,
      "esempio": "Hotel Villa Fontaine Tokyo Nihombashi Mitsukoshimae",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 85,
-     "mediana": 86,
+     "eur": 95,
+     "mediana": 97,
      "min": 39,
-     "max": 323,
-     "campione": 24,
+     "max": 320,
+     "campione": 25,
      "esempio": "J Hotel Tokyo Geo",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 95,
-     "mediana": 95,
+     "eur": 85,
+     "mediana": 84,
      "min": 57,
-     "max": 355,
-     "campione": 28,
+     "max": 356,
+     "campione": 30,
      "esempio": "APA Hotel Ginza Shintomicho-Ekimae",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 95,
      "mediana": 97,
-     "min": 82,
-     "max": 310,
+     "min": 79,
+     "max": 311,
      "campione": 24,
-     "esempio": "Henn na Hotel Tokyo Ginza",
+     "esempio": "Tosei Hotel Cocone Kanda",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 125,
-     "mediana": 126,
-     "min": 77,
-     "max": 355,
-     "campione": 24,
-     "esempio": "Kanda Station Hotel",
+     "eur": 140,
+     "mediana": 138,
+     "min": 84,
+     "max": 356,
+     "campione": 22,
+     "esempio": "Hotel Villa Fontaine Tokyo Nihombashi Mitsukoshimae",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 115,
-     "mediana": 114,
-     "min": 84,
-     "max": 316,
+     "mediana": 116,
+     "min": 86,
+     "max": 317,
      "campione": 25,
      "esempio": "Hotel Abest Ginza Kyobashi",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 110,
@@ -5177,14 +5177,14 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "obon": {
-     "eur": 80,
-     "mediana": 79,
+     "eur": 75,
+     "mediana": 75,
      "min": 52,
-     "max": 355,
+     "max": 352,
      "campione": 26,
      "esempio": "APA Hotel Kayabacho Hatchobori Ekimae",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 110,
@@ -5197,156 +5197,156 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "set": {
-     "eur": 130,
-     "mediana": 128,
-     "min": 79,
-     "max": 310,
-     "campione": 22,
+     "eur": 125,
+     "mediana": 124,
+     "min": 80,
+     "max": 332,
+     "campione": 28,
      "esempio": "Henn na Hotel Tokyo Ginza",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
-     "eur": 525,
-     "mediana": 526,
-     "min": 165,
-     "max": 2511,
+     "eur": 615,
+     "mediana": 617,
+     "min": 152,
+     "max": 2518,
      "campione": 31,
      "esempio": "The Gate Hotel Tokyo by HULIC",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 765,
-     "mediana": 767,
-     "min": 240,
-     "max": 3942,
+     "eur": 770,
+     "mediana": 770,
+     "min": 241,
+     "max": 3956,
      "campione": 31,
      "esempio": "Mitsui Garden Hotel Ginza Premier",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 740,
-     "mediana": 739,
-     "min": 252,
-     "max": 3582,
+     "eur": 795,
+     "mediana": 794,
+     "min": 262,
+     "max": 3596,
      "campione": 31,
      "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 500,
-     "mediana": 498,
-     "min": 206,
-     "max": 2501,
+     "eur": 545,
+     "mediana": 543,
+     "min": 210,
+     "max": 2510,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 395,
-     "mediana": 394,
-     "min": 152,
-     "max": 1882,
+     "mediana": 396,
+     "min": 153,
+     "max": 1889,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Ginza Premier",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 590,
-     "mediana": 590,
+     "eur": 600,
+     "mediana": 601,
      "min": 142,
-     "max": 2316,
+     "max": 2324,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Ginza Premier",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 485,
-     "mediana": 487,
-     "min": 210,
-     "max": 3335,
+     "eur": 490,
+     "mediana": 489,
+     "min": 171,
+     "max": 3340,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 525,
-     "mediana": 526,
-     "min": 156,
-     "max": 2031,
+     "eur": 530,
+     "mediana": 528,
+     "min": 157,
+     "max": 2034,
      "campione": 33,
-     "esempio": "Mitsui Garden Hotel Ginza Premier",
+     "esempio": "The Gate Hotel Tokyo by HULIC",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 550,
-     "mediana": 552,
-     "min": 210,
-     "max": 2465,
+     "eur": 590,
+     "mediana": 590,
+     "min": 209,
+     "max": 2469,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 480,
-     "mediana": 481,
-     "min": 193,
-     "max": 3328,
+     "eur": 495,
+     "mediana": 494,
+     "min": 194,
+     "max": 3339,
      "campione": 33,
      "esempio": "Mitsui Garden Hotel Ginza Premier",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 1005,
-     "mediana": 1006,
-     "min": 246,
-     "max": 3329,
+     "eur": 940,
+     "mediana": 940,
+     "min": 254,
+     "max": 3268,
      "campione": 35,
-     "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
+     "esempio": "Millennium Mitsui Garden Hotel",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
-     "eur": 525,
-     "mediana": 526,
-     "min": 163,
-     "max": 2478,
+     "eur": 530,
+     "mediana": 528,
+     "min": 152,
+     "max": 2518,
      "campione": 31,
-     "esempio": "Hotel The Celestine Ginza",
+     "esempio": "The Gate Hotel Tokyo by HULIC",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 1005,
-     "mediana": 1006,
-     "min": 246,
-     "max": 3329,
+     "eur": 940,
+     "mediana": 940,
+     "min": 254,
+     "max": 3268,
      "campione": 35,
-     "esempio": "Mitsui Garden Hotel Nihonbashi Premier",
+     "esempio": "Millennium Mitsui Garden Hotel",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 695,
-     "mediana": 695,
-     "min": 177,
-     "max": 2538,
+     "eur": 755,
+     "mediana": 757,
+     "min": 164,
+     "max": 2542,
      "campione": 31,
      "esempio": "The Gate Hotel Tokyo by HULIC",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
@@ -5367,102 +5367,102 @@ window.PREZZI = {
     "ago": {
      "eur": 90,
      "mediana": 92,
-     "min": 72,
-     "max": 279,
+     "min": 64,
+     "max": 276,
      "campione": 23,
      "esempio": "Comfort Inn Tokyo Roppongi",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 135,
-     "mediana": 136,
-     "min": 111,
-     "max": 276,
-     "campione": 23,
-     "esempio": "APA HOTEL Roppongi Six",
+     "eur": 140,
+     "mediana": 140,
+     "min": 103,
+     "max": 292,
+     "campione": 25,
+     "esempio": "APA Hotel Nishiazabu",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 110,
-     "mediana": 109,
-     "min": 65,
-     "max": 261,
+     "mediana": 110,
+     "min": 66,
+     "max": 271,
      "campione": 25,
      "esempio": "Akasaka Urban Hotel Annex",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 90,
-     "mediana": 89,
+     "eur": 95,
+     "mediana": 96,
      "min": 71,
-     "max": 198,
-     "campione": 24,
+     "max": 176,
+     "campione": 23,
      "esempio": "Sotetsu Fresa Inn Tokyo Roppongi",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 90,
-     "mediana": 88,
+     "mediana": 89,
      "min": 55,
-     "max": 236,
+     "max": 237,
      "campione": 23,
      "esempio": "APA Hotel Nishiazabu",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 80,
-     "mediana": 78,
-     "min": 37,
-     "max": 253,
+     "mediana": 79,
+     "min": 38,
+     "max": 151,
      "campione": 23,
      "esempio": "Live Max - Akasaka Grande",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 75,
      "mediana": 75,
      "min": 46,
-     "max": 315,
+     "max": 316,
      "campione": 24,
      "esempio": "Live Max - Akasaka Grande",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 80,
-     "mediana": 78,
-     "min": 64,
-     "max": 317,
+     "eur": 75,
+     "mediana": 77,
+     "min": 60,
+     "max": 284,
      "campione": 24,
-     "esempio": "Comfort Inn Tokyo Roppongi",
+     "esempio": "Sotetsu Fresa Inn Tokyo Roppongi",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 110,
-     "mediana": 110,
-     "min": 86,
-     "max": 346,
-     "campione": 23,
-     "esempio": "Tutte le recensioni di case vacanze e alcune recensioni di hotel provengono da siti di viaggi di terze parti. Le recensioni di case vacanze vengono mostrate come valutazioni combinate delle recensioni di terze parti collegate. Le recensioni non sono verificate da Google, che però controlla e rimuove i contenuti falsi quando vengono identificati nelle recensioni Google. Per consultare le norme sulle recensioni dei siti di viaggi di terze parti, visita i relativi siti.",
+     "mediana": 108,
+     "min": 79,
+     "max": 337,
+     "campione": 25,
+     "esempio": "the b akasaka",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 100,
      "mediana": 98,
      "min": 54,
-     "max": 264,
-     "campione": 24,
+     "max": 265,
+     "campione": 23,
      "esempio": "Live Max - Akasaka Grande",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 140,
@@ -5475,14 +5475,14 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "obon": {
-     "eur": 75,
-     "mediana": 76,
-     "min": 45,
-     "max": 279,
-     "campione": 26,
+     "eur": 70,
+     "mediana": 72,
+     "min": 46,
+     "max": 290,
+     "campione": 24,
      "esempio": "APA Hotel Nishiazabu",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 140,
@@ -5495,156 +5495,156 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "set": {
-     "eur": 95,
-     "mediana": 97,
+     "eur": 100,
+     "mediana": 98,
      "min": 60,
-     "max": 292,
-     "campione": 22,
+     "max": 300,
+     "campione": 23,
      "esempio": "Live Max - Akasaka Grande",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
      "eur": 360,
-     "mediana": 359,
-     "min": 121,
-     "max": 1080,
+     "mediana": 360,
+     "min": 122,
+     "max": 1081,
      "campione": 26,
      "esempio": "Hotel Villa Fontaine Grand Tokyo-Roppongi",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 495,
-     "mediana": 494,
-     "min": 183,
-     "max": 1973,
+     "mediana": 495,
+     "min": 184,
+     "max": 1909,
      "campione": 27,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 465,
-     "mediana": 463,
-     "min": 135,
-     "max": 1578,
+     "eur": 470,
+     "mediana": 470,
+     "min": 136,
+     "max": 1584,
      "campione": 26,
      "esempio": "Shiba Park Hotel",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 435,
-     "mediana": 435,
-     "min": 127,
-     "max": 1794,
-     "campione": 23,
+     "eur": 415,
+     "mediana": 417,
+     "min": 128,
+     "max": 1801,
+     "campione": 25,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 315,
-     "mediana": 313,
-     "min": 89,
-     "max": 1326,
+     "mediana": 317,
+     "min": 91,
+     "max": 1333,
      "campione": 27,
      "esempio": "Hotel Villa Fontaine Grand Tokyo-Roppongi",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 290,
-     "mediana": 291,
+     "eur": 295,
+     "mediana": 296,
      "min": 97,
-     "max": 1075,
-     "campione": 27,
+     "max": 1079,
+     "campione": 23,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 425,
-     "mediana": 427,
-     "min": 113,
-     "max": 1436,
+     "eur": 420,
+     "mediana": 420,
+     "min": 114,
+     "max": 1441,
      "campione": 27,
      "esempio": "Hotel Villa Fontaine Grand Tokyo-Roppongi",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 395,
-     "mediana": 397,
-     "min": 121,
-     "max": 1080,
+     "eur": 380,
+     "mediana": 380,
+     "min": 122,
+     "max": 1081,
      "campione": 27,
      "esempio": "Hotel Villa Fontaine Grand Tokyo-Roppongi",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 515,
-     "mediana": 515,
-     "min": 127,
-     "max": 1808,
+     "mediana": 517,
+     "min": 132,
+     "max": 1814,
      "campione": 27,
-     "esempio": "Hotel Villa Fontaine Grand Tokyo-Roppongi",
+     "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 390,
-     "mediana": 390,
+     "eur": 365,
+     "mediana": 365,
      "min": 139,
-     "max": 1292,
+     "max": 1295,
      "campione": 27,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 410,
-     "mediana": 409,
+     "eur": 545,
+     "mediana": 545,
      "min": 174,
-     "max": 1433,
+     "max": 1441,
      "campione": 25,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 305,
-     "mediana": 306,
-     "min": 116,
-     "max": 1080,
+     "mediana": 307,
+     "min": 117,
+     "max": 1081,
      "campione": 27,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 410,
-     "mediana": 409,
+     "eur": 545,
+     "mediana": 545,
      "min": 174,
-     "max": 1433,
+     "max": 1441,
      "campione": 25,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 425,
-     "mediana": 426,
-     "min": 131,
-     "max": 1075,
+     "eur": 430,
+     "mediana": 432,
+     "min": 132,
+     "max": 1081,
      "campione": 27,
      "esempio": "HOTEL THE CELESTINE TOKYO SHIBA",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
@@ -5663,94 +5663,94 @@ window.PREZZI = {
   "sanya": {
    "business": {
     "ago": {
-     "eur": 75,
-     "mediana": 74,
+     "eur": 70,
+     "mediana": 72,
      "min": 24,
-     "max": 360,
-     "campione": 22,
+     "max": 183,
+     "campione": 20,
      "esempio": "Hostel Hideaway",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 85,
-     "mediana": 86,
+     "eur": 95,
+     "mediana": 96,
      "min": 25,
-     "max": 231,
-     "campione": 22,
-     "esempio": "Business Hotel Fukudaya",
+     "max": 186,
+     "campione": 23,
+     "esempio": "Hostel Hideaway",
      "notte": "2027-04-07",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 85,
      "mediana": 87,
-     "min": 42,
-     "max": 251,
-     "campione": 27,
-     "esempio": "Hotel Palace Japan",
+     "min": 38,
+     "max": 252,
+     "campione": 31,
+     "esempio": "Joe Backpackers in Tokyo",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 60,
-     "mediana": 60,
+     "eur": 55,
+     "mediana": 55,
      "min": 28,
-     "max": 158,
+     "max": 157,
      "campione": 35,
      "esempio": "Hotel Accela",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 45,
      "mediana": 47,
-     "min": 25,
-     "max": 173,
-     "campione": 29,
-     "esempio": "Business Hotel Fukudaya",
+     "min": 24,
+     "max": 171,
+     "campione": 33,
+     "esempio": "Hostel Hideaway",
      "notte": "2027-02-10",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 60,
      "mediana": 62,
      "min": 28,
-     "max": 195,
-     "campione": 27,
+     "max": 140,
+     "campione": 30,
      "esempio": "plat hostel keikyu minowa forest",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 35,
-     "mediana": 36,
+     "eur": 70,
+     "mediana": 68,
      "min": 25,
-     "max": 143,
-     "campione": 15,
+     "max": 263,
+     "campione": 27,
      "esempio": "Hostel Hideaway",
      "notte": "2027-04-28",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 80,
      "mediana": 78,
      "min": 24,
-     "max": 270,
+     "max": 168,
      "campione": 22,
      "esempio": "Hostel Hideaway",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 105,
-     "mediana": 104,
-     "min": 28,
-     "max": 266,
-     "campione": 24,
-     "esempio": "Hotel Accela",
+     "eur": 100,
+     "mediana": 101,
+     "min": 25,
+     "max": 268,
+     "campione": 25,
+     "esempio": "Hostel Hideaway",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 55,
@@ -5763,44 +5763,44 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "nov": {
-     "eur": 85,
-     "mediana": 84,
-     "min": 29,
-     "max": 204,
+     "eur": 40,
+     "mediana": 42,
+     "min": 30,
+     "max": 122,
      "campione": 9,
-     "esempio": "Kangaroo Hotel",
+     "esempio": "TOKYO-W-inn Asakusa",
      "notte": "2027-11-10",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 65,
-     "mediana": 65,
+     "mediana": 67,
      "min": 24,
-     "max": 385,
-     "campione": 19,
+     "max": 214,
+     "campione": 22,
      "esempio": "Hostel Hideaway",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 70,
-     "mediana": 70,
-     "min": 35,
-     "max": 165,
-     "campione": 21,
-     "esempio": "Hotel Palace Japan",
+     "eur": 90,
+     "mediana": 88,
+     "min": 36,
+     "max": 204,
+     "campione": 9,
+     "esempio": "Hostel JAZ",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 105,
-     "mediana": 106,
-     "min": 45,
-     "max": 229,
-     "campione": 17,
-     "esempio": "Edo Stay Senju Hotel",
+     "eur": 85,
+     "mediana": 84,
+     "min": 24,
+     "max": 185,
+     "campione": 18,
+     "esempio": "Hostel Hideaway",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
@@ -5875,14 +5875,14 @@ window.PREZZI = {
      "letto": "2026-10-12"
     },
     "lug": {
-     "eur": 245,
-     "mediana": 246,
+     "eur": 280,
+     "mediana": 280,
      "min": 46,
-     "max": 303,
-     "campione": 8,
+     "max": 305,
+     "campione": 7,
      "esempio": "Edo Stay Senju Hotel",
      "notte": "2027-07-07",
-     "letto": "2026-10-27"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 225,
@@ -5938,11 +5938,11 @@ window.PREZZI = {
      "eur": 315,
      "mediana": 314,
      "min": 46,
-     "max": 373,
+     "max": 376,
      "campione": 6,
      "esempio": "Edo Stay Senju Hotel",
      "notte": "2027-09-15",
-     "letto": "2026-10-27"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
@@ -5961,34 +5961,34 @@ window.PREZZI = {
   "shibuya": {
    "business": {
     "ago": {
-     "eur": 95,
-     "mediana": 97,
-     "min": 49,
-     "max": 625,
+     "eur": 90,
+     "mediana": 90,
+     "min": 69,
+     "max": 911,
      "campione": 9,
-     "esempio": "Sakura Hotel Nippori",
+     "esempio": "APA HOTEL OCHANOMIZU-EKIKITA",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 125,
-     "mediana": 126,
+     "eur": 140,
+     "mediana": 140,
      "min": 109,
-     "max": 237,
+     "max": 312,
      "campione": 9,
-     "esempio": "APA Hotel Iidabashi-Ekimae",
+     "esempio": "APA Hotel Yamanote Otsukaeki Tower",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 125,
-     "mediana": 124,
-     "min": 80,
-     "max": 193,
+     "eur": 165,
+     "mediana": 166,
+     "min": 61,
+     "max": 437,
      "campione": 9,
-     "esempio": "HOTEL MYSTAYS Ochanomizu Conference Center",
+     "esempio": "Sakura Hotel Nippori",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 75,
@@ -6001,206 +6001,206 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "feb": {
-     "eur": 135,
-     "mediana": 135,
-     "min": 67,
-     "max": 554,
+     "eur": 100,
+     "mediana": 98,
+     "min": 65,
+     "max": 332,
      "campione": 9,
-     "esempio": "APA Hotel TKP Nippori-ekimae",
+     "esempio": "Sakura Hotel Nippori",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 65,
-     "mediana": 66,
-     "min": 49,
-     "max": 167,
+     "eur": 80,
+     "mediana": 81,
+     "min": 69,
+     "max": 153,
      "campione": 9,
-     "esempio": "CITAN Hostel",
+     "esempio": "APA Hotel Iidabashi-Ekimae",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 95,
-     "mediana": 94,
-     "min": 50,
-     "max": 196,
+     "eur": 100,
+     "mediana": 99,
+     "min": 49,
+     "max": 216,
      "campione": 9,
-     "esempio": "APA Hotel Ningyocho-Ekikita",
+     "esempio": "APA HOTEL KANDA-JIMBOCHO-EKIHIGASHI",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 80,
      "mediana": 79,
      "min": 67,
-     "max": 916,
+     "max": 918,
      "campione": 9,
      "esempio": "APA HOTEL OCHANOMIZU-EKIKITA",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 105,
      "mediana": 107,
-     "min": 81,
-     "max": 217,
+     "min": 87,
+     "max": 194,
      "campione": 9,
      "esempio": "APA HOTEL OCHANOMIZU-EKIKITA",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 140,
-     "mediana": 140,
-     "min": 74,
-     "max": 358,
+     "eur": 95,
+     "mediana": 96,
+     "min": 80,
+     "max": 152,
      "campione": 9,
-     "esempio": "APA Hotel TKP Nippori-ekimae",
+     "esempio": "APA HOTEL OCHANOMIZU-EKIKITA",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 105,
-     "mediana": 103,
-     "min": 85,
-     "max": 204,
+     "eur": 125,
+     "mediana": 127,
+     "min": 61,
+     "max": 375,
      "campione": 9,
-     "esempio": "HOTEL MYSTAYS PREMIER Omori",
+     "esempio": "Sakura Hotel Nippori",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
-     "eur": 190,
-     "mediana": 188,
-     "min": 43,
-     "max": 543,
-     "campione": 6,
-     "esempio": "Hotel Livemax Otsuka",
+     "eur": 125,
+     "mediana": 126,
+     "min": 69,
+     "max": 626,
+     "campione": 9,
+     "esempio": "APA Hotel Nishi Shinjuku Gochome Eki Tower",
      "notte": "2027-08-10",
-     "letto": "2026-09-27"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 110,
-     "mediana": 108,
-     "min": 85,
-     "max": 204,
+     "mediana": 109,
+     "min": 66,
+     "max": 200,
      "campione": 9,
-     "esempio": "HOTEL MYSTAYS PREMIER Omori",
+     "esempio": "Sakura Hotel Jimbocho",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 100,
-     "mediana": 99,
-     "min": 49,
-     "max": 246,
+     "eur": 115,
+     "mediana": 116,
+     "min": 51,
+     "max": 173,
      "campione": 9,
-     "esempio": "Sakura Hotel Nippori",
+     "esempio": "Sakura Hotel Jimbocho",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
-     "eur": 315,
-     "mediana": 315,
-     "min": 74,
-     "max": 747,
-     "campione": 24,
-     "esempio": "The Knot Tokyo Shinjuku",
+     "eur": 270,
+     "mediana": 269,
+     "min": 114,
+     "max": 1034,
+     "campione": 18,
+     "esempio": "All Day Place Shibuya",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 250,
-     "mediana": 252,
-     "min": 168,
-     "max": 1645,
+     "eur": 280,
+     "mediana": 278,
+     "min": 187,
+     "max": 1651,
      "campione": 22,
      "esempio": "Mitsui Garden Hotel Jingugaien Tokyo PREMIER",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 325,
-     "mediana": 325,
-     "min": 181,
-     "max": 997,
+     "eur": 330,
+     "mediana": 329,
+     "min": 183,
+     "max": 990,
      "campione": 23,
      "esempio": "Mitsui Garden Hotel Jingugaien Tokyo PREMIER",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 340,
-     "mediana": 338,
-     "min": 143,
-     "max": 845,
-     "campione": 25,
-     "esempio": "Mitsui Garden Hotel Jingugaien Tokyo PREMIER",
+     "eur": 260,
+     "mediana": 259,
+     "min": 132,
+     "max": 503,
+     "campione": 24,
+     "esempio": "ホテル＆レジデンス六本木",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 290,
-     "mediana": 292,
-     "min": 105,
-     "max": 1050,
+     "eur": 270,
+     "mediana": 272,
+     "min": 106,
+     "max": 1054,
      "campione": 24,
      "esempio": "ホテル＆レジデンス六本木",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 255,
-     "mediana": 256,
-     "min": 105,
-     "max": 802,
+     "eur": 245,
+     "mediana": 247,
+     "min": 109,
+     "max": 799,
      "campione": 24,
      "esempio": "ホテル＆レジデンス六本木",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 325,
-     "mediana": 323,
-     "min": 88,
-     "max": 1137,
-     "campione": 23,
-     "esempio": "SHINJUKU WASHINGTON HOTEL",
+     "eur": 265,
+     "mediana": 266,
+     "min": 135,
+     "max": 1225,
+     "campione": 24,
+     "esempio": "All Day Place Shibuya",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 305,
-     "mediana": 303,
+     "eur": 320,
+     "mediana": 321,
      "min": 130,
-     "max": 1138,
+     "max": 1057,
      "campione": 19,
      "esempio": "All Day Place Shibuya",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 265,
-     "mediana": 265,
-     "min": 192,
-     "max": 2014,
+     "eur": 270,
+     "mediana": 269,
+     "min": 191,
+     "max": 1832,
      "campione": 19,
      "esempio": "lyf Shibuya Tokyo",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 230,
-     "mediana": 228,
-     "min": 144,
-     "max": 1221,
+     "eur": 265,
+     "mediana": 266,
+     "min": 145,
+     "max": 1230,
      "campione": 24,
      "esempio": "ホテル＆レジデンス六本木",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 255,
@@ -6213,14 +6213,14 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "obon": {
-     "eur": 280,
-     "mediana": 280,
+     "eur": 255,
+     "mediana": 254,
      "min": 114,
-     "max": 1138,
+     "max": 1013,
      "campione": 19,
      "esempio": "All Day Place Shibuya",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 255,
@@ -6233,14 +6233,14 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "set": {
-     "eur": 295,
-     "mediana": 297,
+     "eur": 275,
+     "mediana": 277,
      "min": 135,
-     "max": 1134,
+     "max": 1117,
      "campione": 19,
      "esempio": "All Day Place Shibuya",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
@@ -6252,7 +6252,7 @@ window.PREZZI = {
      "campione": 4,
      "esempio": "Shibuya Hotel En",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 45,
@@ -6266,53 +6266,53 @@ window.PREZZI = {
     },
     "cap": {
      "eur": 90,
-     "mediana": 89,
+     "mediana": 90,
      "min": 40,
-     "max": 192,
+     "max": 187,
      "campione": 11,
      "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 65,
-     "mediana": 65,
-     "min": 40,
-     "max": 163,
-     "campione": 21,
-     "esempio": "Wise Owl Hostels Shibuya",
+     "mediana": 66,
+     "min": 45,
+     "max": 113,
+     "campione": 20,
+     "esempio": "Hotel Rodan",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 90,
-     "mediana": 89,
+     "mediana": 88,
      "min": 76,
-     "max": 156,
+     "max": 159,
      "campione": 7,
      "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2027-02-10",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 60,
      "mediana": 60,
-     "min": 40,
-     "max": 140,
+     "min": 43,
+     "max": 142,
      "campione": 11,
      "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 75,
-     "mediana": 75,
+     "mediana": 76,
      "min": 65,
      "max": 151,
      "campione": 8,
      "esempio": "ルイスハウス渋谷(2F)",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 105,
@@ -6322,7 +6322,7 @@ window.PREZZI = {
      "campione": 4,
      "esempio": "APA Hotel Shibuya Dogenzakaue",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 65,
@@ -6332,17 +6332,17 @@ window.PREZZI = {
      "campione": 6,
      "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 65,
      "mediana": 65,
      "min": 56,
-     "max": 161,
-     "campione": 9,
+     "max": 146,
+     "campione": 8,
      "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2027-03-10",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 70,
@@ -6358,31 +6358,31 @@ window.PREZZI = {
      "eur": 90,
      "mediana": 92,
      "min": 92,
-     "max": 150,
+     "max": 151,
      "campione": 4,
      "esempio": "APA Hotel Shibuya Dogenzakaue",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 70,
-     "mediana": 71,
-     "min": 45,
-     "max": 147,
-     "campione": 14,
-     "esempio": "Hotel Rodan",
+     "eur": 60,
+     "mediana": 59,
+     "min": 46,
+     "max": 149,
+     "campione": 10,
+     "esempio": "Wise Owl Hostels Shibuya",
      "notte": "2027-10-13",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 135,
-     "mediana": 135,
+     "eur": 120,
+     "mediana": 122,
      "min": 68,
-     "max": 135,
-     "campione": 5,
+     "max": 127,
+     "campione": 6,
      "esempio": "ルイスハウス渋谷(2F)",
      "notte": "2027-09-15",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     }
    }
   },
@@ -6390,297 +6390,297 @@ window.PREZZI = {
    "business": {
     "ago": {
      "eur": 85,
-     "mediana": 86,
-     "min": 42,
-     "max": 215,
+     "mediana": 87,
+     "min": 43,
+     "max": 217,
      "campione": 15,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 115,
-     "mediana": 117,
+     "mediana": 115,
      "min": 71,
-     "max": 245,
+     "max": 294,
      "campione": 21,
      "esempio": "Hotel Livemax - Shinjuku East",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 95,
-     "mediana": 95,
-     "min": 55,
+     "mediana": 96,
+     "min": 56,
      "max": 145,
-     "campione": 27,
+     "campione": 28,
      "esempio": "Shinjuku Hotel Park Inn",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 65,
      "mediana": 67,
-     "min": 40,
-     "max": 170,
-     "campione": 30,
+     "min": 39,
+     "max": 169,
+     "campione": 29,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 75,
-     "mediana": 74,
+     "mediana": 75,
      "min": 52,
-     "max": 147,
+     "max": 144,
      "campione": 26,
      "esempio": "Imano Tokyo Hostel/Cafe&Bar Shinjuku",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 65,
      "mediana": 64,
-     "min": 43,
-     "max": 132,
+     "min": 44,
+     "max": 137,
      "campione": 28,
      "esempio": "Hotel Livemax - Shinjuku East",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 85,
-     "mediana": 83,
+     "eur": 80,
+     "mediana": 82,
      "min": 42,
      "max": 219,
-     "campione": 24,
+     "campione": 23,
      "esempio": "Hotel Livemax - Shinjuku East",
      "notte": "2027-04-28",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 70,
-     "mediana": 70,
+     "mediana": 71,
      "min": 54,
      "max": 195,
-     "campione": 18,
+     "campione": 21,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 75,
      "mediana": 76,
      "min": 47,
-     "max": 133,
-     "campione": 20,
+     "max": 126,
+     "campione": 21,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 80,
      "mediana": 78,
      "min": 47,
-     "max": 168,
+     "max": 150,
      "campione": 27,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 105,
      "mediana": 106,
      "min": 56,
-     "max": 352,
-     "campione": 26,
+     "max": 363,
+     "campione": 25,
      "esempio": "HOTEL THE HOTEL",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 80,
-     "mediana": 81,
+     "mediana": 78,
      "min": 42,
-     "max": 175,
+     "max": 176,
      "campione": 15,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
      "eur": 105,
      "mediana": 106,
      "min": 56,
-     "max": 176,
-     "campione": 27,
+     "max": 363,
+     "campione": 25,
      "esempio": "HOTEL THE HOTEL",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 70,
-     "mediana": 68,
+     "eur": 75,
+     "mediana": 76,
      "min": 54,
      "max": 166,
-     "campione": 14,
+     "campione": 16,
      "esempio": "9h nine hours woman Shinjuku",
      "notte": "2027-09-15",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
     "ago": {
-     "eur": 210,
-     "mediana": 209,
+     "eur": 240,
+     "mediana": 240,
      "min": 74,
-     "max": 747,
-     "campione": 25,
+     "max": 748,
+     "campione": 24,
      "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 280,
-     "mediana": 281,
-     "min": 78,
-     "max": 1900,
+     "eur": 290,
+     "mediana": 290,
+     "min": 128,
+     "max": 1873,
      "campione": 25,
-     "esempio": "Hotel Pasha",
+     "esempio": "Studio Inn Nishi Shinjuku",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 320,
-     "mediana": 318,
-     "min": 110,
-     "max": 1648,
-     "campione": 25,
-     "esempio": "エルミタージュ西新宿",
+     "eur": 410,
+     "mediana": 409,
+     "min": 96,
+     "max": 1678,
+     "campione": 23,
+     "esempio": "HOTEL PetitBALI GARDEN Shin-Okubo – Adult Only",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 210,
-     "mediana": 209,
+     "eur": 205,
+     "mediana": 206,
      "min": 87,
-     "max": 845,
-     "campione": 27,
+     "max": 847,
+     "campione": 25,
      "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 185,
-     "mediana": 185,
+     "mediana": 187,
      "min": 104,
-     "max": 749,
-     "campione": 27,
-     "esempio": "エルミタージュ西新宿",
+     "max": 798,
+     "campione": 25,
+     "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 205,
-     "mediana": 205,
-     "min": 76,
-     "max": 760,
-     "campione": 22,
-     "esempio": "HOTEL PetitBALI GARDEN Shin-Okubo – Adult Only",
+     "eur": 185,
+     "mediana": 185,
+     "min": 79,
+     "max": 761,
+     "campione": 25,
+     "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 235,
-     "mediana": 236,
-     "min": 88,
-     "max": 1137,
+     "eur": 220,
+     "mediana": 218,
+     "min": 93,
+     "max": 1067,
      "campione": 24,
      "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 225,
-     "mediana": 227,
-     "min": 78,
-     "max": 798,
-     "campione": 24,
-     "esempio": "Hotel Pasha",
-     "notte": "2027-07-07",
-     "letto": "2026-10-31"
-    },
-    "mag": {
-     "eur": 280,
-     "mediana": 280,
-     "min": 107,
-     "max": 1163,
-     "campione": 27,
-     "esempio": "Studio Inn Nishi Shinjuku",
-     "notte": "2027-05-19",
-     "letto": "2026-10-31"
-    },
-    "mar": {
-     "eur": 200,
-     "mediana": 200,
-     "min": 97,
-     "max": 1011,
-     "campione": 27,
-     "esempio": "SHINJUKU WASHINGTON HOTEL",
-     "notte": "2027-03-10",
-     "letto": "2026-10-31"
-    },
-    "nov": {
-     "eur": 230,
-     "mediana": 229,
-     "min": 101,
-     "max": 1895,
-     "campione": 25,
-     "esempio": "エルミタージュ西新宿",
-     "notte": "2027-11-10",
-     "letto": "2026-10-31"
-    },
-    "obon": {
      "eur": 215,
      "mediana": 214,
      "min": 79,
-     "max": 792,
+     "max": 799,
+     "campione": 23,
+     "esempio": "SHINJUKU WASHINGTON HOTEL",
+     "notte": "2027-07-07",
+     "letto": "2026-11-01"
+    },
+    "mag": {
+     "eur": 280,
+     "mediana": 281,
+     "min": 107,
+     "max": 1098,
+     "campione": 27,
+     "esempio": "Studio Inn Nishi Shinjuku",
+     "notte": "2027-05-19",
+     "letto": "2026-11-01"
+    },
+    "mar": {
+     "eur": 200,
+     "mediana": 199,
+     "min": 96,
+     "max": 1015,
+     "campione": 27,
+     "esempio": "SHINJUKU WASHINGTON HOTEL",
+     "notte": "2027-03-10",
+     "letto": "2026-11-01"
+    },
+    "nov": {
+     "eur": 225,
+     "mediana": 226,
+     "min": 79,
+     "max": 1999,
      "campione": 25,
+     "esempio": "エルミタージュ西新宿",
+     "notte": "2027-11-10",
+     "letto": "2026-11-01"
+    },
+    "obon": {
+     "eur": 210,
+     "mediana": 211,
+     "min": 79,
+     "max": 795,
+     "campione": 23,
      "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 230,
-     "mediana": 229,
-     "min": 101,
-     "max": 1895,
+     "eur": 225,
+     "mediana": 226,
+     "min": 92,
+     "max": 1999,
      "campione": 25,
      "esempio": "エルミタージュ西新宿",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 225,
-     "mediana": 223,
+     "eur": 215,
+     "mediana": 214,
      "min": 79,
-     "max": 774,
-     "campione": 23,
+     "max": 776,
+     "campione": 22,
      "esempio": "SHINJUKU WASHINGTON HOTEL",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
     "ago": {
-     "eur": 75,
-     "mediana": 74,
-     "min": 44,
-     "max": 126,
-     "campione": 18,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "eur": 70,
+     "mediana": 72,
+     "min": 45,
+     "max": 107,
+     "campione": 20,
+     "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 55,
@@ -6694,83 +6694,83 @@ window.PREZZI = {
     },
     "cap": {
      "eur": 70,
-     "mediana": 69,
+     "mediana": 70,
      "min": 39,
-     "max": 115,
+     "max": 145,
      "campione": 25,
      "esempio": "Shinjuku Skycapsule Hotel",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 55,
-     "mediana": 56,
-     "min": 29,
-     "max": 101,
+     "eur": 60,
+     "mediana": 61,
+     "min": 42,
+     "max": 106,
      "campione": 28,
-     "esempio": "Livemax Budget - Kōrakuen",
+     "esempio": "Imano Tokyo Hostel/Cafe&Bar Shinjuku",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 75,
-     "mediana": 73,
-     "min": 42,
-     "max": 147,
-     "campione": 23,
-     "esempio": "Shinjuku Skycapsule Hotel",
+     "eur": 70,
+     "mediana": 68,
+     "min": 41,
+     "max": 140,
+     "campione": 28,
+     "esempio": "Hotel Florida",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 60,
      "mediana": 60,
      "min": 20,
-     "max": 92,
-     "campione": 26,
+     "max": 87,
+     "campione": 24,
      "esempio": "Livemax Budget - Kōrakuen",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 55,
-     "mediana": 55,
-     "min": 38,
-     "max": 107,
-     "campione": 28,
-     "esempio": "Livemax Budget - Kōrakuen",
+     "eur": 60,
+     "mediana": 62,
+     "min": 32,
+     "max": 105,
+     "campione": 26,
+     "esempio": "Yamate Resthouse",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 65,
-     "mediana": 67,
-     "min": 47,
-     "max": 121,
-     "campione": 20,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "mediana": 63,
+     "min": 41,
+     "max": 97,
+     "campione": 21,
+     "esempio": "Livemax Budget - Kōrakuen",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 70,
-     "mediana": 72,
-     "min": 31,
-     "max": 153,
+     "eur": 65,
+     "mediana": 67,
+     "min": 48,
+     "max": 157,
      "campione": 17,
-     "esempio": "Yamate Resthouse",
+     "esempio": "Hotel Changtee Tokyo",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 80,
-     "mediana": 78,
-     "min": 38,
-     "max": 118,
-     "campione": 22,
-     "esempio": "Livemax Budget - Kōrakuen",
+     "mediana": 82,
+     "min": 47,
+     "max": 150,
+     "campione": 27,
+     "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
      "eur": 45,
@@ -6783,34 +6783,34 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "obon": {
-     "eur": 55,
-     "mediana": 56,
-     "min": 44,
-     "max": 145,
+     "eur": 65,
+     "mediana": 64,
+     "min": 46,
+     "max": 97,
      "campione": 21,
-     "esempio": "Sakura Hotel Ikebukuro",
+     "esempio": "Shinjuku Skycapsule Hotel",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 60,
-     "mediana": 58,
+     "eur": 55,
+     "mediana": 54,
      "min": 26,
      "max": 117,
-     "campione": 21,
+     "campione": 18,
      "esempio": "Rhodes Kagurazaka Hotel",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 75,
-     "mediana": 75,
+     "eur": 60,
+     "mediana": 60,
      "min": 47,
-     "max": 118,
-     "campione": 17,
+     "max": 108,
+     "campione": 15,
      "esempio": "Sakura Hotel Ikebukuro",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    }
   },
@@ -6820,141 +6820,141 @@ window.PREZZI = {
      "eur": 70,
      "mediana": 71,
      "min": 44,
-     "max": 143,
+     "max": 144,
      "campione": 27,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
      "eur": 120,
      "mediana": 118,
-     "min": 48,
+     "min": 49,
      "max": 144,
-     "campione": 24,
+     "campione": 23,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
-     "eur": 110,
-     "mediana": 109,
+     "eur": 105,
+     "mediana": 106,
      "min": 49,
-     "max": 139,
-     "campione": 25,
+     "max": 140,
+     "campione": 26,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
      "eur": 85,
      "mediana": 84,
      "min": 43,
      "max": 116,
-     "campione": 25,
+     "campione": 26,
      "esempio": "Gran Customa Ueno",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 80,
-     "mediana": 79,
+     "mediana": 82,
      "min": 32,
      "max": 100,
-     "campione": 25,
+     "campione": 26,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 70,
      "mediana": 68,
      "min": 25,
-     "max": 111,
+     "max": 112,
      "campione": 24,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 65,
-     "mediana": 65,
+     "eur": 60,
+     "mediana": 62,
      "min": 32,
-     "max": 97,
+     "max": 98,
      "campione": 25,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 75,
      "mediana": 75,
      "min": 41,
-     "max": 140,
+     "max": 141,
      "campione": 27,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
      "eur": 95,
-     "mediana": 97,
+     "mediana": 95,
      "min": 35,
      "max": 143,
-     "campione": 24,
+     "campione": 23,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 85,
-     "mediana": 83,
+     "mediana": 85,
      "min": 35,
-     "max": 120,
-     "campione": 23,
+     "max": 121,
+     "campione": 24,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 95,
-     "mediana": 95,
+     "eur": 90,
+     "mediana": 90,
      "min": 39,
-     "max": 143,
-     "campione": 27,
+     "max": 140,
+     "campione": 26,
      "esempio": "Gran Customa Ueno",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 70,
-     "mediana": 69,
-     "min": 44,
-     "max": 150,
-     "campione": 27,
-     "esempio": "リブマックスホステルズ東京上野",
-     "notte": "2027-08-10",
-     "letto": "2026-10-31"
-    },
-    "ott": {
-     "eur": 95,
-     "mediana": 95,
-     "min": 39,
+     "mediana": 70,
+     "min": 55,
      "max": 143,
      "campione": 27,
+     "esempio": "APA Hotel Ueno Inaricho-Eki-Kita",
+     "notte": "2027-08-10",
+     "letto": "2026-11-01"
+    },
+    "ott": {
+     "eur": 90,
+     "mediana": 90,
+     "min": 39,
+     "max": 140,
+     "campione": 26,
      "esempio": "Gran Customa Ueno",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 85,
      "mediana": 86,
      "min": 44,
-     "max": 150,
-     "campione": 26,
+     "max": 144,
+     "campione": 27,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "lusso": {
@@ -6969,186 +6969,186 @@ window.PREZZI = {
      "letto": "2026-10-31"
     },
     "apr1": {
-     "eur": 225,
-     "mediana": 226,
+     "eur": 220,
+     "mediana": 218,
      "min": 90,
-     "max": 596,
+     "max": 598,
      "campione": 20,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 220,
-     "mediana": 218,
-     "min": 83,
-     "max": 705,
+     "mediana": 222,
+     "min": 99,
+     "max": 698,
      "campione": 20,
      "esempio": "Best Western Hotel Fino Tokyo Akihabara",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 145,
-     "mediana": 145,
-     "min": 78,
-     "max": 405,
+     "eur": 140,
+     "mediana": 141,
+     "min": 80,
+     "max": 464,
      "campione": 20,
-     "esempio": "Centurion Hotel Ueno",
+     "esempio": "Tosei Hotel Cocone Ueno",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
-     "eur": 165,
-     "mediana": 164,
-     "min": 52,
-     "max": 351,
+     "eur": 155,
+     "mediana": 156,
+     "min": 55,
+     "max": 353,
      "campione": 20,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
-     "eur": 130,
-     "mediana": 132,
-     "min": 49,
-     "max": 380,
+     "eur": 120,
+     "mediana": 120,
+     "min": 50,
+     "max": 382,
      "campione": 20,
      "esempio": "Centurion Hotel Ueno",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
-     "eur": 180,
-     "mediana": 182,
+     "eur": 165,
+     "mediana": 164,
      "min": 83,
-     "max": 326,
+     "max": 353,
      "campione": 20,
      "esempio": "Hop Inn Tokyo Ueno",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
-     "eur": 150,
-     "mediana": 150,
+     "eur": 160,
+     "mediana": 162,
      "min": 46,
-     "max": 426,
+     "max": 428,
      "campione": 19,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 200,
-     "mediana": 201,
+     "eur": 185,
+     "mediana": 186,
      "min": 52,
-     "max": 351,
+     "max": 353,
      "campione": 20,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
-     "eur": 180,
-     "mediana": 178,
+     "eur": 170,
+     "mediana": 172,
      "min": 52,
-     "max": 399,
+     "max": 400,
      "campione": 20,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 170,
-     "mediana": 172,
-     "min": 77,
-     "max": 405,
+     "eur": 175,
+     "mediana": 177,
+     "min": 73,
+     "max": 408,
      "campione": 19,
      "esempio": "Centurion Hotel & Spa Ueno Station",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 150,
-     "mediana": 151,
+     "mediana": 152,
      "min": 70,
      "max": 353,
      "campione": 19,
      "esempio": "Tosei Hotel Cocone Ueno",
      "notte": "2027-08-10",
-     "letto": "2026-10-30"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 170,
-     "mediana": 172,
-     "min": 77,
-     "max": 405,
+     "eur": 175,
+     "mediana": 177,
+     "min": 73,
+     "max": 408,
      "campione": 19,
      "esempio": "Centurion Hotel & Spa Ueno Station",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
-     "eur": 145,
-     "mediana": 146,
+     "eur": 135,
+     "mediana": 136,
      "min": 46,
-     "max": 351,
+     "max": 353,
      "campione": 17,
      "esempio": "Under Railway Hotel Akihabara",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    },
    "ostello": {
     "ago": {
-     "eur": 75,
-     "mediana": 73,
+     "eur": 70,
+     "mediana": 71,
      "min": 44,
-     "max": 102,
-     "campione": 22,
+     "max": 103,
+     "campione": 19,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-08-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "apr1": {
-     "eur": 90,
-     "mediana": 90,
-     "min": 48,
-     "max": 154,
+     "eur": 80,
+     "mediana": 82,
+     "min": 49,
+     "max": 161,
      "campione": 20,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-04-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "cap": {
      "eur": 80,
-     "mediana": 80,
-     "min": 45,
-     "max": 117,
+     "mediana": 82,
+     "min": 46,
+     "max": 118,
      "campione": 22,
      "esempio": "Capsule-Land Yushima",
      "notte": "2026-12-27",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "dic": {
-     "eur": 60,
-     "mediana": 60,
+     "eur": 65,
+     "mediana": 67,
      "min": 31,
      "max": 101,
-     "campione": 22,
+     "campione": 23,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2026-12-08",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "feb": {
      "eur": 70,
      "mediana": 72,
      "min": 30,
      "max": 96,
-     "campione": 25,
+     "campione": 24,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2027-02-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gen": {
      "eur": 60,
@@ -7158,87 +7158,87 @@ window.PREZZI = {
      "campione": 23,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-01-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "gw": {
      "eur": 65,
-     "mediana": 66,
+     "mediana": 63,
      "min": 32,
      "max": 98,
      "campione": 24,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-04-28",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "lug": {
      "eur": 70,
      "mediana": 72,
      "min": 41,
-     "max": 96,
+     "max": 92,
      "campione": 22,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-07-07",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mag": {
-     "eur": 80,
-     "mediana": 80,
+     "eur": 90,
+     "mediana": 90,
      "min": 35,
      "max": 100,
-     "campione": 16,
+     "campione": 17,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-05-19",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "mar": {
      "eur": 70,
      "mediana": 72,
-     "min": 32,
-     "max": 101,
-     "campione": 22,
+     "min": 31,
+     "max": 108,
+     "campione": 23,
      "esempio": "Capsule Hotel GLANSIT AKIHABARA",
      "notte": "2027-03-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "nov": {
-     "eur": 50,
-     "mediana": 50,
+     "eur": 65,
+     "mediana": 66,
      "min": 36,
-     "max": 124,
-     "campione": 18,
+     "max": 214,
+     "campione": 15,
      "esempio": "Hostel JAZ",
      "notte": "2027-11-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "obon": {
      "eur": 70,
      "mediana": 70,
      "min": 44,
-     "max": 96,
+     "max": 92,
      "campione": 22,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-08-10",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "ott": {
-     "eur": 50,
-     "mediana": 50,
+     "eur": 65,
+     "mediana": 66,
      "min": 36,
-     "max": 124,
-     "campione": 18,
+     "max": 214,
+     "campione": 15,
      "esempio": "Hostel JAZ",
      "notte": "2027-10-13",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     },
     "set": {
      "eur": 85,
-     "mediana": 85,
+     "mediana": 84,
      "min": 44,
      "max": 107,
-     "campione": 19,
+     "campione": 18,
      "esempio": "リブマックスホステルズ東京上野",
      "notte": "2027-09-15",
-     "letto": "2026-10-31"
+     "letto": "2026-11-01"
     }
    }
   }
